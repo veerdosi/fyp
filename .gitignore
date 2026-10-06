@@ -7,4 +7,3 @@ __pycache__/
 runs/*/sensors/
 runs/*/diagnostics/
 runs/*/*.mp4
-runs/*/*.npz

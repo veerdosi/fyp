@@ -29,7 +29,8 @@ def revision(folder=ROOT):
 
 class Episode:
     def __init__(self, folder, task=TASK, suite='libero_10', state_index=0, seed=0,
-                 condition='direct_waypoints', size=256, max_steps=2400, max_calls=30):
+                 condition='direct_waypoints', size=256, max_steps=2400, max_calls=30,
+                 settle_steps=20):
         self.folder = Path(folder).resolve()
         self.folder.mkdir(parents=True, exist_ok=False)
         self.public = self.folder / 'public'
@@ -43,8 +44,12 @@ class Episode:
         np.save(self.folder / 'initial_state.npy', initial)
         config = dict(task=task, suite=suite, state_index=state_index, seed=seed,
                       condition=condition, size=size, max_steps=max_steps, max_calls=max_calls,
+                      settle_steps=settle_steps,
                       code_revision=revision(),
-                      code_dirty=bool(subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT)),
+                      code_dirty=bool(subprocess.check_output(
+                          ['git','status','--porcelain','--','src','scripts','requirements.in','requirements.lock'], cwd=ROOT)),
+                      source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
+                                     for p in sorted((ROOT/'src').rglob('*.py'))},
                       libero_revision=revision(ROOT / 'vendor/LIBERO'),
                       model=None if condition=='fixed_sequence' else 'gpt-6-astra',
                       reasoning_effort=None if condition=='fixed_sequence' else 'medium',
@@ -59,6 +64,8 @@ class Episode:
         self.actions = []
         import imageio.v2 as imageio
         self.video = imageio.get_writer(str(self.folder / 'episode.mp4'), fps=20)
+        for _ in range(settle_steps):
+            self.step(np.array([0,0,0,0,0,0,-1.0]), 'initial_settle')
         self.snapshot()
 
     def snapshot(self):
@@ -203,6 +210,9 @@ class Episode:
                 self.finish('policy_finish')
             else:
                 raise ValueError('type must be move, sense or finish')
+            if not self.closed and (self.steps>=self.max_steps or self.calls>=self.max_calls):
+                self.finish('control_budget' if self.steps>=self.max_steps else 'model_call_budget')
+                result['episode_stopped'] = 'budget_exhausted'
             event['result'] = result
         except (ValueError, KeyError, TypeError) as exc:
             result = dict(validation_error=str(exc), observation=self.latest)
@@ -224,7 +234,8 @@ class Episode:
             success=bool(self.env.check_success()), stop_reason=stop_reason,
             control_steps=self.steps, simulated_seconds=self.steps/20,
             wall_seconds=time.monotonic()-self.t0, model_calls=self.calls,
-            cost_usd=None, cost_status='unavailable for collaboration policy calls',
+            cost_usd=None if self.calls else 0,
+            cost_status='unavailable for collaboration policy calls' if self.calls else 'no model calls',
             replay_command=f'.venv/bin/python scripts/episode.py replay --run {self.folder}'))
         self.env.close()
 
@@ -284,6 +295,7 @@ def main():
     parser.add_argument('--run', required=True)
     parser.add_argument('--state-index', type=int, default=0)
     parser.add_argument('--seed', type=int, default=0)
+    parser.add_argument('--settle-steps', type=int, default=20)
     parser.add_argument('--task', default=TASK)
     parser.add_argument('--suite', default='libero_10')
     parser.add_argument('--condition', choices=['direct_pose','direct_waypoints'], default='direct_waypoints')
@@ -293,7 +305,8 @@ def main():
         replay(args.run)
         return
     ep = Episode(args.run, task=args.task, suite=args.suite, state_index=args.state_index,
-                 seed=args.seed, condition='fixed_sequence' if args.mode=='smoke' else args.condition)
+                 seed=args.seed, condition='fixed_sequence' if args.mode=='smoke' else args.condition,
+                 settle_steps=args.settle_steps)
     if args.mode == 'serve':
         serve(ep, args.port)
     else:
