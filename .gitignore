@@ -1,0 +1,10 @@
+.venv/
+vendor/
+.libero/
+__pycache__/
+*.pyc
+.DS_Store
+runs/*/sensors/
+runs/*/diagnostics/
+runs/*/*.mp4
+runs/*/*.npz
