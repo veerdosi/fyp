@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 99,
+        "v": 49
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 157,
+        "v": 49
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 129,
+        "v": 21
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 129,
+        "v": 77
+      },
+      {
+        "camera": "agentview",
+        "u": 175,
+        "v": 146
+      },
+      {
+        "camera": "agentview",
+        "u": 175,
+        "v": 151
+      }
+    ],
+    "reason": "The tool is visibly held. Measure the hole rim relative to the gripper and the upturned hook tip for accurate placement."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Fresh observation 9 after your motion command, step 1315, simulated time 65.75 seconds. 13 decisions have been executed; 17 model decisions and 1085 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0009/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0009/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0009/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"robot0_eye_in_hand\",\"u\":99,\"v\":49},{\"camera\":\"robot0_eye_in_hand\",\"u\":157,\"v\":49},{\"camera\":\"robot0_eye_in_hand\",\"u\":129,\"v\":21},{\"camera\":\"robot0_eye_in_hand\",\"u\":129,\"v\":77},{\"camera\":\"agentview\",\"u\":175,\"v\":146},{\"camera\":\"agentview\",\"u\":175,\"v\":151}],\"reason\":\"The tool is visibly held. Measure the hole rim relative to the gripper and the upturned hook tip for accurate placement.\"}",
+    "response_timestamp": "2026-10-06T11:26:12.741Z",
+    "message_id": "amsg_01a110f6-cf05-76e3-9d17-16eca7dfcafe",
+    "dispatch_timestamp": "2026-10-06T11:25:43.052Z",
+    "policy_wall_seconds": 29.689,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_014.txt"
+  }
+}

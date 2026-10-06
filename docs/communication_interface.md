@@ -20,6 +20,8 @@ Only measurements actually available to the deployed condition may drive it. Rob
 
 The harness might help through clearer command semantics, correction during motion, evidence-based stopping, observation delivery, or fewer model calls. A longer command alone could also explain a gain. The [research plan](research_plan.md) specifies direct pose and waypoint comparisons, matched controls, and ablations. A whole-harness success-rate difference cannot identify an individual mechanism by itself.
 
+Efficiency is a valid primary outcome even if direct control succeeds. For example, earlier return on a reached target or blocked motion could remove idle execution and enable a useful next decision; longer bounded execution could reduce observation overhead. The model still chooses grasps, targets and recovery. A speed claim must use verified completion, retain all failure outcomes, distinguish simulated motion from elapsed inference and execution time, and compare with a credible waypoint baseline under matched limits. Select the mechanism from traces rather than assuming that longer commands or more feedback improve speed.
+
 Good initial conditions are those where a target changes during execution or a physical event needs verification. A static pick-and-place task with near-perfect pose-command success has little room to show a gain. Precise insertion may need contact sensing or control that the first interface does not provide. Failure on such a task should not automatically be attributed to the model.
 
 ## Open design questions to answer with traces
@@ -41,3 +43,5 @@ The first microwave pilot achieved native task success after model-selected gras
 Astra may perform logged temporary calculations from the same policy-visible sensors in every condition. Those calculations select its own targets and waypoints; they do not modify the executor. See [policy_boundary.md](policy_boundary.md).
 
 Native robosuite precision scenes now reuse the same pose/waypoint executor and sensor handoff. The environment adapter supplies replay state and private benchmark scoring; it adds no grasp, alignment, insertion or recovery routine. ToolHang is being screened before selecting any harness behavior.
+
+The first ToolHang pilot succeeded after recovery. Its first frame grasp reached the requested closing pose but acquired nothing; its first tool grasp advanced through closing after substantial waypoint non-arrival. A generic measured transition or earlier observation can test the second failure class without solving the first by choosing another grasp. This is a pilot-derived candidate explanation, not an evaluated hypothesis or implemented harness.

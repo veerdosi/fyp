@@ -23,10 +23,27 @@ The pinned LIBERO checkout is installed in `vendor/LIBERO`; the project-local co
 .venv/bin/python scripts/episode.py serve --run runs/new_pilot --state-index 0 --seed 100 --condition direct_waypoints
 ```
 
-The server binds only to `127.0.0.1:8765`. It pauses physics while waiting for a command. A policy decision is a JSON `sense`, `move`, or `finish` command. See the logged initial prompt of the first pilot for the complete schema, budgets, allowed sensors, and tool restrictions. `scripts/send_command.py request.json` sends a logged envelope with `command` and `policy` fields to the server. The policy metadata records exact model, effort, input and raw response.
+The server binds only to `127.0.0.1:8765`. It pauses physics while waiting for a command. A policy decision is a JSON `sense`, `move`, or `finish` command. Generate a self-contained prompt for a fresh episode with `.venv/bin/python scripts/prepare_policy.py runs/new_pilot`; it includes the schema, budgets, sensors and matched temporary-calculation access. `scripts/send_command.py request.json` sends a logged envelope with `command` and `policy` fields to the server. The policy metadata records exact model, effort, input and raw response.
 
 The first pilot is called through the Codex collaboration interface; `scripts/relay_policy.py` can copy a matching returned robot decision from that root chat's local rollout into a recorded request and execute it. It exports only messages from the selected robot agent. It requires that exact session file and is an experiment-operator adapter, not a standalone model API. Model access remains a separate requirement for new policy runs. Deterministic action replay requires no model access.
 
 Each run saves config, initial state, robot observations, model inputs/outputs, sensor queries, native actions, diagnostics, an action/state trajectory, video, and outcome. Raw videos are retained locally and ignored by Git. Replay compares every saved state and the final score; it does not ask a model to regenerate its decisions.
 
 Fresh episodes now begin with a fixed 20-step open-gripper settling period. The original smoke run and first diagnostic pilot began immediately after loading the benchmark state. Do not mix those starts into a settled paired comparison. Verification and pilots are recorded separately from future held-out evaluation.
+
+## Existing MuJoCo precision candidates
+
+Native robosuite tasks reuse the same direct-control executor and sensor boundary:
+
+```sh
+.venv/bin/python scripts/episode.py smoke --run runs/new_tool_hang_smoke --suite robosuite --task ToolHang --seed 300
+.venv/bin/python scripts/episode.py replay --run runs/new_tool_hang_smoke
+.venv/bin/python scripts/episode.py serve --run runs/new_tool_hang_pilot --suite robosuite --task ToolHang --seed 400 --condition direct_waypoints
+.venv/bin/python scripts/prepare_policy.py runs/new_tool_hang_pilot
+```
+
+`NutAssemblySquare` and `NutAssemblyRound` are also supported. These use existing geometry, placement and scoring; no Isaac Sim assets or custom puzzle port are required. ToolHang is a screening candidate, not a frozen evaluation task. The [selection record](docs/task_screening.md) explains the public failure evidence and the local verification.
+
+For a completed run, `.venv/bin/python scripts/summarize_episode.py runs/RUN_NAME` records offline waypoint tracking errors, raw wrist loads and private goal timing. These diagnostics are excluded from policy inputs. `scripts/export_policy_usage.py` exports actual inference requests, tokens and an API-equivalent cost estimate; `scripts/export_policy_tools.py` exports exact tool invocations for manual boundary review. Both require the episode agent's native session path. Calculation code and outputs are saved separately by `scripts/policy_calc.py`.
+
+The experiments may support higher success, fewer calls, faster verified completion, lower cost, or no improvement; no particular benefit is assumed. Simulated control time, model/tool time and total elapsed time must be reported separately. Current pilots permit retries within 30 robot decisions and 120 simulated seconds; they do not impose a separate retry count. The hypothesis, primary outcome, secondary metrics and limits remain to be chosen from pilot evidence and frozen before held-out evaluation.

@@ -1,0 +1,6 @@
+{
+  "role": "exploratory_task_screening",
+  "paired_evaluation": false,
+  "task_instruction": "The first pilot did not specify the larger hole; future prompts do, to match the native scorer. The successful run used the scored hole.",
+  "timing": "Server elapsed time includes operator setup, user interruptions and orchestration gaps. Policy turn durations are separately measured. This run is not evidence of end-to-end comparative speed."
+}

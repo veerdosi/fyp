@@ -1,7 +1,0 @@
-{
-  "episode": "pilot_drawer_001",
-  "reviewed_policy_decisions": 4,
-  "tool_executions_reviewed": 4,
-  "review": "All four tool calls inspected by Sol. Only supplied RGB and public sensor JSON were read. No code execution, project files, scoring, network or delegation access occurred.",
-  "enforcement": "instruction and trace audit, not filesystem sandbox"
-}

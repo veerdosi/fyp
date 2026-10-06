@@ -1,0 +1,62 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.045,
+          -0.202,
+          1.12
+        ],
+        "quaternion_xyzw": [
+          0.851,
+          0.526,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 75
+      },
+      {
+        "position": [
+          0.045,
+          -0.202,
+          0.816
+        ],
+        "gripper": -1,
+        "steps": 65
+      },
+      {
+        "position": [
+          0.045,
+          -0.202,
+          0.816
+        ],
+        "gripper": 1,
+        "steps": 25
+      },
+      {
+        "position": [
+          0.045,
+          -0.202,
+          0.99
+        ],
+        "gripper": 1,
+        "steps": 35
+      }
+    ],
+    "reason": "The frame is seated with its hook projecting toward positive world x. Grasp the tool's central handle from above and lift it so an end hole can be placed over the hook tip."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0007/sense_010.json. You may cat this permitted sensor result file. The images and robot readings in obs_0007 remain current; no motion has occurred. 10 decisions have been executed, with 20 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.045,-0.202,1.12],\"quaternion_xyzw\":[0.851,0.526,0,0],\"gripper\":-1,\"steps\":75},{\"position\":[0.045,-0.202,0.816],\"gripper\":-1,\"steps\":65},{\"position\":[0.045,-0.202,0.816],\"gripper\":1,\"steps\":25},{\"position\":[0.045,-0.202,0.99],\"gripper\":1,\"steps\":35}],\"reason\":\"The frame is seated with its hook projecting toward positive world x. Grasp the tool's central handle from above and lift it so an end hole can be placed over the hook tip.\"}",
+    "response_timestamp": "2026-10-06T11:23:43.344Z",
+    "message_id": "amsg_01a110f4-876f-7741-96c8-d362685b755a",
+    "dispatch_timestamp": "2026-10-06T11:23:14.914Z",
+    "policy_wall_seconds": 28.43,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_011.txt"
+  }
+}

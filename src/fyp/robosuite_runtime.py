@@ -4,7 +4,7 @@ import numpy as np
 TASK_INSTRUCTIONS = {
     'NutAssemblySquare': 'Pick up the square nut and fit it fully onto the square peg, then release it and withdraw the gripper.',
     'NutAssemblyRound': 'Pick up the round nut and fit it fully onto the round peg, then release it and withdraw the gripper.',
-    'ToolHang': 'Assemble the hook frame into the stand, then hang the tool by its hole on the hook and release it.',
+    'ToolHang': 'Assemble the hook frame into the stand, then hang the tool by its larger hole on the hook and release it.',
 }
 
 

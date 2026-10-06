@@ -1,0 +1,55 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 91,
+        "v": 106
+      },
+      {
+        "camera": "agentview",
+        "u": 90,
+        "v": 96
+      },
+      {
+        "camera": "agentview",
+        "u": 90,
+        "v": 85
+      },
+      {
+        "camera": "agentview",
+        "u": 186,
+        "v": 169
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 170
+      },
+      {
+        "camera": "agentview",
+        "u": 48,
+        "v": 16
+      },
+      {
+        "camera": "agentview",
+        "u": 70,
+        "v": 19
+      }
+    ],
+    "reason": "Measure the suspended frame tip and stand opening to compute the horizontal alignment needed for insertion."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Fresh observation 3 after your motion command, step 495, simulated time 24.75 seconds. 4 decisions have been executed; 26 model decisions and 1905 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0003/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0003/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0003/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":91,\"v\":106},{\"camera\":\"agentview\",\"u\":90,\"v\":96},{\"camera\":\"agentview\",\"u\":90,\"v\":85},{\"camera\":\"agentview\",\"u\":186,\"v\":169},{\"camera\":\"agentview\",\"u\":185,\"v\":170},{\"camera\":\"agentview\",\"u\":48,\"v\":16},{\"camera\":\"agentview\",\"u\":70,\"v\":19}],\"reason\":\"Measure the suspended frame tip and stand opening to compute the horizontal alignment needed for insertion.\"}",
+    "response_timestamp": "2026-10-06T11:18:14.728Z",
+    "message_id": "amsg_01a110ef-83c7-7a82-80f1-f5f0918b7c56",
+    "dispatch_timestamp": "2026-10-06T11:17:52.155Z",
+    "policy_wall_seconds": 22.573,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_005.txt"
+  }
+}

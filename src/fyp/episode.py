@@ -72,6 +72,8 @@ class Episode:
         for _ in range(settle_steps):
             self.step(np.array([0,0,0,0,0,0,-1.0]), 'initial_settle')
         self.snapshot()
+        self.config['setup_wall_seconds'] = time.monotonic()-self.t0
+        write_json(self.folder / 'config.json', self.config)
 
     def snapshot(self):
         from robosuite.utils.camera_utils import get_camera_intrinsic_matrix, get_camera_extrinsic_matrix
@@ -199,6 +201,7 @@ class Episode:
                     remaining_model_calls=self.max_calls-self.calls)
 
     def command(self, body):
+        command_t0 = time.monotonic()
         if self.closed:
             raise ValueError('episode already closed')
         if self.calls >= self.max_calls:
@@ -223,13 +226,17 @@ class Episode:
                 self.finish('policy_finish')
             else:
                 raise ValueError('type must be move, sense or finish')
-            if not self.closed and (self.steps>=self.max_steps or self.calls>=self.max_calls):
-                self.finish('control_budget' if self.steps>=self.max_steps else 'model_call_budget')
-                result['episode_stopped'] = 'budget_exhausted'
-            event['result'] = result
         except (ValueError, KeyError, TypeError) as exc:
-            result = dict(validation_error=str(exc), observation=self.latest)
-            event['result'] = result
+            result = dict(validation_error=str(exc), observation=self.latest,
+                          model_calls=self.calls, remaining_model_calls=self.max_calls-self.calls,
+                          remaining_steps=self.max_steps-self.steps)
+        # Rejected decisions consume the budget too; close even if the last one was invalid.
+        if not self.closed and (self.steps>=self.max_steps or self.calls>=self.max_calls):
+            self.finish('control_budget' if self.steps>=self.max_steps else 'model_call_budget')
+            result['episode_stopped'] = 'budget_exhausted'
+        event['result'] = result
+        event['execution_wall_seconds'] = time.monotonic()-command_t0
+        event['completed_wall_seconds'] = time.monotonic()-self.t0
         self.events.write(json.dumps(event, allow_nan=False)+'\n')
         self.events.flush()
         return result

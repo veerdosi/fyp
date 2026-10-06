@@ -1,0 +1,9 @@
+{
+  "episode": "pilot_tool_hang_001",
+  "reviewed_tool_calls": 20,
+  "source": "policy_tools_complete.json",
+  "scope": "Manual review of all exported tool invocations.",
+  "result": "All 20 calls only inspected supplied public images or read public sensor JSON. No code was written or executed; no project files, private diagnostics, network or delegation were accessed.",
+  "calculation_permission": "Available from the first prompt; unused by policy.",
+  "enforcement": "Prompt restrictions and tool audit; not a filesystem sandbox."
+}

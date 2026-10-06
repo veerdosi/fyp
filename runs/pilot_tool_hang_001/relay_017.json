@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.073,
+          0.05,
+          1.001
+        ],
+        "quaternion_xyzw": [
+          0,
+          0.9808,
+          0,
+          -0.1951
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          0.049,
+          0.05,
+          0.971
+        ],
+        "quaternion_xyzw": [
+          0,
+          0.9239,
+          0,
+          -0.3827
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "Rotate the tool handle downward around the engaged hole while sliding the hole slightly inward along the horizontal hook."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Fresh observation 11 after your motion command, step 1510, simulated time 75.5 seconds. 16 decisions have been executed; 14 model decisions and 890 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0011/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0011/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0011/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.073,0.05,1.001],\"quaternion_xyzw\":[0,0.9808,0,-0.1951],\"gripper\":1,\"steps\":40},{\"position\":[0.049,0.05,0.971],\"quaternion_xyzw\":[0,0.9239,0,-0.3827],\"gripper\":1,\"steps\":45}],\"reason\":\"Rotate the tool handle downward around the engaged hole while sliding the hole slightly inward along the horizontal hook.\"}",
+    "response_timestamp": "2026-10-06T11:28:39.058Z",
+    "message_id": "amsg_01a110f9-0a91-7b12-a6a2-0378a2765dc3",
+    "dispatch_timestamp": "2026-10-06T11:28:10.379Z",
+    "policy_wall_seconds": 28.679,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_017.txt"
+  }
+}

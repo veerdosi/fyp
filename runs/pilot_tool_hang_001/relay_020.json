@@ -1,0 +1,18 @@
+{
+  "command": {
+    "type": "finish",
+    "reason": "The hook frame remains seated in the stand, and the released tool hangs vertically by its upper hole on the hook. The open gripper has withdrawn clear of the assembly."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Fresh observation 14 after your motion command, step 1855, simulated time 92.75 seconds. 19 decisions have been executed; 11 model decisions and 545 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0014/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0014/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0014/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"finish\",\"reason\":\"The hook frame remains seated in the stand, and the released tool hangs vertically by its upper hole on the hook. The open gripper has withdrawn clear of the assembly.\"}",
+    "response_timestamp": "2026-10-06T11:31:04.277Z",
+    "message_id": "amsg_01a110fb-41d5-7a60-9a63-f277aa1c8a30",
+    "dispatch_timestamp": "2026-10-06T11:30:39.240Z",
+    "policy_wall_seconds": 25.037,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_020.txt"
+  }
+}

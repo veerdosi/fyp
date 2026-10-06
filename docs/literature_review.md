@@ -61,6 +61,8 @@ These demonstrations matter as prior art. They prevent claims that Astra has nev
 
 These systems motivate a narrower experiment. They should not all become baselines.
 
+The local study may test faster verified completion at comparable observed success, rather than only a success-rate increase. Calls, inference time and simulated motion time are distinct costs. Existing reports that change planning, perception and execution together motivate a controlled efficiency comparison but do not isolate a speed advantage for our proposed communication boundary.
+
 ## Programs, spatial objectives, and learned skills
 
 [Code as Policies](https://arxiv.org/abs/2209.07753) generates programs that compose perception and robot APIs. Code can express loops, state, and conditions, but the available APIs determine much of the physical competence.
@@ -120,4 +122,6 @@ The project should not claim any of these as new.
 
 The local LIBERO setup renders and replays fixed native-action episodes. Astra at medium effort achieved native task success on the microwave pilot and recovered from empty grasps and blocked insertion. The user requested a different task rather than another microwave pilot. The initial-state settling issue is a protocol observation, not evidence about the cited systems or a communication-harness gain. No paired result or revised theoretical claim has been established yet. Current implementation details and exclusions are recorded in [sensor_audit.md](sensor_audit.md).
 
-For task screening, RoboCurve’s puzzle result and one raw stage-3 transcript were rechecked on 2026-10-06. The official RoboDojo precision-task source and LIBERO-PRO perturbation configuration were also inspected. These sources motivate testing a native MuJoCo insertion analogue; their published failure rates do not transfer automatically to this setup. Other claims in this provisional review remain to be rechecked.
+For task screening, RoboCurve's puzzle result and one raw stage-3 transcript were rechecked on 2026-10-06. The official RoboDojo precision-task source and LIBERO-PRO perturbation configuration were also inspected. These sources motivate testing a native MuJoCo insertion analogue; their published failure rates do not transfer automatically to this setup. Other claims in this provisional review remain to be rechecked.
+
+The first native ToolHang pilot completed successfully and replayed exactly. Its recovered grasp, insertion and withdrawal errors are local evidence; they do not reproduce RoboCurve's failure rate. The trace motivates checking whether measured phase transitions or earlier observation reduce retries or resources under matched conditions. No mechanism benefit has been measured.

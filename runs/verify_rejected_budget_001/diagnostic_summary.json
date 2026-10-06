@@ -1,0 +1,59 @@
+{
+  "episode": "verify_rejected_budget_001",
+  "task": "ToolHang",
+  "condition": "fixed_sequence",
+  "code_revision": "ca6d19d9faa1b800defc1efbbf4c89a3016aee63",
+  "outcome": {
+    "success": false,
+    "stop_reason": "model_call_budget",
+    "diagnostic_goal_predicates": [
+      {
+        "predicate": [
+          "frame_assembled"
+        ],
+        "satisfied": false
+      },
+      {
+        "predicate": [
+          "tool_on_frame"
+        ],
+        "satisfied": false
+      }
+    ],
+    "control_steps": 20,
+    "simulated_seconds": 1.0,
+    "wall_seconds": 3.116908333991887,
+    "model_calls": 1,
+    "cost_usd": null,
+    "cost_status": "unavailable for collaboration policy calls",
+    "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/verify_rejected_budget_001"
+  },
+  "recorded_control_steps": 20,
+  "recorded_command_decisions": 1,
+  "policy_decisions": 0,
+  "first_native_success_step": null,
+  "first_satisfied_goal_steps": {},
+  "commands": [
+    {
+      "decision": 1,
+      "command": {
+        "type": "move",
+        "waypoints": [],
+        "reason": "Operator verification of rejected-decision budget closure; no robot policy invocation."
+      },
+      "validation_error": "waypoints must contain 1..4 targets",
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    }
+  ],
+  "scope": "Offline measurements, not automatic causal attribution. Raw wrist loads include gravity and dynamics.",
+  "wall_time_components": {
+    "setup_and_settling_seconds": 3.0939709169906564,
+    "command_execution_and_recording_seconds": 0.050179917001514696,
+    "policy_dispatch_to_response_seconds": 0,
+    "elapsed_through_last_recorded_command_seconds": 3.1442671249969862,
+    "residual_operator_and_orchestration_seconds": 0.00011629100481513888,
+    "note": "Measured host wall time; policy dispatch time includes tool use. Simulated control time is separate. Residual is not model latency."
+  }
+}

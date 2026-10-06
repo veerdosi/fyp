@@ -1,0 +1,2517 @@
+{
+  "episode": "pilot_microwave_001",
+  "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+  "condition": "direct_waypoints",
+  "code_revision": "5227e2b976ef593c34d478b424116e82dd8e9231",
+  "outcome": {
+    "success": true,
+    "stop_reason": "server_shutdown",
+    "control_steps": 1915,
+    "simulated_seconds": 95.75,
+    "wall_seconds": 1950.0371710839972,
+    "model_calls": 21,
+    "cost_usd": null,
+    "cost_status": "unavailable for collaboration policy calls",
+    "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001"
+  },
+  "recorded_control_steps": 1915,
+  "policy_decisions": 21,
+  "first_native_success_step": 1581,
+  "first_satisfied_goal_steps": {},
+  "commands": [
+    {
+      "decision": 1,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 127,
+            "v": 144
+          },
+          {
+            "camera": "agentview",
+            "u": 126,
+            "v": 121
+          },
+          {
+            "camera": "agentview",
+            "u": 104,
+            "v": 138
+          },
+          {
+            "camera": "agentview",
+            "u": 168,
+            "v": 113
+          },
+          {
+            "camera": "agentview",
+            "u": 219,
+            "v": 161
+          },
+          {
+            "camera": "agentview",
+            "u": 144,
+            "v": 166
+          }
+        ],
+        "reason": "Locate the yellow and white mug, its handle, and the open microwave geometry before approaching."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    },
+    {
+      "decision": 2,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.025,
+              -0.003,
+              1.2
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          {
+            "position": [
+              -0.025,
+              -0.003,
+              1.04
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          {
+            "position": [
+              -0.025,
+              -0.003,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 30
+          },
+          {
+            "position": [
+              -0.025,
+              -0.003,
+              1.25
+            ],
+            "gripper": 1,
+            "steps": 40
+          }
+        ],
+        "reason": "Approach the yellow and white mug from above, close around its upper body, and lift to verify acquisition."
+      },
+      "validation_error": null,
+      "first_step": 1,
+      "last_step": 150,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.025,
+              -0.003,
+              1.2
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 40,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.06722473734149524,
+              -0.003707222759917261,
+              1.1896188400921586
+            ],
+            "robot0_eef_quat": [
+              0.9999990021897514,
+              0.00042341586256443943,
+              0.0013474669164183033,
+              -2.591171002434723e-05
+            ]
+          },
+          "terminal_position_error_m": 0.04348789588635648,
+          "terminal_orientation_error_rad": 0.0028253288854431825,
+          "peak_raw_wrist_force_norm_N": 5.127904780840626,
+          "last_finger_positions_m": [
+            0.03968192613410948,
+            -0.03968168472608765
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.025,
+              -0.003,
+              1.04
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 80,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.026591140309663006,
+              -0.003311698710695508,
+              1.044058809189345
+            ],
+            "robot0_eef_quat": [
+              0.9999998034004766,
+              0.0004910309022819918,
+              0.00038596462330843154,
+              5.584773511123425e-05
+            ]
+          },
+          "terminal_position_error_m": 0.004370676790474787,
+          "terminal_orientation_error_rad": 0.0012541117310570144,
+          "peak_raw_wrist_force_norm_N": 5.2921724435746125,
+          "last_finger_positions_m": [
+            0.039944845981487946,
+            -0.03994495307156911
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.025,
+              -0.003,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 30
+          },
+          "executed_steps": 30,
+          "last_step": 110,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.02467952195868781,
+              -0.0030895168851224914,
+              1.04032302595838
+            ],
+            "robot0_eef_quat": [
+              0.9999997682918966,
+              0.0006274826621266933,
+              -0.0002597991932872737,
+              4.675510614023326e-05
+            ]
+          },
+          "terminal_position_error_m": 0.0004637512452518336,
+          "terminal_orientation_error_rad": 0.0013201707200868327,
+          "peak_raw_wrist_force_norm_N": 5.221383196314772,
+          "last_finger_positions_m": [
+            0.0005930457558249153,
+            -0.0005932704394975467
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.025,
+              -0.003,
+              1.25
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 150,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.027967293791898842,
+              -0.003005675604823875,
+              1.1917867664677007
+            ],
+            "robot0_eef_quat": [
+              0.9999992629656896,
+              0.000692457651584353,
+              0.00098179592341507,
+              -0.000175063536367569
+            ]
+          },
+          "terminal_position_error_m": 0.05828881044373742,
+          "terminal_orientation_error_rad": 0.002525853646267394,
+          "peak_raw_wrist_force_norm_N": 5.3439987162553555,
+          "last_finger_positions_m": [
+            0.0004999643579646695,
+            -0.0004995734368629766
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 3,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 127,
+            "v": 151
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 106,
+            "v": 155
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 145,
+            "v": 158
+          },
+          {
+            "camera": "agentview",
+            "u": 126,
+            "v": 155
+          },
+          {
+            "camera": "agentview",
+            "u": 125,
+            "v": 138
+          },
+          {
+            "camera": "agentview",
+            "u": 167,
+            "v": 109
+          }
+        ],
+        "reason": "The closed fingers are empty and the mug remains on the counter; measure its current rim and body for a lower grasp."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    },
+    {
+      "decision": 4,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.022,
+              0,
+              1.13
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          {
+            "position": [
+              -0.022,
+              0,
+              0.96
+            ],
+            "gripper": -1,
+            "steps": 70
+          },
+          {
+            "position": [
+              -0.022,
+              0,
+              0.96
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          {
+            "position": [
+              -0.022,
+              0,
+              1.2
+            ],
+            "gripper": 1,
+            "steps": 50
+          }
+        ],
+        "reason": "Lower the open fingers around the settled mug body, grasp it, then lift for visual confirmation."
+      },
+      "validation_error": null,
+      "first_step": 151,
+      "last_step": 350,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.022,
+              0,
+              1.13
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 190,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.02230692926478546,
+              -0.00025624744477285296,
+              1.1298084177894256
+            ],
+            "robot0_eef_quat": [
+              0.9999998189160972,
+              0.00027760869215497135,
+              0.00047330586132082275,
+              -0.00024714924112826964
+            ]
+          },
+          "terminal_position_error_m": 0.0004433644888157779,
+          "terminal_orientation_error_rad": 0.0012036076028885156,
+          "peak_raw_wrist_force_norm_N": 5.276151171910348,
+          "last_finger_positions_m": [
+            0.03961769983143763,
+            -0.039617036554365916
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.022,
+              0,
+              0.96
+            ],
+            "gripper": -1,
+            "steps": 70
+          },
+          "executed_steps": 70,
+          "last_step": 260,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.007170389699496538,
+              -0.000544124768520396,
+              1.0157275779732804
+            ],
+            "robot0_eef_quat": [
+              0.9999996934923051,
+              0.0001464140212560228,
+              0.000757016640413094,
+              -0.00013602953866862286
+            ]
+          },
+          "terminal_position_error_m": 0.06290286681664248,
+          "terminal_orientation_error_rad": 0.0006634800761456277,
+          "peak_raw_wrist_force_norm_N": 39.44416087562723,
+          "last_finger_positions_m": [
+            0.04000066420521148,
+            -0.03990966139519426
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.022,
+              0,
+              0.96
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 300,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.009011233597382446,
+              0.026720484373509653,
+              1.0143276683293747
+            ],
+            "robot0_eef_quat": [
+              0.9999996872412449,
+              7.868572939269487e-05,
+              -8.408335684093095e-05,
+              -0.0007824678629375367
+            ]
+          },
+          "terminal_position_error_m": 0.0680233521703609,
+          "terminal_orientation_error_rad": 0.0021259529067363526,
+          "peak_raw_wrist_force_norm_N": 23.734052098064748,
+          "last_finger_positions_m": [
+            0.0003853108271454704,
+            -0.0075589570518151015
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.022,
+              0,
+              1.2
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 350,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.022371502924620514,
+              0.0005739213189632806,
+              1.197552957984103
+            ],
+            "robot0_eef_quat": [
+              0.9999991194928985,
+              -0.00010534153781503485,
+              0.0011716165462160306,
+              -0.0006141915467640702
+            ]
+          },
+          "terminal_position_error_m": 0.0025407508203140793,
+          "terminal_orientation_error_rad": 0.0025604419512162513,
+          "peak_raw_wrist_force_norm_N": 5.232934372008157,
+          "last_finger_positions_m": [
+            0.0004356342478451428,
+            -0.0005639157729829378
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 5,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 102,
+            "v": 151
+          },
+          {
+            "camera": "agentview",
+            "u": 106,
+            "v": 161
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 164,
+            "v": 152
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 169,
+            "v": 155
+          },
+          {
+            "camera": "agentview",
+            "u": 127,
+            "v": 171
+          }
+        ],
+        "reason": "The body grasp did not acquire the mug; locate the narrow handle for a grasp across its thickness."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    },
+    {
+      "decision": 6,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.018,
+              -0.073,
+              1.12
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 50
+          },
+          {
+            "position": [
+              -0.018,
+              -0.073,
+              0.966
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          {
+            "position": [
+              -0.018,
+              -0.073,
+              0.966
+            ],
+            "gripper": 1,
+            "steps": 35
+          },
+          {
+            "position": [
+              -0.018,
+              -0.073,
+              1.19
+            ],
+            "gripper": 1,
+            "steps": 55
+          }
+        ],
+        "reason": "Grasp the yellow handle with the fingers closing across its thin dimension, then lift the mug."
+      },
+      "validation_error": null,
+      "first_step": 351,
+      "last_step": 550,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.018,
+              -0.073,
+              1.12
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 400,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.017668195051732404,
+              -0.07466762136702011,
+              1.1204057965725944
+            ],
+            "robot0_eef_quat": [
+              0.7152123307081755,
+              0.6989034725492264,
+              0.0006063781677263804,
+              -0.0022114174479317523
+            ]
+          },
+          "terminal_position_error_m": 0.0017480636160524025,
+          "terminal_orientation_error_rad": 0.023516280326176957,
+          "peak_raw_wrist_force_norm_N": 5.225208108185911,
+          "last_finger_positions_m": [
+            0.039758856847922436,
+            -0.03975007538293999
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.018,
+              -0.073,
+              0.966
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 460,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.018198979511596068,
+              -0.07327568764609597,
+              0.9659691357677911
+            ],
+            "robot0_eef_quat": [
+              0.7150241767164687,
+              0.6990956203549732,
+              0.0008748894008371033,
+              -0.002230443894640817
+            ]
+          },
+          "terminal_position_error_m": 0.0003413929188996103,
+          "terminal_orientation_error_rad": 0.0007610072104162697,
+          "peak_raw_wrist_force_norm_N": 5.288420345370634,
+          "last_finger_positions_m": [
+            0.03998466145121992,
+            -0.03997995247186257
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.018,
+              -0.073,
+              0.966
+            ],
+            "gripper": 1,
+            "steps": 35
+          },
+          "executed_steps": 35,
+          "last_step": 495,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.018204769093966983,
+              -0.07316281317157473,
+              0.9658913324396261
+            ],
+            "robot0_eef_quat": [
+              0.7149091574262264,
+              0.6992127132595188,
+              0.0009673807668593325,
+              -0.0023542342355327424
+            ]
+          },
+          "terminal_position_error_m": 0.0002832792780276953,
+          "terminal_orientation_error_rad": 0.0004508608961741854,
+          "peak_raw_wrist_force_norm_N": 5.402083445789646,
+          "last_finger_positions_m": [
+            0.009125776907141413,
+            -0.009278370928938018
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.018,
+              -0.073,
+              1.19
+            ],
+            "gripper": 1,
+            "steps": 55
+          },
+          "executed_steps": 55,
+          "last_step": 550,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.020053239889455444,
+              -0.07199387037330211,
+              1.173895394822387
+            ],
+            "robot0_eef_quat": [
+              0.7151256784388278,
+              0.6989932060602128,
+              0.0016904722922009173,
+              -0.000950906146328686
+            ]
+          },
+          "terminal_position_error_m": 0.016266111975397523,
+          "terminal_orientation_error_rad": 0.003216990144367642,
+          "peak_raw_wrist_force_norm_N": 5.669845336880419,
+          "last_finger_positions_m": [
+            0.009193878365663911,
+            -0.009208907565884236
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 7,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 215,
+            "v": 119
+          },
+          {
+            "camera": "agentview",
+            "u": 230,
+            "v": 126
+          },
+          {
+            "camera": "agentview",
+            "u": 247,
+            "v": 140
+          },
+          {
+            "camera": "agentview",
+            "u": 225,
+            "v": 187
+          },
+          {
+            "camera": "agentview",
+            "u": 244,
+            "v": 202
+          },
+          {
+            "camera": "agentview",
+            "u": 180,
+            "v": 97
+          },
+          {
+            "camera": "agentview",
+            "u": 201,
+            "v": 121
+          },
+          {
+            "camera": "agentview",
+            "u": 210,
+            "v": 144
+          }
+        ],
+        "reason": "The mug is visibly suspended from its handle. Measure the microwave entrance, floor, and open door to choose a collision-free insertion path."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    },
+    {
+      "decision": 8,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.01,
+              0.1,
+              1.17
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 60
+          },
+          {
+            "position": [
+              0.01,
+              0.1,
+              0.995
+            ],
+            "gripper": 1,
+            "steps": 60
+          }
+        ],
+        "reason": "Bring the held mug in front of the microwave opening and lower it below the roof before insertion."
+      },
+      "validation_error": null,
+      "first_step": 551,
+      "last_step": 670,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.01,
+              0.1,
+              1.17
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 610,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.010742143142269662,
+              0.10045366501367672,
+              1.1705592031280694
+            ],
+            "robot0_eef_quat": [
+              0.7073219031371347,
+              0.7068889281066641,
+              -0.0017809605038704459,
+              -0.0007725557296018366
+            ]
+          },
+          "terminal_position_error_m": 0.0010340679507144803,
+          "terminal_orientation_error_rad": 0.003930598597112001,
+          "peak_raw_wrist_force_norm_N": 5.421735326828999,
+          "last_finger_positions_m": [
+            0.009201430808581431,
+            -0.009201349199825522
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.01,
+              0.1,
+              0.995
+            ],
+            "gripper": 1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 670,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.009717959024090872,
+              0.09978142304276633,
+              0.9947541522675757
+            ],
+            "robot0_eef_quat": [
+              0.7072306547389191,
+              0.7069807536231864,
+              -0.0015673924521545158,
+              -0.00074718461643009
+            ]
+          },
+          "terminal_position_error_m": 0.0004333175577604512,
+          "terminal_orientation_error_rad": 0.0005020486115494402,
+          "peak_raw_wrist_force_norm_N": 5.59507634641795,
+          "last_finger_positions_m": [
+            0.009205473023708824,
+            -0.009197316512625833
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 9,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.01,
+              0.245,
+              0.985
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 65
+          }
+        ],
+        "reason": "Insert the mug through the front opening while keeping its base just above the microwave floor."
+      },
+      "validation_error": null,
+      "first_step": 671,
+      "last_step": 735,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.01,
+              0.245,
+              0.985
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 65
+          },
+          "executed_steps": 65,
+          "last_step": 735,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.02974103636591263,
+              0.15616742914247522,
+              0.9973667314856786
+            ],
+            "robot0_eef_quat": [
+              0.7065440354730407,
+              0.7076686874452326,
+              0.00013056902371489832,
+              0.0007332794426837742
+            ]
+          },
+          "terminal_position_error_m": 0.0918361051525832,
+          "terminal_orientation_error_rad": 0.002179145254528676,
+          "peak_raw_wrist_force_norm_N": 25.11667585521253,
+          "last_finger_positions_m": [
+            0.010109125692981882,
+            -0.010072663102073878
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 10,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.005,
+              0.11,
+              1.04
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          {
+            "position": [
+              0.005,
+              0.265,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 65
+          }
+        ],
+        "reason": "The mug met the entrance lip; retract slightly, raise its base above the sill, and retry insertion."
+      },
+      "validation_error": null,
+      "first_step": 736,
+      "last_step": 845,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.005,
+              0.11,
+              1.04
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          "executed_steps": 45,
+          "last_step": 780,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.005050691201178948,
+              0.10970668491029278,
+              1.0399107654451853
+            ],
+            "robot0_eef_quat": [
+              0.7069378041285895,
+              0.7072756649025302,
+              2.0753178305137446e-05,
+              -0.00027294658025739133
+            ]
+          },
+          "terminal_position_error_m": 0.00031075093805150837,
+          "terminal_orientation_error_rad": 0.0007266511877823414,
+          "peak_raw_wrist_force_norm_N": 5.899191857948177,
+          "last_finger_positions_m": [
+            0.009122298960125608,
+            -0.009131373622943115
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.005,
+              0.265,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 65
+          },
+          "executed_steps": 65,
+          "last_step": 845,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.00036082246405673576,
+              0.21448169845988674,
+              1.0355101164474234
+            ],
+            "robot0_eef_quat": [
+              0.7128598484090903,
+              0.7012648761154889,
+              0.007620854421982584,
+              0.0005767415144476482
+            ]
+          },
+          "terminal_position_error_m": 0.05092916466057057,
+          "terminal_orientation_error_rad": 0.02277587325112108,
+          "peak_raw_wrist_force_norm_N": 43.576078849834616,
+          "last_finger_positions_m": [
+            0.009106936197635099,
+            -0.00912962356920089
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 11,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.0,
+              0.205,
+              1.012
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          {
+            "position": [
+              0.0,
+              0.31,
+              1.012
+            ],
+            "gripper": 1,
+            "steps": 70
+          }
+        ],
+        "reason": "Lower the grasp slightly to clear the microwave roof while keeping the mug above the sill, then advance farther inside."
+      },
+      "validation_error": null,
+      "first_step": 846,
+      "last_step": 955,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.0,
+              0.205,
+              1.012
+            ],
+            "quaternion_xyzw": [
+              0.7071068,
+              0.7071068,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 885,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.004111809648107057,
+              0.19942018776725978,
+              1.0173690903738424
+            ],
+            "robot0_eef_quat": [
+              0.7068518000699808,
+              0.7073613242608123,
+              5.037818668672104e-05,
+              -0.0006979540491742497
+            ]
+          },
+          "terminal_position_error_m": 0.008767463406105,
+          "terminal_orientation_error_rad": 0.0015741478899957678,
+          "peak_raw_wrist_force_norm_N": 16.572419599367365,
+          "last_finger_positions_m": [
+            0.007703344964568758,
+            -0.009118187373832675
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.0,
+              0.31,
+              1.012
+            ],
+            "gripper": 1,
+            "steps": 70
+          },
+          "executed_steps": 70,
+          "last_step": 955,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.004306927007531757,
+              0.21276173272286775,
+              1.0163202936047673
+            ],
+            "robot0_eef_quat": [
+              0.7122132023871366,
+              0.7019117816461707,
+              0.008491885068409553,
+              -0.00030499137957961796
+            ]
+          },
+          "terminal_position_error_m": 0.09742943692816154,
+          "terminal_orientation_error_rad": 0.02279096424813715,
+          "peak_raw_wrist_force_norm_N": 86.25438345155591,
+          "last_finger_positions_m": [
+            0.007755255765456649,
+            -0.008900944401348518
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 12,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.004,
+              0.21,
+              1.013
+            ],
+            "gripper": -1,
+            "steps": 30
+          },
+          {
+            "position": [
+              0.004,
+              0.1,
+              1.025
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          {
+            "position": [
+              -0.08,
+              0.08,
+              1.22
+            ],
+            "gripper": -1,
+            "steps": 45
+          }
+        ],
+        "reason": "Set the mug down at the opening and withdraw the gripper to assess its position and prepare a lower-profile push farther inside."
+      },
+      "validation_error": null,
+      "first_step": 956,
+      "last_step": 1070,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.004,
+              0.21,
+              1.013
+            ],
+            "gripper": -1,
+            "steps": 30
+          },
+          "executed_steps": 30,
+          "last_step": 985,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.004801886347585082,
+              0.20953479808648065,
+              1.014023433656391
+            ],
+            "robot0_eef_quat": [
+              0.7124496611986261,
+              0.701677911946571,
+              0.007964869990049367,
+              -0.0003859926206645705
+            ]
+          },
+          "terminal_position_error_m": 0.001380887752070849,
+          "terminal_orientation_error_rad": 0.001256843526926978,
+          "peak_raw_wrist_force_norm_N": 5.082714222332558,
+          "last_finger_positions_m": [
+            0.039396384330928826,
+            -0.03941911099178399
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.004,
+              0.1,
+              1.025
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 1025,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.0036115885859268762,
+              0.09947935274832553,
+              1.0246729580986438
+            ],
+            "robot0_eef_quat": [
+              0.7122112697593137,
+              0.7019078150341664,
+              0.008971174146332144,
+              -0.00021084644549703035
+            ]
+          },
+          "terminal_position_error_m": 0.0007272505706433626,
+          "terminal_orientation_error_rad": 0.002147566302992475,
+          "peak_raw_wrist_force_norm_N": 5.161598979898685,
+          "last_finger_positions_m": [
+            0.03988637404406535,
+            -0.039908505171913626
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.08,
+              0.08,
+              1.22
+            ],
+            "gripper": -1,
+            "steps": 45
+          },
+          "executed_steps": 45,
+          "last_step": 1070,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.0655222413029697,
+              0.08479019668161734,
+              1.1856152897610248
+            ],
+            "robot0_eef_quat": [
+              0.7124250808079199,
+              0.7016878980971165,
+              0.009193776760657564,
+              0.00026901441053711015
+            ]
+          },
+          "terminal_position_error_m": 0.037614621882404956,
+          "terminal_orientation_error_rad": 0.0012229423541863815,
+          "peak_raw_wrist_force_norm_N": 5.3766604477939355,
+          "last_finger_positions_m": [
+            0.03997588022582765,
+            -0.03999558004159594
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 13,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.0,
+              0.1,
+              1.08
+            ],
+            "quaternion_xyzw": [
+              0.5,
+              0.5,
+              0.5,
+              -0.5
+            ],
+            "gripper": 1,
+            "steps": 55
+          },
+          {
+            "position": [
+              0.0,
+              0.17,
+              0.989
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          {
+            "position": [
+              0.0,
+              0.34,
+              0.989
+            ],
+            "gripper": 1,
+            "steps": 65
+          }
+        ],
+        "reason": "Use the closed fingers horizontally to push the protruding handle and slide the upright mug deeper into the microwave."
+      },
+      "validation_error": null,
+      "first_step": 1071,
+      "last_step": 1235,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.0,
+              0.1,
+              1.08
+            ],
+            "quaternion_xyzw": [
+              0.5,
+              0.5,
+              0.5,
+              -0.5
+            ],
+            "gripper": 1,
+            "steps": 55
+          },
+          "executed_steps": 55,
+          "last_step": 1125,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.002694507901455788,
+              0.09690284678671332,
+              1.0781601800724268
+            ],
+            "robot0_eef_quat": [
+              0.49514393347100044,
+              0.5007133394662114,
+              0.4987132657664784,
+              -0.5053748266148527
+            ]
+          },
+          "terminal_position_error_m": 0.004498629593940314,
+          "terminal_orientation_error_rad": 0.014783089014557656,
+          "peak_raw_wrist_force_norm_N": 5.17908091419633,
+          "last_finger_positions_m": [
+            0.00047599372585373554,
+            -0.0005236143846422147
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.0,
+              0.17,
+              0.989
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          "executed_steps": 45,
+          "last_step": 1170,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.00043589848550032906,
+              0.16953455471311013,
+              0.9887914009093228
+            ],
+            "robot0_eef_quat": [
+              0.494394526836166,
+              0.5008311492158254,
+              0.4983956583716917,
+              -0.5063042361326296
+            ]
+          },
+          "terminal_position_error_m": 0.0006709399268047956,
+          "terminal_orientation_error_rad": 0.0024820686115186803,
+          "peak_raw_wrist_force_norm_N": 5.239128678151916,
+          "last_finger_positions_m": [
+            0.0004976017215575433,
+            -0.0005020251455880038
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.0,
+              0.34,
+              0.989
+            ],
+            "gripper": 1,
+            "steps": 65
+          },
+          "executed_steps": 65,
+          "last_step": 1235,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.0006046805803411992,
+              0.26583892172231216,
+              0.988643391836538
+            ],
+            "robot0_eef_quat": [
+              0.49826107091790417,
+              0.5004663131223167,
+              0.5043692051910287,
+              -0.49687129067039776
+            ]
+          },
+          "terminal_position_error_m": 0.07416440075464667,
+          "terminal_orientation_error_rad": 0.02364306390236548,
+          "peak_raw_wrist_force_norm_N": 110.05844774462143,
+          "last_finger_positions_m": [
+            0.0005200044345006821,
+            -0.0004796097596217794
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 14,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.0,
+              0.09,
+              0.99
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          {
+            "position": [
+              -0.05,
+              0.04,
+              1.22
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 65
+          }
+        ],
+        "reason": "Withdraw from the microwave to check that the mug and handle clear the door before closing it."
+      },
+      "validation_error": null,
+      "first_step": 1236,
+      "last_step": 1350,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.0,
+              0.09,
+              0.99
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1285,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -1.1575562758120428e-05,
+              0.09024155993657237,
+              0.9896780537779549
+            ],
+            "robot0_eef_quat": [
+              0.49769707418610476,
+              0.50043527420046,
+              0.5047549520785825,
+              -0.49707604753664014
+            ]
+          },
+          "terminal_position_error_m": 0.00040265936782733547,
+          "terminal_orientation_error_rad": 0.0014279800913706978,
+          "peak_raw_wrist_force_norm_N": 5.124487992173004,
+          "last_finger_positions_m": [
+            0.0004918079197194576,
+            -0.0005078007930923772
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.05,
+              0.04,
+              1.22
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 65
+          },
+          "executed_steps": 65,
+          "last_step": 1350,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.054474737355864396,
+              0.05726649837013061,
+              1.1852508658739282
+            ],
+            "robot0_eef_quat": [
+              0.9999969680805347,
+              -0.00019586762668776889,
+              -0.0010275953842865298,
+              0.0022292405289979947
+            ]
+          },
+          "terminal_position_error_m": 0.03905966670212911,
+          "terminal_orientation_error_rad": 0.004924973906056847,
+          "peak_raw_wrist_force_norm_N": 5.411247571841081,
+          "last_finger_positions_m": [
+            0.0006462060105177328,
+            -0.00035339538148758637
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 15,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 131,
+            "v": 92
+          },
+          {
+            "camera": "agentview",
+            "u": 131,
+            "v": 126
+          },
+          {
+            "camera": "agentview",
+            "u": 197,
+            "v": 92
+          },
+          {
+            "camera": "agentview",
+            "u": 198,
+            "v": 125
+          },
+          {
+            "camera": "agentview",
+            "u": 220,
+            "v": 151
+          },
+          {
+            "camera": "agentview",
+            "u": 224,
+            "v": 137
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 13,
+            "v": 118
+          }
+        ],
+        "reason": "Locate the free edge and hinge of the open door, and check the mug handle clearance for a controlled closing sweep."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    },
+    {
+      "decision": 16,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.25,
+              0.025,
+              1.22
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          {
+            "position": [
+              -0.25,
+              0.025,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          {
+            "position": [
+              -0.11,
+              0.035,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 55
+          }
+        ],
+        "reason": "Approach the outside face of the open door near its free edge and begin pushing it toward the microwave."
+      },
+      "validation_error": null,
+      "first_step": 1351,
+      "last_step": 1505,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.25,
+              0.025,
+              1.22
+            ],
+            "quaternion_xyzw": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1400,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.2288576187509512,
+              0.029033893087778286,
+              1.2186316197245564
+            ],
+            "robot0_eef_quat": [
+              0.9999999258269796,
+              -0.00027433342086996044,
+              -3.206618755066557e-06,
+              0.0002703274430435462
+            ]
+          },
+          "terminal_position_error_m": 0.021567221492393932,
+          "terminal_orientation_error_rad": 0.0007703143306677681,
+          "peak_raw_wrist_force_norm_N": 5.085701483253881,
+          "last_finger_positions_m": [
+            0.0005147344103339469,
+            -0.0004848496385924944
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.25,
+              0.025,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1450,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.2501472548513098,
+              0.025011524773867765,
+              1.0272856483125916
+            ],
+            "robot0_eef_quat": [
+              0.9999997116483481,
+              -1.314184909536938e-05,
+              0.0007432138473243882,
+              0.0001554467384732123
+            ]
+          },
+          "terminal_position_error_m": 0.00229041590557267,
+          "terminal_orientation_error_rad": 0.0015982017463180985,
+          "peak_raw_wrist_force_norm_N": 5.26456797413777,
+          "last_finger_positions_m": [
+            0.0005015193653666134,
+            -0.0004980432543191243
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.11,
+              0.035,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 55
+          },
+          "executed_steps": 55,
+          "last_step": 1505,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.10957137385733494,
+              0.034965486764131484,
+              1.0252578155744663
+            ],
+            "robot0_eef_quat": [
+              0.9999998597500157,
+              0.00047971765050834045,
+              -3.509332701054064e-05,
+              0.0002216740438458472
+            ]
+          },
+          "terminal_position_error_m": 0.0005013785037907629,
+          "terminal_orientation_error_rad": 0.001847223519257256,
+          "peak_raw_wrist_force_norm_N": 6.018342682133541,
+          "last_finger_positions_m": [
+            0.0004994761833794169,
+            -0.0005000677084031031
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 17,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.015,
+              0.065,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          {
+            "position": [
+              0.06,
+              0.14,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          {
+            "position": [
+              0.075,
+              0.225,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          }
+        ],
+        "reason": "Follow the free edge through its closing arc, sweeping the door toward the microwave front."
+      },
+      "validation_error": null,
+      "first_step": 1506,
+      "last_step": 1655,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.015,
+              0.065,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1555,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.015112040326843764,
+              0.06496499953964907,
+              1.0249033151371436
+            ],
+            "robot0_eef_quat": [
+              0.9999995357519148,
+              0.0009345231906795026,
+              8.508973040932703e-05,
+              0.00021891116374182846
+            ]
+          },
+          "terminal_position_error_m": 0.00015207244908127258,
+          "terminal_orientation_error_rad": 0.0009408502308519497,
+          "peak_raw_wrist_force_norm_N": 5.6696476997975305,
+          "last_finger_positions_m": [
+            0.0004990875111341913,
+            -0.0005004559609160944
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.06,
+              0.14,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1605,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.0446798780049484,
+              0.1311636324085391,
+              1.019789856123437
+            ],
+            "robot0_eef_quat": [
+              0.9998625457804857,
+              0.013235363141262136,
+              0.009546176921120423,
+              -0.002930053595850017
+            ]
+          },
+          "terminal_position_error_m": 0.01843727554084848,
+          "terminal_orientation_error_rad": 0.03167098481270773,
+          "peak_raw_wrist_force_norm_N": 54.638338413001414,
+          "last_finger_positions_m": [
+            0.000504364075868392,
+            -0.0004951937626926713
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.075,
+              0.225,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1655,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.04543009406772618,
+              0.13238226394145178,
+              1.0181179072147726
+            ],
+            "robot0_eef_quat": [
+              0.9997010504403392,
+              0.018356311297113747,
+              0.014815559379525733,
+              -0.00643076856341206
+            ]
+          },
+          "terminal_position_error_m": 0.09746685370195811,
+          "terminal_orientation_error_rad": 0.016281517562403727,
+          "peak_raw_wrist_force_norm_N": 31.402300734216357,
+          "last_finger_positions_m": [
+            0.0005116967447715625,
+            -0.00048789413091832604
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 18,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.01,
+              0.065,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          {
+            "position": [
+              -0.07,
+              0.035,
+              1.25
+            ],
+            "gripper": 1,
+            "steps": 60
+          }
+        ],
+        "reason": "Release pressure and inspect the remaining door gap before choosing the final closing contact."
+      },
+      "validation_error": null,
+      "first_step": 1656,
+      "last_step": 1755,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.01,
+              0.065,
+              1.025
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 1695,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.0100116428973539,
+              0.06463679260893608,
+              1.0250033479118459
+            ],
+            "robot0_eef_quat": [
+              0.9996928147805988,
+              0.018617910817796866,
+              0.0149129592322452,
+              -0.006727043909487235
+            ]
+          },
+          "terminal_position_error_m": 0.00036340937590544135,
+          "terminal_orientation_error_rad": 0.000814292207023138,
+          "peak_raw_wrist_force_norm_N": 8.955568047676564,
+          "last_finger_positions_m": [
+            0.0005107322684892901,
+            -0.0004888308080008282
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.07,
+              0.035,
+              1.25
+            ],
+            "gripper": 1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 1755,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.06821825090045673,
+              0.0363859996637464,
+              1.2436194870558823
+            ],
+            "robot0_eef_quat": [
+              0.9996893782168866,
+              0.018308011708694467,
+              0.015628595475698857,
+              -0.006458389200433609
+            ]
+          },
+          "terminal_position_error_m": 0.006768055138049752,
+          "terminal_orientation_error_rad": 0.001649678625681854,
+          "peak_raw_wrist_force_norm_N": 5.3722775269612395,
+          "last_finger_positions_m": [
+            0.0005125251732836473,
+            -0.00048707783338432714
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 19,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 200,
+            "v": 179
+          },
+          {
+            "camera": "agentview",
+            "u": 216,
+            "v": 143
+          },
+          {
+            "camera": "agentview",
+            "u": 202,
+            "v": 119
+          },
+          {
+            "camera": "agentview",
+            "u": 225,
+            "v": 163
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 40,
+            "v": 173
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 36,
+            "v": 101
+          }
+        ],
+        "reason": "Measure the remaining door angle and handle position so the final push seats the door without pressing on the appliance body."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    },
+    {
+      "decision": 20,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.075,
+              0.08,
+              1.04
+            ],
+            "quaternion_xyzw": [
+              0.5,
+              0.5,
+              0.5,
+              -0.5
+            ],
+            "gripper": 1,
+            "steps": 55
+          },
+          {
+            "position": [
+              0.075,
+              0.245,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 65
+          },
+          {
+            "position": [
+              0.075,
+              0.08,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 40
+          }
+        ],
+        "reason": "Press the door near its free edge with the fingers pointed horizontally, then withdraw to verify that it remains closed."
+      },
+      "validation_error": null,
+      "first_step": 1756,
+      "last_step": 1915,
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.075,
+              0.08,
+              1.04
+            ],
+            "quaternion_xyzw": [
+              0.5,
+              0.5,
+              0.5,
+              -0.5
+            ],
+            "gripper": 1,
+            "steps": 55
+          },
+          "executed_steps": 55,
+          "last_step": 1810,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.038001164784785504,
+              0.08626730671532669,
+              1.068312613762089
+            ],
+            "robot0_eef_quat": [
+              0.5507641351981623,
+              0.47700931970012805,
+              0.49330572184903804,
+              -0.4751530712198326
+            ]
+          },
+          "terminal_position_error_m": 0.04700847837133009,
+          "terminal_orientation_error_rad": 0.12278331521468941,
+          "peak_raw_wrist_force_norm_N": 5.058931066700458,
+          "last_finger_positions_m": [
+            0.0006959970144479807,
+            -0.00030356813107028363
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.075,
+              0.245,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 65
+          },
+          "executed_steps": 65,
+          "last_step": 1875,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.08212568115242624,
+              0.1917525236376597,
+              1.0423532560415412
+            ],
+            "robot0_eef_quat": [
+              0.5496476898283875,
+              0.47722892692035196,
+              0.4934884936375941,
+              -0.4760347414045148
+            ]
+          },
+          "terminal_position_error_m": 0.05377366348726,
+          "terminal_orientation_error_rad": 0.0029020170954126147,
+          "peak_raw_wrist_force_norm_N": 40.376938501786555,
+          "last_finger_positions_m": [
+            2.1235663622858433e-05,
+            -0.00965565610223473
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.075,
+              0.08,
+              1.04
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 1915,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.07515480762906987,
+              0.07968725614145154,
+              1.0397460666400271
+            ],
+            "robot0_eef_quat": [
+              0.549025714593238,
+              0.4773836970307688,
+              0.4936577640052956,
+              -0.476421643674918
+            ]
+          },
+          "terminal_position_error_m": 0.0004315741817870392,
+          "terminal_orientation_error_rad": 0.0015351258363637658,
+          "peak_raw_wrist_force_norm_N": 9.395944683587823,
+          "last_finger_positions_m": [
+            0.00041154266546153883,
+            -0.0005880179647471761
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 21,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 14,
+            "v": 126
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 95,
+            "v": 119
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 113,
+            "v": 148
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 122,
+            "v": 180
+          },
+          {
+            "camera": "agentview",
+            "u": 216,
+            "v": 143
+          },
+          {
+            "camera": "agentview",
+            "u": 202,
+            "v": 119
+          }
+        ],
+        "reason": "Check whether the door is seated flush and the mug is behind its window after the final push."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "waypoints": []
+    }
+  ],
+  "scope": "Offline measurements, not automatic causal attribution. Raw wrist loads include gravity and dynamics.",
+  "policy_usage": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "policy_decisions": 21,
+    "model_inference_requests": 41,
+    "agent_tool_calls": 20,
+    "completed_policy_turns": 21,
+    "policy_wall_seconds": 334.206,
+    "token_usage": {
+      "input_tokens": 1854231,
+      "cached_input_tokens": 1779968,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5866,
+      "reasoning_output_tokens": 1347,
+      "total_tokens": 1860097
+    },
+    "api_equivalent_standard_cost_usd": 2.815898,
+    "actual_account_charge_usd": null,
+    "pricing": {
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "accessed_date": "2026-10-06",
+      "per_million_tokens_usd": {
+        "uncached_input": 10,
+        "cached_input": 1,
+        "cache_write": 12.5,
+        "output": 50
+      },
+      "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+    },
+    "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+    "source_session": "/Users/veerdosi/.codex/sessions/2026/10/06/rollout-2026-10-06T14-18-34-01a10fdd-2804-7293-820d-5cd25ca667ed.jsonl",
+    "model_effort_verification": {
+      "01a10fdd-28a9-73e3-a26c-d5e3136c115a": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fde-d65a-7dd3-9d31-e6a2c40e4a05": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fdf-c624-7b20-899e-1d3b9f8f5c7c": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe0-a8e5-7141-b3ad-7e01a20d51ae": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe1-a8c5-74c3-bc45-0fb0d7da8c0f": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe2-235f-7243-91be-8dd4aa838fe2": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe3-00a6-7813-b29d-5a82bbc839b6": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe3-bb97-7a03-8355-671b577a5c7f": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe5-21b4-7d62-84da-2929d448b6d0": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe6-02f1-7211-bc65-084b0439497e": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe7-062a-7b60-841f-ac210e7f2b03": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe7-d354-7ce1-af63-d91ce355e4df": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fe8-f13e-7801-b234-292d00ef8053": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fea-6aca-7de2-bc13-4723b102ffe6": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10feb-6552-71f0-9253-61f7d934f327": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fec-ca55-71a3-9fab-0701d8f4bd82": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fee-44e1-7361-b7ae-1c10d82a341e": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10fef-c382-7fa0-9c2a-bb4ca4186c5d": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10ff1-cb16-73c1-9fb6-de32d657f945": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10ff2-d62b-7b43-b34c-17dd50a74042": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a10ff8-4be5-7c32-97e1-397ff4b61ccf": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      }
+    },
+    "turn_timing": {
+      "01a10fdd-28a9-73e3-a26c-d5e3136c115a": {
+        "started_at": 1791267514,
+        "completed_at": 1791267533,
+        "duration_ms": 19078,
+        "time_to_first_token_ms": 8400
+      },
+      "01a10fde-d65a-7dd3-9d31-e6a2c40e4a05": {
+        "started_at": 1791267624,
+        "completed_at": 1791267633,
+        "duration_ms": 8778,
+        "time_to_first_token_ms": 5969
+      },
+      "01a10fdf-c624-7b20-899e-1d3b9f8f5c7c": {
+        "started_at": 1791267685,
+        "completed_at": 1791267704,
+        "duration_ms": 18321,
+        "time_to_first_token_ms": 5936
+      },
+      "01a10fe0-a8e5-7141-b3ad-7e01a20d51ae": {
+        "started_at": 1791267743,
+        "completed_at": 1791267758,
+        "duration_ms": 14360,
+        "time_to_first_token_ms": 4758
+      },
+      "01a10fe1-a8c5-74c3-bc45-0fb0d7da8c0f": {
+        "started_at": 1791267809,
+        "completed_at": 1791267825,
+        "duration_ms": 15900,
+        "time_to_first_token_ms": 5286
+      },
+      "01a10fe2-235f-7243-91be-8dd4aa838fe2": {
+        "started_at": 1791267840,
+        "completed_at": 1791267855,
+        "duration_ms": 14148,
+        "time_to_first_token_ms": 6428
+      },
+      "01a10fe3-00a6-7813-b29d-5a82bbc839b6": {
+        "started_at": 1791267897,
+        "completed_at": 1791267916,
+        "duration_ms": 19271,
+        "time_to_first_token_ms": 5816
+      },
+      "01a10fe3-bb97-7a03-8355-671b577a5c7f": {
+        "started_at": 1791267945,
+        "completed_at": 1791267970,
+        "duration_ms": 24615,
+        "time_to_first_token_ms": 4651
+      },
+      "01a10fe5-21b4-7d62-84da-2929d448b6d0": {
+        "started_at": 1791268037,
+        "completed_at": 1791268049,
+        "duration_ms": 12146,
+        "time_to_first_token_ms": 3219
+      },
+      "01a10fe6-02f1-7211-bc65-084b0439497e": {
+        "started_at": 1791268094,
+        "completed_at": 1791268111,
+        "duration_ms": 16383,
+        "time_to_first_token_ms": 4704
+      },
+      "01a10fe7-062a-7b60-841f-ac210e7f2b03": {
+        "started_at": 1791268161,
+        "completed_at": 1791268174,
+        "duration_ms": 13876,
+        "time_to_first_token_ms": 2923
+      },
+      "01a10fe7-d354-7ce1-af63-d91ce355e4df": {
+        "started_at": 1791268213,
+        "completed_at": 1791268228,
+        "duration_ms": 14890,
+        "time_to_first_token_ms": 5391
+      },
+      "01a10fe8-f13e-7801-b234-292d00ef8053": {
+        "started_at": 1791268286,
+        "completed_at": 1791268306,
+        "duration_ms": 19768,
+        "time_to_first_token_ms": 4265
+      },
+      "01a10fea-6aca-7de2-bc13-4723b102ffe6": {
+        "started_at": 1791268383,
+        "completed_at": 1791268395,
+        "duration_ms": 11829,
+        "time_to_first_token_ms": 4464
+      },
+      "01a10feb-6552-71f0-9253-61f7d934f327": {
+        "started_at": 1791268447,
+        "completed_at": 1791268463,
+        "duration_ms": 16323,
+        "time_to_first_token_ms": 5248
+      },
+      "01a10fec-ca55-71a3-9fab-0701d8f4bd82": {
+        "started_at": 1791268538,
+        "completed_at": 1791268559,
+        "duration_ms": 20561,
+        "time_to_first_token_ms": 7363
+      },
+      "01a10fee-44e1-7361-b7ae-1c10d82a341e": {
+        "started_at": 1791268635,
+        "completed_at": 1791268648,
+        "duration_ms": 12232,
+        "time_to_first_token_ms": 3613
+      },
+      "01a10fef-c382-7fa0-9c2a-bb4ca4186c5d": {
+        "started_at": 1791268733,
+        "completed_at": 1791268750,
+        "duration_ms": 16826,
+        "time_to_first_token_ms": 4183
+      },
+      "01a10ff1-cb16-73c1-9fb6-de32d657f945": {
+        "started_at": 1791268866,
+        "completed_at": 1791268880,
+        "duration_ms": 13934,
+        "time_to_first_token_ms": 4170
+      },
+      "01a10ff2-d62b-7b43-b34c-17dd50a74042": {
+        "started_at": 1791268935,
+        "completed_at": 1791268946,
+        "duration_ms": 11469,
+        "time_to_first_token_ms": 4676
+      },
+      "01a10ff8-4be5-7c32-97e1-397ff4b61ccf": {
+        "started_at": 1791269293,
+        "completed_at": 1791269312,
+        "duration_ms": 19498,
+        "time_to_first_token_ms": 3966
+      }
+    }
+  }
+}

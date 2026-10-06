@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          1.2
+        ],
+        "gripper": 1,
+        "steps": 60
+      },
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          1.2
+        ],
+        "quaternion_xyzw": [
+          0.6244,
+          0.3316,
+          -0.6244,
+          0.3316
+        ],
+        "gripper": 1,
+        "steps": 70
+      }
+    ],
+    "reason": "The frame lifted with the gripper. Raise it above the stand and turn the long insertion leg downward while maintaining the grasp."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Fresh observation 2 after your motion command, step 365, simulated time 18.25 seconds. 3 decisions have been executed; 27 model decisions and 2035 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0002/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0002/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0002/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.105,-0.228,1.20],\"gripper\":1,\"steps\":60},{\"position\":[-0.105,-0.228,1.20],\"quaternion_xyzw\":[0.6244,0.3316,-0.6244,0.3316],\"gripper\":1,\"steps\":70}],\"reason\":\"The frame lifted with the gripper. Raise it above the stand and turn the long insertion leg downward while maintaining the grasp.\"}",
+    "response_timestamp": "2026-10-06T11:17:19.939Z",
+    "message_id": "amsg_01a110ee-adc2-7582-8534-4aa6fbf5ffec",
+    "dispatch_timestamp": "2026-10-06T11:16:57.971Z",
+    "policy_wall_seconds": 21.968,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_004.txt"
+  }
+}

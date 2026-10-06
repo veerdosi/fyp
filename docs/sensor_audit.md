@@ -1,10 +1,10 @@
-# Sensor audit: LIBERO microwave task
+# Sensor audit: LIBERO and native robosuite
 
 The fresh Mac environment rendered the standard task and recorded a 40-step fixed sequence. Its action replay reproduced every flattened MuJoCo state with maximum absolute error 0.0. Evidence: `runs/smoke_001/replay_verification.json`. This is simulator verification, not task success.
 
 ## Policy and executor boundary
 
-The policy receives RGB and metric optical-axis depth from `agentview` and `robot0_eye_in_hand` at 256 by 256 pixels, end-effector position and quaternion, seven joint positions and velocities, two finger positions and velocities, and raw wrist force and torque. The force and torque sensors are present in the Panda XML, but not in LIBERO's default observation dictionary; the wrapper reads robosuite's `ee_force` and `ee_torque` properties and adds them explicitly. These measure local wrist loads including dynamics. They do not certify object acquisition.
+The policy receives RGB and metric optical-axis depth from `agentview` and `robot0_eye_in_hand` at 256 by 256 pixels, end-effector position and quaternion, seven joint velocities, two finger positions and velocities, and raw wrist force and torque. The whitelist also permits joint positions when the environment emits them; the current ToolHang snapshots do not contain that key. The saved public `observation.json` is authoritative for each run. The force and torque sensors are present in the Panda XML; the wrapper reads robosuite's `ee_force` and `ee_torque` properties and adds them explicitly. These measure local wrist loads including dynamics. They do not certify object acquisition.
 
 Camera images are flipped vertically into the conventional top-left origin. Metric depth conversion and camera calibration use robosuite's camera utilities. Pixel queries unproject depth through camera intrinsics and calibrated camera-to-world transforms. They do not identify objects. Calibration is ideal in this simulation. The moving wrist camera transform comes from simulated robot kinematics; this assumes accurate robot proprioception and known camera mounting, not an estimated object pose. No noise or calibration error is claimed to have been evaluated.
 
@@ -20,4 +20,12 @@ Every control step records the pose and finger/load measurements used by the exe
 
 Physics is paused during model calls. These pilots measure bounded robot decisions, not real-time robustness to inference delay. Sensing-only decisions count against the same policy-decision budget as motion decisions. Native agent sessions expose per-request token records and turn timing. `policy_usage.json` distinguishes policy decisions from model inference requests, which also include requests surrounding image and sensor-reading tool calls. It records a standard API-equivalent estimate using documented Astra rates, with actual account charge left unknown. A fixed non-model verification sequence uses zero model calls.
 
-See [policy_boundary.md](policy_boundary.md) for the restriction against Astra file writes, code development, or simulator-state access and its tool-log audit.
+See [policy_boundary.md](policy_boundary.md) for the boundary and tool-log audit. Astra may write and execute logged temporary calculations from public sensor inputs in its own episode calculation directory. It may not modify experiment code or access simulator-only information. This is an instructed and audited boundary, not a filesystem sandbox.
+
+## Native precision-task adapter
+
+The native robosuite adapter uses the existing Panda, OSC_POSE controller, object geometry, placement sampler and benchmark success checks. It exposes the same whitelisted camera and robot readings through the shared episode code. Object pose, frame assembly, tool-hook contact, reward and success remain private diagnostics. No task-specific grasp, alignment, insertion or recovery routine is added.
+
+`smoke_nut_square_001` and `smoke_tool_hang_001` each recorded 60 fixed control steps, including the shared 20-step initial settling period, with zero policy calls. Both action replays reproduced every saved state exactly. These checks verify the adapter and recording path; neither is a task-success demonstration.
+
+The successful `pilot_tool_hang_001` also replayed all 1855 saved states exactly. After that pilot, common logging added setup and per-command wall-time components, so subsequent runs can separate execution, policy time and operator/orchestration gaps. The same change closes an episode when its final budgeted decision is rejected, rather than leaving the server waiting. `verify_rejected_budget_001` exercised that case in the real scene with one operator request, zero policy inference and only 20 settling steps. Its action replay also has zero state error. The run contains a script to reproduce the closure check in a new directory; it is excluded from policy success statistics.

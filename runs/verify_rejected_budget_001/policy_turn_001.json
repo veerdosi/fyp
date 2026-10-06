@@ -1,0 +1,7 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [],
+    "reason": "Operator verification of rejected-decision budget closure; no robot policy invocation."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.077,
+          0.037,
+          1.075
+        ],
+        "gripper": -1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.17,
+          -0.1,
+          1.18
+        ],
+        "gripper": -1,
+        "steps": 60
+      }
+    ],
+    "reason": "The frame reached a firm depth limit with its leg inside the stand. Release it at the measured pose and withdraw to check whether the stand supports it."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Fresh observation 5 after your motion command, step 720, simulated time 36.0 seconds. 7 decisions have been executed; 23 model decisions and 1680 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0005/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0005/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0005/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.077,0.037,1.075],\"gripper\":-1,\"steps\":30},{\"position\":[-0.17,-0.10,1.18],\"gripper\":-1,\"steps\":60}],\"reason\":\"The frame reached a firm depth limit with its leg inside the stand. Release it at the measured pose and withdraw to check whether the stand supports it.\"}",
+    "response_timestamp": "2026-10-06T11:20:49.602Z",
+    "message_id": "amsg_01a110f1-e0c1-78e0-89a9-f52f8496d135",
+    "dispatch_timestamp": "2026-10-06T11:20:16.708Z",
+    "policy_wall_seconds": 32.894,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_008.txt"
+  }
+}

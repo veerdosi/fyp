@@ -2,6 +2,8 @@
 
 The selection criterion is useful room to test a communication mechanism, not difficulty alone. Astra must make meaningful physical progress; repeated errors must plausibly involve command semantics, feedback, stopping or observation handoff. Sensors, controller, limits and calculation access must match across conditions. Select the evaluation task from traces before implementing a harness, then freeze before held-out trials.
 
+The user's 2026-10-06 clarification also permits an efficiency-led task: direct Astra can succeed, yet take repeated sensing turns, unnecessary retries or excess execution time that a harness might reduce. Verified success remains necessary for a faster-completion claim. This broadens the selection criterion; it does not reinstate retired tasks against the user's request.
+
 ## Microwave demo, retired at user request
 
 `pilot_microwave_001` first satisfied native success at control step 1581 (command 17) and remained successful at the operator stop at step 1915. Astra chose all grasps, recovery, placement and closure actions. Its completion judgment remained unfinished. The saved native actions and simulator states support deterministic replay.
@@ -13,15 +15,6 @@ The user requested moving to a different, harder task without a second microwave
 ## Stacking proposal, rejected before execution
 
 The proposed LIBERO-90 two-bowl stacking task was rejected by the user. No episode was launched. The native evaluator allows placing the lower bowl in the tray before stacking; it does not require transporting an unstable stack. Precision alone had not established a connection to the proposed interface mechanisms, so this proposal supplies no selection evidence.
-
-## Drawer candidate, stopped at user request
-
-`libero_90` / `KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet_and_put_the_bowl_in_it` starts a drawer-access task and requires both an open top drawer and the bowl inside it. It adds constrained articulation before object placement. The native goals and initial states are available in the pinned LIBERO revision.
-
-Screening question: can Astra acquire the handle and make opening or placement progress, yet repeatedly persist against a constraint, lose acquisition, or act on stale geometry until the next handoff? Such a trace could motivate a generic progress or invalidation check and earlier observation. The same trace could instead show a perception, grasp-planning or controller limitation; those outcomes must not be relabeled as interface failures.
-
-Retain the task only if the causal break is observable through permitted RGB-D or robot measurements and occurs with room for recovery. Do not add task-specific grasp, articulation or recovery logic. If direct control succeeds comfortably, or cannot make meaningful progress, discard this candidate. No main task, harness or paired protocol was frozen. The drawer opened on the first pulling attempt. At the user’s request, the operator stopped the episode at step 350 after four decisions; bowl placement was not tested. This is an aborted candidate, not a benchmark failure.
-
 
 ## Existing MuJoCo precision scenes
 
@@ -39,3 +32,7 @@ Two existing robosuite 1.4.1 scenes were rendered with Panda, OSC_POSE, the same
 - `ToolHang`: insert the hook frame into the stand, then thread a tool hole onto the hook and release it. The native model uses a 12 mm mount opening and a 7.5 mm frame shaft, before the second constrained insertion. Its scorer checks assembly geometry and tool-hook contact, alignment and insertion. The existing geometry and controller are retained.
 
 ToolHang is the preferred next screening candidate because it has two physical alignment transitions and stronger native seating checks. It is a mechanical analogue of the reported failure class, not a reproduction of RoboCurve or a claimed RoboDojo score. Pilot traces must still show meaningful progress and repeatable, sensor-observable errors connected to command execution or handoff before it becomes the evaluation task. No task or harness is frozen.
+
+`pilot_tool_hang_001` completed successfully and returned a correct completion judgment in 20 decisions, 40 actual inference requests and 92.75 simulated seconds. Replay reproduces all 1855 states exactly. It contains two empty-grasp recoveries, blocked insertion and a snagged withdrawal. In the first tool grasp, approach and descent ended roughly 9 cm from their requested poses before closing continued. That gives a testable question about measured phase transitions or earlier handoff, with longer fixed execution as a required control. The first frame miss instead reached its requested closing pose and still missed: that grasp-planning error cannot be attributed solely to duration. See [the full trace analysis](pilot_tool_hang_trace.md).
+
+The pilot supports retaining ToolHang as a candidate under the user's broadened outcome criteria. It does not establish repeatability, an accuracy ceiling or any harness benefit. Screen a different initial state before selecting the task and mechanism. Future task instructions specify the larger tool hole to match the native scorer; no pose, grasp or recovery hint is added.

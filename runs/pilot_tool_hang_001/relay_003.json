@@ -1,0 +1,56 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          0.875
+        ],
+        "gripper": -1,
+        "steps": 50
+      },
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          0.815
+        ],
+        "gripper": -1,
+        "steps": 65
+      },
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          0.815
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          0.98
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "The frame remained on the table and the fingers closed fully. Retry with the finger pads lower around the frame junction and allow the descent to settle before closing."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_001",
+    "policy_visible_input": "Fresh observation 1 after your motion command, step 165, simulated time 8.25 seconds. 2 decisions have been executed; 28 model decisions and 2235 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0001/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0001/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/public/obs_0001/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.105,-0.228,0.875],\"gripper\":-1,\"steps\":50},{\"position\":[-0.105,-0.228,0.815],\"gripper\":-1,\"steps\":65},{\"position\":[-0.105,-0.228,0.815],\"gripper\":1,\"steps\":40},{\"position\":[-0.105,-0.228,0.98],\"gripper\":1,\"steps\":45}],\"reason\":\"The frame remained on the table and the fingers closed fully. Retry with the finger pads lower around the frame junction and allow the descent to settle before closing.\"}",
+    "response_timestamp": "2026-10-06T11:16:40.830Z",
+    "message_id": "amsg_01a110ee-14fd-7c00-b503-90ab4703b359",
+    "dispatch_timestamp": "2026-10-06T11:16:19.610Z",
+    "policy_wall_seconds": 21.22,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_001/policy_update_003.txt"
+  }
+}
