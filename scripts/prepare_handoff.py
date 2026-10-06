@@ -2,9 +2,11 @@
 import argparse
 import json
 from pathlib import Path
+from policy_access import computation_access
 
 parser=argparse.ArgumentParser()
 parser.add_argument('run')
+parser.add_argument('--amend-access', action='store_true')
 args=parser.parse_args()
 r=Path(args.run).resolve()
 n=len(list(r.glob('policy_turn_*.json')))
@@ -28,9 +30,11 @@ elif 'folder' in reply:
              f'and {reply["remaining_steps"]} control steps remain. '
              f'Read the permitted robot readings in {folder}/observation.json. '
              f'Inspect {folder}/agentview.png and {folder}/robot0_eye_in_hand.png. '
-             'These replace the prior images. Only that public observation folder is permitted for sensing. '
+             'These replace the prior images. Earlier public snapshots remain available for calculations. '
              'Return the next command as one JSON object only.')
 else:
     raise SystemExit('Episode finished; no further handoff needed')
+if args.amend_access:
+    message = computation_access(r) + '\n\n' + message
 (r/f'policy_update_{n+1:03d}.txt').write_text(message)
 print(message)

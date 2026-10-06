@@ -1,0 +1,9 @@
+{
+  "amendment": "policy_calculation_v1",
+  "at_observation_id": 1,
+  "at_step": 185,
+  "policy_decisions_executed": 2,
+  "source": "User instruction permits temporary policy computation on visible images, depth, calibration and robot measurements, with equal access and code/output logging.",
+  "policy_computation_folder": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_002/policy_compute",
+  "comparison_status": "Exploratory pilot; contains pre-amendment decisions and must not be pooled into a frozen-condition comparison."
+}

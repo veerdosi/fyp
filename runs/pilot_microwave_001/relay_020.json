@@ -1,0 +1,53 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.075,
+          0.08,
+          1.04
+        ],
+        "quaternion_xyzw": [
+          0.5,
+          0.5,
+          0.5,
+          -0.5
+        ],
+        "gripper": 1,
+        "steps": 55
+      },
+      {
+        "position": [
+          0.075,
+          0.245,
+          1.04
+        ],
+        "gripper": 1,
+        "steps": 65
+      },
+      {
+        "position": [
+          0.075,
+          0.08,
+          1.04
+        ],
+        "gripper": 1,
+        "steps": 40
+      }
+    ],
+    "reason": "Press the door near its free edge with the fingers pointed horizontally, then withdraw to verify that it remains closed."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_microwave_001",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0013/sense_019.json. You may cat this permitted sensor result file. The images and robot readings in obs_0013 remain current; no motion has occurred. 19 decisions have been executed, with 11 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.075,0.08,1.04],\"quaternion_xyzw\":[0.5,0.5,0.5,-0.5],\"gripper\":1,\"steps\":55},{\"position\":[0.075,0.245,1.04],\"gripper\":1,\"steps\":65},{\"position\":[0.075,0.08,1.04],\"gripper\":1,\"steps\":40}],\"reason\":\"Press the door near its free edge with the fingers pointed horizontally, then withdraw to verify that it remains closed.\"}",
+    "response_timestamp": "2026-10-06T06:42:35.550Z",
+    "message_id": "amsg_01a10ff3-259e-7662-8037-23310693e558",
+    "dispatch_timestamp": "2026-10-06T06:42:15.204Z",
+    "policy_wall_seconds": 20.346,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/policy_update_020.txt"
+  }
+}

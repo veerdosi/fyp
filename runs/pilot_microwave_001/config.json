@@ -1,0 +1,23 @@
+{
+  "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+  "suite": "libero_10",
+  "state_index": 0,
+  "seed": 100,
+  "condition": "direct_waypoints",
+  "size": 256,
+  "max_steps": 2400,
+  "max_calls": 30,
+  "code_revision": "5227e2b976ef593c34d478b424116e82dd8e9231",
+  "code_dirty": true,
+  "libero_revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "simulation_paused_during_inference": true,
+  "control_freq": 20,
+  "versions": {
+    "numpy": "1.26.4",
+    "mujoco": "3.2.7",
+    "robosuite": "1.4.1",
+    "torch": "2.14.1"
+  }
+}

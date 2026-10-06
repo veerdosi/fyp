@@ -1,0 +1,47 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.004,
+          0.21,
+          1.013
+        ],
+        "gripper": -1,
+        "steps": 30
+      },
+      {
+        "position": [
+          0.004,
+          0.1,
+          1.025
+        ],
+        "gripper": -1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.08,
+          0.08,
+          1.22
+        ],
+        "gripper": -1,
+        "steps": 45
+      }
+    ],
+    "reason": "Set the mug down at the opening and withdraw the gripper to assess its position and prepare a lower-profile push farther inside."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_microwave_001",
+    "policy_visible_input": "Fresh observation 7 after your motion command, step 955, simulated time 47.75 seconds. 11 decisions have been executed; 19 model decisions and 1445 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0007/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0007/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0007/robot0_eye_in_hand.png. These replace the prior images. Only that public observation folder is permitted for sensing. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.004,0.21,1.013],\"gripper\":-1,\"steps\":30},{\"position\":[0.004,0.1,1.025],\"gripper\":-1,\"steps\":40},{\"position\":[-0.08,0.08,1.22],\"gripper\":-1,\"steps\":45}],\"reason\":\"Set the mug down at the opening and withdraw the gripper to assess its position and prepare a lower-profile push farther inside.\"}",
+    "response_timestamp": "2026-10-06T06:30:29.301Z",
+    "message_id": "amsg_01a10fe8-10b5-7591-8ece-4489f5c370f0",
+    "dispatch_timestamp": "2026-10-06T06:30:13.579Z",
+    "policy_wall_seconds": 15.722,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/policy_update_012.txt"
+  }
+}

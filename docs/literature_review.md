@@ -118,4 +118,4 @@ The project should not claim any of these as new.
 
 ## Relation to the local experiment
 
-The local LIBERO setup now renders and replays a fixed native-action episode. One Astra direct-control pilot at medium effort is in progress. Its initial-state settling issue is a protocol observation, not evidence about the cited systems or a communication-harness gain. No paired result or revised theoretical claim has been established yet. Current implementation details and exclusions are recorded in [sensor_audit.md](sensor_audit.md).
+The local LIBERO setup renders and replays fixed native-action episodes. Astra at medium effort achieved native task success on the microwave pilot and recovered from empty grasps and blocked insertion. The user requested a different task rather than another microwave pilot. The initial-state settling issue is a protocol observation, not evidence about the cited systems or a communication-harness gain. No paired result or revised theoretical claim has been established yet. Current implementation details and exclusions are recorded in [sensor_audit.md](sensor_audit.md).

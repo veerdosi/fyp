@@ -1,0 +1,68 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.005,
+          0.04,
+          1.11
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          0.005,
+          0.04,
+          0.955
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          0.005,
+          0.04,
+          0.955
+        ],
+        "gripper": 1,
+        "steps": 30
+      },
+      {
+        "position": [
+          0.005,
+          0.04,
+          1.12
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "Approach the yellow and white mug from above, close the fingers around its upper body, and lift to check acquisition."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_microwave_002",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_002/public/obs_0000/sense_001.json. You may cat this permitted sensor result file. The images and robot readings in obs_0000 remain current; no motion has occurred. 1 decisions have been executed, with 29 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.005,0.04,1.11],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":45},{\"position\":[0.005,0.04,0.955],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":45},{\"position\":[0.005,0.04,0.955],\"gripper\":1,\"steps\":30},{\"position\":[0.005,0.04,1.12],\"gripper\":1,\"steps\":45}],\"reason\":\"Approach the yellow and white mug from above, close the fingers around its upper body, and lift to check acquisition.\"}",
+    "response_timestamp": "2026-10-06T06:40:44.762Z",
+    "message_id": "amsg_01a10ff1-74da-7e71-bad2-539a65738ed8",
+    "dispatch_timestamp": "2026-10-06T06:40:19.361Z",
+    "policy_wall_seconds": 25.401,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_002/policy_update_002.txt"
+  }
+}

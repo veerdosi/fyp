@@ -1,0 +1,38 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.01,
+          0.065,
+          1.025
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.07,
+          0.035,
+          1.25
+        ],
+        "gripper": 1,
+        "steps": 60
+      }
+    ],
+    "reason": "Release pressure and inspect the remaining door gap before choosing the final closing contact."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_microwave_001",
+    "policy_visible_input": "Fresh observation 12 after your motion command, step 1655, simulated time 82.75 seconds. 17 decisions have been executed; 13 model decisions and 745 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0012/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0012/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0012/robot0_eye_in_hand.png. These replace the prior images. Only that public observation folder is permitted for sensing. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.01,0.065,1.025],\"gripper\":1,\"steps\":40},{\"position\":[-0.07,0.035,1.25],\"gripper\":1,\"steps\":60}],\"reason\":\"Release pressure and inspect the remaining door gap before choosing the final closing contact.\"}",
+    "response_timestamp": "2026-10-06T06:39:25.080Z",
+    "message_id": "amsg_01a10ff0-3d98-7bd2-ac57-5c2528a88493",
+    "dispatch_timestamp": "2026-10-06T06:38:53.815Z",
+    "policy_wall_seconds": 31.265,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/policy_update_018.txt"
+  }
+}

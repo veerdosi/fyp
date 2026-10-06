@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 200,
+        "v": 179
+      },
+      {
+        "camera": "agentview",
+        "u": 216,
+        "v": 143
+      },
+      {
+        "camera": "agentview",
+        "u": 202,
+        "v": 119
+      },
+      {
+        "camera": "agentview",
+        "u": 225,
+        "v": 163
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 40,
+        "v": 173
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 36,
+        "v": 101
+      }
+    ],
+    "reason": "Measure the remaining door angle and handle position so the final push seats the door without pressing on the appliance body."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_microwave_001",
+    "policy_visible_input": "Fresh observation 13 after your motion command, step 1755, simulated time 87.75 seconds. 18 decisions have been executed; 12 model decisions and 645 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0013/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0013/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0013/robot0_eye_in_hand.png. These replace the prior images. Only that public observation folder is permitted for sensing. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":200,\"v\":179},{\"camera\":\"agentview\",\"u\":216,\"v\":143},{\"camera\":\"agentview\",\"u\":202,\"v\":119},{\"camera\":\"agentview\",\"u\":225,\"v\":163},{\"camera\":\"robot0_eye_in_hand\",\"u\":40,\"v\":173},{\"camera\":\"robot0_eye_in_hand\",\"u\":36,\"v\":101}],\"reason\":\"Measure the remaining door angle and handle position so the final push seats the door without pressing on the appliance body.\"}",
+    "response_timestamp": "2026-10-06T06:41:34.754Z",
+    "message_id": "amsg_01a10ff2-3822-72b3-9b4f-bde1081c4716",
+    "dispatch_timestamp": "2026-10-06T06:41:06.835Z",
+    "policy_wall_seconds": 27.919,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/policy_update_019.txt"
+  }
+}

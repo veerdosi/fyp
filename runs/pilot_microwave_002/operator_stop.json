@@ -1,0 +1,8 @@
+{
+  "operator_stop_reason": "user requested different, harder task",
+  "benchmark_final_success": false,
+  "first_success_step": null,
+  "first_success_command": null,
+  "interpretation": "aborted exploratory pilot, not a scored failure",
+  "frozen_evaluation_eligible": false
+}

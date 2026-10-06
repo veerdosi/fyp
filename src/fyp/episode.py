@@ -35,6 +35,7 @@ class Episode:
         self.folder.mkdir(parents=True, exist_ok=False)
         self.public = self.folder / 'public'
         self.public.mkdir()
+        (self.folder / 'policy_compute').mkdir()
         self.t0 = time.monotonic()
         self.steps = self.calls = self.handoff = 0
         self.closed = False
@@ -45,11 +46,14 @@ class Episode:
         config = dict(task=task, suite=suite, state_index=state_index, seed=seed,
                       condition=condition, size=size, max_steps=max_steps, max_calls=max_calls,
                       settle_steps=settle_steps,
+                      computation_protocol='policy_calculation_v1',
+                      calculation_timeout_seconds=30,
                       code_revision=revision(),
                       code_dirty=bool(subprocess.check_output(
                           ['git','status','--porcelain','--','src','scripts','requirements.in','requirements.lock'], cwd=ROOT)),
                       source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
-                                     for p in sorted((ROOT/'src').rglob('*.py'))},
+                                     for directory in ['src','scripts']
+                                     for p in sorted((ROOT/directory).rglob('*.py'))},
                       libero_revision=revision(ROOT / 'vendor/LIBERO'),
                       model=None if condition=='fixed_sequence' else 'gpt-6-astra',
                       reasoning_effort=None if condition=='fixed_sequence' else 'medium',

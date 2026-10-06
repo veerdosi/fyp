@@ -1,0 +1,62 @@
+{
+  "observation_id": 7,
+  "step": 955,
+  "simulated_seconds": 47.75,
+  "model_calls": 11,
+  "remaining_steps": 1445,
+  "remaining_model_calls": 19,
+  "proprioception": {
+    "robot0_eef_pos": [
+      0.004306927007531757,
+      0.21276173272286775,
+      1.0163202936047673
+    ],
+    "robot0_eef_quat": [
+      0.7122132023871366,
+      0.7019117816461707,
+      0.008491885068409553,
+      -0.00030499137957961796
+    ],
+    "robot0_joint_pos": [
+      0.12375827563928203,
+      0.7458010305176818,
+      0.21791816075849904,
+      -1.6014948222407768,
+      -0.19370135630476554,
+      2.3407587518892123,
+      -0.3517358578803655
+    ],
+    "robot0_joint_vel": [
+      1.9537152565080566e-06,
+      0.00014314062756262563,
+      -3.193044899463636e-05,
+      -0.0007795268828979004,
+      -7.1123364525060795e-06,
+      0.002645868932613885,
+      0.0009863007353038246
+    ],
+    "robot0_gripper_qpos": [
+      0.007755255765456649,
+      -0.008900944401348518
+    ],
+    "robot0_gripper_qvel": [
+      0.00021482593312404405,
+      0.00024352613591870138
+    ],
+    "robot0_eef_force": [
+      -11.405431000956492,
+      20.909419330195586,
+      6.187504955287241
+    ],
+    "robot0_eef_torque": [
+      0.0910011234029075,
+      0.9509342679407394,
+      -1.6048758104527379
+    ]
+  },
+  "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0007",
+  "cameras": {
+    "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0007/agentview.png",
+    "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_microwave_001/public/obs_0007/robot0_eye_in_hand.png"
+  }
+}

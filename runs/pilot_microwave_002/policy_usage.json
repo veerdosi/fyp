@@ -1,0 +1,66 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "policy_decisions": 3,
+  "model_inference_requests": 6,
+  "agent_tool_calls": 3,
+  "completed_policy_turns": 3,
+  "policy_wall_seconds": 47.107,
+  "token_usage": {
+    "input_tokens": 206992,
+    "cached_input_tokens": 167424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 902,
+    "reasoning_output_tokens": 150,
+    "total_tokens": 207894
+  },
+  "api_equivalent_standard_cost_usd": 0.608204,
+  "actual_account_charge_usd": null,
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "accessed_date": "2026-10-06",
+    "per_million_tokens_usd": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+  },
+  "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/06/rollout-2026-10-06T14-39-24-01a10ff0-3c25-76c2-9a63-11da779e5326.jsonl",
+  "model_effort_verification": {
+    "01a10ff0-3cbf-7463-b774-fbb47c76ae1d": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a10ff1-11a9-74b0-ae22-7c068d2bfc13": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a10ff8-7fdc-7761-ac07-3e20ac8dc717": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    }
+  },
+  "turn_timing": {
+    "01a10ff0-3cbf-7463-b774-fbb47c76ae1d": {
+      "started_at": 1791268764,
+      "completed_at": 1791268782,
+      "duration_ms": 18091,
+      "time_to_first_token_ms": 8300
+    },
+    "01a10ff1-11a9-74b0-ae22-7c068d2bfc13": {
+      "started_at": 1791268819,
+      "completed_at": 1791268834,
+      "duration_ms": 14970,
+      "time_to_first_token_ms": 5401
+    },
+    "01a10ff8-7fdc-7761-ac07-3e20ac8dc717": {
+      "started_at": 1791269306,
+      "completed_at": 1791269320,
+      "duration_ms": 14046,
+      "time_to_first_token_ms": 3830
+    }
+  }
+}

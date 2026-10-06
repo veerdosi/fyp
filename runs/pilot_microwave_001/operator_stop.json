@@ -1,0 +1,8 @@
+{
+  "operator_stop_reason": "user requested different, harder task",
+  "benchmark_final_success": true,
+  "first_success_step": 1581,
+  "first_success_command": 17,
+  "interpretation": "successful demo; completion judgment not finished by policy",
+  "frozen_evaluation_eligible": false
+}
