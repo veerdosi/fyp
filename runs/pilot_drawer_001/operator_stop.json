@@ -1,0 +1,5 @@
+{
+  "operator_stop_reason": "user requested a harder task and LIBERO-PRO / RoboDojo research",
+  "interpretation": "aborted screening candidate; drawer opened on first pull, bowl placement untested; not a benchmark failure",
+  "frozen_evaluation_eligible": false
+}

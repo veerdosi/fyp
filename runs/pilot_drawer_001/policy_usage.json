@@ -1,0 +1,76 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "policy_decisions": 4,
+  "model_inference_requests": 8,
+  "agent_tool_calls": 4,
+  "completed_policy_turns": 4,
+  "policy_wall_seconds": 65.823,
+  "token_usage": {
+    "input_tokens": 281945,
+    "cached_input_tokens": 274304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1262,
+    "reasoning_output_tokens": 366,
+    "total_tokens": 283207
+  },
+  "api_equivalent_standard_cost_usd": 0.413814,
+  "actual_account_charge_usd": null,
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "accessed_date": "2026-10-06",
+    "per_million_tokens_usd": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+  },
+  "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/06/rollout-2026-10-06T14-54-02-01a10ffd-a0d6-7b22-90e3-b2a9b7079b47.jsonl",
+  "model_effort_verification": {
+    "01a10ffd-a187-7e00-a438-b21fa2b01f85": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a10ffe-3e77-7e30-a238-f95385565e40": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a10fff-2bf9-7640-a25c-a007139e78f1": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11000-0ec1-7f22-960d-9bdd15153433": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    }
+  },
+  "turn_timing": {
+    "01a10ffd-a187-7e00-a438-b21fa2b01f85": {
+      "started_at": 1791269642,
+      "completed_at": 1791269663,
+      "duration_ms": 20349,
+      "time_to_first_token_ms": 10101
+    },
+    "01a10ffe-3e77-7e30-a238-f95385565e40": {
+      "started_at": 1791269682,
+      "completed_at": 1791269696,
+      "duration_ms": 13765,
+      "time_to_first_token_ms": 2901
+    },
+    "01a10fff-2bf9-7640-a25c-a007139e78f1": {
+      "started_at": 1791269743,
+      "completed_at": 1791269757,
+      "duration_ms": 13937,
+      "time_to_first_token_ms": 4266
+    },
+    "01a11000-0ec1-7f22-960d-9bdd15153433": {
+      "started_at": 1791269801,
+      "completed_at": 1791269819,
+      "duration_ms": 17772,
+      "time_to_first_token_ms": 3913
+    }
+  }
+}

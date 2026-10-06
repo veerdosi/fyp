@@ -44,6 +44,7 @@ class Episode:
         self.initial = initial
         np.save(self.folder / 'initial_state.npy', initial)
         config = dict(task=task, suite=suite, state_index=state_index, seed=seed,
+                      environment_backend='robosuite' if suite=='robosuite' else 'LIBERO',
                       condition=condition, size=size, max_steps=max_steps, max_calls=max_calls,
                       settle_steps=settle_steps,
                       computation_protocol='policy_calculation_v1',
@@ -54,7 +55,7 @@ class Episode:
                       source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
                                      for directory in ['src','scripts']
                                      for p in sorted((ROOT/directory).rglob('*.py'))},
-                      libero_revision=revision(ROOT / 'vendor/LIBERO'),
+                      libero_revision=None if suite=='robosuite' else revision(ROOT / 'vendor/LIBERO'),
                       model=None if condition=='fixed_sequence' else 'gpt-6-astra',
                       reasoning_effort=None if condition=='fixed_sequence' else 'medium',
                       simulation_paused_during_inference=True, control_freq=20,
@@ -123,6 +124,8 @@ class Episode:
 
     def goal_predicates(self):
         # Scoring only. No executor or public input reads these values.
+        if self.config['suite'] == 'robosuite':
+            return self.env.diagnostic_goals()
         return [{'predicate':state, 'satisfied':bool(self.env.env._eval_predicate(state))}
                 for state in self.env.env.parsed_problem['goal_state']]
 

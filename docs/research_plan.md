@@ -79,3 +79,5 @@ Initialize Git and commit meaningful milestones. For every run, record the code 
 - If none helps, inspect whether the model chose the wrong objective or the controller could not realize it before adding interface features.
 
 The final research account should return to the initial conjecture: retain supported mechanisms, remove unsupported ones, and state which failure conditions each interface fits, including counterexamples. A second foundation model, more tasks, or physical hardware may strengthen a later validation; none is needed merely to chase a positive result.
+
+The user’s subsequent direction is to seek a harder manipulation scene from reported failure patterns, preferably already implemented in MuJoCo. ToolHang and NutAssemblySquare were audited locally; ToolHang is the next screening candidate. This changes the simulator task, not the shared Panda/OSC_POSE execution interface. The original LIBERO starting requirement has been fulfilled. See [task_screening.md](task_screening.md) for the evidence and exclusions.

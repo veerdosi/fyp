@@ -20,4 +20,4 @@ The main agent owns implementation and analysis. Every robot-policy episode must
 
 Git milestone `0998edb` records the provisional starting documents. The first target is the standard LIBERO-10 yellow-and-white mug / microwave task specified in the goal file.
 
-The microwave task is retired from further screening at the user’s request. No stacking episode was launched; that proposal was rejected. A closed-drawer opening and bowl-placement task is the next screening candidate, with no evaluation freeze or harness implementation yet. See [task_screening.md](task_screening.md).
+The microwave task is retired from further screening at the user’s request. No stacking episode was launched; that proposal was rejected. The drawer candidate was also stopped at the user’s request after Astra opened it on its first pull. Existing native MuJoCo insertion scenes were then audited; ToolHang is the preferred next screening candidate. Two 60-step native-task smoke traces replayed exactly. There is no evaluation freeze or harness implementation yet. See [task_screening.md](task_screening.md).

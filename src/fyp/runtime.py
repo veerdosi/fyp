@@ -28,6 +28,9 @@ def initialize_config():
 
 
 def make_env(task=TASK, suite='libero_10', state_index=0, seed=0, size=256):
+    if suite == 'robosuite':
+        from .robosuite_runtime import make_native_env
+        return make_native_env(task, state_index, seed, size, CAMERAS)
     initialize_config()
     import numpy as np
     import torch

@@ -1,0 +1,41 @@
+{
+  "task": "ToolHang",
+  "suite": "robosuite",
+  "state_index": 0,
+  "seed": 300,
+  "condition": "fixed_sequence",
+  "size": 256,
+  "max_steps": 2400,
+  "max_calls": 30,
+  "settle_steps": 20,
+  "computation_protocol": "policy_calculation_v1",
+  "calculation_timeout_seconds": 30,
+  "code_revision": "3af751d89d82f79ff99079a35dc644d7d08d0287",
+  "code_dirty": true,
+  "source_hashes": {
+    "src/fyp/__init__.py": "04f95911a59d72d6023224ee385d43870b28b640030b0beeec6a25f0061a5fc8",
+    "src/fyp/episode.py": "5192bcb16dd45107aab6669b2d02c6fbfb32633f370d54c30e8299331ef2d243",
+    "src/fyp/robosuite_runtime.py": "f0fd8707aa36e96e861bc50060ca189010adfda0f3b66c5912b8bf4c1f87b0d0",
+    "src/fyp/runtime.py": "875e5bfba2f67b1f7b1e974b4ebef2ecb1d189a7846bba92a63ad8cbf9e8a4fc",
+    "scripts/episode.py": "3fa67f734b25afcbe4c6391b7cbcc7f548d59465a01e5c6e2938ea13ff89a1a2",
+    "scripts/export_policy_usage.py": "33d0a1de74d2a9ef580d7038270efb438db1cefd21a5f4ba779b2ebe2e66f945",
+    "scripts/policy_access.py": "1af0dbe8b9d47a3b9d9bc425592947b0481d979dc8dffdf092102de854bdf822",
+    "scripts/policy_calc.py": "d76aaf96d6e56face2fea463e0bcddaaf41cfec2071dc55fcab3af6b0a3b5f6f",
+    "scripts/prepare_handoff.py": "ff1c6152111da3dba34e33af19c343fd55edbcb329ed5ca951eb423e204ca1f5",
+    "scripts/prepare_policy.py": "572ffea7add6459d84a367cdcb14c5109f1dbbae0ec626763f685bb6fc22883c",
+    "scripts/probe.py": "2b38e2942f9ff421e0e179290e4f91009b16234c0e7da5e4cd517428c61da89a",
+    "scripts/relay_policy.py": "622111c8e61b6c068645565463416b65b2900e28a2967af42b2de51355a1023d",
+    "scripts/send_command.py": "7687c442a32ca5445d24ff08e545651d2bbc3a9b95acefff999d9478b20a80ce"
+  },
+  "libero_revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+  "model": null,
+  "reasoning_effort": null,
+  "simulation_paused_during_inference": true,
+  "control_freq": 20,
+  "versions": {
+    "numpy": "1.26.4",
+    "mujoco": "3.2.7",
+    "robosuite": "1.4.1",
+    "torch": "2.14.1"
+  }
+}

@@ -119,3 +119,5 @@ The project should not claim any of these as new.
 ## Relation to the local experiment
 
 The local LIBERO setup renders and replays fixed native-action episodes. Astra at medium effort achieved native task success on the microwave pilot and recovered from empty grasps and blocked insertion. The user requested a different task rather than another microwave pilot. The initial-state settling issue is a protocol observation, not evidence about the cited systems or a communication-harness gain. No paired result or revised theoretical claim has been established yet. Current implementation details and exclusions are recorded in [sensor_audit.md](sensor_audit.md).
+
+For task screening, RoboCurve’s puzzle result and one raw stage-3 transcript were rechecked on 2026-10-06. The official RoboDojo precision-task source and LIBERO-PRO perturbation configuration were also inspected. These sources motivate testing a native MuJoCo insertion analogue; their published failure rates do not transfer automatically to this setup. Other claims in this provisional review remain to be rechecked.

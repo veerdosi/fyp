@@ -39,3 +39,5 @@ The runnable implementation currently exposes direct absolute poses and up to fo
 The first microwave pilot achieved native task success after model-selected grasp and insertion recovery. A wrist load or finger reading alone did not establish acquisition. Its unsettled initial measurement prompted a shared settling correction. No harness benefit has been measured, and H1-H4 remain untested. The user requested a different task; screening must establish an interface-related failure before the main task is selected. See [sensor_audit.md](sensor_audit.md) for the actual sensor boundary.
 
 Astra may perform logged temporary calculations from the same policy-visible sensors in every condition. Those calculations select its own targets and waypoints; they do not modify the executor. See [policy_boundary.md](policy_boundary.md).
+
+Native robosuite precision scenes now reuse the same pose/waypoint executor and sensor handoff. The environment adapter supplies replay state and private benchmark scoring; it adds no grasp, alignment, insertion or recovery routine. ToolHang is being screened before selecting any harness behavior.

@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.02,
+          -0.075,
+          1.1
+        ],
+        "quaternion_xyzw": [
+          0.7071068,
+          0,
+          0,
+          0.7071068
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          0.02,
+          -0.192,
+          1.1
+        ],
+        "quaternion_xyzw": [
+          0.7071068,
+          0,
+          0,
+          0.7071068
+        ],
+        "gripper": -1,
+        "steps": 45
+      }
+    ],
+    "reason": "Approach the top drawer handle from its front with the fingers open above and below the horizontal handle."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_drawer_001",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_drawer_001/public/obs_0000/sense_001.json. You may cat this permitted sensor result file. The images and robot readings in obs_0000 remain current; no motion has occurred. 1 decisions have been executed, with 29 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.02,-0.075,1.10],\"quaternion_xyzw\":[0.7071068,0,0,0.7071068],\"gripper\":-1,\"steps\":60},{\"position\":[0.02,-0.192,1.10],\"quaternion_xyzw\":[0.7071068,0,0,0.7071068],\"gripper\":-1,\"steps\":45}],\"reason\":\"Approach the top drawer handle from its front with the fingers open above and below the horizontal handle.\"}",
+    "response_timestamp": "2026-10-06T06:55:05.190Z",
+    "message_id": "amsg_01a10ffe-95e6-7db0-a26b-f994d6f6b7dd",
+    "dispatch_timestamp": "2026-10-06T06:54:42.794Z",
+    "policy_wall_seconds": 22.396,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_drawer_001/policy_update_002.txt"
+  }
+}

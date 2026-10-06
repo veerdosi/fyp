@@ -16,8 +16,16 @@ if obs['model_calls']!=0:
 root=Path(__file__).resolve().parents[1]
 prefix=(root/'docs/policy_prompt_template.txt').read_text().rstrip()
 prefix=prefix.replace('pilot_microwave_001',run.name)
-bddl=root/'vendor/LIBERO/libero/libero/bddl_files'/config['suite']/(config['task']+'.bddl')
-language=re.search(r'\(:language\s+([^\n]+)\)', bddl.read_text()).group(1).strip()
+if config['suite'] == 'robosuite':
+    import sys
+    sys.path.insert(0, str(root/'src'))
+    from fyp.robosuite_runtime import TASK_INSTRUCTIONS
+    language=TASK_INSTRUCTIONS[config['task']]
+    prefix=prefix.replace('standard LIBERO Panda robot', 'standard robosuite Panda robot')
+else:
+    bddl=root/'vendor/LIBERO/libero/libero/bddl_files'/config['suite']/(config['task']+'.bddl')
+    language=re.search(r'\(:language\s+([^\n]+)\)', bddl.read_text()).group(1).strip()
+language=language.rstrip('.')
 prefix=re.sub(r'Task: .*?\. Control the standard',
               f'Task: {language}. Control the standard', prefix, count=1)
 prefix=prefix.replace('You decide object selection, grasp, transport, placement, door closure, recovery and completion.',

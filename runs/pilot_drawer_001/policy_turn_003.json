@@ -1,0 +1,47 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.02,
+          -0.202,
+          1.097
+        ],
+        "gripper": -1,
+        "steps": 20
+      },
+      {
+        "position": [
+          0.02,
+          -0.202,
+          1.097
+        ],
+        "gripper": 1,
+        "steps": 30
+      },
+      {
+        "position": [
+          0.02,
+          -0.025,
+          1.097
+        ],
+        "gripper": 1,
+        "steps": 65
+      }
+    ],
+    "reason": "Close the fingers around the top handle and pull straight outward to open the drawer."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_drawer_001",
+    "policy_visible_input": "Fresh observation 1 after your motion command, step 125, simulated time 6.25 seconds. 2 decisions have been executed; 28 model decisions and 2275 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_drawer_001/public/obs_0001/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_drawer_001/public/obs_0001/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_drawer_001/public/obs_0001/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.02,-0.202,1.097],\"gripper\":-1,\"steps\":20},{\"position\":[0.02,-0.202,1.097],\"gripper\":1,\"steps\":30},{\"position\":[0.02,-0.025,1.097],\"gripper\":1,\"steps\":65}],\"reason\":\"Close the fingers around the top handle and pull straight outward to open the drawer.\"}",
+    "response_timestamp": "2026-10-06T06:56:10.333Z",
+    "message_id": "amsg_01a10fff-945d-7fd1-9e9e-0816b379035a",
+    "dispatch_timestamp": "2026-10-06T06:55:43.601Z",
+    "policy_wall_seconds": 26.732,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_drawer_001/policy_update_003.txt"
+  }
+}
