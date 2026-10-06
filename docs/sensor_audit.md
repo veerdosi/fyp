@@ -18,4 +18,6 @@ Every control step records the pose and finger/load measurements used by the exe
 
 ## Pilot scope
 
-Physics is paused during model calls. These pilots measure bounded robot decisions, not real-time robustness to inference delay. Sensing-only decisions count against the same model-call budget as motion decisions. The collaboration model interface does not expose monetary cost or billable token usage; cost will be reported as unavailable, not zero. A fixed non-model verification sequence uses zero model calls.
+Physics is paused during model calls. These pilots measure bounded robot decisions, not real-time robustness to inference delay. Sensing-only decisions count against the same policy-decision budget as motion decisions. Native agent sessions expose per-request token records and turn timing. `policy_usage.json` distinguishes policy decisions from model inference requests, which also include requests surrounding image and sensor-reading tool calls. It records a standard API-equivalent estimate using documented Astra rates, with actual account charge left unknown. A fixed non-model verification sequence uses zero model calls.
+
+See [policy_boundary.md](policy_boundary.md) for the restriction against Astra file writes, code development, or simulator-state access and its tool-log audit.
