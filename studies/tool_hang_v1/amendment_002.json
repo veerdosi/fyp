@@ -1,0 +1,27 @@
+{
+  "amendment_id": "002",
+  "date": "2026-10-07",
+  "requested_by": "user",
+  "user_request": "right now i feel lets do 2, only do 3 if you think its really required cause astra calls are costly for us",
+  "decision": "Use two matched states / six episodes now. Future experiments default to two; a third needs a specific recorded design uncertainty.",
+  "original_protocol_sha256": "ab04991b89ff2e85b3f9fe21be9a275baff30dc20b32edaabc8725336511a0cf",
+  "previous_paired_state_count": 3,
+  "revised_paired_state_count": 2,
+  "previous_episode_count": 9,
+  "revised_episode_count": 6,
+  "removed_unstarted_paired_state": 3,
+  "partial_trace_available_at_change": "First timed baseline is underway; 22 decisions executed, no held-out episode completed. Partial observations have been seen.",
+  "unchanged": [
+    "conditions",
+    "hypotheses",
+    "primary comparison",
+    "controller",
+    "source hashes",
+    "policy materials",
+    "sensor/calculation access",
+    "model/effort",
+    "episode budgets",
+    "metric definitions"
+  ],
+  "scope": "Explicit user budget decision, not an outcome-dependent stopping rule. All six remaining scheduled episodes will be reported."
+}
