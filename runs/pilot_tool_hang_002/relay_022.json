@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 106,
+        "v": 76
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 148,
+        "v": 76
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 128,
+        "v": 55
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 128,
+        "v": 97
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 136,
+        "v": 82
+      },
+      {
+        "camera": "agentview",
+        "u": 149,
+        "v": 126
+      }
+    ],
+    "reason": "Check the actual hole center after rotation against the hook tip before threading it; grasp settling can shift the tool."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_002",
+    "policy_visible_input": "Fresh observation 14 after your motion command, step 1885, simulated time 94.25 seconds. 21 decisions have been executed; 9 model decisions and 515 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0014/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0014/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0014/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"robot0_eye_in_hand\",\"u\":106,\"v\":76},{\"camera\":\"robot0_eye_in_hand\",\"u\":148,\"v\":76},{\"camera\":\"robot0_eye_in_hand\",\"u\":128,\"v\":55},{\"camera\":\"robot0_eye_in_hand\",\"u\":128,\"v\":97},{\"camera\":\"robot0_eye_in_hand\",\"u\":136,\"v\":82},{\"camera\":\"agentview\",\"u\":149,\"v\":126}],\"reason\":\"Check the actual hole center after rotation against the hook tip before threading it; grasp settling can shift the tool.\"}",
+    "response_timestamp": "2026-10-06T12:01:53.731Z",
+    "message_id": "amsg_01a11117-7a43-7f83-86d5-d924568dc833",
+    "dispatch_timestamp": "2026-10-06T12:01:25.121Z",
+    "policy_wall_seconds": 28.61,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/policy_update_022.txt"
+  }
+}

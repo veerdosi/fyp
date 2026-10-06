@@ -1,0 +1,12 @@
+{
+  "role": "exploratory_task_screening",
+  "paired_evaluation": false,
+  "prospective_question": "Check whether substantial waypoint non-arrival before a gripper transition or sustained blocked motion recurs on an independent placement, while Astra makes meaningful progress.",
+  "task_instruction_change": "Explicit larger hole, matching the native scorer; original pilot 001 prompt preserved.",
+  "common_limits": {
+    "robot_decisions": 30,
+    "control_steps": 2400,
+    "control_freq": 20,
+    "calculation_timeout_seconds": 30
+  }
+}

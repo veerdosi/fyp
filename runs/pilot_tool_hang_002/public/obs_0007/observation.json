@@ -1,0 +1,53 @@
+{
+  "observation_id": 7,
+  "step": 870,
+  "simulated_seconds": 43.5,
+  "model_calls": 10,
+  "remaining_steps": 1530,
+  "remaining_model_calls": 20,
+  "proprioception": {
+    "robot0_eef_pos": [
+      -0.2499070913673788,
+      -0.07010664426346216,
+      1.1197934756492252
+    ],
+    "robot0_eef_quat": [
+      0.6424532275717049,
+      0.11500265962722231,
+      -0.7148514088161024,
+      0.25102928509438194
+    ],
+    "robot0_joint_vel": [
+      -0.00011777861217580607,
+      -2.0512111944255294e-05,
+      0.00013710883345305604,
+      -7.562151253665478e-06,
+      7.385209912259085e-06,
+      -5.2289252796092904e-05,
+      0.00011154748643296991
+    ],
+    "robot0_gripper_qpos": [
+      0.03977834402508112,
+      -0.04000658943437586
+    ],
+    "robot0_gripper_qvel": [
+      5.352904182285541e-06,
+      -5.156529935199153e-09
+    ],
+    "robot0_eef_force": [
+      -0.8515763941200478,
+      -5.257387502602854,
+      0.7973228271427473
+    ],
+    "robot0_eef_torque": [
+      0.7287247128505687,
+      -0.11645230434632169,
+      0.01047617589415926
+    ]
+  },
+  "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0007",
+  "cameras": {
+    "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0007/agentview.png",
+    "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0007/robot0_eye_in_hand.png"
+  }
+}

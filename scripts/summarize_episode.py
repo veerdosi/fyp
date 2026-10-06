@@ -70,13 +70,17 @@ def summarize(run):
         result['wall_time_components'] = {
             'setup_and_settling_seconds': config['setup_wall_seconds'],
             'command_execution_and_recording_seconds': execution_seconds,
-            'policy_dispatch_to_response_seconds': policy_seconds,
+            'policy_dispatch_to_delivered_response_seconds': policy_seconds,
             'elapsed_through_last_recorded_command_seconds': elapsed,
             'residual_operator_and_orchestration_seconds': elapsed-config['setup_wall_seconds']-execution_seconds-policy_seconds,
-            'note': 'Measured host wall time; policy dispatch time includes tool use. Simulated control time is separate. Residual is not model latency.'}
+            'note': 'Dispatch-to-delivered-response includes message delivery delay. Native completed-turn duration is separately exported in policy_usage. Simulated control time is separate; residual is not model latency.'}
     usage_path = run / 'policy_usage.json'
     if usage_path.exists():
         result['policy_usage'] = json.loads(usage_path.read_text())
+        if 'wall_time_components' in result:
+            native = result['policy_usage']['policy_wall_seconds']
+            result['wall_time_components']['native_completed_policy_turn_seconds'] = native
+            result['wall_time_components']['delivered_response_minus_native_turn_seconds'] = policy_seconds-native
     return result
 
 

@@ -1,0 +1,47 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0727,
+          0.0457,
+          0.974
+        ],
+        "gripper": 1,
+        "steps": 50
+      },
+      {
+        "position": [
+          -0.0727,
+          0.0457,
+          0.974
+        ],
+        "gripper": -1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.25,
+          -0.07,
+          1.12
+        ],
+        "gripper": -1,
+        "steps": 100
+      }
+    ],
+    "reason": "Seat the frame farther into the stand, release the block, and withdraw to inspect whether the assembly remains upright."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_002",
+    "policy_visible_input": "Fresh observation 6 after your motion command, step 690, simulated time 34.5 seconds. 9 decisions have been executed; 21 model decisions and 1710 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0006/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0006/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0006/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.0727,0.0457,0.974],\"gripper\":1,\"steps\":50},{\"position\":[-0.0727,0.0457,0.974],\"gripper\":-1,\"steps\":30},{\"position\":[-0.25,-0.07,1.12],\"gripper\":-1,\"steps\":100}],\"reason\":\"Seat the frame farther into the stand, release the block, and withdraw to inspect whether the assembly remains upright.\"}",
+    "response_timestamp": "2026-10-06T11:49:37.313Z",
+    "message_id": "amsg_01a1110c-3da0-7421-a5a0-29ec7e2794ba",
+    "dispatch_timestamp": "2026-10-06T11:49:05.643Z",
+    "policy_wall_seconds": 31.67,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/policy_update_010.txt"
+  }
+}

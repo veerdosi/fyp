@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.1004,
+          0.0406,
+          1.17
+        ],
+        "quaternion_xyzw": [
+          0.65327,
+          0.17568,
+          -0.70981,
+          0.19633
+        ],
+        "gripper": 1,
+        "steps": 65
+      },
+      {
+        "position": [
+          -0.1004,
+          0.0406,
+          1.055
+        ],
+        "gripper": 1,
+        "steps": 80
+      }
+    ],
+    "reason": "Straighten the current shaft axis, align it to the stand center and insert it while holding the regrasped frame."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_002",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0008/sense_013.json. You may cat this permitted sensor result file. The images and robot readings in obs_0008 remain current; no motion has occurred. 13 decisions have been executed, with 17 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.1004,0.0406,1.17],\"quaternion_xyzw\":[0.65327,0.17568,-0.70981,0.19633],\"gripper\":1,\"steps\":65},{\"position\":[-0.1004,0.0406,1.055],\"gripper\":1,\"steps\":80}],\"reason\":\"Straighten the current shaft axis, align it to the stand center and insert it while holding the regrasped frame.\"}",
+    "response_timestamp": "2026-10-06T11:53:55.040Z",
+    "message_id": "amsg_01a11110-2c60-7350-bcc6-5288bb713d7e",
+    "dispatch_timestamp": "2026-10-06T11:53:24.413Z",
+    "policy_wall_seconds": 30.627,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/policy_update_014.txt"
+  }
+}

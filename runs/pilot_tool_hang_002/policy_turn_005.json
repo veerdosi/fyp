@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 17,
+        "v": 7
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 42,
+        "v": 57
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 96,
+        "v": 154
+      },
+      {
+        "camera": "agentview",
+        "u": 51,
+        "v": 90
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 169
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 175
+      }
+    ],
+    "reason": "Measure the lifted shaft direction and tip and the stand opening to compute a downward insertion orientation."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_002",
+    "policy_visible_input": "Fresh observation 3 after your motion command, step 385, simulated time 19.25 seconds. 4 decisions have been executed; 26 model decisions and 2015 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0003/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0003/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0003/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"robot0_eye_in_hand\",\"u\":17,\"v\":7},{\"camera\":\"robot0_eye_in_hand\",\"u\":42,\"v\":57},{\"camera\":\"robot0_eye_in_hand\",\"u\":96,\"v\":154},{\"camera\":\"agentview\",\"u\":51,\"v\":90},{\"camera\":\"agentview\",\"u\":185,\"v\":169},{\"camera\":\"agentview\",\"u\":185,\"v\":175}],\"reason\":\"Measure the lifted shaft direction and tip and the stand opening to compute a downward insertion orientation.\"}",
+    "response_timestamp": "2026-10-06T11:45:15.007Z",
+    "message_id": "amsg_01a11108-3cff-7022-ad4f-814a13fe7c39",
+    "dispatch_timestamp": "2026-10-06T11:44:46.911Z",
+    "policy_wall_seconds": 28.096,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/policy_update_005.txt"
+  }
+}

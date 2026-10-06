@@ -1,0 +1,35 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.068,
+          -0.125,
+          1.075
+        ],
+        "quaternion_xyzw": [
+          0.707107,
+          0.707107,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 70
+      }
+    ],
+    "reason": "Lift the recovered tool horizontally and bring its larger hole above the hook's upward tip for a direct downward threading attempt."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_002",
+    "policy_visible_input": "Fresh observation 17 after your motion command, step 2280, simulated time 114.0 seconds. 26 decisions have been executed; 4 model decisions and 120 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0017/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0017/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0017/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.068,-0.125,1.075],\"quaternion_xyzw\":[0.707107,0.707107,0,0],\"gripper\":1,\"steps\":70}],\"reason\":\"Lift the recovered tool horizontally and bring its larger hole above the hook's upward tip for a direct downward threading attempt.\"}",
+    "response_timestamp": "2026-10-06T16:16:48.648Z",
+    "message_id": "amsg_01a11200-dc08-7a50-8aa9-d55ecafd524c",
+    "dispatch_timestamp": "2026-10-06T16:15:26.219Z",
+    "policy_wall_seconds": 82.429,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/policy_update_027.txt"
+  }
+}

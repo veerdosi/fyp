@@ -1,0 +1,47 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.1016,
+          0.04,
+          1.18
+        ],
+        "gripper": 1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.103,
+          0.035,
+          1.18
+        ],
+        "gripper": 1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.103,
+          0.035,
+          1.045
+        ],
+        "gripper": 1,
+        "steps": 90
+      }
+    ],
+    "reason": "Lift off the rim, shift the shaft about five millimetres toward the opening center, and retry the vertical insertion."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pilot_tool_hang_002",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/public/obs_0009/sense_015.json. You may cat this permitted sensor result file. The images and robot readings in obs_0009 remain current; no motion has occurred. 15 decisions have been executed, with 15 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.1016,0.0400,1.18],\"gripper\":1,\"steps\":30},{\"position\":[-0.1030,0.0350,1.18],\"gripper\":1,\"steps\":30},{\"position\":[-0.1030,0.0350,1.045],\"gripper\":1,\"steps\":90}],\"reason\":\"Lift off the rim, shift the shaft about five millimetres toward the opening center, and retry the vertical insertion.\"}",
+    "response_timestamp": "2026-10-06T11:55:34.883Z",
+    "message_id": "amsg_01a11111-b263-7a62-bd16-7c314f5ce44d",
+    "dispatch_timestamp": "2026-10-06T11:55:06.437Z",
+    "policy_wall_seconds": 28.446,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pilot_tool_hang_002/policy_update_016.txt"
+  }
+}

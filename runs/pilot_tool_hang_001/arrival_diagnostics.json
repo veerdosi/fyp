@@ -1,0 +1,301 @@
+{
+  "criteria": {
+    "position_m": 0.003,
+    "orientation_rad": 0.03,
+    "linear_velocity_m_per_s": 0.005,
+    "angular_velocity_rad_per_s": 0.05,
+    "finger_velocity_norm_m_per_s": 0.001,
+    "consecutive_steps": 3
+  },
+  "scope": "Post-hoc robot-state arrival diagnostics only; no proof of grasp, object stability, contact completion or achievable time savings. No counterfactual physics or policy was run.",
+  "waypoints": [
+    {
+      "decision": 2,
+      "waypoint": 1,
+      "gripper": -1,
+      "steps": 40,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 2,
+      "waypoint": 2,
+      "gripper": -1,
+      "steps": 35,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 2,
+      "waypoint": 3,
+      "gripper": 1,
+      "steps": 25,
+      "first_settled_robot_step": 120,
+      "steps_after_first_settled_robot": 0
+    },
+    {
+      "decision": 2,
+      "waypoint": 4,
+      "gripper": 1,
+      "steps": 45,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 3,
+      "waypoint": 1,
+      "gripper": -1,
+      "steps": 50,
+      "first_settled_robot_step": 208,
+      "steps_after_first_settled_robot": 7
+    },
+    {
+      "decision": 3,
+      "waypoint": 2,
+      "gripper": -1,
+      "steps": 65,
+      "first_settled_robot_step": 238,
+      "steps_after_first_settled_robot": 42
+    },
+    {
+      "decision": 3,
+      "waypoint": 3,
+      "gripper": 1,
+      "steps": 40,
+      "first_settled_robot_step": 298,
+      "steps_after_first_settled_robot": 22
+    },
+    {
+      "decision": 3,
+      "waypoint": 4,
+      "gripper": 1,
+      "steps": 45,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 4,
+      "waypoint": 1,
+      "gripper": 1,
+      "steps": 60,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 4,
+      "waypoint": 2,
+      "gripper": 1,
+      "steps": 70,
+      "first_settled_robot_step": 490,
+      "steps_after_first_settled_robot": 5
+    },
+    {
+      "decision": 6,
+      "waypoint": 1,
+      "gripper": 1,
+      "steps": 85,
+      "first_settled_robot_step": 573,
+      "steps_after_first_settled_robot": 7
+    },
+    {
+      "decision": 6,
+      "waypoint": 2,
+      "gripper": 1,
+      "steps": 45,
+      "first_settled_robot_step": 607,
+      "steps_after_first_settled_robot": 18
+    },
+    {
+      "decision": 7,
+      "waypoint": 1,
+      "gripper": 1,
+      "steps": 45,
+      "first_settled_robot_step": 645,
+      "steps_after_first_settled_robot": 25
+    },
+    {
+      "decision": 7,
+      "waypoint": 2,
+      "gripper": 1,
+      "steps": 50,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 8,
+      "waypoint": 1,
+      "gripper": -1,
+      "steps": 30,
+      "first_settled_robot_step": 745,
+      "steps_after_first_settled_robot": 5
+    },
+    {
+      "decision": 8,
+      "waypoint": 2,
+      "gripper": -1,
+      "steps": 60,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 9,
+      "waypoint": 1,
+      "gripper": -1,
+      "steps": 65,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 9,
+      "waypoint": 2,
+      "gripper": -1,
+      "steps": 45,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 11,
+      "waypoint": 1,
+      "gripper": -1,
+      "steps": 75,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 11,
+      "waypoint": 2,
+      "gripper": -1,
+      "steps": 65,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 11,
+      "waypoint": 3,
+      "gripper": 1,
+      "steps": 25,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 11,
+      "waypoint": 4,
+      "gripper": 1,
+      "steps": 35,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 13,
+      "waypoint": 1,
+      "gripper": -1,
+      "steps": 45,
+      "first_settled_robot_step": 1154,
+      "steps_after_first_settled_robot": 11
+    },
+    {
+      "decision": 13,
+      "waypoint": 2,
+      "gripper": -1,
+      "steps": 60,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 13,
+      "waypoint": 3,
+      "gripper": 1,
+      "steps": 35,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 13,
+      "waypoint": 4,
+      "gripper": 1,
+      "steps": 55,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 15,
+      "waypoint": 1,
+      "gripper": 1,
+      "steps": 80,
+      "first_settled_robot_step": 1386,
+      "steps_after_first_settled_robot": 9
+    },
+    {
+      "decision": 15,
+      "waypoint": 2,
+      "gripper": 1,
+      "steps": 70,
+      "first_settled_robot_step": 1461,
+      "steps_after_first_settled_robot": 4
+    },
+    {
+      "decision": 16,
+      "waypoint": 1,
+      "gripper": 1,
+      "steps": 45,
+      "first_settled_robot_step": 1484,
+      "steps_after_first_settled_robot": 26
+    },
+    {
+      "decision": 17,
+      "waypoint": 1,
+      "gripper": 1,
+      "steps": 40,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 17,
+      "waypoint": 2,
+      "gripper": 1,
+      "steps": 45,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 18,
+      "waypoint": 1,
+      "gripper": 1,
+      "steps": 45,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 18,
+      "waypoint": 2,
+      "gripper": 1,
+      "steps": 50,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 19,
+      "waypoint": 1,
+      "gripper": -1,
+      "steps": 30,
+      "first_settled_robot_step": 1715,
+      "steps_after_first_settled_robot": 5
+    },
+    {
+      "decision": 19,
+      "waypoint": 2,
+      "gripper": -1,
+      "steps": 70,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    },
+    {
+      "decision": 19,
+      "waypoint": 3,
+      "gripper": -1,
+      "steps": 65,
+      "first_settled_robot_step": null,
+      "steps_after_first_settled_robot": null
+    }
+  ]
+}
