@@ -5,7 +5,7 @@
   "verified_executor_commit": "565b96b",
   "task": "ToolHang",
   "suite": "robosuite",
-  "paired_state_count": 4,
+  "paired_state_count": 3,
   "conditions": [
     "direct_waypoints",
     "deadline_guard",
@@ -83,30 +83,6 @@
       "state_index": 13,
       "condition": "deadline_guard",
       "execution_order": 9
-    },
-    {
-      "episode_id": "th_v1_s04_direct_waypoints",
-      "paired_state": 4,
-      "seed": 504,
-      "state_index": 14,
-      "condition": "direct_waypoints",
-      "execution_order": 10
-    },
-    {
-      "episode_id": "th_v1_s04_deadline_guard",
-      "paired_state": 4,
-      "seed": 504,
-      "state_index": 14,
-      "condition": "deadline_guard",
-      "execution_order": 11
-    },
-    {
-      "episode_id": "th_v1_s04_phase_guard",
-      "paired_state": 4,
-      "seed": 504,
-      "state_index": 14,
-      "condition": "phase_guard",
-      "execution_order": 12
     }
   ],
   "shared": {
@@ -170,18 +146,18 @@
     "api_equivalent_cost"
   ],
   "policy_context": "Fresh per episode, no pilot traces or other condition outcomes; same public sensors/calculation access.",
-  "execution_schedule": "Serial in the specified order; no concurrent policy episodes. Rotation balances order approximately over four blocks.",
+  "execution_schedule": "Serial in the specified order; no concurrent policy episodes. Three rotating blocks place every condition in each order position once.",
   "analysis_rules": [
     "Every native failure and budget stop remains in its condition denominator.",
-    "Report all twelve episodes; no optional stopping based on outcomes.",
-    "Primary success differences, paired wins/losses and Wilson 95% intervals are descriptive; four states cannot establish equivalence.",
+    "Report all nine episodes; no optional stopping based on outcomes.",
+    "Primary success differences, paired wins/losses and Wilson 95% intervals are descriptive; three states cannot establish equivalence.",
     "Resource differences on all pairs; successful-completion ratios only on pairs where both conditions succeed.",
     "Report failures separately alongside success-denominator inclusion; faster failure is not faster completion.",
     "Report native policy time, delivery delay, simulated motion, host execution and orchestration separately; no real-time claim.",
     "Audit exact policy tools/calculation logs and verify replay for every completed episode.",
     "No changes to thresholds, prompts, controller, source or primary analysis during held-out runs.",
     "Any interruption, crash or protocol violation is retained and reported; do not silently replace a model failure.",
-    "No cross-task generalization claim; the four new placements test held-out starts of this task."
+    "No cross-task generalization claim; the three new placements test held-out starts of this task."
   ],
   "failure_criteria": [
     "If guards do not improve observed full-task success, the primary predicted success benefit is unsupported in this study.",
@@ -199,5 +175,12 @@
     "robosuite": "1.4.1",
     "torch": "2.14.1"
   },
-  "pre_evaluation_freeze_note": "Before any held-out episode or policy decision, source checks were extended to policy template/dependency material and runtime versions. This supersedes the initial c43dbe2 freeze hashes; no results were observed."
+  "pre_evaluation_freeze_note": "Before any held-out episode or policy decision, source checks were extended to policy template/dependency material and runtime versions. This supersedes the initial c43dbe2 freeze hashes; no results were observed.",
+  "amendments": [
+    {
+      "file": "amendment_001.json",
+      "original_protocol_sha256": "8588abee42055980bda9bf38871d1561ce4cbb740cc30c1a80f10539c0d90415",
+      "reason": "User requested faster initial screening; three paired starts / nine episodes."
+    }
+  ]
 }

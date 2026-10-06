@@ -1,6 +1,6 @@
 {
   "study_id": "tool_hang_v1",
-  "protocol_sha256": "8588abee42055980bda9bf38871d1561ce4cbb740cc30c1a80f10539c0d90415",
+  "protocol_sha256": "ab04991b89ff2e85b3f9fe21be9a275baff30dc20b32edaabc8725336511a0cf",
   "trials": [
     {
       "episode_id": "th_v1_s01_direct_waypoints",
@@ -91,56 +91,26 @@
       "execution_order": 9,
       "status": "missing",
       "success": null
-    },
-    {
-      "episode_id": "th_v1_s04_direct_waypoints",
-      "paired_state": 4,
-      "seed": 504,
-      "state_index": 14,
-      "condition": "direct_waypoints",
-      "execution_order": 10,
-      "status": "missing",
-      "success": null
-    },
-    {
-      "episode_id": "th_v1_s04_deadline_guard",
-      "paired_state": 4,
-      "seed": 504,
-      "state_index": 14,
-      "condition": "deadline_guard",
-      "execution_order": 11,
-      "status": "missing",
-      "success": null
-    },
-    {
-      "episode_id": "th_v1_s04_phase_guard",
-      "paired_state": 4,
-      "seed": 504,
-      "state_index": 14,
-      "condition": "phase_guard",
-      "execution_order": 12,
-      "status": "missing",
-      "success": null
     }
   ],
   "condition_summaries": {
     "direct_waypoints": {
       "recorded_trials": 0,
-      "planned_trials": 4,
+      "planned_trials": 3,
       "successes": 0,
       "success_rate": null,
       "success_rate_wilson_95": null
     },
     "deadline_guard": {
       "recorded_trials": 0,
-      "planned_trials": 4,
+      "planned_trials": 3,
       "successes": 0,
       "success_rate": null,
       "success_rate_wilson_95": null
     },
     "phase_guard": {
       "recorded_trials": 0,
-      "planned_trials": 4,
+      "planned_trials": 3,
       "successes": 0,
       "success_rate": null,
       "success_rate_wilson_95": null

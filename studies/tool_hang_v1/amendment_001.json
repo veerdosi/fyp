@@ -1,0 +1,27 @@
+{
+  "amendment_id": "001",
+  "date": "2026-10-07",
+  "requested_by": "user",
+  "user_request": "should we just do 2 or 3 matched starting states so we can move towards our goal quicker?",
+  "decision": "Use three matched states: nine episodes, with each condition in each order position once.",
+  "original_protocol_sha256": "8588abee42055980bda9bf38871d1561ce4cbb740cc30c1a80f10539c0d90415",
+  "original_paired_state_count": 4,
+  "revised_paired_state_count": 3,
+  "original_episode_count": 12,
+  "revised_episode_count": 9,
+  "removed_unstarted_paired_state": 4,
+  "partial_trace_available_at_change": "First timed baseline is underway; 21 decisions executed, no held-out episode completed. Partial observations have been seen. This change was requested by the user for faster mechanism screening, not selected from completed outcomes.",
+  "unchanged": [
+    "conditions",
+    "hypotheses",
+    "primary comparison",
+    "analysis rules",
+    "sensors/calculation access",
+    "controller",
+    "source hashes",
+    "policy materials",
+    "model/effort",
+    "episode budgets"
+  ],
+  "scope": "User-requested sample-count amendment; retain original protocol and initial run configuration."
+}
