@@ -11,6 +11,8 @@ args=parser.parse_args()
 r=Path(args.run).resolve()
 n=len(list(r.glob('policy_turn_*.json')))
 reply=json.loads((r/f'relay_{n:03d}.result.json').read_text())
+if reply.get('finished') or reply.get('episode_stopped'):
+    raise SystemExit('Episode finished; no further handoff needed')
 if 'validation_error' in reply or 'error' in reply:
     message=f'Your command was rejected: {reply}. Return a valid next command as one JSON object only.'
 elif 'points' in reply:
@@ -32,6 +34,8 @@ elif 'folder' in reply:
              f'Inspect {folder}/agentview.png and {folder}/robot0_eye_in_hand.png. '
              'These replace the prior images. Earlier public snapshots remain available for calculations. '
              'Return the next command as one JSON object only.')
+    if 'execution_report' in reply:
+        message += f' Robot execution report: {folder}/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.'
 else:
     raise SystemExit('Episode finished; no further handoff needed')
 if args.amend_access:

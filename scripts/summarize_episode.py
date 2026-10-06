@@ -28,10 +28,13 @@ def summarize(run):
         command = event['command']
         executed = [s for s in steps if s['command_id'] == event['call']]
         waypoints, cumulative = [], 0
-        for wp in command.get('waypoints', []):
+        for index, wp in enumerate(command.get('waypoints', [])):
             start = cumulative
             cumulative += wp['steps']
-            segment = executed[start:cumulative]
+            if any(s.get('waypoint_index') is not None for s in executed):
+                segment = [s for s in executed if s.get('waypoint_index') == index]
+            else:
+                segment = executed[start:cumulative]
             row = {'target': wp, 'executed_steps': len(segment)}
             if segment:
                 measurement = segment[-1]['proprioception_after']
@@ -51,6 +54,7 @@ def summarize(run):
                          'validation_error': event.get('result', {}).get('validation_error'),
                          'first_step': executed[0]['step'] if executed else None,
                          'last_step': executed[-1]['step'] if executed else None,
+                         'execution_report': event.get('result', {}).get('execution_report'),
                          'waypoints': waypoints})
     first_success = next((s['step'] for s in steps if s['scoring_success']), None)
     policy_decisions = sum(bool(json.loads(p.read_text()).get('policy'))

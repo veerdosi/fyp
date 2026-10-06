@@ -17,6 +17,7 @@ from PIL import Image
 from scipy.spatial.transform import Rotation
 
 from .runtime import ROOT, TASK, CAMERAS, PROPRIO, make_env, proprio, sensor_images, add_robot_sensors
+from .motion import ARRIVAL, pose_measurement
 
 
 def write_json(path, value):
@@ -46,6 +47,7 @@ class Episode:
         config = dict(task=task, suite=suite, state_index=state_index, seed=seed,
                       environment_backend='robosuite' if suite=='robosuite' else 'LIBERO',
                       condition=condition, size=size, max_steps=max_steps, max_calls=max_calls,
+                      execution_criteria=ARRIVAL,
                       settle_steps=settle_steps,
                       computation_protocol='policy_calculation_v1',
                       calculation_timeout_seconds=30,
@@ -101,7 +103,7 @@ class Episode:
         self.handoff += 1
         return result
 
-    def step(self, action, command_id=None):
+    def step(self, action, command_id=None, waypoint_index=None):
         if self.steps >= self.max_steps:
             raise ValueError('control-step budget exhausted')
         before = proprio(self.obs)
@@ -111,6 +113,7 @@ class Episode:
         self.actions.append(action.tolist())
         self.states.append(self.env.get_sim_state().copy())
         record = dict(step=self.steps, command_id=command_id, action=action.tolist(),
+                      waypoint_index=waypoint_index,
                       executor_measurement=before, proprioception_after=proprio(self.obs),
                       scoring_success=bool(self.env.check_success()), reward=float(reward),
                       done=bool(done), wall_seconds=time.monotonic()-self.t0)
@@ -160,10 +163,16 @@ class Episode:
         outmax = np.asarray(controller.output_max)
         # A fixed absolute pose is realized using the existing OSC_POSE controller.
         # The conversion uses only measured end-effector pose, not an object estimate.
-        for wp in points:
+        report = dict(condition=self.config['condition'], criteria=ARRIVAL, waypoints=[],
+                      note='Robot arrival is not acquisition, seating or task completion.')
+        guarded = self.config['condition'] in ['deadline_guard', 'phase_guard']
+        for index, wp in enumerate(points):
             goal = np.asarray(wp['position'])
             qgoal = Rotation.from_quat(wp.get('quaternion_xyzw', self.obs['robot0_eef_quat']))
-            for _ in range(wp['steps']):
+            first_step = self.steps+1
+            consecutive, first_settled_step = 0, None
+            for iteration in range(wp['steps']):
+                before = proprio(self.obs)
                 p = self.obs['robot0_eef_pos']
                 r = Rotation.from_quat(self.obs['robot0_eef_quat'])
                 dp = goal - p
@@ -175,7 +184,29 @@ class Episode:
                 if angle > 0.15:
                     dr *= 0.15/angle
                 action = np.r_[np.clip(np.r_[dp, dr]/outmax, -1, 1), wp['gripper']]
-                self.step(action, self.calls)
+                self.step(action, self.calls, waypoint_index=index)
+                measured = pose_measurement(goal, qgoal, before, proprio(self.obs))
+                consecutive = consecutive+1 if measured['settled_sample'] else 0
+                settled = (iteration+1 >= ARRIVAL['minimum_steps'] and
+                           consecutive >= ARRIVAL['consecutive_samples'])
+                if settled and first_settled_step is None:
+                    first_settled_step = self.steps
+                if settled and self.config['condition'] == 'phase_guard':
+                    break
+            status = ('arrived' if settled else 'deadline_not_settled') if guarded else 'duration_elapsed'
+            report['waypoints'].append(dict(
+                waypoint_index=index, first_step=first_step, last_step=self.steps,
+                requested_steps=wp['steps'], executed_steps=self.steps-first_step+1,
+                first_settled_step=first_settled_step, terminal_measurement=measured,
+                settled_at_exit=settled, status=status,
+                resolved_quaternion_xyzw=qgoal.as_quat().tolist()))
+            if guarded and not settled:
+                report['remaining_waypoints_cancelled'] = len(points)-index-1
+                report['stop_reason'] = 'waypoint_deadline'
+                return report
+        report['remaining_waypoints_cancelled'] = 0
+        report['stop_reason'] = 'sequence_complete'
+        return report
 
     def sense(self, points):
         if not isinstance(points, list) or not 1 <= len(points) <= 12:
@@ -217,8 +248,11 @@ class Episode:
                      command=cmd, wall_seconds=time.monotonic()-self.t0)
         try:
             if cmd['type'] == 'move':
-                self.move(self.validate_move(cmd))
+                execution = self.move(self.validate_move(cmd))
                 result = self.snapshot()
+                result['execution_report'] = execution
+                # The same derived robot measurements are public in every condition.
+                write_json(Path(result['folder']) / 'execution.json', execution)
             elif cmd['type'] == 'sense':
                 result = self.sense(cmd['pixels'])
             elif cmd['type'] == 'finish':
@@ -319,7 +353,7 @@ def main():
     parser.add_argument('--settle-steps', type=int, default=20)
     parser.add_argument('--task', default=TASK)
     parser.add_argument('--suite', default='libero_10')
-    parser.add_argument('--condition', choices=['direct_pose','direct_waypoints'], default='direct_waypoints')
+    parser.add_argument('--condition', choices=['direct_pose','direct_waypoints','deadline_guard','phase_guard'], default='direct_waypoints')
     parser.add_argument('--port', type=int, default=8765)
     args = parser.parse_args()
     if args.mode == 'replay':

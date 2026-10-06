@@ -1,0 +1,17 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.077,
+          -0.254,
+          0.829
+        ],
+        "gripper": 1,
+        "steps": 50
+      }
+    ]
+  },
+  "operator_verification": "Double recorded durations; targets and order unchanged."
+}

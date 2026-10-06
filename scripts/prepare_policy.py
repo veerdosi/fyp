@@ -33,6 +33,22 @@ prefix=prefix.replace('You decide object selection, grasp, transport, placement,
 if config['condition']=='direct_pose':
     prefix=prefix.replace('One to four waypoints','Exactly one waypoint')
     prefix=prefix.replace('One to four','Exactly one')
+if config['condition'] in ['deadline_guard','phase_guard']:
+    from sys import path
+    path.insert(0, str(root/'src'))
+    from fyp.motion import ARRIVAL
+    behavior = ('A waypoint may finish early once arrival and settling pass, then execution advances to your next waypoint.'
+                if config['condition']=='phase_guard' else
+                'Every waypoint still runs its full specified duration; arrival and settling are tested only at its end.')
+    prefix=prefix.replace('Each waypoint runs its full specified number of 20Hz steps, 1..100;',
+                          'Each waypoint has a maximum duration of 1..100 steps at 20Hz;')
+    prefix=prefix.replace('execution does not stop adaptively or decide a new target.',
+                          'the executor never decides a new target. '+behavior+
+                          ' If arrival and settling fail at the waypoint deadline, the remaining waypoints are cancelled and you receive fresh observations to choose recovery. '+
+                          'Criteria: '+json.dumps(ARRIVAL)+'. Settling requires consecutive samples passing all pose/speed limits. '+
+                          'The minimum_steps is a lower bound for early completion; a shorter deadline will fail it. '+
+                          'Robot arrival does not establish grasp acquisition or placement success.')
+prefix += '\nAfter each move, an execution.json report gives the same derived robot pose/speed measurements in every condition. It is not an object or task-success signal.'
 message=(prefix+'\n\n'+computation_access(run)+f'\n\nCurrent observation {obs["observation_id"]}, step {obs["step"]}, '
          f'simulated time {obs["simulated_seconds"]} seconds: robot sensors '+
          json.dumps(obs['proprioception'])+'.\n\n'+

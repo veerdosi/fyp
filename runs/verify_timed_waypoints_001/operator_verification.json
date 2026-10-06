@@ -1,0 +1,274 @@
+{
+  "policy_inference_requests": 0,
+  "source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+  "duration_scale": 1,
+  "hold_check": true,
+  "results": [
+    {
+      "observation_id": 1,
+      "step": 60,
+      "simulated_seconds": 3.0,
+      "model_calls": 1,
+      "remaining_steps": 2340,
+      "remaining_model_calls": 29,
+      "proprioception": {
+        "robot0_eef_pos": [
+          -0.10276829389898115,
+          -5.604735621944151e-12,
+          1.0110438715851893
+        ],
+        "robot0_eef_quat": [
+          0.9979766064600616,
+          0.00024581380117731953,
+          0.06358169774996664,
+          1.5660948462144085e-05
+        ],
+        "robot0_joint_vel": [
+          2.824556904699979e-15,
+          1.6769492177294238e-18,
+          -5.489078925506911e-15,
+          3.14593171816631e-18,
+          3.0146792755322993e-15,
+          1.790027325877756e-18,
+          6.59334537661899e-17
+        ],
+        "robot0_gripper_qpos": [
+          0.03986775482397176,
+          -0.03986788972688891
+        ],
+        "robot0_gripper_qvel": [
+          0.00011598894691138782,
+          -0.00011598896565030909
+        ],
+        "robot0_eef_force": [
+          -0.00031891191645749513,
+          0.6473733269622469,
+          -5.0599554458347695
+        ],
+        "robot0_eef_torque": [
+          -0.09168798227714527,
+          -4.502334326433904e-05,
+          1.8474183298494205e-08
+        ]
+      },
+      "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0001",
+      "cameras": {
+        "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0001/agentview.png",
+        "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0001/robot0_eye_in_hand.png"
+      },
+      "execution_report": {
+        "condition": "direct_waypoints",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 21,
+            "last_step": 60,
+            "requested_steps": 40,
+            "executed_steps": 40,
+            "first_settled_step": 30,
+            "terminal_measurement": {
+              "position_error_m": 3.4877673375859223e-15,
+              "orientation_error_rad": 1.6227570699895557e-14,
+              "linear_speed_m_s": 3.686991240732426e-15,
+              "angular_speed_rad_s": 9.74307396219204e-15,
+              "finger_speed_m_s": 0.0001640331550578764,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "duration_elapsed",
+            "resolved_quaternion_xyzw": [
+              0.9979766064600621,
+              0.0002458138011692269,
+              0.06358169774996666,
+              1.5660948462726875e-05
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      }
+    },
+    {
+      "observation_id": 2,
+      "step": 195,
+      "simulated_seconds": 9.75,
+      "model_calls": 2,
+      "remaining_steps": 2205,
+      "remaining_model_calls": 28,
+      "proprioception": {
+        "robot0_eef_pos": [
+          -0.0806602804095316,
+          -0.25432907331727705,
+          1.002445970885787
+        ],
+        "robot0_eef_quat": [
+          0.9999995173682461,
+          0.00025017460514647653,
+          0.0007515593741483522,
+          -0.0005812352777004021
+        ],
+        "robot0_joint_vel": [
+          0.06490529548251359,
+          -0.17422988040948095,
+          -0.08084614936493913,
+          -0.01979465957772864,
+          -0.08413631556013977,
+          -0.15384415028885026,
+          0.0626361625528231
+        ],
+        "robot0_gripper_qpos": [
+          0.0004037986483698448,
+          -0.0005957542690713214
+        ],
+        "robot0_gripper_qvel": [
+          8.499535717026637e-05,
+          8.639734705231258e-05
+        ],
+        "robot0_eef_force": [
+          0.009028183817930868,
+          0.009580102664495096,
+          -4.984519570295718
+        ],
+        "robot0_eef_torque": [
+          0.014002564536073948,
+          -0.004346552185401258,
+          -0.0008654963139954285
+        ]
+      },
+      "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0002",
+      "cameras": {
+        "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0002/agentview.png",
+        "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0002/robot0_eye_in_hand.png"
+      },
+      "execution_report": {
+        "condition": "direct_waypoints",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 61,
+            "last_step": 95,
+            "requested_steps": 35,
+            "executed_steps": 35,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.14283241459447182,
+              "orientation_error_rad": 0.0007551137712078859,
+              "linear_speed_m_s": 0.07756188531273076,
+              "angular_speed_rad_s": 0.0008795062053157213,
+              "finger_speed_m_s": 3.838914088552403e-05,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "duration_elapsed",
+            "resolved_quaternion_xyzw": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 96,
+            "last_step": 125,
+            "requested_steps": 30,
+            "executed_steps": 30,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.07037540434242394,
+              "orientation_error_rad": 0.0007423543172915499,
+              "linear_speed_m_s": 0.07880583081373937,
+              "angular_speed_rad_s": 0.00019262568908684307,
+              "finger_speed_m_s": 1.8355859931349984e-05,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "duration_elapsed",
+            "resolved_quaternion_xyzw": [
+              0.9999999287253999,
+              -0.00028375812446560655,
+              -3.051423762793297e-05,
+              0.00024718293467646863
+            ]
+          },
+          {
+            "waypoint_index": 2,
+            "first_step": 126,
+            "last_step": 150,
+            "requested_steps": 25,
+            "executed_steps": 25,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.0030765336485918658,
+              "orientation_error_rad": 0.0023137010539433732,
+              "linear_speed_m_s": 0.0020843402543586167,
+              "angular_speed_rad_s": 0.01065133206388265,
+              "finger_speed_m_s": 0.00034551758376905495,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "duration_elapsed",
+            "resolved_quaternion_xyzw": [
+              0.9999997480619937,
+              -0.0005452419569099753,
+              -0.00026331951875210386,
+              0.0003704726557817338
+            ]
+          },
+          {
+            "waypoint_index": 3,
+            "first_step": 151,
+            "last_step": 195,
+            "requested_steps": 45,
+            "executed_steps": 45,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.06765391926184693,
+              "orientation_error_rad": 0.001719337201211533,
+              "linear_speed_m_s": 0.07791059407262058,
+              "angular_speed_rad_s": 0.0005622225884955171,
+              "finger_speed_m_s": 0.00012119699797511032,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "duration_elapsed",
+            "resolved_quaternion_xyzw": [
+              0.9999997794251183,
+              -6.618463134387832e-05,
+              -4.39490224123617e-05,
+              -0.0006594223173458833
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      }
+    },
+    {
+      "finished": true,
+      "step": 195,
+      "policy_claim": "Operator diagnostic complete"
+    }
+  ],
+  "scope": "Execution/duration diagnostic only; native partial progress is private diagnosis, not a task-success comparison."
+}

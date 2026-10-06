@@ -36,7 +36,7 @@ Pilot traces should guide the command schema and observation handoff before they
 
 ## Current implementation boundary
 
-The runnable implementation currently exposes direct absolute poses and up to four model-selected waypoints through the standard OSC_POSE controller. It has no candidate harness yet. Robot pose feedback realizes a fixed requested pose in every direct-control command; that existing controller feedback must remain in any baseline. A later test of feedback closure would need to concern a declared sensor-relative objective or another added mechanism.
+The implementation exposes direct absolute poses and up to four model-selected waypoints through the standard OSC_POSE controller. Measured waypoint guards are now implemented and verified in simulator traces; see [phase_execution.md](phase_execution.md). Robot pose feedback realizes a fixed requested pose in every condition. This tests transitions and exits, not sensor-relative correction during motion. No held-out policy comparison has yet measured a benefit.
 
 The first microwave pilot achieved native task success after model-selected grasp and insertion recovery. A wrist load or finger reading alone did not establish acquisition. Its unsettled initial measurement prompted a shared settling correction. No harness benefit has been measured, and H1-H4 remain untested. The user requested a different task; screening must establish an interface-related failure before the main task is selected. See [sensor_audit.md](sensor_audit.md) for the actual sensor boundary.
 
