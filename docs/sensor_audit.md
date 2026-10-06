@@ -10,6 +10,8 @@ Camera images are flipped vertically into the conventional top-left origin. Metr
 
 The direct executor uses measured end-effector pose to realize a fixed model-selected absolute pose through native OSC_POSE delta actions. It uses no vision, object estimate, reward, contact truth, or task stage. It executes the full declared duration. It can validate commands and enforce common target bounds, 0.015m translation and 0.15rad orientation updates at 20Hz. A target bound is not a collision-avoidance planner.
 
+The measured guards retain that conversion and use permitted end-effector poses and finger velocity to test arrival/settling. Linear and angular speeds are derived from consecutive robot poses at the shared control period. Every condition receives the same derived execution report after motion. Guard exits change sequence progression and handoff, not the motion target or task plan. No raw wrist load or object/contact predicate drives an exit. The exact criteria and five replayed execution/duration checks are in [phase_execution.md](phase_execution.md).
+
 ## Excluded simulator information
 
 Default LIBERO observations include each mug's world position, quaternion and pose relative to the gripper, plus an `object-state` vector. None is present in the public policy folder. These are written only to step diagnostics. MuJoCo state, task reward, collision contacts, task predicates and success are also excluded from policy inputs and execution decisions. Task success is checked after execution for scoring; it does not end an episode automatically.

@@ -1,6 +1,6 @@
 {
   "study_id": "tool_hang_v1",
-  "protocol_sha256": "cb37a323df79d302d2e5f15b05f69aefc89c100354883421ac1042219a26cf98",
+  "protocol_sha256": "8588abee42055980bda9bf38871d1561ce4cbb740cc30c1a80f10539c0d90415",
   "trials": [
     {
       "episode_id": "th_v1_s01_direct_waypoints",

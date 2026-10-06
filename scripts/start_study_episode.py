@@ -19,6 +19,9 @@ trial = next(t for t in protocol['episodes'] if t['episode_id'] == args.episode_
 for relative, expected in protocol['source_hashes'].items():
     if hashlib.sha256((root/relative).read_bytes()).hexdigest() != expected:
         raise SystemExit(f'Frozen source changed: {relative}')
+for relative, expected in protocol['material_hashes'].items():
+    if hashlib.sha256((root/relative).read_bytes()).hexdigest() != expected:
+        raise SystemExit(f'Frozen policy/dependency material changed: {relative}')
 current = {str(p.relative_to(root)) for folder in ['src','scripts']
            for p in (root/folder).rglob('*.py')}
 if current != set(protocol['source_hashes']):
@@ -27,8 +30,10 @@ ep = Episode(root/'runs'/trial['episode_id'], task=protocol['task'], suite=proto
              seed=trial['seed'], state_index=trial['state_index'], condition=trial['condition'],
              **{k:protocol['shared'][k] for k in ['size','max_calls','max_steps','settle_steps']})
 assert ep.config['execution_criteria'] == protocol['arrival_criteria']
+assert ep.config['versions'] == protocol['runtime_versions']
 ep.config['frozen_study'] = dict(study_id=protocol['study_id'], episode_id=args.episode_id,
                                protocol_sha256=hashlib.sha256(args.protocol.read_bytes()).hexdigest(),
-                               paired_state=trial['paired_state'], source_hashes_verified=True)
+                               paired_state=trial['paired_state'], source_hashes_verified=True,
+                               material_hashes=protocol['material_hashes'])
 write_json(ep.folder/'config.json', ep.config)
 serve(ep, args.port)

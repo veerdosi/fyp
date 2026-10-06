@@ -32,6 +32,13 @@ def analyze(root, path):
                 raise ValueError(f'Protocol mismatch: {run.name}')
             if config['source_hashes'] != protocol['source_hashes'] or config['code_dirty']:
                 raise ValueError(f'Source mismatch or dirty code: {run.name}')
+            assert config['frozen_study']['material_hashes'] == protocol['material_hashes']
+            assert config['versions'] == protocol['runtime_versions']
+            assert config['execution_criteria'] == protocol['arrival_criteria']
+            assert config['model'] == protocol['shared']['model']
+            assert config['reasoning_effort'] == protocol['shared']['reasoning_effort']
+            for key in ['size','max_steps','max_calls','settle_steps','computation_protocol','calculation_timeout_seconds']:
+                assert config[key] == protocol['shared'][key]
             for key in ['task','suite']:
                 assert config[key] == protocol[key]
             for key in ['seed','state_index','condition']:

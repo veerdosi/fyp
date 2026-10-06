@@ -1,6 +1,6 @@
 # Foundation-model robot communication experiments
 
-This project tests which communication mechanisms help a slow foundation model control a robot. Development and analysis use Sol; robot decisions use fresh GPT-6 Astra episode contexts at medium reasoning effort. The interface is to be chosen from direct-control failures. No paired efficacy result exists yet.
+This project tests which communication mechanisms help a slow foundation model control a robot. Development and analysis use Sol; robot decisions use fresh GPT-6 Astra episode contexts at medium reasoning effort. Two ToolHang pilots support testing measured waypoint transitions and observation handoff. A twelve-episode comparison is frozen; no paired efficacy result exists yet.
 
 The first environment is the standard LIBERO-10 task `KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it`, with the standard Panda robot and OSC_POSE controller. Simulator-only object state and reward are excluded from robot decisions. See [sensor audit](docs/sensor_audit.md), [research plan](docs/research_plan.md), and [experiment status](docs/experiment_status.md).
 
@@ -42,8 +42,10 @@ Native robosuite tasks reuse the same direct-control executor and sensor boundar
 .venv/bin/python scripts/prepare_policy.py runs/new_tool_hang_pilot
 ```
 
-`NutAssemblySquare` and `NutAssemblyRound` are also supported. These use existing geometry, placement and scoring; no Isaac Sim assets or custom puzzle port are required. ToolHang is a screening candidate, not a frozen evaluation task. The [selection record](docs/task_screening.md) explains the public failure evidence and the local verification.
+`NutAssemblySquare` and `NutAssemblyRound` are also supported. These use existing geometry, placement and scoring; no Isaac Sim assets or custom puzzle port are required. ToolHang was selected from one successful and one unsuccessful direct pilot. The [selection record](docs/task_selection.md) explains the mechanism and its limits.
 
 For a completed run, `.venv/bin/python scripts/summarize_episode.py runs/RUN_NAME` records offline waypoint tracking errors, raw wrist loads and private goal timing. These diagnostics are excluded from policy inputs. `scripts/export_policy_usage.py` exports actual inference requests, tokens and an API-equivalent cost estimate; `scripts/export_policy_tools.py` exports exact tool invocations for manual boundary review. Both require the episode agent's native session path. Calculation code and outputs are saved separately by `scripts/policy_calc.py`.
 
-The experiments may support higher success, fewer calls, faster verified completion, lower cost, or no improvement; no particular benefit is assumed. Simulated control time, model/tool time and total elapsed time must be reported separately. Current pilots permit retries within 30 robot decisions and 120 simulated seconds; they do not impose a separate retry count. The hypothesis, primary outcome, secondary metrics and limits remain to be chosen from pilot evidence and frozen before held-out evaluation.
+The experiments may support higher success, fewer calls, faster verified completion, lower cost, or no improvement; no particular benefit is assumed. Simulated control time, native policy-turn time, response delivery and total elapsed are distinct. Retries fit within 30 robot decisions and 120 simulated seconds, with no separate retry count. The [frozen protocol](studies/tool_hang_v1/protocol.md) records four paired starts, timed/deadline/early-arrival conditions, primary success, all resource outcomes and analysis rules.
+
+Start a listed frozen episode with `.venv/bin/python scripts/start_study_episode.py th_v1_s01_direct_waypoints`, then generate its full fresh-context policy prompt with `scripts/prepare_policy.py`. Frozen source and policy material hashes are checked before starting. After recording, auditing and replaying each run, `.venv/bin/python scripts/analyze_study.py` reports paired results and flags missing evidence. Operator access to Astra remains required; action replay is independent of model access.
