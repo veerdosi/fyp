@@ -111,10 +111,16 @@ class Episode:
         record['diagnostic_object_observations'] = {
             k: v.tolist() for k, v in self.obs.items()
             if not k.startswith('robot') and not k.endswith(('_image', '_depth'))}
+        record['diagnostic_goal_predicates'] = self.goal_predicates()
         self.log.write(json.dumps(record, allow_nan=False) + '\n')
         self.log.flush()
         rgb = [self.obs[n + '_image'][::-1] for n in CAMERAS]
         self.video.append_data(np.concatenate(rgb, axis=1))
+
+    def goal_predicates(self):
+        # Scoring only. No executor or public input reads these values.
+        return [{'predicate':state, 'satisfied':bool(self.env.env._eval_predicate(state))}
+                for state in self.env.env.parsed_problem['goal_state']]
 
     def validate_move(self, command):
         points = command.get('waypoints')
@@ -232,6 +238,7 @@ class Episode:
                             states=np.asarray(self.states))
         write_json(self.folder / 'outcome.json', dict(
             success=bool(self.env.check_success()), stop_reason=stop_reason,
+            diagnostic_goal_predicates=self.goal_predicates(),
             control_steps=self.steps, simulated_seconds=self.steps/20,
             wall_seconds=time.monotonic()-self.t0, model_calls=self.calls,
             cost_usd=None if self.calls else 0,

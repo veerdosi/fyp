@@ -1,6 +1,10 @@
 # Experiment status
 
-The objective is a paired comparison guided by direct-control failures. Simulator setup is in progress. No Astra episode has run, no evaluation task has been selected, and no harness hypothesis has been evaluated.
+The objective is a paired comparison guided by direct-control failures. The fresh LIBERO setup is runnable. Two fixed-sequence runs replayed exactly (40 and 60 control steps). The first Astra pilot is running on the requested microwave task. No evaluation task has been selected, and no harness hypothesis has been evaluated.
+
+The first pilot began without initial settling. Astra measured the target mug before it dropped about 6 cm; its first grasp closed above it. It then detected empty grasps, changed to a handle grasp, lifted and transported the mug, and encountered blocked insertion at the microwave entrance. These are ongoing pilot observations, not held-out findings. Later episodes begin with a fixed 20-step settling period. The settled verification run also replayed with maximum state error 0.0.
+
+Agent session records verify GPT-6 Astra at medium effort and expose per-request token usage. The report will distinguish policy decisions from actual model inference requests, and standard API-equivalent cost from unknown actual account charges. Policy reasoning text is not exported.
 
 The original three research documents are provisional. Their linked literature claims have not yet been rechecked during this experiment.
 
