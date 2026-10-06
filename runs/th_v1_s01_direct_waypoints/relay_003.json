@@ -1,0 +1,53 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.093,
+          -0.265,
+          0.823
+        ],
+        "quaternion_xyzw": [
+          0.839,
+          0.545,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 65
+      },
+      {
+        "position": [
+          -0.093,
+          -0.265,
+          0.823
+        ],
+        "gripper": 1,
+        "steps": 25
+      },
+      {
+        "position": [
+          -0.093,
+          -0.265,
+          1.13
+        ],
+        "gripper": 1,
+        "steps": 100
+      }
+    ],
+    "reason": "The frame stayed on the table because the earlier approach had not reached grasp height before closure. Allow the open gripper to reach the block fully, close, and lift."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Fresh observation 1 after your motion command, step 145, simulated time 7.25 seconds. 2 decisions have been executed; 28 model decisions and 2255 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0001/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0001/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0001/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0001/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.093,-0.265,0.823],\"quaternion_xyzw\":[0.839,0.545,0,0],\"gripper\":-1,\"steps\":65},{\"position\":[-0.093,-0.265,0.823],\"gripper\":1,\"steps\":25},{\"position\":[-0.093,-0.265,1.13],\"gripper\":1,\"steps\":100}],\"reason\":\"The frame stayed on the table because the earlier approach had not reached grasp height before closure. Allow the open gripper to reach the block fully, close, and lift.\"}",
+    "response_timestamp": "2026-10-06T16:38:24.961Z",
+    "message_id": "amsg_01a11214-a3c1-7e62-a43b-e9c99be6e97f",
+    "dispatch_timestamp": "2026-10-06T16:38:02.366Z",
+    "policy_wall_seconds": 22.595,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_003.txt"
+  }
+}

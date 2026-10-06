@@ -1,0 +1,74 @@
+{
+  "scope": "Private offline diagnosis; hole 1 is the native scored larger hole. Hole 2 is diagnostic only.",
+  "final_control_step": 2040,
+  "native_success": false,
+  "native_goals": [
+    {
+      "predicate": [
+        "frame_assembled"
+      ],
+      "satisfied": true
+    },
+    {
+      "predicate": [
+        "tool_on_frame"
+      ],
+      "satisfied": false
+    }
+  ],
+  "hook_endpoint_xyz": [
+    0.01325187003214072,
+    0.043098915793734136,
+    1.029450560856511
+  ],
+  "hook_axis": [
+    -0.9999277976395355,
+    -0.0013783663269542866,
+    0.011937320219243873
+  ],
+  "hook_length_m": 0.09125000000000008,
+  "holes": {
+    "1": {
+      "center_xyz": [
+        0.01106103223973801,
+        0.03710352030335887,
+        1.0370785725121863
+      ],
+      "distance_to_hook_line_m": 0.009679204118601178,
+      "distance_threshold_m": 0.006750000000000001,
+      "straddle_dot": -6.11730741294358e-05,
+      "insertion_fraction": 0.0250959066057351,
+      "checks": {
+        "robot_released": true,
+        "hole_contacts_horizontal_hook": true,
+        "center_close_to_hook_line": false,
+        "opposed_geoms_straddle_hook_line": true,
+        "insertion_fraction_between_005_and_1": false
+      },
+      "all_checks": false
+    },
+    "2": {
+      "center_xyz": [
+        -0.0417923329473468,
+        -0.0030445794422195825,
+        0.8628814870619363
+      ],
+      "distance_to_hook_line_m": 0.1734447822848343,
+      "distance_threshold_m": 0.00625,
+      "straddle_dot": 0.029959639004943434,
+      "insertion_fraction": 0.5820870457603834,
+      "checks": {
+        "robot_released": true,
+        "hole_contacts_horizontal_hook": false,
+        "center_close_to_hook_line": false,
+        "opposed_geoms_straddle_hook_line": false,
+        "insertion_fraction_between_005_and_1": true
+      },
+      "all_checks": false
+    }
+  },
+  "scorer_source": "/Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/environments/manipulation/tool_hang.py",
+  "scorer_source_sha256": "da87623a6067bb6efd9714cfff0a61dce2107ad46356eb549810259d03e04ac0",
+  "diagnostic_code_sha256": "8511e4da6865399b1c2178ac4dab77feaa9963388168283096e3fa3d898ccfcb",
+  "reproduce": ".venv/bin/python runs/th_v1_s01_direct_waypoints/native_scorer_diagnostic.py"
+}

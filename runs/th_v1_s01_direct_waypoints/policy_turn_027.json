@@ -1,0 +1,29 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0192,
+          -0.12,
+          1.2
+        ],
+        "gripper": -1,
+        "steps": 50
+      }
+    ],
+    "reason": "The tool is released and visibly suspended from its larger hole on the hook. Keep the gripper clear while the hanging tool settles to verify continued support."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Fresh observation 18 after your motion command, step 1990, simulated time 99.5 seconds. 26 decisions have been executed; 4 model decisions and 410 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0018/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0018/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0018/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0018/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.0192,-0.12,1.2],\"gripper\":-1,\"steps\":50}],\"reason\":\"The tool is released and visibly suspended from its larger hole on the hook. Keep the gripper clear while the hanging tool settles to verify continued support.\"}",
+    "response_timestamp": "2026-10-06T17:03:41.628Z",
+    "message_id": "amsg_01a1122b-c83c-75d1-9488-c71648952d90",
+    "dispatch_timestamp": "2026-10-06T17:03:11.623Z",
+    "policy_wall_seconds": 30.005,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_027.txt"
+  }
+}

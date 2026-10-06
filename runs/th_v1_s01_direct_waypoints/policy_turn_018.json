@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 172,
+        "v": 149
+      },
+      {
+        "camera": "agentview",
+        "u": 174,
+        "v": 144
+      },
+      {
+        "camera": "agentview",
+        "u": 181,
+        "v": 140
+      },
+      {
+        "camera": "agentview",
+        "u": 189,
+        "v": 134
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 110,
+        "v": 77
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 145,
+        "v": 77
+      }
+    ],
+    "reason": "The frame has settled farther into the stand. Re-locate its hook at the new height and direction, along with the tool's larger ring."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Fresh observation 12 after your motion command, step 1385, simulated time 69.25 seconds. 17 decisions have been executed; 13 model decisions and 1015 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0012/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0012/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0012/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0012/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":172,\"v\":149},{\"camera\":\"agentview\",\"u\":174,\"v\":144},{\"camera\":\"agentview\",\"u\":181,\"v\":140},{\"camera\":\"agentview\",\"u\":189,\"v\":134},{\"camera\":\"robot0_eye_in_hand\",\"u\":110,\"v\":77},{\"camera\":\"robot0_eye_in_hand\",\"u\":145,\"v\":77}],\"reason\":\"The frame has settled farther into the stand. Re-locate its hook at the new height and direction, along with the tool's larger ring.\"}",
+    "response_timestamp": "2026-10-06T16:51:52.431Z",
+    "message_id": "amsg_01a11220-f5ef-7c82-9297-de58abb4198c",
+    "dispatch_timestamp": "2026-10-06T16:51:21.613Z",
+    "policy_wall_seconds": 30.818,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_018.txt"
+  }
+}

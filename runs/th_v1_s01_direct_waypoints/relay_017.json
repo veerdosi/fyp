@@ -1,0 +1,38 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.002,
+          0.013,
+          1.095
+        ],
+        "gripper": 1,
+        "steps": 35
+      },
+      {
+        "position": [
+          0.06,
+          0.006,
+          1.095
+        ],
+        "gripper": 1,
+        "steps": 55
+      }
+    ],
+    "reason": "Lift the ring clear of the raised lip, then move to the outer side of the hook so it can be threaded through the aperture without sideways contact."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0011/sense_016.json. You may cat this permitted sensor result file. The images and robot readings in obs_0011 remain current; no motion has occurred. 16 decisions have been executed, with 14 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.002,0.013,1.095],\"gripper\":1,\"steps\":35},{\"position\":[0.06,0.006,1.095],\"gripper\":1,\"steps\":55}],\"reason\":\"Lift the ring clear of the raised lip, then move to the outer side of the hook so it can be threaded through the aperture without sideways contact.\"}",
+    "response_timestamp": "2026-10-06T16:49:52.184Z",
+    "message_id": "amsg_01a1121f-2037-7b23-b963-e945dc5a6fad",
+    "dispatch_timestamp": "2026-10-06T16:49:22.868Z",
+    "policy_wall_seconds": 29.316,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_017.txt"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "reviewer": "Sol",
+  "scope": "Offline diagnosis from saved observations/actions/states; no private diagnosis supplied to Astra. One held-out baseline is not a harness comparison.",
+  "first_causal_failure": {
+    "stage": "frame acquisition",
+    "decision": 2,
+    "observation_after": "public/obs_0001",
+    "description": "First sequence advanced from approach and descent despite non-arrival, closed while moving, then lifted empty. Approach terminal error 0.14445 m, descent 0.09012 m, closing 0.01072 m and closing linear speed 0.07282 m/s. Astra retried with longer open descent, close and lift and acquired the frame. Tracking/timing contributed; this trace alone cannot establish whether a guard would repair acquisition."
+  },
+  "later_failures": [
+    {
+      "stage": "frame assembly",
+      "description": "First insertion/release did not satisfy native assembly. Assembly first became true at step 1341 during later tool motion, so initial visible upright placement was not yet scorer-confirmed seating."
+    },
+    {
+      "stage": "tool placement and completion judgment",
+      "description": "Tool was released and visibly suspended by the correct larger hole, contacting the horizontal hook. It remained too close to the hook tip and its hole center too far from the hook line for native success. Astra returned finish after a 50-step clear hold. This is shallow/off-axis placement plus a completion judgment that did not distinguish the benchmark geometry, not a wrong-hole choice or a dropped tool."
+    }
+  ],
+  "final_geometry": {
+    "larger_hole_distance_to_hook_line_m": 0.009679204118601178,
+    "native_maximum_distance_m": 0.006750000000000001,
+    "normalized_insertion_fraction": 0.0250959066057351,
+    "native_minimum_insertion_fraction": 0.05,
+    "robot_released": true,
+    "larger_hole_horizontal_hook_contact": true,
+    "opposed_geoms_straddle_hook": true,
+    "diagnostic": "native_scorer_diagnostic.json"
+  },
+  "outcome": {
+    "native_full_success": false,
+    "frame_assembled": true,
+    "tool_on_frame": false,
+    "stop_reason": "policy_finish",
+    "control_steps": 2040,
+    "returned_robot_decisions": 28
+  },
+  "replay": "All 2040 saved native actions reproduce the states with maximum absolute error 0.0 and native full-task failure.",
+  "interpretation": "Arrival guards can address measured non-arrival and change handoff timing. They do not measure hole seating or certify task completion. Preserve the frozen native score and also report the observed physical suspension and precise failed subchecks.",
+  "cost_and_time_limit": "543.970 native policy-turn seconds and $4.309184 standard API-equivalent token estimate; actual charges unavailable. Total host elapsed includes 916.608 seconds of residual operator/orchestration and additional delivery delay; no end-to-end speed conclusion."
+}

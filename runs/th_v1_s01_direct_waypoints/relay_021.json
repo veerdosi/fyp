@@ -1,0 +1,45 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 181,
+        "v": 150
+      },
+      {
+        "camera": "agentview",
+        "u": 182,
+        "v": 143
+      },
+      {
+        "camera": "agentview",
+        "u": 187,
+        "v": 138
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 109,
+        "v": 87
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 146,
+        "v": 87
+      }
+    ],
+    "reason": "The reversed wrist orientation reaches freely. Locate the hook tip after the contact-induced rotation and measure the ring offset for the final approach."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Fresh observation 14 after your motion command, step 1565, simulated time 78.25 seconds. 20 decisions have been executed; 10 model decisions and 835 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0014/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0014/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0014/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0014/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":181,\"v\":150},{\"camera\":\"agentview\",\"u\":182,\"v\":143},{\"camera\":\"agentview\",\"u\":187,\"v\":138},{\"camera\":\"robot0_eye_in_hand\",\"u\":109,\"v\":87},{\"camera\":\"robot0_eye_in_hand\",\"u\":146,\"v\":87}],\"reason\":\"The reversed wrist orientation reaches freely. Locate the hook tip after the contact-induced rotation and measure the ring offset for the final approach.\"}",
+    "response_timestamp": "2026-10-06T16:54:46.138Z",
+    "message_id": "amsg_01a11223-9c7a-7fd0-bcb2-8295e84bcdcc",
+    "dispatch_timestamp": "2026-10-06T16:54:17.555Z",
+    "policy_wall_seconds": 28.583,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_021.txt"
+  }
+}

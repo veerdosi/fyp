@@ -1,0 +1,38 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.046,
+          -0.179,
+          0.824
+        ],
+        "gripper": 1,
+        "steps": 25
+      },
+      {
+        "position": [
+          0.046,
+          -0.179,
+          1.12
+        ],
+        "gripper": 1,
+        "steps": 95
+      }
+    ],
+    "reason": "Close on the tool handle and lift it clear of the table so its larger ring and grasp orientation can be measured."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Fresh observation 6 after your motion command, step 855, simulated time 42.75 seconds. 8 decisions have been executed; 22 model decisions and 1545 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0006/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0006/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0006/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0006/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.046,-0.179,0.824],\"gripper\":1,\"steps\":25},{\"position\":[0.046,-0.179,1.12],\"gripper\":1,\"steps\":95}],\"reason\":\"Close on the tool handle and lift it clear of the table so its larger ring and grasp orientation can be measured.\"}",
+    "response_timestamp": "2026-10-06T16:43:02.728Z",
+    "message_id": "amsg_01a11218-e0c8-7b30-b64b-667c4ae25a4f",
+    "dispatch_timestamp": "2026-10-06T16:42:37.594Z",
+    "policy_wall_seconds": 25.134,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_009.txt"
+  }
+}

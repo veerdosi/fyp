@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 109,
+        "v": 85
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 145,
+        "v": 85
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 94,
+        "v": 141
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 43,
+        "v": 161
+      },
+      {
+        "camera": "agentview",
+        "u": 170,
+        "v": 149
+      },
+      {
+        "camera": "agentview",
+        "u": 171,
+        "v": 154
+      }
+    ],
+    "reason": "Measure the flat ring center and the hook's upward lip precisely before lowering the hole over it."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Fresh observation 16 after your motion command, step 1830, simulated time 91.5 seconds. 23 decisions have been executed; 7 model decisions and 570 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0016/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0016/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0016/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0016/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"robot0_eye_in_hand\",\"u\":109,\"v\":85},{\"camera\":\"robot0_eye_in_hand\",\"u\":145,\"v\":85},{\"camera\":\"robot0_eye_in_hand\",\"u\":94,\"v\":141},{\"camera\":\"robot0_eye_in_hand\",\"u\":43,\"v\":161},{\"camera\":\"agentview\",\"u\":170,\"v\":149},{\"camera\":\"agentview\",\"u\":171,\"v\":154}],\"reason\":\"Measure the flat ring center and the hook's upward lip precisely before lowering the hole over it.\"}",
+    "response_timestamp": "2026-10-06T17:01:07.414Z",
+    "message_id": "amsg_01a11229-6dd2-7171-ae16-30a4dd46c17d",
+    "dispatch_timestamp": "2026-10-06T17:00:35.739Z",
+    "policy_wall_seconds": 31.675,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_024.txt"
+  }
+}

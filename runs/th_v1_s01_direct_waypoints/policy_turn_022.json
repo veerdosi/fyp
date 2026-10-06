@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.026,
+          0.072,
+          1.11
+        ],
+        "quaternion_xyzw": [
+          0.7036,
+          0.0706,
+          0.7036,
+          -0.0706
+        ],
+        "gripper": 1,
+        "steps": 65
+      },
+      {
+        "position": [
+          0.026,
+          0.072,
+          0.9665
+        ],
+        "quaternion_xyzw": [
+          0.7036,
+          0.0706,
+          0.7036,
+          -0.0706
+        ],
+        "gripper": 1,
+        "steps": 60
+      }
+    ],
+    "reason": "Position the larger hole just outside the hook tip, centered at the lip's height and aligned with the arm's current direction."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_direct",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/public/obs_0014/sense_021.json. You may cat this permitted sensor result file. The images and robot readings in obs_0014 remain current; no motion has occurred. 21 decisions have been executed, with 9 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.026,0.072,1.11],\"quaternion_xyzw\":[0.7036,0.0706,0.7036,-0.0706],\"gripper\":1,\"steps\":65},{\"position\":[0.026,0.072,0.9665],\"quaternion_xyzw\":[0.7036,0.0706,0.7036,-0.0706],\"gripper\":1,\"steps\":60}],\"reason\":\"Position the larger hole just outside the hook tip, centered at the lip's height and aligned with the arm's current direction.\"}",
+    "response_timestamp": "2026-10-06T16:55:39.266Z",
+    "message_id": "amsg_01a11224-6c02-74f3-afb4-bd3039e670e2",
+    "dispatch_timestamp": "2026-10-06T16:55:09.155Z",
+    "policy_wall_seconds": 30.111,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_direct_waypoints/policy_update_022.txt"
+  }
+}
