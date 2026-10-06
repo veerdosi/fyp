@@ -31,3 +31,9 @@ Good initial conditions are those where a target changes during execution or a p
 - What happens when the target is occluded, moves, or changes appearance?
 
 Pilot traces should guide the command schema and observation handoff before they are frozen for evaluation. Generality across tasks, models, or hardware must be measured rather than assumed from the design.
+
+## Current implementation boundary
+
+The runnable implementation currently exposes direct absolute poses and up to four model-selected waypoints through the standard OSC_POSE controller. It has no candidate harness yet. Robot pose feedback realizes a fixed requested pose in every direct-control command; that existing controller feedback must remain in any baseline. A later test of feedback closure would need to concern a declared sensor-relative objective or another added mechanism.
+
+The first pilot revealed an unsettled initial measurement and then model-selected grasp recovery. A wrist load or finger reading alone does not establish a successful grasp. The pilot is ongoing; these observations have not selected a task or supported H1-H4. See [sensor_audit.md](sensor_audit.md) for the actual sensor boundary.

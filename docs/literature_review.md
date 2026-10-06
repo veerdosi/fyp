@@ -115,3 +115,7 @@ Prior work has shown that:
 - task-trained policies provide motor knowledge that general models may lack.
 
 The project should not claim any of these as new.
+
+## Relation to the local experiment
+
+The local LIBERO setup now renders and replays a fixed native-action episode. One Astra direct-control pilot at medium effort is in progress. Its initial-state settling issue is a protocol observation, not evidence about the cited systems or a communication-harness gain. No paired result or revised theoretical claim has been established yet. Current implementation details and exclusions are recorded in [sensor_audit.md](sensor_audit.md).

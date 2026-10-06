@@ -37,7 +37,9 @@ MuJoCo advances only when our process steps it. Early tests can pause physics du
 
 ## First runnable milestone
 
-The default `python3` on this Mac is 3.14. Create a fresh isolated environment for LIBERO. Install what the simulator needs; policy training and its CUDA packages are outside this experiment. This project has not run the new setup yet.
+The default `python3` on this Mac is 3.14. The fresh `.venv` uses Python 3.11.4, robosuite 1.4.1 and MuJoCo 3.2.7. The first fixed-sequence episode rendered the requested LIBERO task and reproduced all 40 saved simulator states exactly. See [sensor_audit.md](sensor_audit.md) and `runs/smoke_001/replay_verification.json`. Policy training and CUDA packages are outside this experiment.
+
+The first direct-control pilot is still running. Its initial measurement preceded an approximately 6 cm mug drop as the benchmark state settled, so later pilots use a fixed 20-step settling period before policy observation. This is a protocol correction, not evidence for a harness benefit. Astra at medium effort has recovered from empty grasps and lifted the mug by its handle; task selection and paired evaluation remain open.
 
 1. Run LIBERO's minimal task example without a model on `KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it`: load a fixed initial state, render policy-visible camera views, step the environment, and record the task outcome.
 2. Run one episode with a fixed, non-model action sequence. Save camera frames or a short video and a timestamped log of action, robot pose, gripper state, and task outcome.

@@ -1,0 +1,11 @@
+{
+  "success": false,
+  "stop_reason": "fixed_sequence_complete",
+  "control_steps": 60,
+  "simulated_seconds": 3.0,
+  "wall_seconds": 7.970888875002856,
+  "model_calls": 0,
+  "cost_usd": 0,
+  "cost_status": "no model calls",
+  "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/smoke_settled_001"
+}
