@@ -1,0 +1,153 @@
+{
+  "study_id": "tool_hang_v1",
+  "protocol_sha256": "cb37a323df79d302d2e5f15b05f69aefc89c100354883421ac1042219a26cf98",
+  "trials": [
+    {
+      "episode_id": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "seed": 501,
+      "state_index": 11,
+      "condition": "direct_waypoints",
+      "execution_order": 1,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s01_deadline_guard",
+      "paired_state": 1,
+      "seed": 501,
+      "state_index": 11,
+      "condition": "deadline_guard",
+      "execution_order": 2,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s01_phase_guard",
+      "paired_state": 1,
+      "seed": 501,
+      "state_index": 11,
+      "condition": "phase_guard",
+      "execution_order": 3,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s02_deadline_guard",
+      "paired_state": 2,
+      "seed": 502,
+      "state_index": 12,
+      "condition": "deadline_guard",
+      "execution_order": 4,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "seed": 502,
+      "state_index": 12,
+      "condition": "phase_guard",
+      "execution_order": 5,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "seed": 502,
+      "state_index": 12,
+      "condition": "direct_waypoints",
+      "execution_order": 6,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s03_phase_guard",
+      "paired_state": 3,
+      "seed": 503,
+      "state_index": 13,
+      "condition": "phase_guard",
+      "execution_order": 7,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s03_direct_waypoints",
+      "paired_state": 3,
+      "seed": 503,
+      "state_index": 13,
+      "condition": "direct_waypoints",
+      "execution_order": 8,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s03_deadline_guard",
+      "paired_state": 3,
+      "seed": 503,
+      "state_index": 13,
+      "condition": "deadline_guard",
+      "execution_order": 9,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s04_direct_waypoints",
+      "paired_state": 4,
+      "seed": 504,
+      "state_index": 14,
+      "condition": "direct_waypoints",
+      "execution_order": 10,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s04_deadline_guard",
+      "paired_state": 4,
+      "seed": 504,
+      "state_index": 14,
+      "condition": "deadline_guard",
+      "execution_order": 11,
+      "status": "missing",
+      "success": null
+    },
+    {
+      "episode_id": "th_v1_s04_phase_guard",
+      "paired_state": 4,
+      "seed": 504,
+      "state_index": 14,
+      "condition": "phase_guard",
+      "execution_order": 12,
+      "status": "missing",
+      "success": null
+    }
+  ],
+  "condition_summaries": {
+    "direct_waypoints": {
+      "recorded_trials": 0,
+      "planned_trials": 4,
+      "successes": 0,
+      "success_rate": null,
+      "success_rate_wilson_95": null
+    },
+    "deadline_guard": {
+      "recorded_trials": 0,
+      "planned_trials": 4,
+      "successes": 0,
+      "success_rate": null,
+      "success_rate_wilson_95": null
+    },
+    "phase_guard": {
+      "recorded_trials": 0,
+      "planned_trials": 4,
+      "successes": 0,
+      "success_rate": null,
+      "success_rate_wilson_95": null
+    }
+  },
+  "paired_results": [],
+  "complete": false,
+  "statistical_scope": "Small descriptive paired study: Wilson intervals for observed condition proportions; paired wins/losses and resource differences. No equivalence, generalization or significance claim. Missing evidence is not success.",
+  "time_scope": "Native policy-turn durations, delivered-response delays, execution and total host elapsed are distinct. Simulator physics pauses during inference. Successful-pair resource ratios only; every failed trial remains in success counts."
+}
