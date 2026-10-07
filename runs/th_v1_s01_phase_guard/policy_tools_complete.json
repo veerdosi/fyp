@@ -1,0 +1,163 @@
+{
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T09-50-39-01a1140e-3cf6-7af0-bc04-c48debb75cd5.jsonl",
+  "source_sha256_at_export": "e9f7451997cc819a059f69cf6bd86a2bcb60ec8cd67e4afbe1b0ebbf5deecc70",
+  "tool_call_count": 21,
+  "tool_calls": [
+    {
+      "timestamp": "2026-10-07T01:50:46.973Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_b2dc0da453934d4aa388667bc0ac4210",
+      "input": "const r = await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0000/agentview.png\"}); image(r.image_url);\nconst s = await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0000/robot0_eye_in_hand.png\"}); image(s.image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:51:11.032Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_10f22e17bdfe435598d4aee37c705a56",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0000/sense_001.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:51:49.136Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_dff427ccbe264880a2fa9304fbbbec90",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0001/execution.json\"}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0001/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:52:13.624Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_4b2b77097b99458f9ff0170109935eb0",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0002/execution.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0002/observation.json\",\"max_output_tokens\":3500}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0002/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:52:44.761Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_52862a65f9ee43c89da762cdef87277a",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0003/execution.json\",\"max_output_tokens\":1000}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0003/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:53:21.637Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_43d1fa6dfae943b9a8e9c3fb52f211cb",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0004/execution.json\",\"max_output_tokens\":1000}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0004/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0004/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:53:41.801Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_a0c52d7d0a5a4866a4aae54a8c6808f9",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0004/sense_006.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:54:12.079Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_ba8870ab33a7434d89a235e434a570b6",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0005/execution.json\",\"max_output_tokens\":1000}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0005/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:54:38.158Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_9e08d2a5f0014fcf9ac866e5fa70c1c0",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0006/execution.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0006/observation.json\",\"max_output_tokens\":2200}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0006/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:55:30.763Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_3782aaa471104178a02e771c222220d5",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0007/execution.json\",\"max_output_tokens\":1400}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0007/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:55:50.182Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_ed2f66e7c8574eacb7d6c28c71216c78",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0007/sense_010.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:56:24.784Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_5e56944410b54ec6b49d623a27ee73ad",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0008/execution.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0008/observation.json\",\"max_output_tokens\":1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0008/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:56:55.963Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_58a1daf15ef44ea6923176d8251b294d",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0009/execution.json\",\"max_output_tokens\":1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0009/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:57:33.923Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_eb006fb615f84eb696cb06bdcc49b35d",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0010/execution.json\",\"max_output_tokens\":1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0010/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0010/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:58:23.148Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_68f84f3d150048f79454b243c877b8a4",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0011/execution.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0011/observation.json\",\"max_output_tokens\":1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0011/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:58:57.145Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_0d4158d053c742199399fda2b111091c",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0012/execution.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0012/observation.json\",\"max_output_tokens\":1700}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0012/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:59:40.770Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_7f818212d7f0455cb7f68e0e8de8271a",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0013/execution.json\",\"max_output_tokens\":1000}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0013/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0013/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T02:00:18.929Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_4bf712f16efe45e58cbbdca30b157816",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0014/execution.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0014/observation.json\",\"max_output_tokens\":1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0014/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T02:01:07.418Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_0d3e9feba4c84b6792a8f0c29e04dbde",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0015/execution.json\",\"max_output_tokens\":1000}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0015/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T02:01:12.656Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_56d60b09086e48d4ae0628dadef95137",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0015/observation.json\",\"max_output_tokens\":1200}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T02:01:42.662Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_1433259d662541bc80758146c0f65258",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0016/execution.json\",\"max_output_tokens\":1000}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0016/agentview.png\"})).image_url);\n"
+    }
+  ],
+  "review_status": "Export only; inspect tool inputs and calculation logs for boundary compliance.",
+  "manual_boundary_review": {
+    "reviewer": "Sol",
+    "status": "passed",
+    "tool_calls_reviewed": 21,
+    "temporary_calculation_count": 0,
+    "method": "Read every exact tool input. Only this episode public images, robot observations, execution reports and requested depth samples were read; no prohibited access observed.",
+    "limits": "Prompt/manual audit; no OS sandbox or syscall trace."
+  }
+}

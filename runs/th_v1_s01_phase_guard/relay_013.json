@@ -1,0 +1,53 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.031,
+          -0.189,
+          0.823
+        ],
+        "quaternion_xyzw": [
+          0.85,
+          0.527,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 90
+      },
+      {
+        "position": [
+          0.031,
+          -0.189,
+          0.823
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          0.031,
+          -0.189,
+          1.09
+        ],
+        "gripper": 1,
+        "steps": 70
+      }
+    ],
+    "reason": "Complete the unobstructed descent, close on the tool handle and lift to check acquisition."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_phase",
+    "policy_visible_input": "Fresh observation 9 after your motion command, step 836, simulated time 41.8 seconds. 12 decisions have been executed; 18 model decisions and 1564 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0009/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0009/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0009/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0009/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.031,-0.189,0.823],\"quaternion_xyzw\":[0.85,0.527,0,0],\"gripper\":-1,\"steps\":90},{\"position\":[0.031,-0.189,0.823],\"gripper\":1,\"steps\":40},{\"position\":[0.031,-0.189,1.09],\"gripper\":1,\"steps\":70}],\"reason\":\"Complete the unobstructed descent, close on the tool handle and lift to check acquisition.\"}",
+    "response_timestamp": "2026-10-07T01:57:07.801Z",
+    "message_id": "amsg_01a11414-2859-7281-a9a5-c44e38141d70",
+    "dispatch_timestamp": "2026-10-07T01:56:51.801Z",
+    "policy_wall_seconds": 16.0,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/policy_update_013.txt"
+  }
+}

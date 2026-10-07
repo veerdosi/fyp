@@ -1,0 +1,237 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "policy_decisions": 20,
+  "model_inference_requests": 41,
+  "agent_tool_calls": 21,
+  "completed_policy_turns": 20,
+  "policy_wall_seconds": 261.645,
+  "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
+  "token_usage": {
+    "input_tokens": 1931866,
+    "cached_input_tokens": 1896064,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5453,
+    "reasoning_output_tokens": 1189,
+    "total_tokens": 1937319
+  },
+  "api_equivalent_standard_cost_usd": 2.526734,
+  "actual_account_charge_usd": null,
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "accessed_date": "2026-10-06",
+    "per_million_tokens_usd": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+  },
+  "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T09-50-39-01a1140e-3cf6-7af0-bc04-c48debb75cd5.jsonl",
+  "model_effort_verification": {
+    "01a1140e-3dbf-7ed3-9a8e-675187e6ad9c": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140e-aa54-7250-95e1-0f147549f81b": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140f-3abd-73d2-b75f-123dae990c64": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140f-94c1-7211-852c-76065e6c3b6d": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11410-1511-7b13-bc77-382c6329659b": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11410-9855-7640-88f8-1afb4882356a": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11410-f249-79d0-916b-038b86ea3d9e": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11411-633e-7ff1-befb-30130270bcf4": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11411-cd2a-78b0-8976-8760d9c5a87d": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11412-9be1-7711-b583-1b915e6e7702": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11412-e58c-7720-ae16-e6117dd95ca8": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11413-6a5b-7102-9dd6-a95df8389c52": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11413-e9e0-7843-bf7a-3e908f9b9982": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11414-7c84-7750-adea-1739c84524d5": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11415-0b3a-76f3-8e21-c5d247ec3018": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11415-c135-75f0-aa76-59018454625d": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11416-6d0b-7861-8fe6-cac03069bd96": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11416-ffa7-7471-b06e-838a6f599f0c": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11417-bde9-7d43-bc5d-748ea45a4f0b": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11418-4127-7931-869f-1c126a67ecc5": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    }
+  },
+  "turn_timing": {
+    "01a1140e-3dbf-7ed3-9a8e-675187e6ad9c": {
+      "started_at": 1791337840,
+      "completed_at": 1791337853,
+      "duration_ms": 13730,
+      "time_to_first_token_ms": 5720
+    },
+    "01a1140e-aa54-7250-95e1-0f147549f81b": {
+      "started_at": 1791337867,
+      "completed_at": 1791337878,
+      "duration_ms": 11094,
+      "time_to_first_token_ms": 2657
+    },
+    "01a1140f-3abd-73d2-b75f-123dae990c64": {
+      "started_at": 1791337904,
+      "completed_at": 1791337915,
+      "duration_ms": 10838,
+      "time_to_first_token_ms": 3080
+    },
+    "01a1140f-94c1-7211-852c-76065e6c3b6d": {
+      "started_at": 1791337927,
+      "completed_at": 1791337938,
+      "duration_ms": 11041,
+      "time_to_first_token_ms": 4536
+    },
+    "01a11410-1511-7b13-bc77-382c6329659b": {
+      "started_at": 1791337960,
+      "completed_at": 1791337970,
+      "duration_ms": 9777,
+      "time_to_first_token_ms": 2945
+    },
+    "01a11410-9855-7640-88f8-1afb4882356a": {
+      "started_at": 1791337994,
+      "completed_at": 1791338007,
+      "duration_ms": 12925,
+      "time_to_first_token_ms": 4807
+    },
+    "01a11410-f249-79d0-916b-038b86ea3d9e": {
+      "started_at": 1791338017,
+      "completed_at": 1791338026,
+      "duration_ms": 9477,
+      "time_to_first_token_ms": 3878
+    },
+    "01a11411-633e-7ff1-befb-30130270bcf4": {
+      "started_at": 1791338046,
+      "completed_at": 1791338056,
+      "duration_ms": 10167,
+      "time_to_first_token_ms": 3074
+    },
+    "01a11411-cd2a-78b0-8976-8760d9c5a87d": {
+      "started_at": 1791338073,
+      "completed_at": 1791338085,
+      "duration_ms": 12109,
+      "time_to_first_token_ms": 3064
+    },
+    "01a11412-9be1-7711-b583-1b915e6e7702": {
+      "started_at": 1791338126,
+      "completed_at": 1791338137,
+      "duration_ms": 11148,
+      "time_to_first_token_ms": 2415
+    },
+    "01a11412-e58c-7720-ae16-e6117dd95ca8": {
+      "started_at": 1791338145,
+      "completed_at": 1791338157,
+      "duration_ms": 12297,
+      "time_to_first_token_ms": 4524
+    },
+    "01a11413-6a5b-7102-9dd6-a95df8389c52": {
+      "started_at": 1791338179,
+      "completed_at": 1791338190,
+      "duration_ms": 11209,
+      "time_to_first_token_ms": 3469
+    },
+    "01a11413-e9e0-7843-bf7a-3e908f9b9982": {
+      "started_at": 1791338211,
+      "completed_at": 1791338222,
+      "duration_ms": 10216,
+      "time_to_first_token_ms": 2264
+    },
+    "01a11414-7c84-7750-adea-1739c84524d5": {
+      "started_at": 1791338249,
+      "completed_at": 1791338267,
+      "duration_ms": 17672,
+      "time_to_first_token_ms": 2842
+    },
+    "01a11415-0b3a-76f3-8e21-c5d247ec3018": {
+      "started_at": 1791338286,
+      "completed_at": 1791338314,
+      "duration_ms": 28173,
+      "time_to_first_token_ms": 15490
+    },
+    "01a11415-c135-75f0-aa76-59018454625d": {
+      "started_at": 1791338332,
+      "completed_at": 1791338347,
+      "duration_ms": 14870,
+      "time_to_first_token_ms": 3858
+    },
+    "01a11416-6d0b-7861-8fe6-cac03069bd96": {
+      "started_at": 1791338376,
+      "completed_at": 1791338389,
+      "duration_ms": 12851,
+      "time_to_first_token_ms": 2228
+    },
+    "01a11416-ffa7-7471-b06e-838a6f599f0c": {
+      "started_at": 1791338414,
+      "completed_at": 1791338428,
+      "duration_ms": 14442,
+      "time_to_first_token_ms": 2971
+    },
+    "01a11417-bde9-7d43-bc5d-748ea45a4f0b": {
+      "started_at": 1791338462,
+      "completed_at": 1791338478,
+      "duration_ms": 15544,
+      "time_to_first_token_ms": 3459
+    },
+    "01a11418-4127-7931-869f-1c126a67ecc5": {
+      "started_at": 1791338496,
+      "completed_at": 1791338508,
+      "duration_ms": 12065,
+      "time_to_first_token_ms": 5133
+    }
+  }
+}

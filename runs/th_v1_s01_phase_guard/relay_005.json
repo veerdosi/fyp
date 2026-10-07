@@ -1,0 +1,35 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.1,
+          -0.267,
+          1.13
+        ],
+        "quaternion_xyzw": [
+          0.596,
+          0.38,
+          -0.596,
+          0.38
+        ],
+        "gripper": 1,
+        "steps": 100
+      }
+    ],
+    "reason": "The frame lifted with the gripper; rotate its long insertion leg downward while keeping clearance for the rotation."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_phase",
+    "policy_visible_input": "Fresh observation 3 after your motion command, step 237, simulated time 11.85 seconds. 4 decisions have been executed; 26 model decisions and 2163 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0003/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0003/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0003/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0003/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.100,-0.267,1.13],\"quaternion_xyzw\":[0.596,0.380,-0.596,0.380],\"gripper\":1,\"steps\":100}],\"reason\":\"The frame lifted with the gripper; rotate its long insertion leg downward while keeping clearance for the rotation.\"}",
+    "response_timestamp": "2026-10-07T01:52:56.283Z",
+    "message_id": "amsg_01a11410-51db-7743-b148-06bddb2841b2",
+    "dispatch_timestamp": "2026-10-07T01:52:40.715Z",
+    "policy_wall_seconds": 15.568,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/policy_update_005.txt"
+  }
+}

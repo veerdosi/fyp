@@ -1,0 +1,53 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.008,
+          0.004,
+          1.22
+        ],
+        "quaternion_xyzw": [
+          0.85,
+          0.527,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 70
+      },
+      {
+        "position": [
+          0.031,
+          -0.189,
+          1.22
+        ],
+        "gripper": -1,
+        "steps": 80
+      },
+      {
+        "position": [
+          0.031,
+          -0.189,
+          0.93
+        ],
+        "gripper": -1,
+        "steps": 50
+      }
+    ],
+    "reason": "The direct approach was obstructed near the assembled hook. Lift above the frame, translate over the tool, then descend clear of the stand."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_phase",
+    "policy_visible_input": "Fresh observation 8 after your motion command, step 670, simulated time 33.5 seconds. 11 decisions have been executed; 19 model decisions and 1730 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0008/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0008/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0008/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/public/obs_0008/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.008,0.004,1.22],\"quaternion_xyzw\":[0.85,0.527,0,0],\"gripper\":-1,\"steps\":70},{\"position\":[0.031,-0.189,1.22],\"gripper\":-1,\"steps\":80},{\"position\":[0.031,-0.189,0.93],\"gripper\":-1,\"steps\":50}],\"reason\":\"The direct approach was obstructed near the assembled hook. Lift above the frame, translate over the tool, then descend clear of the stand.\"}",
+    "response_timestamp": "2026-10-07T01:56:31.083Z",
+    "message_id": "amsg_01a11413-98eb-7d71-ac30-6f33cf849ca1",
+    "dispatch_timestamp": "2026-10-07T01:56:19.156Z",
+    "policy_wall_seconds": 11.927,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_phase_guard/policy_update_012.txt"
+  }
+}

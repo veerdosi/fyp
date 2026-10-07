@@ -1,0 +1,63 @@
+{
+  "reviewer": "Sol",
+  "scope": "Private offline diagnosis only; no prior condition outcomes or private geometry supplied to Astra.",
+  "first_causal_failure": {
+    "stage": "initial approach/controller tracking",
+    "decision": 2,
+    "description": "The first approach did not arrive by its deadline. The guard cancelled following descent/closure; Astra repeated the approach and acquired the frame on its first executed close/lift."
+  },
+  "first_unrecovered_causal_failure": {
+    "stage": "tool reorientation/controller configuration",
+    "decision": 14,
+    "description": "The upright tool pose did not settle; a subsequent same-facing request reached wrist joint 7 lower limit by step 1179. The alternate-facing recovery in decision 16 swept robot arm links into the previously assembled frame. Joint bounds and contact reconstruction support this execution/configuration diagnosis; no proof that every IK solution for those poses is infeasible is claimed."
+  },
+  "assembly_timeline": {
+    "first_frame_success_step": 518,
+    "first_lost_step": 1218,
+    "first_lost_command": 16,
+    "transient_restorations": [
+      1220,
+      1295
+    ],
+    "last_transition_to_failure_step": 1296,
+    "final_frame_assembled": false
+  },
+  "collision_evidence": {
+    "diagnostic": "controller_diagnostic.json",
+    "first_loss_state_contacts": [
+      "frame_horizontal_frame with robot0_link5_collision",
+      "frame_grip_frame with robot0_link5_collision",
+      "frame_horizontal_frame with robot0_link7_collision",
+      "frame_hook_frame with robot0_link7_collision"
+    ],
+    "limitation": "Contacts rebuilt by forward from exact saved simulator states; contact forces were not replayed."
+  },
+  "later_failure": {
+    "stage": "recovery",
+    "description": "Later Cartesian recovery requests remained non-arriving while joints 5/6/7 approached their physical bounds. The tool stayed gripped and was never hung/released."
+  },
+  "completion_judgment": {
+    "decision": 20,
+    "correctly_reported_failure": true,
+    "description": "Astra explicitly judged the task incomplete and stopped after repeated unsuccessful recovery. This differs from the two earlier false-success finishes on this same start."
+  },
+  "observation_limit": "The frozen public sensor set includes robot joint velocities, but native ToolHang did not emit the requested robot0_joint_pos field, so encoder joint positions and bound margins were not supplied. Private joint-angle diagnosis remains outside the policy/executor.",
+  "executor_metrics": {
+    "reported_waypoints": 23,
+    "early_completed_waypoints": 11,
+    "requested_minus_executed_steps_on_early_completed_waypoints": 296,
+    "deadline_nonarrival_waypoints": 12,
+    "cancelled_following_waypoints": 4
+  },
+  "metric_limit": "Early-completion steps are measured differences within accepted waypoint durations, not counterfactual full-episode savings; policies/actions differ by condition.",
+  "outcome": {
+    "native_full_success": false,
+    "frame_assembled": false,
+    "tool_on_frame": false,
+    "control_steps": 1579,
+    "returned_robot_decisions": 20,
+    "stop_reason": "policy_finish"
+  },
+  "replay": "All 1579 recorded native actions replay with maximum absolute state error 0.0 and the same native failure.",
+  "interpretation": "Arrival gating handled initial non-arrival and early stopping shortened completed waypoints, but it did not preserve assembly during the whole-arm sweep or solve joint-limited recovery. All three conditions failed on this first start; no successful-completion efficiency claim. Finish the second matched start before choosing a revised mechanism."
+}

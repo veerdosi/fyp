@@ -1,0 +1,1552 @@
+{
+  "scope": "Private diagnosis only. Joint margins and rebuilt contacts are correlates, not proof of pose infeasibility or a replay of contact forces.",
+  "states": [
+    {
+      "step": 979,
+      "command_id": 13,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": -0.17263437511203225,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.724665624887968
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.42053575235494645,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 1.3422642476450535
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.14372359572328108,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.753576404276719
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -1.9582846721804585,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 1.1135153278195415
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": 0.08594143355340486,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.811358566446595
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 2.374381955747379,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.3781180442526209
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -0.690695554059806,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.206604445940194
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001920589526876155
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023759178360501697
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00016264994971852033
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00015342815112989782
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00013066165110348974
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00016824231600244546
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00014558632672777205
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1079,
+      "command_id": 14,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": -0.168607473206946,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.728692526793054
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 1.4394956311589162,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 0.3233043688410837
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": 0.057245229704626935,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.840054770295373
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -0.30960223704883044,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 0.23980223704883044
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -0.3131604729943868,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.5841395270056133
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 0.5771761497581407,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 0.5946761497581406
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.5671941395146445,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.3301058604853555
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002199612321850423
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00024073241211766339
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002199555545658672
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00012115218484620809
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011076659487989649
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001211550234724249
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011076951150839887
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1179,
+      "command_id": 15,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.053899807062505266,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.843400192937495
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 1.447378141700469,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 0.31542185829953095
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.5207137374874673,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.3765862625125327
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -0.4698515453565843,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 0.40005154535658427
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -0.037345145885691315,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.8599548541143087
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 0.4461165637270195,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 0.46361656372701954
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.897361560486603,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": -6.156048660299618e-05
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011608220418420561
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011501670367659357
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001160885677161813
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011502280364575857
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023163759542902
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00022950659441379692
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023162539565018263
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1217,
+      "command_id": 16,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.14056061962141303,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.756739380378587
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.8720824069096308,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 0.8907175930903691
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.049653396803903134,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.8476466031960967
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -1.7310229223719455,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 1.3407770776280545
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -1.2464120387011024,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 1.6508879612988976
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 1.198369904032284,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.215869904032284
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.767163378698477,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.13013662130152293
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "frame_horizontal_frame",
+            "robot0_link5_collision"
+          ],
+          "distance_m": -0.0054640102472986755
+        },
+        {
+          "geom_names": [
+            "frame_grip_frame",
+            "robot0_link5_collision"
+          ],
+          "distance_m": -0.00508547964381034
+        },
+        {
+          "geom_names": [
+            "frame_horizontal_frame",
+            "robot0_link7_collision"
+          ],
+          "distance_m": -0.0006160745839562506
+        },
+        {
+          "geom_names": [
+            "frame_hook_frame",
+            "robot0_link7_collision"
+          ],
+          "distance_m": -0.000733924121377211
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001203900056445294
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -8.873974917030245e-05
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001204007266541075
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -8.875102650365133e-05
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00021938547818873926
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002826859911370784
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00021936402815090082
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1218,
+      "command_id": 16,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.14356864931574584,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.7537313506842542
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.8590655403299787,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 0.9037344596700212
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.047984278679747194,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.8493157213202527
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -1.753888754852029,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 1.317911245147971
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -1.265876280364389,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 1.631423719635611
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 1.2153985590548833,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.2328985590548833
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.7647926311497892,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.13250736885021075
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "frame_horizontal_frame",
+            "robot0_link5_collision"
+          ],
+          "distance_m": -0.007032373184606761
+        },
+        {
+          "geom_names": [
+            "frame_grip_frame",
+            "robot0_link5_collision"
+          ],
+          "distance_m": -0.004777761164010569
+        },
+        {
+          "geom_names": [
+            "frame_horizontal_frame",
+            "robot0_link7_collision"
+          ],
+          "distance_m": -0.0006872182064215341
+        },
+        {
+          "geom_names": [
+            "frame_hook_frame",
+            "robot0_link7_collision"
+          ],
+          "distance_m": -0.0008266108024837925
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00012060430670796875
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -8.964645304297025e-05
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00012060788661956084
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -8.965021964381882e-05
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002189525756321949
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.000280868282962178
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00021894541315352226
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1220,
+      "command_id": 16,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.14997041355410215,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.7473295864458978
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.8374396362759732,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 0.9253603637240267
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.04509841529161357,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.8522015847083866
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -1.80109257967765,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 1.27070742032235
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -1.3045492510724335,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 1.5927507489275665
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 1.2485441528530363,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.2660441528530364
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.753352780781288,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.1439472192187119
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "frame_horizontal_frame",
+            "robot0_link5_collision"
+          ],
+          "distance_m": -0.004989444014819009
+        },
+        {
+          "geom_names": [
+            "frame_grip_frame",
+            "robot0_link5_collision"
+          ],
+          "distance_m": -0.004240985403758509
+        },
+        {
+          "geom_names": [
+            "frame_horizontal_frame",
+            "robot0_link7_collision"
+          ],
+          "distance_m": -3.050447352761282e-05
+        },
+        {
+          "geom_names": [
+            "frame_hook_frame",
+            "robot0_link7_collision"
+          ],
+          "distance_m": -0.00046524366299813817
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023965882622286052
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001804631231521328
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002396419949903304
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00014001290611667368
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011041505458127596
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00014002176751626194
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011042347325538143
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1249,
+      "command_id": 16,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.18260627420679132,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.7146937257932087
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.5108817407762148,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 1.251918259223785
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.17234121344393988,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.7249587865560603
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -2.384900223488624,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 0.686899776511376
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -2.1498597039697995,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.7474402960302005
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 1.6700681001760962,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.6875681001760963
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.5092024853219046,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.3880975146780954
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "frame_grip_frame",
+            "robot0_link6_collision"
+          ],
+          "distance_m": -0.007177812147553802
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011246934378089208
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -9.745340733568012e-05
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011247263838401491
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -9.745690064439534e-05
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023743472262416216
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002674665955145803
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023742813205289794
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1250,
+      "command_id": 16,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.18191788879429308,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.715382111205707
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.5048588619628438,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 1.2579411380371561
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.1776165789819947,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.719683421018005
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -2.395413378507971,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 0.6763866214920289
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -2.1832158596234703,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.7140841403765297
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 1.6770948155451897,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.6945948155451898
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.499192475262208,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.3981075247377919
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "frame_grip_frame",
+            "robot0_link6_collision"
+          ],
+          "distance_m": -0.009175658101986233
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00022809104305719456
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00019907267188374266
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00022806711367232807
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001315143402588745
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011700515467210892
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00013152703286382846
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011701712187329005
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1279,
+      "command_id": 16,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.19233619268531926,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.7049638073146807
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.41173782730615405,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 1.3510621726938459
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.28626894581402607,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.611031054185974
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -2.5412242073409077,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 0.5305757926590924
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -2.8977073597783165,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": -0.00040735977831651837
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 1.764504768804662,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.782004768804662
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.281761808751411,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.6155381912485889
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "frame_grip_frame",
+            "robot0_link6_collision"
+          ],
+          "distance_m": -0.005867654816531517
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023400279614413028
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002285544288373016
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.000234002572361637
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011663581792840054
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011391163427498616
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011663593769908061
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011391174617119071
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1379,
+      "command_id": 17,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.19536567870266378,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.7019343212973363
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.3256654188051086,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 1.4371345811948912
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.014759995389517553,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.8825400046104823
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -2.6634955585906583,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 0.40830444140934175
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -2.8975337302223005,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": -0.0002337302223005544
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 1.7181445921111513,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": 1.7356445921111514
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.386624889391325,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.5106751106086751
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023249342487601006
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023216038386571862
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023248076449176625
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011465163770881799
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001144851172036721
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011465862502424652
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011449144744792969
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1479,
+      "command_id": 18,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.07606037686406444,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.8212396231359356
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.29434437540448327,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 1.4684556245955167
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.36071094965878064,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.5365890503412194
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -2.221020029970778,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 0.850779970029222
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -2.8976088181337785,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": -0.0003088181337784768
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 3.752764752209145,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": -0.0002647522091452359
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.795375823563,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 0.10192417643700002
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002340156366815361
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023091453222448538
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023401162308809667
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011544775157169955
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011389719934317402
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001154500579950598
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011389920625158528
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1579,
+      "command_id": 19,
+      "joints": [
+        {
+          "name": "robot0_joint1",
+          "angle_rad": 0.22412852266098995,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.67317147733901
+        },
+        {
+          "name": "robot0_joint2",
+          "angle_rad": 0.5463175137125647,
+          "lower_rad": -1.7628,
+          "upper_rad": 1.7628,
+          "nearest_limit_margin_rad": 1.2164824862874353
+        },
+        {
+          "name": "robot0_joint3",
+          "angle_rad": -0.1776158853541346,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": 2.7196841146458652
+        },
+        {
+          "name": "robot0_joint4",
+          "angle_rad": -1.947588284611264,
+          "lower_rad": -3.0718,
+          "upper_rad": -0.0698,
+          "nearest_limit_margin_rad": 1.124211715388736
+        },
+        {
+          "name": "robot0_joint5",
+          "angle_rad": -2.8977154479801768,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": -0.0004154479801767863
+        },
+        {
+          "name": "robot0_joint6",
+          "angle_rad": 3.752562540914485,
+          "lower_rad": -0.0175,
+          "upper_rad": 3.7525,
+          "nearest_limit_margin_rad": -6.254091448498755e-05
+        },
+        {
+          "name": "robot0_joint7",
+          "angle_rad": -2.8977583650534626,
+          "lower_rad": -2.8973,
+          "upper_rad": 2.8973,
+          "nearest_limit_margin_rad": -0.00045836505346263934
+        }
+      ],
+      "contacts_rebuilt_by_forward": [
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011507857022088575
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011450168214674772
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011508318715894444
+        },
+        {
+          "geom_names": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011450698680529705
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023151617791635152
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.000232669954064627
+        },
+        {
+          "geom_names": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00023150694390600056
+        }
+      ],
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    }
+  ],
+  "code_sha256": "70b90477beb0feaf3ef68f4be4dd0b785dc829949b75b63029d7b142588a9f24",
+  "reproduce": ".venv/bin/python runs/th_v1_s01_phase_guard/controller_diagnostic.py"
+}
