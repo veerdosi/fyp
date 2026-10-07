@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.056,
+          -0.007,
+          0.932
+        ],
+        "quaternion_xyzw": [
+          0.5,
+          0.5,
+          0.5,
+          -0.5
+        ],
+        "gripper": -1,
+        "steps": 100
+      },
+      {
+        "position": [
+          -0.056,
+          -0.007,
+          0.932
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "Close a side grasp around the newly measured shaft midpoint, with the wrist on the open side of the assembly."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_deadline",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0014/sense_020.json. You may cat this permitted sensor result file. The images and robot readings in obs_0014 remain current; no motion has occurred. 20 decisions have been executed, with 10 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.056,-0.007,0.932],\"quaternion_xyzw\":[0.5,0.5,0.5,-0.5],\"gripper\":-1,\"steps\":100},{\"position\":[-0.056,-0.007,0.932],\"gripper\":1,\"steps\":45}],\"reason\":\"Close a side grasp around the newly measured shaft midpoint, with the wrist on the open side of the assembly.\"}",
+    "response_timestamp": "2026-10-07T03:02:55.517Z",
+    "message_id": "amsg_01a11450-651d-7ab3-a15e-9f848db60105",
+    "dispatch_timestamp": "2026-10-07T03:02:43.449Z",
+    "policy_wall_seconds": 12.068,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/policy_update_021.txt"
+  }
+}

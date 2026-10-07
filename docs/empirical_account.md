@@ -1,6 +1,6 @@
 # Interim empirical account
 
-This account is incomplete. The held-out comparison currently has one completed baseline, all three conditions on the first matched start and three unstarted episodes. It cannot establish a harness benefit or finish the FYP objective.
+This account is incomplete. The held-out comparison has completed all three conditions on the first matched start. The second start’s deadline episode is underway; its other two conditions are unstarted. It cannot establish a harness benefit or finish the FYP objective.
 
 ## Question and first mechanism
 
@@ -33,3 +33,5 @@ Complete the frozen matched comparison before changing its interface. Report eve
 Then retain, revise or discard the arrival-guard explanation. The next mechanism or generalization test must follow the causal traces and be recorded before implementation, with new held-out starts. H1, H2 and H4 remain open; this comparison does not establish sensor-relative correction, command extension beyond a credible waypoint baseline or cross-task delegation. The supervisor account must explain the revised hypothesis and its limits, including null or harmful effects.
 
 The early-arrival run completed frame assembly, then lost it during a wrist recovery that brought arm links into contact with the frame. Joint 7 was at its lower bound before that recovery; later commands approached several joint bounds. These private diagnostics identify a different failure from incomplete initial insertion. Astra correctly stopped with an incomplete-task judgment. The shared public observations lacked native joint-position fields, though joint velocities were supplied. This is an observation/execution limitation to consider after the frozen comparison, with no mid-study sensor change.
+
+The second-start deadline episode is unfinished at 22 decisions / 2000 steps (100 simulated seconds) because Astra hit a usage limit before its next decision. Its 2000-step prefix reproduces every logged robot/object measurement and score exactly. Before withdrawal, the frame shaft lay between the stand walls but its tip remained about 12 cm from the base, so seating depth failed. Withdrawal later caught and displaced the shallowly seated frame; Astra recognized this and attempted recovery. The interrupted prefix is retained, not scored as a final failure. Its current resource totals are 46 usage-recorded inference requests, 320.429 native policy seconds and $3.565552 API-equivalent cost; actual charge is unknown. These include the failed policy turn and remain partial.

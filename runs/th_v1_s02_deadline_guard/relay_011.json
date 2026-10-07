@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.066,
+          0.05,
+          1.14
+        ],
+        "quaternion_xyzw": [
+          0.61331,
+          0.20209,
+          -0.727759,
+          0.231037
+        ],
+        "gripper": 1,
+        "steps": 55
+      },
+      {
+        "position": [
+          -0.066,
+          0.05,
+          1.085
+        ],
+        "gripper": 1,
+        "steps": 70
+      }
+    ],
+    "reason": "Remove the residual shaft tilt and lower the aligned insertion tip into the stand opening while retaining the frame."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_deadline",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0006/sense_010.json. You may cat this permitted sensor result file. The images and robot readings in obs_0006 remain current; no motion has occurred. 10 decisions have been executed, with 20 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.066,0.050,1.14],\"quaternion_xyzw\":[0.61331,0.20209,-0.727759,0.231037],\"gripper\":1,\"steps\":55},{\"position\":[-0.066,0.050,1.085],\"gripper\":1,\"steps\":70}],\"reason\":\"Remove the residual shaft tilt and lower the aligned insertion tip into the stand opening while retaining the frame.\"}",
+    "response_timestamp": "2026-10-07T02:58:06.126Z",
+    "message_id": "amsg_01a1144b-faad-78e1-b7e6-c0fac6513f28",
+    "dispatch_timestamp": "2026-10-07T02:57:44.439Z",
+    "policy_wall_seconds": 21.687,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/policy_update_011.txt"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.07,
+          -0.07,
+          1.08
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 100
+      },
+      {
+        "position": [
+          -0.07,
+          -0.07,
+          0.85
+        ],
+        "gripper": -1,
+        "steps": 90
+      }
+    ],
+    "reason": "Approach the fallen frame's black junction from above to reacquire it without moving the stand further."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_deadline",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0010/sense_015.json. You may cat this permitted sensor result file. The images and robot readings in obs_0010 remain current; no motion has occurred. 15 decisions have been executed, with 15 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.07,-0.07,1.08],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":100},{\"position\":[-0.07,-0.07,0.85],\"gripper\":-1,\"steps\":90}],\"reason\":\"Approach the fallen frame's black junction from above to reacquire it without moving the stand further.\"}",
+    "response_timestamp": "2026-10-07T03:00:40.800Z",
+    "message_id": "amsg_01a1144e-56e0-7740-b7f7-a3fe92278082",
+    "dispatch_timestamp": "2026-10-07T03:00:26.209Z",
+    "policy_wall_seconds": 14.591,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/policy_update_016.txt"
+  }
+}

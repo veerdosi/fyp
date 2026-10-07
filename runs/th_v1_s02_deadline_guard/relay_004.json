@@ -1,0 +1,41 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.093,
+          -0.269,
+          0.824
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.093,
+          -0.269,
+          1.07
+        ],
+        "gripper": 1,
+        "steps": 100
+      }
+    ],
+    "reason": "Close around the frame junction and lift clear of the table to verify that the frame follows the gripper."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_deadline",
+    "policy_visible_input": "Fresh observation 2 after your motion command, step 280, simulated time 14.0 seconds. 3 decisions have been executed; 27 model decisions and 2120 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0002/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0002/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0002/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0002/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.093,-0.269,0.824],\"gripper\":1,\"steps\":40},{\"position\":[-0.093,-0.269,1.07],\"gripper\":1,\"steps\":100}],\"reason\":\"Close around the frame junction and lift clear of the table to verify that the frame follows the gripper.\"}",
+    "response_timestamp": "2026-10-07T02:08:21.788Z",
+    "message_id": "native_task_complete:01a1141e-4faa-78e1-9c42-5a955dea0443",
+    "dispatch_timestamp": "2026-10-07T02:08:13.257Z",
+    "policy_wall_seconds": 8.533,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/policy_update_004.txt",
+    "native_source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T10-06-22-01a1141c-9ed3-7103-a742-0edc1adcd883.jsonl",
+    "native_source_ordinal": 70,
+    "recovery_note": "Exact completed native policy output; root mailbox delivery lost during interruption. No new inference or command alteration. Native turn duration recorded in policy_wall_seconds."
+  }
+}

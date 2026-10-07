@@ -1,0 +1,7 @@
+{
+  "policy_agent": "/root/astra_th_v1_s02_deadline",
+  "policy_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T10-06-22-01a1141c-9ed3-7103-a742-0edc1adcd883.jsonl",
+  "root_session": "/Users/veerdosi/.codex/sessions/2026/10/06/rollout-2026-10-06T14-09-32-01a10fd4-e3c1-74b2-ac7f-9709d474882b.jsonl",
+  "initial_prompt_sha256": "17dab15a249f7c9f08f7f956b5ecfeaf5629b3ae33807ac3769d5ad1e8b6da64",
+  "initial_prompt_note": "Entire prepared prompt supplied verbatim to fresh Astra medium policy agent; no past outcomes or private scoring supplied."
+}

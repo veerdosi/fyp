@@ -1,0 +1,17 @@
+{
+  "status": "awaiting_policy_usage_availability",
+  "cause": "Astra usage limit before a decision for policy_update_023.txt",
+  "error_text": "You\u2019ve hit your usage limit. Try again at 2:39 PM.",
+  "reset_timezone": "not provided by error",
+  "last_executed_decision": 22,
+  "control_steps": 2000,
+  "remaining_decisions": 8,
+  "remaining_control_steps": 400,
+  "pending_policy_input": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/policy_update_023.txt",
+  "simulator_session_id": 16294,
+  "agent": "/root/astra_th_v1_s02_deadline",
+  "robot_outcome": "unfinished; no outcome recorded",
+  "next_action": "Revalidate this live simulator handle, then resend the exact pending observation to the same policy context once service availability returns. Do not reset robot, budget or starting state.",
+  "completed_policy_turns_include_failed_turn": true,
+  "recorded_api_cost_status": "API-equivalent measured-request estimate excludes failed requests without token records; actual charge unknown"
+}

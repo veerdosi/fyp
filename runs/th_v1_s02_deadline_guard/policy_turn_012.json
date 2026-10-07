@@ -1,0 +1,47 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.066,
+          0.05,
+          1.075
+        ],
+        "gripper": 1,
+        "steps": 45
+      },
+      {
+        "position": [
+          -0.066,
+          0.05,
+          1.075
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          0.065,
+          0.12,
+          1.1
+        ],
+        "gripper": -1,
+        "steps": 85
+      }
+    ],
+    "reason": "Seat the shaft a further centimetre, release the frame into the stand, and withdraw to inspect whether it remains assembled."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_deadline",
+    "policy_visible_input": "Fresh observation 7 after your motion command, step 880, simulated time 44.0 seconds. 11 decisions have been executed; 19 model decisions and 1520 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0007/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0007/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0007/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0007/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.066,0.050,1.075],\"gripper\":1,\"steps\":45},{\"position\":[-0.066,0.050,1.075],\"gripper\":-1,\"steps\":60},{\"position\":[0.065,0.12,1.10],\"gripper\":-1,\"steps\":85}],\"reason\":\"Seat the shaft a further centimetre, release the frame into the stand, and withdraw to inspect whether it remains assembled.\"}",
+    "response_timestamp": "2026-10-07T02:58:39.850Z",
+    "message_id": "amsg_01a1144c-7e69-71b1-98e5-0620cb064ccf",
+    "dispatch_timestamp": "2026-10-07T02:58:18.847Z",
+    "policy_wall_seconds": 21.003,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/policy_update_012.txt"
+  }
+}

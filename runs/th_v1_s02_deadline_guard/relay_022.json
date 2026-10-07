@@ -1,0 +1,35 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.04,
+          -0.07,
+          1.12
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 90
+      }
+    ],
+    "reason": "The fingers closed fully and the frame remains on the table, indicating the shaft grasp missed. Clear the view for one final recovery assessment."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_deadline",
+    "policy_visible_input": "Fresh observation 15 after your motion command, step 1910, simulated time 95.5 seconds. 21 decisions have been executed; 9 model decisions and 490 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0015/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0015/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0015/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/public/obs_0015/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.04,-0.07,1.12],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":90}],\"reason\":\"The fingers closed fully and the frame remains on the table, indicating the shaft grasp missed. Clear the view for one final recovery assessment.\"}",
+    "response_timestamp": "2026-10-07T03:03:20.919Z",
+    "message_id": "amsg_01a11450-c857-7b63-9cef-bfaff48ae4a2",
+    "dispatch_timestamp": "2026-10-07T03:03:08.542Z",
+    "policy_wall_seconds": 12.377,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard/policy_update_022.txt"
+  }
+}
