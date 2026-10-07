@@ -1,21 +1,21 @@
 {
   "model": "gpt-6-astra",
   "reasoning_effort": "medium",
-  "policy_decisions": 22,
-  "model_inference_requests": 46,
-  "agent_tool_calls": 24,
-  "completed_policy_turns": 23,
-  "policy_wall_seconds": 320.429,
+  "policy_decisions": 23,
+  "model_inference_requests": 48,
+  "agent_tool_calls": 25,
+  "completed_policy_turns": 24,
+  "policy_wall_seconds": 341.974,
   "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
   "token_usage": {
-    "input_tokens": 2369037,
-    "cached_input_tokens": 2276352,
+    "input_tokens": 2512845,
+    "cached_input_tokens": 2347392,
     "cache_write_input_tokens": 0,
-    "output_tokens": 7247,
-    "reasoning_output_tokens": 1687,
-    "total_tokens": 2376284
+    "output_tokens": 7508,
+    "reasoning_output_tokens": 1724,
+    "total_tokens": 2520353
   },
-  "api_equivalent_standard_cost_usd": 3.565552,
+  "api_equivalent_standard_cost_usd": 4.377322,
   "actual_account_charge_usd": null,
   "pricing": {
     "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
@@ -120,6 +120,10 @@
       "effort": "medium"
     },
     "01a11450-fd31-7963-996f-f8c605964653": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a114fa-3db4-75b0-b472-1584bf8987a9": {
       "model": "gpt-6-astra",
       "effort": "medium"
     }
@@ -262,6 +266,12 @@
       "completed_at": 1791342214,
       "duration_ms": 523,
       "time_to_first_token_ms": null
+    },
+    "01a114fa-3db4-75b0-b472-1584bf8987a9": {
+      "started_at": 1791353306,
+      "completed_at": 1791353328,
+      "duration_ms": 21545,
+      "time_to_first_token_ms": 6253
     }
   }
 }

@@ -1,0 +1,54 @@
+{
+  "scope": "Completed episode: prefix diagnosis plus final native failure and accurate policy failure judgment.",
+  "first_execution_failure": {
+    "decision": 2,
+    "stage": "approach",
+    "details": "60-step approach did not settle; guard cancelled descent, closure and lift. Astra repeated approach and descent at 100 steps each."
+  },
+  "first_unrecovered_physical_break": {
+    "decisions": [
+      11,
+      12
+    ],
+    "stage": "frame insertion and release",
+    "details": "Insertion targets were reached, but the shaft tip stayed approximately 12 cm from the stand base. Before withdrawal, shaft-between-wall and stand-upright checks passed while tip-depth check failed. The released frame was shallowly seated, not fully assembled."
+  },
+  "later_events": [
+    {
+      "decision": 13,
+      "details": "Opposite retreat caught frame against open gripper hand/finger; shaft no longer between walls at step 1150."
+    },
+    {
+      "decision": 14,
+      "details": "Vertical clearance left frame on table by step 1250; Astra recognized failed seating and chose recovery."
+    },
+    {
+      "decisions": [
+        16,
+        17,
+        18,
+        19,
+        21,
+        22
+      ],
+      "details": "Contact-blocked recovery approaches cancelled later phases; one later reached closure missed the shaft. Astra cleared view for further assessment."
+    }
+  ],
+  "native_goals_ever_satisfied": {
+    "frame_assembled": false,
+    "tool_on_frame": false
+  },
+  "boundary": "Private diagnostic results were never passed to Astra or executor.",
+  "limitations": "Rebuilt contacts identify contact geometry, not measured forces or proof of a unique causal mechanism. No successful task outcome or comparative advantage follows from this unfinished prefix.",
+  "evidence": [
+    "steps.jsonl",
+    "commands.jsonl",
+    "prefix_checkpoint_verification.json",
+    "prefix_assembly_diagnostic.json",
+    "policy_tools_complete.json",
+    "outcome.json",
+    "checkpoint_live_state_comparison.json"
+  ],
+  "final_completion_judgment": "Correctly reported incomplete assembly and no hung tool.",
+  "final_success": false
+}

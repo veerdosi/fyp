@@ -1,5 +1,5 @@
 {
-  "status": "awaiting_policy_usage_availability",
+  "status": "resumed_same_context_and_episode_finished",
   "cause": "Astra usage limit before a decision for policy_update_023.txt",
   "error_text": "You\u2019ve hit your usage limit. Try again at 2:39 PM.",
   "reset_timezone": "not provided by error",
@@ -13,5 +13,8 @@
   "robot_outcome": "unfinished; no outcome recorded",
   "next_action": "Revalidate this live simulator handle, then resend the exact pending observation to the same policy context once service availability returns. Do not reset robot, budget or starting state.",
   "completed_policy_turns_include_failed_turn": true,
-  "recorded_api_cost_status": "API-equivalent measured-request estimate excludes failed requests without token records; actual charge unknown"
+  "recorded_api_cost_status": "API-equivalent measured-request estimate excludes failed requests without token records; actual charge unknown",
+  "final_decision": 23,
+  "final_stop_reason": "policy_finish",
+  "native_success": false
 }

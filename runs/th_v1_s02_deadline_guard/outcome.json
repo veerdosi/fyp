@@ -1,0 +1,25 @@
+{
+  "success": false,
+  "stop_reason": "policy_finish",
+  "diagnostic_goal_predicates": [
+    {
+      "predicate": [
+        "frame_assembled"
+      ],
+      "satisfied": false
+    },
+    {
+      "predicate": [
+        "tool_on_frame"
+      ],
+      "satisfied": false
+    }
+  ],
+  "control_steps": 2000,
+  "simulated_seconds": 100.0,
+  "wall_seconds": 8077.297916627082,
+  "model_calls": 23,
+  "cost_usd": null,
+  "cost_status": "unavailable for collaboration policy calls",
+  "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_deadline_guard"
+}

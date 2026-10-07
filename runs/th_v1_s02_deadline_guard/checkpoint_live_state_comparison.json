@@ -1,0 +1,5 @@
+{
+  "control_steps": 2000,
+  "actions_equal": true,
+  "max_state_absolute_error": 0.0
+}

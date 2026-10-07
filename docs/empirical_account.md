@@ -1,6 +1,6 @@
 # Interim empirical account
 
-This account is incomplete. The held-out comparison has completed all three conditions on the first matched start. The second start’s deadline episode is underway; its other two conditions are unstarted. It cannot establish a harness benefit or finish the FYP objective.
+This account is incomplete. The held-out comparison has completed all three conditions on the first matched start. The second start’s deadline episode has also finished; its other two conditions are unstarted. It cannot establish a harness benefit or finish the FYP objective.
 
 ## Question and first mechanism
 
@@ -19,6 +19,7 @@ The frozen executor comparison uses timed waypoints, a deadline guard and an ear
 | Held-out start 1, timed baseline | No, policy returned finish | 28 | 56 | 102 | 543.970 |
 | Held-out start 1, deadline guard | No, policy returned finish | 21 | 45 | 99 | 344.068 |
 | Held-out start 1, early-arrival guard | No, correctly judged failure | 20 | 41 | 78.95 | 261.645 |
+| Held-out start 2, deadline guard | No, correctly judged failure | 23 | 48 | 100 | 341.974 |
 
 All five completed traces replay their native simulator states exactly. Pilots informed the hypothesis and are excluded from the held-out comparison. The current protocol has two matched starts and three conditions, six episodes total. The user's budget preference is two starts for future experiments too; a third needs a recorded uncertainty that affects the next design decision. This supports quick mechanism screening, with wide uncertainty and incomplete order balance stated explicitly.
 
@@ -35,3 +36,5 @@ Then retain, revise or discard the arrival-guard explanation. The next mechanism
 The early-arrival run completed frame assembly, then lost it during a wrist recovery that brought arm links into contact with the frame. Joint 7 was at its lower bound before that recovery; later commands approached several joint bounds. These private diagnostics identify a different failure from incomplete initial insertion. Astra correctly stopped with an incomplete-task judgment. The shared public observations lacked native joint-position fields, though joint velocities were supplied. This is an observation/execution limitation to consider after the frozen comparison, with no mid-study sensor change.
 
 The second-start deadline episode is unfinished at 22 decisions / 2000 steps (100 simulated seconds) because Astra hit a usage limit before its next decision. Its 2000-step prefix reproduces every logged robot/object measurement and score exactly. Before withdrawal, the frame shaft lay between the stand walls but its tip remained about 12 cm from the base, so seating depth failed. Withdrawal later caught and displaced the shallowly seated frame; Astra recognized this and attempted recovery. The interrupted prefix is retained, not scored as a final failure. Its current resource totals are 46 usage-recorded inference requests, 320.429 native policy seconds and $3.565552 API-equivalent cost; actual charge is unknown. These include the failed policy turn and remain partial.
+
+The second deadline episode resumed with its same context and returned an accurate incomplete-task judgment at step 2000. Final totals supersede the partial figures above: 23 decisions, 48 usage-recorded inference requests, 341.974 native policy seconds and $4.377322 API-equivalent cost. Its reconstructed checkpoint agrees exactly with the original saved trajectory. Both deadline starts have failed full success; the other conditions still have only one recorded start, so the matched comparison remains incomplete.

@@ -596,5 +596,31 @@
       "reasoning_output_tokens": 60,
       "total_tokens": 70710
     }
+  },
+  {
+    "timestamp": "2026-10-07T06:08:34.988Z",
+    "turn_id": "01a114fa-3db4-75b0-b472-1584bf8987a9",
+    "response_id": "resp_0cb9b5f90d06f58b016ac5e1dc4d7087d0807593bc3596b318",
+    "usage": {
+      "input_tokens": 71260,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 134,
+      "reasoning_output_tokens": 0,
+      "total_tokens": 71394
+    }
+  },
+  {
+    "timestamp": "2026-10-07T06:08:48.090Z",
+    "turn_id": "01a114fa-3db4-75b0-b472-1584bf8987a9",
+    "response_id": "resp_0cb9b5f90d06f58b016ac5e1e37ae487d0af5532944539644c",
+    "usage": {
+      "input_tokens": 72548,
+      "cached_input_tokens": 71040,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 127,
+      "reasoning_output_tokens": 37,
+      "total_tokens": 72675
+    }
   }
 ]
