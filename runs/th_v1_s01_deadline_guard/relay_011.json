@@ -1,0 +1,47 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0723,
+          0.0341,
+          1.073
+        ],
+        "gripper": 1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.0723,
+          0.0341,
+          1.073
+        ],
+        "gripper": -1,
+        "steps": 35
+      },
+      {
+        "position": [
+          -0.15,
+          -0.1,
+          1.13
+        ],
+        "gripper": -1,
+        "steps": 80
+      }
+    ],
+    "reason": "The descent is contact-limited after partial insertion. Remove commanded compression, release the frame at its supported height, and retreat to inspect stability."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Fresh observation 7 after your motion command, step 960, simulated time 48.0 seconds. 10 decisions have been executed; 20 model decisions and 1440 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0007/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0007/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0007/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0007/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.0723,0.0341,1.073],\"gripper\":1,\"steps\":30},{\"position\":[-0.0723,0.0341,1.073],\"gripper\":-1,\"steps\":35},{\"position\":[-0.15,-0.10,1.13],\"gripper\":-1,\"steps\":80}],\"reason\":\"The descent is contact-limited after partial insertion. Remove commanded compression, release the frame at its supported height, and retreat to inspect stability.\"}",
+    "response_timestamp": "2026-10-06T17:17:34.742Z",
+    "message_id": "amsg_01a11238-7e96-7fc1-8bd7-666126200b41",
+    "dispatch_timestamp": "2026-10-06T17:17:15.113Z",
+    "policy_wall_seconds": 19.629,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_011.txt"
+  }
+}

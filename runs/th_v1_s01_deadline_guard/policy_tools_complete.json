@@ -1,0 +1,150 @@
+{
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T01-11-36-01a11233-08a0-7db1-abc9-1283626742c2.jsonl",
+  "source_sha256_at_export": "37cf482eabe2e7725f8e1d81ac15b78e5675f3f79a4e018ffa61441eeab3e2a7",
+  "tool_call_count": 19,
+  "tool_calls": [
+    {
+      "timestamp": "2026-10-06T17:11:47.416Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_388baae84c1d4514810b2ae7974f8b45",
+      "input": "const r = await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0000/agentview.png\"});image(r.image_url);\nconst s = await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0000/robot0_eye_in_hand.png\"});image(s.image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:12:10.002Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_f03a16aa3f244801ac7acd983c83356b",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0000/sense_001.json\",max_output_tokens:3000}));\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:12:51.885Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_7f267a077a5845bcab6952fde186ecc5",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0001/execution.json\"}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0001/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:12:58.433Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_2d50459b4a004a048bef405eba7bf94a",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0001/observation.json\",max_output_tokens:1800}));\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:13:29.036Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_bb6f27434b774d769b1da297edc21429",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0002/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0002/execution.json\",max_output_tokens:2800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0002/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:13:58.114Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_9b9fb8efb58c4b6d9ba3f7e071632834",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0003/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0003/execution.json\",max_output_tokens:1900}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0003/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:14:31.235Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_20f96c751b494c8484bb43c1c54f9945",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0004/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0004/execution.json\",max_output_tokens:2300}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0004/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:15:04.806Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_6e6d7d68767a42dbad491d50ea30d465",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0005/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0005/execution.json\",max_output_tokens:1700}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0005/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:15:30.416Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_42a92d67c0b642abb663b29af78e707d",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0005/sense_007.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:15:39.078Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_698f3b40d164409f9a5c2596039970aa",
+      "input": "text(await tools.exec_command({cmd:\"ls /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0005\"}));\ntext(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0005/calibration.json\",max_output_tokens:2500}));\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:15:53.580Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_855e3b59bea847b3a513ce092fbb7d0d",
+      "input": "text(await tools.exec_command({cmd:\"mkdir -p /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_compute\\ncat > /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_compute/rod.py <<'PY'\\nimport os,json,numpy as np\\nfrom PIL import Image\\nfrom scipy.spatial.transform import Rotation as R\\np=os.environ['POLICY_OBSERVATION_FOLDER']; c=json.load(open(p+'/calibration.json'))['agentview']; a=np.array(Image.open(p+'/agentview.png')); d=np.load(p+'/agentview_depth_m.npy'); v,u=np.indices(d.shape); T=np.array(c['camera_to_world']); f=c['intrinsic'][0][0]; xyz=np.stack([(u-128)*d/f,(v-128)*d/f,d],-1)@T[:3,:3].T+T[:3,3]\\nm=(u>82)&(u<110)&(v>92)&(v<108)&(a[:,:,0]>a[:,:,2]*1.5)&(a[:,:,0]>60)&(xyz[:,:,2]>1.05)\\nx=xyz[m]; center=x.mean(0); _,_,vh=np.linalg.svd(x-center); axis=vh[0]; axis*=np.sign(axis[1]); print('rod center',center,'axis',axis,'n',len(x))\\nq=np.array(json.load(open(p+'/observation.json'))['proprioception']['robot0_eef_quat']); goal=np.array([0,0,-1.]); rot=R.from_rotvec(np.cross(axis,goal)/np.linalg.norm(np.cross(axis,goal))*np.arccos(axis@goal)); print('upright quat',(rot*R.from_quat(q)).as_quat()); print('transformed rodcenter offset',rot.apply(center-np.array([-.09191,-.25776,1.07999])))\\nPY\\n/Users/veerdosi/Documents/code/github/fyp/.venv/bin/python /Users/veerdosi/Documents/code/github/fyp/scripts/policy_calc.py --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard --code /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_compute/rod.py\",max_output_tokens:1500}));\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:16:29.668Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_82dbae6c1518438fb67f06ad1b4e1564",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/execution.json\",max_output_tokens:2300}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:16:50.602Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_6f30a960ab68456e8d903b127fce0e89",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/sense_009.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:17:20.738Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_f40215ba085641738a8578cbc6032bc6",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0007/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0007/execution.json\",max_output_tokens:2300}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0007/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:17:55.136Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_40a1a175ee934e7ab95bd19ff5a88d23",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0008/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0008/execution.json\",max_output_tokens:2300}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0008/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:18:39.759Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_e68fa426f1d54eb08b5033a06792d946",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0009/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0009/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0009/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:19:11.772Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_ce3d9679da1b4316b3d6f23913f3a001",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0010/execution.json\",max_output_tokens:1700}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0010/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:19:43.599Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_31fdc976d3824dfca07d096b0424b250",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0011/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0011/execution.json\",max_output_tokens:1700}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0011/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-06T17:20:17.812Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_dde36fac18ea4cc09e14f3e4fe027c0c",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/execution.json\",max_output_tokens:2300}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/agentview.png\"})).image_url);\n"
+    }
+  ],
+  "review_status": "Export only; inspect tool inputs and calculation logs for boundary compliance.",
+  "manual_boundary_review": {
+    "reviewer": "Sol",
+    "status": "passed_for_interrupted_prefix",
+    "tool_calls_reviewed": 19,
+    "temporary_calculations_reviewed": 1,
+    "calculation": "policy_calculation_logs/calc_001",
+    "method": "All 19 exact tool inputs inspected. Source and stdout/stderr/status inspected for rod.py; only this episode public RGB, depth, calibration and robot data read. No prohibited access observed.",
+    "limits": "Manual audit; no OS sandbox or syscall trace. Must re-export and review new tools after continuation."
+  }
+}

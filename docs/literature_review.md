@@ -125,3 +125,7 @@ The local LIBERO setup renders and replays fixed native-action episodes. Astra a
 For task screening, RoboCurve's puzzle result and one raw stage-3 transcript were rechecked on 2026-10-06. The official RoboDojo precision-task source and LIBERO-PRO perturbation configuration were also inspected. These sources motivate testing a native MuJoCo insertion analogue; their published failure rates do not transfer automatically to this setup. Other claims in this provisional review remain to be rechecked.
 
 The two native ToolHang pilots yielded one full success and one budget-limited failure after frame assembly, both replaying exactly. Their grasp, insertion and withdrawal errors are local evidence; they do not reproduce RoboCurve's failure rate. Repeated non-arrival before later phases and blocked motion support selecting a measured transition/handoff experiment. Failure at final tool placement despite near-arrival limits the proposed mechanism. No mechanism benefit has been measured.
+
+## Current empirical boundary
+
+The first held-out ToolHang baseline has a recorded native failure despite physical suspension of the released tool. Arrival checks do not measure the object relation required for the frozen placement criterion. The paired comparison is incomplete, so this supplies a diagnostic boundary rather than evidence for or against a measured harness advantage. See [the interim empirical account](empirical_account.md). The pending deadline-guard run has an external Astra usage interruption, which is retained separately from manipulation outcomes.

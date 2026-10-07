@@ -1,0 +1,65 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.88
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 90
+      },
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.808
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 55
+      },
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.808
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "The frame remained on the table and the fingers closed fully; retry deeper around the black junction."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Fresh observation 3 after your motion command, step 370, simulated time 18.5 seconds. 4 decisions have been executed; 26 model decisions and 2030 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0003/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0003/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0003/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0003/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.092,-0.258,0.88],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":90},{\"position\":[-0.092,-0.258,0.808],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":55},{\"position\":[-0.092,-0.258,0.808],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":1,\"steps\":45}],\"reason\":\"The frame remained on the table and the fingers closed fully; retry deeper around the black junction.\"}",
+    "response_timestamp": "2026-10-06T17:14:07.722Z",
+    "message_id": "amsg_01a11235-55ea-7f30-b700-f0a73903b046",
+    "dispatch_timestamp": "2026-10-06T17:13:50.426Z",
+    "policy_wall_seconds": 17.296,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_005.txt"
+  }
+}

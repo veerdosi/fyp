@@ -1,0 +1,40 @@
+{
+  "type": "external_policy_usage_limit",
+  "recorded_utc": "2026-10-07T01:40:10Z",
+  "status": "interrupted_pending_continuation",
+  "episode": "th_v1_s01_deadline_guard",
+  "completed_robot_decisions": 15,
+  "next_robot_decision": 16,
+  "control_steps": 1610,
+  "simulated_seconds": 80.5,
+  "remaining_robot_decisions": 15,
+  "remaining_control_steps": 790,
+  "last_public_observation": "public/obs_0012",
+  "resume_policy_input": "policy_update_016.txt",
+  "policy_agent": "/root/astra_th_v1_s01_deadline",
+  "server_exec_session": 59299,
+  "server_port": 8765,
+  "server_status_at_recording": "Verified live by polling same exec session; simulator does not step during policy inference.",
+  "error": "You\u2019ve hit your usage limit. Upgrade to Pro, purchase more credits or try again at 5:15 AM.",
+  "reset_time_limit": "Error did not specify timezone. Generic usage tool reports ordinary usage allowed and does not expose an Astra-specific bucket; it cannot verify this limit reset.",
+  "classification": "Infrastructure interruption, no robot decision returned or executed. No final task outcome yet; retain scheduled episode and resume same policy context/state. Do not count interruption as a task failure or silently replace the episode.",
+  "preliminary_usage": {
+    "model_inference_requests_with_usage_records": 34,
+    "executed_robot_decisions": 15,
+    "native_completed_policy_turns": 16,
+    "native_turn_seconds_including_failed_turn": 275.296,
+    "standard_api_equivalent_cost_usd": 2.736776,
+    "actual_charge_usd": null
+  },
+  "usage_note": "Usage export includes the failed next turn and its permitted tool reads; completed native turn count is not robot decisions. Re-export after completion. Failed request without a token usage record is not costed by the exporter.",
+  "recovery_plan": "If server remains live when Astra becomes available, resend the exact pending policy_update_016.txt to the same agent, then relay only a newly returned valid command. Verify no pending command was previously executed. If server is lost, reconstruct from logged native actions and compare checkpoint measurements before continuing; record that recovery explicitly. No fresh trial or reset without preserving this interruption.",
+  "checkpoint_diagnostic": "The initial reset-state reconstruction failed the strict sensor comparison and is retained in prefix_checkpoint_reset_state_attempt.json. Reconstructing with the identical live constructor/reset path verified every logged robot/object measurement and scoring check exactly.",
+  "verified_checkpoint": {
+    "file": "interruption_checkpoint.npz",
+    "verification": "prefix_checkpoint_verification.json",
+    "control_steps": 1610,
+    "max_measurement_error": 0.0,
+    "score_mismatches": 0,
+    "scope": "Reconstructed prefix verified against recorded measurements; compare flattened states to original live trajectory on completion."
+  }
+}

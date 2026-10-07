@@ -1,0 +1,55 @@
+{
+  "scope": "Interrupted prefix verification, not a completed trial or full saved-state replay.",
+  "control_steps": 1610,
+  "max_measurement_errors": {
+    "robot_before": 0.0,
+    "robot_after": 0.0,
+    "private_object_observations": 0.0
+  },
+  "errors_by_key": {
+    "robot0_eef_pos": 0.0,
+    "robot0_eef_quat": 0.0,
+    "robot0_joint_vel": 0.0,
+    "robot0_gripper_qpos": 0.0,
+    "robot0_gripper_qvel": 0.0,
+    "robot0_eef_force": 0.0,
+    "robot0_eef_torque": 0.0,
+    "base_pos": 0.0,
+    "base_quat": 0.0,
+    "base_to_robot0_eef_pos": 0.0,
+    "base_to_robot0_eef_quat": 0.0,
+    "frame_pos": 0.0,
+    "frame_quat": 0.0,
+    "frame_to_robot0_eef_pos": 0.0,
+    "frame_to_robot0_eef_quat": 0.0,
+    "tool_pos": 0.0,
+    "tool_quat": 0.0,
+    "tool_to_robot0_eef_pos": 0.0,
+    "tool_to_robot0_eef_quat": 0.0,
+    "frame_is_assembled": 0.0,
+    "tool_on_frame": 0.0,
+    "object-state": 0.0
+  },
+  "first_difference_step": {},
+  "score_mismatches": 0,
+  "pass_verification": true,
+  "final_native_success": false,
+  "final_private_goals": [
+    {
+      "predicate": [
+        "frame_assembled"
+      ],
+      "satisfied": false
+    },
+    {
+      "predicate": [
+        "tool_on_frame"
+      ],
+      "satisfied": false
+    }
+  ],
+  "logged_prefix_sha256": "ea1fb8d290f647444a3d0e84a148853882f6f00f68d2af210973b198ac0a3f20",
+  "code_sha256": "585440ebb3ab31368474ae2f029025768a9993767b70f99c23be1ee67b8a0375",
+  "reproduce": ".venv/bin/python runs/th_v1_s01_deadline_guard/prefix_checkpoint.py",
+  "checkpoint_note": "States reconstructed from logged native actions and verified against every recorded robot/object measurement and score. Compare against the live episode saved states when it finishes."
+}

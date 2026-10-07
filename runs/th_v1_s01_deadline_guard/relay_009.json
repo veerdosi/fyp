@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 189,
+        "v": 155
+      },
+      {
+        "camera": "agentview",
+        "u": 189,
+        "v": 143
+      },
+      {
+        "camera": "agentview",
+        "u": 186,
+        "v": 169
+      },
+      {
+        "camera": "agentview",
+        "u": 186,
+        "v": 174
+      },
+      {
+        "camera": "agentview",
+        "u": 154,
+        "v": 54
+      },
+      {
+        "camera": "agentview",
+        "u": 175,
+        "v": 56
+      }
+    ],
+    "reason": "Check the insertion tip's horizontal alignment with the stand mouth and locate the hook after rotation."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Fresh observation 6 after your motion command, step 850, simulated time 42.5 seconds. 8 decisions have been executed; 22 model decisions and 1550 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":189,\"v\":155},{\"camera\":\"agentview\",\"u\":189,\"v\":143},{\"camera\":\"agentview\",\"u\":186,\"v\":169},{\"camera\":\"agentview\",\"u\":186,\"v\":174},{\"camera\":\"agentview\",\"u\":154,\"v\":54},{\"camera\":\"agentview\",\"u\":175,\"v\":56}],\"reason\":\"Check the insertion tip's horizontal alignment with the stand mouth and locate the hook after rotation.\"}",
+    "response_timestamp": "2026-10-06T17:16:36.093Z",
+    "message_id": "amsg_01a11237-997c-7e72-9b58-fecfe2efa2d2",
+    "dispatch_timestamp": "2026-10-06T17:16:21.084Z",
+    "policy_wall_seconds": 15.009,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_009.txt"
+  }
+}

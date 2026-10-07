@@ -1,0 +1,197 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "policy_decisions": 15,
+  "model_inference_requests": 34,
+  "agent_tool_calls": 19,
+  "completed_policy_turns": 16,
+  "policy_wall_seconds": 275.296,
+  "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
+  "token_usage": {
+    "input_tokens": 1593549,
+    "cached_input_tokens": 1498496,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5755,
+    "reasoning_output_tokens": 1370,
+    "total_tokens": 1599304
+  },
+  "api_equivalent_standard_cost_usd": 2.736776,
+  "actual_account_charge_usd": null,
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "accessed_date": "2026-10-06",
+    "per_million_tokens_usd": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+  },
+  "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T01-11-36-01a11233-08a0-7db1-abc9-1283626742c2.jsonl",
+  "model_effort_verification": {
+    "01a11233-09a6-7391-b9ac-3437dd29bb9f": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11233-7b48-7330-8998-f785a21f5d13": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11234-17bb-7330-a2a0-e8afa87ced0c": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11234-a668-7841-be72-f08d31034405": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11235-125f-7762-9d59-0f596b80f037": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11235-a011-7c92-84c4-6b7a12fa59a5": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11236-141c-74d2-99e2-214f5efc5fa2": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11236-8a0d-7142-8424-2d899301b9b3": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11237-5ee7-7d53-976f-74ab37795ef2": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11237-c1a1-7463-a31b-3d7c335da731": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11238-31f1-7943-aae5-8742108e9761": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11238-bbc7-7eb2-86c4-6bf60f89ba43": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11239-66d4-7700-b487-2a07007f5161": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11239-e62a-7191-9c05-b2b9674cb45c": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1123a-5adb-7963-9b18-71fbb301e705": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1123a-dd6b-77c3-8e3c-95ebc04e3fac": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    }
+  },
+  "turn_timing": {
+    "01a11233-09a6-7391-b9ac-3437dd29bb9f": {
+      "started_at": 1791306697,
+      "completed_at": 1791306715,
+      "duration_ms": 18722,
+      "time_to_first_token_ms": 8574
+    },
+    "01a11233-7b48-7330-8998-f785a21f5d13": {
+      "started_at": 1791306726,
+      "completed_at": 1791306748,
+      "duration_ms": 21806,
+      "time_to_first_token_ms": 2916
+    },
+    "01a11234-17bb-7330-a2a0-e8afa87ced0c": {
+      "started_at": 1791306766,
+      "completed_at": 1791306786,
+      "duration_ms": 20467,
+      "time_to_first_token_ms": 4300
+    },
+    "01a11234-a668-7841-be72-f08d31034405": {
+      "started_at": 1791306802,
+      "completed_at": 1791306813,
+      "duration_ms": 10241,
+      "time_to_first_token_ms": 4264
+    },
+    "01a11235-125f-7762-9d59-0f596b80f037": {
+      "started_at": 1791306830,
+      "completed_at": 1791306847,
+      "duration_ms": 17265,
+      "time_to_first_token_ms": 5103
+    },
+    "01a11235-a011-7c92-84c4-6b7a12fa59a5": {
+      "started_at": 1791306866,
+      "completed_at": 1791306876,
+      "duration_ms": 9922,
+      "time_to_first_token_ms": 2524
+    },
+    "01a11236-141c-74d2-99e2-214f5efc5fa2": {
+      "started_at": 1791306896,
+      "completed_at": 1791306909,
+      "duration_ms": 13141,
+      "time_to_first_token_ms": 6333
+    },
+    "01a11236-8a0d-7142-8424-2d899301b9b3": {
+      "started_at": 1791306926,
+      "completed_at": 1791306961,
+      "duration_ms": 34824,
+      "time_to_first_token_ms": 3152
+    },
+    "01a11237-5ee7-7d53-976f-74ab37795ef2": {
+      "started_at": 1791306981,
+      "completed_at": 1791306996,
+      "duration_ms": 14957,
+      "time_to_first_token_ms": 3888
+    },
+    "01a11237-c1a1-7463-a31b-3d7c335da731": {
+      "started_at": 1791307006,
+      "completed_at": 1791307019,
+      "duration_ms": 13508,
+      "time_to_first_token_ms": 3497
+    },
+    "01a11238-31f1-7943-aae5-8742108e9761": {
+      "started_at": 1791307035,
+      "completed_at": 1791307054,
+      "duration_ms": 19593,
+      "time_to_first_token_ms": 3240
+    },
+    "01a11238-bbc7-7eb2-86c4-6bf60f89ba43": {
+      "started_at": 1791307070,
+      "completed_at": 1791307098,
+      "duration_ms": 28095,
+      "time_to_first_token_ms": 2719
+    },
+    "01a11239-66d4-7700-b487-2a07007f5161": {
+      "started_at": 1791307114,
+      "completed_at": 1791307130,
+      "duration_ms": 16454,
+      "time_to_first_token_ms": 3500
+    },
+    "01a11239-e62a-7191-9c05-b2b9674cb45c": {
+      "started_at": 1791307146,
+      "completed_at": 1791307162,
+      "duration_ms": 15477,
+      "time_to_first_token_ms": 3430
+    },
+    "01a1123a-5adb-7963-9b18-71fbb301e705": {
+      "started_at": 1791307176,
+      "completed_at": 1791307189,
+      "duration_ms": 12470,
+      "time_to_first_token_ms": 4813
+    },
+    "01a1123a-dd6b-77c3-8e3c-95ebc04e3fac": {
+      "started_at": 1791307210,
+      "completed_at": 1791307218,
+      "duration_ms": 8354,
+      "time_to_first_token_ms": 5618
+    }
+  }
+}

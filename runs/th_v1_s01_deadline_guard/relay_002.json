@@ -1,0 +1,65 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.92
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.827
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 50
+      },
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.827
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 35
+      }
+    ],
+    "reason": "Approach the frame's black junction with the fingers across its narrow axis and close around it."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0000/sense_001.json. You may cat this permitted sensor result file. The images and robot readings in obs_0000 remain current; no motion has occurred. 1 decisions have been executed, with 29 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.092,-0.258,0.92],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":60},{\"position\":[-0.092,-0.258,0.827],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":50},{\"position\":[-0.092,-0.258,0.827],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":1,\"steps\":35}],\"reason\":\"Approach the frame's black junction with the fingers across its narrow axis and close around it.\"}",
+    "response_timestamp": "2026-10-06T17:12:28.084Z",
+    "message_id": "amsg_01a11233-d0b4-7e22-95d9-54f1ce471278",
+    "dispatch_timestamp": "2026-10-06T17:12:06.204Z",
+    "policy_wall_seconds": 21.88,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_002.txt"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "scope": "Interrupted prefix verification, not a completed trial or full saved-state replay.",
+  "control_steps": 1610,
+  "max_measurement_errors": {
+    "robot_before": 0.02958771999475296,
+    "robot_after": 0.02958771999475296,
+    "private_object_observations": 1.6873186826705933
+  },
+  "errors_by_key": {
+    "robot0_eef_pos": 0.0004625287001351619,
+    "robot0_eef_quat": 0.0012381306846544482,
+    "robot0_joint_vel": 0.02958771999475296,
+    "robot0_gripper_qpos": 0.00045882610893987694,
+    "robot0_gripper_qvel": 0.019533561952184843,
+    "robot0_eef_force": 0.0,
+    "robot0_eef_torque": 0.0,
+    "base_pos": 0.0001242490222647108,
+    "base_quat": 0.0008893711492419243,
+    "base_to_robot0_eef_pos": 0.0012550283122026717,
+    "base_to_robot0_eef_quat": 1.6873186826705933,
+    "frame_pos": 0.002932339274056339,
+    "frame_quat": 0.012463435530662537,
+    "frame_to_robot0_eef_pos": 0.003237358003219226,
+    "frame_to_robot0_eef_quat": 0.01193225383758545,
+    "tool_pos": 0.0018438400063957028,
+    "tool_quat": 0.0003338390961289406,
+    "tool_to_robot0_eef_pos": 0.0018289024144451105,
+    "tool_to_robot0_eef_quat": 0.0014651566743850708,
+    "frame_is_assembled": 0.0,
+    "tool_on_frame": 0.0,
+    "object-state": 1.6873186826705933
+  },
+  "first_difference_step": {
+    "robot0_gripper_qpos": 1,
+    "robot0_gripper_qvel": 1,
+    "base_pos": 1,
+    "base_quat": 1,
+    "base_to_robot0_eef_pos": 1,
+    "base_to_robot0_eef_quat": 1,
+    "frame_pos": 1,
+    "frame_to_robot0_eef_pos": 1,
+    "tool_pos": 1,
+    "tool_quat": 1,
+    "tool_to_robot0_eef_pos": 1,
+    "tool_to_robot0_eef_quat": 1,
+    "object-state": 1,
+    "frame_quat": 2,
+    "frame_to_robot0_eef_quat": 2,
+    "robot0_eef_pos": 21,
+    "robot0_eef_quat": 21,
+    "robot0_joint_vel": 21
+  },
+  "score_mismatches": 0,
+  "pass_verification": false,
+  "final_native_success": false,
+  "final_private_goals": [
+    {
+      "predicate": [
+        "frame_assembled"
+      ],
+      "satisfied": false
+    },
+    {
+      "predicate": [
+        "tool_on_frame"
+      ],
+      "satisfied": false
+    }
+  ],
+  "logged_prefix_sha256": "ea1fb8d290f647444a3d0e84a148853882f6f00f68d2af210973b198ac0a3f20",
+  "code_sha256": "de3339ec27f64c6a3c7bf7f63159634a372c30d52f70c55d2c440e88c166ed65",
+  "reproduce": ".venv/bin/python runs/th_v1_s01_deadline_guard/prefix_checkpoint.py",
+  "checkpoint_note": "States reconstructed from logged native actions and verified against every recorded robot/object measurement and score. Compare against the live episode saved states when it finishes."
+}

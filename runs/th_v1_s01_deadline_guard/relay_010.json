@@ -1,0 +1,38 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.077,
+          0.037,
+          1.115
+        ],
+        "gripper": 1,
+        "steps": 45
+      },
+      {
+        "position": [
+          -0.077,
+          0.037,
+          1.045
+        ],
+        "gripper": 1,
+        "steps": 65
+      }
+    ],
+    "reason": "Correct the small lateral tip offset, then lower the frame shaft into the stand in two bounded stages."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0006/sense_009.json. You may cat this permitted sensor result file. The images and robot readings in obs_0006 remain current; no motion has occurred. 9 decisions have been executed, with 21 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.077,0.037,1.115],\"gripper\":1,\"steps\":45},{\"position\":[-0.077,0.037,1.045],\"gripper\":1,\"steps\":65}],\"reason\":\"Correct the small lateral tip offset, then lower the frame shaft into the stand in two bounded stages.\"}",
+    "response_timestamp": "2026-10-06T17:16:59.908Z",
+    "message_id": "amsg_01a11237-f684-71f2-a3b6-bbb3b05e9d4d",
+    "dispatch_timestamp": "2026-10-06T17:16:46.365Z",
+    "policy_wall_seconds": 13.543,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_010.txt"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.92
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.827
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 85
+      },
+      {
+        "position": [
+          -0.092,
+          -0.258,
+          0.827
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "The initial approach has not settled, so complete it before lowering to the junction and grasping."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Fresh observation 1 after your motion command, step 80, simulated time 4.0 seconds. 2 decisions have been executed; 28 model decisions and 2320 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0001/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0001/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0001/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0001/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.092,-0.258,0.92],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":60},{\"position\":[-0.092,-0.258,0.827],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":85},{\"position\":[-0.092,-0.258,0.827],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":1,\"steps\":45}],\"reason\":\"The initial approach has not settled, so complete it before lowering to the junction and grasping.\"}",
+    "response_timestamp": "2026-10-06T17:13:06.767Z",
+    "message_id": "amsg_01a11234-67cf-7c43-ba2a-9e7321bf406f",
+    "dispatch_timestamp": "2026-10-06T17:12:46.262Z",
+    "policy_wall_seconds": 20.505,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_003.txt"
+  }
+}
