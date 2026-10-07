@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-08",
+  "supersedes_claims_in": "amendment_001_dispatch_logging.json",
+  "stage": "First baseline episode in progress, 6 decisions and 535 control steps; no terminal outcome inspected.",
+  "problem": "Native collaboration archives encrypt task text. Amendment 001 mistakenly copied ciphertext as policy-visible plaintext. The initial dispatch ciphertext is retained, but its exact plaintext is unavailable through supported read/export tools. The longer saved preparation was not the text dispatched.",
+  "initial_plaintext_verified": false,
+  "affected_episode": "th_v2_s01_timed",
+  "source_ciphertext_sha256": "cb32b4d730d607575881b09b8eaa6dcbdd61dc6b39e1a2137bc027ea1e03079d",
+  "retention": "Preserve the scheduled episode, all actions, sensor files, exact subsequent saved/dispatched follow-ups and measured usage. No replacement episode or count increase.",
+  "comparison_limit": "The first start is exploratory with an initial-prompt mismatch; it cannot isolate the interrupt semantics. The second start will use exactly saved, dispatched common preparation text in both conditions, with only paths/readings and declared condition semantics changed. Report both scheduled outcomes, but distinguish the clean matched pair.",
+  "remaining_initial_dispatch_rule": "Use the frozen prepare_feedback_policy output exactly. Preserve the plaintext before dispatch and manually compare the tool argument with that file. Do not recover task plaintext by copying encrypted session fields.",
+  "thresholds_actions_budgets_order_unchanged": true,
+  "total_scheduled_episodes": 4,
+  "reason_no_third_start": "Do not spend on replacement runs for an accounting error. Assess the clean pair and fixed causal fixtures before deciding any next experiment."
+}

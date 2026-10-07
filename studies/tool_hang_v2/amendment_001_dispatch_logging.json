@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-08",
+  "reason": "The root dispatched a concise rendering rather than the longer saved preparation. Record exact actual input, not the unsent text.",
+  "stage": "First sensing decision returned; no policy command relayed or physical action executed. No completed episode outcome.",
+  "matched_material": "Use this actual common instruction rendering for following initial dispatches, substituting episode paths/current public robot readings and declared condition semantics only.",
+  "counts_parameters_source_unchanged": true,
+  "no_replacement": true,
+  "retain_first_sensing_decision": true,
+  "actual_initial_template_sha256": "cb32b4d730d607575881b09b8eaa6dcbdd61dc6b39e1a2137bc027ea1e03079d",
+  "logging": "Each native dispatched message is captured from the collaboration invocation and is the authoritative policy-visible input. Preserve unsent prepared text separately.",
+  "scope": "Input-format/accounting amendment, not a threshold or task change."
+}
