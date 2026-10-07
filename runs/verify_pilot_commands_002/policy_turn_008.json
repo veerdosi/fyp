@@ -1,0 +1,24 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0727,
+          0.0457,
+          1.115
+        ],
+        "quaternion_xyzw": [
+          0.64524,
+          0.11613,
+          -0.71166,
+          0.25244
+        ],
+        "gripper": 1,
+        "steps": 65
+      }
+    ],
+    "reason": "Correct the measured shaft tilt to vertical and center it over the stand, lowering the tip close to the opening."
+  },
+  "policy": null
+}

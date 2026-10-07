@@ -1,0 +1,42 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.06,
+          0.047,
+          0.953
+        ],
+        "gripper": -1,
+        "steps": 30
+      },
+      {
+        "position": [
+          0.14,
+          0.047,
+          0.965
+        ],
+        "gripper": -1,
+        "steps": 70
+      },
+      {
+        "position": [
+          0.14,
+          -0.1,
+          1.18
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 65
+      }
+    ],
+    "reason": "The tool is vertical and the hook passes through its upper hole. Release the handle, retreat outward from the tool, and move aside to verify that it remains hanging without gripper support."
+  },
+  "policy": null
+}

@@ -1,0 +1,51 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.045,
+          -0.202,
+          1.12
+        ],
+        "quaternion_xyzw": [
+          0.851,
+          0.526,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 75
+      },
+      {
+        "position": [
+          0.045,
+          -0.202,
+          0.816
+        ],
+        "gripper": -1,
+        "steps": 65
+      },
+      {
+        "position": [
+          0.045,
+          -0.202,
+          0.816
+        ],
+        "gripper": 1,
+        "steps": 25
+      },
+      {
+        "position": [
+          0.045,
+          -0.202,
+          0.99
+        ],
+        "gripper": 1,
+        "steps": 35
+      }
+    ],
+    "reason": "The frame is seated with its hook projecting toward positive world x. Grasp the tool's central handle from above and lift it so an end hole can be placed over the hook tip."
+  },
+  "policy": null
+}

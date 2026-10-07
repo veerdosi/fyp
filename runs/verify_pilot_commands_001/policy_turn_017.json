@@ -1,0 +1,39 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.073,
+          0.05,
+          1.001
+        ],
+        "quaternion_xyzw": [
+          0,
+          0.9808,
+          0,
+          -0.1951
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          0.049,
+          0.05,
+          0.971
+        ],
+        "quaternion_xyzw": [
+          0,
+          0.9239,
+          0,
+          -0.3827
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "Rotate the tool handle downward around the engaged hole while sliding the hole slightly inward along the horizontal hook."
+  },
+  "policy": null
+}

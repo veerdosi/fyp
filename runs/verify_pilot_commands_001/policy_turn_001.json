@@ -1,0 +1,49 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 94,
+        "v": 183
+      },
+      {
+        "camera": "agentview",
+        "u": 77,
+        "v": 179
+      },
+      {
+        "camera": "agentview",
+        "u": 109,
+        "v": 214
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 173
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 168
+      },
+      {
+        "camera": "agentview",
+        "u": 64,
+        "v": 219
+      },
+      {
+        "camera": "agentview",
+        "u": 78,
+        "v": 241
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 182,
+        "v": 120
+      }
+    ],
+    "reason": "Locate the loose hook frame, the stand opening, and the tool in calibrated world coordinates before selecting a grasp."
+  },
+  "policy": null
+}

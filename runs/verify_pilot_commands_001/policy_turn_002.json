@@ -1,0 +1,57 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          0.93
+        ],
+        "quaternion_xyzw": [
+          0.883,
+          0.469,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          0.836
+        ],
+        "quaternion_xyzw": [
+          0.883,
+          0.469,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 35
+      },
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          0.836
+        ],
+        "gripper": 1,
+        "steps": 25
+      },
+      {
+        "position": [
+          -0.105,
+          -0.228,
+          1.08
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "Grasp the dark junction of the loose hook frame from above and lift it clear of the table to verify acquisition before turning its long leg toward the stand."
+  },
+  "policy": null
+}

@@ -1,0 +1,33 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.1004,
+          0.0406,
+          1.17
+        ],
+        "quaternion_xyzw": [
+          0.65327,
+          0.17568,
+          -0.70981,
+          0.19633
+        ],
+        "gripper": 1,
+        "steps": 65
+      },
+      {
+        "position": [
+          -0.1004,
+          0.0406,
+          1.055
+        ],
+        "gripper": 1,
+        "steps": 80
+      }
+    ],
+    "reason": "Straighten the current shaft axis, align it to the stand center and insert it while holding the regrasped frame."
+  },
+  "policy": null
+}

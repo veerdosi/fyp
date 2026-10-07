@@ -1,0 +1,18 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.095,
+          0.05,
+          1.034
+        ],
+        "gripper": 1,
+        "steps": 45
+      }
+    ],
+    "reason": "The wrist view shows the hook centered through the tool hole. Lower the horizontal hole over the upturned tip before rotating the handle downward."
+  },
+  "policy": null
+}

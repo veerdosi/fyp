@@ -1,0 +1,39 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 125,
+        "v": 160
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 127,
+        "v": 137
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 123,
+        "v": 184
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 122,
+        "v": 199
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 129,
+        "v": 93
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 135,
+        "v": 99
+      }
+    ],
+    "reason": "The tool did not lift. Measure its handle and hole rims in the closer wrist view to correct the grasp center and depth."
+  },
+  "policy": null
+}

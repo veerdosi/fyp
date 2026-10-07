@@ -1,0 +1,24 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.068,
+          -0.125,
+          1.075
+        ],
+        "quaternion_xyzw": [
+          0.707107,
+          0.707107,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 70
+      }
+    ],
+    "reason": "Lift the recovered tool horizontally and bring its larger hole above the hook's upward tip for a direct downward threading attempt."
+  },
+  "policy": null
+}

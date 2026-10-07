@@ -1,0 +1,18 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0727,
+          0.0457,
+          1.005
+        ],
+        "gripper": 1,
+        "steps": 90
+      }
+    ],
+    "reason": "Insert the vertically aligned long shaft into the stand with a straight downward motion."
+  },
+  "policy": null
+}

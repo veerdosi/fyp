@@ -1,0 +1,39 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.06,
+          -0.16,
+          1.16
+        ],
+        "quaternion_xyzw": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 80
+      },
+      {
+        "position": [
+          0.095,
+          0.05,
+          1.08
+        ],
+        "quaternion_xyzw": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 70
+      }
+    ],
+    "reason": "Turn the tool so its handle extends outward from the stand, then position its end hole above the upturned hook tip with clearance for lowering."
+  },
+  "policy": null
+}

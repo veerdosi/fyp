@@ -1,0 +1,45 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.043,
+          -0.196,
+          0.87
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          0.043,
+          -0.196,
+          0.806
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          0.043,
+          -0.196,
+          0.806
+        ],
+        "gripper": 1,
+        "steps": 35
+      },
+      {
+        "position": [
+          0.043,
+          -0.196,
+          1.03
+        ],
+        "gripper": 1,
+        "steps": 55
+      }
+    ],
+    "reason": "Center the fingers on the measured handle and settle lower before closing, then lift to verify that the tool is held."
+  },
+  "policy": null
+}

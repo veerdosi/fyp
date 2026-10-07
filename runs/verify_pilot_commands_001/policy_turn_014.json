@@ -1,0 +1,39 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 99,
+        "v": 49
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 157,
+        "v": 49
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 129,
+        "v": 21
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 129,
+        "v": 77
+      },
+      {
+        "camera": "agentview",
+        "u": 175,
+        "v": 146
+      },
+      {
+        "camera": "agentview",
+        "u": 175,
+        "v": 151
+      }
+    ],
+    "reason": "The tool is visibly held. Measure the hole rim relative to the gripper and the upturned hook tip for accurate placement."
+  },
+  "policy": null
+}

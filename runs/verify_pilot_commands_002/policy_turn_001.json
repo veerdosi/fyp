@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 80,
+        "v": 185
+      },
+      {
+        "camera": "agentview",
+        "u": 59,
+        "v": 185
+      },
+      {
+        "camera": "agentview",
+        "u": 102,
+        "v": 212
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 190
+      },
+      {
+        "camera": "agentview",
+        "u": 187,
+        "v": 170
+      },
+      {
+        "camera": "agentview",
+        "u": 55,
+        "v": 216
+      },
+      {
+        "camera": "agentview",
+        "u": 81,
+        "v": 235
+      }
+    ],
+    "reason": "Locate the frame grasp block, frame ends, stand opening and tool from calibrated visible surface points."
+  },
+  "policy": null
+}

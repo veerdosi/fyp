@@ -1,0 +1,42 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.1016,
+          0.0341,
+          1.1098
+        ],
+        "gripper": -1,
+        "steps": 35
+      },
+      {
+        "position": [
+          0.035,
+          0.115,
+          1.097
+        ],
+        "gripper": -1,
+        "steps": 80
+      },
+      {
+        "position": [
+          0.035,
+          0.115,
+          1.22
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 60
+      }
+    ],
+    "reason": "The shaft has entered the stand. Release it and withdraw backward along the gripper approach axis so the palm clears the frame without carrying it away."
+  },
+  "policy": null
+}

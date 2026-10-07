@@ -1,0 +1,45 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0775,
+          -0.029,
+          0.938
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.0775,
+          -0.029,
+          0.938
+        ],
+        "gripper": -1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.0775,
+          -0.17,
+          0.945
+        ],
+        "gripper": -1,
+        "steps": 75
+      },
+      {
+        "position": [
+          -0.15,
+          -0.2,
+          1.16
+        ],
+        "gripper": -1,
+        "steps": 55
+      }
+    ],
+    "reason": "The hook bar is visible through the larger hole. Lower the tool onto it, release, and retreat away from the hanging tool to check that it remains supported."
+  },
+  "policy": null
+}

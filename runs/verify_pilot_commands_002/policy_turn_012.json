@@ -1,0 +1,27 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.25,
+          -0.07,
+          1.18
+        ],
+        "gripper": 1,
+        "steps": 50
+      },
+      {
+        "position": [
+          -0.117,
+          0.102,
+          1.19
+        ],
+        "gripper": 1,
+        "steps": 70
+      }
+    ],
+    "reason": "Reclose to secure the displaced frame and move the currently observed shaft tip over the stand for a corrected insertion."
+  },
+  "policy": null
+}

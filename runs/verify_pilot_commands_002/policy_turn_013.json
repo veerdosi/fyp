@@ -1,0 +1,29 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 205,
+        "v": 150
+      },
+      {
+        "camera": "agentview",
+        "u": 211,
+        "v": 129
+      },
+      {
+        "camera": "agentview",
+        "u": 217,
+        "v": 108
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 169
+      }
+    ],
+    "reason": "Measure the shaft after regrasping so its actual axis, rather than its earlier slipped pose, determines the insertion alignment."
+  },
+  "policy": null
+}

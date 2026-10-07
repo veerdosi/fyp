@@ -1,0 +1,39 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 106,
+        "v": 76
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 148,
+        "v": 76
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 128,
+        "v": 55
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 128,
+        "v": 97
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 136,
+        "v": 82
+      },
+      {
+        "camera": "agentview",
+        "u": 149,
+        "v": 126
+      }
+    ],
+    "reason": "Check the actual hole center after rotation against the hook tip before threading it; grasp settling can shift the tool."
+  },
+  "policy": null
+}

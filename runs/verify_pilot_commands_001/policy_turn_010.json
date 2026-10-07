@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 175,
+        "v": 149
+      },
+      {
+        "camera": "agentview",
+        "u": 182,
+        "v": 145
+      },
+      {
+        "camera": "agentview",
+        "u": 191,
+        "v": 138
+      },
+      {
+        "camera": "agentview",
+        "u": 187,
+        "v": 162
+      },
+      {
+        "camera": "agentview",
+        "u": 63,
+        "v": 216
+      },
+      {
+        "camera": "agentview",
+        "u": 55,
+        "v": 200
+      },
+      {
+        "camera": "agentview",
+        "u": 78,
+        "v": 241
+      }
+    ],
+    "reason": "The released frame remains supported by the stand but has shifted. Measure the exposed hook and tool ends to plan hanging the tool in its actual settled configuration."
+  },
+  "policy": null
+}

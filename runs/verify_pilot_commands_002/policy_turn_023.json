@@ -1,0 +1,27 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0773,
+          -0.0786,
+          0.9556
+        ],
+        "gripper": 1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.0773,
+          -0.0286,
+          0.9556
+        ],
+        "gripper": 1,
+        "steps": 65
+      }
+    ],
+    "reason": "Center the larger hole laterally on the hook and slide it over the raised tip onto the horizontal bar."
+  },
+  "policy": null
+}

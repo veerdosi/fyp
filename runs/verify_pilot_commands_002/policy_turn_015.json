@@ -1,0 +1,34 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 189,
+        "v": 159
+      },
+      {
+        "camera": "agentview",
+        "u": 190,
+        "v": 148
+      },
+      {
+        "camera": "agentview",
+        "u": 187,
+        "v": 170
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 170
+      },
+      {
+        "camera": "agentview",
+        "u": 188,
+        "v": 168
+      }
+    ],
+    "reason": "The downward motion stopped at the stand rim; measure the visible shaft and opening for a small lateral correction."
+  },
+  "policy": null
+}

@@ -1,0 +1,49 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 110,
+        "v": 72
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 154,
+        "v": 72
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 132,
+        "v": 50
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 132,
+        "v": 94
+      },
+      {
+        "camera": "agentview",
+        "u": 149,
+        "v": 126
+      },
+      {
+        "camera": "agentview",
+        "u": 152,
+        "v": 131
+      },
+      {
+        "camera": "agentview",
+        "u": 166,
+        "v": 134
+      },
+      {
+        "camera": "agentview",
+        "u": 180,
+        "v": 137
+      }
+    ],
+    "reason": "Locate the larger tool-hole center from its rim and the hook tip and horizontal bar to plan threading."
+  },
+  "policy": null
+}

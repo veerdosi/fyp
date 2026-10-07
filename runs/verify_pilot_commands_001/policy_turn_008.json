@@ -1,0 +1,27 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.077,
+          0.037,
+          1.075
+        ],
+        "gripper": -1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.17,
+          -0.1,
+          1.18
+        ],
+        "gripper": -1,
+        "steps": 60
+      }
+    ],
+    "reason": "The frame reached a firm depth limit with its leg inside the stand. Release it at the measured pose and withdraw to check whether the stand supports it."
+  },
+  "policy": null
+}

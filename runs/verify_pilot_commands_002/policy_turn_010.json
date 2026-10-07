@@ -1,0 +1,36 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0727,
+          0.0457,
+          0.974
+        ],
+        "gripper": 1,
+        "steps": 50
+      },
+      {
+        "position": [
+          -0.0727,
+          0.0457,
+          0.974
+        ],
+        "gripper": -1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.25,
+          -0.07,
+          1.12
+        ],
+        "gripper": -1,
+        "steps": 100
+      }
+    ],
+    "reason": "Seat the frame farther into the stand, release the block, and withdraw to inspect whether the assembly remains upright."
+  },
+  "policy": null
+}
