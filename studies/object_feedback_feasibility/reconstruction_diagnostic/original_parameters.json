@@ -1,0 +1,27 @@
+{
+  "estimator": "Pyramidal Lucas-Kanade, forward/backward consistency, nearest-pixel metric depth, irreversible loss",
+  "parameters": {
+    "window_pixels": 21,
+    "pyramid_levels": 3,
+    "iterations": 30,
+    "convergence_pixels": 0.01,
+    "minimum_eigenvalue": 0.0001,
+    "maximum_forward_backward_pixels": 1.0,
+    "maximum_world_jump_m": 0.08,
+    "initial_patch_std_min": 5.0,
+    "initial_patch_radius": 3,
+    "minimum_depth_m": 0.001,
+    "maximum_depth_m": 10.0
+  },
+  "tracker_sha256": "515353b3e90b0dd258a660f30557743ccdbfcc90e28186b9c5d39b80a2ebf68f",
+  "frozen_before_cohort": true,
+  "scope": "Development measurement audit, not an executed robot policy or evidence against arrival gating",
+  "gates": {
+    "visible_coverage_min": 0.8,
+    "accepted_world_error_p95_max_m": 0.003,
+    "occluded_false_valid_max": 0.05
+  },
+  "oracle_boundary": "Reference labels/transforms/segmentation restricted to audit driver; tracker receives only RGB/depth/calibration/query pixels",
+  "audit_driver_sha256": "96876d767f7ee5fb7edf33d7a2de45778db35936a7a82b93c9e3468c29b1df00",
+  "pre_cohort_correction": "Added finite-pixel input handling before any estimator scoring."
+}

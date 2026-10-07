@@ -1,0 +1,3223 @@
+{
+  "episodes": [
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "queries": 53,
+      "command_sha256": "349ba58fc8fdec801422161f90e759c62885e093150f02ff444034b4f6199add",
+      "trajectory_sha256": "f8f15f72dabc120dafe82767955d78b174b495475f130900bdab8dd2dc02a373"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "queries": 25,
+      "command_sha256": "026d4906d348e1c6bafb8abbe47d36ca9044452de4da691935384697f966281e",
+      "trajectory_sha256": "d2134a8d1c29ef07da1d15a6089edaac67bb2fd0911eaaa768d7eae22dc1de3d"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "queries": 19,
+      "command_sha256": "f8876fc9f3a8980d69a30bfb7e51c4d9e6a317dabd9423d73a44dc1155cfa3b2",
+      "trajectory_sha256": "d988f8a92f5f9e1ed45bed10a528d304671e57c65f3a234799a7bbacca103e59"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "queries": 34,
+      "command_sha256": "dcc25ed362422c99317037ed7bc6400840d3ea4443dd01af9b923a007ece3aa3",
+      "trajectory_sha256": "3454c2427c30b90b02e60438c3edb144d48ee073cbd1559b3ace63d30680111e"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "queries": 40,
+      "command_sha256": "176ed7528467b3d7dcdfa2e0263d54547b3ef17a742c9a133c2d37425a2108e5",
+      "trajectory_sha256": "ae2b81dd31a5805d0e48a69204935e2fbf5bf60457e4d39f1b3ad1699a3cdadd"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "queries": 41,
+      "command_sha256": "b460727e77e83a80fc628c17a01cb6a5d9ca3f448684a6c3e5b7525d115b892c",
+      "trajectory_sha256": "2e18b97f854a6e43c5741dfc3f0720ca528a403892c5ecf51b7281eec5fc1612"
+    }
+  ],
+  "streams": [
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 20,
+      "end_step": 145,
+      "observation_id": 0,
+      "motion_decision": 2,
+      "points": [
+        {
+          "query_decision": 1,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 81,
+          "v": 181,
+          "depth_m": 0.8686640858650208,
+          "world_xyz": [
+            -0.09528959673551951,
+            -0.26704361541716287,
+            0.8268372972598348
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 60,
+          "v": 183,
+          "depth_m": 0.8835526704788208,
+          "world_xyz": [
+            -0.0717369018291586,
+            -0.32579848115898025,
+            0.8139720032232602
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 97,
+          "v": 199,
+          "depth_m": 0.8063929080963135,
+          "world_xyz": [
+            -0.0622834230700946,
+            -0.18601751490096502,
+            0.8140326614754445
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 110,
+          "v": 214,
+          "depth_m": 0.7475230097770691,
+          "world_xyz": [
+            -0.02856240129170673,
+            -0.12090056731925675,
+            0.8127805455929256
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 185,
+          "v": 171,
+          "depth_m": 0.6529926061630249,
+          "world_xyz": [
+            -0.0741175891222543,
+            0.04400656096369199,
+            0.9552171159780609
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 183,
+          "v": 211,
+          "depth_m": 0.6858965158462524,
+          "world_xyz": [
+            -0.07412299247087961,
+            0.04592532125958748,
+            0.8562315340710631
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 71,
+          "v": 217,
+          "depth_m": 0.7109718322753906,
+          "world_xyz": [
+            0.04603766541502835,
+            -0.1775808664325395,
+            0.8283545839451492
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 7,
+          "camera": "agentview",
+          "u": 91,
+          "v": 238,
+          "depth_m": 0.6830880045890808,
+          "world_xyz": [
+            0.05324007950491372,
+            -0.11488391278357052,
+            0.8018168025336098
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 8,
+          "camera": "robot0_eye_in_hand",
+          "u": 182,
+          "v": 79,
+          "depth_m": 0.328285276889801,
+          "world_xyz": [
+            0.07188248685709112,
+            -0.10619907216764635,
+            0.8002182634994272
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 9,
+          "camera": "robot0_eye_in_hand",
+          "u": 80,
+          "v": 166,
+          "depth_m": 0.17513033747673035,
+          "world_xyz": [
+            -0.08285413248321224,
+            0.05039830986846453,
+            0.9348245089501293
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 500,
+      "end_step": 575,
+      "observation_id": 3,
+      "motion_decision": 6,
+      "points": [
+        {
+          "query_decision": 5,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 190,
+          "v": 137,
+          "depth_m": 0.6213155388832092,
+          "world_xyz": [
+            -0.07221143078559322,
+            0.05016207820227761,
+            1.0344312375749458
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 189,
+          "v": 146,
+          "depth_m": 0.6278107166290283,
+          "world_xyz": [
+            -0.07164312632629455,
+            0.049658197974211865,
+            1.0148500880547577
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 187,
+          "v": 168,
+          "depth_m": 0.6610386967658997,
+          "world_xyz": [
+            -0.0851198175572968,
+            0.04392654931104206,
+            0.957443527141468
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 185,
+          "v": 169,
+          "depth_m": 0.6515608429908752,
+          "world_xyz": [
+            -0.07411757582589984,
+            0.04369515552372516,
+            0.9598566672133362
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 157,
+          "v": 38,
+          "depth_m": 0.5117371678352356,
+          "world_xyz": [
+            0.007243855351974304,
+            0.009446921696561,
+            1.2289655237787718
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 170,
+          "v": 40,
+          "depth_m": 0.5281569957733154,
+          "world_xyz": [
+            -0.018827513902013926,
+            0.021172683301073497,
+            1.2246312477103702
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 1135,
+      "end_step": 1210,
+      "observation_id": 9,
+      "motion_decision": 13,
+      "points": [
+        {
+          "query_decision": 12,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 149,
+          "v": 63,
+          "depth_m": 0.574489176273346,
+          "world_xyz": [
+            -0.029823329349542516,
+            -0.024308498001652523,
+            1.1810031202202786
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 147,
+          "v": 68,
+          "depth_m": 0.5792695879936218,
+          "world_xyz": [
+            -0.029391401353963065,
+            -0.028076369838254955,
+            1.171505544253347
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 153,
+          "v": 70,
+          "depth_m": 0.5561956167221069,
+          "world_xyz": [
+            -0.01363101899846858,
+            -0.007166863100347698,
+            1.1718047327140269
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 156,
+          "v": 85,
+          "depth_m": 0.5408244729042053,
+          "world_xyz": [
+            0.004946184469724613,
+            0.009166245032855458,
+            1.1496821598856302
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 156,
+          "v": 92,
+          "depth_m": 0.5447203516960144,
+          "world_xyz": [
+            0.005076212769901778,
+            0.009663744623696985,
+            1.1372640804940466
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 169,
+          "v": 89,
+          "depth_m": 0.5603927969932556,
+          "world_xyz": [
+            -0.02276610357856046,
+            0.021739488300612037,
+            1.1387317444849077
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 6,
+          "camera": "robot0_eye_in_hand",
+          "u": 111,
+          "v": 80,
+          "depth_m": 0.10144289582967758,
+          "world_xyz": [
+            -0.025316474239379994,
+            -0.0299747963647249,
+            1.1736422223605185
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 7,
+          "camera": "robot0_eye_in_hand",
+          "u": 145,
+          "v": 80,
+          "depth_m": 0.10145313292741776,
+          "world_xyz": [
+            -0.015438721800072608,
+            -0.01180968128879431,
+            1.1737303255824323
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 1210,
+      "end_step": 1295,
+      "observation_id": 10,
+      "motion_decision": 15,
+      "points": [
+        {
+          "query_decision": 14,
+          "pixel_index": 0,
+          "camera": "robot0_eye_in_hand",
+          "u": 110,
+          "v": 80,
+          "depth_m": 0.10217893868684769,
+          "world_xyz": [
+            -0.01250772471191644,
+            -0.005930094333066148,
+            1.1530787094902413
+          ]
+        },
+        {
+          "query_decision": 14,
+          "pixel_index": 1,
+          "camera": "robot0_eye_in_hand",
+          "u": 142,
+          "v": 78,
+          "depth_m": 0.10115610063076019,
+          "world_xyz": [
+            -0.001255331582180122,
+            0.010021297967312583,
+            1.1543726633048585
+          ]
+        },
+        {
+          "query_decision": 14,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 148,
+          "v": 88,
+          "depth_m": 0.09168200194835663,
+          "world_xyz": [
+            0.0089250290926325,
+            0.0066037412942596616,
+            1.1472883155990081
+          ]
+        },
+        {
+          "query_decision": 14,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 150,
+          "v": 112,
+          "depth_m": 0.09394219517707825,
+          "world_xyz": [
+            0.009213087112880824,
+            0.008283401026211522,
+            1.134155246821615
+          ]
+        },
+        {
+          "query_decision": 14,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 156,
+          "v": 76,
+          "depth_m": 0.5480663180351257,
+          "world_xyz": [
+            -0.0060946823108435355,
+            0.0030409027261969757,
+            1.1631516970360487
+          ]
+        },
+        {
+          "query_decision": 14,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 156,
+          "v": 85,
+          "depth_m": 0.5377674102783203,
+          "world_xyz": [
+            0.007652542299925957,
+            0.010530734758785215,
+            1.1503280015352746
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 1295,
+      "end_step": 1385,
+      "observation_id": 11,
+      "motion_decision": 17,
+      "points": [
+        {
+          "query_decision": 16,
+          "pixel_index": 0,
+          "camera": "robot0_eye_in_hand",
+          "u": 86,
+          "v": 70,
+          "depth_m": 0.08878512680530548,
+          "world_xyz": [
+            -0.010149569601121941,
+            -0.007627297621615424,
+            1.1417699445240705
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 1,
+          "camera": "robot0_eye_in_hand",
+          "u": 129,
+          "v": 70,
+          "depth_m": 0.09103736281394958,
+          "world_xyz": [
+            -0.00039153793227400535,
+            0.013207527841329225,
+            1.1426566498846107
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 106,
+          "v": 48,
+          "depth_m": 0.08820413053035736,
+          "world_xyz": [
+            -0.005181173148743709,
+            0.001703784436831876,
+            1.1533542347691632
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 109,
+          "v": 94,
+          "depth_m": 0.09181194752454758,
+          "world_xyz": [
+            -0.0055338016125444645,
+            0.003677420019905113,
+            1.1295476018154034
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 148,
+          "v": 60,
+          "depth_m": 0.07802529633045197,
+          "world_xyz": [
+            0.015221668273072045,
+            0.014111239947710769,
+            1.1441891039667844
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 5,
+          "camera": "robot0_eye_in_hand",
+          "u": 141,
+          "v": 93,
+          "depth_m": 0.07978054881095886,
+          "world_xyz": [
+            0.013470111085411088,
+            0.011753918814056914,
+            1.128979912403882
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 1385,
+      "end_step": 1465,
+      "observation_id": 12,
+      "motion_decision": 19,
+      "points": [
+        {
+          "query_decision": 18,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 172,
+          "v": 149,
+          "depth_m": 0.5525663495063782,
+          "world_xyz": [
+            0.012583676010728073,
+            0.04892955840943222,
+            1.0396628944227928
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 174,
+          "v": 144,
+          "depth_m": 0.5555394291877747,
+          "world_xyz": [
+            0.005536181039968002,
+            0.0492647085763378,
+            1.046902843687064
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 181,
+          "v": 140,
+          "depth_m": 0.6028937697410583,
+          "world_xyz": [
+            -0.0447255944583026,
+            0.04227374289236879,
+            1.0357360339357524
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 189,
+          "v": 134,
+          "depth_m": 1.0346134901046753,
+          "world_xyz": [
+            -0.44316010944720785,
+            -0.08780060360521075,
+            0.8912022512051712
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 110,
+          "v": 77,
+          "depth_m": 0.09952189773321152,
+          "world_xyz": [
+            0.000443166189770583,
+            0.007551262937856434,
+            1.1778592619159107
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 5,
+          "camera": "robot0_eye_in_hand",
+          "u": 145,
+          "v": 77,
+          "depth_m": 0.10070866346359253,
+          "world_xyz": [
+            0.011275710594873686,
+            0.025573523514849268,
+            1.1785576461646061
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 1565,
+      "end_step": 1690,
+      "observation_id": 14,
+      "motion_decision": 22,
+      "points": [
+        {
+          "query_decision": 21,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 181,
+          "v": 150,
+          "depth_m": 0.5494128465652466,
+          "world_xyz": [
+            0.007308782906799538,
+            0.0639723753046712,
+            1.0392721284215005
+          ]
+        },
+        {
+          "query_decision": 21,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 182,
+          "v": 143,
+          "depth_m": 0.6288886666297913,
+          "world_xyz": [
+            -0.0668184368949924,
+            0.036125600167598915,
+            1.0201595448896568
+          ]
+        },
+        {
+          "query_decision": 21,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 187,
+          "v": 138,
+          "depth_m": 0.6114656925201416,
+          "world_xyz": [
+            -0.0596783830000448,
+            0.048663452344696656,
+            1.0362102593497342
+          ]
+        },
+        {
+          "query_decision": 21,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 109,
+          "v": 87,
+          "depth_m": 0.1118578314781189,
+          "world_xyz": [
+            0.055461941770321765,
+            -0.08333929040608291,
+            1.2374885732699907
+          ]
+        },
+        {
+          "query_decision": 21,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 146,
+          "v": 87,
+          "depth_m": 0.11185494810342789,
+          "world_xyz": [
+            0.05556082300360413,
+            -0.10814914796773398,
+            1.2376129819511692
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "paired_state": 1,
+      "condition": "direct_waypoints",
+      "start_step": 1830,
+      "end_step": 1895,
+      "observation_id": 16,
+      "motion_decision": 25,
+      "points": [
+        {
+          "query_decision": 24,
+          "pixel_index": 0,
+          "camera": "robot0_eye_in_hand",
+          "u": 109,
+          "v": 85,
+          "depth_m": 0.11316007375717163,
+          "world_xyz": [
+            0.00025366166478463237,
+            0.07160429403968044,
+            1.0675674193589098
+          ]
+        },
+        {
+          "query_decision": 24,
+          "pixel_index": 1,
+          "camera": "robot0_eye_in_hand",
+          "u": 145,
+          "v": 85,
+          "depth_m": 0.11325100064277649,
+          "world_xyz": [
+            0.022581637165950456,
+            0.06168894768766549,
+            1.0675250392000795
+          ]
+        },
+        {
+          "query_decision": 24,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 94,
+          "v": 141,
+          "depth_m": 0.14655038714408875,
+          "world_xyz": [
+            -0.03170053786990306,
+            0.04142043511144374,
+            1.0341199249444464
+          ]
+        },
+        {
+          "query_decision": 24,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 43,
+          "v": 161,
+          "depth_m": 0.1462409496307373,
+          "world_xyz": [
+            -0.07961026595477101,
+            0.043584590521828594,
+            1.034330521204978
+          ]
+        },
+        {
+          "query_decision": 24,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 170,
+          "v": 149,
+          "depth_m": 0.554922878742218,
+          "world_xyz": [
+            0.012477598730269213,
+            0.04502390146836416,
+            1.0387064299594737
+          ]
+        },
+        {
+          "query_decision": 24,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 171,
+          "v": 154,
+          "depth_m": 0.556984007358551,
+          "world_xyz": [
+            0.012386078024925418,
+            0.047422419970804125,
+            1.0294012364065088
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "paired_state": 1,
+      "condition": "deadline_guard",
+      "start_step": 20,
+      "end_step": 80,
+      "observation_id": 0,
+      "motion_decision": 2,
+      "points": [
+        {
+          "query_decision": 1,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 83,
+          "v": 182,
+          "depth_m": 0.8620676398277283,
+          "world_xyz": [
+            -0.09304013686999624,
+            -0.2578758708482017,
+            0.8275350931732801
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 51,
+          "v": 185,
+          "depth_m": 0.8709294199943542,
+          "world_xyz": [
+            -0.04872453814978284,
+            -0.3380534902792322,
+            0.8151038448944969
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 109,
+          "v": 212,
+          "depth_m": 0.7505362033843994,
+          "world_xyz": [
+            -0.030749269358209097,
+            -0.1253379864987525,
+            0.8155265643215912
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502541303634644,
+          "world_xyz": [
+            -0.0741138939020286,
+            0.04589452698218863,
+            0.9604665049937756
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 184,
+          "v": 210,
+          "depth_m": 0.6836652159690857,
+          "world_xyz": [
+            -0.07412231582260764,
+            0.0480662347722321,
+            0.8596367969771638
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 73,
+          "v": 215,
+          "depth_m": 0.7124429941177368,
+          "world_xyz": [
+            0.04135111492954635,
+            -0.17539214802018976,
+            0.8317861780009714
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 62,
+          "v": 198,
+          "depth_m": 0.7991055846214294,
+          "world_xyz": [
+            -0.010137328931401957,
+            -0.259295962521653,
+            0.8205284415107286
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 7,
+          "camera": "agentview",
+          "u": 91,
+          "v": 238,
+          "depth_m": 0.6830880045890808,
+          "world_xyz": [
+            0.05324007950491372,
+            -0.11488391278357052,
+            0.8018168025336098
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "paired_state": 1,
+      "condition": "deadline_guard",
+      "start_step": 660,
+      "end_step": 850,
+      "observation_id": 5,
+      "motion_decision": 8,
+      "points": [
+        {
+          "query_decision": 7,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 104,
+          "v": 104,
+          "depth_m": 0.6584272384643555,
+          "world_xyz": [
+            -0.02870996749591198,
+            -0.12994792834012822,
+            1.0867953342355032
+          ]
+        },
+        {
+          "query_decision": 7,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 36,
+          "v": 92,
+          "depth_m": 0.7712843418121338,
+          "world_xyz": [
+            -0.03529222797534182,
+            -0.3445288719332212,
+            1.0845770779555097
+          ]
+        },
+        {
+          "query_decision": 7,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 74,
+          "v": 93,
+          "depth_m": 0.7603756189346313,
+          "world_xyz": [
+            -0.07678682842945833,
+            -0.25637109299235106,
+            1.0848016411989156
+          ]
+        },
+        {
+          "query_decision": 7,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502541303634644,
+          "world_xyz": [
+            -0.0741138939020286,
+            0.04589452698218863,
+            0.9604665049937756
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "paired_state": 1,
+      "condition": "deadline_guard",
+      "start_step": 850,
+      "end_step": 960,
+      "observation_id": 6,
+      "motion_decision": 10,
+      "points": [
+        {
+          "query_decision": 9,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 189,
+          "v": 155,
+          "depth_m": 0.6418368220329285,
+          "world_xyz": [
+            -0.07862889557167702,
+            0.048557829995451385,
+            0.9917193695125579
+          ]
+        },
+        {
+          "query_decision": 9,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 189,
+          "v": 143,
+          "depth_m": 0.6318039298057556,
+          "world_xyz": [
+            -0.07695464118634665,
+            0.047268690440057576,
+            1.0190294870896035
+          ]
+        },
+        {
+          "query_decision": 9,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502541303634644,
+          "world_xyz": [
+            -0.0741138939020286,
+            0.04589452698218863,
+            0.9604665049937756
+          ]
+        },
+        {
+          "query_decision": 9,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 186,
+          "v": 174,
+          "depth_m": 0.6538320779800415,
+          "world_xyz": [
+            -0.07411487278426987,
+            0.04668578504200924,
+            0.9488555447352327
+          ]
+        },
+        {
+          "query_decision": 9,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 154,
+          "v": 54,
+          "depth_m": 0.527437150478363,
+          "world_xyz": [
+            0.003259810729962953,
+            0.0026568726808870458,
+            1.2022305599127172
+          ]
+        },
+        {
+          "query_decision": 9,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 175,
+          "v": 56,
+          "depth_m": 0.5529851913452148,
+          "world_xyz": [
+            -0.03888896251993945,
+            0.023166628619232493,
+            1.1958784346058808
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "paired_state": 1,
+      "condition": "deadline_guard",
+      "start_step": 1710,
+      "end_step": 1815,
+      "observation_id": 13,
+      "motion_decision": 18,
+      "points": [
+        {
+          "query_decision": 17,
+          "pixel_index": 0,
+          "camera": "robot0_eye_in_hand",
+          "u": 105,
+          "v": 52,
+          "depth_m": 0.09398023784160614,
+          "world_xyz": [
+            0.059323127359571425,
+            -0.09833123459387519,
+            1.1620585225737172
+          ]
+        },
+        {
+          "query_decision": 17,
+          "pixel_index": 1,
+          "camera": "robot0_eye_in_hand",
+          "u": 150,
+          "v": 52,
+          "depth_m": 0.09399562329053879,
+          "world_xyz": [
+            0.08231108543420207,
+            -0.1090267572949557,
+            1.1619671126127171
+          ]
+        },
+        {
+          "query_decision": 17,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 128,
+          "v": 28,
+          "depth_m": 0.09402073919773102,
+          "world_xyz": [
+            0.07678746979696016,
+            -0.09152083280392675,
+            1.1619762584538245
+          ]
+        },
+        {
+          "query_decision": 17,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 128,
+          "v": 77,
+          "depth_m": 0.09395404160022736,
+          "world_xyz": [
+            0.0651217517845801,
+            -0.11657644941676251,
+            1.162048892915198
+          ]
+        },
+        {
+          "query_decision": 17,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 139,
+          "v": 89,
+          "depth_m": 0.5557492971420288,
+          "world_xyz": [
+            0.010021437297212776,
+            -0.022119116466974204,
+            1.1397692365344292
+          ]
+        },
+        {
+          "query_decision": 17,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 139,
+          "v": 95,
+          "depth_m": 0.5595736503601074,
+          "world_xyz": [
+            0.009912999956836754,
+            -0.02202635351561197,
+            1.128705179544298
+          ]
+        },
+        {
+          "query_decision": 17,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 155,
+          "v": 93,
+          "depth_m": 0.5693605542182922,
+          "world_xyz": [
+            -0.015064611163670472,
+            -0.0024615769358141137,
+            1.129802681719783
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "paired_state": 1,
+      "condition": "phase_guard",
+      "start_step": 20,
+      "end_step": 90,
+      "observation_id": 0,
+      "motion_decision": 2,
+      "points": [
+        {
+          "query_decision": 1,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 82,
+          "v": 180,
+          "depth_m": 0.8724576234817505,
+          "world_xyz": [
+            -0.10013324599223017,
+            -0.26742143127281426,
+            0.8275814813093945
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 55,
+          "v": 184,
+          "depth_m": 0.8763880133628845,
+          "world_xyz": [
+            -0.058895763567672677,
+            -0.3326362925137987,
+            0.814955748118116
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 102,
+          "v": 203,
+          "depth_m": 0.7817133665084839,
+          "world_xyz": [
+            -0.04934049973997512,
+            -0.16009589445559086,
+            0.818293539672855
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 185,
+          "v": 176,
+          "depth_m": 0.656600832939148,
+          "world_xyz": [
+            -0.07411858900084711,
+            0.04479073874729933,
+            0.9435279827869187
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 181,
+          "v": 215,
+          "depth_m": 0.6920081377029419,
+          "world_xyz": [
+            -0.07412218990504738,
+            0.04192725380075604,
+            0.8441814312059054
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 72,
+          "v": 215,
+          "depth_m": 0.7124429941177368,
+          "world_xyz": [
+            0.04257284169776432,
+            -0.17734732007508003,
+            0.8317861786324525
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 90,
+          "v": 237,
+          "depth_m": 0.6861582398414612,
+          "world_xyz": [
+            0.051837808131327545,
+            -0.1188119192961321,
+            0.8018262637719924
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "paired_state": 1,
+      "condition": "phase_guard",
+      "start_step": 302,
+      "end_step": 395,
+      "observation_id": 4,
+      "motion_decision": 7,
+      "points": [
+        {
+          "query_decision": 6,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 77,
+          "v": 128,
+          "depth_m": 0.8310759663581848,
+          "world_xyz": [
+            -0.1058773288821388,
+            -0.279603353783216,
+            0.979693146585995
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 76,
+          "v": 115,
+          "depth_m": 0.8172818422317505,
+          "world_xyz": [
+            -0.10466206635748904,
+            -0.2792781374368688,
+            1.0167194086303613
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502541303634644,
+          "world_xyz": [
+            -0.0741138939020286,
+            0.04589452698218863,
+            0.9604665049937756
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 73,
+          "v": 59,
+          "depth_m": 0.7584187984466553,
+          "world_xyz": [
+            -0.09824709731261416,
+            -0.27227174074325045,
+            1.1636756624828386
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 40,
+          "v": 57,
+          "depth_m": 0.7233078479766846,
+          "world_xyz": [
+            -0.0317306091133287,
+            -0.31442045629292886,
+            1.1727163113495371
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "paired_state": 1,
+      "condition": "phase_guard",
+      "start_step": 570,
+      "end_step": 670,
+      "observation_id": 7,
+      "motion_decision": 11,
+      "points": [
+        {
+          "query_decision": 10,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 170,
+          "v": 148,
+          "depth_m": 0.5541679263114929,
+          "world_xyz": [
+            0.0125985675696757,
+            0.04497849812578869,
+            1.040698010721337
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 180,
+          "v": 143,
+          "depth_m": 0.5892896056175232,
+          "world_xyz": [
+            -0.03013128301772855,
+            0.04639330155900631,
+            1.0355094714266877
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 185,
+          "v": 158,
+          "depth_m": 0.6345471739768982,
+          "world_xyz": [
+            -0.06610256939986514,
+            0.045002942171845084,
+            0.9890223310484986
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 73,
+          "v": 215,
+          "depth_m": 0.7124429941177368,
+          "world_xyz": [
+            0.04135111492954635,
+            -0.17539214802018976,
+            0.8317861780009714
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 61,
+          "v": 198,
+          "depth_m": 0.7990984320640564,
+          "world_xyz": [
+            -0.008762581389376245,
+            -0.26148438133751156,
+            0.8205324110457811
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 88,
+          "v": 236,
+          "depth_m": 0.6677138805389404,
+          "world_xyz": [
+            0.0651105932855483,
+            -0.11293949182007201,
+            0.8162785544868558
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 94,
+          "v": 238,
+          "depth_m": 0.6830853819847107,
+          "world_xyz": [
+            0.049727582935596426,
+            -0.10925869367281243,
+            0.8018185749554195
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "paired_state": 2,
+      "condition": "deadline_guard",
+      "start_step": 20,
+      "end_step": 80,
+      "observation_id": 0,
+      "motion_decision": 2,
+      "points": [
+        {
+          "query_decision": 1,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 80,
+          "v": 181,
+          "depth_m": 0.867220938205719,
+          "world_xyz": [
+            -0.09284050518301024,
+            -0.2685636349146766,
+            0.8275634713905026
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 58,
+          "v": 181,
+          "depth_m": 0.8851739764213562,
+          "world_xyz": [
+            -0.07138197747500452,
+            -0.3327528154094903,
+            0.818529750480377
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 94,
+          "v": 204,
+          "depth_m": 0.8057431578636169,
+          "world_xyz": [
+            -0.05391690243296099,
+            -0.18993651644590975,
+            0.8021443086518332
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 185,
+          "v": 170,
+          "depth_m": 0.6522771716117859,
+          "world_xyz": [
+            -0.0741186367273301,
+            0.04385029670615945,
+            0.957538858521001
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 182,
+          "v": 218,
+          "depth_m": 0.6929590702056885,
+          "world_xyz": [
+            -0.07412581917189554,
+            0.0447615448146676,
+            0.8372829877495918
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 54,
+          "v": 217,
+          "depth_m": 0.7053988575935364,
+          "world_xyz": [
+            0.07003251316722287,
+            -0.20713417905044829,
+            0.8317689279032077
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 80,
+          "v": 235,
+          "depth_m": 0.6726441979408264,
+          "world_xyz": [
+            0.07061604931339671,
+            -0.1307856356006653,
+            0.8150185318695777
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "paired_state": 2,
+      "condition": "deadline_guard",
+      "start_step": 420,
+      "end_step": 585,
+      "observation_id": 4,
+      "motion_decision": 7,
+      "points": [
+        {
+          "query_decision": 6,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 77,
+          "v": 97,
+          "depth_m": 0.7774761915206909,
+          "world_xyz": [
+            -0.09047333960511966,
+            -0.25954682135112067,
+            1.0713160633358372
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 47,
+          "v": 95,
+          "depth_m": 0.8376304507255554,
+          "world_xyz": [
+            -0.09338026527219873,
+            -0.3689585865040058,
+            1.0615069816990368
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 65,
+          "v": 119,
+          "depth_m": 0.6420405507087708,
+          "world_xyz": [
+            0.03602171504612667,
+            -0.18354623908653453,
+            1.0619184313505245
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 12,
+          "v": 30,
+          "depth_m": 0.10586239397525787,
+          "world_xyz": [
+            0.019221908955284025,
+            -0.1950205182536549,
+            1.061197940064811
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 60,
+          "v": 110,
+          "depth_m": 0.1049928367137909,
+          "world_xyz": [
+            -0.031609859191139,
+            -0.22588925136094593,
+            1.0620418920362367
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 5,
+          "camera": "robot0_eye_in_hand",
+          "u": 131,
+          "v": 189,
+          "depth_m": 0.10605262219905853,
+          "world_xyz": [
+            -0.08167387557309332,
+            -0.2706474701658512,
+            1.0609537406569696
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "paired_state": 2,
+      "condition": "deadline_guard",
+      "start_step": 585,
+      "end_step": 755,
+      "observation_id": 5,
+      "motion_decision": 9,
+      "points": [
+        {
+          "query_decision": 8,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 49,
+          "v": 89,
+          "depth_m": 0.7700997591018677,
+          "world_xyz": [
+            -0.05383135282845264,
+            -0.31749570741026856,
+            1.0918778985659325
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 54,
+          "v": 78,
+          "depth_m": 0.7637261152267456,
+          "world_xyz": [
+            -0.06381593459785351,
+            -0.3072419897863923,
+            1.1188483754222986
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 107,
+          "v": 5,
+          "depth_m": 0.09105249494314194,
+          "world_xyz": [
+            -0.058636202979832304,
+            -0.3116082205538253,
+            1.1055772007088698
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 111,
+          "v": 34,
+          "depth_m": 0.0924973413348198,
+          "world_xyz": [
+            -0.06338625874747678,
+            -0.30691758685824555,
+            1.1192564029242633
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 120,
+          "v": 138,
+          "depth_m": 0.10019299387931824,
+          "world_xyz": [
+            -0.08503519459508634,
+            -0.2876360516194246,
+            1.1704337248671515
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502541303634644,
+          "world_xyz": [
+            -0.0741138939020286,
+            0.04589452698218863,
+            0.9604665049937756
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "paired_state": 2,
+      "condition": "deadline_guard",
+      "start_step": 755,
+      "end_step": 880,
+      "observation_id": 6,
+      "motion_decision": 11,
+      "points": [
+        {
+          "query_decision": 10,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 179,
+          "v": 158,
+          "depth_m": 2.8898026943206787,
+          "world_xyz": [
+            -1.9905302792452604,
+            -0.7331469365762666,
+            0.011939960165719521
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 182,
+          "v": 143,
+          "depth_m": 0.6241170167922974,
+          "world_xyz": [
+            -0.06264120697075226,
+            0.037752590682920834,
+            1.0220091965634324
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502541303634644,
+          "world_xyz": [
+            -0.0741138939020286,
+            0.04589452698218863,
+            0.9604665049937756
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 127,
+          "v": 12,
+          "depth_m": 0.087156742811203,
+          "world_xyz": [
+            -0.06361592379168546,
+            0.04090017269482462,
+            1.0291431418360177
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 126,
+          "v": 125,
+          "depth_m": 0.09706750512123108,
+          "world_xyz": [
+            -0.06896677574499249,
+            0.0443916519107511,
+            1.0884944433354982
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "paired_state": 2,
+      "condition": "deadline_guard",
+      "start_step": 1250,
+      "end_step": 1440,
+      "observation_id": 10,
+      "motion_decision": 16,
+      "points": [
+        {
+          "query_decision": 15,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 135,
+          "v": 199,
+          "depth_m": 0.7471998333930969,
+          "world_xyz": [
+            -0.07089413349093676,
+            -0.07604967554945069,
+            0.8470578209948505
+          ]
+        },
+        {
+          "query_decision": 15,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 123,
+          "v": 141,
+          "depth_m": 0.7120582461357117,
+          "world_xyz": [
+            -0.06892105481711902,
+            -0.10836086303692338,
+            0.992250836864186
+          ]
+        },
+        {
+          "query_decision": 15,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 147,
+          "v": 201,
+          "depth_m": 0.8187102675437927,
+          "world_xyz": [
+            -0.13928455180528276,
+            -0.07938550653243365,
+            0.8021812763654164
+          ]
+        },
+        {
+          "query_decision": 15,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 207,
+          "v": 157,
+          "depth_m": 0.6975647211074829,
+          "world_xyz": [
+            -0.14767820175852842,
+            0.06629544230065962,
+            0.9638413774767302
+          ]
+        },
+        {
+          "query_decision": 15,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 82,
+          "v": 236,
+          "depth_m": 0.689258873462677,
+          "world_xyz": [
+            0.05869498080392477,
+            -0.13601767559826056,
+            0.8018340216058846
+          ]
+        },
+        {
+          "query_decision": 15,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 54,
+          "v": 219,
+          "depth_m": 0.7038675546646118,
+          "world_xyz": [
+            0.07225189523067477,
+            -0.2053149556968461,
+            0.8284263324102307
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "paired_state": 2,
+      "condition": "deadline_guard",
+      "start_step": 1765,
+      "end_step": 1910,
+      "observation_id": 14,
+      "motion_decision": 21,
+      "points": [
+        {
+          "query_decision": 20,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 141,
+          "v": 203,
+          "depth_m": 0.7357053160667419,
+          "world_xyz": [
+            -0.06716966999038654,
+            -0.05718526008263747,
+            0.8445220902651882
+          ]
+        },
+        {
+          "query_decision": 20,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 159,
+          "v": 178,
+          "depth_m": 0.6716695427894592,
+          "world_xyz": [
+            -0.05571306781764196,
+            -0.0070688411645318805,
+            0.9320897857311605
+          ]
+        },
+        {
+          "query_decision": 20,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 171,
+          "v": 164,
+          "depth_m": 0.6321157813072205,
+          "world_xyz": [
+            -0.045260215234853574,
+            0.023728821132807526,
+            0.9785425797808509
+          ]
+        },
+        {
+          "query_decision": 20,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 207,
+          "v": 159,
+          "depth_m": 0.7137599587440491,
+          "world_xyz": [
+            -0.16099754799980093,
+            0.0628547073166818,
+            0.9525331636804246
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "condition": "phase_guard",
+      "start_step": 20,
+      "end_step": 80,
+      "observation_id": 0,
+      "motion_decision": 2,
+      "points": [
+        {
+          "query_decision": 1,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 80,
+          "v": 183,
+          "depth_m": 0.8569586873054504,
+          "world_xyz": [
+            -0.08440898650493767,
+            -0.2614153856723399,
+            0.8275154767607336
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 49,
+          "v": 184,
+          "depth_m": 0.874317467212677,
+          "world_xyz": [
+            -0.0486178719067486,
+            -0.3456548884593506,
+            0.8160165138272828
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 99,
+          "v": 207,
+          "depth_m": 0.7654832005500793,
+          "world_xyz": [
+            -0.031460763604027164,
+            -0.15607611843682812,
+            0.818235154144255
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 185,
+          "v": 173,
+          "depth_m": 0.654430627822876,
+          "world_xyz": [
+            -0.07411756174423922,
+            0.044319353063837275,
+            0.9505571524877591
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 182,
+          "v": 204,
+          "depth_m": 0.6818216443061829,
+          "world_xyz": [
+            -0.07411938849421007,
+            0.04247062902622836,
+            0.8731670881376554
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 55,
+          "v": 217,
+          "depth_m": 0.7053988575935364,
+          "world_xyz": [
+            0.06882286597620857,
+            -0.20519833836522078,
+            0.8317689272779701
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 81,
+          "v": 237,
+          "depth_m": 0.6861582398414612,
+          "world_xyz": [
+            0.062427681373005584,
+            -0.1357592636333287,
+            0.801826269245643
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 7,
+          "camera": "agentview",
+          "u": 36,
+          "v": 204,
+          "depth_m": 0.7737754583358765,
+          "world_xyz": [
+            0.044374362073787366,
+            -0.29562229203705687,
+            0.8204659175365148
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "condition": "phase_guard",
+      "start_step": 224,
+      "end_step": 314,
+      "observation_id": 3,
+      "motion_decision": 6,
+      "points": [
+        {
+          "query_decision": 5,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 77,
+          "v": 95,
+          "depth_m": 0.7548136115074158,
+          "world_xyz": [
+            -0.07515296955009465,
+            -0.24556323786508838,
+            1.0815213835674808
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 52,
+          "v": 91,
+          "depth_m": 0.8393723368644714,
+          "world_xyz": [
+            -0.1049287217373776,
+            -0.36069856181732096,
+            1.0712957572664716
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 57,
+          "v": 112,
+          "depth_m": 0.6334249377250671,
+          "world_xyz": [
+            0.046557526327568044,
+            -0.19422808632891733,
+            1.0781125688490043
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 65,
+          "v": 105,
+          "depth_m": 0.6774698495864868,
+          "world_xyz": [
+            0.0024139072259179994,
+            -0.21306391863342022,
+            1.079612044984871
+          ]
+        },
+        {
+          "query_decision": 5,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 185,
+          "v": 169,
+          "depth_m": 0.6515608429908752,
+          "world_xyz": [
+            -0.07411757582589984,
+            0.04369515552372516,
+            0.9598566672133362
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "condition": "phase_guard",
+      "start_step": 314,
+      "end_step": 348,
+      "observation_id": 4,
+      "motion_decision": 8,
+      "points": [
+        {
+          "query_decision": 7,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 175,
+          "v": 141,
+          "depth_m": 0.6249738335609436,
+          "world_xyz": [
+            -0.0570623880427612,
+            0.024721434776630635,
+            1.0254780179193852
+          ]
+        },
+        {
+          "query_decision": 7,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 177,
+          "v": 132,
+          "depth_m": 0.6201984882354736,
+          "world_xyz": [
+            -0.06029650632910627,
+            0.026577297348493623,
+            1.0442736347737878
+          ]
+        },
+        {
+          "query_decision": 7,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 185,
+          "v": 169,
+          "depth_m": 0.6515608429908752,
+          "world_xyz": [
+            -0.07411757582589984,
+            0.04369515552372516,
+            0.9598566672133362
+          ]
+        },
+        {
+          "query_decision": 7,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 183,
+          "v": 182,
+          "depth_m": 0.6636807918548584,
+          "world_xyz": [
+            -0.07411984730300047,
+            0.04126482966461262,
+            0.9279640197152264
+          ]
+        },
+        {
+          "query_decision": 7,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 155,
+          "v": 28,
+          "depth_m": 0.5711454153060913,
+          "world_xyz": [
+            -0.051473768050932844,
+            -0.02502860914385019,
+            1.2422734158033588
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "condition": "phase_guard",
+      "start_step": 369,
+      "end_step": 430,
+      "observation_id": 6,
+      "motion_decision": 11,
+      "points": [
+        {
+          "query_decision": 10,
+          "pixel_index": 0,
+          "camera": "robot0_eye_in_hand",
+          "u": 63,
+          "v": 14,
+          "depth_m": 0.10154411196708679,
+          "world_xyz": [
+            -0.0850888426191503,
+            0.04350668069119089,
+            0.955470464456895
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 1,
+          "camera": "robot0_eye_in_hand",
+          "u": 84,
+          "v": 13,
+          "depth_m": 0.08933014422655106,
+          "world_xyz": [
+            -0.06710610178422377,
+            0.038072463952570204,
+            0.9661218246904902
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 86,
+          "v": 23,
+          "depth_m": 0.08937140554189682,
+          "world_xyz": [
+            -0.06682003773436408,
+            0.03885280858269732,
+            0.9714917043859184
+          ]
+        },
+        {
+          "query_decision": 10,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 94,
+          "v": 62,
+          "depth_m": 0.09182099252939224,
+          "world_xyz": [
+            -0.0678664112870279,
+            0.040890968066682666,
+            0.9917922629520304
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "condition": "phase_guard",
+      "start_step": 430,
+      "end_step": 465,
+      "observation_id": 7,
+      "motion_decision": 13,
+      "points": [
+        {
+          "query_decision": 12,
+          "pixel_index": 0,
+          "camera": "robot0_eye_in_hand",
+          "u": 81,
+          "v": 7,
+          "depth_m": 0.0900145173072815,
+          "world_xyz": [
+            -0.08507330653979757,
+            0.044282547379373316,
+            0.9562594124927954
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 1,
+          "camera": "robot0_eye_in_hand",
+          "u": 101,
+          "v": 7,
+          "depth_m": 0.08705554902553558,
+          "world_xyz": [
+            -0.07732007611253545,
+            0.036876851546806345,
+            0.9613037619284025
+          ]
+        },
+        {
+          "query_decision": 12,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 108,
+          "v": 71,
+          "depth_m": 0.09097045660018921,
+          "world_xyz": [
+            -0.08070321918592263,
+            0.042421885550448485,
+            0.9931041000580939
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "condition": "phase_guard",
+      "start_step": 832,
+      "end_step": 922,
+      "observation_id": 12,
+      "motion_decision": 19,
+      "points": [
+        {
+          "query_decision": 18,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 77,
+          "v": 117,
+          "depth_m": 0.5859492421150208,
+          "world_xyz": [
+            0.06197745950265138,
+            -0.1270120498362779,
+            1.0831312887290487
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 85,
+          "v": 119,
+          "depth_m": 0.5679181814193726,
+          "world_xyz": [
+            0.06823071302711142,
+            -0.10225874235555621,
+            1.0852411881252189
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 132,
+          "v": 33,
+          "depth_m": 0.10106506943702698,
+          "world_xyz": [
+            0.06723608179449875,
+            -0.1050573187128692,
+            1.0849429673331978
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 132,
+          "v": 77,
+          "depth_m": 0.10079973936080933,
+          "world_xyz": [
+            0.06721407004488215,
+            -0.1317961594336447,
+            1.0852150611201048
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 112,
+          "v": 55,
+          "depth_m": 0.10092873871326447,
+          "world_xyz": [
+            0.055124153643810965,
+            -0.11843863099262393,
+            1.0850950147267364
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 5,
+          "camera": "robot0_eye_in_hand",
+          "u": 154,
+          "v": 55,
+          "depth_m": 0.10093623399734497,
+          "world_xyz": [
+            0.08053705235145912,
+            -0.118450489696708,
+            1.085061624637833
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 157,
+          "v": 130,
+          "depth_m": 0.6587074398994446,
+          "world_xyz": [
+            -0.07272065174763559,
+            -0.024256723654617507,
+            1.0346405073123455
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 7,
+          "camera": "agentview",
+          "u": 158,
+          "v": 135,
+          "depth_m": 0.6615718007087708,
+          "world_xyz": [
+            -0.07317003171053638,
+            -0.021696086413660554,
+            1.023584594611214
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 8,
+          "camera": "agentview",
+          "u": 185,
+          "v": 137,
+          "depth_m": 0.6514344811439514,
+          "world_xyz": [
+            -0.09357563838924698,
+            0.03150894802533025,
+            1.0233056566845424
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "paired_state": 2,
+      "condition": "phase_guard",
+      "start_step": 1129,
+      "end_step": 1189,
+      "observation_id": 16,
+      "motion_decision": 24,
+      "points": [
+        {
+          "query_decision": 23,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 76,
+          "v": 144,
+          "depth_m": 0.7041905522346497,
+          "world_xyz": [
+            -0.004075794524835585,
+            -0.19398470505141896,
+            0.9888287088832621
+          ]
+        },
+        {
+          "query_decision": 23,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 86,
+          "v": 179,
+          "depth_m": 0.7065384387969971,
+          "world_xyz": [
+            0.005392607208003608,
+            -0.16157349303616841,
+            0.9127138426637365
+          ]
+        },
+        {
+          "query_decision": 23,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 99,
+          "v": 211,
+          "depth_m": 0.7388507127761841,
+          "world_xyz": [
+            -0.01076248827926729,
+            -0.14019524292553748,
+            0.8247548823422104
+          ]
+        },
+        {
+          "query_decision": 23,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 133,
+          "v": 141,
+          "depth_m": 0.054208409041166306,
+          "world_xyz": [
+            0.006597682850942279,
+            -0.20215569634196776,
+            1.002959661547078
+          ]
+        },
+        {
+          "query_decision": 23,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 100,
+          "v": 174,
+          "depth_m": 0.05828355625271797,
+          "world_xyz": [
+            -0.005577929142540943,
+            -0.20246080454225385,
+            0.9911794243927281
+          ]
+        },
+        {
+          "query_decision": 23,
+          "pixel_index": 5,
+          "camera": "robot0_eye_in_hand",
+          "u": 164,
+          "v": 173,
+          "depth_m": 0.059989575296640396,
+          "world_xyz": [
+            0.014900405886595355,
+            -0.1924520513488357,
+            0.991063943352377
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "condition": "direct_waypoints",
+      "start_step": 20,
+      "end_step": 165,
+      "observation_id": 0,
+      "motion_decision": 2,
+      "points": [
+        {
+          "query_decision": 1,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 80,
+          "v": 184,
+          "depth_m": 0.8530080914497375,
+          "world_xyz": [
+            -0.08098922133124087,
+            -0.25855488146348127,
+            0.826933492056756
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 58,
+          "v": 183,
+          "depth_m": 0.8863728642463684,
+          "world_xyz": [
+            -0.07046989958784389,
+            -0.33250312417591776,
+            0.8125357677985645
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 94,
+          "v": 201,
+          "depth_m": 0.7904998064041138,
+          "world_xyz": [
+            -0.045971465066820594,
+            -0.18299398513242526,
+            0.8180921527304369
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 185,
+          "v": 183,
+          "depth_m": 0.6617169380187988,
+          "world_xyz": [
+            -0.07411754081924982,
+            0.04590416536752612,
+            0.926945970790629
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 185,
+          "v": 169,
+          "depth_m": 0.6515608429908752,
+          "world_xyz": [
+            -0.07411757582589984,
+            0.04369515552372516,
+            0.9598566672133362
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 81,
+          "v": 237,
+          "depth_m": 0.6861582398414612,
+          "world_xyz": [
+            0.062427681373005584,
+            -0.1357592636333287,
+            0.801826269245643
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 38,
+          "v": 204,
+          "depth_m": 0.7737821936607361,
+          "world_xyz": [
+            0.04171671018753781,
+            -0.2913800332804833,
+            0.8204620559649691
+          ]
+        },
+        {
+          "query_decision": 1,
+          "pixel_index": 7,
+          "camera": "agentview",
+          "u": 58,
+          "v": 219,
+          "depth_m": 0.6984926462173462,
+          "world_xyz": [
+            0.07060280938881613,
+            -0.194166245329648,
+            0.8317520050805122
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "condition": "direct_waypoints",
+      "start_step": 355,
+      "end_step": 470,
+      "observation_id": 2,
+      "motion_decision": 5,
+      "points": [
+        {
+          "query_decision": 4,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 50,
+          "v": 94,
+          "depth_m": 0.8263267278671265,
+          "world_xyz": [
+            -0.09061892405636585,
+            -0.3542798174666206,
+            1.0667515260526204
+          ]
+        },
+        {
+          "query_decision": 4,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 76,
+          "v": 105,
+          "depth_m": 0.6728577613830566,
+          "world_xyz": [
+            -0.007001687628272024,
+            -0.18959575552159064,
+            1.0808668944560524
+          ]
+        },
+        {
+          "query_decision": 4,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 82,
+          "v": 96,
+          "depth_m": 0.7644115686416626,
+          "world_xyz": [
+            -0.08809624283256196,
+            -0.24093446095715515,
+            1.0768773442939028
+          ]
+        },
+        {
+          "query_decision": 4,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 45,
+          "v": 127,
+          "depth_m": 0.10074896365404129,
+          "world_xyz": [
+            -0.030279975597187758,
+            -0.2086401868005795,
+            1.0762574391980009
+          ]
+        },
+        {
+          "query_decision": 4,
+          "pixel_index": 4,
+          "camera": "robot0_eye_in_hand",
+          "u": 95,
+          "v": 191,
+          "depth_m": 0.10561566799879074,
+          "world_xyz": [
+            -0.0707572138912393,
+            -0.23789395081399503,
+            1.0713805438192572
+          ]
+        },
+        {
+          "query_decision": 4,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 185,
+          "v": 169,
+          "depth_m": 0.6515608429908752,
+          "world_xyz": [
+            -0.07411757582589984,
+            0.04369515552372516,
+            0.9598566672133362
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "condition": "direct_waypoints",
+      "start_step": 470,
+      "end_step": 610,
+      "observation_id": 3,
+      "motion_decision": 7,
+      "points": [
+        {
+          "query_decision": 6,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 66,
+          "v": 102,
+          "depth_m": 0.7494081258773804,
+          "world_xyz": [
+            -0.05209051978554413,
+            -0.2615563721760985,
+            1.066875686710293
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 69,
+          "v": 85,
+          "depth_m": 0.7464165091514587,
+          "world_xyz": [
+            -0.06570165098210295,
+            -0.26080907684679633,
+            1.1062484000539297
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502541303634644,
+          "world_xyz": [
+            -0.0741138939020286,
+            0.04589452698218863,
+            0.9604665049937756
+          ]
+        },
+        {
+          "query_decision": 6,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 185,
+          "v": 173,
+          "depth_m": 0.654430627822876,
+          "world_xyz": [
+            -0.07411756174423922,
+            0.044319353063837275,
+            0.9505571524877591
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "condition": "direct_waypoints",
+      "start_step": 610,
+      "end_step": 810,
+      "observation_id": 4,
+      "motion_decision": 9,
+      "points": [
+        {
+          "query_decision": 8,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 143,
+          "v": 218,
+          "depth_m": 0.7013770341873169,
+          "world_xyz": [
+            -0.03399527319489015,
+            -0.03280577586585437,
+            0.8321000713497971
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 132,
+          "v": 220,
+          "depth_m": 0.6941968202590942,
+          "world_xyz": [
+            -0.014297207119122857,
+            -0.05004667335174273,
+            0.8322989889220711
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 100,
+          "v": 230,
+          "depth_m": 0.6885203719139099,
+          "world_xyz": [
+            0.03402019245175947,
+            -0.1040150527046369,
+            0.8148914005234453
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 148,
+          "v": 199,
+          "depth_m": 0.774256706237793,
+          "world_xyz": [
+            -0.10823801031195324,
+            -0.06025395826854091,
+            0.831962156354225
+          ]
+        },
+        {
+          "query_decision": 8,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 185,
+          "v": 169,
+          "depth_m": 0.6515560746192932,
+          "world_xyz": [
+            -0.07411349330196948,
+            0.04369666942452172,
+            0.9598588925962008
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "condition": "direct_waypoints",
+      "start_step": 950,
+      "end_step": 1020,
+      "observation_id": 6,
+      "motion_decision": 12,
+      "points": [
+        {
+          "query_decision": 11,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 169,
+          "v": 124,
+          "depth_m": 0.6290931701660156,
+          "world_xyz": [
+            -0.06419216257051397,
+            0.006601819807271869,
+            1.0564272919554836
+          ]
+        },
+        {
+          "query_decision": 11,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 163,
+          "v": 104,
+          "depth_m": 0.610991358757019,
+          "world_xyz": [
+            -0.05360925038865039,
+            -0.003606062657100201,
+            1.0995574014362857
+          ]
+        },
+        {
+          "query_decision": 11,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 155,
+          "v": 82,
+          "depth_m": 0.5929367542266846,
+          "world_xyz": [
+            -0.041840623369782504,
+            -0.01676405551385385,
+            1.1440819666761632
+          ]
+        },
+        {
+          "query_decision": 11,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 186,
+          "v": 169,
+          "depth_m": 0.6502565145492554,
+          "world_xyz": [
+            -0.07411593925249438,
+            0.045893776574760736,
+            0.9604653923023413
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "condition": "direct_waypoints",
+      "start_step": 1325,
+      "end_step": 1525,
+      "observation_id": 10,
+      "motion_decision": 17,
+      "points": [
+        {
+          "query_decision": 16,
+          "pixel_index": 0,
+          "camera": "agentview",
+          "u": 61,
+          "v": 203,
+          "depth_m": 0.7578279376029968,
+          "world_xyz": [
+            0.02022925924755381,
+            -0.2328169131674096,
+            0.8319103317118124
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 1,
+          "camera": "agentview",
+          "u": 69,
+          "v": 230,
+          "depth_m": 0.6825929284095764,
+          "world_xyz": [
+            0.07417840215416699,
+            -0.15903341963717982,
+            0.8187572421330958
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 2,
+          "camera": "agentview",
+          "u": 66,
+          "v": 225,
+          "depth_m": 0.6982542872428894,
+          "world_xyz": [
+            0.06509697016777738,
+            -0.17622741697212135,
+            0.8191596122264566
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 3,
+          "camera": "agentview",
+          "u": 56,
+          "v": 186,
+          "depth_m": 0.8903809189796448,
+          "world_xyz": [
+            -0.06741500798051048,
+            -0.33845997528943184,
+            0.8023719509875871
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 182,
+          "v": 75,
+          "depth_m": 0.708357572555542,
+          "world_xyz": [
+            -0.18159908101483596,
+            -0.019222117506304676,
+            1.1358290858777165
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 189,
+          "v": 80,
+          "depth_m": 0.6450067758560181,
+          "world_xyz": [
+            -0.12681221763776018,
+            0.019187468361455295,
+            1.1374793233309364
+          ]
+        },
+        {
+          "query_decision": 16,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 194,
+          "v": 95,
+          "depth_m": 0.6230902075767517,
+          "world_xyz": [
+            -0.10263668831434924,
+            0.041080686760398166,
+            1.113355039007232
+          ]
+        }
+      ],
+      "motion_type": "rotation"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "paired_state": 2,
+      "condition": "direct_waypoints",
+      "start_step": 1525,
+      "end_step": 1685,
+      "observation_id": 11,
+      "motion_decision": 19,
+      "points": [
+        {
+          "query_decision": 18,
+          "pixel_index": 0,
+          "camera": "robot0_eye_in_hand",
+          "u": 108,
+          "v": 98,
+          "depth_m": 0.09684833139181137,
+          "world_xyz": [
+            0.055710092185597956,
+            -0.1609692827307352,
+            0.9940604657615341
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 1,
+          "camera": "robot0_eye_in_hand",
+          "u": 147,
+          "v": 98,
+          "depth_m": 0.09684859961271286,
+          "world_xyz": [
+            0.0740301397796769,
+            -0.174275750651097,
+            0.9939915483407225
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 2,
+          "camera": "robot0_eye_in_hand",
+          "u": 127,
+          "v": 78,
+          "depth_m": 0.09666599333286285,
+          "world_xyz": [
+            0.07142830164657334,
+            -0.15810220960563046,
+            0.9942095951755735
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 3,
+          "camera": "robot0_eye_in_hand",
+          "u": 127,
+          "v": 116,
+          "depth_m": 0.09701317548751831,
+          "world_xyz": [
+            0.058499499587053125,
+            -0.17589688053504884,
+            0.993861964255908
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 4,
+          "camera": "agentview",
+          "u": 182,
+          "v": 74,
+          "depth_m": 0.712776780128479,
+          "world_xyz": [
+            -0.18641885470707686,
+            -0.021323236014711394,
+            1.1371973304778324
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 5,
+          "camera": "agentview",
+          "u": 182,
+          "v": 78,
+          "depth_m": 0.7070576548576355,
+          "world_xyz": [
+            -0.17838716819588873,
+            -0.017482951442998163,
+            1.1296139350344705
+          ]
+        },
+        {
+          "query_decision": 18,
+          "pixel_index": 6,
+          "camera": "agentview",
+          "u": 185,
+          "v": 80,
+          "depth_m": 0.6830775141716003,
+          "world_xyz": [
+            -0.1581631029416769,
+            -0.001967224819263813,
+            1.1300152621642638
+          ]
+        }
+      ],
+      "motion_type": "translation"
+    }
+  ],
+  "skipped_queries": [],
+  "query_count": 212,
+  "retained_query_count": 212,
+  "no_policy_inferences": true,
+  "mode": "complete_frozen_cohort"
+}

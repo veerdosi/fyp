@@ -2,6 +2,8 @@
 
 This project tests which communication mechanisms help a slow foundation model control a robot. Development and analysis use Sol; robot decisions use fresh GPT-6 Astra episode contexts at medium reasoning effort. Two ToolHang pilots support testing measured waypoint transitions and observation handoff. The completed six-episode comparison found 0/2 full native successes in each condition. Robot-arrival gating did not establish a task-success or successful-completion efficiency benefit; see [the empirical account](docs/empirical_account.md).
 
+The subsequent [public point-measurement audit](studies/object_feedback_feasibility/account.md) used all 212 recorded pixel selections with zero new Astra calls. The frozen local-flow prototype failed coverage, precision and loss gates, so it has not entered the executor. The wider arrival-guard effect remains unresolved. [The next-test decision](studies/object_feedback_learned/decision.md) checks a stronger generic tracker's causal output and local runtime before another measurement audit or policy comparison.
+
 The first environment is the standard LIBERO-10 task `KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it`, with the standard Panda robot and OSC_POSE controller. Simulator-only object state and reward are excluded from robot decisions. See [sensor audit](docs/sensor_audit.md), [research plan](docs/research_plan.md), and [experiment status](docs/experiment_status.md).
 
 ## Run on this Mac

@@ -1,0 +1,18 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Warning: make sure gym is installed if you want to use the GymWrapper.
+Traceback (most recent call last):
+  File "/Users/veerdosi/Documents/code/github/fyp/studies/object_feedback_feasibility/audit.py", line 147, in <module>
+    obs, _, _, _ = env.step(action)
+                   ^^^^^^^^^^^^^^^^
+  File "/Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/environments/base.py", line 406, in step
+    observations = self.viewer._get_observations() if self.viewer_get_obs else self._get_observations()
+                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/environments/base.py", line 348, in _get_observations
+    modality = observable.modality + "-state"
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/utils/observables.py", line 403, in modality
+    return self._sensor.__modality__
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute '__modality__'. Did you mean: '__module__'?

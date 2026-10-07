@@ -1,0 +1,9 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Warning: make sure gym is installed if you want to use the GymWrapper.
+th_v1_s01_direct_waypoints snapshot 0 reconstruction passed
+Traceback (most recent call last):
+  File "/Users/veerdosi/Documents/code/github/fyp/studies/object_feedback_feasibility/audit.py", line 191, in <module>
+    assert matches['pass'], f'Sensor reconstruction failed: {run.name}/{segment["observation_id"]}/{camera}: {matches}'
+AssertionError: Sensor reconstruction failed: th_v1_s01_direct_waypoints/3/agentview: {'rgb_exact': False, 'changed_rgb_fraction': 0.002105712890625, 'rgb_max_absolute_error': 25, 'depth_max_error_m': 0.00016433000564575195, 'depth_error_p99_m': 7.857382297515913e-06, 'depth_outlier_fraction': 3.0517578125e-05, 'query_depth_max_error_m': 6.258487701416016e-06, 'calibration_max_error': 0.0, 'pass': False}

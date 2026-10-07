@@ -1,0 +1,39 @@
+{
+  "estimator": "Pyramidal Lucas-Kanade, forward/backward consistency, nearest-pixel metric depth, irreversible loss",
+  "parameters": {
+    "window_pixels": 21,
+    "pyramid_levels": 3,
+    "iterations": 30,
+    "convergence_pixels": 0.01,
+    "minimum_eigenvalue": 0.0001,
+    "maximum_forward_backward_pixels": 1.0,
+    "maximum_world_jump_m": 0.08,
+    "initial_patch_std_min": 5.0,
+    "initial_patch_radius": 3,
+    "minimum_depth_m": 0.001,
+    "maximum_depth_m": 10.0
+  },
+  "tracker_sha256": "515353b3e90b0dd258a660f30557743ccdbfcc90e28186b9c5d39b80a2ebf68f",
+  "frozen_before_cohort": true,
+  "scope": "Development measurement audit, not an executed robot policy or evidence against arrival gating",
+  "gates": {
+    "visible_coverage_min": 0.8,
+    "accepted_world_error_p95_max_m": 0.003,
+    "occluded_false_valid_max": 0.05
+  },
+  "oracle_boundary": "Reference labels/transforms/segmentation restricted to audit driver; tracker receives only RGB/depth/calibration/query pixels",
+  "audit_driver_sha256": "97cdb157905f7418a56e5c86a01d30cce54542f0820935416649946b7a645091",
+  "pre_cohort_correction": "Added finite-pixel input handling before any estimator scoring.",
+  "reconstruction_limits": {
+    "state_absolute_error_max": 1e-07,
+    "changed_rgb_fraction_max": 0,
+    "depth_error_m": 0,
+    "depth_outlier_fraction_max": 0,
+    "calibration_absolute_error_max": 0
+  },
+  "reconstruction_amendment": "Before estimator scoring: force-restoring initial simulator state advances native observable timers, shifting image sampling despite exact physical states. The first-snapshot diagnostic without forced restore reproduces both cameras bit-exactly. Match Episode initialization and require bit-exact RGB/depth/calibration. Earlier attempted reconstruction drivers/checks are preserved; no tracker parameter changed. The earlier numerical-render explanation is superseded by the verified sensor-timer cause.",
+  "validation_reporting_correction": "Collect all reconstruction checks before rejecting validation, rather than stopping at the first mismatch. Same reconstruction limits and estimator parameters.",
+  "camera_reference_sha256": "54214d97191b9c2bf61bbfc849c20ad186508b267f0ae4ab19e8a1d06e47058a",
+  "reference_timing": "Read-only camera-sensor wrapper captures private reference and visibility at image sampling time. Estimator receives original RGB-D with public handoff calibration. Gate error compares current-step object point; image-time error/age are separate. Pure reconstruction validation passed before adding the wrapper; full audit rechecks every state and query snapshot.",
+  "wrapper_correction": "The first full-mode attempt failed before the first query or estimator update because native Observable requires sensor.__modality__. The wrapper now copies that metadata. No tracker parameters or scores changed."
+}

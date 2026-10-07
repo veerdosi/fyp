@@ -1,0 +1,58 @@
+{
+  "episode": "th_v1_s01_direct_waypoints",
+  "step": 20,
+  "actual_model_requests": 0,
+  "results": {
+    "saved_state_render": {
+      "snapshot_checks": {
+        "agentview": {
+          "rgb_exact": true,
+          "changed_rgb_pixels": 0,
+          "depth_max_error_m": 2.682209014892578e-05,
+          "calibration_max_error": 0.0
+        },
+        "robot0_eye_in_hand": {
+          "rgb_exact": false,
+          "changed_rgb_pixels": 12,
+          "depth_max_error_m": 0.19091862440109253,
+          "calibration_max_error": 5.662137425588298e-15
+        }
+      },
+      "max_state_error": 0
+    },
+    "recorded_action_replay": {
+      "snapshot_checks": {
+        "agentview": {
+          "rgb_exact": false,
+          "changed_rgb_pixels": 1,
+          "depth_max_error_m": 4.0531158447265625e-05,
+          "calibration_max_error": 0.0
+        },
+        "robot0_eye_in_hand": {
+          "rgb_exact": false,
+          "changed_rgb_pixels": 8,
+          "depth_max_error_m": 5.462765693664551e-05,
+          "calibration_max_error": 0.0
+        }
+      },
+      "max_state_error": 0.0
+    },
+    "native_reset_action_replay": {
+      "snapshot_checks": {
+        "agentview": {
+          "rgb_exact": true,
+          "changed_rgb_pixels": 0,
+          "depth_max_error_m": 0.0,
+          "calibration_max_error": 0.0
+        },
+        "robot0_eye_in_hand": {
+          "rgb_exact": true,
+          "changed_rgb_pixels": 0,
+          "depth_max_error_m": 0.0,
+          "calibration_max_error": 0.0
+        }
+      },
+      "max_state_error": 0.0
+    }
+  }
+}
