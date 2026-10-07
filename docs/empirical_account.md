@@ -1,6 +1,6 @@
 # Interim empirical account
 
-This account is incomplete. The held-out comparison currently has one completed baseline, an interrupted deadline-guard episode and four unstarted episodes. It cannot establish a harness benefit or finish the FYP objective.
+This account is incomplete. The held-out comparison currently has one completed baseline, a completed deadline-guard episode and four unstarted episodes. It cannot establish a harness benefit or finish the FYP objective.
 
 ## Question and first mechanism
 
@@ -17,12 +17,13 @@ The frozen executor comparison uses timed waypoints, a deadline guard and an ear
 | ToolHang pilot 001 | Yes | 20 | 40 | 92.75 | 353.274 |
 | ToolHang pilot 002 | No, motion budget | 28 | 59 | 120 | 558.930 |
 | Held-out start 1, timed baseline | No, policy returned finish | 28 | 56 | 102 | 543.970 |
+| Held-out start 1, deadline guard | No, policy returned finish | 21 | 45 | 99 | 344.068 |
 
-All three completed traces replay their native simulator states exactly. Pilots informed the hypothesis and are excluded from the held-out comparison. The current protocol has two matched starts and three conditions, six episodes total. The user's budget preference is two starts for future experiments too; a third needs a recorded uncertainty that affects the next design decision. This supports quick mechanism screening, with wide uncertainty and incomplete order balance stated explicitly.
+All four completed traces replay their native simulator states exactly. Pilots informed the hypothesis and are excluded from the held-out comparison. The current protocol has two matched starts and three conditions, six episodes total. The user's budget preference is two starts for future experiments too; a third needs a recorded uncertainty that affects the next design decision. This supports quick mechanism screening, with wide uncertainty and incomplete order balance stated explicitly.
 
 The first held-out baseline advanced through approach and closure before reaching the requested poses, lifted empty, then recovered with a longer and deeper grasp. It assembled the frame and released the tool by its correct larger hole. The tool was visibly suspended, but only 2.51% inserted along the hook and 9.68 mm from the hook line; the native checks require more than 5% and less than 6.75 mm. Astra's final judgment missed that distinction. Physical suspension and benchmark completion must both be reported. This trace shows where robot arrival and task relations differ; it does not show a comparative guard effect.
 
-The deadline-guard episode is interrupted after 15 executed decisions by an Astra usage-limit error. It has no final result. Retain it in the schedule and continue its same state and context when access returns. A policy access interruption is not a manipulation failure.
+The deadline-guard episode resumed after an Astra usage interruption, retaining its same context, state and budget. Tool placement passed, while the frame tip was 11.96 cm from the base (limit 5 cm) and outside the stand walls. Astra returned finish on this incomplete assembly. Its smaller decision and motion totals are resources consumed in failure, not a successful-completion speed gain. The interruption and failed policy turn remain in the records.
 
 ## What remains to resolve
 

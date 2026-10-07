@@ -1,0 +1,45 @@
+{
+  "reviewer": "Sol",
+  "scope": "Offline diagnosis; no private measurements returned to Astra. One matched pair is not the full comparison.",
+  "first_causal_failure": {
+    "stage": "frame acquisition",
+    "decision": 3,
+    "description": "The deadline guard caught initial approach non-arrival (4.66 cm error) and cancelled descent/closing. Astra repeated the approach and reached the next descent/closing targets, but then lifted empty. Arrival was not enough for acquisition; a deeper grasp at 0.808 m recovered the frame."
+  },
+  "later_failures": [
+    {
+      "stage": "frame insertion and release",
+      "decision": 10,
+      "description": "Insertion stopped 2.86 cm short. Astra used the supported/contact-limited height for release and withdrew. The first withdrawal then interfered with the frame; a subsequent withdrawal remained obstructed and its following raise was cancelled. Opposite-direction withdrawal cleared the robot, but the frame never met the native assembly criterion."
+    },
+    {
+      "stage": "completion judgment",
+      "decision": 21,
+      "description": "Astra returned finish after visually stable tool suspension. Tool placement passed all native subchecks; frame assembly remained incomplete."
+    }
+  ],
+  "final_geometry": {
+    "frame_assembly": "native_scorer_diagnostic.json",
+    "stand_tilt_degrees": 0.005440626859407143,
+    "frame_tip_to_base_m": 0.11963661799148274,
+    "native_maximum_tip_distance_m": 0.05,
+    "frame_shaft_between_stand_walls": false,
+    "tool_larger_hole_hook_contact": true,
+    "tool_insertion_fraction": 0.10716966137067202,
+    "tool_hole_center_line_distance_m": 0.003983251847701727
+  },
+  "outcome": {
+    "native_full_success": false,
+    "frame_assembled": false,
+    "tool_on_frame": true,
+    "first_tool_on_frame_step": 1928,
+    "frame_assembled_ever": false,
+    "stop_reason": "policy_finish",
+    "control_steps": 1980,
+    "returned_robot_decisions": 21
+  },
+  "comparison_limit": "Timed baseline on this same start passed frame assembly and failed shallow tool placement. The guard run passed tool placement and failed frame assembly. Both failed full success. Resource reductions in these two failures do not establish faster successful completion, and a single pair cannot isolate policy stochasticity or general performance.",
+  "interruption": "Astra usage error retained in interruption.json, followed by continuation of same live simulator and same policy context. No new start or decision budget reset. Total wall time includes a large availability/operator gap.",
+  "replay": "All 1980 saved actions reproduce native states exactly. Reconstructed 1610-step interruption prefix also equals the original live flattened states with maximum absolute error 0.0.",
+  "interpretation": "Measured robot arrival gates stale sequences but does not measure acquisition or object seating. Incomplete insertion and visual completion judgment recur; the frozen two-start comparison is still incomplete."
+}

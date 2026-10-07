@@ -1,0 +1,29 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.032,
+          -0.188,
+          1.16
+        ],
+        "gripper": 1,
+        "steps": 100
+      }
+    ],
+    "reason": "Lift the tool and inspect its larger ring before aligning it with the hook."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Fresh observation 12 after your motion command, step 1610, simulated time 80.5 seconds. 15 decisions have been executed; 15 model decisions and 790 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.032,-0.188,1.16],\"gripper\":1,\"steps\":100}],\"reason\":\"Lift the tool and inspect its larger ring before aligning it with the hook.\"}",
+    "response_timestamp": "2026-10-07T01:45:13.242Z",
+    "message_id": "amsg_01a11409-411a-78c2-9cb3-6f8bbd20baa9",
+    "dispatch_timestamp": "2026-10-07T01:45:04.298Z",
+    "policy_wall_seconds": 8.944,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_016.txt"
+  }
+}

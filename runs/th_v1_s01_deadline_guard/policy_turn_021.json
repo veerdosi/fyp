@@ -1,0 +1,18 @@
+{
+  "command": {
+    "type": "finish",
+    "reason": "The frame remains upright in the stand, and the released tool remains suspended by its larger hole on the hook after settling. The open gripper is clear of both."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Fresh observation 16 after your motion command, step 1980, simulated time 99.0 seconds. 20 decisions have been executed; 10 model decisions and 420 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0016/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0016/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0016/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0016/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"finish\",\"reason\":\"The frame remains upright in the stand, and the released tool remains suspended by its larger hole on the hook after settling. The open gripper is clear of both.\"}",
+    "response_timestamp": "2026-10-07T01:47:55.831Z",
+    "message_id": "amsg_01a1140b-bc37-7093-9aa0-e94c6c37e1c3",
+    "dispatch_timestamp": "2026-10-07T01:47:42.471Z",
+    "policy_wall_seconds": 13.36,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_021.txt"
+  }
+}

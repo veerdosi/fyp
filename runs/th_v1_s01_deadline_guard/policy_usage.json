@@ -1,21 +1,21 @@
 {
   "model": "gpt-6-astra",
   "reasoning_effort": "medium",
-  "policy_decisions": 15,
-  "model_inference_requests": 34,
-  "agent_tool_calls": 19,
-  "completed_policy_turns": 16,
-  "policy_wall_seconds": 275.296,
+  "policy_decisions": 21,
+  "model_inference_requests": 45,
+  "agent_tool_calls": 24,
+  "completed_policy_turns": 22,
+  "policy_wall_seconds": 344.068,
   "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
   "token_usage": {
-    "input_tokens": 1593549,
-    "cached_input_tokens": 1498496,
+    "input_tokens": 2329286,
+    "cached_input_tokens": 2162432,
     "cache_write_input_tokens": 0,
-    "output_tokens": 5755,
-    "reasoning_output_tokens": 1370,
-    "total_tokens": 1599304
+    "output_tokens": 7286,
+    "reasoning_output_tokens": 1763,
+    "total_tokens": 2336572
   },
-  "api_equivalent_standard_cost_usd": 2.736776,
+  "api_equivalent_standard_cost_usd": 4.195272,
   "actual_account_charge_usd": null,
   "pricing": {
     "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
@@ -92,6 +92,30 @@
       "effort": "medium"
     },
     "01a1123a-dd6b-77c3-8e3c-95ebc04e3fac": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a11409-1ec9-7070-8c89-ee30a245a0ea": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140a-040b-70a3-a4e8-7dbb50e65585": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140a-6628-7240-91de-0710a9c02b2d": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140a-d4b5-7dd0-9a64-f78643e9518a": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140b-2df5-7962-9c4d-2daf335a45c0": {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    "01a1140b-880e-77e1-afdb-0db2901ba834": {
       "model": "gpt-6-astra",
       "effort": "medium"
     }
@@ -192,6 +216,42 @@
       "completed_at": 1791307218,
       "duration_ms": 8354,
       "time_to_first_token_ms": 5618
+    },
+    "01a11409-1ec9-7070-8c89-ee30a245a0ea": {
+      "started_at": 1791337504,
+      "completed_at": 1791337513,
+      "duration_ms": 8759,
+      "time_to_first_token_ms": 7814
+    },
+    "01a1140a-040b-70a3-a4e8-7dbb50e65585": {
+      "started_at": 1791337563,
+      "completed_at": 1791337578,
+      "duration_ms": 15014,
+      "time_to_first_token_ms": 3016
+    },
+    "01a1140a-6628-7240-91de-0710a9c02b2d": {
+      "started_at": 1791337588,
+      "completed_at": 1791337604,
+      "duration_ms": 16238,
+      "time_to_first_token_ms": 3453
+    },
+    "01a1140a-d4b5-7dd0-9a64-f78643e9518a": {
+      "started_at": 1791337616,
+      "completed_at": 1791337625,
+      "duration_ms": 8712,
+      "time_to_first_token_ms": 2761
+    },
+    "01a1140b-2df5-7962-9c4d-2daf335a45c0": {
+      "started_at": 1791337639,
+      "completed_at": 1791337649,
+      "duration_ms": 10163,
+      "time_to_first_token_ms": 2992
+    },
+    "01a1140b-880e-77e1-afdb-0db2901ba834": {
+      "started_at": 1791337662,
+      "completed_at": 1791337672,
+      "duration_ms": 9886,
+      "time_to_first_token_ms": 4917
     }
   }
 }

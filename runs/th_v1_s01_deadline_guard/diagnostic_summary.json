@@ -1,0 +1,3244 @@
+{
+  "episode": "th_v1_s01_deadline_guard",
+  "task": "ToolHang",
+  "condition": "deadline_guard",
+  "code_revision": "dd9ce791d1ab3b6aa2d4e4c21d761ba8dabd26ef",
+  "outcome": {
+    "success": false,
+    "stop_reason": "policy_finish",
+    "diagnostic_goal_predicates": [
+      {
+        "predicate": [
+          "frame_assembled"
+        ],
+        "satisfied": false
+      },
+      {
+        "predicate": [
+          "tool_on_frame"
+        ],
+        "satisfied": true
+      }
+    ],
+    "control_steps": 1980,
+    "simulated_seconds": 99.0,
+    "wall_seconds": 23167.333126125,
+    "model_calls": 21,
+    "cost_usd": null,
+    "cost_status": "unavailable for collaboration policy calls",
+    "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard"
+  },
+  "recorded_control_steps": 1980,
+  "recorded_command_decisions": 21,
+  "policy_decisions": 21,
+  "first_native_success_step": null,
+  "first_satisfied_goal_steps": {
+    "[\"tool_on_frame\"]": 1928
+  },
+  "commands": [
+    {
+      "decision": 1,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 83,
+            "v": 182
+          },
+          {
+            "camera": "agentview",
+            "u": 51,
+            "v": 185
+          },
+          {
+            "camera": "agentview",
+            "u": 109,
+            "v": 212
+          },
+          {
+            "camera": "agentview",
+            "u": 186,
+            "v": 169
+          },
+          {
+            "camera": "agentview",
+            "u": 184,
+            "v": 210
+          },
+          {
+            "camera": "agentview",
+            "u": 73,
+            "v": 215
+          },
+          {
+            "camera": "agentview",
+            "u": 62,
+            "v": 198
+          },
+          {
+            "camera": "agentview",
+            "u": 91,
+            "v": 238
+          }
+        ],
+        "reason": "Locate the loose frame, stand post, and tool from visible surfaces before grasping."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "execution_report": null,
+      "waypoints": []
+    },
+    {
+      "decision": 2,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.92
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 50
+          },
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 35
+          }
+        ],
+        "reason": "Approach the frame's black junction with the fingers across its narrow axis and close around it."
+      },
+      "validation_error": null,
+      "first_step": 21,
+      "last_step": 80,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 21,
+            "last_step": 80,
+            "requested_steps": 60,
+            "executed_steps": 60,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.04659915069016211,
+              "orientation_error_rad": 0.0022239559494995624,
+              "linear_speed_m_s": 0.0772092615951384,
+              "angular_speed_rad_s": 0.0005728812207433687,
+              "finger_speed_m_s": 6.927082946684449e-05,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "deadline_not_settled",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 2,
+        "stop_reason": "waypoint_deadline"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.92
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 80,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09706760160662398,
+              -0.21355190913700797,
+              0.9330448257035571
+            ],
+            "robot0_eef_quat": [
+              0.8435375701090959,
+              0.5370690686303526,
+              0.0003737037838845263,
+              0.0010216067973030619
+            ]
+          },
+          "terminal_position_error_m": 0.04659915069016211,
+          "terminal_orientation_error_rad": 0.0022239559494995624,
+          "peak_raw_wrist_force_norm_N": 5.162470809363727,
+          "last_finger_positions_m": [
+            0.03993388507978504,
+            -0.039956952209671846
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 50
+          },
+          "executed_steps": 0
+        },
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 35
+          },
+          "executed_steps": 0
+        }
+      ]
+    },
+    {
+      "decision": 3,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.92
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 85
+          },
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 45
+          }
+        ],
+        "reason": "The initial approach has not settled, so complete it before lowering to the junction and grasping."
+      },
+      "validation_error": null,
+      "first_step": 81,
+      "last_step": 270,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 81,
+            "last_step": 140,
+            "requested_steps": 60,
+            "executed_steps": 60,
+            "first_settled_step": 99,
+            "terminal_measurement": {
+              "position_error_m": 0.0004439283733778882,
+              "orientation_error_rad": 0.001268731596345699,
+              "linear_speed_m_s": 1.6399576188630797e-05,
+              "angular_speed_rad_s": 3.8796106603587285e-05,
+              "finger_speed_m_s": 4.995331673778893e-06,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 141,
+            "last_step": 225,
+            "requested_steps": 85,
+            "executed_steps": 85,
+            "first_settled_step": 171,
+            "terminal_measurement": {
+              "position_error_m": 0.00043158247238046186,
+              "orientation_error_rad": 0.0010537255782515993,
+              "linear_speed_m_s": 2.0010152123141046e-05,
+              "angular_speed_rad_s": 2.6029057291889675e-05,
+              "finger_speed_m_s": 6.245099137085121e-08,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "waypoint_index": 2,
+            "first_step": 226,
+            "last_step": 270,
+            "requested_steps": 45,
+            "executed_steps": 45,
+            "first_settled_step": 263,
+            "terminal_measurement": {
+              "position_error_m": 0.0014835201377079508,
+              "orientation_error_rad": 0.0009761066892078532,
+              "linear_speed_m_s": 0.0006064530656144354,
+              "angular_speed_rad_s": 0.0008453011684076397,
+              "finger_speed_m_s": 0.0008954096891229977,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.92
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 140,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09183679223776255,
+              -0.2583792156290942,
+              0.9201631904828294
+            ],
+            "robot0_eef_quat": [
+              0.843306214064126,
+              0.5374330350708779,
+              -9.143029253965226e-05,
+              -0.00059479058084804
+            ]
+          },
+          "terminal_position_error_m": 0.0004439283733778882,
+          "terminal_orientation_error_rad": 0.001268731596345699,
+          "peak_raw_wrist_force_norm_N": 5.158583429150955,
+          "last_finger_positions_m": [
+            0.03999640146960633,
+            -0.03999573124256673
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 85
+          },
+          "executed_steps": 85,
+          "last_step": 225,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09238445202104209,
+              -0.2580607418617988,
+              0.8268135315034438
+            ],
+            "robot0_eef_quat": [
+              0.8432887550345581,
+              0.5374605589983478,
+              0.0002813192794216616,
+              0.0003794903296337561
+            ]
+          },
+          "terminal_position_error_m": 0.00043158247238046186,
+          "terminal_orientation_error_rad": 0.0010537255782515993,
+          "peak_raw_wrist_force_norm_N": 5.280611589640692,
+          "last_finger_positions_m": [
+            0.03999891202903626,
+            -0.0400000393210784
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.827
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          "executed_steps": 45,
+          "last_step": 270,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09340917436310792,
+              -0.2576345138719228,
+              0.8272854461482093
+            ],
+            "robot0_eef_quat": [
+              0.8435060177192387,
+              0.5371195296525507,
+              0.00025242552117808715,
+              0.0003810755950778214
+            ]
+          },
+          "terminal_position_error_m": 0.0014835201377079508,
+          "terminal_orientation_error_rad": 0.0009761066892078532,
+          "peak_raw_wrist_force_norm_N": 13.006503673430135,
+          "last_finger_positions_m": [
+            0.009315812590262337,
+            -0.013959450496451538
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 4,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              1.09
+            ],
+            "gripper": 1,
+            "steps": 100
+          }
+        ],
+        "reason": "Lift the junction clear of the table and verify that the frame moves with the gripper."
+      },
+      "validation_error": null,
+      "first_step": 271,
+      "last_step": 370,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 271,
+            "last_step": 370,
+            "requested_steps": 100,
+            "executed_steps": 100,
+            "first_settled_step": 346,
+            "terminal_measurement": {
+              "position_error_m": 0.0003009544629402842,
+              "orientation_error_rad": 0.0007327105108083944,
+              "linear_speed_m_s": 2.1293058096535704e-05,
+              "angular_speed_rad_s": 2.151342678850055e-05,
+              "finger_speed_m_s": 1.2104064640442209e-06,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8435060177192393,
+              0.537119529652551,
+              0.0002524255211780873,
+              0.0003810755950778217
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              1.09
+            ],
+            "gripper": 1,
+            "steps": 100
+          },
+          "executed_steps": 100,
+          "last_step": 370,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09181387424191884,
+              -0.25781429958068297,
+              1.0901464450245242
+            ],
+            "robot0_eef_quat": [
+              0.8436540126360075,
+              0.5368870002551724,
+              4.4685464389397064e-05,
+              0.0005039081006780548
+            ]
+          },
+          "terminal_position_error_m": 0.0003009544629402842,
+          "terminal_orientation_error_rad": 0.0007327105108083944,
+          "peak_raw_wrist_force_norm_N": 5.635702233154525,
+          "last_finger_positions_m": [
+            0.0004983575501817763,
+            -0.0005012206954713119
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 5,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.88
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 90
+          },
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.808
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 55
+          },
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              0.808
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 45
+          }
+        ],
+        "reason": "The frame remained on the table and the fingers closed fully; retry deeper around the black junction."
+      },
+      "validation_error": null,
+      "first_step": 371,
+      "last_step": 560,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 371,
+            "last_step": 460,
+            "requested_steps": 90,
+            "executed_steps": 90,
+            "first_settled_step": 431,
+            "terminal_measurement": {
+              "position_error_m": 0.0004837722526593991,
+              "orientation_error_rad": 0.0010011779869393185,
+              "linear_speed_m_s": 0.00019195587869540314,
+              "angular_speed_rad_s": 0.0003008528912376028,
+              "finger_speed_m_s": 5.294972363878793e-05,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 461,
+            "last_step": 515,
+            "requested_steps": 55,
+            "executed_steps": 55,
+            "first_settled_step": 484,
+            "terminal_measurement": {
+              "position_error_m": 0.001531639502451795,
+              "orientation_error_rad": 0.0006580622006763826,
+              "linear_speed_m_s": 6.278413640841042e-05,
+              "angular_speed_rad_s": 9.345140328253102e-05,
+              "finger_speed_m_s": 5.073478224116015e-05,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "waypoint_index": 2,
+            "first_step": 516,
+            "last_step": 560,
+            "requested_steps": 45,
+            "executed_steps": 45,
+            "first_settled_step": 527,
+            "terminal_measurement": {
+              "position_error_m": 0.0013724544605452343,
+              "orientation_error_rad": 0.0007510833690736677,
+              "linear_speed_m_s": 1.5824622505321436e-05,
+              "angular_speed_rad_s": 3.774749814797128e-05,
+              "finger_speed_m_s": 0.00012924377646338105,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.88
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 90
+          },
+          "executed_steps": 90,
+          "last_step": 460,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09241977979225915,
+              -0.25812593675344325,
+              0.8797951574932145
+            ],
+            "robot0_eef_quat": [
+              0.843262170484958,
+              0.5375023174084269,
+              0.00028736866738857846,
+              0.00029669650494638044
+            ]
+          },
+          "terminal_position_error_m": 0.0004837722526593991,
+          "terminal_orientation_error_rad": 0.0010011779869393185,
+          "peak_raw_wrist_force_norm_N": 5.283585206399864,
+          "last_finger_positions_m": [
+            0.039956401225142,
+            -0.039958265229003934
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.808
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 55
+          },
+          "executed_steps": 55,
+          "last_step": 515,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09265963728005785,
+              -0.2586879413740798,
+              0.8091989724308999
+            ],
+            "robot0_eef_quat": [
+              0.843245819375944,
+              0.5375281183653812,
+              3.8620637702669783e-05,
+              -9.26283485199808e-05
+            ]
+          },
+          "terminal_position_error_m": 0.001531639502451795,
+          "terminal_orientation_error_rad": 0.0006580622006763826,
+          "peak_raw_wrist_force_norm_N": 12.709209682785595,
+          "last_finger_positions_m": [
+            0.039575226389526576,
+            -0.04011199954139586
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              0.808
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          "executed_steps": 45,
+          "last_step": 560,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09213809185588274,
+              -0.25863875049499657,
+              0.8092068801476332
+            ],
+            "robot0_eef_quat": [
+              0.8432314372605141,
+              0.5375506653789914,
+              0.00010413481029276509,
+              -0.00012050772276911922
+            ]
+          },
+          "terminal_position_error_m": 0.0013724544605452343,
+          "terminal_orientation_error_rad": 0.0007510833690736677,
+          "peak_raw_wrist_force_norm_N": 14.108812543691258,
+          "last_finger_positions_m": [
+            0.010982861765678696,
+            -0.01362703343885937
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 6,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              1.08
+            ],
+            "gripper": 1,
+            "steps": 100
+          }
+        ],
+        "reason": "Lift again after the deeper grasp and inspect whether the junction and rods remain held."
+      },
+      "validation_error": null,
+      "first_step": 561,
+      "last_step": 660,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 561,
+            "last_step": 660,
+            "requested_steps": 100,
+            "executed_steps": 100,
+            "first_settled_step": 638,
+            "terminal_measurement": {
+              "position_error_m": 0.00025723095895459325,
+              "orientation_error_rad": 0.0007296577177154761,
+              "linear_speed_m_s": 2.2600845736454743e-05,
+              "angular_speed_rad_s": 1.5271339128997047e-05,
+              "finger_speed_m_s": 2.1042174689244504e-05,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8432314372605146,
+              0.5375506653789918,
+              0.00010413481029276515,
+              -0.0001205077227691193
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              1.08
+            ],
+            "gripper": 1,
+            "steps": 100
+          },
+          "executed_steps": 100,
+          "last_step": 660,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.09191165311012592,
+              -0.25775850287363444,
+              1.0799935400269776
+            ],
+            "robot0_eef_quat": [
+              0.8433805392683086,
+              0.5373167206906648,
+              -8.437756701301814e-05,
+              2.3025034666643183e-05
+            ]
+          },
+          "terminal_position_error_m": 0.00025723095895459325,
+          "terminal_orientation_error_rad": 0.0007296577177154761,
+          "peak_raw_wrist_force_norm_N": 5.6384159417709885,
+          "last_finger_positions_m": [
+            0.012293745824037665,
+            -0.01232459599174802
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 7,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 104,
+            "v": 104
+          },
+          {
+            "camera": "agentview",
+            "u": 36,
+            "v": 92
+          },
+          {
+            "camera": "agentview",
+            "u": 74,
+            "v": 93
+          },
+          {
+            "camera": "agentview",
+            "u": 186,
+            "v": 169
+          }
+        ],
+        "reason": "Measure the lifted frame's rod direction and the stand opening to plan the upright insertion orientation."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "execution_report": null,
+      "waypoints": []
+    },
+    {
+      "decision": 8,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.092,
+              -0.258,
+              1.14
+            ],
+            "quaternion_xyzw": [
+              0.60295,
+              0.38412,
+              -0.59444,
+              0.36815
+            ],
+            "gripper": 1,
+            "steps": 90
+          },
+          {
+            "position": [
+              -0.08,
+              0.039,
+              1.14
+            ],
+            "quaternion_xyzw": [
+              0.60295,
+              0.38412,
+              -0.59444,
+              0.36815
+            ],
+            "gripper": 1,
+            "steps": 100
+          }
+        ],
+        "reason": "The lifted frame is held. Rotate its measured long rod downward and place that rod above the stand opening."
+      },
+      "validation_error": null,
+      "first_step": 661,
+      "last_step": 850,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 661,
+            "last_step": 750,
+            "requested_steps": 90,
+            "executed_steps": 90,
+            "first_settled_step": 724,
+            "terminal_measurement": {
+              "position_error_m": 0.0002848080145136729,
+              "orientation_error_rad": 0.0015155414988598113,
+              "linear_speed_m_s": 1.046209488496369e-05,
+              "angular_speed_rad_s": 0.00012785355389486748,
+              "finger_speed_m_s": 7.617666987404971e-06,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.6029529505574829,
+              0.38412187970501754,
+              -0.5944429089134922,
+              0.3681518015552489
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 751,
+            "last_step": 850,
+            "requested_steps": 100,
+            "executed_steps": 100,
+            "first_settled_step": 835,
+            "terminal_measurement": {
+              "position_error_m": 0.0001058236668332731,
+              "orientation_error_rad": 0.0006967439542502657,
+              "linear_speed_m_s": 2.7120660092300686e-05,
+              "angular_speed_rad_s": 0.00014111972429236387,
+              "finger_speed_m_s": 3.4081186524993064e-06,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.6029529505574829,
+              0.38412187970501754,
+              -0.5944429089134922,
+              0.3681518015552489
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.092,
+              -0.258,
+              1.14
+            ],
+            "quaternion_xyzw": [
+              0.60295,
+              0.38412,
+              -0.59444,
+              0.36815
+            ],
+            "gripper": 1,
+            "steps": 90
+          },
+          "executed_steps": 90,
+          "last_step": 750,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.0922619095792073,
+              -0.25811056483905737,
+              1.139982842091768
+            ],
+            "robot0_eef_quat": [
+              0.6028099534717748,
+              0.3847851813137051,
+              -0.5941135821090131,
+              0.3682248983845759
+            ]
+          },
+          "terminal_position_error_m": 0.0002848080145136729,
+          "terminal_orientation_error_rad": 0.0015155414988598113,
+          "peak_raw_wrist_force_norm_N": 5.7775836999351124,
+          "last_finger_positions_m": [
+            0.012233425688770784,
+            -0.01221308027219639
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.08,
+              0.039,
+              1.14
+            ],
+            "quaternion_xyzw": [
+              0.60295,
+              0.38412,
+              -0.59444,
+              0.36815
+            ],
+            "gripper": 1,
+            "steps": 100
+          },
+          "executed_steps": 100,
+          "last_step": 850,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.08002553346205574,
+              0.039061982369072185,
+              1.139918116688503
+            ],
+            "robot0_eef_quat": [
+              0.602957400798236,
+              0.3839462923916203,
+              -0.5943708534322453,
+              0.3684438979974938
+            ]
+          },
+          "terminal_position_error_m": 0.0001058236668332731,
+          "terminal_orientation_error_rad": 0.0006967439542502657,
+          "peak_raw_wrist_force_norm_N": 5.409524467508028,
+          "last_finger_positions_m": [
+            0.012238719741532149,
+            -0.012207918698406093
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 9,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "agentview",
+            "u": 189,
+            "v": 155
+          },
+          {
+            "camera": "agentview",
+            "u": 189,
+            "v": 143
+          },
+          {
+            "camera": "agentview",
+            "u": 186,
+            "v": 169
+          },
+          {
+            "camera": "agentview",
+            "u": 186,
+            "v": 174
+          },
+          {
+            "camera": "agentview",
+            "u": 154,
+            "v": 54
+          },
+          {
+            "camera": "agentview",
+            "u": 175,
+            "v": 56
+          }
+        ],
+        "reason": "Check the insertion tip's horizontal alignment with the stand mouth and locate the hook after rotation."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "execution_report": null,
+      "waypoints": []
+    },
+    {
+      "decision": 10,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.077,
+              0.037,
+              1.115
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          {
+            "position": [
+              -0.077,
+              0.037,
+              1.045
+            ],
+            "gripper": 1,
+            "steps": 65
+          }
+        ],
+        "reason": "Correct the small lateral tip offset, then lower the frame shaft into the stand in two bounded stages."
+      },
+      "validation_error": null,
+      "first_step": 851,
+      "last_step": 960,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 851,
+            "last_step": 895,
+            "requested_steps": 45,
+            "executed_steps": 45,
+            "first_settled_step": 866,
+            "terminal_measurement": {
+              "position_error_m": 0.0005402751143780229,
+              "orientation_error_rad": 0.0008447318109214029,
+              "linear_speed_m_s": 0.00010152959763508558,
+              "angular_speed_rad_s": 0.00019785626109868773,
+              "finger_speed_m_s": 1.283518210437351e-05,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.6029574007982362,
+              0.3839462923916204,
+              -0.5943708534322455,
+              0.3684438979974939
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 896,
+            "last_step": 960,
+            "requested_steps": 65,
+            "executed_steps": 65,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.02860698900482534,
+              "orientation_error_rad": 0.001850864135794315,
+              "linear_speed_m_s": 0.0021510471010355724,
+              "angular_speed_rad_s": 0.00046903896823455115,
+              "finger_speed_m_s": 0.0001700726502761552,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "deadline_not_settled",
+            "resolved_quaternion_xyzw": [
+              0.6027250766144294,
+              0.3838515134649424,
+              -0.5947051655353304,
+              0.36838331085487386
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "waypoint_deadline"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.077,
+              0.037,
+              1.115
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          "executed_steps": 45,
+          "last_step": 895,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.07686678904774139,
+              0.037160878730453845,
+              1.1154982670724642
+            ],
+            "robot0_eef_quat": [
+              0.602725076614429,
+              0.3838515134649421,
+              -0.5947051655353299,
+              0.36838331085487364
+            ]
+          },
+          "terminal_position_error_m": 0.0005402751143780229,
+          "terminal_orientation_error_rad": 0.0008447318109214029,
+          "peak_raw_wrist_force_norm_N": 5.545112848584,
+          "last_finger_positions_m": [
+            0.012140609442030702,
+            -0.012349740930979054
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.077,
+              0.037,
+              1.045
+            ],
+            "gripper": 1,
+            "steps": 65
+          },
+          "executed_steps": 65,
+          "last_step": 960,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.07229322031619534,
+              0.034114965853602755,
+              1.0730692469244267
+            ],
+            "robot0_eef_quat": [
+              0.6024351119792516,
+              0.38463242358790334,
+              -0.594742908774383,
+              0.36798193847256583
+            ]
+          },
+          "terminal_position_error_m": 0.02860698900482534,
+          "terminal_orientation_error_rad": 0.001850864135794315,
+          "peak_raw_wrist_force_norm_N": 42.702566652677895,
+          "last_finger_positions_m": [
+            0.01242018539281551,
+            -0.012828874616044105
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 11,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.0723,
+              0.0341,
+              1.073
+            ],
+            "gripper": 1,
+            "steps": 30
+          },
+          {
+            "position": [
+              -0.0723,
+              0.0341,
+              1.073
+            ],
+            "gripper": -1,
+            "steps": 35
+          },
+          {
+            "position": [
+              -0.15,
+              -0.1,
+              1.13
+            ],
+            "gripper": -1,
+            "steps": 80
+          }
+        ],
+        "reason": "The descent is contact-limited after partial insertion. Remove commanded compression, release the frame at its supported height, and retreat to inspect stability."
+      },
+      "validation_error": null,
+      "first_step": 961,
+      "last_step": 1105,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 961,
+            "last_step": 990,
+            "requested_steps": 30,
+            "executed_steps": 30,
+            "first_settled_step": 970,
+            "terminal_measurement": {
+              "position_error_m": 0.0003907924748613776,
+              "orientation_error_rad": 0.00048612182272333987,
+              "linear_speed_m_s": 3.33739323404351e-05,
+              "angular_speed_rad_s": 0.00013592213303379727,
+              "finger_speed_m_s": 2.7658242667471873e-05,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.6024351119792519,
+              0.38463242358790356,
+              -0.5947429087743833,
+              0.36798193847256605
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 991,
+            "last_step": 1025,
+            "requested_steps": 35,
+            "executed_steps": 35,
+            "first_settled_step": 1015,
+            "terminal_measurement": {
+              "position_error_m": 0.0001697795973267899,
+              "orientation_error_rad": 0.0001361445673099923,
+              "linear_speed_m_s": 2.452771996196691e-05,
+              "angular_speed_rad_s": 4.609472597041978e-05,
+              "finger_speed_m_s": 0.0005883164281489156,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.602289951799,
+              0.38462157774251654,
+              -0.5949300480961746,
+              0.3679283813041597
+            ]
+          },
+          {
+            "waypoint_index": 2,
+            "first_step": 1026,
+            "last_step": 1105,
+            "requested_steps": 80,
+            "executed_steps": 80,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.06730689955253939,
+              "orientation_error_rad": 0.0006844342161293951,
+              "linear_speed_m_s": 0.01722519317396584,
+              "angular_speed_rad_s": 0.0004883587768481302,
+              "finger_speed_m_s": 1.3458825009390054e-05,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "deadline_not_settled",
+            "resolved_quaternion_xyzw": [
+              0.6023410436802114,
+              0.3846063632740039,
+              -0.5948877221883455,
+              0.3679290834073064
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "waypoint_deadline"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.0723,
+              0.0341,
+              1.073
+            ],
+            "gripper": 1,
+            "steps": 30
+          },
+          "executed_steps": 30,
+          "last_step": 990,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.07248960309724284,
+              0.03434476682056098,
+              1.0732384504717476
+            ],
+            "robot0_eef_quat": [
+              0.6022899517989995,
+              0.3846215777425162,
+              -0.594930048096174,
+              0.3679283813041594
+            ]
+          },
+          "terminal_position_error_m": 0.0003907924748613776,
+          "terminal_orientation_error_rad": 0.00048612182272333987,
+          "peak_raw_wrist_force_norm_N": 4.680336942389792,
+          "last_finger_positions_m": [
+            0.01221887537975184,
+            -0.012913312306370214
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.0723,
+              0.0341,
+              1.073
+            ],
+            "gripper": -1,
+            "steps": 35
+          },
+          "executed_steps": 35,
+          "last_step": 1025,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.07242046088831741,
+              0.03415931620855309,
+              1.0731039031927185
+            ],
+            "robot0_eef_quat": [
+              0.6023410436802109,
+              0.3846063632740036,
+              -0.5948877221883451,
+              0.3679290834073062
+            ]
+          },
+          "terminal_position_error_m": 0.0001697795973267899,
+          "terminal_orientation_error_rad": 0.0001361445673099923,
+          "peak_raw_wrist_force_norm_N": 5.102442298140587,
+          "last_finger_positions_m": [
+            0.039541374830593556,
+            -0.03951049479584426
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.15,
+              -0.1,
+              1.13
+            ],
+            "gripper": -1,
+            "steps": 80
+          },
+          "executed_steps": 80,
+          "last_step": 1105,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.12003273696562024,
+              -0.042348305746624695,
+              1.1124368561094757
+            ],
+            "robot0_eef_quat": [
+              0.6022509047749727,
+              0.38442749218057753,
+              -0.5949244295127927,
+              0.368204120186556
+            ]
+          },
+          "terminal_position_error_m": 0.06730689955253939,
+          "terminal_orientation_error_rad": 0.0006844342161293951,
+          "peak_raw_wrist_force_norm_N": 26.184320642483428,
+          "last_finger_positions_m": [
+            0.04000040317637596,
+            -0.03997058326037677
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 12,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.16,
+              -0.13,
+              1.11
+            ],
+            "gripper": -1,
+            "steps": 90
+          },
+          {
+            "position": [
+              -0.16,
+              -0.13,
+              1.24
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 70
+          }
+        ],
+        "reason": "The frame tilted and the retreat is obstructed. Continue withdrawing horizontally with open fingers, then raise and restore the downward grasp orientation to inspect the stand."
+      },
+      "validation_error": null,
+      "first_step": 1106,
+      "last_step": 1195,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1106,
+            "last_step": 1195,
+            "requested_steps": 90,
+            "executed_steps": 90,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.036995789511728695,
+              "orientation_error_rad": 0.0033658850490037306,
+              "linear_speed_m_s": 0.01133640620728983,
+              "angular_speed_rad_s": 0.002745672160429238,
+              "finger_speed_m_s": 2.4168999319458055e-05,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "deadline_not_settled",
+            "resolved_quaternion_xyzw": [
+              0.6022509047749731,
+              0.3844274921805778,
+              -0.5949244295127931,
+              0.36820412018655624
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 1,
+        "stop_reason": "waypoint_deadline"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.16,
+              -0.13,
+              1.11
+            ],
+            "gripper": -1,
+            "steps": 90
+          },
+          "executed_steps": 90,
+          "last_step": 1195,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.13514981989504782,
+              -0.10549882513958617,
+              1.1222820772187363
+            ],
+            "robot0_eef_quat": [
+              0.6027607709304628,
+              0.38542207627298675,
+              -0.5936744126531451,
+              0.3683476183032491
+            ]
+          },
+          "terminal_position_error_m": 0.036995789511728695,
+          "terminal_orientation_error_rad": 0.0033658850490037306,
+          "peak_raw_wrist_force_norm_N": 25.0443499564364,
+          "last_finger_positions_m": [
+            0.04027776668831109,
+            -0.03998584864960378
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.16,
+              -0.13,
+              1.24
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 70
+          },
+          "executed_steps": 0
+        }
+      ]
+    },
+    {
+      "decision": 13,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.065,
+              0.06,
+              1.12
+            ],
+            "gripper": -1,
+            "steps": 85
+          },
+          {
+            "position": [
+              -0.065,
+              0.06,
+              1.3
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 90
+          }
+        ],
+        "reason": "The open gripper is pushing the assembled structure. Withdraw along the opposite horizontal direction to clear the palm, then lift clear."
+      },
+      "validation_error": null,
+      "first_step": 1196,
+      "last_step": 1370,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1196,
+            "last_step": 1280,
+            "requested_steps": 85,
+            "executed_steps": 85,
+            "first_settled_step": 1240,
+            "terminal_measurement": {
+              "position_error_m": 0.00020333497393321313,
+              "orientation_error_rad": 0.0007630607334649693,
+              "linear_speed_m_s": 1.1693454044086003e-05,
+              "angular_speed_rad_s": 3.941770011674569e-05,
+              "finger_speed_m_s": 4.363132941059681e-08,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.6027607709304632,
+              0.385422076272987,
+              -0.5936744126531456,
+              0.3683476183032493
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 1281,
+            "last_step": 1370,
+            "requested_steps": 90,
+            "executed_steps": 90,
+            "first_settled_step": 1346,
+            "terminal_measurement": {
+              "position_error_m": 0.0004770482318573919,
+              "orientation_error_rad": 0.0016757970414796029,
+              "linear_speed_m_s": 7.4469789052754696e-06,
+              "angular_speed_rad_s": 8.432470852979515e-05,
+              "finger_speed_m_s": 5.388093700208193e-07,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.065,
+              0.06,
+              1.12
+            ],
+            "gripper": -1,
+            "steps": 85
+          },
+          "executed_steps": 85,
+          "last_step": 1280,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.06509683983488347,
+              0.05990465965376095,
+              1.120151252690499
+            ],
+            "robot0_eef_quat": [
+              0.6027191495463464,
+              0.38572911188483927,
+              -0.5934670122549915,
+              0.3684285336124158
+            ]
+          },
+          "terminal_position_error_m": 0.00020333497393321313,
+          "terminal_orientation_error_rad": 0.0007630607334649693,
+          "peak_raw_wrist_force_norm_N": 23.7997191901627,
+          "last_finger_positions_m": [
+            0.04000057172471614,
+            -0.03998524742220741
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.065,
+              0.06,
+              1.3
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 90
+          },
+          "executed_steps": 90,
+          "last_step": 1370,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.06468951533709229,
+              0.059945242594954935,
+              1.3003580166423647
+            ],
+            "robot0_eef_quat": [
+              0.8432830295693221,
+              0.5374691519716868,
+              -0.0006369132664944202,
+              -0.00048688880847500547
+            ]
+          },
+          "terminal_position_error_m": 0.0004770482318573919,
+          "terminal_orientation_error_rad": 0.0016757970414796029,
+          "peak_raw_wrist_force_norm_N": 5.340111648925157,
+          "last_finger_positions_m": [
+            0.040000039165337564,
+            -0.03999788961504936
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 14,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.032,
+              -0.188,
+              0.94
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 100
+          },
+          {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 40
+          }
+        ],
+        "reason": "The released frame is upright in the stand. Grasp the tool's black handle from above, leaving its larger end hole exposed."
+      },
+      "validation_error": null,
+      "first_step": 1371,
+      "last_step": 1470,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1371,
+            "last_step": 1470,
+            "requested_steps": 100,
+            "executed_steps": 100,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.05794071150010204,
+              "orientation_error_rad": 0.0010193889907261866,
+              "linear_speed_m_s": 0.07909100108458482,
+              "angular_speed_rad_s": 6.90337828185908e-05,
+              "finger_speed_m_s": 7.064981504864333e-06,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "deadline_not_settled",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 2,
+        "stop_reason": "waypoint_deadline"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.032,
+              -0.188,
+              0.94
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 100
+          },
+          "executed_steps": 100,
+          "last_step": 1470,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.017503570296544257,
+              -0.15406615644384983,
+              0.9846707268409363
+            ],
+            "robot0_eef_quat": [
+              0.8435703850440011,
+              0.5370184636457024,
+              -2.9553188116568014e-05,
+              0.00041750081846463825
+            ]
+          },
+          "terminal_position_error_m": 0.05794071150010204,
+          "terminal_orientation_error_rad": 0.0010193889907261866,
+          "peak_raw_wrist_force_norm_N": 5.203448984258506,
+          "last_finger_positions_m": [
+            0.03999470704018893,
+            -0.040000202222910224
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          "executed_steps": 0
+        },
+        {
+          "target": {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          "executed_steps": 0
+        }
+      ]
+    },
+    {
+      "decision": 15,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.032,
+              -0.188,
+              0.94
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 40
+          }
+        ],
+        "reason": "Complete the tool approach that timed out, then lower and close around the handle."
+      },
+      "validation_error": null,
+      "first_step": 1471,
+      "last_step": 1610,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1471,
+            "last_step": 1510,
+            "requested_steps": 40,
+            "executed_steps": 40,
+            "first_settled_step": 1492,
+            "terminal_measurement": {
+              "position_error_m": 0.0004788749385075543,
+              "orientation_error_rad": 0.0014144593564824324,
+              "linear_speed_m_s": 0.00010576732485918661,
+              "angular_speed_rad_s": 0.00016353554483267233,
+              "finger_speed_m_s": 8.574030156919081e-07,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 1511,
+            "last_step": 1570,
+            "requested_steps": 60,
+            "executed_steps": 60,
+            "first_settled_step": 1549,
+            "terminal_measurement": {
+              "position_error_m": 0.0003918662789925031,
+              "orientation_error_rad": 0.0011072000281242545,
+              "linear_speed_m_s": 2.5032470280167127e-05,
+              "angular_speed_rad_s": 6.370501354517075e-05,
+              "finger_speed_m_s": 1.674097703373526e-07,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "waypoint_index": 2,
+            "first_step": 1571,
+            "last_step": 1610,
+            "requested_steps": 40,
+            "executed_steps": 40,
+            "first_settled_step": 1587,
+            "terminal_measurement": {
+              "position_error_m": 0.0021701366407865345,
+              "orientation_error_rad": 0.0010165977503167336,
+              "linear_speed_m_s": 4.547976667116291e-05,
+              "angular_speed_rad_s": 2.3768382800073073e-05,
+              "finger_speed_m_s": 0.0005009045778791114,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8434142180966054,
+              0.537263861349795,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.032,
+              -0.188,
+              0.94
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 1510,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.03221712900727522,
+              -0.18839396231729647,
+              0.9401642251304785
+            ],
+            "robot0_eef_quat": [
+              0.8432703593532062,
+              0.5374892299840762,
+              -0.00021116702149104468,
+              -0.0006197547310039176
+            ]
+          },
+          "terminal_position_error_m": 0.0004788749385075543,
+          "terminal_orientation_error_rad": 0.0014144593564824324,
+          "peak_raw_wrist_force_norm_N": 5.256300819559959,
+          "last_finger_positions_m": [
+            0.040000052941734435,
+            -0.03999764146013201
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": -1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 1570,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.032096030919662816,
+              -0.18833974213141286,
+              0.8151700368407822
+            ],
+            "robot0_eef_quat": [
+              0.8432798706935406,
+              0.537474479039845,
+              -0.00015949778958911602,
+              -0.0004675728678894438
+            ]
+          },
+          "terminal_position_error_m": 0.0003918662789925031,
+          "terminal_orientation_error_rad": 0.0011072000281242545,
+          "peak_raw_wrist_force_norm_N": 5.29190478710891,
+          "last_finger_positions_m": [
+            0.04000004019823825,
+            -0.03999915427242788
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              0.032,
+              -0.188,
+              0.815
+            ],
+            "quaternion_xyzw": [
+              0.843,
+              0.537,
+              0,
+              0
+            ],
+            "gripper": 1,
+            "steps": 40
+          },
+          "executed_steps": 40,
+          "last_step": 1610,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.02994219739435739,
+              -0.18734272560826376,
+              0.8147927999762005
+            ],
+            "robot0_eef_quat": [
+              0.843388057500387,
+              0.5373046886536796,
+              -0.00015556110139890937,
+              -0.000481474027460466
+            ]
+          },
+          "terminal_position_error_m": 0.0021701366407865345,
+          "terminal_orientation_error_rad": 0.0010165977503167336,
+          "peak_raw_wrist_force_norm_N": 17.91117696485689,
+          "last_finger_positions_m": [
+            0.011825223632911705,
+            -0.01860117021213746
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 16,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              0.032,
+              -0.188,
+              1.16
+            ],
+            "gripper": 1,
+            "steps": 100
+          }
+        ],
+        "reason": "Lift the tool and inspect its larger ring before aligning it with the hook."
+      },
+      "validation_error": null,
+      "first_step": 1611,
+      "last_step": 1710,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1611,
+            "last_step": 1710,
+            "requested_steps": 100,
+            "executed_steps": 100,
+            "first_settled_step": null,
+            "terminal_measurement": {
+              "position_error_m": 0.0009887154602727388,
+              "orientation_error_rad": 0.0021494408988966393,
+              "linear_speed_m_s": 0.006996618746284272,
+              "angular_speed_rad_s": 0.009251298135571066,
+              "finger_speed_m_s": 3.6795252263324375e-05,
+              "settled_sample": false
+            },
+            "settled_at_exit": false,
+            "status": "deadline_not_settled",
+            "resolved_quaternion_xyzw": [
+              0.8433880575003874,
+              0.5373046886536799,
+              -0.00015556110139890945,
+              -0.0004814740274604662
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "waypoint_deadline"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              0.032,
+              -0.188,
+              1.16
+            ],
+            "gripper": 1,
+            "steps": 100
+          },
+          "executed_steps": 100,
+          "last_step": 1710,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              0.03188407054282954,
+              -0.18794131802340822,
+              1.159019859679451
+            ],
+            "robot0_eef_quat": [
+              0.8432347285668148,
+              0.5375434246462925,
+              -0.0008964605236662816,
+              -0.0012064480568806262
+            ]
+          },
+          "terminal_position_error_m": 0.0009887154602727388,
+          "terminal_orientation_error_rad": 0.0021494408988966393,
+          "peak_raw_wrist_force_norm_N": 7.195228569250116,
+          "last_finger_positions_m": [
+            0.015181236948058785,
+            -0.015218370769315908
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 17,
+      "command": {
+        "type": "sense",
+        "pixels": [
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 105,
+            "v": 52
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 150,
+            "v": 52
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 128,
+            "v": 28
+          },
+          {
+            "camera": "robot0_eye_in_hand",
+            "u": 128,
+            "v": 77
+          },
+          {
+            "camera": "agentview",
+            "u": 139,
+            "v": 89
+          },
+          {
+            "camera": "agentview",
+            "u": 139,
+            "v": 95
+          },
+          {
+            "camera": "agentview",
+            "u": 155,
+            "v": 93
+          }
+        ],
+        "reason": "Measure the large ring center and upright hook tip so the hole can be lowered over the tip."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "execution_report": null,
+      "waypoints": []
+    },
+    {
+      "decision": 18,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.03,
+              -0.107,
+              1.18
+            ],
+            "gripper": 1,
+            "steps": 60
+          },
+          {
+            "position": [
+              -0.03,
+              -0.107,
+              1.13
+            ],
+            "gripper": 1,
+            "steps": 45
+          }
+        ],
+        "reason": "Align the measured larger hole over the hook's upright tip, then lower the ring so the tip passes through its opening."
+      },
+      "validation_error": null,
+      "first_step": 1711,
+      "last_step": 1815,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1711,
+            "last_step": 1770,
+            "requested_steps": 60,
+            "executed_steps": 60,
+            "first_settled_step": 1753,
+            "terminal_measurement": {
+              "position_error_m": 0.0012928910931699795,
+              "orientation_error_rad": 0.0008551663161677757,
+              "linear_speed_m_s": 1.1642748360907341e-05,
+              "angular_speed_rad_s": 5.802964981487861e-05,
+              "finger_speed_m_s": 1.7797194504554104e-06,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8432347285668154,
+              0.5375434246462928,
+              -0.0008964605236662823,
+              -0.001206448056880627
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 1771,
+            "last_step": 1815,
+            "requested_steps": 45,
+            "executed_steps": 45,
+            "first_settled_step": 1789,
+            "terminal_measurement": {
+              "position_error_m": 0.0003364417500798067,
+              "orientation_error_rad": 0.0011755235354589293,
+              "linear_speed_m_s": 0.0005333566247178458,
+              "angular_speed_rad_s": 0.0010395114273970447,
+              "finger_speed_m_s": 4.2437979160789925e-05,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.843376516887607,
+              0.5373215440988013,
+              -0.0009225567001845812,
+              -0.0008705739158774816
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.03,
+              -0.107,
+              1.18
+            ],
+            "gripper": 1,
+            "steps": 60
+          },
+          "executed_steps": 60,
+          "last_step": 1770,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.030610831138604203,
+              -0.1066771234396651,
+              1.1789072038498896
+            ],
+            "robot0_eef_quat": [
+              0.8433765168876064,
+              0.537321544098801,
+              -0.0009225567001845805,
+              -0.0008705739158774811
+            ]
+          },
+          "terminal_position_error_m": 0.0012928910931699795,
+          "terminal_orientation_error_rad": 0.0008551663161677757,
+          "peak_raw_wrist_force_norm_N": 7.004920957703109,
+          "last_finger_positions_m": [
+            0.015203132454933247,
+            -0.015196396211467787
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.03,
+              -0.107,
+              1.13
+            ],
+            "gripper": 1,
+            "steps": 45
+          },
+          "executed_steps": 45,
+          "last_step": 1815,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.02995073804069452,
+              -0.10731940510890155,
+              1.1299064762758988
+            ],
+            "robot0_eef_quat": [
+              0.8435576384495149,
+              0.5370360379651853,
+              -0.0009970148951758075,
+              -0.0013455487471447083
+            ]
+          },
+          "terminal_position_error_m": 0.0003364417500798067,
+          "terminal_orientation_error_rad": 0.0011755235354589293,
+          "peak_raw_wrist_force_norm_N": 7.088620284820859,
+          "last_finger_positions_m": [
+            0.01543567926714562,
+            -0.014964892619736055
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 19,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.03,
+              -0.107,
+              1.13
+            ],
+            "gripper": -1,
+            "steps": 50
+          },
+          {
+            "position": [
+              -0.03,
+              -0.107,
+              1.28
+            ],
+            "gripper": -1,
+            "steps": 65
+          }
+        ],
+        "reason": "The wrist image shows the upright hook tip inside the large hole. Release the tool onto the hook and lift the open gripper clear to observe its hanging state."
+      },
+      "validation_error": null,
+      "first_step": 1816,
+      "last_step": 1930,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1816,
+            "last_step": 1865,
+            "requested_steps": 50,
+            "executed_steps": 50,
+            "first_settled_step": 1840,
+            "terminal_measurement": {
+              "position_error_m": 0.0001254782068417196,
+              "orientation_error_rad": 0.00024756587060245237,
+              "linear_speed_m_s": 9.536592855307344e-06,
+              "angular_speed_rad_s": 2.3056010703760365e-05,
+              "finger_speed_m_s": 0.00030443707426079354,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8435576384495156,
+              0.5370360379651857,
+              -0.0009970148951758083,
+              -0.0013455487471447094
+            ]
+          },
+          {
+            "waypoint_index": 1,
+            "first_step": 1866,
+            "last_step": 1930,
+            "requested_steps": 65,
+            "executed_steps": 65,
+            "first_settled_step": 1913,
+            "terminal_measurement": {
+              "position_error_m": 0.00043762564333164563,
+              "orientation_error_rad": 0.0015951236949995715,
+              "linear_speed_m_s": 1.3610868543530115e-05,
+              "angular_speed_rad_s": 5.9759945095239226e-05,
+              "finger_speed_m_s": 1.764677377514945e-05,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.843497213774487,
+              0.5371309110678694,
+              -0.0009609166110854608,
+              -0.0013825228187738508
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.03,
+              -0.107,
+              1.13
+            ],
+            "gripper": -1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1865,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.02998910265148471,
+              -0.10711844111967724,
+              1.1299600283931126
+            ],
+            "robot0_eef_quat": [
+              0.8434972137744865,
+              0.537130911067869,
+              -0.0009609166110854601,
+              -0.00138252281877385
+            ]
+          },
+          "terminal_position_error_m": 0.0001254782068417196,
+          "terminal_orientation_error_rad": 0.00024756587060245237,
+          "peak_raw_wrist_force_norm_N": 6.2241480278304335,
+          "last_finger_positions_m": [
+            0.039758350183357605,
+            -0.03975101957377635
+          ]
+        },
+        {
+          "target": {
+            "position": [
+              -0.03,
+              -0.107,
+              1.28
+            ],
+            "gripper": -1,
+            "steps": 65
+          },
+          "executed_steps": 65,
+          "last_step": 1930,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.029713601573631884,
+              -0.10707730393694954,
+              1.2803217394076072
+            ],
+            "robot0_eef_quat": [
+              0.8433544983203908,
+              0.5373520801115578,
+              -0.0014269330675833818,
+              -0.0019738349887968784
+            ]
+          },
+          "terminal_position_error_m": 0.00043762564333164563,
+          "terminal_orientation_error_rad": 0.0015951236949995715,
+          "peak_raw_wrist_force_norm_N": 5.326522426272676,
+          "last_finger_positions_m": [
+            0.039990267858703514,
+            -0.039981335630949716
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 20,
+      "command": {
+        "type": "move",
+        "waypoints": [
+          {
+            "position": [
+              -0.03,
+              -0.107,
+              1.28
+            ],
+            "gripper": -1,
+            "steps": 50
+          }
+        ],
+        "reason": "The tool is released and hanging by its large ring. Hold clear briefly to confirm it remains supported as motion settles."
+      },
+      "validation_error": null,
+      "first_step": 1931,
+      "last_step": 1980,
+      "execution_report": {
+        "condition": "deadline_guard",
+        "criteria": {
+          "position_tolerance_m": 0.003,
+          "orientation_tolerance_rad": 0.03,
+          "linear_speed_limit_m_s": 0.005,
+          "angular_speed_limit_rad_s": 0.05,
+          "finger_speed_limit_m_s": 0.001,
+          "consecutive_samples": 3,
+          "minimum_steps": 10
+        },
+        "waypoints": [
+          {
+            "waypoint_index": 0,
+            "first_step": 1931,
+            "last_step": 1980,
+            "requested_steps": 50,
+            "executed_steps": 50,
+            "first_settled_step": 1940,
+            "terminal_measurement": {
+              "position_error_m": 0.00020949335991646547,
+              "orientation_error_rad": 0.00047831779725292207,
+              "linear_speed_m_s": 1.4535599684743829e-05,
+              "angular_speed_rad_s": 3.080031239945615e-05,
+              "finger_speed_m_s": 1.2339910619454413e-06,
+              "settled_sample": true
+            },
+            "settled_at_exit": true,
+            "status": "arrived",
+            "resolved_quaternion_xyzw": [
+              0.8433544983203916,
+              0.5373520801115582,
+              -0.0014269330675833831,
+              -0.00197383498879688
+            ]
+          }
+        ],
+        "note": "Robot arrival is not acquisition, seating or task completion.",
+        "remaining_waypoints_cancelled": 0,
+        "stop_reason": "sequence_complete"
+      },
+      "waypoints": [
+        {
+          "target": {
+            "position": [
+              -0.03,
+              -0.107,
+              1.28
+            ],
+            "gripper": -1,
+            "steps": 50
+          },
+          "executed_steps": 50,
+          "last_step": 1980,
+          "measured_end_pose": {
+            "robot0_eef_pos": [
+              -0.029831772784184224,
+              -0.10698059930978678,
+              1.2801233316055487
+            ],
+            "robot0_eef_quat": [
+              0.8433262472781592,
+              0.5373953276047967,
+              -0.0015978915227281762,
+              -0.0021329001266350615
+            ]
+          },
+          "terminal_position_error_m": 0.00020949335991646547,
+          "terminal_orientation_error_rad": 0.00047831779725292207,
+          "peak_raw_wrist_force_norm_N": 5.103157499899618,
+          "last_finger_positions_m": [
+            0.040000221387764025,
+            -0.03999285916436672
+          ]
+        }
+      ]
+    },
+    {
+      "decision": 21,
+      "command": {
+        "type": "finish",
+        "reason": "The frame remains upright in the stand, and the released tool remains suspended by its larger hole on the hook after settling. The open gripper is clear of both."
+      },
+      "validation_error": null,
+      "first_step": null,
+      "last_step": null,
+      "execution_report": null,
+      "waypoints": []
+    }
+  ],
+  "scope": "Offline measurements, not automatic causal attribution. Raw wrist loads include gravity and dynamics.",
+  "wall_time_components": {
+    "setup_and_settling_seconds": 5.883845874996041,
+    "command_execution_and_recording_seconds": 45.193228786985856,
+    "policy_dispatch_to_delivered_response_seconds": 347.127,
+    "elapsed_through_last_recorded_command_seconds": 23167.783297750007,
+    "residual_operator_and_orchestration_seconds": 22769.579223088025,
+    "note": "Dispatch-to-delivered-response includes message delivery delay. Native completed-turn duration is separately exported in policy_usage. Simulated control time is separate; residual is not model latency.",
+    "native_completed_policy_turn_seconds": 344.068,
+    "delivered_response_minus_native_turn_seconds": 3.059000000000026
+  },
+  "policy_usage": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "policy_decisions": 21,
+    "model_inference_requests": 45,
+    "agent_tool_calls": 24,
+    "completed_policy_turns": 22,
+    "policy_wall_seconds": 344.068,
+    "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
+    "token_usage": {
+      "input_tokens": 2329286,
+      "cached_input_tokens": 2162432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7286,
+      "reasoning_output_tokens": 1763,
+      "total_tokens": 2336572
+    },
+    "api_equivalent_standard_cost_usd": 4.195272,
+    "actual_account_charge_usd": null,
+    "pricing": {
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "accessed_date": "2026-10-06",
+      "per_million_tokens_usd": {
+        "uncached_input": 10,
+        "cached_input": 1,
+        "cache_write": 12.5,
+        "output": 50
+      },
+      "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+    },
+    "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+    "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T01-11-36-01a11233-08a0-7db1-abc9-1283626742c2.jsonl",
+    "model_effort_verification": {
+      "01a11233-09a6-7391-b9ac-3437dd29bb9f": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11233-7b48-7330-8998-f785a21f5d13": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11234-17bb-7330-a2a0-e8afa87ced0c": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11234-a668-7841-be72-f08d31034405": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11235-125f-7762-9d59-0f596b80f037": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11235-a011-7c92-84c4-6b7a12fa59a5": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11236-141c-74d2-99e2-214f5efc5fa2": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11236-8a0d-7142-8424-2d899301b9b3": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11237-5ee7-7d53-976f-74ab37795ef2": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11237-c1a1-7463-a31b-3d7c335da731": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11238-31f1-7943-aae5-8742108e9761": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11238-bbc7-7eb2-86c4-6bf60f89ba43": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11239-66d4-7700-b487-2a07007f5161": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11239-e62a-7191-9c05-b2b9674cb45c": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a1123a-5adb-7963-9b18-71fbb301e705": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a1123a-dd6b-77c3-8e3c-95ebc04e3fac": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a11409-1ec9-7070-8c89-ee30a245a0ea": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a1140a-040b-70a3-a4e8-7dbb50e65585": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a1140a-6628-7240-91de-0710a9c02b2d": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a1140a-d4b5-7dd0-9a64-f78643e9518a": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a1140b-2df5-7962-9c4d-2daf335a45c0": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "01a1140b-880e-77e1-afdb-0db2901ba834": {
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      }
+    },
+    "turn_timing": {
+      "01a11233-09a6-7391-b9ac-3437dd29bb9f": {
+        "started_at": 1791306697,
+        "completed_at": 1791306715,
+        "duration_ms": 18722,
+        "time_to_first_token_ms": 8574
+      },
+      "01a11233-7b48-7330-8998-f785a21f5d13": {
+        "started_at": 1791306726,
+        "completed_at": 1791306748,
+        "duration_ms": 21806,
+        "time_to_first_token_ms": 2916
+      },
+      "01a11234-17bb-7330-a2a0-e8afa87ced0c": {
+        "started_at": 1791306766,
+        "completed_at": 1791306786,
+        "duration_ms": 20467,
+        "time_to_first_token_ms": 4300
+      },
+      "01a11234-a668-7841-be72-f08d31034405": {
+        "started_at": 1791306802,
+        "completed_at": 1791306813,
+        "duration_ms": 10241,
+        "time_to_first_token_ms": 4264
+      },
+      "01a11235-125f-7762-9d59-0f596b80f037": {
+        "started_at": 1791306830,
+        "completed_at": 1791306847,
+        "duration_ms": 17265,
+        "time_to_first_token_ms": 5103
+      },
+      "01a11235-a011-7c92-84c4-6b7a12fa59a5": {
+        "started_at": 1791306866,
+        "completed_at": 1791306876,
+        "duration_ms": 9922,
+        "time_to_first_token_ms": 2524
+      },
+      "01a11236-141c-74d2-99e2-214f5efc5fa2": {
+        "started_at": 1791306896,
+        "completed_at": 1791306909,
+        "duration_ms": 13141,
+        "time_to_first_token_ms": 6333
+      },
+      "01a11236-8a0d-7142-8424-2d899301b9b3": {
+        "started_at": 1791306926,
+        "completed_at": 1791306961,
+        "duration_ms": 34824,
+        "time_to_first_token_ms": 3152
+      },
+      "01a11237-5ee7-7d53-976f-74ab37795ef2": {
+        "started_at": 1791306981,
+        "completed_at": 1791306996,
+        "duration_ms": 14957,
+        "time_to_first_token_ms": 3888
+      },
+      "01a11237-c1a1-7463-a31b-3d7c335da731": {
+        "started_at": 1791307006,
+        "completed_at": 1791307019,
+        "duration_ms": 13508,
+        "time_to_first_token_ms": 3497
+      },
+      "01a11238-31f1-7943-aae5-8742108e9761": {
+        "started_at": 1791307035,
+        "completed_at": 1791307054,
+        "duration_ms": 19593,
+        "time_to_first_token_ms": 3240
+      },
+      "01a11238-bbc7-7eb2-86c4-6bf60f89ba43": {
+        "started_at": 1791307070,
+        "completed_at": 1791307098,
+        "duration_ms": 28095,
+        "time_to_first_token_ms": 2719
+      },
+      "01a11239-66d4-7700-b487-2a07007f5161": {
+        "started_at": 1791307114,
+        "completed_at": 1791307130,
+        "duration_ms": 16454,
+        "time_to_first_token_ms": 3500
+      },
+      "01a11239-e62a-7191-9c05-b2b9674cb45c": {
+        "started_at": 1791307146,
+        "completed_at": 1791307162,
+        "duration_ms": 15477,
+        "time_to_first_token_ms": 3430
+      },
+      "01a1123a-5adb-7963-9b18-71fbb301e705": {
+        "started_at": 1791307176,
+        "completed_at": 1791307189,
+        "duration_ms": 12470,
+        "time_to_first_token_ms": 4813
+      },
+      "01a1123a-dd6b-77c3-8e3c-95ebc04e3fac": {
+        "started_at": 1791307210,
+        "completed_at": 1791307218,
+        "duration_ms": 8354,
+        "time_to_first_token_ms": 5618
+      },
+      "01a11409-1ec9-7070-8c89-ee30a245a0ea": {
+        "started_at": 1791337504,
+        "completed_at": 1791337513,
+        "duration_ms": 8759,
+        "time_to_first_token_ms": 7814
+      },
+      "01a1140a-040b-70a3-a4e8-7dbb50e65585": {
+        "started_at": 1791337563,
+        "completed_at": 1791337578,
+        "duration_ms": 15014,
+        "time_to_first_token_ms": 3016
+      },
+      "01a1140a-6628-7240-91de-0710a9c02b2d": {
+        "started_at": 1791337588,
+        "completed_at": 1791337604,
+        "duration_ms": 16238,
+        "time_to_first_token_ms": 3453
+      },
+      "01a1140a-d4b5-7dd0-9a64-f78643e9518a": {
+        "started_at": 1791337616,
+        "completed_at": 1791337625,
+        "duration_ms": 8712,
+        "time_to_first_token_ms": 2761
+      },
+      "01a1140b-2df5-7962-9c4d-2daf335a45c0": {
+        "started_at": 1791337639,
+        "completed_at": 1791337649,
+        "duration_ms": 10163,
+        "time_to_first_token_ms": 2992
+      },
+      "01a1140b-880e-77e1-afdb-0db2901ba834": {
+        "started_at": 1791337662,
+        "completed_at": 1791337672,
+        "duration_ms": 9886,
+        "time_to_first_token_ms": 4917
+      }
+    }
+  }
+}

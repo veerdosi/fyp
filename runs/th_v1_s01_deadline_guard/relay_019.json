@@ -1,0 +1,38 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.03,
+          -0.107,
+          1.13
+        ],
+        "gripper": -1,
+        "steps": 50
+      },
+      {
+        "position": [
+          -0.03,
+          -0.107,
+          1.28
+        ],
+        "gripper": -1,
+        "steps": 65
+      }
+    ],
+    "reason": "The wrist image shows the upright hook tip inside the large hole. Release the tool onto the hook and lift the open gripper clear to observe its hanging state."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s01_deadline",
+    "policy_visible_input": "Fresh observation 14 after your motion command, step 1815, simulated time 90.75 seconds. 18 decisions have been executed; 12 model decisions and 585 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0014/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0014/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0014/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0014/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.030,-0.107,1.130],\"gripper\":-1,\"steps\":50},{\"position\":[-0.030,-0.107,1.28],\"gripper\":-1,\"steps\":65}],\"reason\":\"The wrist image shows the upright hook tip inside the large hole. Release the tool onto the hook and lift the open gripper clear to observe its hanging state.\"}",
+    "response_timestamp": "2026-10-07T01:47:05.296Z",
+    "message_id": "amsg_01a1140a-f6d0-7e13-b3a0-726fe365e780",
+    "dispatch_timestamp": "2026-10-07T01:46:56.561Z",
+    "policy_wall_seconds": 8.735,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/policy_update_019.txt"
+  }
+}

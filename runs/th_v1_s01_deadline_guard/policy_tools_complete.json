@@ -1,7 +1,7 @@
 {
   "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T01-11-36-01a11233-08a0-7db1-abc9-1283626742c2.jsonl",
-  "source_sha256_at_export": "37cf482eabe2e7725f8e1d81ac15b78e5675f3f79a4e018ffa61441eeab3e2a7",
-  "tool_call_count": 19,
+  "source_sha256_at_export": "462c50a0e422e6e8cc0e88e6a596e1d9bd2718c42d624cdf010d7fa546d7aaef",
+  "tool_call_count": 24,
   "tool_calls": [
     {
       "timestamp": "2026-10-06T17:11:47.416Z",
@@ -135,16 +135,51 @@
       "name": "exec",
       "call_id": "call_dde36fac18ea4cc09e14f3e4fe027c0c",
       "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/execution.json\",max_output_tokens:2300}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0012/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:46:09.107Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_23bed4d0bf0c402aba96972f3e52944e",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0013/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0013/execution.json\",max_output_tokens:1700}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0013/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0013/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:46:33.202Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_852b8266e9e54ebbacc07abc6ef6d54e",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0013/sense_017.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:47:01.086Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_dfbe0e38d23249558adc1871a402f2ee",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0014/execution.json\",max_output_tokens:1500}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0014/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0014/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:47:24.288Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_9bdf76fea331450a991ebcb222c9ff83",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0015/execution.json\",max_output_tokens:1600}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0015/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0015/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T01:47:48.558Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_03dbbfdbcd26477a9079c42a597da377",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0016/execution.json\",max_output_tokens:900}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s01_deadline_guard/public/obs_0016/agentview.png\"})).image_url);\n"
     }
   ],
   "review_status": "Export only; inspect tool inputs and calculation logs for boundary compliance.",
   "manual_boundary_review": {
     "reviewer": "Sol",
-    "status": "passed_for_interrupted_prefix",
-    "tool_calls_reviewed": 19,
+    "status": "passed",
+    "tool_calls_reviewed": 24,
     "temporary_calculations_reviewed": 1,
     "calculation": "policy_calculation_logs/calc_001",
-    "method": "All 19 exact tool inputs inspected. Source and stdout/stderr/status inspected for rod.py; only this episode public RGB, depth, calibration and robot data read. No prohibited access observed.",
-    "limits": "Manual audit; no OS sandbox or syscall trace. Must re-export and review new tools after continuation."
+    "method": "Read all exact exported inputs, the rod-axis calculation source/output/status and all five post-interruption tool inputs. Only this episode public sensors and own calculation artifacts accessed; no prohibited access observed.",
+    "limits": "Prompt/manual audit, not an OS filesystem sandbox or syscall trace."
   }
 }

@@ -1,7 +1,7 @@
 {
   "type": "external_policy_usage_limit",
   "recorded_utc": "2026-10-07T01:40:10Z",
-  "status": "interrupted_pending_continuation",
+  "status": "resumed_and_episode_finished",
   "episode": "th_v1_s01_deadline_guard",
   "completed_robot_decisions": 15,
   "next_robot_decision": 16,
@@ -36,5 +36,9 @@
     "max_measurement_error": 0.0,
     "score_mismatches": 0,
     "scope": "Reconstructed prefix verified against recorded measurements; compare flattened states to original live trajectory on completion."
-  }
+  },
+  "resumed_robot_decision": 16,
+  "resumption_note": "A single recheck through the exact pending handoff returned a valid new command from the same Astra agent. Relay executed it on the original simulator. No new start, replacement model or budget reset.",
+  "final_decisions": 21,
+  "live_checkpoint_comparison": "checkpoint_live_state_comparison.json"
 }
