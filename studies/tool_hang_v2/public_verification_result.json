@@ -1,0 +1,23 @@
+{
+  "all_pass": true,
+  "initial_states_equal": true,
+  "processed_feedback_equal": true,
+  "records": [
+    {
+      "folder": "/Users/veerdosi/Documents/code/github/fyp/studies/tool_hang_v2/public_shadow",
+      "steps": 335,
+      "prefix_actions_states_exact": true,
+      "public_feedback_files": 3,
+      "actual_astra_requests": 0
+    },
+    {
+      "folder": "/Users/veerdosi/Documents/code/github/fyp/studies/tool_hang_v2/public_guard",
+      "steps": 335,
+      "prefix_actions_states_exact": true,
+      "public_feedback_files": 3,
+      "actual_astra_requests": 0
+    }
+  ],
+  "actual_astra_requests": 0,
+  "scope": "Observed-state fixed publication verification, not a task-policy comparison."
+}
