@@ -1,0 +1,826 @@
+[
+  {
+    "update": 0,
+    "first_input_frame": 0,
+    "last_input_frame": 15,
+    "latest_frame_seconds": 0.75,
+    "combined_two_camera_seconds": 6.775616541999625,
+    "bootstrap": true,
+    "partial_tail": false,
+    "observed_allocated_memory_bytes": 227906304,
+    "observed_driver_memory_bytes": 3660791808,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          16,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          16,
+          8
+        ],
+        "latest_pixel": [
+          [
+            81.08138275146484,
+            181.0814208984375
+          ],
+          [
+            60.08512878417969,
+            183.08279418945312
+          ],
+          [
+            97.1471939086914,
+            199.13916015625
+          ],
+          [
+            110.10595703125,
+            214.05409240722656
+          ],
+          [
+            185.08560180664062,
+            171.08871459960938
+          ],
+          [
+            183.1028289794922,
+            211.07794189453125
+          ],
+          [
+            71.14524841308594,
+            217.1686553955078
+          ],
+          [
+            91.0990219116211,
+            238.0484619140625
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 15,
+        "last_input_frame": 15,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          16,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          16,
+          2
+        ],
+        "latest_pixel": [
+          [
+            198.1370391845703,
+            91.90377807617188
+          ],
+          [
+            43.96328353881836,
+            120.02538299560547
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true
+        ],
+        "output_frame": 15,
+        "last_input_frame": 15,
+        "no_future_inputs": true
+      }
+    }
+  },
+  {
+    "update": 1,
+    "first_input_frame": 8,
+    "last_input_frame": 23,
+    "latest_frame_seconds": 1.15,
+    "combined_two_camera_seconds": 2.195668917003786,
+    "bootstrap": false,
+    "partial_tail": false,
+    "observed_allocated_memory_bytes": 227917568,
+    "observed_driver_memory_bytes": 3660857344,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          24,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          24,
+          8
+        ],
+        "latest_pixel": [
+          [
+            81.08123016357422,
+            181.06858825683594
+          ],
+          [
+            60.06857681274414,
+            183.091796875
+          ],
+          [
+            97.13623809814453,
+            199.1349334716797
+          ],
+          [
+            110.10533905029297,
+            214.044189453125
+          ],
+          [
+            185.09906005859375,
+            171.09048461914062
+          ],
+          [
+            183.09275817871094,
+            211.06411743164062
+          ],
+          [
+            71.13373565673828,
+            217.1643829345703
+          ],
+          [
+            91.0982894897461,
+            238.04693603515625
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 23,
+        "last_input_frame": 23,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          24,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          24,
+          2
+        ],
+        "latest_pixel": [
+          [
+            204.2272186279297,
+            95.76036834716797
+          ],
+          [
+            30.403411865234375,
+            70.45531463623047
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true
+        ],
+        "output_frame": 23,
+        "last_input_frame": 23,
+        "no_future_inputs": true
+      }
+    }
+  },
+  {
+    "update": 2,
+    "first_input_frame": 16,
+    "last_input_frame": 31,
+    "latest_frame_seconds": 1.55,
+    "combined_two_camera_seconds": 2.023432459012838,
+    "bootstrap": false,
+    "partial_tail": false,
+    "observed_allocated_memory_bytes": 227927296,
+    "observed_driver_memory_bytes": 3660922880,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          32,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          32,
+          8
+        ],
+        "latest_pixel": [
+          [
+            81.08599853515625,
+            181.0970458984375
+          ],
+          [
+            60.05873107910156,
+            183.10147094726562
+          ],
+          [
+            97.15166473388672,
+            199.16064453125
+          ],
+          [
+            110.11629486083984,
+            214.0491943359375
+          ],
+          [
+            185.0995330810547,
+            171.07666015625
+          ],
+          [
+            183.1007080078125,
+            211.0720672607422
+          ],
+          [
+            71.13845825195312,
+            217.1794891357422
+          ],
+          [
+            91.09256744384766,
+            238.05380249023438
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 31,
+        "last_input_frame": 31,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          32,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          32,
+          2
+        ],
+        "latest_pixel": [
+          [
+            212.29237365722656,
+            97.89854431152344
+          ],
+          [
+            35.881954193115234,
+            6.179049015045166
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true
+        ],
+        "output_frame": 31,
+        "last_input_frame": 31,
+        "no_future_inputs": true
+      }
+    }
+  },
+  {
+    "update": 3,
+    "first_input_frame": 24,
+    "last_input_frame": 39,
+    "latest_frame_seconds": 1.95,
+    "combined_two_camera_seconds": 2.050670666998485,
+    "bootstrap": false,
+    "partial_tail": false,
+    "observed_allocated_memory_bytes": 227938560,
+    "observed_driver_memory_bytes": 3660988416,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          40,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          40,
+          8
+        ],
+        "latest_pixel": [
+          [
+            81.08702850341797,
+            181.07846069335938
+          ],
+          [
+            60.03746032714844,
+            183.0971221923828
+          ],
+          [
+            97.14837646484375,
+            199.17385864257812
+          ],
+          [
+            110.10789489746094,
+            214.03912353515625
+          ],
+          [
+            185.089111328125,
+            171.0816650390625
+          ],
+          [
+            183.0990447998047,
+            211.06800842285156
+          ],
+          [
+            71.12672424316406,
+            217.16046142578125
+          ],
+          [
+            91.07939147949219,
+            238.0506134033203
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 39,
+        "last_input_frame": 39,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          40,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          40,
+          2
+        ],
+        "latest_pixel": [
+          [
+            220.30792236328125,
+            93.92587280273438
+          ],
+          [
+            42.859222412109375,
+            -45.18222427368164
+          ]
+        ],
+        "latest_visible": [
+          true,
+          false
+        ],
+        "output_frame": 39,
+        "last_input_frame": 39,
+        "no_future_inputs": true
+      }
+    }
+  },
+  {
+    "update": 4,
+    "first_input_frame": 32,
+    "last_input_frame": 47,
+    "latest_frame_seconds": 2.35,
+    "combined_two_camera_seconds": 2.0761731670063455,
+    "bootstrap": false,
+    "partial_tail": false,
+    "observed_allocated_memory_bytes": 227948800,
+    "observed_driver_memory_bytes": 3669442560,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          48,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          48,
+          8
+        ],
+        "latest_pixel": [
+          [
+            81.10174560546875,
+            181.0923309326172
+          ],
+          [
+            60.0489616394043,
+            183.1191864013672
+          ],
+          [
+            97.15103149414062,
+            199.1922607421875
+          ],
+          [
+            110.10606384277344,
+            214.04319763183594
+          ],
+          [
+            185.09107971191406,
+            171.09442138671875
+          ],
+          [
+            183.09588623046875,
+            211.04824829101562
+          ],
+          [
+            71.12727355957031,
+            217.14759826660156
+          ],
+          [
+            91.09159088134766,
+            238.04730224609375
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 47,
+        "last_input_frame": 47,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          48,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          48,
+          2
+        ],
+        "latest_pixel": [
+          [
+            222.6013641357422,
+            78.12168884277344
+          ],
+          [
+            39.25095748901367,
+            -71.21359252929688
+          ]
+        ],
+        "latest_visible": [
+          true,
+          false
+        ],
+        "output_frame": 47,
+        "last_input_frame": 47,
+        "no_future_inputs": true
+      }
+    }
+  },
+  {
+    "update": 5,
+    "first_input_frame": 40,
+    "last_input_frame": 55,
+    "latest_frame_seconds": 2.75,
+    "combined_two_camera_seconds": 2.082404583983589,
+    "bootstrap": false,
+    "partial_tail": false,
+    "observed_allocated_memory_bytes": 227960064,
+    "observed_driver_memory_bytes": 3669508096,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          56,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          56,
+          8
+        ],
+        "latest_pixel": [
+          [
+            81.0944595336914,
+            181.0923614501953
+          ],
+          [
+            60.02401351928711,
+            183.12518310546875
+          ],
+          [
+            97.13997650146484,
+            199.17404174804688
+          ],
+          [
+            110.11196899414062,
+            214.0449676513672
+          ],
+          [
+            185.08497619628906,
+            171.1011505126953
+          ],
+          [
+            183.08975219726562,
+            211.04627990722656
+          ],
+          [
+            71.1264419555664,
+            217.14849853515625
+          ],
+          [
+            91.08102416992188,
+            238.046875
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 55,
+        "last_input_frame": 55,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          56,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          56,
+          2
+        ],
+        "latest_pixel": [
+          [
+            225.64486694335938,
+            57.734466552734375
+          ],
+          [
+            32.21979904174805,
+            -95.0882339477539
+          ]
+        ],
+        "latest_visible": [
+          true,
+          false
+        ],
+        "output_frame": 55,
+        "last_input_frame": 55,
+        "no_future_inputs": true
+      }
+    }
+  },
+  {
+    "update": 6,
+    "first_input_frame": 48,
+    "last_input_frame": 63,
+    "latest_frame_seconds": 3.15,
+    "combined_two_camera_seconds": 2.030050332978135,
+    "bootstrap": false,
+    "partial_tail": false,
+    "observed_allocated_memory_bytes": 227969792,
+    "observed_driver_memory_bytes": 3669573632,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          64,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          64,
+          8
+        ],
+        "latest_pixel": [
+          [
+            81.0152816772461,
+            181.14710998535156
+          ],
+          [
+            59.935340881347656,
+            183.13905334472656
+          ],
+          [
+            97.13092041015625,
+            199.17544555664062
+          ],
+          [
+            110.1014175415039,
+            214.0526885986328
+          ],
+          [
+            185.07135009765625,
+            171.09603881835938
+          ],
+          [
+            183.08755493164062,
+            211.0294647216797
+          ],
+          [
+            71.12908172607422,
+            217.14801025390625
+          ],
+          [
+            91.08358764648438,
+            238.04295349121094
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 63,
+        "last_input_frame": 63,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          64,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          64,
+          2
+        ],
+        "latest_pixel": [
+          [
+            229.78489685058594,
+            30.532085418701172
+          ],
+          [
+            27.271799087524414,
+            -117.2485580444336
+          ]
+        ],
+        "latest_visible": [
+          true,
+          false
+        ],
+        "output_frame": 63,
+        "last_input_frame": 63,
+        "no_future_inputs": true
+      }
+    }
+  },
+  {
+    "update": 7,
+    "first_input_frame": 56,
+    "last_input_frame": 64,
+    "latest_frame_seconds": 3.2,
+    "combined_two_camera_seconds": 2.2512396660167724,
+    "bootstrap": false,
+    "partial_tail": true,
+    "observed_allocated_memory_bytes": 222467072,
+    "observed_driver_memory_bytes": 3669639168,
+    "predictions": {
+      "agentview": {
+        "tracks_shape": [
+          1,
+          65,
+          8,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          65,
+          8
+        ],
+        "latest_pixel": [
+          [
+            80.99329376220703,
+            181.13992309570312
+          ],
+          [
+            59.88931655883789,
+            183.17657470703125
+          ],
+          [
+            97.12214660644531,
+            199.1597900390625
+          ],
+          [
+            110.07686614990234,
+            214.03872680664062
+          ],
+          [
+            185.06004333496094,
+            171.06515502929688
+          ],
+          [
+            183.1053009033203,
+            211.03353881835938
+          ],
+          [
+            71.11769104003906,
+            217.15109252929688
+          ],
+          [
+            91.07830810546875,
+            238.02362060546875
+          ]
+        ],
+        "latest_visible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "output_frame": 64,
+        "last_input_frame": 64,
+        "no_future_inputs": true
+      },
+      "robot0_eye_in_hand": {
+        "tracks_shape": [
+          1,
+          65,
+          2,
+          2
+        ],
+        "visibility_shape": [
+          1,
+          65,
+          2
+        ],
+        "latest_pixel": [
+          [
+            230.2728729248047,
+            27.199432373046875
+          ],
+          [
+            37.125003814697266,
+            -115.1432876586914
+          ]
+        ],
+        "latest_visible": [
+          true,
+          false
+        ],
+        "output_frame": 64,
+        "last_input_frame": 64,
+        "no_future_inputs": true
+      }
+    }
+  }
+]

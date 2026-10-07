@@ -1,0 +1,11 @@
+{
+  "machine": "arm64",
+  "python": "3.11.4",
+  "cpu": "Apple M2",
+  "memory_bytes": 8589934592,
+  "baseline_code_revision": "4f35f8bfafec79dc06243d43de64676e89594a12",
+  "runtime_result_sha256": "e7e4260350866e5c3b6831b1a688c362955ec9810f2ecbd0d4b898fd361ac9ab",
+  "probe_protocol_sha256": "112f62db44f4ecb7442f9c5713a1640a848ba159c1ec26556a15a7cda9c15a36",
+  "pass_checks": true,
+  "scope": "Checks output/provenance and predefined runtime failure; does not verify geometric tracking accuracy."
+}

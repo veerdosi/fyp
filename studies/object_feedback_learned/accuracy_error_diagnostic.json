@@ -1,0 +1,23 @@
+{
+  "scope": "Post-result diagnosis; original gates and cohort unchanged.",
+  "groups": {
+    "visible": {
+      "accepted": 1865,
+      "over_3mm": 180,
+      "error_p95_m": 0.005546176560755219,
+      "error_max_m": 2.401061072961328
+    },
+    "occluded": {
+      "accepted": 84,
+      "over_3mm": 57,
+      "error_p95_m": 0.024210288818988047,
+      "error_max_m": 2.1711482255179604
+    },
+    "all_known": {
+      "accepted": 1949,
+      "over_3mm": 237,
+      "error_p95_m": 0.007420175463162244,
+      "error_max_m": 2.401061072961328
+    }
+  }
+}

@@ -1,0 +1,4163 @@
+{
+  "scope": "Observed-trace development accuracy at causal endpoints; periodic interface, no task benefit claim.",
+  "protocol": {
+    "frozen_before_accuracy_inference": true,
+    "checkpoint_sha256": "205d34789f19699d64b22cf93f9b697f15f28d4025240e31532e504109837218",
+    "repository_revision": "82e02e8029753ad4ef13cf06be7f4fc5facdda4d",
+    "settings": {
+      "device": "mps",
+      "dtype": "float32",
+      "window_frames": 16,
+      "step_frames": 8,
+      "refinement_iterations": 6,
+      "visibility_confidence_threshold": 0.6,
+      "add_support_grid": true,
+      "support_grid_size": 6,
+      "model_resolution": "official checkpoint default",
+      "random_seed": 0
+    },
+    "source_hashes": {
+      "runs/th_v1_s01_deadline_guard/commands.jsonl": "026d4906d348e1c6bafb8abbe47d36ca9044452de4da691935384697f966281e",
+      "runs/th_v1_s01_deadline_guard/config.json": "27060d219a3bdbbe12ed8c64bb53cf3739ea19cbba3dade4d856cb3016a2b7ec",
+      "runs/th_v1_s01_deadline_guard/public/obs_0000/agentview.png": "acf3c1e11218027d2abd78e53337d783454af0fc4d19925cb27aff36472a07ad",
+      "runs/th_v1_s01_deadline_guard/public/obs_0000/agentview_depth_m.npy": "c3c38d554b8af1c7e3f44953be8b8bbad570b95da0c4781f9b22f9d6977e2303",
+      "runs/th_v1_s01_deadline_guard/public/obs_0000/calibration.json": "60f5eaf3a1abf92af13f5ea1063d10ea7d8c278565b6d2210aff73cd03a5bff4",
+      "runs/th_v1_s01_deadline_guard/public/obs_0005/agentview.png": "73c773ecfe32275d4035ed6d35697191fbede27b475060ac926cedb289e39007",
+      "runs/th_v1_s01_deadline_guard/public/obs_0005/agentview_depth_m.npy": "fcac44e70bc47ddc47080121905d423ea8c75668d3d746bf893ef81c0dffe7a2",
+      "runs/th_v1_s01_deadline_guard/public/obs_0005/calibration.json": "fd691bca8481d89cb8d60128f61785d512d4c752a5cd591d694f4ed4f83315d9",
+      "runs/th_v1_s01_deadline_guard/public/obs_0006/agentview.png": "0b40749216dfae3176e3fc2feb97a300174e49509d45ed4dafc43f219b88a97c",
+      "runs/th_v1_s01_deadline_guard/public/obs_0006/agentview_depth_m.npy": "ff2ce5646d7dbcf1766e75b3541804abc8be90921472577c9e9d2a3559815301",
+      "runs/th_v1_s01_deadline_guard/public/obs_0006/calibration.json": "181f085e0d9fbe0199f6ef875dcf34b00f453e90c567dbfd1d3bfbc530b8a057",
+      "runs/th_v1_s01_deadline_guard/public/obs_0013/agentview.png": "44e44caaca5f023ed3a38a508132934327abc82c480e9c29ada23f7e7cf38e06",
+      "runs/th_v1_s01_deadline_guard/public/obs_0013/agentview_depth_m.npy": "49087239a1b38c482e2a6b06ffb879e494a6b8ea55b228064e8dcef189ab30b7",
+      "runs/th_v1_s01_deadline_guard/public/obs_0013/calibration.json": "a58c9c5eac9eb0b294467aaec5084e78371637ce17bf1ff71f0268ab8afb6efc",
+      "runs/th_v1_s01_deadline_guard/public/obs_0013/robot0_eye_in_hand.png": "b6e616c60fc01509e48d05fbd5a951c0ba8f7a78588396b5c4c9e738df7918b7",
+      "runs/th_v1_s01_deadline_guard/public/obs_0013/robot0_eye_in_hand_depth_m.npy": "80f8fa5f0a647bddc894670976f59e8f3ae68a821f8ab1dd5b2fb1fb1c4f58f7",
+      "runs/th_v1_s01_deadline_guard/trajectory.npz": "d2134a8d1c29ef07da1d15a6089edaac67bb2fd0911eaaa768d7eae22dc1de3d",
+      "runs/th_v1_s01_direct_waypoints/commands.jsonl": "349ba58fc8fdec801422161f90e759c62885e093150f02ff444034b4f6199add",
+      "runs/th_v1_s01_direct_waypoints/config.json": "9ddcb713c0f8f39551f06b9273c84b6b7d95fac0644340195893ba969742485b",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0000/agentview.png": "acf3c1e11218027d2abd78e53337d783454af0fc4d19925cb27aff36472a07ad",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0000/agentview_depth_m.npy": "c3c38d554b8af1c7e3f44953be8b8bbad570b95da0c4781f9b22f9d6977e2303",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0000/calibration.json": "60f5eaf3a1abf92af13f5ea1063d10ea7d8c278565b6d2210aff73cd03a5bff4",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0000/robot0_eye_in_hand.png": "1c1f15289e5fc346572e1f626ded3e695db440d97709b7693114b048eaa4bf89",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0000/robot0_eye_in_hand_depth_m.npy": "6806918a115fbfc6b3c1ec8d0c549cd0fd3b193b9447e66e2e433490c81f6b54",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0003/agentview.png": "f76d2b72638a509de01c9a83c5522e7b99020f97c2b4389c2649b69342dc011f",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0003/agentview_depth_m.npy": "33d16d2c1445cdda40e5e3b703eabb8ed5162dd725f5358f79d9d20046627b17",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0003/calibration.json": "b5024efc753321e9c642d01e4066111b2e080372f9510ac8f624735b2416579a",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0009/agentview.png": "d722a21346f8a2ec93059efa6e6bb6a9e8ec1500c59afab4e1c63135454a1255",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0009/agentview_depth_m.npy": "26086ce4e15289d8a33771e8d3b77776c4d463815e518f8d84e5f46daf4b14bf",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0009/calibration.json": "8430a1ee2ecd1235d1c5c7a14dc139dc852cb0ee39697747513dd4d5fc7dac99",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0009/robot0_eye_in_hand.png": "55ff0c03f43d42a15a1b694cb482f637496160bf0489e1374c1c3955532472d2",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0009/robot0_eye_in_hand_depth_m.npy": "c967f097ace24df517dba3f1788a6b79599585d946addcac625cdb4ac65c7b04",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0010/agentview.png": "7abd0193f582a78969c7fcb05edb0880207f84c1b038fb98c336e8e65f8a5131",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0010/agentview_depth_m.npy": "746dfc09ed2818b9151bec6284182095a85e90f2be2580c0624bb0ddda643394",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0010/calibration.json": "d485bc6a5b143a61124bd5d62ac09c81cdd6be0018d8d2e738509c242785ced6",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0010/robot0_eye_in_hand.png": "21fc3f8edb80a521ad6f5c5e7881ac274d1e6d5e05298f1932b741fec96f0d44",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0010/robot0_eye_in_hand_depth_m.npy": "8f3eb3e2c74e1cf3ca67d6fab02ef9fe60128bbaeb6cf15bf1be768da4355cc9",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0011/calibration.json": "be406c67c4230fd2027093c2090d2bf5f24b0ca8d24c7e58cd81cfc4dc77417a",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0011/robot0_eye_in_hand.png": "2f7a42d80d51d411b04feb54bd782732c1582517be96b1a2ee6fe72021b17339",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0011/robot0_eye_in_hand_depth_m.npy": "aa88925f978d067827e306fb4c3a77874bdb1a2991dcada61ac13dbf2b8d1cd2",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0012/agentview.png": "b6e0bbac01d2f8015825387b3ab58a5b2f98dbc4351a11d070a2a6e5a3400d70",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0012/agentview_depth_m.npy": "41936b4ab5fdd2ab4370c04ec9529368ecdd75a15af82dcac90309184bf6c1a7",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0012/calibration.json": "da1feb7e00fd563f36ff0259a33a39bee225572e5a2d806c7a8451165ddaec5d",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0012/robot0_eye_in_hand.png": "3e2f9188bf64943f6c09ed80774665899b5d6dd5e3a50cdb5bc0596f9a039c99",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0012/robot0_eye_in_hand_depth_m.npy": "24865fb7abb9b79a1018b22c7564cb3cebcdd968b15f6f119aedb17d9c27b8b5",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0014/agentview.png": "78a809a04d80e0377273dc64b9108536a0f94a7919ad0b6d4266179456d6592e",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0014/agentview_depth_m.npy": "c01796a73b70bfc34de76f05c099dcd28953194f6fb06963f2d864bb5ef4aa1b",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0014/calibration.json": "8185ce7c6c9e5fbd8a8e81094f86e15c5c2ce51cae97f335a767d780549cde1d",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0014/robot0_eye_in_hand.png": "8bfa94df32ca85078e31e87012f84b769ec6ac0087aaa3177a3c10ba67a7e407",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0014/robot0_eye_in_hand_depth_m.npy": "035927d729591329156715bab60559263469c3a4eb8b48ff844d73552776c57b",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0016/agentview.png": "895c8a873b6b1640295e10db55f574106078f8fb47da95155aaf69c31da84cdc",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0016/agentview_depth_m.npy": "e15f3a393b55fc6f7ebbd2fe06bd3406d6d0d89fa08567ebbb2c22e1246a25bc",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0016/calibration.json": "f1ab03925d0a8d11335a5768b1a6806ccd67ce6de9fad1db8d314e86510ba58d",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0016/robot0_eye_in_hand.png": "6d8ec7c07f6914032c3af62c3e1d4b9a2f040be9eaf3b94a73fccf2c6febc3e3",
+      "runs/th_v1_s01_direct_waypoints/public/obs_0016/robot0_eye_in_hand_depth_m.npy": "0bfab130d430a475c3d117a83c1655e0245e807e4b7364c309da1b33e87c9edf",
+      "runs/th_v1_s01_direct_waypoints/trajectory.npz": "f8f15f72dabc120dafe82767955d78b174b495475f130900bdab8dd2dc02a373",
+      "runs/th_v1_s01_phase_guard/commands.jsonl": "f8876fc9f3a8980d69a30bfb7e51c4d9e6a317dabd9423d73a44dc1155cfa3b2",
+      "runs/th_v1_s01_phase_guard/config.json": "c636975d69bbd0e51dfd64396965ab06a26ca9bae76ea9fa3b90ab80ca06e50b",
+      "runs/th_v1_s01_phase_guard/public/obs_0000/agentview.png": "acf3c1e11218027d2abd78e53337d783454af0fc4d19925cb27aff36472a07ad",
+      "runs/th_v1_s01_phase_guard/public/obs_0000/agentview_depth_m.npy": "c3c38d554b8af1c7e3f44953be8b8bbad570b95da0c4781f9b22f9d6977e2303",
+      "runs/th_v1_s01_phase_guard/public/obs_0000/calibration.json": "60f5eaf3a1abf92af13f5ea1063d10ea7d8c278565b6d2210aff73cd03a5bff4",
+      "runs/th_v1_s01_phase_guard/public/obs_0004/agentview.png": "954c4c4278a1edf704701453f9482c0b5bf56b57c58989493e70678238af33ae",
+      "runs/th_v1_s01_phase_guard/public/obs_0004/agentview_depth_m.npy": "da5d83e0beeeadf670915e0f994951a31e4c22ced219a6af9d3abdbfbf483cd1",
+      "runs/th_v1_s01_phase_guard/public/obs_0004/calibration.json": "db4c09b8d9fcb72585ffb0969a837b63c552c0ab497d93aa43022e092951a73b",
+      "runs/th_v1_s01_phase_guard/public/obs_0007/agentview.png": "af6a195b1f27334a23b443dbcb222abf1da00e653f98491c3ca3df0ba14929ef",
+      "runs/th_v1_s01_phase_guard/public/obs_0007/agentview_depth_m.npy": "9de34207a4f4a383a4598a23aa8a31c25c33c9e3f14fcbb9241eab38d8820c28",
+      "runs/th_v1_s01_phase_guard/public/obs_0007/calibration.json": "91f5ef31acf28879bfdf8de273ccedffd334c3c781e24f50d34337c8feb13b6c",
+      "runs/th_v1_s01_phase_guard/trajectory.npz": "d988f8a92f5f9e1ed45bed10a528d304671e57c65f3a234799a7bbacca103e59",
+      "runs/th_v1_s02_deadline_guard/commands.jsonl": "dcc25ed362422c99317037ed7bc6400840d3ea4443dd01af9b923a007ece3aa3",
+      "runs/th_v1_s02_deadline_guard/config.json": "66cf45bce93c071e3e003b3c6d2d3075f23fe57170481760e2933d81a2cf14a2",
+      "runs/th_v1_s02_deadline_guard/public/obs_0000/agentview.png": "45d22c1cf73978a597fe9192fcfbe618e07acf244d1253c9df54533464434ac4",
+      "runs/th_v1_s02_deadline_guard/public/obs_0000/agentview_depth_m.npy": "e5fbb1a0fd90cf0e969e0888184f7049ce076d6c84cdd14c8bbcd07cc02453f5",
+      "runs/th_v1_s02_deadline_guard/public/obs_0000/calibration.json": "60f5eaf3a1abf92af13f5ea1063d10ea7d8c278565b6d2210aff73cd03a5bff4",
+      "runs/th_v1_s02_deadline_guard/public/obs_0004/agentview.png": "bc6c9de7514c7332930e30da8932aadeba8f1524d08f0de06ce19406531e65f2",
+      "runs/th_v1_s02_deadline_guard/public/obs_0004/agentview_depth_m.npy": "1a2a5f95ac9d9bd3cc181e8ba310bff72f1936a9739f8c727f93c7a084d03595",
+      "runs/th_v1_s02_deadline_guard/public/obs_0004/calibration.json": "d987a1d9f22dbd9b988b7def9d6d15aa26e8d15f08edf3b30b1e2813955d44e2",
+      "runs/th_v1_s02_deadline_guard/public/obs_0004/robot0_eye_in_hand.png": "1067ca15b10f16da5d62d664607f5fd1469680e3f72224270823a6ca0ce5a564",
+      "runs/th_v1_s02_deadline_guard/public/obs_0004/robot0_eye_in_hand_depth_m.npy": "b93d06e5d75f4abf9a455ba6fa1b9a7154712dc35af6b78495e0924ed8fcc55d",
+      "runs/th_v1_s02_deadline_guard/public/obs_0005/agentview.png": "f75421ddd7aa177a57d5b6fef295fb0c2df265acbad6707c617a07be885cfdf1",
+      "runs/th_v1_s02_deadline_guard/public/obs_0005/agentview_depth_m.npy": "a2f6c9279ceedd8c360f7b884dd99e0e61299245f4d75e968bb4a01fa2373179",
+      "runs/th_v1_s02_deadline_guard/public/obs_0005/calibration.json": "2dddddb7b7c30062c352e7f76076532544daffbbb23f8afb643da12ca5d893eb",
+      "runs/th_v1_s02_deadline_guard/public/obs_0005/robot0_eye_in_hand.png": "6f6ec02b03b568a35d64da86962c71c68875da5e342cbeaf940dbbce45afb11c",
+      "runs/th_v1_s02_deadline_guard/public/obs_0005/robot0_eye_in_hand_depth_m.npy": "15d523d77ac4c49e3aeae3941ef1a0b06e458afca905eae98f204411bb08f518",
+      "runs/th_v1_s02_deadline_guard/public/obs_0006/agentview.png": "ec4e5e23379f6fac2f86dd940978edcfc9fdd233c3eeebd5f5b9cac9f3533482",
+      "runs/th_v1_s02_deadline_guard/public/obs_0006/agentview_depth_m.npy": "688ab07f00209fa79f731eb75046fa8e89ab1a08f6a1a6bb9f5f7a349b0bbf03",
+      "runs/th_v1_s02_deadline_guard/public/obs_0006/calibration.json": "a54227890163ff6bf056b945fe4bd5c29e6b37b11324c71edb7911ef927505b9",
+      "runs/th_v1_s02_deadline_guard/public/obs_0006/robot0_eye_in_hand.png": "e813dc96cf77d045097974536a73c79064f568bbe03a9cbd61350ccfcd70b05e",
+      "runs/th_v1_s02_deadline_guard/public/obs_0006/robot0_eye_in_hand_depth_m.npy": "d44b7cc3a849aded5ba4719b6c386b991751a0e2195b3ec531ef65ab9e91c89d",
+      "runs/th_v1_s02_deadline_guard/public/obs_0010/agentview.png": "f1bc2485b2d38b5fb6098306564ab0518b60b0899e931b0b1dd30b59e2929dfe",
+      "runs/th_v1_s02_deadline_guard/public/obs_0010/agentview_depth_m.npy": "468a677128575f18c2e99b24d05e6ec9bc6699f798e85c203f2db0e0d5bdf169",
+      "runs/th_v1_s02_deadline_guard/public/obs_0010/calibration.json": "12be2b1cc2b3639f45bcc72a1fb85e81aaf1658d012a959ce194bab39299890a",
+      "runs/th_v1_s02_deadline_guard/public/obs_0014/agentview.png": "664ba582d388b51c46f1fefe1707dcddf19ce5d4373f374284fc883f4d5e9517",
+      "runs/th_v1_s02_deadline_guard/public/obs_0014/agentview_depth_m.npy": "a9103e45474eeed1b476f7dd832a37484d3ce8ab003dd2095685434945077bf5",
+      "runs/th_v1_s02_deadline_guard/public/obs_0014/calibration.json": "f83c27d8f55fc2bd28eacccc874b4707a045411421693f270a974a8db9e90d2e",
+      "runs/th_v1_s02_deadline_guard/trajectory.npz": "3454c2427c30b90b02e60438c3edb144d48ee073cbd1559b3ace63d30680111e",
+      "runs/th_v1_s02_direct_waypoints/commands.jsonl": "b460727e77e83a80fc628c17a01cb6a5d9ca3f448684a6c3e5b7525d115b892c",
+      "runs/th_v1_s02_direct_waypoints/config.json": "569d9cc08083dee646979b5a72326a6df3ce35928f598a8f2662b21e0680abdb",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0000/agentview.png": "45d22c1cf73978a597fe9192fcfbe618e07acf244d1253c9df54533464434ac4",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0000/agentview_depth_m.npy": "e5fbb1a0fd90cf0e969e0888184f7049ce076d6c84cdd14c8bbcd07cc02453f5",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0000/calibration.json": "60f5eaf3a1abf92af13f5ea1063d10ea7d8c278565b6d2210aff73cd03a5bff4",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0002/agentview.png": "c30b45b0c80d171b0cc02213b9f2013751c236c7089e9acd1af5cb250fb9d51a",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0002/agentview_depth_m.npy": "fd0208b3720de9113eaaaeaf518d6604e2b70927140d844477fc641da41d63c6",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0002/calibration.json": "1c953971c3e592ed05440c3a802f53ea74f90fa319a91683f597eecd808dea64",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0002/robot0_eye_in_hand.png": "4b8225e549eff9d37b58fe32be3a46a147f3e0a3772f8f9289d6d7f5be3d1eec",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0002/robot0_eye_in_hand_depth_m.npy": "1c1ddf5478f99100931e79eb8cc31264560547558dbcafac0886cf0d05ee30a3",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0003/agentview.png": "fe03a0c861c5d1789aa7268b4eb4585027cf8adb4a12cbe367337e57177c4102",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0003/agentview_depth_m.npy": "a4f793cede2eda598f8191eda5c191c77260b8f77360e0be426d1a65e4f4deec",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0003/calibration.json": "e94e79bb031a6a6f5c2e30d4435302e79da7edb53f044118394c3fb33fb1c110",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0004/agentview.png": "3f92c25ca0c373eb98429ac18b7cb6ee3b088f543afecd8cc6d8f98361a35116",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0004/agentview_depth_m.npy": "b5c3a1920a0b62ca280fa27d5d4d317ad8bb88da09abb146133eb753798512a2",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0004/calibration.json": "ceca7496052bee4300b0737871eee73a578b9f8762a0e0ff0a949d3995fc7813",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0006/agentview.png": "38f6d54af0294c9f05b678a86fa3af9860e89366a9ea337d2940b1767e2caa68",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0006/agentview_depth_m.npy": "fc5794fb75dce2349f7a7063108ce61dfdb459af88de7b6e71a6b58bb2626a43",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0006/calibration.json": "108712e6adaff3cd323051a4f27e281d0d215c6f9474ef2a440f83f54295c442",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0010/agentview.png": "cd0324885dbc4f6a165a46c48f0cd967a97e97ff5e3f9eb1745c4aac389397b7",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0010/agentview_depth_m.npy": "40a463ee30f7efd679d22a830351a015585777474a631b344a6682969cdba5f3",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0010/calibration.json": "7546d017eab4378122a34857afc419e5aa6762b7581e4af6379bcd4c994ddceb",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0011/agentview.png": "860bcee8cf00d00f31fcc036264d334bee4cd6a36dcfdffb24cc48801d963654",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0011/agentview_depth_m.npy": "3ec5821134f04d9a1d916e89da25840453df79ef8adb3892906387f911b55177",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0011/calibration.json": "7d0c50e79f3dc38346103e5a52aea0904e898fcca0e1942c7760d00cc1a518bc",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0011/robot0_eye_in_hand.png": "d073b7638e25a0c0fa884e6eabee3be473650e3940ee28a1d6c2a690bb2dd9c8",
+      "runs/th_v1_s02_direct_waypoints/public/obs_0011/robot0_eye_in_hand_depth_m.npy": "7e089ebd94e157097804662441a267f3d9d8bb2450eb7879c21dbea96dc61084",
+      "runs/th_v1_s02_direct_waypoints/trajectory.npz": "2e18b97f854a6e43c5741dfc3f0720ca528a403892c5ecf51b7281eec5fc1612",
+      "runs/th_v1_s02_phase_guard/commands.jsonl": "176ed7528467b3d7dcdfa2e0263d54547b3ef17a742c9a133c2d37425a2108e5",
+      "runs/th_v1_s02_phase_guard/config.json": "0d5c5bd9185bc37c9926644f32cd92957bc37929ec5509114608a551feded9b0",
+      "runs/th_v1_s02_phase_guard/public/obs_0000/agentview.png": "45d22c1cf73978a597fe9192fcfbe618e07acf244d1253c9df54533464434ac4",
+      "runs/th_v1_s02_phase_guard/public/obs_0000/agentview_depth_m.npy": "e5fbb1a0fd90cf0e969e0888184f7049ce076d6c84cdd14c8bbcd07cc02453f5",
+      "runs/th_v1_s02_phase_guard/public/obs_0000/calibration.json": "60f5eaf3a1abf92af13f5ea1063d10ea7d8c278565b6d2210aff73cd03a5bff4",
+      "runs/th_v1_s02_phase_guard/public/obs_0003/agentview.png": "bb684f8d50472b88ecc58311fdcc3d0fa085b1afc936cad582e2a22e1d32f47d",
+      "runs/th_v1_s02_phase_guard/public/obs_0003/agentview_depth_m.npy": "c7c9994686aeb96c1cbcb2b65ee54a681192529abd365400a7bc99ce89841e86",
+      "runs/th_v1_s02_phase_guard/public/obs_0003/calibration.json": "91ab4445bafa9726b112d2e4d8b69deb7e5f801b6c736f45e0a79637793dbde3",
+      "runs/th_v1_s02_phase_guard/public/obs_0004/agentview.png": "44be720d4363b4959245beba23cbe01a4a9e4ae3ae87db0a23eabf58fa5085a5",
+      "runs/th_v1_s02_phase_guard/public/obs_0004/agentview_depth_m.npy": "d9b63660633f996d160c8f532afa56e0e7aceca12c88956268dd3706491eaace",
+      "runs/th_v1_s02_phase_guard/public/obs_0004/calibration.json": "0400d6c7af9065f85d244e7d69fed9bc048bc7eab67aff01fe16720ed391a6a4",
+      "runs/th_v1_s02_phase_guard/public/obs_0006/calibration.json": "a1bae984bf2997a87bbb65f4ff2f088b57394126d422f127044ca6a521cd8aee",
+      "runs/th_v1_s02_phase_guard/public/obs_0006/robot0_eye_in_hand.png": "44caa2b33ce9acbdf8e7cff7391f2813732eb1af6dfb9d9ba83ed1af09d45e87",
+      "runs/th_v1_s02_phase_guard/public/obs_0006/robot0_eye_in_hand_depth_m.npy": "2e36f3c9f4edd133a2c1d4e999d045672bce2ecd4eff0487abb1261e688e8b60",
+      "runs/th_v1_s02_phase_guard/public/obs_0007/calibration.json": "552af6091a38e1bf16b6b5c4b2494f3702c13b6eaef1c9b791412a4b3ac3ccd4",
+      "runs/th_v1_s02_phase_guard/public/obs_0007/robot0_eye_in_hand.png": "a196c31af52e13d4e2d5db640f9192ddc98f67369872372c3600c2870ff8e164",
+      "runs/th_v1_s02_phase_guard/public/obs_0007/robot0_eye_in_hand_depth_m.npy": "5ff68206bc367f0c0bbe218f339af9bd225700d9016e4133f2de02cf461ea9b8",
+      "runs/th_v1_s02_phase_guard/public/obs_0012/agentview.png": "feaf40405b048c052d4a814236700bccc72b87384c8152cedf6ab10fb31a1102",
+      "runs/th_v1_s02_phase_guard/public/obs_0012/agentview_depth_m.npy": "639623a1de48b72f9e7975a6a73987631c63efb206fe19f9268cfca747bbb4e6",
+      "runs/th_v1_s02_phase_guard/public/obs_0012/calibration.json": "1f1a6c38773d17733c6741000c2b6df8e35bd56122e8e6d26522e0e8de1b9b3c",
+      "runs/th_v1_s02_phase_guard/public/obs_0012/robot0_eye_in_hand.png": "d9c80694ce8f73e2849e21fb0c5344ca6a5e050a3c44998e768c54dec0a8d6a7",
+      "runs/th_v1_s02_phase_guard/public/obs_0012/robot0_eye_in_hand_depth_m.npy": "e98df0236c261ac30a1d2e3060fd8383b77ce2a3bbff34943ac8cb6ee908c32e",
+      "runs/th_v1_s02_phase_guard/public/obs_0016/agentview.png": "58ae740dbd3717089ea572b160f868f3c6e41e7765b58a9bef35b8a59e4a0c6e",
+      "runs/th_v1_s02_phase_guard/public/obs_0016/agentview_depth_m.npy": "165ae344218e7cd88946e88375edbfabc0f9f8890cdbb7b192bb3d027c23e34b",
+      "runs/th_v1_s02_phase_guard/public/obs_0016/calibration.json": "2ea8e76194a616f75ddfd6c427c6c0173efa7c1d5b8a731b32fce4efb26a132a",
+      "runs/th_v1_s02_phase_guard/public/obs_0016/robot0_eye_in_hand.png": "43d1c572e2240293f49780b1b68c713e2e586fe5d3713549a77d206a31f6a299",
+      "runs/th_v1_s02_phase_guard/public/obs_0016/robot0_eye_in_hand_depth_m.npy": "8c0cf2e358e8a75a074425835eccb7aa86f4fecfbe49288fb784036203aa4484",
+      "runs/th_v1_s02_phase_guard/trajectory.npz": "ae2b81dd31a5805d0e48a69204935e2fbf5bf60457e4d39f1b3ad1699a3cdadd",
+      "src/fyp/__init__.py": "04f95911a59d72d6023224ee385d43870b28b640030b0beeec6a25f0061a5fc8",
+      "src/fyp/episode.py": "b8a363a8ea881ce7c5c845e2a5913e7aacfe07a418635907778fdb7dd77e324d",
+      "src/fyp/motion.py": "22512f8abfd6b0aaaec0eb26537ccbbc3abdd78eea6ee3d9ddd4ac5ec477ec90",
+      "src/fyp/robosuite_runtime.py": "bafa78b610d2392955cf896487e7c43f82e0bcd2f59a48b891516558b4531505",
+      "src/fyp/runtime.py": "875e5bfba2f67b1f7b1e974b4ebef2ecb1d189a7846bba92a63ad8cbf9e8a4fc",
+      "studies/object_feedback_feasibility/camera_reference.py": "54214d97191b9c2bf61bbfc849c20ad186508b267f0ae4ab19e8a1d06e47058a",
+      "studies/object_feedback_feasibility/cohort.json": "409a5f23c9d3db2d77dae4f0d5d8ac648fb133608cb94bfe1e8bcbd5f8d647d7",
+      "studies/object_feedback_learned/accuracy_audit.py": "13033c3ce6f737d74797f58d3796666ab77466b500a1a98669f1d2ccb844c581",
+      "studies/object_feedback_learned/accuracy_decision.md": "857d3ef9c3f4aa1a446c6b76aff2dbaf2b365bc9b0a8814d7e86a597e1eb0942",
+      "studies/object_feedback_learned/point_measurement.py": "da6eed4a93e5d979ef48d8c2660c844396eee998994e03a195d07a29074f50b2",
+      "studies/object_feedback_learned/private_reference.py": "0eef42da8310b453f6f457b3761733bcf70c4a73aa36ad64f262f00f9a2d6d9f",
+      "vendor/co-tracker/cotracker/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/datasets/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/datasets/dataclass_utils.py": "85081775c3b4c74b456cc4e6f164d559cac77adecce28b010b527a46a2efb488",
+      "vendor/co-tracker/cotracker/datasets/dr_dataset.py": "e70e9eeb66c08f40c4312268768532050ca5e269e1d84503cc12fdefc4db5969",
+      "vendor/co-tracker/cotracker/datasets/kubric_movif_dataset.py": "c8cb9537c44cfbff1c13b2251a5947126f0baa65fe7ced48edf2218493c6c663",
+      "vendor/co-tracker/cotracker/datasets/real_dataset.py": "889edb66f65151dfac3271c91ecc47c1490508f54cc1fe0f7860e699f9a1da1e",
+      "vendor/co-tracker/cotracker/datasets/tap_vid_datasets.py": "2806cc6c1d5df1703c942feb05154a7b78ffa8ac4cb2fb032876ce3cf335699b",
+      "vendor/co-tracker/cotracker/datasets/utils.py": "05c40c9dbc51f588cd5d889b3abd9795eb55a0a720d60519fedde54baeaac3c6",
+      "vendor/co-tracker/cotracker/evaluation/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/evaluation/core/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/evaluation/core/eval_utils.py": "4f23ce75896694a8f5d8f7e5650c15d4f74a2e7135ae176c8295621d60916cb9",
+      "vendor/co-tracker/cotracker/evaluation/core/evaluator.py": "9432df1c94f9786e4ef579632d9b8cd6b2e7680800564d50e38588ed7bb56274",
+      "vendor/co-tracker/cotracker/evaluation/evaluate.py": "5b7f886332ed7772567c0ae83ae5275a716fe69129a66ffc9168cd1a397e646d",
+      "vendor/co-tracker/cotracker/models/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/models/bootstap_predictor.py": "7e25e4d8884b0bc01c72b2e00eb7da0f0e1e97ea1e4944818f16baee6347cfe3",
+      "vendor/co-tracker/cotracker/models/build_cotracker.py": "72a2d04fafb26c7f2ee0d7236fa63d5a7adbc9a9f1bab1d68f41bdd1ea657c89",
+      "vendor/co-tracker/cotracker/models/core/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/models/core/cotracker/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/models/core/cotracker/blocks.py": "65a742fbec3d6a6eed26d40fc7d1179c609b7a35e2cd4b1146ea7800089d6823",
+      "vendor/co-tracker/cotracker/models/core/cotracker/cotracker.py": "711df4fc7d109824e52f8e111df396a2e7d844796084f1f6a4419690c14e6b28",
+      "vendor/co-tracker/cotracker/models/core/cotracker/cotracker3_offline.py": "41cff5b775ca071ff12bce23ef7887cb639171da84a32e0d75194661101ce238",
+      "vendor/co-tracker/cotracker/models/core/cotracker/cotracker3_online.py": "4c8bfce5546d85ba22c6b5292b870ad2aa0af1e0b6ba5a22e644c39bb496475e",
+      "vendor/co-tracker/cotracker/models/core/cotracker/losses.py": "fe23dacbfa563f9499e39f78338aad046145211d80f4674e723a6625afb22043",
+      "vendor/co-tracker/cotracker/models/core/embeddings.py": "9c1066f2d3b44317454126ff79256d4aa07f12e736bb09fdf598a09696aa4dde",
+      "vendor/co-tracker/cotracker/models/core/model_utils.py": "8f13adb13866cba3b1b0ad90f7c961918f71d75e912d8b6ccf77906b81c95a8c",
+      "vendor/co-tracker/cotracker/models/evaluation_predictor.py": "7bb03606c08638de28f79abfcf8bd03eb0c42bfd811e6bb8a00d752a2a943597",
+      "vendor/co-tracker/cotracker/predictor.py": "783536d6c77790fa6c8e005f2df1d6bd4f0d8955c2c67d464bfb4e64d366375f",
+      "vendor/co-tracker/cotracker/utils/__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa",
+      "vendor/co-tracker/cotracker/utils/train_utils.py": "235bd0cfeb0285125f0d372649fe97496847b1afefccf05188f0d0694f417151",
+      "vendor/co-tracker/cotracker/utils/visualizer.py": "0b5fef184d44c408568559a634821968b6907d2b526b967d2a4bbd843b0fc587",
+      "vendor/co-tracker/cotracker/version.py": "a8b2612b07c2cbeb2d32c99711fb1c2829571938776fb8188812c66c9b129949"
+    },
+    "gates": {
+      "visible_coverage_min": 0.8,
+      "accepted_current_error_p95_max_m": 0.003,
+      "occluded_false_valid_max": 0.05
+    },
+    "cohort": {
+      "queries": 212,
+      "streams": 35,
+      "camera_streams": 49,
+      "minimum_motion_frames": 34
+    },
+    "schedule": {
+      "first_endpoint_frame": 15,
+      "step_frames": 8,
+      "final_partial": true,
+      "latest_endpoint_only": true
+    },
+    "input_boundary": "RGB/query pixels only to CoTracker; public metric depth/calibration for unprojection; no scoring input to measurement."
+  },
+  "overall": {
+    "samples": 2757,
+    "reference_visible": 1909,
+    "reference_occluded": 339,
+    "reference_unknown": 509,
+    "accepted_visible": 1865,
+    "visible_coverage": 0.9769512833944474,
+    "accepted_error_p95_m": 0.005546176560755219,
+    "accepted_error_median_m": 0.00032722997419818903,
+    "image_time_error_p95_m": 0.005546176560755219,
+    "camera_age_max_seconds": 0.0,
+    "occluded_false_valid_rate": 0.24778761061946902,
+    "gate_pass": false
+  },
+  "groups": {
+    "camera": {
+      "agentview": {
+        "samples": 2103,
+        "reference_visible": 1324,
+        "reference_occluded": 296,
+        "reference_unknown": 483,
+        "accepted_visible": 1302,
+        "visible_coverage": 0.9833836858006042,
+        "accepted_error_p95_m": 0.005439104810610134,
+        "accepted_error_median_m": 0.0004067042946942987,
+        "image_time_error_p95_m": 0.005439104810610134,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.2635135135135135,
+        "gate_pass": false
+      },
+      "robot0_eye_in_hand": {
+        "samples": 654,
+        "reference_visible": 585,
+        "reference_occluded": 43,
+        "reference_unknown": 26,
+        "accepted_visible": 563,
+        "visible_coverage": 0.9623931623931624,
+        "accepted_error_p95_m": 0.005849313003970436,
+        "accepted_error_median_m": 0.0002097252507353415,
+        "image_time_error_p95_m": 0.005849313003970436,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.13953488372093023,
+        "gate_pass": false
+      }
+    },
+    "motion_type": {
+      "rotation": {
+        "samples": 2251,
+        "reference_visible": 1492,
+        "reference_occluded": 290,
+        "reference_unknown": 469,
+        "accepted_visible": 1454,
+        "visible_coverage": 0.9745308310991957,
+        "accepted_error_p95_m": 0.005964458064028798,
+        "accepted_error_median_m": 0.0003440803783289572,
+        "image_time_error_p95_m": 0.005964458064028798,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.22758620689655173,
+        "gate_pass": false
+      },
+      "translation": {
+        "samples": 506,
+        "reference_visible": 417,
+        "reference_occluded": 49,
+        "reference_unknown": 40,
+        "accepted_visible": 411,
+        "visible_coverage": 0.9856115107913669,
+        "accepted_error_p95_m": 0.003549998043450036,
+        "accepted_error_median_m": 0.00029984592598068175,
+        "image_time_error_p95_m": 0.003549998043450036,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.3673469387755102,
+        "gate_pass": false
+      }
+    },
+    "paired_state": {
+      "1": {
+        "samples": 1097,
+        "reference_visible": 775,
+        "reference_occluded": 140,
+        "reference_unknown": 182,
+        "accepted_visible": 769,
+        "visible_coverage": 0.9922580645161291,
+        "accepted_error_p95_m": 0.0036521884832889226,
+        "accepted_error_median_m": 0.0002748699577374095,
+        "image_time_error_p95_m": 0.0036521884832889226,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.34285714285714286,
+        "gate_pass": false
+      },
+      "2": {
+        "samples": 1660,
+        "reference_visible": 1134,
+        "reference_occluded": 199,
+        "reference_unknown": 327,
+        "accepted_visible": 1096,
+        "visible_coverage": 0.9664902998236331,
+        "accepted_error_p95_m": 0.006120426180351331,
+        "accepted_error_median_m": 0.0003754177536098469,
+        "image_time_error_p95_m": 0.006120426180351331,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.18090452261306533,
+        "gate_pass": false
+      }
+    },
+    "condition": {
+      "deadline_guard": {
+        "samples": 897,
+        "reference_visible": 637,
+        "reference_occluded": 168,
+        "reference_unknown": 92,
+        "accepted_visible": 607,
+        "visible_coverage": 0.9529042386185244,
+        "accepted_error_p95_m": 0.007830963079797738,
+        "accepted_error_median_m": 0.0005006510804943582,
+        "image_time_error_p95_m": 0.007830963079797738,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.23214285714285715,
+        "gate_pass": false
+      },
+      "direct_waypoints": {
+        "samples": 1353,
+        "reference_visible": 946,
+        "reference_occluded": 108,
+        "reference_unknown": 299,
+        "accepted_visible": 933,
+        "visible_coverage": 0.9862579281183932,
+        "accepted_error_p95_m": 0.0031031325954716214,
+        "accepted_error_median_m": 0.00029764129043039666,
+        "image_time_error_p95_m": 0.0031031325954716214,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.1574074074074074,
+        "gate_pass": false
+      },
+      "phase_guard": {
+        "samples": 507,
+        "reference_visible": 326,
+        "reference_occluded": 63,
+        "reference_unknown": 118,
+        "accepted_visible": 325,
+        "visible_coverage": 0.9969325153374233,
+        "accepted_error_p95_m": 0.006332075433934925,
+        "accepted_error_median_m": 0.0002742699590094154,
+        "image_time_error_p95_m": 0.006332075433934925,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.4444444444444444,
+        "gate_pass": false
+      }
+    },
+    "reference_body": {
+      "frame_root": {
+        "samples": 1185,
+        "reference_visible": 967,
+        "reference_occluded": 218,
+        "reference_unknown": 0,
+        "accepted_visible": 923,
+        "visible_coverage": 0.954498448810755,
+        "accepted_error_p95_m": 0.007128317144560309,
+        "accepted_error_median_m": 0.0007456339834879342,
+        "image_time_error_p95_m": 0.007128317144560309,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.1743119266055046,
+        "gate_pass": false
+      },
+      "gripper0_leftfinger": {
+        "samples": 23,
+        "reference_visible": 1,
+        "reference_occluded": 22,
+        "reference_unknown": 0,
+        "accepted_visible": 1,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.0009071245939882872,
+        "accepted_error_median_m": 0.0009071245939882872,
+        "image_time_error_p95_m": 0.0009071245939882872,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.045454545454545456,
+        "gate_pass": true
+      },
+      "gripper0_rightfinger": {
+        "samples": 25,
+        "reference_visible": 8,
+        "reference_occluded": 17,
+        "reference_unknown": 0,
+        "accepted_visible": 8,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.012599126542988733,
+        "accepted_error_median_m": 0.0017617094107578793,
+        "image_time_error_p95_m": 0.012599126542988733,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.11764705882352941,
+        "gate_pass": false
+      },
+      "mount0_pedestal": {
+        "samples": 10,
+        "reference_visible": 1,
+        "reference_occluded": 9,
+        "reference_unknown": 0,
+        "accepted_visible": 1,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.000990536019901728,
+        "accepted_error_median_m": 0.000990536019901728,
+        "image_time_error_p95_m": 0.000990536019901728,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.1111111111111111,
+        "gate_pass": false
+      },
+      "stand_root": {
+        "samples": 370,
+        "reference_visible": 339,
+        "reference_occluded": 31,
+        "reference_unknown": 0,
+        "accepted_visible": 339,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.0008598719984797489,
+        "accepted_error_median_m": 0.00024410027141065306,
+        "image_time_error_p95_m": 0.0008598719984797489,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.41935483870967744,
+        "gate_pass": false
+      },
+      "table": {
+        "samples": 97,
+        "reference_visible": 87,
+        "reference_occluded": 10,
+        "reference_unknown": 0,
+        "accepted_visible": 87,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.0006280664032803969,
+        "accepted_error_median_m": 0.00023557081348617675,
+        "image_time_error_p95_m": 0.0006280664032803969,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.5,
+        "gate_pass": false
+      },
+      "tool_grip_main": {
+        "samples": 45,
+        "reference_visible": 45,
+        "reference_occluded": 0,
+        "reference_unknown": 0,
+        "accepted_visible": 45,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.006402306681051112,
+        "accepted_error_median_m": 0.00040392973311568017,
+        "image_time_error_p95_m": 0.006402306681051112,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": null,
+        "gate_pass": false
+      },
+      "tool_hole1_root": {
+        "samples": 341,
+        "reference_visible": 317,
+        "reference_occluded": 24,
+        "reference_unknown": 0,
+        "accepted_visible": 317,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.0021486080200437845,
+        "accepted_error_median_m": 0.00018128570739593097,
+        "image_time_error_p95_m": 0.0021486080200437845,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 1.0,
+        "gate_pass": false
+      },
+      "tool_hole2_root": {
+        "samples": 137,
+        "reference_visible": 137,
+        "reference_occluded": 0,
+        "reference_unknown": 0,
+        "accepted_visible": 137,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.0013811860086358173,
+        "accepted_error_median_m": 0.00021001331281940829,
+        "image_time_error_p95_m": 0.0013811860086358173,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": null,
+        "gate_pass": false
+      },
+      "unknown": {
+        "samples": 509,
+        "reference_visible": 0,
+        "reference_occluded": 0,
+        "reference_unknown": 509,
+        "accepted_visible": 0,
+        "visible_coverage": null,
+        "accepted_error_p95_m": null,
+        "accepted_error_median_m": null,
+        "image_time_error_p95_m": null,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": null,
+        "gate_pass": false
+      },
+      "world": {
+        "samples": 15,
+        "reference_visible": 7,
+        "reference_occluded": 8,
+        "reference_unknown": 0,
+        "accepted_visible": 7,
+        "visible_coverage": 1.0,
+        "accepted_error_p95_m": 0.0633049264235908,
+        "accepted_error_median_m": 0.05216403726254866,
+        "image_time_error_p95_m": 0.0633049264235908,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.0,
+        "gate_pass": false
+      }
+    }
+  },
+  "initial_queries": [
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 81,
+      "v": 181,
+      "depth_m": 0.8686640858650208,
+      "world_xyz": [
+        -0.09528959673551951,
+        -0.26704361541716287,
+        0.8268372972598348
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 60,
+      "v": 183,
+      "depth_m": 0.8835526704788208,
+      "world_xyz": [
+        -0.0717369018291586,
+        -0.32579848115898025,
+        0.8139720032232602
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 97,
+      "v": 199,
+      "depth_m": 0.8063929080963135,
+      "world_xyz": [
+        -0.0622834230700946,
+        -0.18601751490096502,
+        0.8140326614754445
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 110,
+      "v": 214,
+      "depth_m": 0.7475230097770691,
+      "world_xyz": [
+        -0.02856240129170673,
+        -0.12090056731925675,
+        0.8127805455929256
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 185,
+      "v": 171,
+      "depth_m": 0.6529926061630249,
+      "world_xyz": [
+        -0.0741175891222543,
+        0.04400656096369199,
+        0.9552171159780609
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 183,
+      "v": 211,
+      "depth_m": 0.6858965158462524,
+      "world_xyz": [
+        -0.07412299247087961,
+        0.04592532125958748,
+        0.8562315340710631
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 71,
+      "v": 217,
+      "depth_m": 0.7109718322753906,
+      "world_xyz": [
+        0.04603766541502835,
+        -0.1775808664325395,
+        0.8283545839451492
+      ],
+      "reference_available": true,
+      "reference_body": "tool_grip_main",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 7,
+      "camera": "agentview",
+      "u": 91,
+      "v": 238,
+      "depth_m": 0.6830880045890808,
+      "world_xyz": [
+        0.05324007950491372,
+        -0.11488391278357052,
+        0.8018168025336098
+      ],
+      "reference_available": true,
+      "reference_body": "table",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 8,
+      "camera": "robot0_eye_in_hand",
+      "u": 182,
+      "v": 79,
+      "depth_m": 0.328285276889801,
+      "world_xyz": [
+        0.07188248685709112,
+        -0.10619907216764635,
+        0.8002182634994272
+      ],
+      "reference_available": true,
+      "reference_body": "table",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 9,
+      "camera": "robot0_eye_in_hand",
+      "u": 80,
+      "v": 166,
+      "depth_m": 0.17513033747673035,
+      "world_xyz": [
+        -0.08285413248321224,
+        0.05039830986846453,
+        0.9348245089501293
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 5,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 190,
+      "v": 137,
+      "depth_m": 0.6213155388832092,
+      "world_xyz": [
+        -0.07221143078559322,
+        0.05016207820227761,
+        1.0344312375749458
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 5,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 189,
+      "v": 146,
+      "depth_m": 0.6278107166290283,
+      "world_xyz": [
+        -0.07164312632629455,
+        0.049658197974211865,
+        1.0148500880547577
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 5,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 187,
+      "v": 168,
+      "depth_m": 0.6610386967658997,
+      "world_xyz": [
+        -0.0851198175572968,
+        0.04392654931104206,
+        0.957443527141468
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 5,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 185,
+      "v": 169,
+      "depth_m": 0.6515608429908752,
+      "world_xyz": [
+        -0.07411757582589984,
+        0.04369515552372516,
+        0.9598566672133362
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 5,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 157,
+      "v": 38,
+      "depth_m": 0.5117371678352356,
+      "world_xyz": [
+        0.007243855351974304,
+        0.009446921696561,
+        1.2289655237787718
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 5,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 170,
+      "v": 40,
+      "depth_m": 0.5281569957733154,
+      "world_xyz": [
+        -0.018827513902013926,
+        0.021172683301073497,
+        1.2246312477103702
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 149,
+      "v": 63,
+      "depth_m": 0.574489176273346,
+      "world_xyz": [
+        -0.029823329349542516,
+        -0.024308498001652523,
+        1.1810031202202786
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 147,
+      "v": 68,
+      "depth_m": 0.5792695879936218,
+      "world_xyz": [
+        -0.029391401353963065,
+        -0.028076369838254955,
+        1.171505544253347
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 153,
+      "v": 70,
+      "depth_m": 0.5561956167221069,
+      "world_xyz": [
+        -0.01363101899846858,
+        -0.007166863100347698,
+        1.1718047327140269
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 156,
+      "v": 85,
+      "depth_m": 0.5408244729042053,
+      "world_xyz": [
+        0.004946184469724613,
+        0.009166245032855458,
+        1.1496821598856302
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 156,
+      "v": 92,
+      "depth_m": 0.5447203516960144,
+      "world_xyz": [
+        0.005076212769901778,
+        0.009663744623696985,
+        1.1372640804940466
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 169,
+      "v": 89,
+      "depth_m": 0.5603927969932556,
+      "world_xyz": [
+        -0.02276610357856046,
+        0.021739488300612037,
+        1.1387317444849077
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 6,
+      "camera": "robot0_eye_in_hand",
+      "u": 111,
+      "v": 80,
+      "depth_m": 0.10144289582967758,
+      "world_xyz": [
+        -0.025316474239379994,
+        -0.0299747963647249,
+        1.1736422223605185
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 12,
+      "pixel_index": 7,
+      "camera": "robot0_eye_in_hand",
+      "u": 145,
+      "v": 80,
+      "depth_m": 0.10145313292741776,
+      "world_xyz": [
+        -0.015438721800072608,
+        -0.01180968128879431,
+        1.1737303255824323
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 14,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 156,
+      "v": 76,
+      "depth_m": 0.5480663180351257,
+      "world_xyz": [
+        -0.0060946823108435355,
+        0.0030409027261969757,
+        1.1631516970360487
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 14,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 156,
+      "v": 85,
+      "depth_m": 0.5377674102783203,
+      "world_xyz": [
+        0.007652542299925957,
+        0.010530734758785215,
+        1.1503280015352746
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 14,
+      "pixel_index": 0,
+      "camera": "robot0_eye_in_hand",
+      "u": 110,
+      "v": 80,
+      "depth_m": 0.10217893868684769,
+      "world_xyz": [
+        -0.01250772471191644,
+        -0.005930094333066148,
+        1.1530787094902413
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 14,
+      "pixel_index": 1,
+      "camera": "robot0_eye_in_hand",
+      "u": 142,
+      "v": 78,
+      "depth_m": 0.10115610063076019,
+      "world_xyz": [
+        -0.001255331582180122,
+        0.010021297967312583,
+        1.1543726633048585
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 14,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 148,
+      "v": 88,
+      "depth_m": 0.09168200194835663,
+      "world_xyz": [
+        0.0089250290926325,
+        0.0066037412942596616,
+        1.1472883155990081
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 14,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 150,
+      "v": 112,
+      "depth_m": 0.09394219517707825,
+      "world_xyz": [
+        0.009213087112880824,
+        0.008283401026211522,
+        1.134155246821615
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 0,
+      "camera": "robot0_eye_in_hand",
+      "u": 86,
+      "v": 70,
+      "depth_m": 0.08878512680530548,
+      "world_xyz": [
+        -0.010149569601121941,
+        -0.007627297621615424,
+        1.1417699445240705
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 1,
+      "camera": "robot0_eye_in_hand",
+      "u": 129,
+      "v": 70,
+      "depth_m": 0.09103736281394958,
+      "world_xyz": [
+        -0.00039153793227400535,
+        0.013207527841329225,
+        1.1426566498846107
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 106,
+      "v": 48,
+      "depth_m": 0.08820413053035736,
+      "world_xyz": [
+        -0.005181173148743709,
+        0.001703784436831876,
+        1.1533542347691632
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 109,
+      "v": 94,
+      "depth_m": 0.09181194752454758,
+      "world_xyz": [
+        -0.0055338016125444645,
+        0.003677420019905113,
+        1.1295476018154034
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 148,
+      "v": 60,
+      "depth_m": 0.07802529633045197,
+      "world_xyz": [
+        0.015221668273072045,
+        0.014111239947710769,
+        1.1441891039667844
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 5,
+      "camera": "robot0_eye_in_hand",
+      "u": 141,
+      "v": 93,
+      "depth_m": 0.07978054881095886,
+      "world_xyz": [
+        0.013470111085411088,
+        0.011753918814056914,
+        1.128979912403882
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 172,
+      "v": 149,
+      "depth_m": 0.5525663495063782,
+      "world_xyz": [
+        0.012583676010728073,
+        0.04892955840943222,
+        1.0396628944227928
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 174,
+      "v": 144,
+      "depth_m": 0.5555394291877747,
+      "world_xyz": [
+        0.005536181039968002,
+        0.0492647085763378,
+        1.046902843687064
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 181,
+      "v": 140,
+      "depth_m": 0.6028937697410583,
+      "world_xyz": [
+        -0.0447255944583026,
+        0.04227374289236879,
+        1.0357360339357524
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 189,
+      "v": 134,
+      "depth_m": 1.0346134901046753,
+      "world_xyz": [
+        -0.44316010944720785,
+        -0.08780060360521075,
+        0.8912022512051712
+      ],
+      "reference_available": true,
+      "reference_body": "mount0_pedestal",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 110,
+      "v": 77,
+      "depth_m": 0.09952189773321152,
+      "world_xyz": [
+        0.000443166189770583,
+        0.007551262937856434,
+        1.1778592619159107
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 5,
+      "camera": "robot0_eye_in_hand",
+      "u": 145,
+      "v": 77,
+      "depth_m": 0.10070866346359253,
+      "world_xyz": [
+        0.011275710594873686,
+        0.025573523514849268,
+        1.1785576461646061
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 21,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 181,
+      "v": 150,
+      "depth_m": 0.5494128465652466,
+      "world_xyz": [
+        0.007308782906799538,
+        0.0639723753046712,
+        1.0392721284215005
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 21,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 182,
+      "v": 143,
+      "depth_m": 0.6288886666297913,
+      "world_xyz": [
+        -0.0668184368949924,
+        0.036125600167598915,
+        1.0201595448896568
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 21,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 187,
+      "v": 138,
+      "depth_m": 0.6114656925201416,
+      "world_xyz": [
+        -0.0596783830000448,
+        0.048663452344696656,
+        1.0362102593497342
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 21,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 109,
+      "v": 87,
+      "depth_m": 0.1118578314781189,
+      "world_xyz": [
+        0.055461941770321765,
+        -0.08333929040608291,
+        1.2374885732699907
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 21,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 146,
+      "v": 87,
+      "depth_m": 0.11185494810342789,
+      "world_xyz": [
+        0.05556082300360413,
+        -0.10814914796773398,
+        1.2376129819511692
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 24,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 170,
+      "v": 149,
+      "depth_m": 0.554922878742218,
+      "world_xyz": [
+        0.012477598730269213,
+        0.04502390146836416,
+        1.0387064299594737
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 24,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 171,
+      "v": 154,
+      "depth_m": 0.556984007358551,
+      "world_xyz": [
+        0.012386078024925418,
+        0.047422419970804125,
+        1.0294012364065088
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 24,
+      "pixel_index": 0,
+      "camera": "robot0_eye_in_hand",
+      "u": 109,
+      "v": 85,
+      "depth_m": 0.11316007375717163,
+      "world_xyz": [
+        0.00025366166478463237,
+        0.07160429403968044,
+        1.0675674193589098
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 24,
+      "pixel_index": 1,
+      "camera": "robot0_eye_in_hand",
+      "u": 145,
+      "v": 85,
+      "depth_m": 0.11325100064277649,
+      "world_xyz": [
+        0.022581637165950456,
+        0.06168894768766549,
+        1.0675250392000795
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 24,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 94,
+      "v": 141,
+      "depth_m": 0.14655038714408875,
+      "world_xyz": [
+        -0.03170053786990306,
+        0.04142043511144374,
+        1.0341199249444464
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "query_decision": 24,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 43,
+      "v": 161,
+      "depth_m": 0.1462409496307373,
+      "world_xyz": [
+        -0.07961026595477101,
+        0.043584590521828594,
+        1.034330521204978
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 83,
+      "v": 182,
+      "depth_m": 0.8620676398277283,
+      "world_xyz": [
+        -0.09304013686999624,
+        -0.2578758708482017,
+        0.8275350931732801
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 51,
+      "v": 185,
+      "depth_m": 0.8709294199943542,
+      "world_xyz": [
+        -0.04872453814978284,
+        -0.3380534902792322,
+        0.8151038448944969
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 109,
+      "v": 212,
+      "depth_m": 0.7505362033843994,
+      "world_xyz": [
+        -0.030749269358209097,
+        -0.1253379864987525,
+        0.8155265643215912
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502541303634644,
+      "world_xyz": [
+        -0.0741138939020286,
+        0.04589452698218863,
+        0.9604665049937756
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 184,
+      "v": 210,
+      "depth_m": 0.6836652159690857,
+      "world_xyz": [
+        -0.07412231582260764,
+        0.0480662347722321,
+        0.8596367969771638
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 73,
+      "v": 215,
+      "depth_m": 0.7124429941177368,
+      "world_xyz": [
+        0.04135111492954635,
+        -0.17539214802018976,
+        0.8317861780009714
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 62,
+      "v": 198,
+      "depth_m": 0.7991055846214294,
+      "world_xyz": [
+        -0.010137328931401957,
+        -0.259295962521653,
+        0.8205284415107286
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 7,
+      "camera": "agentview",
+      "u": 91,
+      "v": 238,
+      "depth_m": 0.6830880045890808,
+      "world_xyz": [
+        0.05324007950491372,
+        -0.11488391278357052,
+        0.8018168025336098
+      ],
+      "reference_available": true,
+      "reference_body": "table",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 7,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 104,
+      "v": 104,
+      "depth_m": 0.6584272384643555,
+      "world_xyz": [
+        -0.02870996749591198,
+        -0.12994792834012822,
+        1.0867953342355032
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 7,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 36,
+      "v": 92,
+      "depth_m": 0.7712843418121338,
+      "world_xyz": [
+        -0.03529222797534182,
+        -0.3445288719332212,
+        1.0845770779555097
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 7,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 74,
+      "v": 93,
+      "depth_m": 0.7603756189346313,
+      "world_xyz": [
+        -0.07678682842945833,
+        -0.25637109299235106,
+        1.0848016411989156
+      ],
+      "reference_available": true,
+      "reference_body": "gripper0_leftfinger",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 7,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502541303634644,
+      "world_xyz": [
+        -0.0741138939020286,
+        0.04589452698218863,
+        0.9604665049937756
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 9,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 189,
+      "v": 155,
+      "depth_m": 0.6418368220329285,
+      "world_xyz": [
+        -0.07862889557167702,
+        0.048557829995451385,
+        0.9917193695125579
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 9,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 189,
+      "v": 143,
+      "depth_m": 0.6318039298057556,
+      "world_xyz": [
+        -0.07695464118634665,
+        0.047268690440057576,
+        1.0190294870896035
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 9,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502541303634644,
+      "world_xyz": [
+        -0.0741138939020286,
+        0.04589452698218863,
+        0.9604665049937756
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 9,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 186,
+      "v": 174,
+      "depth_m": 0.6538320779800415,
+      "world_xyz": [
+        -0.07411487278426987,
+        0.04668578504200924,
+        0.9488555447352327
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 9,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 154,
+      "v": 54,
+      "depth_m": 0.527437150478363,
+      "world_xyz": [
+        0.003259810729962953,
+        0.0026568726808870458,
+        1.2022305599127172
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 9,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 175,
+      "v": 56,
+      "depth_m": 0.5529851913452148,
+      "world_xyz": [
+        -0.03888896251993945,
+        0.023166628619232493,
+        1.1958784346058808
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 17,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 139,
+      "v": 89,
+      "depth_m": 0.5557492971420288,
+      "world_xyz": [
+        0.010021437297212776,
+        -0.022119116466974204,
+        1.1397692365344292
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 17,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 139,
+      "v": 95,
+      "depth_m": 0.5595736503601074,
+      "world_xyz": [
+        0.009912999956836754,
+        -0.02202635351561197,
+        1.128705179544298
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 17,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 155,
+      "v": 93,
+      "depth_m": 0.5693605542182922,
+      "world_xyz": [
+        -0.015064611163670472,
+        -0.0024615769358141137,
+        1.129802681719783
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 17,
+      "pixel_index": 0,
+      "camera": "robot0_eye_in_hand",
+      "u": 105,
+      "v": 52,
+      "depth_m": 0.09398023784160614,
+      "world_xyz": [
+        0.059323127359571425,
+        -0.09833123459387519,
+        1.1620585225737172
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 17,
+      "pixel_index": 1,
+      "camera": "robot0_eye_in_hand",
+      "u": 150,
+      "v": 52,
+      "depth_m": 0.09399562329053879,
+      "world_xyz": [
+        0.08231108543420207,
+        -0.1090267572949557,
+        1.1619671126127171
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 17,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 128,
+      "v": 28,
+      "depth_m": 0.09402073919773102,
+      "world_xyz": [
+        0.07678746979696016,
+        -0.09152083280392675,
+        1.1619762584538245
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "query_decision": 17,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 128,
+      "v": 77,
+      "depth_m": 0.09395404160022736,
+      "world_xyz": [
+        0.0651217517845801,
+        -0.11657644941676251,
+        1.162048892915198
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 82,
+      "v": 180,
+      "depth_m": 0.8724576234817505,
+      "world_xyz": [
+        -0.10013324599223017,
+        -0.26742143127281426,
+        0.8275814813093945
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 55,
+      "v": 184,
+      "depth_m": 0.8763880133628845,
+      "world_xyz": [
+        -0.058895763567672677,
+        -0.3326362925137987,
+        0.814955748118116
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 102,
+      "v": 203,
+      "depth_m": 0.7817133665084839,
+      "world_xyz": [
+        -0.04934049973997512,
+        -0.16009589445559086,
+        0.818293539672855
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 185,
+      "v": 176,
+      "depth_m": 0.656600832939148,
+      "world_xyz": [
+        -0.07411858900084711,
+        0.04479073874729933,
+        0.9435279827869187
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 181,
+      "v": 215,
+      "depth_m": 0.6920081377029419,
+      "world_xyz": [
+        -0.07412218990504738,
+        0.04192725380075604,
+        0.8441814312059054
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 72,
+      "v": 215,
+      "depth_m": 0.7124429941177368,
+      "world_xyz": [
+        0.04257284169776432,
+        -0.17734732007508003,
+        0.8317861786324525
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 90,
+      "v": 237,
+      "depth_m": 0.6861582398414612,
+      "world_xyz": [
+        0.051837808131327545,
+        -0.1188119192961321,
+        0.8018262637719924
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 6,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 77,
+      "v": 128,
+      "depth_m": 0.8310759663581848,
+      "world_xyz": [
+        -0.1058773288821388,
+        -0.279603353783216,
+        0.979693146585995
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 6,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 76,
+      "v": 115,
+      "depth_m": 0.8172818422317505,
+      "world_xyz": [
+        -0.10466206635748904,
+        -0.2792781374368688,
+        1.0167194086303613
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 6,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502541303634644,
+      "world_xyz": [
+        -0.0741138939020286,
+        0.04589452698218863,
+        0.9604665049937756
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 6,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 73,
+      "v": 59,
+      "depth_m": 0.7584187984466553,
+      "world_xyz": [
+        -0.09824709731261416,
+        -0.27227174074325045,
+        1.1636756624828386
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 6,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 40,
+      "v": 57,
+      "depth_m": 0.7233078479766846,
+      "world_xyz": [
+        -0.0317306091133287,
+        -0.31442045629292886,
+        1.1727163113495371
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 170,
+      "v": 148,
+      "depth_m": 0.5541679263114929,
+      "world_xyz": [
+        0.0125985675696757,
+        0.04497849812578869,
+        1.040698010721337
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 180,
+      "v": 143,
+      "depth_m": 0.5892896056175232,
+      "world_xyz": [
+        -0.03013128301772855,
+        0.04639330155900631,
+        1.0355094714266877
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 185,
+      "v": 158,
+      "depth_m": 0.6345471739768982,
+      "world_xyz": [
+        -0.06610256939986514,
+        0.045002942171845084,
+        0.9890223310484986
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 73,
+      "v": 215,
+      "depth_m": 0.7124429941177368,
+      "world_xyz": [
+        0.04135111492954635,
+        -0.17539214802018976,
+        0.8317861780009714
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 61,
+      "v": 198,
+      "depth_m": 0.7990984320640564,
+      "world_xyz": [
+        -0.008762581389376245,
+        -0.26148438133751156,
+        0.8205324110457811
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 88,
+      "v": 236,
+      "depth_m": 0.6677138805389404,
+      "world_xyz": [
+        0.0651105932855483,
+        -0.11293949182007201,
+        0.8162785544868558
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 94,
+      "v": 238,
+      "depth_m": 0.6830853819847107,
+      "world_xyz": [
+        0.049727582935596426,
+        -0.10925869367281243,
+        0.8018185749554195
+      ],
+      "reference_available": true,
+      "reference_body": "table",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 80,
+      "v": 181,
+      "depth_m": 0.867220938205719,
+      "world_xyz": [
+        -0.09284050518301024,
+        -0.2685636349146766,
+        0.8275634713905026
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 58,
+      "v": 181,
+      "depth_m": 0.8851739764213562,
+      "world_xyz": [
+        -0.07138197747500452,
+        -0.3327528154094903,
+        0.818529750480377
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 94,
+      "v": 204,
+      "depth_m": 0.8057431578636169,
+      "world_xyz": [
+        -0.05391690243296099,
+        -0.18993651644590975,
+        0.8021443086518332
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 185,
+      "v": 170,
+      "depth_m": 0.6522771716117859,
+      "world_xyz": [
+        -0.0741186367273301,
+        0.04385029670615945,
+        0.957538858521001
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 182,
+      "v": 218,
+      "depth_m": 0.6929590702056885,
+      "world_xyz": [
+        -0.07412581917189554,
+        0.0447615448146676,
+        0.8372829877495918
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 54,
+      "v": 217,
+      "depth_m": 0.7053988575935364,
+      "world_xyz": [
+        0.07003251316722287,
+        -0.20713417905044829,
+        0.8317689279032077
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 1,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 80,
+      "v": 235,
+      "depth_m": 0.6726441979408264,
+      "world_xyz": [
+        0.07061604931339671,
+        -0.1307856356006653,
+        0.8150185318695777
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 6,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 77,
+      "v": 97,
+      "depth_m": 0.7774761915206909,
+      "world_xyz": [
+        -0.09047333960511966,
+        -0.25954682135112067,
+        1.0713160633358372
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 6,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 47,
+      "v": 95,
+      "depth_m": 0.8376304507255554,
+      "world_xyz": [
+        -0.09338026527219873,
+        -0.3689585865040058,
+        1.0615069816990368
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 6,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 65,
+      "v": 119,
+      "depth_m": 0.6420405507087708,
+      "world_xyz": [
+        0.03602171504612667,
+        -0.18354623908653453,
+        1.0619184313505245
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 6,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 12,
+      "v": 30,
+      "depth_m": 0.10586239397525787,
+      "world_xyz": [
+        0.019221908955284025,
+        -0.1950205182536549,
+        1.061197940064811
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 6,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 60,
+      "v": 110,
+      "depth_m": 0.1049928367137909,
+      "world_xyz": [
+        -0.031609859191139,
+        -0.22588925136094593,
+        1.0620418920362367
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 6,
+      "pixel_index": 5,
+      "camera": "robot0_eye_in_hand",
+      "u": 131,
+      "v": 189,
+      "depth_m": 0.10605262219905853,
+      "world_xyz": [
+        -0.08167387557309332,
+        -0.2706474701658512,
+        1.0609537406569696
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 8,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 49,
+      "v": 89,
+      "depth_m": 0.7700997591018677,
+      "world_xyz": [
+        -0.05383135282845264,
+        -0.31749570741026856,
+        1.0918778985659325
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 8,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 54,
+      "v": 78,
+      "depth_m": 0.7637261152267456,
+      "world_xyz": [
+        -0.06381593459785351,
+        -0.3072419897863923,
+        1.1188483754222986
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 8,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502541303634644,
+      "world_xyz": [
+        -0.0741138939020286,
+        0.04589452698218863,
+        0.9604665049937756
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 8,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 107,
+      "v": 5,
+      "depth_m": 0.09105249494314194,
+      "world_xyz": [
+        -0.058636202979832304,
+        -0.3116082205538253,
+        1.1055772007088698
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 8,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 111,
+      "v": 34,
+      "depth_m": 0.0924973413348198,
+      "world_xyz": [
+        -0.06338625874747678,
+        -0.30691758685824555,
+        1.1192564029242633
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 8,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 120,
+      "v": 138,
+      "depth_m": 0.10019299387931824,
+      "world_xyz": [
+        -0.08503519459508634,
+        -0.2876360516194246,
+        1.1704337248671515
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 10,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 179,
+      "v": 158,
+      "depth_m": 2.8898026943206787,
+      "world_xyz": [
+        -1.9905302792452604,
+        -0.7331469365762666,
+        0.011939960165719521
+      ],
+      "reference_available": true,
+      "reference_body": "world",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 10,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 182,
+      "v": 143,
+      "depth_m": 0.6241170167922974,
+      "world_xyz": [
+        -0.06264120697075226,
+        0.037752590682920834,
+        1.0220091965634324
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 10,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502541303634644,
+      "world_xyz": [
+        -0.0741138939020286,
+        0.04589452698218863,
+        0.9604665049937756
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 10,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 127,
+      "v": 12,
+      "depth_m": 0.087156742811203,
+      "world_xyz": [
+        -0.06361592379168546,
+        0.04090017269482462,
+        1.0291431418360177
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 10,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 126,
+      "v": 125,
+      "depth_m": 0.09706750512123108,
+      "world_xyz": [
+        -0.06896677574499249,
+        0.0443916519107511,
+        1.0884944433354982
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 15,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 135,
+      "v": 199,
+      "depth_m": 0.7471998333930969,
+      "world_xyz": [
+        -0.07089413349093676,
+        -0.07604967554945069,
+        0.8470578209948505
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 15,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 123,
+      "v": 141,
+      "depth_m": 0.7120582461357117,
+      "world_xyz": [
+        -0.06892105481711902,
+        -0.10836086303692338,
+        0.992250836864186
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 15,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 147,
+      "v": 201,
+      "depth_m": 0.8187102675437927,
+      "world_xyz": [
+        -0.13928455180528276,
+        -0.07938550653243365,
+        0.8021812763654164
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 15,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 207,
+      "v": 157,
+      "depth_m": 0.6975647211074829,
+      "world_xyz": [
+        -0.14767820175852842,
+        0.06629544230065962,
+        0.9638413774767302
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 15,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 82,
+      "v": 236,
+      "depth_m": 0.689258873462677,
+      "world_xyz": [
+        0.05869498080392477,
+        -0.13601767559826056,
+        0.8018340216058846
+      ],
+      "reference_available": true,
+      "reference_body": "table",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 15,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 54,
+      "v": 219,
+      "depth_m": 0.7038675546646118,
+      "world_xyz": [
+        0.07225189523067477,
+        -0.2053149556968461,
+        0.8284263324102307
+      ],
+      "reference_available": true,
+      "reference_body": "tool_grip_main",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 20,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 141,
+      "v": 203,
+      "depth_m": 0.7357053160667419,
+      "world_xyz": [
+        -0.06716966999038654,
+        -0.05718526008263747,
+        0.8445220902651882
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 20,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 159,
+      "v": 178,
+      "depth_m": 0.6716695427894592,
+      "world_xyz": [
+        -0.05571306781764196,
+        -0.0070688411645318805,
+        0.9320897857311605
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 20,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 171,
+      "v": 164,
+      "depth_m": 0.6321157813072205,
+      "world_xyz": [
+        -0.045260215234853574,
+        0.023728821132807526,
+        0.9785425797808509
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "query_decision": 20,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 207,
+      "v": 159,
+      "depth_m": 0.7137599587440491,
+      "world_xyz": [
+        -0.16099754799980093,
+        0.0628547073166818,
+        0.9525331636804246
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 80,
+      "v": 183,
+      "depth_m": 0.8569586873054504,
+      "world_xyz": [
+        -0.08440898650493767,
+        -0.2614153856723399,
+        0.8275154767607336
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 49,
+      "v": 184,
+      "depth_m": 0.874317467212677,
+      "world_xyz": [
+        -0.0486178719067486,
+        -0.3456548884593506,
+        0.8160165138272828
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 99,
+      "v": 207,
+      "depth_m": 0.7654832005500793,
+      "world_xyz": [
+        -0.031460763604027164,
+        -0.15607611843682812,
+        0.818235154144255
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 185,
+      "v": 173,
+      "depth_m": 0.654430627822876,
+      "world_xyz": [
+        -0.07411756174423922,
+        0.044319353063837275,
+        0.9505571524877591
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 182,
+      "v": 204,
+      "depth_m": 0.6818216443061829,
+      "world_xyz": [
+        -0.07411938849421007,
+        0.04247062902622836,
+        0.8731670881376554
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 55,
+      "v": 217,
+      "depth_m": 0.7053988575935364,
+      "world_xyz": [
+        0.06882286597620857,
+        -0.20519833836522078,
+        0.8317689272779701
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 81,
+      "v": 237,
+      "depth_m": 0.6861582398414612,
+      "world_xyz": [
+        0.062427681373005584,
+        -0.1357592636333287,
+        0.801826269245643
+      ],
+      "reference_available": true,
+      "reference_body": "table",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 1,
+      "pixel_index": 7,
+      "camera": "agentview",
+      "u": 36,
+      "v": 204,
+      "depth_m": 0.7737754583358765,
+      "world_xyz": [
+        0.044374362073787366,
+        -0.29562229203705687,
+        0.8204659175365148
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 5,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 77,
+      "v": 95,
+      "depth_m": 0.7548136115074158,
+      "world_xyz": [
+        -0.07515296955009465,
+        -0.24556323786508838,
+        1.0815213835674808
+      ],
+      "reference_available": true,
+      "reference_body": "gripper0_rightfinger",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 5,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 52,
+      "v": 91,
+      "depth_m": 0.8393723368644714,
+      "world_xyz": [
+        -0.1049287217373776,
+        -0.36069856181732096,
+        1.0712957572664716
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 5,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 57,
+      "v": 112,
+      "depth_m": 0.6334249377250671,
+      "world_xyz": [
+        0.046557526327568044,
+        -0.19422808632891733,
+        1.0781125688490043
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 5,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 65,
+      "v": 105,
+      "depth_m": 0.6774698495864868,
+      "world_xyz": [
+        0.0024139072259179994,
+        -0.21306391863342022,
+        1.079612044984871
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 5,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 185,
+      "v": 169,
+      "depth_m": 0.6515608429908752,
+      "world_xyz": [
+        -0.07411757582589984,
+        0.04369515552372516,
+        0.9598566672133362
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 7,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 175,
+      "v": 141,
+      "depth_m": 0.6249738335609436,
+      "world_xyz": [
+        -0.0570623880427612,
+        0.024721434776630635,
+        1.0254780179193852
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 7,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 177,
+      "v": 132,
+      "depth_m": 0.6201984882354736,
+      "world_xyz": [
+        -0.06029650632910627,
+        0.026577297348493623,
+        1.0442736347737878
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 7,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 185,
+      "v": 169,
+      "depth_m": 0.6515608429908752,
+      "world_xyz": [
+        -0.07411757582589984,
+        0.04369515552372516,
+        0.9598566672133362
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 7,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 183,
+      "v": 182,
+      "depth_m": 0.6636807918548584,
+      "world_xyz": [
+        -0.07411984730300047,
+        0.04126482966461262,
+        0.9279640197152264
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 7,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 155,
+      "v": 28,
+      "depth_m": 0.5711454153060913,
+      "world_xyz": [
+        -0.051473768050932844,
+        -0.02502860914385019,
+        1.2422734158033588
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 0,
+      "camera": "robot0_eye_in_hand",
+      "u": 63,
+      "v": 14,
+      "depth_m": 0.10154411196708679,
+      "world_xyz": [
+        -0.0850888426191503,
+        0.04350668069119089,
+        0.955470464456895
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 1,
+      "camera": "robot0_eye_in_hand",
+      "u": 84,
+      "v": 13,
+      "depth_m": 0.08933014422655106,
+      "world_xyz": [
+        -0.06710610178422377,
+        0.038072463952570204,
+        0.9661218246904902
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 86,
+      "v": 23,
+      "depth_m": 0.08937140554189682,
+      "world_xyz": [
+        -0.06682003773436408,
+        0.03885280858269732,
+        0.9714917043859184
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 10,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 94,
+      "v": 62,
+      "depth_m": 0.09182099252939224,
+      "world_xyz": [
+        -0.0678664112870279,
+        0.040890968066682666,
+        0.9917922629520304
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 12,
+      "pixel_index": 0,
+      "camera": "robot0_eye_in_hand",
+      "u": 81,
+      "v": 7,
+      "depth_m": 0.0900145173072815,
+      "world_xyz": [
+        -0.08507330653979757,
+        0.044282547379373316,
+        0.9562594124927954
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 12,
+      "pixel_index": 1,
+      "camera": "robot0_eye_in_hand",
+      "u": 101,
+      "v": 7,
+      "depth_m": 0.08705554902553558,
+      "world_xyz": [
+        -0.07732007611253545,
+        0.036876851546806345,
+        0.9613037619284025
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 12,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 108,
+      "v": 71,
+      "depth_m": 0.09097045660018921,
+      "world_xyz": [
+        -0.08070321918592263,
+        0.042421885550448485,
+        0.9931041000580939
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 77,
+      "v": 117,
+      "depth_m": 0.5859492421150208,
+      "world_xyz": [
+        0.06197745950265138,
+        -0.1270120498362779,
+        1.0831312887290487
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 85,
+      "v": 119,
+      "depth_m": 0.5679181814193726,
+      "world_xyz": [
+        0.06823071302711142,
+        -0.10225874235555621,
+        1.0852411881252189
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 157,
+      "v": 130,
+      "depth_m": 0.6587074398994446,
+      "world_xyz": [
+        -0.07272065174763559,
+        -0.024256723654617507,
+        1.0346405073123455
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 7,
+      "camera": "agentview",
+      "u": 158,
+      "v": 135,
+      "depth_m": 0.6615718007087708,
+      "world_xyz": [
+        -0.07317003171053638,
+        -0.021696086413660554,
+        1.023584594611214
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 8,
+      "camera": "agentview",
+      "u": 185,
+      "v": 137,
+      "depth_m": 0.6514344811439514,
+      "world_xyz": [
+        -0.09357563838924698,
+        0.03150894802533025,
+        1.0233056566845424
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 132,
+      "v": 33,
+      "depth_m": 0.10106506943702698,
+      "world_xyz": [
+        0.06723608179449875,
+        -0.1050573187128692,
+        1.0849429673331978
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 132,
+      "v": 77,
+      "depth_m": 0.10079973936080933,
+      "world_xyz": [
+        0.06721407004488215,
+        -0.1317961594336447,
+        1.0852150611201048
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 112,
+      "v": 55,
+      "depth_m": 0.10092873871326447,
+      "world_xyz": [
+        0.055124153643810965,
+        -0.11843863099262393,
+        1.0850950147267364
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 18,
+      "pixel_index": 5,
+      "camera": "robot0_eye_in_hand",
+      "u": 154,
+      "v": 55,
+      "depth_m": 0.10093623399734497,
+      "world_xyz": [
+        0.08053705235145912,
+        -0.118450489696708,
+        1.085061624637833
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 23,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 76,
+      "v": 144,
+      "depth_m": 0.7041905522346497,
+      "world_xyz": [
+        -0.004075794524835585,
+        -0.19398470505141896,
+        0.9888287088832621
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 23,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 86,
+      "v": 179,
+      "depth_m": 0.7065384387969971,
+      "world_xyz": [
+        0.005392607208003608,
+        -0.16157349303616841,
+        0.9127138426637365
+      ],
+      "reference_available": true,
+      "reference_body": "tool_grip_main",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 23,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 99,
+      "v": 211,
+      "depth_m": 0.7388507127761841,
+      "world_xyz": [
+        -0.01076248827926729,
+        -0.14019524292553748,
+        0.8247548823422104
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole2_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 23,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 133,
+      "v": 141,
+      "depth_m": 0.054208409041166306,
+      "world_xyz": [
+        0.006597682850942279,
+        -0.20215569634196776,
+        1.002959661547078
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 23,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 100,
+      "v": 174,
+      "depth_m": 0.05828355625271797,
+      "world_xyz": [
+        -0.005577929142540943,
+        -0.20246080454225385,
+        0.9911794243927281
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "query_decision": 23,
+      "pixel_index": 5,
+      "camera": "robot0_eye_in_hand",
+      "u": 164,
+      "v": 173,
+      "depth_m": 0.059989575296640396,
+      "world_xyz": [
+        0.014900405886595355,
+        -0.1924520513488357,
+        0.991063943352377
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole1_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 80,
+      "v": 184,
+      "depth_m": 0.8530080914497375,
+      "world_xyz": [
+        -0.08098922133124087,
+        -0.25855488146348127,
+        0.826933492056756
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 58,
+      "v": 183,
+      "depth_m": 0.8863728642463684,
+      "world_xyz": [
+        -0.07046989958784389,
+        -0.33250312417591776,
+        0.8125357677985645
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 94,
+      "v": 201,
+      "depth_m": 0.7904998064041138,
+      "world_xyz": [
+        -0.045971465066820594,
+        -0.18299398513242526,
+        0.8180921527304369
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 185,
+      "v": 183,
+      "depth_m": 0.6617169380187988,
+      "world_xyz": [
+        -0.07411754081924982,
+        0.04590416536752612,
+        0.926945970790629
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 185,
+      "v": 169,
+      "depth_m": 0.6515608429908752,
+      "world_xyz": [
+        -0.07411757582589984,
+        0.04369515552372516,
+        0.9598566672133362
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 81,
+      "v": 237,
+      "depth_m": 0.6861582398414612,
+      "world_xyz": [
+        0.062427681373005584,
+        -0.1357592636333287,
+        0.801826269245643
+      ],
+      "reference_available": true,
+      "reference_body": "table",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 38,
+      "v": 204,
+      "depth_m": 0.7737821936607361,
+      "world_xyz": [
+        0.04171671018753781,
+        -0.2913800332804833,
+        0.8204620559649691
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 1,
+      "pixel_index": 7,
+      "camera": "agentview",
+      "u": 58,
+      "v": 219,
+      "depth_m": 0.6984926462173462,
+      "world_xyz": [
+        0.07060280938881613,
+        -0.194166245329648,
+        0.8317520050805122
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 4,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 50,
+      "v": 94,
+      "depth_m": 0.8263267278671265,
+      "world_xyz": [
+        -0.09061892405636585,
+        -0.3542798174666206,
+        1.0667515260526204
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 4,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 76,
+      "v": 105,
+      "depth_m": 0.6728577613830566,
+      "world_xyz": [
+        -0.007001687628272024,
+        -0.18959575552159064,
+        1.0808668944560524
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 4,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 82,
+      "v": 96,
+      "depth_m": 0.7644115686416626,
+      "world_xyz": [
+        -0.08809624283256196,
+        -0.24093446095715515,
+        1.0768773442939028
+      ],
+      "reference_available": true,
+      "reference_body": "gripper0_rightfinger",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 4,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 185,
+      "v": 169,
+      "depth_m": 0.6515608429908752,
+      "world_xyz": [
+        -0.07411757582589984,
+        0.04369515552372516,
+        0.9598566672133362
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 4,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 45,
+      "v": 127,
+      "depth_m": 0.10074896365404129,
+      "world_xyz": [
+        -0.030279975597187758,
+        -0.2086401868005795,
+        1.0762574391980009
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 4,
+      "pixel_index": 4,
+      "camera": "robot0_eye_in_hand",
+      "u": 95,
+      "v": 191,
+      "depth_m": 0.10561566799879074,
+      "world_xyz": [
+        -0.0707572138912393,
+        -0.23789395081399503,
+        1.0713805438192572
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 6,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 66,
+      "v": 102,
+      "depth_m": 0.7494081258773804,
+      "world_xyz": [
+        -0.05209051978554413,
+        -0.2615563721760985,
+        1.066875686710293
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 6,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 69,
+      "v": 85,
+      "depth_m": 0.7464165091514587,
+      "world_xyz": [
+        -0.06570165098210295,
+        -0.26080907684679633,
+        1.1062484000539297
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 6,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502541303634644,
+      "world_xyz": [
+        -0.0741138939020286,
+        0.04589452698218863,
+        0.9604665049937756
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 6,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 185,
+      "v": 173,
+      "depth_m": 0.654430627822876,
+      "world_xyz": [
+        -0.07411756174423922,
+        0.044319353063837275,
+        0.9505571524877591
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 8,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 143,
+      "v": 218,
+      "depth_m": 0.7013770341873169,
+      "world_xyz": [
+        -0.03399527319489015,
+        -0.03280577586585437,
+        0.8321000713497971
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 8,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 132,
+      "v": 220,
+      "depth_m": 0.6941968202590942,
+      "world_xyz": [
+        -0.014297207119122857,
+        -0.05004667335174273,
+        0.8322989889220711
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 8,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 100,
+      "v": 230,
+      "depth_m": 0.6885203719139099,
+      "world_xyz": [
+        0.03402019245175947,
+        -0.1040150527046369,
+        0.8148914005234453
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 8,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 148,
+      "v": 199,
+      "depth_m": 0.774256706237793,
+      "world_xyz": [
+        -0.10823801031195324,
+        -0.06025395826854091,
+        0.831962156354225
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 8,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 185,
+      "v": 169,
+      "depth_m": 0.6515560746192932,
+      "world_xyz": [
+        -0.07411349330196948,
+        0.04369666942452172,
+        0.9598588925962008
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 11,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 169,
+      "v": 124,
+      "depth_m": 0.6290931701660156,
+      "world_xyz": [
+        -0.06419216257051397,
+        0.006601819807271869,
+        1.0564272919554836
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 11,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 163,
+      "v": 104,
+      "depth_m": 0.610991358757019,
+      "world_xyz": [
+        -0.05360925038865039,
+        -0.003606062657100201,
+        1.0995574014362857
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 11,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 155,
+      "v": 82,
+      "depth_m": 0.5929367542266846,
+      "world_xyz": [
+        -0.041840623369782504,
+        -0.01676405551385385,
+        1.1440819666761632
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 11,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 186,
+      "v": 169,
+      "depth_m": 0.6502565145492554,
+      "world_xyz": [
+        -0.07411593925249438,
+        0.045893776574760736,
+        0.9604653923023413
+      ],
+      "reference_available": true,
+      "reference_body": "stand_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 0,
+      "camera": "agentview",
+      "u": 61,
+      "v": 203,
+      "depth_m": 0.7578279376029968,
+      "world_xyz": [
+        0.02022925924755381,
+        -0.2328169131674096,
+        0.8319103317118124
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 1,
+      "camera": "agentview",
+      "u": 69,
+      "v": 230,
+      "depth_m": 0.6825929284095764,
+      "world_xyz": [
+        0.07417840215416699,
+        -0.15903341963717982,
+        0.8187572421330958
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole2_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 2,
+      "camera": "agentview",
+      "u": 66,
+      "v": 225,
+      "depth_m": 0.6982542872428894,
+      "world_xyz": [
+        0.06509697016777738,
+        -0.17622741697212135,
+        0.8191596122264566
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole2_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 3,
+      "camera": "agentview",
+      "u": 56,
+      "v": 186,
+      "depth_m": 0.8903809189796448,
+      "world_xyz": [
+        -0.06741500798051048,
+        -0.33845997528943184,
+        0.8023719509875871
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 182,
+      "v": 75,
+      "depth_m": 0.708357572555542,
+      "world_xyz": [
+        -0.18159908101483596,
+        -0.019222117506304676,
+        1.1358290858777165
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 189,
+      "v": 80,
+      "depth_m": 0.6450067758560181,
+      "world_xyz": [
+        -0.12681221763776018,
+        0.019187468361455295,
+        1.1374793233309364
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 16,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 194,
+      "v": 95,
+      "depth_m": 0.6230902075767517,
+      "world_xyz": [
+        -0.10263668831434924,
+        0.041080686760398166,
+        1.113355039007232
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 4,
+      "camera": "agentview",
+      "u": 182,
+      "v": 74,
+      "depth_m": 0.712776780128479,
+      "world_xyz": [
+        -0.18641885470707686,
+        -0.021323236014711394,
+        1.1371973304778324
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 5,
+      "camera": "agentview",
+      "u": 182,
+      "v": 78,
+      "depth_m": 0.7070576548576355,
+      "world_xyz": [
+        -0.17838716819588873,
+        -0.017482951442998163,
+        1.1296139350344705
+      ],
+      "reference_available": false,
+      "reference_body": null,
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 6,
+      "camera": "agentview",
+      "u": 185,
+      "v": 80,
+      "depth_m": 0.6830775141716003,
+      "world_xyz": [
+        -0.1581631029416769,
+        -0.001967224819263813,
+        1.1300152621642638
+      ],
+      "reference_available": true,
+      "reference_body": "frame_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 0,
+      "camera": "robot0_eye_in_hand",
+      "u": 108,
+      "v": 98,
+      "depth_m": 0.09684833139181137,
+      "world_xyz": [
+        0.055710092185597956,
+        -0.1609692827307352,
+        0.9940604657615341
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole2_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 1,
+      "camera": "robot0_eye_in_hand",
+      "u": 147,
+      "v": 98,
+      "depth_m": 0.09684859961271286,
+      "world_xyz": [
+        0.0740301397796769,
+        -0.174275750651097,
+        0.9939915483407225
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole2_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 2,
+      "camera": "robot0_eye_in_hand",
+      "u": 127,
+      "v": 78,
+      "depth_m": 0.09666599333286285,
+      "world_xyz": [
+        0.07142830164657334,
+        -0.15810220960563046,
+        0.9942095951755735
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole2_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "query_decision": 18,
+      "pixel_index": 3,
+      "camera": "robot0_eye_in_hand",
+      "u": 127,
+      "v": 116,
+      "depth_m": 0.09701317548751831,
+      "world_xyz": [
+        0.058499499587053125,
+        -0.17589688053504884,
+        0.993861964255908
+      ],
+      "reference_available": true,
+      "reference_body": "tool_hole2_root",
+      "semantic_correctness": "Not inferred from surface correspondence"
+    }
+  ],
+  "availability": {
+    "motion_query_frames": 22739,
+    "fresh_query_frames": 2757,
+    "fresh_fraction": 0.12124543735432516,
+    "bootstrap_acquisition_seconds": 0.75,
+    "no_fabricated_between_update_points": true
+  },
+  "loading_seconds": 0.5848803329863586,
+  "tracking_seconds": 703.0738476830884,
+  "bootstrap_call_p95_seconds": 1.8093945996137335,
+  "steady_call_p95_seconds": 1.1991781872493448,
+  "total_wall_seconds": 1018.231037791993,
+  "local_tracker_forward_calls": 644,
+  "actual_astra_requests": 0,
+  "expected_endpoint_samples": 2757,
+  "expected_availability_samples": 22739,
+  "all_actions_replayed_exactly": true,
+  "all_query_sensors_bit_exact": true
+}

@@ -1,0 +1,12 @@
+{
+  "all_pass": true,
+  "steps": 165,
+  "max_state_absolute_error": 0.0,
+  "max_public_sensor_absolute_error": 0.0,
+  "native_outcome_matches": true,
+  "actual_astra_requests": 0,
+  "initialization": "Original seeded initialization; no forced observable updates.",
+  "command": ".venv/bin/python studies/robot_feedback_modalities/replay.py --run /Users/veerdosi/Documents/code/github/fyp/studies/robot_feedback_modalities/negative_shadow",
+  "replay_source_sha256": "6a436e82d3413ef22f5fb97f751b0547c13e88d61219701dc4fc3ed6f85df439",
+  "metadata_correction": "Replaces the unsupported --replay-only command printed by the frozen calibration driver; source, actions, measurements and outcomes are unchanged."
+}

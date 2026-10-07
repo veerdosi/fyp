@@ -1,0 +1,125 @@
+{
+  "scope": "Post-result private diagnosis; no estimator or cohort change.",
+  "cases": [
+    {
+      "label": "wrist_frame_drift",
+      "row": {
+        "episode": "th_v1_s01_direct_waypoints",
+        "paired_state": 1,
+        "condition": "direct_waypoints",
+        "camera": "robot0_eye_in_hand",
+        "motion_type": "translation",
+        "query_decision": 24,
+        "pixel_index": 2,
+        "step": 1845,
+        "relative_frame": 15,
+        "reference_visible": true,
+        "world_error_m": 0.24250285001274832,
+        "image_time_error_m": 0.24250285001274832,
+        "reference_body": "frame_root",
+        "camera_age_seconds": 0.0,
+        "pixel": [
+          81.22978973388672,
+          122.21959686279297
+        ],
+        "model_visible": true,
+        "accepted": true,
+        "world_xyz": [
+          -0.08588408517080373,
+          0.07360564448770124,
+          0.8000020257132701
+        ],
+        "loss_reason": null
+      },
+      "private_reference_pixel": [
+        78.46366438420146,
+        121.57955529817015
+      ],
+      "tracked_pixel_metric_depth": 0.3623098134994507,
+      "private_reference_optical_depth_m": 0.12838114230797837,
+      "reference_error_reproduced_exactly": true,
+      "chronological_action_states_exact": true,
+      "camera_age_seconds": 0.0
+    },
+    {
+      "label": "background_depth",
+      "row": {
+        "episode": "th_v1_s01_direct_waypoints",
+        "paired_state": 1,
+        "condition": "direct_waypoints",
+        "camera": "agentview",
+        "motion_type": "translation",
+        "query_decision": 24,
+        "pixel_index": 5,
+        "step": 1885,
+        "relative_frame": 55,
+        "reference_visible": true,
+        "world_error_m": 2.401061072961328,
+        "image_time_error_m": 2.401061072961328,
+        "reference_body": "frame_root",
+        "camera_age_seconds": 0.0,
+        "pixel": [
+          170.5925750732422,
+          154.5709991455078
+        ],
+        "model_visible": true,
+        "accepted": true,
+        "world_xyz": [
+          -1.989689253624247,
+          -0.8192682191278103,
+          0.02629990404585736
+        ],
+        "loss_reason": null
+      },
+      "private_reference_pixel": [
+        170.27223714215182,
+        154.39738562985906
+      ],
+      "tracked_pixel_metric_depth": 2.9271061420440674,
+      "private_reference_optical_depth_m": 0.557218409548959,
+      "reference_error_reproduced_exactly": true,
+      "chronological_action_states_exact": true,
+      "camera_age_seconds": 0.0
+    },
+    {
+      "label": "occluded_accepted",
+      "row": {
+        "episode": "th_v1_s02_direct_waypoints",
+        "paired_state": 2,
+        "condition": "direct_waypoints",
+        "camera": "agentview",
+        "motion_type": "rotation",
+        "query_decision": 4,
+        "pixel_index": 0,
+        "step": 378,
+        "relative_frame": 23,
+        "reference_visible": false,
+        "world_error_m": 2.1711482255179604,
+        "image_time_error_m": 2.1711482255179604,
+        "reference_body": "frame_root",
+        "camera_age_seconds": 0.0,
+        "pixel": [
+          48.37384033203125,
+          61.98949432373047
+        ],
+        "model_visible": true,
+        "accepted": true,
+        "world_xyz": [
+          -1.581297549259491,
+          -1.9084677228613365,
+          0.8600058437538423
+        ],
+        "loss_reason": null
+      },
+      "private_reference_pixel": [
+        48.262312719599656,
+        61.508928825516904
+      ],
+      "tracked_pixel_metric_depth": 2.858891725540161,
+      "private_reference_optical_depth_m": 0.7997018789827448,
+      "reference_error_reproduced_exactly": true,
+      "chronological_action_states_exact": true,
+      "camera_age_seconds": 0.0
+    }
+  ]
+}

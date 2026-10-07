@@ -1,0 +1,53 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Warning: make sure gym is installed if you want to use the GymWrapper.
+th_v1_s01_direct_waypoints completed stream 145 updates 30
+th_v1_s01_direct_waypoints completed stream 575 updates 39
+th_v1_s01_direct_waypoints completed stream 1210 updates 57
+th_v1_s01_direct_waypoints completed stream 1295 updates 77
+th_v1_s01_direct_waypoints completed stream 1385 updates 88
+th_v1_s01_direct_waypoints completed stream 1465 updates 108
+th_v1_s01_direct_waypoints completed stream 1690 updates 138
+th_v1_s01_direct_waypoints completed stream 1895 updates 154
+th_v1_s01_deadline_guard completed stream 80 updates 161
+th_v1_s01_deadline_guard completed stream 850 updates 184
+th_v1_s01_deadline_guard completed stream 960 updates 197
+th_v1_s01_deadline_guard completed stream 1815 updates 223
+th_v1_s01_phase_guard completed stream 90 updates 231
+th_v1_s01_phase_guard completed stream 395 updates 242
+th_v1_s01_phase_guard completed stream 670 updates 254
+th_v1_s02_deadline_guard completed stream 80 updates 261
+th_v1_s02_deadline_guard completed stream 585 updates 301
+th_v1_s02_deadline_guard completed stream 755 updates 343
+th_v1_s02_deadline_guard completed stream 880 updates 373
+th_v1_s02_deadline_guard completed stream 1440 updates 396
+th_v1_s02_deadline_guard completed stream 1910 updates 414
+th_v1_s02_phase_guard completed stream 80 updates 421
+th_v1_s02_phase_guard completed stream 314 updates 432
+th_v1_s02_phase_guard completed stream 348 updates 436
+th_v1_s02_phase_guard completed stream 430 updates 443
+th_v1_s02_phase_guard completed stream 465 updates 447
+th_v1_s02_phase_guard completed stream 922 updates 469
+th_v1_s02_phase_guard completed stream 1189 updates 483
+th_v1_s02_direct_waypoints completed stream 165 updates 501
+th_v1_s02_direct_waypoints completed stream 470 updates 529
+th_v1_s02_direct_waypoints completed stream 610 updates 546
+th_v1_s02_direct_waypoints completed stream 810 updates 571
+th_v1_s02_direct_waypoints completed stream 1020 updates 579
+th_v1_s02_direct_waypoints completed stream 1525 updates 604
+th_v1_s02_direct_waypoints completed stream 1685 updates 644
+{
+  "samples": 2757,
+  "reference_visible": 1909,
+  "reference_occluded": 339,
+  "reference_unknown": 509,
+  "accepted_visible": 1865,
+  "visible_coverage": 0.9769512833944474,
+  "accepted_error_p95_m": 0.005546176560755219,
+  "accepted_error_median_m": 0.00032722997419818903,
+  "image_time_error_p95_m": 0.005546176560755219,
+  "camera_age_max_seconds": 0.0,
+  "occluded_false_valid_rate": 0.24778761061946902,
+  "gate_pass": false
+}

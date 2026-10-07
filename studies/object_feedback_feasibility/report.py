@@ -88,4 +88,6 @@ fig.suptitle('RGB-D point measurement on recorded ToolHang motions',fontsize=13)
 fig.supxlabel('Development audit; correlated frames and points, zero new policy episodes',fontsize=9)
 fig.savefig(HERE/'measurement_gates.png',dpi=160)
 fig.savefig(HERE/'measurement_gates.svg')
+svg = HERE/'measurement_gates.svg'
+svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
 print(json.dumps(verification,indent=2))

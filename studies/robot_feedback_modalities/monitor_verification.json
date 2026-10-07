@@ -1,0 +1,13 @@
+{
+  "all_pass": true,
+  "all_frozen_sources_match": true,
+  "all_expected_monitor_frames_retained": true,
+  "private_geometry_rows": 10878,
+  "actual_astra_requests": 0,
+  "files_sha256": {
+    "monitor_samples.jsonl.gz": "1c1cd73ea9054c713f8fbe5f6e65c5734e7beea137ef37f3c4dd0178f550b793",
+    "private_contact_context.jsonl.gz": "0c2bad2f79f1ee0495c18c6ad3fafeae776f6d97c832acf57d71db320dd455e6",
+    "monitor_result.json": "058f000bd50b55ec695168dc319d864a2de3a57befdc9c739e859a2f241ca443",
+    "screen_account_data.json": "531e686f331bd71005c895d18efadfba342776249a5c93405355158641bb8b7b"
+  }
+}

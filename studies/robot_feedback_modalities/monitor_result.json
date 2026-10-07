@@ -1,0 +1,3287 @@
+{
+  "scope": "Development on observed traces; sensor warnings are not task/contact certificates.",
+  "parameters": {
+    "force_change_N": 5.0,
+    "torque_change_Nm": 0.5,
+    "consecutive": 3,
+    "minimum_steps": 10,
+    "position_tolerance_m": 0.003,
+    "orientation_tolerance_rad": 0.03,
+    "progress_window_steps": 10,
+    "minimum_position_progress_m": 0.001,
+    "minimum_orientation_progress_rad": 0.01,
+    "linear_speed_m_s_max": 0.005,
+    "angular_speed_rad_s_max": 0.05,
+    "finger_speed_m_s_max": 0.001,
+    "empty_opening_margin_m": 0.002
+  },
+  "waypoints": [
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 55,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 1,
+      "first_step": 56,
+      "last_step": 85,
+      "requested_steps": 30,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 2,
+      "first_step": 86,
+      "last_step": 105,
+      "requested_steps": 20,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 3,
+      "first_step": 106,
+      "last_step": 145,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": 115,
+        "stalled_motion": null,
+        "empty_sized_closure": 115
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 146,
+      "last_step": 210,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 1,
+      "first_step": 211,
+      "last_step": 235,
+      "requested_steps": 25,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 2,
+      "first_step": 236,
+      "last_step": 335,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 4,
+      "waypoint_index": 0,
+      "first_step": 336,
+      "last_step": 410,
+      "requested_steps": 75,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 4,
+      "waypoint_index": 1,
+      "first_step": 411,
+      "last_step": 500,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 6,
+      "waypoint_index": 0,
+      "first_step": 501,
+      "last_step": 535,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 6,
+      "waypoint_index": 1,
+      "first_step": 536,
+      "last_step": 575,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": 549,
+        "stalled_motion": 559,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 7,
+      "waypoint_index": 0,
+      "first_step": 576,
+      "last_step": 600,
+      "requested_steps": 25,
+      "first_flags": {
+        "load_change": 585,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 7,
+      "waypoint_index": 1,
+      "first_step": 601,
+      "last_step": 655,
+      "requested_steps": 55,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 8,
+      "waypoint_index": 0,
+      "first_step": 656,
+      "last_step": 755,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 8,
+      "waypoint_index": 1,
+      "first_step": 756,
+      "last_step": 855,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 0,
+      "first_step": 856,
+      "last_step": 880,
+      "requested_steps": 25,
+      "first_flags": {
+        "load_change": 865,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 1,
+      "first_step": 881,
+      "last_step": 975,
+      "requested_steps": 95,
+      "first_flags": {
+        "load_change": 890,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 10,
+      "waypoint_index": 0,
+      "first_step": 976,
+      "last_step": 1055,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 0,
+      "first_step": 1056,
+      "last_step": 1135,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": 1116,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 1136,
+      "last_step": 1210,
+      "requested_steps": 75,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": 1180,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 0,
+      "first_step": 1211,
+      "last_step": 1255,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": 1220,
+        "stalled_motion": 1239,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 1,
+      "first_step": 1256,
+      "last_step": 1295,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": 1265,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 0,
+      "first_step": 1296,
+      "last_step": 1330,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": 1305,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 1,
+      "first_step": 1331,
+      "last_step": 1385,
+      "requested_steps": 55,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": 1359,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 1386,
+      "last_step": 1465,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": 1405,
+        "stalled_motion": 1439,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 20,
+      "waypoint_index": 0,
+      "first_step": 1466,
+      "last_step": 1565,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": 1475,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 22,
+      "waypoint_index": 0,
+      "first_step": 1566,
+      "last_step": 1630,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 22,
+      "waypoint_index": 1,
+      "first_step": 1631,
+      "last_step": 1690,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": 1650,
+        "stalled_motion": 1678,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 23,
+      "waypoint_index": 0,
+      "first_step": 1691,
+      "last_step": 1775,
+      "requested_steps": 85,
+      "first_flags": {
+        "load_change": 1700,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 23,
+      "waypoint_index": 1,
+      "first_step": 1776,
+      "last_step": 1830,
+      "requested_steps": 55,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 25,
+      "waypoint_index": 0,
+      "first_step": 1831,
+      "last_step": 1865,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": 1840,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 25,
+      "waypoint_index": 1,
+      "first_step": 1866,
+      "last_step": 1895,
+      "requested_steps": 30,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 26,
+      "waypoint_index": 0,
+      "first_step": 1896,
+      "last_step": 1925,
+      "requested_steps": 30,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 26,
+      "waypoint_index": 1,
+      "first_step": 1926,
+      "last_step": 1990,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "calibration": false,
+      "command_id": 27,
+      "waypoint_index": 0,
+      "first_step": 1991,
+      "last_step": 2040,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 80,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 81,
+      "last_step": 140,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 1,
+      "first_step": 141,
+      "last_step": 225,
+      "requested_steps": 85,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 2,
+      "first_step": 226,
+      "last_step": 270,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": 235,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 4,
+      "waypoint_index": 0,
+      "first_step": 271,
+      "last_step": 370,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": 280,
+        "stalled_motion": null,
+        "empty_sized_closure": 295
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 5,
+      "waypoint_index": 0,
+      "first_step": 371,
+      "last_step": 460,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 5,
+      "waypoint_index": 1,
+      "first_step": 461,
+      "last_step": 515,
+      "requested_steps": 55,
+      "first_flags": {
+        "load_change": 483,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 5,
+      "waypoint_index": 2,
+      "first_step": 516,
+      "last_step": 560,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 6,
+      "waypoint_index": 0,
+      "first_step": 561,
+      "last_step": 660,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": 570,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 8,
+      "waypoint_index": 0,
+      "first_step": 661,
+      "last_step": 750,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 8,
+      "waypoint_index": 1,
+      "first_step": 751,
+      "last_step": 850,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 10,
+      "waypoint_index": 0,
+      "first_step": 851,
+      "last_step": 895,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 10,
+      "waypoint_index": 1,
+      "first_step": 896,
+      "last_step": 960,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": 909,
+        "stalled_motion": 921,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 0,
+      "first_step": 961,
+      "last_step": 990,
+      "requested_steps": 30,
+      "first_flags": {
+        "load_change": 970,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 1,
+      "first_step": 991,
+      "last_step": 1025,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 2,
+      "first_step": 1026,
+      "last_step": 1105,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": 1036,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 0,
+      "first_step": 1106,
+      "last_step": 1195,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": 1115,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 1196,
+      "last_step": 1280,
+      "requested_steps": 85,
+      "first_flags": {
+        "load_change": 1205,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 1,
+      "first_step": 1281,
+      "last_step": 1370,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 14,
+      "waypoint_index": 0,
+      "first_step": 1371,
+      "last_step": 1470,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 0,
+      "first_step": 1471,
+      "last_step": 1510,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 1,
+      "first_step": 1511,
+      "last_step": 1570,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 2,
+      "first_step": 1571,
+      "last_step": 1610,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": 1580,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 16,
+      "waypoint_index": 0,
+      "first_step": 1611,
+      "last_step": 1710,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": 1620,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 18,
+      "waypoint_index": 0,
+      "first_step": 1711,
+      "last_step": 1770,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 18,
+      "waypoint_index": 1,
+      "first_step": 1771,
+      "last_step": 1815,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": 1784,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 1816,
+      "last_step": 1865,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 1,
+      "first_step": 1866,
+      "last_step": 1930,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "calibration": false,
+      "command_id": 20,
+      "waypoint_index": 0,
+      "first_step": 1931,
+      "last_step": 1980,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 90,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 91,
+      "last_step": 101,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 1,
+      "first_step": 102,
+      "last_step": 133,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 2,
+      "first_step": 134,
+      "last_step": 163,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 4,
+      "waypoint_index": 0,
+      "first_step": 164,
+      "last_step": 237,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 5,
+      "waypoint_index": 0,
+      "first_step": 238,
+      "last_step": 302,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 7,
+      "waypoint_index": 0,
+      "first_step": 303,
+      "last_step": 395,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 8,
+      "waypoint_index": 0,
+      "first_step": 396,
+      "last_step": 475,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": 412,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 0,
+      "first_step": 476,
+      "last_step": 500,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": 485,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 1,
+      "first_step": 501,
+      "last_step": 570,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": 510,
+        "stalled_motion": 559,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 0,
+      "first_step": 571,
+      "last_step": 670,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": 620,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 0,
+      "first_step": 671,
+      "last_step": 726,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": 680,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 1,
+      "first_step": 727,
+      "last_step": 786,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 2,
+      "first_step": 787,
+      "last_step": 836,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 837,
+      "last_step": 894,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 1,
+      "first_step": 895,
+      "last_step": 909,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": 904,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 2,
+      "first_step": 910,
+      "last_step": 979,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": 919,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 14,
+      "waypoint_index": 0,
+      "first_step": 980,
+      "last_step": 1079,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 0,
+      "first_step": 1080,
+      "last_step": 1179,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": 1149,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 16,
+      "waypoint_index": 0,
+      "first_step": 1180,
+      "last_step": 1279,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 0,
+      "first_step": 1280,
+      "last_step": 1379,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 18,
+      "waypoint_index": 0,
+      "first_step": 1380,
+      "last_step": 1479,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": 1474,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 1480,
+      "last_step": 1579,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 80,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 81,
+      "last_step": 180,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 1,
+      "first_step": 181,
+      "last_step": 280,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 4,
+      "waypoint_index": 0,
+      "first_step": 281,
+      "last_step": 320,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 5,
+      "waypoint_index": 0,
+      "first_step": 321,
+      "last_step": 420,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 7,
+      "waypoint_index": 0,
+      "first_step": 421,
+      "last_step": 485,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 7,
+      "waypoint_index": 1,
+      "first_step": 486,
+      "last_step": 585,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 0,
+      "first_step": 586,
+      "last_step": 655,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 1,
+      "first_step": 656,
+      "last_step": 755,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 0,
+      "first_step": 756,
+      "last_step": 810,
+      "requested_steps": 55,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 1,
+      "first_step": 811,
+      "last_step": 880,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 0,
+      "first_step": 881,
+      "last_step": 925,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 1,
+      "first_step": 926,
+      "last_step": 985,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 2,
+      "first_step": 986,
+      "last_step": 1070,
+      "requested_steps": 85,
+      "first_flags": {
+        "load_change": 1005,
+        "stalled_motion": 1046,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 1071,
+      "last_step": 1150,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": 1080,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 14,
+      "waypoint_index": 0,
+      "first_step": 1151,
+      "last_step": 1250,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": 1160,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 16,
+      "waypoint_index": 0,
+      "first_step": 1251,
+      "last_step": 1350,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 16,
+      "waypoint_index": 1,
+      "first_step": 1351,
+      "last_step": 1440,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": 1377,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 0,
+      "first_step": 1441,
+      "last_step": 1510,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": 1450,
+        "stalled_motion": 1492,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 18,
+      "waypoint_index": 0,
+      "first_step": 1511,
+      "last_step": 1600,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": 1520,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 18,
+      "waypoint_index": 1,
+      "first_step": 1601,
+      "last_step": 1680,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": 1622,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 1681,
+      "last_step": 1765,
+      "requested_steps": 85,
+      "first_flags": {
+        "load_change": 1690,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 21,
+      "waypoint_index": 0,
+      "first_step": 1766,
+      "last_step": 1865,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 21,
+      "waypoint_index": 1,
+      "first_step": 1866,
+      "last_step": 1910,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1890
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "calibration": false,
+      "command_id": 22,
+      "waypoint_index": 0,
+      "first_step": 1911,
+      "last_step": 2000,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 80,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 81,
+      "last_step": 98,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 1,
+      "first_step": 99,
+      "last_step": 136,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 4,
+      "waypoint_index": 0,
+      "first_step": 137,
+      "last_step": 148,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 4,
+      "waypoint_index": 1,
+      "first_step": 149,
+      "last_step": 224,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 6,
+      "waypoint_index": 0,
+      "first_step": 225,
+      "last_step": 314,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 8,
+      "waypoint_index": 0,
+      "first_step": 315,
+      "last_step": 348,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 0,
+      "first_step": 349,
+      "last_step": 369,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 0,
+      "first_step": 370,
+      "last_step": 391,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 1,
+      "first_step": 392,
+      "last_step": 408,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 11,
+      "waypoint_index": 2,
+      "first_step": 409,
+      "last_step": 430,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 431,
+      "last_step": 446,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 1,
+      "first_step": 447,
+      "last_step": 465,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 14,
+      "waypoint_index": 0,
+      "first_step": 466,
+      "last_step": 490,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 14,
+      "waypoint_index": 1,
+      "first_step": 491,
+      "last_step": 543,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 0,
+      "first_step": 544,
+      "last_step": 643,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 16,
+      "waypoint_index": 0,
+      "first_step": 644,
+      "last_step": 688,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 16,
+      "waypoint_index": 1,
+      "first_step": 689,
+      "last_step": 732,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 16,
+      "waypoint_index": 2,
+      "first_step": 733,
+      "last_step": 750,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 0,
+      "first_step": 751,
+      "last_step": 832,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 833,
+      "last_step": 922,
+      "requested_steps": 90,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": 899,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 20,
+      "waypoint_index": 0,
+      "first_step": 923,
+      "last_step": 972,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 21,
+      "waypoint_index": 0,
+      "first_step": 973,
+      "last_step": 987,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 21,
+      "waypoint_index": 1,
+      "first_step": 988,
+      "last_step": 1010,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": 997,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 22,
+      "waypoint_index": 0,
+      "first_step": 1011,
+      "last_step": 1024,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 22,
+      "waypoint_index": 1,
+      "first_step": 1025,
+      "last_step": 1049,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 22,
+      "waypoint_index": 2,
+      "first_step": 1050,
+      "last_step": 1129,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": 1112,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 24,
+      "waypoint_index": 0,
+      "first_step": 1130,
+      "last_step": 1189,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": 1139,
+        "stalled_motion": 1154,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 25,
+      "waypoint_index": 0,
+      "first_step": 1190,
+      "last_step": 1289,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": 1199,
+        "stalled_motion": 1279,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "calibration": false,
+      "command_id": 26,
+      "waypoint_index": 0,
+      "first_step": 1290,
+      "last_step": 1389,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 60,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 1,
+      "first_step": 61,
+      "last_step": 95,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 2,
+      "first_step": 96,
+      "last_step": 120,
+      "requested_steps": 25,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 120
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 2,
+      "waypoint_index": 3,
+      "first_step": 121,
+      "last_step": 165,
+      "requested_steps": 45,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 130
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 166,
+      "last_step": 240,
+      "requested_steps": 75,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 1,
+      "first_step": 241,
+      "last_step": 270,
+      "requested_steps": 30,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 3,
+      "waypoint_index": 2,
+      "first_step": 271,
+      "last_step": 355,
+      "requested_steps": 85,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 5,
+      "waypoint_index": 0,
+      "first_step": 356,
+      "last_step": 405,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 5,
+      "waypoint_index": 1,
+      "first_step": 406,
+      "last_step": 470,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 7,
+      "waypoint_index": 0,
+      "first_step": 471,
+      "last_step": 570,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 506
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 7,
+      "waypoint_index": 1,
+      "first_step": 571,
+      "last_step": 610,
+      "requested_steps": 40,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 580
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 0,
+      "first_step": 611,
+      "last_step": 685,
+      "requested_steps": 75,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 1,
+      "first_step": 686,
+      "last_step": 735,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 2,
+      "first_step": 736,
+      "last_step": 760,
+      "requested_steps": 25,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 9,
+      "waypoint_index": 3,
+      "first_step": 761,
+      "last_step": 810,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": 770,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 10,
+      "waypoint_index": 0,
+      "first_step": 811,
+      "last_step": 880,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 10,
+      "waypoint_index": 1,
+      "first_step": 881,
+      "last_step": 950,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 12,
+      "waypoint_index": 0,
+      "first_step": 951,
+      "last_step": 1020,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": 981,
+        "stalled_motion": 991,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 1021,
+      "last_step": 1055,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": 1030,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 13,
+      "waypoint_index": 1,
+      "first_step": 1056,
+      "last_step": 1090,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": 1065,
+        "stalled_motion": 1071,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 14,
+      "waypoint_index": 0,
+      "first_step": 1091,
+      "last_step": 1115,
+      "requested_steps": 25,
+      "first_flags": {
+        "load_change": 1100,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 14,
+      "waypoint_index": 1,
+      "first_step": 1116,
+      "last_step": 1180,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": 1131,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 0,
+      "first_step": 1181,
+      "last_step": 1260,
+      "requested_steps": 80,
+      "first_flags": {
+        "load_change": 1190,
+        "stalled_motion": 1247,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 15,
+      "waypoint_index": 1,
+      "first_step": 1261,
+      "last_step": 1325,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 0,
+      "first_step": 1326,
+      "last_step": 1395,
+      "requested_steps": 70,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 1,
+      "first_step": 1396,
+      "last_step": 1445,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 2,
+      "first_step": 1446,
+      "last_step": 1470,
+      "requested_steps": 25,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 17,
+      "waypoint_index": 3,
+      "first_step": 1471,
+      "last_step": 1525,
+      "requested_steps": 55,
+      "first_flags": {
+        "load_change": 1480,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 1526,
+      "last_step": 1590,
+      "requested_steps": 65,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 19,
+      "waypoint_index": 1,
+      "first_step": 1591,
+      "last_step": 1685,
+      "requested_steps": 95,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 20,
+      "waypoint_index": 0,
+      "first_step": 1686,
+      "last_step": 1720,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 20,
+      "waypoint_index": 1,
+      "first_step": 1721,
+      "last_step": 1750,
+      "requested_steps": 30,
+      "first_flags": {
+        "load_change": 1730,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 21,
+      "waypoint_index": 0,
+      "first_step": 1751,
+      "last_step": 1785,
+      "requested_steps": 35,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 21,
+      "waypoint_index": 1,
+      "first_step": 1786,
+      "last_step": 1840,
+      "requested_steps": 55,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "calibration": false,
+      "command_id": 21,
+      "waypoint_index": 2,
+      "first_step": 1841,
+      "last_step": 1890,
+      "requested_steps": 50,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 1,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 120,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 121,
+      "last_step": 180,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 181,
+      "last_step": 240,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 4,
+      "waypoint_index": 0,
+      "first_step": 241,
+      "last_step": 300,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 5,
+      "waypoint_index": 0,
+      "first_step": 301,
+      "last_step": 360,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 6,
+      "waypoint_index": 0,
+      "first_step": 361,
+      "last_step": 420,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 7,
+      "waypoint_index": 0,
+      "first_step": 421,
+      "last_step": 480,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 8,
+      "waypoint_index": 0,
+      "first_step": 481,
+      "last_step": 540,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 9,
+      "waypoint_index": 0,
+      "first_step": 541,
+      "last_step": 600,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 10,
+      "waypoint_index": 0,
+      "first_step": 601,
+      "last_step": 660,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 11,
+      "waypoint_index": 0,
+      "first_step": 661,
+      "last_step": 720,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 12,
+      "waypoint_index": 0,
+      "first_step": 721,
+      "last_step": 780,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 781,
+      "last_step": 840,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 14,
+      "waypoint_index": 0,
+      "first_step": 841,
+      "last_step": 900,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 15,
+      "waypoint_index": 0,
+      "first_step": 901,
+      "last_step": 960,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 925
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 16,
+      "waypoint_index": 0,
+      "first_step": 961,
+      "last_step": 1020,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 970
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 17,
+      "waypoint_index": 0,
+      "first_step": 1021,
+      "last_step": 1080,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1030
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 18,
+      "waypoint_index": 0,
+      "first_step": 1081,
+      "last_step": 1140,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1090
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 1141,
+      "last_step": 1200,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1150
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 20,
+      "waypoint_index": 0,
+      "first_step": 1201,
+      "last_step": 1260,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1210
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 21,
+      "waypoint_index": 0,
+      "first_step": 1261,
+      "last_step": 1320,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1270
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 22,
+      "waypoint_index": 0,
+      "first_step": 1321,
+      "last_step": 1380,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1330
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 23,
+      "waypoint_index": 0,
+      "first_step": 1381,
+      "last_step": 1440,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1390
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 24,
+      "waypoint_index": 0,
+      "first_step": 1441,
+      "last_step": 1500,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1450
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 25,
+      "waypoint_index": 0,
+      "first_step": 1501,
+      "last_step": 1560,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1510
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 26,
+      "waypoint_index": 0,
+      "first_step": 1561,
+      "last_step": 1620,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1570
+      }
+    },
+    {
+      "episode": "calibration_s01",
+      "calibration": true,
+      "command_id": 27,
+      "waypoint_index": 0,
+      "first_step": 1621,
+      "last_step": 1680,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1630
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 1,
+      "waypoint_index": 0,
+      "first_step": 21,
+      "last_step": 120,
+      "requested_steps": 100,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 2,
+      "waypoint_index": 0,
+      "first_step": 121,
+      "last_step": 180,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 3,
+      "waypoint_index": 0,
+      "first_step": 181,
+      "last_step": 240,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 4,
+      "waypoint_index": 0,
+      "first_step": 241,
+      "last_step": 300,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 5,
+      "waypoint_index": 0,
+      "first_step": 301,
+      "last_step": 360,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 6,
+      "waypoint_index": 0,
+      "first_step": 361,
+      "last_step": 420,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 7,
+      "waypoint_index": 0,
+      "first_step": 421,
+      "last_step": 480,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 8,
+      "waypoint_index": 0,
+      "first_step": 481,
+      "last_step": 540,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 9,
+      "waypoint_index": 0,
+      "first_step": 541,
+      "last_step": 600,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 10,
+      "waypoint_index": 0,
+      "first_step": 601,
+      "last_step": 660,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 11,
+      "waypoint_index": 0,
+      "first_step": 661,
+      "last_step": 720,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 12,
+      "waypoint_index": 0,
+      "first_step": 721,
+      "last_step": 780,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 13,
+      "waypoint_index": 0,
+      "first_step": 781,
+      "last_step": 840,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 14,
+      "waypoint_index": 0,
+      "first_step": 841,
+      "last_step": 900,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 15,
+      "waypoint_index": 0,
+      "first_step": 901,
+      "last_step": 960,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 925
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 16,
+      "waypoint_index": 0,
+      "first_step": 961,
+      "last_step": 1020,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 970
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 17,
+      "waypoint_index": 0,
+      "first_step": 1021,
+      "last_step": 1080,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1030
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 18,
+      "waypoint_index": 0,
+      "first_step": 1081,
+      "last_step": 1140,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1090
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 19,
+      "waypoint_index": 0,
+      "first_step": 1141,
+      "last_step": 1200,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1150
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 20,
+      "waypoint_index": 0,
+      "first_step": 1201,
+      "last_step": 1260,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1210
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 21,
+      "waypoint_index": 0,
+      "first_step": 1261,
+      "last_step": 1320,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1270
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 22,
+      "waypoint_index": 0,
+      "first_step": 1321,
+      "last_step": 1380,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1330
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 23,
+      "waypoint_index": 0,
+      "first_step": 1381,
+      "last_step": 1440,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1390
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 24,
+      "waypoint_index": 0,
+      "first_step": 1441,
+      "last_step": 1500,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1450
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 25,
+      "waypoint_index": 0,
+      "first_step": 1501,
+      "last_step": 1560,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1510
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 26,
+      "waypoint_index": 0,
+      "first_step": 1561,
+      "last_step": 1620,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1570
+      }
+    },
+    {
+      "episode": "calibration_s02",
+      "calibration": true,
+      "command_id": 27,
+      "waypoint_index": 0,
+      "first_step": 1621,
+      "last_step": 1680,
+      "requested_steps": 60,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1630
+      }
+    }
+  ],
+  "samples": 14078,
+  "private_contact_samples": 10878,
+  "actual_astra_requests": 0,
+  "by_scope": {
+    "task_traces": {
+      "load_change": {
+        "flagged_waypoints": 52,
+        "total_waypoints": 177
+      },
+      "stalled_motion": {
+        "flagged_waypoints": 20,
+        "total_waypoints": 177
+      },
+      "empty_sized_closure": {
+        "flagged_waypoints": 7,
+        "total_waypoints": 177
+      }
+    },
+    "free_verification": {
+      "load_change": {
+        "flagged_waypoints": 0,
+        "total_waypoints": 54
+      },
+      "stalled_motion": {
+        "flagged_waypoints": 0,
+        "total_waypoints": 54
+      },
+      "empty_sized_closure": {
+        "flagged_waypoints": 26,
+        "total_waypoints": 54
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "fixture": "negative",
+  "interrupt_empty": true,
+  "folder": "/Users/veerdosi/Documents/code/github/fyp/studies/robot_feedback_modalities/negative_guard",
+  "source_episode": "th_v1_s02_direct_waypoints",
+  "commands": [
+    2
+  ],
+  "control_steps": 120,
+  "stop_reason": "armed_empty_sized_closure",
+  "prefix_actions_exact": true,
+  "prefix_states_exact": true,
+  "private_frame_grasp": false,
+  "source_hashes": {
+    "src/fyp/episode.py": "b8a363a8ea881ce7c5c845e2a5913e7aacfe07a418635907778fdb7dd77e324d",
+    "src/fyp/__init__.py": "04f95911a59d72d6023224ee385d43870b28b640030b0beeec6a25f0061a5fc8",
+    "src/fyp/robosuite_runtime.py": "bafa78b610d2392955cf896487e7c43f82e0bcd2f59a48b891516558b4531505",
+    "src/fyp/runtime.py": "875e5bfba2f67b1f7b1e974b4ebef2ecb1d189a7846bba92a63ad8cbf9e8a4fc",
+    "src/fyp/sensor_monitor.py": "b1011680b38c8472f83b1feeb07f13ace6fc093603fb96431ffaedd8170fd891",
+    "src/fyp/motion.py": "22512f8abfd6b0aaaec0eb26537ccbbc3abdd78eea6ee3d9ddd4ac5ec477ec90",
+    "src/fyp/grip_guard.py": "b2a3be166dd1ce29454d4616739115d7481df9d14fa79f193b99ec5a0ee81a89",
+    "studies/robot_feedback_modalities/verify_guard.py": "fa5d6ba66b8b4ed81d976f221fa7a6c8dd794afbb740b6f56da80dd32b6820de",
+    "studies/robot_feedback_modalities/guard_verification_decision.md": "ba25e002bea290d74252914a7b3c7aab8dc550abe0cb91f26050eb0accca0e75",
+    "studies/robot_feedback_modalities/calibration_s01/calibration_result.json": "4c0cbc59d41336239dd83de2d9b401a416ab34bbebefc05724be82af2186fbb5",
+    "studies/robot_feedback_modalities/calibration_s02/calibration_result.json": "d68fe03e597ceba8e8b31871ff02c342f922be72e81ca5726eabc7b381facf73",
+    "runs/th_v1_s02_direct_waypoints/commands.jsonl": "b460727e77e83a80fc628c17a01cb6a5d9ca3f448684a6c3e5b7525d115b892c",
+    "runs/th_v1_s02_direct_waypoints/trajectory.npz": "2e18b97f854a6e43c5741dfc3f0720ca528a403892c5ecf51b7281eec5fc1612",
+    "runs/th_v1_s02_direct_waypoints/config.json": "569d9cc08083dee646979b5a72326a6df3ce35928f598a8f2662b21e0680abdb",
+    "runs/th_v1_s01_direct_waypoints/commands.jsonl": "349ba58fc8fdec801422161f90e759c62885e093150f02ff444034b4f6199add",
+    "runs/th_v1_s01_direct_waypoints/trajectory.npz": "f8f15f72dabc120dafe82767955d78b174b495475f130900bdab8dd2dc02a373",
+    "runs/th_v1_s01_direct_waypoints/config.json": "9ddcb713c0f8f39551f06b9273c84b6b7d95fac0644340195893ba969742485b"
+  },
+  "actual_astra_requests": 0,
+  "outcome_scope": "Fixture behavior only; no complete ToolHang success claim.",
+  "all_fixture_assertions_pass": true
+}

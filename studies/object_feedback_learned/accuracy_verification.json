@@ -1,0 +1,23 @@
+{
+  "all_pass": true,
+  "queries": 212,
+  "known_initial_references": 171,
+  "unknown_initial_references": 41,
+  "original_streams": 35,
+  "camera_streams": 49,
+  "endpoint_rows": 2757,
+  "availability_rows": 22739,
+  "local_tracker_forward_calls": 644,
+  "exact_replayed_steps": 10878,
+  "all_control_frames_retained": true,
+  "no_future_endpoint_scoring": true,
+  "no_stale_point_presented_as_current": true,
+  "source_hashes_still_match": true,
+  "output_sha256": {
+    "accuracy_result.json": "5585e65a3cc47824df2d2eaa8cd4b367e557d41d129cddff5c0b65b196511a6d",
+    "endpoint_samples.jsonl.gz": "10bb2d5df6d5d1f8b724bd95e33689792828a129689616301ba2c63782983e6e",
+    "availability.jsonl.gz": "8a664388656898a7a55256eecdece4d676ba02b6b271862e115d75cc0afb9d35",
+    "accuracy_updates.json": "7936febbad16ffeb098aecd9c615991499b1189cf4e95f81a19cc284f67b53b5",
+    "accuracy_reconstruction.json": "d37108bdbba326a56fa43dd47dabc103bd7bca301da1be051c30aa9f101b2355"
+  }
+}

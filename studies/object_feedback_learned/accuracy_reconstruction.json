@@ -1,0 +1,428 @@
+{
+  "checks": [
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 0,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 0,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 3,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 9,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 9,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 10,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 10,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 11,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 12,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 12,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 14,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 14,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 16,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "observation_id": 16,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "observation_id": 0,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "observation_id": 5,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "observation_id": 6,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "observation_id": 13,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "observation_id": 13,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "observation_id": 0,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "observation_id": 4,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "observation_id": 7,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 0,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 4,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 4,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 5,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 5,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 6,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 6,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 10,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "observation_id": 14,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 0,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 3,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 4,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 6,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 7,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 12,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 12,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 16,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "observation_id": 16,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 0,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 2,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 2,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 3,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 4,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 6,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 10,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 11,
+      "camera": "agentview",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "observation_id": 11,
+      "camera": "robot0_eye_in_hand",
+      "rgb_exact": true,
+      "depth_exact": true,
+      "calibration_exact": true
+    }
+  ],
+  "replay_checks": [
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "steps": 2040,
+      "max_state_absolute_error": 0.0
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "steps": 1980,
+      "max_state_absolute_error": 0.0
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "steps": 1579,
+      "max_state_absolute_error": 0.0
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "steps": 2000,
+      "max_state_absolute_error": 0.0
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "steps": 1389,
+      "max_state_absolute_error": 0.0
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "steps": 1890,
+      "max_state_absolute_error": 0.0
+    }
+  ]
+}

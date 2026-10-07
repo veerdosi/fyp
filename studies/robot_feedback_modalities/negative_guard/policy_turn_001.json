@@ -1,0 +1,61 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.081,
+          -0.259,
+          0.94
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 40,
+        "abort_if_empty_close": false
+      },
+      {
+        "position": [
+          -0.081,
+          -0.259,
+          0.834
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 35,
+        "abort_if_empty_close": false
+      },
+      {
+        "position": [
+          -0.081,
+          -0.259,
+          0.834
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.081,
+          -0.259,
+          1.08
+        ],
+        "gripper": 1,
+        "steps": 45,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Grasp the black elbow of the loose frame from above and lift it clear to verify acquisition and orient its insertion shaft."
+  },
+  "verification_source_call": 2
+}

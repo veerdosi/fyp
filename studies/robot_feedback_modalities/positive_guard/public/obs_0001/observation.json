@@ -1,0 +1,53 @@
+{
+  "observation_id": 1,
+  "step": 145,
+  "simulated_seconds": 7.25,
+  "model_calls": 1,
+  "remaining_steps": 455,
+  "remaining_model_calls": 9,
+  "proprioception": {
+    "robot0_eef_pos": [
+      -0.0960032023991728,
+      -0.26267519452110377,
+      0.9853889711684432
+    ],
+    "robot0_eef_quat": [
+      0.8390079757508992,
+      0.5441183431448793,
+      0.0007112416619992001,
+      0.0005825932947789262
+    ],
+    "robot0_joint_vel": [
+      0.10701701599927903,
+      -0.18151165226240792,
+      -0.1191617852532551,
+      -0.032115558084925326,
+      -0.008150182503537004,
+      -0.15688549706499408,
+      0.0003339447177034399
+    ],
+    "robot0_gripper_qpos": [
+      0.0004812803755019081,
+      -0.0005182961930671733
+    ],
+    "robot0_gripper_qvel": [
+      1.2883798734613828e-05,
+      1.6364019528810773e-05
+    ],
+    "robot0_eef_force": [
+      -0.009123394492054463,
+      0.003371310859941094,
+      -4.981971002689292
+    ],
+    "robot0_eef_torque": [
+      0.009590342519859412,
+      0.0063700019490972645,
+      -0.003350210196011643
+    ]
+  },
+  "folder": "/Users/veerdosi/Documents/code/github/fyp/studies/robot_feedback_modalities/positive_guard/public/obs_0001",
+  "cameras": {
+    "agentview": "/Users/veerdosi/Documents/code/github/fyp/studies/robot_feedback_modalities/positive_guard/public/obs_0001/agentview.png",
+    "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/studies/robot_feedback_modalities/positive_guard/public/obs_0001/robot0_eye_in_hand.png"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "frozen_before_live_verification": true,
+  "fixtures": [
+    {
+      "name": "negative",
+      "source_episode": "th_v1_s02_direct_waypoints",
+      "source_commands": [
+        2
+      ],
+      "armed_command": 2,
+      "armed_waypoints": [
+        2,
+        3
+      ],
+      "expected_shadow_steps": 165,
+      "expected_guard_steps": 120
+    },
+    {
+      "name": "positive",
+      "source_episode": "th_v1_s01_direct_waypoints",
+      "source_commands": [
+        2,
+        3
+      ],
+      "armed_command": 3,
+      "armed_waypoints": [
+        1,
+        2
+      ],
+      "expected_shadow_steps": 335,
+      "expected_guard_steps": 335
+    }
+  ],
+  "source_hashes": {
+    "src/fyp/episode.py": "b8a363a8ea881ce7c5c845e2a5913e7aacfe07a418635907778fdb7dd77e324d",
+    "src/fyp/__init__.py": "04f95911a59d72d6023224ee385d43870b28b640030b0beeec6a25f0061a5fc8",
+    "src/fyp/robosuite_runtime.py": "bafa78b610d2392955cf896487e7c43f82e0bcd2f59a48b891516558b4531505",
+    "src/fyp/runtime.py": "875e5bfba2f67b1f7b1e974b4ebef2ecb1d189a7846bba92a63ad8cbf9e8a4fc",
+    "src/fyp/sensor_monitor.py": "b1011680b38c8472f83b1feeb07f13ace6fc093603fb96431ffaedd8170fd891",
+    "src/fyp/motion.py": "22512f8abfd6b0aaaec0eb26537ccbbc3abdd78eea6ee3d9ddd4ac5ec477ec90",
+    "src/fyp/grip_guard.py": "b2a3be166dd1ce29454d4616739115d7481df9d14fa79f193b99ec5a0ee81a89",
+    "studies/robot_feedback_modalities/verify_guard.py": "fa5d6ba66b8b4ed81d976f221fa7a6c8dd794afbb740b6f56da80dd32b6820de",
+    "studies/robot_feedback_modalities/guard_verification_decision.md": "ba25e002bea290d74252914a7b3c7aab8dc550abe0cb91f26050eb0accca0e75",
+    "studies/robot_feedback_modalities/calibration_s01/calibration_result.json": "4c0cbc59d41336239dd83de2d9b401a416ab34bbebefc05724be82af2186fbb5",
+    "studies/robot_feedback_modalities/calibration_s02/calibration_result.json": "d68fe03e597ceba8e8b31871ff02c342f922be72e81ca5726eabc7b381facf73",
+    "runs/th_v1_s02_direct_waypoints/commands.jsonl": "b460727e77e83a80fc628c17a01cb6a5d9ca3f448684a6c3e5b7525d115b892c",
+    "runs/th_v1_s02_direct_waypoints/trajectory.npz": "2e18b97f854a6e43c5741dfc3f0720ca528a403892c5ecf51b7281eec5fc1612",
+    "runs/th_v1_s02_direct_waypoints/config.json": "569d9cc08083dee646979b5a72326a6df3ce35928f598a8f2662b21e0680abdb",
+    "runs/th_v1_s01_direct_waypoints/commands.jsonl": "349ba58fc8fdec801422161f90e759c62885e093150f02ff444034b4f6199add",
+    "runs/th_v1_s01_direct_waypoints/trajectory.npz": "f8f15f72dabc120dafe82767955d78b174b495475f130900bdab8dd2dc02a373",
+    "runs/th_v1_s01_direct_waypoints/config.json": "9ddcb713c0f8f39551f06b9273c84b6b7d95fac0644340195893ba969742485b"
+  },
+  "calibration": {
+    "weights": [
+      [
+        0.00011597331995126807,
+        -0.0032999546646563893,
+        0.005398691720831235,
+        -0.005314968289570196,
+        0.00036711512804012966,
+        0.00012700704815009692
+      ],
+      [
+        -9.230994240372179e-07,
+        -0.5202342345842889,
+        0.0002870755442275774,
+        0.07337464432366964,
+        1.0072194906745021e-06,
+        -3.1389047178365185e-06
+      ],
+      [
+        0.5200155290499487,
+        1.5811057072128322e-05,
+        -1.0176507684060533e-05,
+        8.108820059450572e-06,
+        0.07350126823112052,
+        -2.6091546404501544e-05
+      ],
+      [
+        -1.2226639597053639e-05,
+        0.00032166083935880927,
+        -0.5205333195729372,
+        0.0005256736015571068,
+        -3.843400442548122e-05,
+        -1.3880320715296762e-05
+      ],
+      [
+        -8.687483817362176e-06,
+        5.229775622030752e-06,
+        -3.77683959397263e-06,
+        1.9285756488880986e-06,
+        -4.9996571950523754e-05,
+        -2.8287351392290176e-05
+      ]
+    ],
+    "empty_max": 0.0009996828912520249,
+    "source": "Both fixed empty-gripper training calibrations; no task contact labels.",
+    "empty_threshold_m": 0.002999682891252025
+  },
+  "conditions": [
+    "shadow_reporting",
+    "armed_empty_interrupt"
+  ],
+  "actual_astra_requests": 0
+}

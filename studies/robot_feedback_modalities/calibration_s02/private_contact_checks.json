@@ -1,0 +1,6722 @@
+[
+  {
+    "step": 1,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 2,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 3,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 4,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 5,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 6,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 7,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 8,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 9,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 10,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 11,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 12,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 13,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 14,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 15,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 16,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 17,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 18,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 19,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 20,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 21,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 22,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 23,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 24,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 25,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 26,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 27,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 28,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 29,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 30,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 31,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 32,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 33,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 34,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 35,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 36,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 37,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 38,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 39,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 40,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 41,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 42,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 43,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 44,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 45,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 46,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 47,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 48,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 49,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 50,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 51,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 52,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 53,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 54,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 55,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 56,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 57,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 58,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 59,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 60,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 61,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 62,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 63,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 64,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 65,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 66,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 67,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 68,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 69,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 70,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 71,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 72,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 73,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 74,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 75,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 76,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 77,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 78,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 79,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 80,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 81,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 82,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 83,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 84,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 85,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 86,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 87,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 88,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 89,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 90,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 91,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 92,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 93,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 94,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 95,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 96,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 97,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 98,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 99,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 100,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 101,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 102,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 103,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 104,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 105,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 106,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 107,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 108,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 109,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 110,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 111,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 112,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 113,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 114,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 115,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 116,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 117,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 118,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 119,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 120,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 121,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 122,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 123,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 124,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 125,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 126,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 127,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 128,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 129,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 130,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 131,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 132,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 133,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 134,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 135,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 136,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 137,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 138,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 139,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 140,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 141,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 142,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 143,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 144,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 145,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 146,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 147,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 148,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 149,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 150,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 151,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 152,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 153,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 154,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 155,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 156,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 157,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 158,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 159,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 160,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 161,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 162,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 163,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 164,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 165,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 166,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 167,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 168,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 169,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 170,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 171,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 172,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 173,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 174,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 175,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 176,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 177,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 178,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 179,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 180,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 181,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 182,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 183,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 184,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 185,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 186,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 187,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 188,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 189,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 190,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 191,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 192,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 193,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 194,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 195,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 196,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 197,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 198,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 199,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 200,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 201,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 202,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 203,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 204,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 205,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 206,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 207,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 208,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 209,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 210,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 211,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 212,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 213,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 214,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 215,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 216,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 217,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 218,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 219,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 220,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 221,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 222,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 223,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 224,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 225,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 226,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 227,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 228,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 229,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 230,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 231,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 232,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 233,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 234,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 235,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 236,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 237,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 238,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 239,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 240,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 241,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 242,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 243,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 244,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 245,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 246,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 247,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 248,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 249,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 250,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 251,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 252,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 253,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 254,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 255,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 256,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 257,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 258,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 259,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 260,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 261,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 262,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 263,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 264,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 265,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 266,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 267,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 268,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 269,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 270,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 271,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 272,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 273,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 274,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 275,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 276,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 277,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 278,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 279,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 280,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 281,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 282,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 283,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 284,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 285,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 286,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 287,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 288,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 289,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 290,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 291,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 292,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 293,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 294,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 295,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 296,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 297,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 298,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 299,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 300,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 301,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 302,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 303,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 304,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 305,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 306,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 307,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 308,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 309,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 310,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 311,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 312,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 313,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 314,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 315,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 316,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 317,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 318,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 319,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 320,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 321,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 322,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 323,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 324,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 325,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 326,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 327,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 328,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 329,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 330,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 331,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 332,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 333,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 334,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 335,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 336,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 337,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 338,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 339,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 340,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 341,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 342,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 343,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 344,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 345,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 346,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 347,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 348,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 349,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 350,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 351,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 352,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 353,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 354,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 355,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 356,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 357,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 358,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 359,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 360,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 361,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 362,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 363,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 364,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 365,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 366,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 367,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 368,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 369,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 370,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 371,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 372,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 373,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 374,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 375,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 376,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 377,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 378,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 379,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 380,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 381,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 382,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 383,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 384,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 385,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 386,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 387,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 388,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 389,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 390,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 391,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 392,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 393,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 394,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 395,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 396,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 397,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 398,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 399,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 400,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 401,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 402,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 403,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 404,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 405,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 406,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 407,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 408,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 409,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 410,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 411,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 412,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 413,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 414,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 415,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 416,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 417,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 418,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 419,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 420,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 421,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 422,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 423,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 424,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 425,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 426,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 427,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 428,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 429,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 430,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 431,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 432,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 433,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 434,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 435,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 436,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 437,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 438,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 439,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 440,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 441,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 442,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 443,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 444,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 445,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 446,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 447,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 448,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 449,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 450,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 451,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 452,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 453,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 454,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 455,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 456,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 457,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 458,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 459,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 460,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 461,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 462,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 463,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 464,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 465,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 466,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 467,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 468,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 469,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 470,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 471,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 472,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 473,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 474,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 475,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 476,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 477,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 478,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 479,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 480,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 481,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 482,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 483,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 484,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 485,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 486,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 487,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 488,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 489,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 490,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 491,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 492,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 493,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 494,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 495,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 496,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 497,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 498,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 499,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 500,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 501,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 502,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 503,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 504,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 505,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 506,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 507,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 508,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 509,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 510,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 511,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 512,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 513,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 514,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 515,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 516,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 517,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 518,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 519,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 520,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 521,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 522,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 523,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 524,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 525,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 526,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 527,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 528,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 529,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 530,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 531,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 532,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 533,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 534,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 535,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 536,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 537,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 538,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 539,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 540,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 541,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 542,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 543,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 544,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 545,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 546,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 547,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 548,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 549,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 550,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 551,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 552,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 553,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 554,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 555,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 556,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 557,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 558,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 559,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 560,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 561,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 562,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 563,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 564,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 565,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 566,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 567,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 568,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 569,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 570,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 571,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 572,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 573,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 574,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 575,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 576,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 577,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 578,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 579,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 580,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 581,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 582,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 583,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 584,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 585,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 586,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 587,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 588,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 589,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 590,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 591,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 592,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 593,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 594,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 595,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 596,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 597,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 598,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 599,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 600,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 601,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 602,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 603,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 604,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 605,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 606,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 607,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 608,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 609,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 610,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 611,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 612,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 613,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 614,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 615,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 616,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 617,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 618,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 619,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 620,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 621,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 622,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 623,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 624,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 625,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 626,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 627,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 628,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 629,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 630,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 631,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 632,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 633,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 634,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 635,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 636,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 637,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 638,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 639,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 640,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 641,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 642,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 643,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 644,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 645,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 646,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 647,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 648,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 649,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 650,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 651,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 652,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 653,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 654,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 655,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 656,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 657,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 658,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 659,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 660,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 661,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 662,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 663,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 664,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 665,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 666,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 667,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 668,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 669,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 670,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 671,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 672,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 673,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 674,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 675,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 676,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 677,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 678,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 679,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 680,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 681,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 682,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 683,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 684,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 685,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 686,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 687,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 688,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 689,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 690,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 691,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 692,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 693,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 694,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 695,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 696,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 697,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 698,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 699,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 700,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 701,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 702,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 703,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 704,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 705,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 706,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 707,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 708,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 709,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 710,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 711,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 712,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 713,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 714,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 715,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 716,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 717,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 718,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 719,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 720,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 721,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 722,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 723,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 724,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 725,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 726,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 727,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 728,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 729,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 730,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 731,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 732,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 733,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 734,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 735,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 736,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 737,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 738,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 739,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 740,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 741,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 742,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 743,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 744,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 745,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 746,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 747,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 748,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 749,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 750,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 751,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 752,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 753,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 754,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 755,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 756,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 757,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 758,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 759,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 760,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 761,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 762,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 763,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 764,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 765,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 766,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 767,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 768,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 769,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 770,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 771,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 772,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 773,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 774,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 775,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 776,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 777,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 778,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 779,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 780,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 781,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 782,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 783,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 784,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 785,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 786,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 787,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 788,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 789,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 790,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 791,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 792,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 793,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 794,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 795,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 796,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 797,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 798,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 799,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 800,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 801,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 802,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 803,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 804,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 805,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 806,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 807,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 808,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 809,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 810,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 811,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 812,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 813,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 814,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 815,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 816,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 817,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 818,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 819,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 820,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 821,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 822,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 823,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 824,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 825,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 826,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 827,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 828,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 829,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 830,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 831,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 832,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 833,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 834,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 835,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 836,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 837,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 838,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 839,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 840,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 841,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 842,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 843,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 844,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 845,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 846,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 847,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 848,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 849,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 850,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 851,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 852,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 853,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 854,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 855,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 856,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 857,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 858,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 859,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 860,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 861,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 862,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 863,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 864,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 865,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 866,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 867,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 868,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 869,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 870,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 871,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 872,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 873,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 874,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 875,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 876,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 877,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 878,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 879,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 880,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 881,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 882,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 883,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 884,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 885,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 886,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 887,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 888,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 889,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 890,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 891,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 892,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 893,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 894,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 895,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 896,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 897,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 898,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 899,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 900,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 901,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 902,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 903,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 904,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 905,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 906,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 907,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 908,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 909,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 910,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 911,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 912,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 913,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 914,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 915,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 916,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 917,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 918,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 919,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 920,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 921,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 922,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 923,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 924,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 925,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 926,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 927,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 928,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 929,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 930,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 931,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 932,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 933,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 934,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 935,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 936,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 937,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 938,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 939,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 940,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 941,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 942,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 943,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 944,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 945,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 946,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 947,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 948,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 949,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 950,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 951,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 952,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 953,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 954,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 955,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 956,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 957,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 958,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 959,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 960,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 961,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 962,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 963,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 964,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 965,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 966,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 967,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 968,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 969,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 970,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 971,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 972,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 973,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 974,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 975,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 976,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 977,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 978,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 979,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 980,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 981,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 982,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 983,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 984,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 985,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 986,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 987,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 988,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 989,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 990,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 991,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 992,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 993,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 994,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 995,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 996,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 997,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 998,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 999,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1000,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1001,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1002,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1003,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1004,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1005,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1006,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1007,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1008,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1009,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1010,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1011,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1012,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1013,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1014,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1015,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1016,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1017,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1018,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1019,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1020,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1021,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1022,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1023,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1024,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1025,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1026,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1027,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1028,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1029,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1030,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1031,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1032,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1033,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1034,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1035,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1036,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1037,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1038,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1039,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1040,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1041,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1042,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1043,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1044,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1045,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1046,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1047,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1048,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1049,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1050,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1051,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1052,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1053,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1054,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1055,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1056,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1057,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1058,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1059,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1060,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1061,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1062,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1063,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1064,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1065,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1066,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1067,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1068,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1069,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1070,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1071,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1072,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1073,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1074,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1075,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1076,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1077,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1078,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1079,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1080,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1081,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1082,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1083,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1084,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1085,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1086,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1087,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1088,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1089,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1090,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1091,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1092,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1093,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1094,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1095,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1096,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1097,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1098,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1099,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1100,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1101,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1102,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1103,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1104,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1105,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1106,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1107,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1108,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1109,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1110,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1111,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1112,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1113,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1114,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1115,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1116,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1117,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1118,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1119,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1120,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1121,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1122,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1123,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1124,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1125,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1126,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1127,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1128,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1129,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1130,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1131,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1132,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1133,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1134,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1135,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1136,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1137,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1138,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1139,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1140,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1141,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1142,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1143,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1144,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1145,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1146,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1147,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1148,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1149,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1150,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1151,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1152,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1153,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1154,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1155,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1156,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1157,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1158,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1159,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1160,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1161,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1162,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1163,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1164,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1165,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1166,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1167,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1168,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1169,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1170,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1171,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1172,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1173,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1174,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1175,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1176,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1177,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1178,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1179,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1180,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1181,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1182,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1183,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1184,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1185,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1186,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1187,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1188,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1189,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1190,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1191,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1192,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1193,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1194,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1195,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1196,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1197,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1198,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1199,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1200,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1201,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1202,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1203,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1204,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1205,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1206,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1207,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1208,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1209,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1210,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1211,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1212,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1213,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1214,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1215,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1216,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1217,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1218,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1219,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1220,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1221,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1222,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1223,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1224,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1225,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1226,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1227,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1228,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1229,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1230,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1231,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1232,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1233,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1234,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1235,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1236,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1237,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1238,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1239,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1240,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1241,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1242,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1243,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1244,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1245,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1246,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1247,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1248,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1249,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1250,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1251,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1252,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1253,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1254,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1255,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1256,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1257,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1258,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1259,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1260,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1261,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1262,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1263,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1264,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1265,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1266,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1267,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1268,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1269,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1270,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1271,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1272,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1273,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1274,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1275,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1276,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1277,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1278,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1279,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1280,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1281,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1282,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1283,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1284,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1285,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1286,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1287,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1288,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1289,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1290,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1291,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1292,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1293,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1294,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1295,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1296,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1297,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1298,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1299,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1300,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1301,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1302,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1303,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1304,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1305,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1306,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1307,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1308,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1309,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1310,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1311,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1312,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1313,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1314,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1315,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1316,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1317,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1318,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1319,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1320,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1321,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1322,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1323,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1324,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1325,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1326,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1327,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1328,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1329,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1330,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1331,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1332,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1333,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1334,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1335,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1336,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1337,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1338,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1339,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1340,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1341,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1342,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1343,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1344,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1345,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1346,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1347,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1348,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1349,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1350,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1351,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1352,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1353,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1354,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1355,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1356,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1357,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1358,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1359,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1360,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1361,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1362,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1363,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1364,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1365,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1366,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1367,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1368,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1369,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1370,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1371,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1372,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1373,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1374,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1375,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1376,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1377,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1378,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1379,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1380,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1381,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1382,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1383,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1384,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1385,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1386,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1387,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1388,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1389,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1390,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1391,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1392,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1393,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1394,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1395,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1396,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1397,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1398,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1399,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1400,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1401,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1402,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1403,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1404,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1405,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1406,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1407,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1408,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1409,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1410,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1411,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1412,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1413,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1414,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1415,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1416,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1417,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1418,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1419,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1420,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1421,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1422,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1423,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1424,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1425,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1426,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1427,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1428,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1429,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1430,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1431,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1432,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1433,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1434,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1435,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1436,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1437,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1438,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1439,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1440,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1441,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1442,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1443,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1444,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1445,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1446,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1447,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1448,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1449,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1450,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1451,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1452,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1453,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1454,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1455,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1456,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1457,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1458,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1459,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1460,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1461,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1462,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1463,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1464,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1465,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1466,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1467,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1468,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1469,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1470,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1471,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1472,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1473,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1474,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1475,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1476,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1477,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1478,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1479,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1480,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1481,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1482,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1483,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1484,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1485,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1486,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1487,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1488,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1489,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1490,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1491,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1492,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1493,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1494,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1495,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1496,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1497,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1498,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1499,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1500,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1501,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1502,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1503,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1504,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1505,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1506,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1507,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1508,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1509,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1510,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1511,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1512,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1513,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1514,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1515,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1516,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1517,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1518,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1519,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1520,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1521,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1522,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1523,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1524,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1525,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1526,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1527,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1528,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1529,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1530,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1531,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1532,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1533,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1534,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1535,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1536,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1537,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1538,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1539,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1540,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1541,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1542,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1543,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1544,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1545,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1546,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1547,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1548,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1549,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1550,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1551,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1552,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1553,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1554,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1555,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1556,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1557,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1558,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1559,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1560,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1561,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1562,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1563,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1564,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1565,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1566,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1567,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1568,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1569,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1570,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1571,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1572,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1573,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1574,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1575,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1576,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1577,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1578,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1579,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1580,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1581,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1582,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1583,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1584,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1585,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1586,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1587,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1588,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1589,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1590,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1591,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1592,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1593,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1594,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1595,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1596,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1597,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1598,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1599,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1600,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1601,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1602,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1603,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1604,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1605,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1606,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1607,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1608,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1609,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1610,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1611,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1612,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1613,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1614,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1615,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1616,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1617,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1618,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1619,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1620,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1621,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1622,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1623,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1624,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1625,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1626,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1627,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1628,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1629,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1630,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1631,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1632,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1633,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1634,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1635,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1636,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1637,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1638,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1639,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1640,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1641,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1642,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1643,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1644,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1645,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1646,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1647,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1648,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1649,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1650,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1651,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1652,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1653,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1654,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1655,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1656,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1657,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1658,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1659,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1660,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1661,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1662,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1663,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1664,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1665,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1666,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1667,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1668,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1669,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1670,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1671,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1672,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1673,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1674,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1675,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1676,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1677,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1678,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1679,
+    "gripper_external_contact_pairs": []
+  },
+  {
+    "step": 1680,
+    "gripper_external_contact_pairs": []
+  }
+]

@@ -1,0 +1,3928 @@
+{
+  "scope": "Observed-state sensor verification, no task-benefit or policy evidence.",
+  "protocol": {
+    "frozen_before_execution": true,
+    "code_revision": "4f35f8bfafec79dc06243d43de64676e89594a12",
+    "source_hashes": {
+      "studies/robot_feedback_modalities/calibrate.py": "47dc966b1b35dcf16b86013bcc224e27d824de85f31bbd2eb659ef4dda4f1014",
+      "studies/robot_feedback_modalities/decision.md": "71ebf41c37ee473492382850da99da57c88938e3763549e05345a75ebabc66a9",
+      "src/fyp/episode.py": "b8a363a8ea881ce7c5c845e2a5913e7aacfe07a418635907778fdb7dd77e324d",
+      "src/fyp/__init__.py": "04f95911a59d72d6023224ee385d43870b28b640030b0beeec6a25f0061a5fc8",
+      "src/fyp/robosuite_runtime.py": "bafa78b610d2392955cf896487e7c43f82e0bcd2f59a48b891516558b4531505",
+      "src/fyp/runtime.py": "875e5bfba2f67b1f7b1e974b4ebef2ecb1d189a7846bba92a63ad8cbf9e8a4fc",
+      "src/fyp/motion.py": "22512f8abfd6b0aaaec0eb26537ccbbc3abdd78eea6ee3d9ddd4ac5ec477ec90",
+      "requirements.lock": "b8238d8a553b60808bc6a9da997b77fa84179198cff2418f2c2b6640c6e30bdd",
+      ".venv/lib/python3.11/site-packages/robosuite/robots/single_arm.py": "38237d7b68c876b413f0df811b135ca3b2fb91061c011696baab07db5e87fa14",
+      ".venv/lib/python3.11/site-packages/robosuite/models/assets/grippers/panda_gripper.xml": "d9d68123909d6910488310d0fae4e358ed4ac831c6d0957f3e30893a5412baac"
+    },
+    "trials": [
+      {
+        "id": "calibration_s01",
+        "seed": 501,
+        "state_index": 11
+      },
+      {
+        "id": "calibration_s02",
+        "seed": 502,
+        "state_index": 12
+      }
+    ],
+    "training_rotations": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.4,
+        0,
+        0
+      ],
+      [
+        -0.4,
+        0,
+        0
+      ],
+      [
+        0,
+        0.4,
+        0
+      ],
+      [
+        0,
+        -0.4,
+        0
+      ],
+      [
+        -0.3,
+        -0.3,
+        0
+      ],
+      [
+        -0.3,
+        0.3,
+        0
+      ],
+      [
+        0.3,
+        -0.3,
+        0
+      ],
+      [
+        0.3,
+        0.3,
+        0
+      ]
+    ],
+    "validation_rotations": [
+      [
+        -0.2,
+        -0.15,
+        0
+      ],
+      [
+        -0.2,
+        0.15,
+        0
+      ],
+      [
+        0.2,
+        -0.15,
+        0
+      ],
+      [
+        0.2,
+        0.15,
+        0
+      ]
+    ],
+    "quiet_steps": 10,
+    "pose_steps": 60,
+    "initial_settle_steps": 20,
+    "approach_steps": 100,
+    "gates": {
+      "force_validation_p95_N_max": 1,
+      "torque_validation_p95_Nm_max": 0.05,
+      "linear_speed_m_s_max": 0.005,
+      "angular_speed_rad_s_max": 0.05,
+      "finger_speed_m_s_max": 0.001,
+      "unexpected_quiet_contact_max": 0
+    },
+    "actual_astra_requests": 0,
+    "policy": "Fixed Sol verification poses, not an Astra task episode."
+  },
+  "all_calibration_gates_pass": true,
+  "actual_astra_requests": 0,
+  "results": [
+    {
+      "trial": {
+        "id": "calibration_s01",
+        "seed": 501,
+        "state_index": 11
+      },
+      "training_samples": 180,
+      "validation_samples": 80,
+      "rank": 5,
+      "singular_values": [
+        122.63128163283093,
+        35.15030033766268,
+        35.052383885528535,
+        0.5290235680706494,
+        0.383191374062451
+      ],
+      "weights": [
+        [
+          0.00011597331995126807,
+          -0.0032999546646563893,
+          0.005398691720831235,
+          -0.005314968289570196,
+          0.00036711512804012966,
+          0.00012700704815009692
+        ],
+        [
+          -9.230994240372179e-07,
+          -0.5202342345842889,
+          0.0002870755442275774,
+          0.07337464432366964,
+          1.0072194906745021e-06,
+          -3.1389047178365185e-06
+        ],
+        [
+          0.5200155290499487,
+          1.5811057072128322e-05,
+          -1.0176507684060533e-05,
+          8.108820059450572e-06,
+          0.07350126823112052,
+          -2.6091546404501544e-05
+        ],
+        [
+          -1.2226639597053639e-05,
+          0.00032166083935880927,
+          -0.5205333195729372,
+          0.0005256736015571068,
+          -3.843400442548122e-05,
+          -1.3880320715296762e-05
+        ],
+        [
+          -8.687483817362176e-06,
+          5.229775622030752e-06,
+          -3.77683959397263e-06,
+          1.9285756488880986e-06,
+          -4.9996571950523754e-05,
+          -2.8287351392290176e-05
+        ]
+      ],
+      "force_validation_p95_N": 0.00047546567789031165,
+      "torque_validation_p95_Nm": 0.0003800765770818428,
+      "quiet_windows_pass": true,
+      "gate_pass": true,
+      "validation_by_gripper": {
+        "-1": {
+          "force_p95_N": 0.000475247928720091,
+          "torque_p95_Nm": 0.00035038998573891573
+        },
+        "1": {
+          "force_p95_N": 0.00047546567789031165,
+          "torque_p95_Nm": 0.0003800765770818428
+        }
+      },
+      "quiet_window_checks": [
+        {
+          "step": 171,
+          "linear_speed_m_s": 6.9903264005709585e-06,
+          "angular_speed_rad_s": 3.0636966655813984e-05,
+          "finger_speed_m_s": 1.2637520052792817e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 172,
+          "linear_speed_m_s": 7.007402897572725e-06,
+          "angular_speed_rad_s": 3.0474254945360775e-05,
+          "finger_speed_m_s": 1.2095487812022326e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 173,
+          "linear_speed_m_s": 7.023776451089652e-06,
+          "angular_speed_rad_s": 3.0314424548887848e-05,
+          "finger_speed_m_s": 1.157670372026089e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 174,
+          "linear_speed_m_s": 7.0394718792166315e-06,
+          "angular_speed_rad_s": 3.0157380397938486e-05,
+          "finger_speed_m_s": 1.108017064758693e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 175,
+          "linear_speed_m_s": 7.054498995364494e-06,
+          "angular_speed_rad_s": 3.000307623811792e-05,
+          "finger_speed_m_s": 1.0604934232090029e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 176,
+          "linear_speed_m_s": 7.068882815825427e-06,
+          "angular_speed_rad_s": 2.9851418495581525e-05,
+          "finger_speed_m_s": 1.0150081045197216e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 177,
+          "linear_speed_m_s": 7.082619508086183e-06,
+          "angular_speed_rad_s": 2.9702405538614176e-05,
+          "finger_speed_m_s": 9.714736835614548e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 178,
+          "linear_speed_m_s": 7.095737500111831e-06,
+          "angular_speed_rad_s": 2.955593464497625e-05,
+          "finger_speed_m_s": 9.298064849044621e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 179,
+          "linear_speed_m_s": 7.1082485181377775e-06,
+          "angular_speed_rad_s": 2.9411956821790727e-05,
+          "finger_speed_m_s": 8.899264221014966e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 180,
+          "linear_speed_m_s": 7.120170873270139e-06,
+          "angular_speed_rad_s": 2.9270402923110403e-05,
+          "finger_speed_m_s": 8.517568436204339e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 231,
+          "linear_speed_m_s": 1.7578347860756283e-05,
+          "angular_speed_rad_s": 0.00010467939866552296,
+          "finger_speed_m_s": 5.319336703125645e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 232,
+          "linear_speed_m_s": 1.7700345630127983e-05,
+          "angular_speed_rad_s": 0.00010330032136003944,
+          "finger_speed_m_s": 5.0913410602711606e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 233,
+          "linear_speed_m_s": 1.759690160628228e-05,
+          "angular_speed_rad_s": 0.00010241685219055501,
+          "finger_speed_m_s": 4.873147442401747e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 234,
+          "linear_speed_m_s": 1.7388426034018163e-05,
+          "angular_speed_rad_s": 0.0001017705779819072,
+          "finger_speed_m_s": 4.6643250575590625e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 235,
+          "linear_speed_m_s": 1.7145808873731446e-05,
+          "angular_speed_rad_s": 0.00010121024724655297,
+          "finger_speed_m_s": 4.464465116776909e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 236,
+          "linear_speed_m_s": 1.6907024317204316e-05,
+          "angular_speed_rad_s": 0.00010065433435464165,
+          "finger_speed_m_s": 4.273178955758533e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 237,
+          "linear_speed_m_s": 1.668955092272162e-05,
+          "angular_speed_rad_s": 0.00010006479428422389,
+          "finger_speed_m_s": 4.090096319818121e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 238,
+          "linear_speed_m_s": 1.64989655012495e-05,
+          "angular_speed_rad_s": 9.942899032981151e-05,
+          "finger_speed_m_s": 3.914864013797118e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 239,
+          "linear_speed_m_s": 1.633453847707421e-05,
+          "angular_speed_rad_s": 9.874803729680914e-05,
+          "finger_speed_m_s": 3.74714469272511e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 240,
+          "linear_speed_m_s": 1.619267078438606e-05,
+          "angular_speed_rad_s": 9.802935917777629e-05,
+          "finger_speed_m_s": 3.58661592669086e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 291,
+          "linear_speed_m_s": 1.402340324909807e-05,
+          "angular_speed_rad_s": 0.00011679307980161545,
+          "finger_speed_m_s": 8.701055798119546e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 292,
+          "linear_speed_m_s": 1.4737621465076454e-05,
+          "angular_speed_rad_s": 0.00011383767697336115,
+          "finger_speed_m_s": 8.327815086285518e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 293,
+          "linear_speed_m_s": 1.5056456620799653e-05,
+          "angular_speed_rad_s": 0.00011273900419658944,
+          "finger_speed_m_s": 7.970674103412355e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 294,
+          "linear_speed_m_s": 1.5215699817103678e-05,
+          "angular_speed_rad_s": 0.00011243291960911622,
+          "finger_speed_m_s": 7.628904024532122e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 295,
+          "linear_speed_m_s": 1.5310930592337863e-05,
+          "angular_speed_rad_s": 0.00011237289649049836,
+          "finger_speed_m_s": 7.30182538214728e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 296,
+          "linear_speed_m_s": 1.5377383939821584e-05,
+          "angular_speed_rad_s": 0.00011229857556383234,
+          "finger_speed_m_s": 6.988796696629531e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 297,
+          "linear_speed_m_s": 1.5426214739666788e-05,
+          "angular_speed_rad_s": 0.00011210137226137159,
+          "finger_speed_m_s": 6.689208414595387e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 298,
+          "linear_speed_m_s": 1.5916852372296634e-05,
+          "angular_speed_rad_s": 0.000110650302753563,
+          "finger_speed_m_s": 6.402740470347874e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 299,
+          "linear_speed_m_s": 1.6895752749987614e-05,
+          "angular_speed_rad_s": 0.0001076427787587521,
+          "finger_speed_m_s": 6.128036521980843e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 300,
+          "linear_speed_m_s": 1.6914607205744264e-05,
+          "angular_speed_rad_s": 0.00010659629467071426,
+          "finger_speed_m_s": 5.865363587820536e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 351,
+          "linear_speed_m_s": 0.0007131290920197286,
+          "angular_speed_rad_s": 0.002364323028174569,
+          "finger_speed_m_s": 5.3119667818837974e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 352,
+          "linear_speed_m_s": 0.00041535104314186996,
+          "angular_speed_rad_s": 0.0013736330358344439,
+          "finger_speed_m_s": 5.0844839687064654e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 353,
+          "linear_speed_m_s": 0.00014553928149958452,
+          "angular_speed_rad_s": 0.0004840775834597025,
+          "finger_speed_m_s": 4.8666694516142545e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 354,
+          "linear_speed_m_s": 1.6185515448964573e-05,
+          "angular_speed_rad_s": 0.00013066604063387301,
+          "finger_speed_m_s": 4.65810422411898e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 355,
+          "linear_speed_m_s": 1.6114857988672817e-05,
+          "angular_speed_rad_s": 0.00012494175478203355,
+          "finger_speed_m_s": 4.458475187044831e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 356,
+          "linear_speed_m_s": 1.6296339676401035e-05,
+          "angular_speed_rad_s": 0.00012315738796430108,
+          "finger_speed_m_s": 4.267392636402554e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 357,
+          "linear_speed_m_s": 1.6461018290572043e-05,
+          "angular_speed_rad_s": 0.00012144843321108282,
+          "finger_speed_m_s": 4.08449682009584e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 358,
+          "linear_speed_m_s": 1.6583751270607716e-05,
+          "angular_speed_rad_s": 0.0001198606007713056,
+          "finger_speed_m_s": 3.909441219991373e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 359,
+          "linear_speed_m_s": 1.665555208083544e-05,
+          "angular_speed_rad_s": 0.00011841280008679807,
+          "finger_speed_m_s": 3.741892200066864e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 360,
+          "linear_speed_m_s": 1.6677885493432464e-05,
+          "angular_speed_rad_s": 0.00011709917554312088,
+          "finger_speed_m_s": 3.581529122654484e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 411,
+          "linear_speed_m_s": 0.0012459228955572642,
+          "angular_speed_rad_s": 0.003024750519649549,
+          "finger_speed_m_s": 3.8759360973347555e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 412,
+          "linear_speed_m_s": 0.0010629578108345887,
+          "angular_speed_rad_s": 0.0026256003768888557,
+          "finger_speed_m_s": 3.712377135343614e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 413,
+          "linear_speed_m_s": 0.0008550918383347845,
+          "angular_speed_rad_s": 0.0021344741188816458,
+          "finger_speed_m_s": 3.5557918861599676e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 414,
+          "linear_speed_m_s": 0.000639251923170167,
+          "angular_speed_rad_s": 0.0016044379702005412,
+          "finger_speed_m_s": 3.405898360646605e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 415,
+          "linear_speed_m_s": 0.0004298130527229428,
+          "angular_speed_rad_s": 0.0010794368682865425,
+          "finger_speed_m_s": 3.262422245197949e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 416,
+          "linear_speed_m_s": 0.000238105034793172,
+          "angular_speed_rad_s": 0.0005943055260256511,
+          "finger_speed_m_s": 3.125096858366372e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 417,
+          "linear_speed_m_s": 7.299346472717948e-05,
+          "angular_speed_rad_s": 0.0001936826657304217,
+          "finger_speed_m_s": 2.993430457737366e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 418,
+          "linear_speed_m_s": 9.860548900679745e-06,
+          "angular_speed_rad_s": 9.815934987351566e-05,
+          "finger_speed_m_s": 2.8675353433004194e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 419,
+          "linear_speed_m_s": 9.30903241397377e-06,
+          "angular_speed_rad_s": 9.651161519181096e-05,
+          "finger_speed_m_s": 2.7472091340221665e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 420,
+          "linear_speed_m_s": 9.210872637970085e-06,
+          "angular_speed_rad_s": 9.530935628116281e-05,
+          "finger_speed_m_s": 2.6320163676803044e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 471,
+          "linear_speed_m_s": 1.9303130278493368e-05,
+          "angular_speed_rad_s": 2.0727704262084163e-05,
+          "finger_speed_m_s": 3.704135890080936e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 472,
+          "linear_speed_m_s": 2.008020181903591e-05,
+          "angular_speed_rad_s": 2.8926606064285262e-05,
+          "finger_speed_m_s": 3.5451845333170294e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 473,
+          "linear_speed_m_s": 2.071069204891786e-05,
+          "angular_speed_rad_s": 3.658026011510174e-05,
+          "finger_speed_m_s": 3.393344888545727e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 474,
+          "linear_speed_m_s": 2.0612569037066916e-05,
+          "angular_speed_rad_s": 4.5706326924677047e-05,
+          "finger_speed_m_s": 3.248387714009845e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 475,
+          "linear_speed_m_s": 2.040092013603426e-05,
+          "angular_speed_rad_s": 5.207862521916706e-05,
+          "finger_speed_m_s": 3.1085619940336016e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 476,
+          "linear_speed_m_s": 2.0273501006485207e-05,
+          "angular_speed_rad_s": 5.3450748096187656e-05,
+          "finger_speed_m_s": 2.9749549751432212e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 477,
+          "linear_speed_m_s": 2.0048457109158615e-05,
+          "angular_speed_rad_s": 5.253993716382651e-05,
+          "finger_speed_m_s": 2.8472228157573507e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 478,
+          "linear_speed_m_s": 1.9807530974824925e-05,
+          "angular_speed_rad_s": 5.080782200645775e-05,
+          "finger_speed_m_s": 2.7250431787066475e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 479,
+          "linear_speed_m_s": 1.9600244468217187e-05,
+          "angular_speed_rad_s": 4.898675687704168e-05,
+          "finger_speed_m_s": 2.6081374795760118e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 480,
+          "linear_speed_m_s": 1.9429665257263302e-05,
+          "angular_speed_rad_s": 4.739071028852755e-05,
+          "finger_speed_m_s": 2.4962577621928525e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 531,
+          "linear_speed_m_s": 0.0018753073944251437,
+          "angular_speed_rad_s": 0.0060258235257965725,
+          "finger_speed_m_s": 2.420744643592735e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 532,
+          "linear_speed_m_s": 0.0014054932164599384,
+          "angular_speed_rad_s": 0.004490653975540199,
+          "finger_speed_m_s": 2.37064097813534e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 533,
+          "linear_speed_m_s": 0.0009480269144001083,
+          "angular_speed_rad_s": 0.002989448557845412,
+          "finger_speed_m_s": 2.312442837273622e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 534,
+          "linear_speed_m_s": 0.0005276212947286607,
+          "angular_speed_rad_s": 0.001596259633079736,
+          "finger_speed_m_s": 2.2453974006455463e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 535,
+          "linear_speed_m_s": 0.00020069325007681955,
+          "angular_speed_rad_s": 0.00044252686130022537,
+          "finger_speed_m_s": 2.2643764958635893e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 536,
+          "linear_speed_m_s": 9.400136995372198e-05,
+          "angular_speed_rad_s": 0.00014646529055056424,
+          "finger_speed_m_s": 2.157857059173061e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 537,
+          "linear_speed_m_s": 3.928408619769833e-05,
+          "angular_speed_rad_s": 6.022210007410285e-05,
+          "finger_speed_m_s": 2.0231559439913618e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 538,
+          "linear_speed_m_s": 1.1250052730469523e-05,
+          "angular_speed_rad_s": 7.785476011388384e-05,
+          "finger_speed_m_s": 1.9087662193836752e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 539,
+          "linear_speed_m_s": 1.3528597619110757e-05,
+          "angular_speed_rad_s": 0.00010398493465116043,
+          "finger_speed_m_s": 1.8103845013256516e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 540,
+          "linear_speed_m_s": 1.8724892649967292e-05,
+          "angular_speed_rad_s": 0.00011519995054280748,
+          "finger_speed_m_s": 1.7240337148987532e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 591,
+          "linear_speed_m_s": 0.0004358583076326945,
+          "angular_speed_rad_s": 0.0010498571439436022,
+          "finger_speed_m_s": 7.057881265626006e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 592,
+          "linear_speed_m_s": 0.00036504280326189265,
+          "angular_speed_rad_s": 0.0009052888028796806,
+          "finger_speed_m_s": 6.7503605633358e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 593,
+          "linear_speed_m_s": 0.00029642393667705995,
+          "angular_speed_rad_s": 0.0007430574350903304,
+          "finger_speed_m_s": 6.456992855444338e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 594,
+          "linear_speed_m_s": 0.00023132351996425519,
+          "angular_speed_rad_s": 0.0005754390952328617,
+          "finger_speed_m_s": 6.177156766015025e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 595,
+          "linear_speed_m_s": 0.00017119028750221249,
+          "angular_speed_rad_s": 0.00041342828234120583,
+          "finger_speed_m_s": 5.910252043992774e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 596,
+          "linear_speed_m_s": 0.00011746315250663414,
+          "angular_speed_rad_s": 0.00026526551746951606,
+          "finger_speed_m_s": 5.655596375313001e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 597,
+          "linear_speed_m_s": 7.1558063544984e-05,
+          "angular_speed_rad_s": 0.00013789927392465358,
+          "finger_speed_m_s": 5.412517007022428e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 598,
+          "linear_speed_m_s": 3.475609222838025e-05,
+          "angular_speed_rad_s": 6.0175308862085504e-05,
+          "finger_speed_m_s": 5.1784697887798553e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 599,
+          "linear_speed_m_s": 1.2650467254549196e-05,
+          "angular_speed_rad_s": 6.910513047175694e-05,
+          "finger_speed_m_s": 4.959312002296262e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 600,
+          "linear_speed_m_s": 9.22425572332181e-06,
+          "angular_speed_rad_s": 7.393382014859461e-05,
+          "finger_speed_m_s": 4.747491984573121e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 651,
+          "linear_speed_m_s": 0.001869012659839423,
+          "angular_speed_rad_s": 0.00600463060899431,
+          "finger_speed_m_s": 4.952638603880419e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 652,
+          "linear_speed_m_s": 0.0013996947642640808,
+          "angular_speed_rad_s": 0.004471100953096758,
+          "finger_speed_m_s": 4.794050032752036e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 653,
+          "linear_speed_m_s": 0.000942957243249778,
+          "angular_speed_rad_s": 0.002972351228162963,
+          "finger_speed_m_s": 4.631821454877914e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 654,
+          "linear_speed_m_s": 0.0005235227456814685,
+          "angular_speed_rad_s": 0.0015823922753087638,
+          "finger_speed_m_s": 4.465084499299014e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 655,
+          "linear_speed_m_s": 0.0001988774560853298,
+          "angular_speed_rad_s": 0.00043717221291413976,
+          "finger_speed_m_s": 4.3888067418749105e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 656,
+          "linear_speed_m_s": 9.347200794557921e-05,
+          "angular_speed_rad_s": 0.00014798122549630605,
+          "finger_speed_m_s": 4.189587197481859e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 657,
+          "linear_speed_m_s": 3.89071292413177e-05,
+          "angular_speed_rad_s": 6.005522287972156e-05,
+          "finger_speed_m_s": 3.967890043631981e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 658,
+          "linear_speed_m_s": 1.108563299077994e-05,
+          "angular_speed_rad_s": 7.56406707389883e-05,
+          "finger_speed_m_s": 3.7701018231503895e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 659,
+          "linear_speed_m_s": 1.3708160757246602e-05,
+          "angular_speed_rad_s": 0.00010145292900239588,
+          "finger_speed_m_s": 3.5918904714301933e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 660,
+          "linear_speed_m_s": 1.8862967696045474e-05,
+          "angular_speed_rad_s": 0.00011248195450564313,
+          "finger_speed_m_s": 3.4279325115874323e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 711,
+          "linear_speed_m_s": 0.0002442698387863204,
+          "angular_speed_rad_s": 0.0006352881228388523,
+          "finger_speed_m_s": 4.273907939499734e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 712,
+          "linear_speed_m_s": 0.00013228229830528976,
+          "angular_speed_rad_s": 0.00031023380927110383,
+          "finger_speed_m_s": 4.089588947824944e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 713,
+          "linear_speed_m_s": 5.4214325446581705e-05,
+          "angular_speed_rad_s": 7.02408614637732e-05,
+          "finger_speed_m_s": 3.9104691499999585e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 714,
+          "linear_speed_m_s": 2.359862640572742e-05,
+          "angular_speed_rad_s": 4.634433965850241e-05,
+          "finger_speed_m_s": 3.744886829103934e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 715,
+          "linear_speed_m_s": 9.3185151880248e-06,
+          "angular_speed_rad_s": 7.164226031271105e-05,
+          "finger_speed_m_s": 3.58604000881511e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 716,
+          "linear_speed_m_s": 5.60466258711847e-06,
+          "angular_speed_rad_s": 8.186648700818778e-05,
+          "finger_speed_m_s": 3.433622608085156e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 717,
+          "linear_speed_m_s": 5.578563678670656e-06,
+          "angular_speed_rad_s": 8.17579900794477e-05,
+          "finger_speed_m_s": 3.286445270023589e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 718,
+          "linear_speed_m_s": 5.675793263041675e-06,
+          "angular_speed_rad_s": 8.099014828619677e-05,
+          "finger_speed_m_s": 3.14552031592467e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 719,
+          "linear_speed_m_s": 5.772636858763121e-06,
+          "angular_speed_rad_s": 8.02290658861861e-05,
+          "finger_speed_m_s": 3.0106382660586834e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 720,
+          "linear_speed_m_s": 5.895393491737368e-06,
+          "angular_speed_rad_s": 7.934670274949497e-05,
+          "finger_speed_m_s": 2.8816329929909625e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 771,
+          "linear_speed_m_s": 7.156849186918991e-06,
+          "angular_speed_rad_s": 0.00011024550142110098,
+          "finger_speed_m_s": 3.0334708714726793e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 772,
+          "linear_speed_m_s": 7.855157687783604e-06,
+          "angular_speed_rad_s": 0.00011253684264620666,
+          "finger_speed_m_s": 2.9007422807328975e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 773,
+          "linear_speed_m_s": 7.462633831981495e-06,
+          "angular_speed_rad_s": 0.00011055604611543614,
+          "finger_speed_m_s": 2.7751290631417404e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 774,
+          "linear_speed_m_s": 6.64786390579795e-06,
+          "angular_speed_rad_s": 0.00010619429368226712,
+          "finger_speed_m_s": 2.6564126772840604e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 775,
+          "linear_speed_m_s": 6.268146853166676e-06,
+          "angular_speed_rad_s": 0.0001009062826134639,
+          "finger_speed_m_s": 2.543869077874769e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 776,
+          "linear_speed_m_s": 6.680936129045484e-06,
+          "angular_speed_rad_s": 9.578557735455772e-05,
+          "finger_speed_m_s": 2.4366770090362554e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 777,
+          "linear_speed_m_s": 7.561593611027982e-06,
+          "angular_speed_rad_s": 9.133796553102133e-05,
+          "finger_speed_m_s": 2.3342679372959697e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 778,
+          "linear_speed_m_s": 8.504010444546266e-06,
+          "angular_speed_rad_s": 8.772057111817191e-05,
+          "finger_speed_m_s": 2.2362477748445737e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 779,
+          "linear_speed_m_s": 9.302265068945926e-06,
+          "angular_speed_rad_s": 8.490361458162277e-05,
+          "finger_speed_m_s": 2.142335699198638e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 780,
+          "linear_speed_m_s": 9.898056991066576e-06,
+          "angular_speed_rad_s": 8.277213203713356e-05,
+          "finger_speed_m_s": 2.052321373841855e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 831,
+          "linear_speed_m_s": 6.012503413434916e-06,
+          "angular_speed_rad_s": 7.878307831717761e-05,
+          "finger_speed_m_s": 3.451144431056942e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 832,
+          "linear_speed_m_s": 5.747215980421123e-06,
+          "angular_speed_rad_s": 7.994461046227636e-05,
+          "finger_speed_m_s": 3.303318155000545e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 833,
+          "linear_speed_m_s": 5.835815687795004e-06,
+          "angular_speed_rad_s": 7.921830464612855e-05,
+          "finger_speed_m_s": 3.161657590376804e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 834,
+          "linear_speed_m_s": 5.954980666204778e-06,
+          "angular_speed_rad_s": 7.832003869501092e-05,
+          "finger_speed_m_s": 3.026172610751654e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 835,
+          "linear_speed_m_s": 6.296078056253599e-06,
+          "angular_speed_rad_s": 7.638595742594614e-05,
+          "finger_speed_m_s": 2.8964685080264818e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 836,
+          "linear_speed_m_s": 6.87521490848577e-06,
+          "angular_speed_rad_s": 7.384365976550513e-05,
+          "finger_speed_m_s": 2.7722581356280136e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 837,
+          "linear_speed_m_s": 7.550451266336712e-06,
+          "angular_speed_rad_s": 7.134982263340847e-05,
+          "finger_speed_m_s": 2.653343712090215e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 838,
+          "linear_speed_m_s": 8.190519739490477e-06,
+          "angular_speed_rad_s": 6.918235010875147e-05,
+          "finger_speed_m_s": 2.5395194642096874e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 839,
+          "linear_speed_m_s": 8.724633408036367e-06,
+          "angular_speed_rad_s": 6.74132462507905e-05,
+          "finger_speed_m_s": 2.430577786025278e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 840,
+          "linear_speed_m_s": 9.134031669145641e-06,
+          "angular_speed_rad_s": 6.601639405878484e-05,
+          "finger_speed_m_s": 2.326313779892129e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 891,
+          "linear_speed_m_s": 7.157490981998266e-06,
+          "angular_speed_rad_s": 0.00011024775600932299,
+          "finger_speed_m_s": 2.4745198357548963e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 892,
+          "linear_speed_m_s": 7.846803551274433e-06,
+          "angular_speed_rad_s": 0.0001125068627068451,
+          "finger_speed_m_s": 2.365834833227662e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 893,
+          "linear_speed_m_s": 7.457401882430164e-06,
+          "angular_speed_rad_s": 0.00011053521157549005,
+          "finger_speed_m_s": 2.263161965740907e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 894,
+          "linear_speed_m_s": 6.646595161653652e-06,
+          "angular_speed_rad_s": 0.00010618530955922679,
+          "finger_speed_m_s": 2.166399988374515e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 895,
+          "linear_speed_m_s": 6.268419969813217e-06,
+          "angular_speed_rad_s": 0.0001009037806687367,
+          "finger_speed_m_s": 2.074871266002742e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 896,
+          "linear_speed_m_s": 6.681214331154538e-06,
+          "angular_speed_rad_s": 9.578623708077868e-05,
+          "finger_speed_m_s": 1.9877942041708986e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 897,
+          "linear_speed_m_s": 7.561602669981171e-06,
+          "angular_speed_rad_s": 9.133985786359902e-05,
+          "finger_speed_m_s": 1.9046382965898464e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 898,
+          "linear_speed_m_s": 8.503989851244737e-06,
+          "angular_speed_rad_s": 8.772257632539925e-05,
+          "finger_speed_m_s": 1.8250459618777951e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 899,
+          "linear_speed_m_s": 9.302438079403735e-06,
+          "angular_speed_rad_s": 8.490519373120392e-05,
+          "finger_speed_m_s": 1.7487716956436479e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 900,
+          "linear_speed_m_s": 9.898528216157475e-06,
+          "angular_speed_rad_s": 8.277307473402285e-05,
+          "finger_speed_m_s": 1.6756387962412481e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 951,
+          "linear_speed_m_s": 2.6724095249139163e-05,
+          "angular_speed_rad_s": 0.00011345332180604691,
+          "finger_speed_m_s": 9.055471211093973e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 952,
+          "linear_speed_m_s": 2.6528204338684456e-05,
+          "angular_speed_rad_s": 0.00011262419630970075,
+          "finger_speed_m_s": 6.960930942821214e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 953,
+          "linear_speed_m_s": 2.633491157470707e-05,
+          "angular_speed_rad_s": 0.0001118032843155019,
+          "finger_speed_m_s": 1.222163188454335e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 954,
+          "linear_speed_m_s": 2.6144154276072646e-05,
+          "angular_speed_rad_s": 0.00011099052127906404,
+          "finger_speed_m_s": 1.940629998493358e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 955,
+          "linear_speed_m_s": 2.5955889799632797e-05,
+          "angular_speed_rad_s": 0.00011018575400370878,
+          "finger_speed_m_s": 1.5260454329965397e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 956,
+          "linear_speed_m_s": 2.577006328312231e-05,
+          "angular_speed_rad_s": 0.00010938889699586467,
+          "finger_speed_m_s": 1.037485023278719e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 957,
+          "linear_speed_m_s": 2.558663053365357e-05,
+          "angular_speed_rad_s": 0.00010859982359317289,
+          "finger_speed_m_s": 1.3267455111992554e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 958,
+          "linear_speed_m_s": 2.5405543446402416e-05,
+          "angular_speed_rad_s": 0.0001078184296975947,
+          "finger_speed_m_s": 7.495688260714113e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 959,
+          "linear_speed_m_s": 2.5226752654247797e-05,
+          "angular_speed_rad_s": 0.00010704463510551308,
+          "finger_speed_m_s": 3.436359522393674e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 960,
+          "linear_speed_m_s": 2.505021814999282e-05,
+          "angular_speed_rad_s": 0.00010627831943540857,
+          "finger_speed_m_s": 1.0799967945556187e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1011,
+          "linear_speed_m_s": 1.7660116613462078e-05,
+          "angular_speed_rad_s": 0.00010482438162538286,
+          "finger_speed_m_s": 7.506817042907695e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1012,
+          "linear_speed_m_s": 1.779663522701433e-05,
+          "angular_speed_rad_s": 0.00010338470672323419,
+          "finger_speed_m_s": 7.183735543089244e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1013,
+          "linear_speed_m_s": 1.7700122483185998e-05,
+          "angular_speed_rad_s": 0.00010245831777480804,
+          "finger_speed_m_s": 6.87628233972211e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1014,
+          "linear_speed_m_s": 1.749314428806136e-05,
+          "angular_speed_rad_s": 0.00010178159515269174,
+          "finger_speed_m_s": 6.581103090997675e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1015,
+          "linear_speed_m_s": 1.72485454069978e-05,
+          "angular_speed_rad_s": 0.00010119897918315084,
+          "finger_speed_m_s": 6.29911634784915e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1016,
+          "linear_speed_m_s": 1.7005714573482333e-05,
+          "angular_speed_rad_s": 0.00010062597136504503,
+          "finger_speed_m_s": 6.031074321679055e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1017,
+          "linear_speed_m_s": 1.6783015032213608e-05,
+          "angular_speed_rad_s": 0.00010002263339158649,
+          "finger_speed_m_s": 5.77414496401381e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1018,
+          "linear_speed_m_s": 1.6586633165177386e-05,
+          "angular_speed_rad_s": 9.937501035615311e-05,
+          "finger_speed_m_s": 5.526087581330715e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1019,
+          "linear_speed_m_s": 1.641627425443708e-05,
+          "angular_speed_rad_s": 9.868320519047407e-05,
+          "finger_speed_m_s": 5.436558195127319e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1020,
+          "linear_speed_m_s": 1.6268561045907446e-05,
+          "angular_speed_rad_s": 9.795415758544543e-05,
+          "finger_speed_m_s": 5.0605385635969515e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1071,
+          "linear_speed_m_s": 1.401859636322287e-05,
+          "angular_speed_rad_s": 0.00011679478924857167,
+          "finger_speed_m_s": 0.00019171341074622356,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1072,
+          "linear_speed_m_s": 1.4734640041105671e-05,
+          "angular_speed_rad_s": 0.000113838846436171,
+          "finger_speed_m_s": 0.0001834942710509352,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1073,
+          "linear_speed_m_s": 1.5054875376848718e-05,
+          "angular_speed_rad_s": 0.00011273967412445205,
+          "finger_speed_m_s": 0.00017564097601553493,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1074,
+          "linear_speed_m_s": 1.5215071500535484e-05,
+          "angular_speed_rad_s": 0.00011243323822397855,
+          "finger_speed_m_s": 0.00016834525162874695,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1075,
+          "linear_speed_m_s": 1.5310904327345105e-05,
+          "angular_speed_rad_s": 0.00011237294575456565,
+          "finger_speed_m_s": 0.00016088732359582225,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1076,
+          "linear_speed_m_s": 1.5377641606975823e-05,
+          "angular_speed_rad_s": 0.0001122985737173496,
+          "finger_speed_m_s": 0.00015398573658986927,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1077,
+          "linear_speed_m_s": 1.5426565182682228e-05,
+          "angular_speed_rad_s": 0.00011210137475650133,
+          "finger_speed_m_s": 0.00014738096208422426,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1078,
+          "linear_speed_m_s": 1.5927521376416417e-05,
+          "angular_speed_rad_s": 0.00011062527896542978,
+          "finger_speed_m_s": 0.0001410658315806524,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1079,
+          "linear_speed_m_s": 1.6899406357339625e-05,
+          "angular_speed_rad_s": 0.00010763082485540915,
+          "finger_speed_m_s": 0.00013501628460614354,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1080,
+          "linear_speed_m_s": 1.6915053059438567e-05,
+          "angular_speed_rad_s": 0.00010659144862212504,
+          "finger_speed_m_s": 0.0001292268711281319,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1131,
+          "linear_speed_m_s": 0.0007131326640871522,
+          "angular_speed_rad_s": 0.002364338826084088,
+          "finger_speed_m_s": 7.033670900392644e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1132,
+          "linear_speed_m_s": 0.0004153309475551884,
+          "angular_speed_rad_s": 0.0013735689756923884,
+          "finger_speed_m_s": 6.737191905761208e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1133,
+          "linear_speed_m_s": 0.0001455011350960942,
+          "angular_speed_rad_s": 0.00048396494179913144,
+          "finger_speed_m_s": 6.443463180875848e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1134,
+          "linear_speed_m_s": 1.6182528789480558e-05,
+          "angular_speed_rad_s": 0.0001306733729664432,
+          "finger_speed_m_s": 6.17252404401479e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1135,
+          "linear_speed_m_s": 1.611236510182383e-05,
+          "angular_speed_rad_s": 0.00012495464703002362,
+          "finger_speed_m_s": 5.902468413092481e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1136,
+          "linear_speed_m_s": 1.6293806302325042e-05,
+          "angular_speed_rad_s": 0.0001231706303160473,
+          "finger_speed_m_s": 5.65725428965516e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1137,
+          "linear_speed_m_s": 1.645850075098384e-05,
+          "angular_speed_rad_s": 0.00012146186479948476,
+          "finger_speed_m_s": 5.409505071765447e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1138,
+          "linear_speed_m_s": 1.6581282418603887e-05,
+          "angular_speed_rad_s": 0.00011987414742001795,
+          "finger_speed_m_s": 5.177786372042403e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1139,
+          "linear_speed_m_s": 1.6653149719983706e-05,
+          "angular_speed_rad_s": 0.00011842642643106167,
+          "finger_speed_m_s": 4.954317008150544e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1140,
+          "linear_speed_m_s": 1.667554437474496e-05,
+          "angular_speed_rad_s": 0.00011711291436365707,
+          "finger_speed_m_s": 4.748391895239229e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1191,
+          "linear_speed_m_s": 0.0012459229329768867,
+          "angular_speed_rad_s": 0.0030247510013300598,
+          "finger_speed_m_s": 5.40897479151277e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1192,
+          "linear_speed_m_s": 0.0010629579548459573,
+          "angular_speed_rad_s": 0.002625601293905692,
+          "finger_speed_m_s": 5.087878631188358e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1193,
+          "linear_speed_m_s": 0.0008550920800513287,
+          "angular_speed_rad_s": 0.0021344753519296988,
+          "finger_speed_m_s": 4.764508208830817e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1194,
+          "linear_speed_m_s": 0.0006392521264630083,
+          "angular_speed_rad_s": 0.0016044399901816284,
+          "finger_speed_m_s": 4.571280832667803e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1195,
+          "linear_speed_m_s": 0.0004298133074533767,
+          "angular_speed_rad_s": 0.0010794396720351527,
+          "finger_speed_m_s": 4.708614013401111e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1196,
+          "linear_speed_m_s": 0.0002381052519350238,
+          "angular_speed_rad_s": 0.0005943103172987164,
+          "finger_speed_m_s": 4.291685855100382e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1197,
+          "linear_speed_m_s": 7.299376486041762e-05,
+          "angular_speed_rad_s": 0.00019369514286632133,
+          "finger_speed_m_s": 3.996178743757162e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1198,
+          "linear_speed_m_s": 9.860867258971906e-06,
+          "angular_speed_rad_s": 9.818295609186805e-05,
+          "finger_speed_m_s": 4.573444503244769e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1199,
+          "linear_speed_m_s": 9.30937434309959e-06,
+          "angular_speed_rad_s": 9.653545791906226e-05,
+          "finger_speed_m_s": 3.953759499526068e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1200,
+          "linear_speed_m_s": 9.211226754704395e-06,
+          "angular_speed_rad_s": 9.533333444500526e-05,
+          "finger_speed_m_s": 3.928037868668988e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1251,
+          "linear_speed_m_s": 1.9305384892039646e-05,
+          "angular_speed_rad_s": 2.072793321984575e-05,
+          "finger_speed_m_s": 5.238456895482769e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1252,
+          "linear_speed_m_s": 2.0082213038956717e-05,
+          "angular_speed_rad_s": 2.8937893980204938e-05,
+          "finger_speed_m_s": 5.01904995232803e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1253,
+          "linear_speed_m_s": 2.07123146038457e-05,
+          "angular_speed_rad_s": 3.659639870971934e-05,
+          "finger_speed_m_s": 4.7989339003408255e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1254,
+          "linear_speed_m_s": 2.061280191020842e-05,
+          "angular_speed_rad_s": 4.572904761357662e-05,
+          "finger_speed_m_s": 4.58877538718905e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1255,
+          "linear_speed_m_s": 2.040209851404037e-05,
+          "angular_speed_rad_s": 5.2090822880548136e-05,
+          "finger_speed_m_s": 4.444517989771829e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1256,
+          "linear_speed_m_s": 2.0274616724177392e-05,
+          "angular_speed_rad_s": 5.345837844731945e-05,
+          "finger_speed_m_s": 4.2101315169295795e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1257,
+          "linear_speed_m_s": 2.004936477114388e-05,
+          "angular_speed_rad_s": 5.2545222539458255e-05,
+          "finger_speed_m_s": 4.043829185362772e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1258,
+          "linear_speed_m_s": 1.9808280102234454e-05,
+          "angular_speed_rad_s": 5.081198197189984e-05,
+          "finger_speed_m_s": 3.849125475686848e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1259,
+          "linear_speed_m_s": 1.960086066298177e-05,
+          "angular_speed_rad_s": 4.8990476910296793e-05,
+          "finger_speed_m_s": 3.694676182951433e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1260,
+          "linear_speed_m_s": 1.9430175258829966e-05,
+          "angular_speed_rad_s": 4.739432033269382e-05,
+          "finger_speed_m_s": 3.533690252342495e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1311,
+          "linear_speed_m_s": 0.0018753278228758699,
+          "angular_speed_rad_s": 0.0060259170416140356,
+          "finger_speed_m_s": 3.4526235958413954e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1312,
+          "linear_speed_m_s": 0.0014055141911636924,
+          "angular_speed_rad_s": 0.00449074463973884,
+          "finger_speed_m_s": 3.4600679682359143e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1313,
+          "linear_speed_m_s": 0.0009480482429068197,
+          "angular_speed_rad_s": 0.002989534808868046,
+          "finger_speed_m_s": 3.7221831208335434e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1314,
+          "linear_speed_m_s": 0.0005276434953124316,
+          "angular_speed_rad_s": 0.0015963432012166643,
+          "finger_speed_m_s": 3.1651778255773018e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1315,
+          "linear_speed_m_s": 0.00020071662154744422,
+          "angular_speed_rad_s": 0.00044261906005474676,
+          "finger_speed_m_s": 3.3804412793351783e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1316,
+          "linear_speed_m_s": 9.401736173792642e-05,
+          "angular_speed_rad_s": 0.00014654704015948483,
+          "finger_speed_m_s": 5.223441576182518e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1317,
+          "linear_speed_m_s": 3.929177593872909e-05,
+          "angular_speed_rad_s": 6.025044852490372e-05,
+          "finger_speed_m_s": 4.1254298169911625e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1318,
+          "linear_speed_m_s": 1.1250949832446225e-05,
+          "angular_speed_rad_s": 7.78293670561461e-05,
+          "finger_speed_m_s": 3.566029899321219e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1319,
+          "linear_speed_m_s": 1.353197191605319e-05,
+          "angular_speed_rad_s": 0.00010395901256607258,
+          "finger_speed_m_s": 2.5629091762768026e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1320,
+          "linear_speed_m_s": 1.8731792643457388e-05,
+          "angular_speed_rad_s": 0.00011517897383869663,
+          "finger_speed_m_s": 2.442607369986191e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1371,
+          "linear_speed_m_s": 0.000435858501899287,
+          "angular_speed_rad_s": 0.0010498898545303033,
+          "finger_speed_m_s": 0.00015647707151573116,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1372,
+          "linear_speed_m_s": 0.0003650393843294193,
+          "angular_speed_rad_s": 0.0009053111494405122,
+          "finger_speed_m_s": 0.0001497050738710047,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1373,
+          "linear_speed_m_s": 0.00029642045421790904,
+          "angular_speed_rad_s": 0.0007430696155888846,
+          "finger_speed_m_s": 0.0001432410653804039,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1374,
+          "linear_speed_m_s": 0.00023132107503163712,
+          "angular_speed_rad_s": 0.0005754475154599779,
+          "finger_speed_m_s": 0.00013703887684042386,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1375,
+          "linear_speed_m_s": 0.00017118911187942652,
+          "angular_speed_rad_s": 0.00041343487814287494,
+          "finger_speed_m_s": 0.0001311519767747913,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1376,
+          "linear_speed_m_s": 0.00011746353152612159,
+          "angular_speed_rad_s": 0.00026527022611837474,
+          "finger_speed_m_s": 0.00012549310126867887,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1377,
+          "linear_speed_m_s": 7.155984977120372e-05,
+          "angular_speed_rad_s": 0.00013790177613803322,
+          "finger_speed_m_s": 0.00012012487119530187,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1378,
+          "linear_speed_m_s": 3.475921991500037e-05,
+          "angular_speed_rad_s": 6.017311430470125e-05,
+          "finger_speed_m_s": 0.00011492496768161425,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1379,
+          "linear_speed_m_s": 1.2652924995661845e-05,
+          "angular_speed_rad_s": 6.909642150600292e-05,
+          "finger_speed_m_s": 0.00011003910649617902,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1380,
+          "linear_speed_m_s": 9.225973815918678e-06,
+          "angular_speed_rad_s": 7.39247574052695e-05,
+          "finger_speed_m_s": 0.00010542010564964678,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1431,
+          "linear_speed_m_s": 0.001869032872107598,
+          "angular_speed_rad_s": 0.006004723998168246,
+          "finger_speed_m_s": 1.1154063535021415e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1432,
+          "linear_speed_m_s": 0.0013997153015641868,
+          "angular_speed_rad_s": 0.004471190547971705,
+          "finger_speed_m_s": 1.078951606370807e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1433,
+          "linear_speed_m_s": 0.0009429780140356971,
+          "angular_speed_rad_s": 0.002972435624219987,
+          "finger_speed_m_s": 1.0494030291736115e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1434,
+          "linear_speed_m_s": 0.0005235443650679487,
+          "angular_speed_rad_s": 0.0015824735656769806,
+          "finger_speed_m_s": 1.1984244520805248e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1435,
+          "linear_speed_m_s": 0.00019890076852648774,
+          "angular_speed_rad_s": 0.000437262132881441,
+          "finger_speed_m_s": 9.799445540917982e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1436,
+          "linear_speed_m_s": 9.348790532534358e-05,
+          "angular_speed_rad_s": 0.00014806262907833052,
+          "finger_speed_m_s": 9.240170562145099e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1437,
+          "linear_speed_m_s": 3.891468502786874e-05,
+          "angular_speed_rad_s": 6.008650076263321e-05,
+          "finger_speed_m_s": 9.3904626477499e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1438,
+          "linear_speed_m_s": 1.1086459370444216e-05,
+          "angular_speed_rad_s": 7.561742710700791e-05,
+          "finger_speed_m_s": 8.352214326864545e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1439,
+          "linear_speed_m_s": 1.3711658417582162e-05,
+          "angular_speed_rad_s": 0.00010142856422768511,
+          "finger_speed_m_s": 7.951023204172003e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1440,
+          "linear_speed_m_s": 1.886848376055945e-05,
+          "angular_speed_rad_s": 0.00011245899902163461,
+          "finger_speed_m_s": 7.6750596919938e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1491,
+          "linear_speed_m_s": 0.00024429297612926326,
+          "angular_speed_rad_s": 0.0006353554433067715,
+          "finger_speed_m_s": 0.00011593637975633637,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1492,
+          "linear_speed_m_s": 0.0001322905736049831,
+          "angular_speed_rad_s": 0.0003102486457799241,
+          "finger_speed_m_s": 0.00011089462777292064,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1493,
+          "linear_speed_m_s": 5.4220993189932524e-05,
+          "angular_speed_rad_s": 7.024005062226688e-05,
+          "finger_speed_m_s": 0.00010612772735074903,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1494,
+          "linear_speed_m_s": 2.3602345228008746e-05,
+          "angular_speed_rad_s": 4.633363526115959e-05,
+          "finger_speed_m_s": 0.0001016014884729154,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1495,
+          "linear_speed_m_s": 9.31902105860569e-06,
+          "angular_speed_rad_s": 7.163340397761113e-05,
+          "finger_speed_m_s": 9.724005387834093e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1496,
+          "linear_speed_m_s": 5.60474554195171e-06,
+          "angular_speed_rad_s": 8.185612535288543e-05,
+          "finger_speed_m_s": 9.308105041758325e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1497,
+          "linear_speed_m_s": 5.57877998288647e-06,
+          "angular_speed_rad_s": 8.174675003763713e-05,
+          "finger_speed_m_s": 8.910244554815478e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1498,
+          "linear_speed_m_s": 5.676026761743636e-06,
+          "angular_speed_rad_s": 8.097927944449689e-05,
+          "finger_speed_m_s": 8.528881390722112e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1499,
+          "linear_speed_m_s": 5.772889969389755e-06,
+          "angular_speed_rad_s": 8.021854646744581e-05,
+          "finger_speed_m_s": 8.16172532205022e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1500,
+          "linear_speed_m_s": 5.895183549011653e-06,
+          "angular_speed_rad_s": 7.933926123899541e-05,
+          "finger_speed_m_s": 7.811451977240088e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1551,
+          "linear_speed_m_s": 7.157882059916696e-06,
+          "angular_speed_rad_s": 0.000110245845999327,
+          "finger_speed_m_s": 8.359739370997096e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1552,
+          "linear_speed_m_s": 7.855961199796333e-06,
+          "angular_speed_rad_s": 0.00011253549401139542,
+          "finger_speed_m_s": 9.440908174524518e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1553,
+          "linear_speed_m_s": 7.464605095400417e-06,
+          "angular_speed_rad_s": 0.0001105597957002831,
+          "finger_speed_m_s": 7.582565184964972e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1554,
+          "linear_speed_m_s": 6.64986192210107e-06,
+          "angular_speed_rad_s": 0.00010620325473010553,
+          "finger_speed_m_s": 7.2812994971565235e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1555,
+          "linear_speed_m_s": 6.268081188929796e-06,
+          "angular_speed_rad_s": 0.00010091747470759295,
+          "finger_speed_m_s": 8.922058530056436e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1556,
+          "linear_speed_m_s": 6.678559987811447e-06,
+          "angular_speed_rad_s": 9.579726211151204e-05,
+          "finger_speed_m_s": 7.963881761199028e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1557,
+          "linear_speed_m_s": 7.557939402779682e-06,
+          "angular_speed_rad_s": 9.134924869424156e-05,
+          "finger_speed_m_s": 6.387624507260142e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1558,
+          "linear_speed_m_s": 8.49995875122311e-06,
+          "angular_speed_rad_s": 8.773105867808625e-05,
+          "finger_speed_m_s": 6.109267605450727e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1559,
+          "linear_speed_m_s": 9.298256323749797e-06,
+          "angular_speed_rad_s": 8.491324174527686e-05,
+          "finger_speed_m_s": 1.3076155120042963e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1560,
+          "linear_speed_m_s": 9.894266738783985e-06,
+          "angular_speed_rad_s": 8.27809601781324e-05,
+          "finger_speed_m_s": 5.77114992279605e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1611,
+          "linear_speed_m_s": 6.01185830434611e-06,
+          "angular_speed_rad_s": 7.87823973785873e-05,
+          "finger_speed_m_s": 8.248017035440433e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1612,
+          "linear_speed_m_s": 5.746975054112217e-06,
+          "angular_speed_rad_s": 7.994077488908089e-05,
+          "finger_speed_m_s": 7.892840538297183e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1613,
+          "linear_speed_m_s": 5.8356169791725384e-06,
+          "angular_speed_rad_s": 7.921466845735932e-05,
+          "finger_speed_m_s": 7.553997218106118e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1614,
+          "linear_speed_m_s": 5.954218574823006e-06,
+          "angular_speed_rad_s": 7.832054253041333e-05,
+          "finger_speed_m_s": 7.235719144006683e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1615,
+          "linear_speed_m_s": 6.293912751256702e-06,
+          "angular_speed_rad_s": 7.639295578640176e-05,
+          "finger_speed_m_s": 6.924070716610487e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1616,
+          "linear_speed_m_s": 6.872095144166498e-06,
+          "angular_speed_rad_s": 7.385311206518917e-05,
+          "finger_speed_m_s": 6.624219038966379e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1617,
+          "linear_speed_m_s": 7.5470674585461715e-06,
+          "angular_speed_rad_s": 7.135919670120188e-05,
+          "finger_speed_m_s": 6.339267386223923e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1618,
+          "linear_speed_m_s": 8.187408777949791e-06,
+          "angular_speed_rad_s": 6.919048899455929e-05,
+          "finger_speed_m_s": 6.069125729105517e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1619,
+          "linear_speed_m_s": 8.722030077209751e-06,
+          "angular_speed_rad_s": 6.741988511324122e-05,
+          "finger_speed_m_s": 5.807071585197358e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1620,
+          "linear_speed_m_s": 9.131966204595842e-06,
+          "angular_speed_rad_s": 6.602165681596533e-05,
+          "finger_speed_m_s": 5.5633046074812044e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1671,
+          "linear_speed_m_s": 7.1584192886397306e-06,
+          "angular_speed_rad_s": 0.00011024773190633265,
+          "finger_speed_m_s": 6.161233144741182e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1672,
+          "linear_speed_m_s": 7.847585441731234e-06,
+          "angular_speed_rad_s": 0.00011250556208859287,
+          "finger_speed_m_s": 5.7310333000575296e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1673,
+          "linear_speed_m_s": 7.459336866918486e-06,
+          "angular_speed_rad_s": 0.00011053894220153083,
+          "finger_speed_m_s": 5.634500286097689e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1674,
+          "linear_speed_m_s": 6.648550632746842e-06,
+          "angular_speed_rad_s": 0.00010619415040509068,
+          "finger_speed_m_s": 5.206787212647968e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1675,
+          "linear_speed_m_s": 6.268344484725157e-06,
+          "angular_speed_rad_s": 0.00010091487859550783,
+          "finger_speed_m_s": 5.027886974752262e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1676,
+          "linear_speed_m_s": 6.678856949380416e-06,
+          "angular_speed_rad_s": 9.579784926682068e-05,
+          "finger_speed_m_s": 6.385040726400719e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1677,
+          "linear_speed_m_s": 7.55798475005624e-06,
+          "angular_speed_rad_s": 9.135106682606543e-05,
+          "finger_speed_m_s": 4.572460881114357e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1678,
+          "linear_speed_m_s": 8.499980316237567e-06,
+          "angular_speed_rad_s": 8.77330075768011e-05,
+          "finger_speed_m_s": 4.377673667859218e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1679,
+          "linear_speed_m_s": 9.298490329175308e-06,
+          "angular_speed_rad_s": 8.491471233112272e-05,
+          "finger_speed_m_s": 4.458558907166666e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1680,
+          "linear_speed_m_s": 9.894817407841093e-06,
+          "angular_speed_rad_s": 8.278175807641447e-05,
+          "finger_speed_m_s": 4.538468630552872e-06,
+          "private_gripper_contact_pairs": []
+        }
+      ],
+      "empty_quiet_opening": {
+        "-1": {
+          "min_m": 0.07963687744098827,
+          "max_m": 0.0799986273112174
+        },
+        "1": {
+          "min_m": 0.0009995574843406053,
+          "max_m": 0.0009996625222960147
+        }
+      }
+    },
+    {
+      "trial": {
+        "id": "calibration_s02",
+        "seed": 502,
+        "state_index": 12
+      },
+      "training_samples": 180,
+      "validation_samples": 80,
+      "rank": 5,
+      "singular_values": [
+        122.63128163263332,
+        35.15030033766189,
+        35.05238388552845,
+        0.5290236132287334,
+        0.3831913734975591
+      ],
+      "weights": [
+        [
+          0.00011597331423339633,
+          -0.0032999546750728287,
+          0.005398691732492702,
+          -0.005314968298365103,
+          0.0003671151220810554,
+          0.00012700705216666636
+        ],
+        [
+          -9.230993711121328e-07,
+          -0.520234234584288,
+          0.00028707554422136017,
+          0.07337464432367335,
+          1.0072195436406785e-06,
+          -3.138904699636379e-06
+        ],
+        [
+          0.5200155290499848,
+          1.581105707249866e-05,
+          -1.0176507689165685e-05,
+          8.108820054572573e-06,
+          0.07350126823113098,
+          -2.6091546416072533e-05
+        ],
+        [
+          -1.222663987956592e-05,
+          0.000321660839354214,
+          -0.5205333195729139,
+          0.0005256736015327604,
+          -3.843400473510648e-05,
+          -1.3880320821379412e-05
+        ],
+        [
+          -8.687280988251833e-06,
+          5.230034792549787e-06,
+          -3.7771333665486943e-06,
+          1.9287993089564655e-06,
+          -4.9996358197873056e-05,
+          -2.8287428197700335e-05
+        ]
+      ],
+      "force_validation_p95_N": 0.00047546569442419735,
+      "torque_validation_p95_Nm": 0.0003800765885835971,
+      "quiet_windows_pass": true,
+      "gate_pass": true,
+      "validation_by_gripper": {
+        "-1": {
+          "force_p95_N": 0.00047524791250523846,
+          "torque_p95_Nm": 0.0003503899779814474
+        },
+        "1": {
+          "force_p95_N": 0.00047546569442419735,
+          "torque_p95_Nm": 0.0003800765885835971
+        }
+      },
+      "quiet_window_checks": [
+        {
+          "step": 171,
+          "linear_speed_m_s": 6.990326399809183e-06,
+          "angular_speed_rad_s": 3.0636966655867584e-05,
+          "finger_speed_m_s": 1.2637520052792822e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 172,
+          "linear_speed_m_s": 7.0074028936422435e-06,
+          "angular_speed_rad_s": 3.0474254948735134e-05,
+          "finger_speed_m_s": 1.2095487812022326e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 173,
+          "linear_speed_m_s": 7.023776455864751e-06,
+          "angular_speed_rad_s": 3.0314424549765858e-05,
+          "finger_speed_m_s": 1.1576703720260889e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 174,
+          "linear_speed_m_s": 7.039471883727181e-06,
+          "angular_speed_rad_s": 3.0157380393831183e-05,
+          "finger_speed_m_s": 1.1080170647586932e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 175,
+          "linear_speed_m_s": 7.054498986482039e-06,
+          "angular_speed_rad_s": 3.000307623152133e-05,
+          "finger_speed_m_s": 1.0604934232090029e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 176,
+          "linear_speed_m_s": 7.068882821303411e-06,
+          "angular_speed_rad_s": 2.9851418499806386e-05,
+          "finger_speed_m_s": 1.0150081045197214e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 177,
+          "linear_speed_m_s": 7.082619507875079e-06,
+          "angular_speed_rad_s": 2.9702405538947693e-05,
+          "finger_speed_m_s": 9.714736835614548e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 178,
+          "linear_speed_m_s": 7.095737494963366e-06,
+          "angular_speed_rad_s": 2.95559346486373e-05,
+          "finger_speed_m_s": 9.298064849044619e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 179,
+          "linear_speed_m_s": 7.108248518790098e-06,
+          "angular_speed_rad_s": 2.9411956818512913e-05,
+          "finger_speed_m_s": 8.899264221014958e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 180,
+          "linear_speed_m_s": 7.1201708778464885e-06,
+          "angular_speed_rad_s": 2.927040292843094e-05,
+          "finger_speed_m_s": 8.51756843620434e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 231,
+          "linear_speed_m_s": 1.7578347857452106e-05,
+          "angular_speed_rad_s": 0.00010467939867275092,
+          "finger_speed_m_s": 5.319336703125572e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 232,
+          "linear_speed_m_s": 1.770034562631728e-05,
+          "angular_speed_rad_s": 0.0001033003213524895,
+          "finger_speed_m_s": 5.091341060271198e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 233,
+          "linear_speed_m_s": 1.759690160838425e-05,
+          "angular_speed_rad_s": 0.00010241685219738921,
+          "finger_speed_m_s": 4.873147442401848e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 234,
+          "linear_speed_m_s": 1.7388426034749963e-05,
+          "angular_speed_rad_s": 0.00010177057797836391,
+          "finger_speed_m_s": 4.664325057559015e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 235,
+          "linear_speed_m_s": 1.7145808877974383e-05,
+          "angular_speed_rad_s": 0.00010121024724392717,
+          "finger_speed_m_s": 4.464465116776978e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 236,
+          "linear_speed_m_s": 1.690702431428377e-05,
+          "angular_speed_rad_s": 0.00010065433436445086,
+          "finger_speed_m_s": 4.273178955758491e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 237,
+          "linear_speed_m_s": 1.6689550923402888e-05,
+          "angular_speed_rad_s": 0.00010006479427654193,
+          "finger_speed_m_s": 4.090096319818065e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 238,
+          "linear_speed_m_s": 1.6498965505109717e-05,
+          "angular_speed_rad_s": 9.942899032967841e-05,
+          "finger_speed_m_s": 3.914864013797162e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 239,
+          "linear_speed_m_s": 1.6334538475775447e-05,
+          "angular_speed_rad_s": 9.874803730482416e-05,
+          "finger_speed_m_s": 3.747144692725107e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 240,
+          "linear_speed_m_s": 1.6192670782303522e-05,
+          "angular_speed_rad_s": 9.802935917725848e-05,
+          "finger_speed_m_s": 3.586615926690825e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 291,
+          "linear_speed_m_s": 1.4023403249720043e-05,
+          "angular_speed_rad_s": 0.00011679307980147372,
+          "finger_speed_m_s": 8.70105579811954e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 292,
+          "linear_speed_m_s": 1.473762146237653e-05,
+          "angular_speed_rad_s": 0.00011383767697473052,
+          "finger_speed_m_s": 8.327815086285386e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 293,
+          "linear_speed_m_s": 1.505645662184257e-05,
+          "angular_speed_rad_s": 0.00011273900419423958,
+          "finger_speed_m_s": 7.970674103412166e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 294,
+          "linear_speed_m_s": 1.5215699811861742e-05,
+          "angular_speed_rad_s": 0.0001124329196192585,
+          "finger_speed_m_s": 7.628904024532219e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 295,
+          "linear_speed_m_s": 1.5310930594382817e-05,
+          "angular_speed_rad_s": 0.00011237289648092582,
+          "finger_speed_m_s": 7.301825382147222e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 296,
+          "linear_speed_m_s": 1.5377383947032044e-05,
+          "angular_speed_rad_s": 0.00011229857555841838,
+          "finger_speed_m_s": 6.988796696629388e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 297,
+          "linear_speed_m_s": 1.542621473527936e-05,
+          "angular_speed_rad_s": 0.00011210137226949701,
+          "finger_speed_m_s": 6.689208414595066e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 298,
+          "linear_speed_m_s": 1.5916852371759256e-05,
+          "angular_speed_rad_s": 0.00011065030274989414,
+          "finger_speed_m_s": 6.402740470347835e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 299,
+          "linear_speed_m_s": 1.6895752750887742e-05,
+          "angular_speed_rad_s": 0.00010764277875266249,
+          "finger_speed_m_s": 6.128036521980742e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 300,
+          "linear_speed_m_s": 1.6914607204740052e-05,
+          "angular_speed_rad_s": 0.0001065962946792484,
+          "finger_speed_m_s": 5.8653635878204233e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 351,
+          "linear_speed_m_s": 0.0007131290920149918,
+          "angular_speed_rad_s": 0.002364323028186812,
+          "finger_speed_m_s": 5.311966781883833e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 352,
+          "linear_speed_m_s": 0.00041535104314649484,
+          "angular_speed_rad_s": 0.0013736330358299106,
+          "finger_speed_m_s": 5.0844839687064675e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 353,
+          "linear_speed_m_s": 0.00014553928151042638,
+          "angular_speed_rad_s": 0.0004840775834494113,
+          "finger_speed_m_s": 4.8666694516142863e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 354,
+          "linear_speed_m_s": 1.618551544762427e-05,
+          "angular_speed_rad_s": 0.00013066604063392416,
+          "finger_speed_m_s": 4.6581042241189936e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 355,
+          "linear_speed_m_s": 1.611485798746894e-05,
+          "angular_speed_rad_s": 0.00012494175477867158,
+          "finger_speed_m_s": 4.4584751870448665e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 356,
+          "linear_speed_m_s": 1.6296339681783137e-05,
+          "angular_speed_rad_s": 0.00012315738796047672,
+          "finger_speed_m_s": 4.2673926364025924e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 357,
+          "linear_speed_m_s": 1.6461018287098192e-05,
+          "angular_speed_rad_s": 0.00012144843321584424,
+          "finger_speed_m_s": 4.084496820095827e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 358,
+          "linear_speed_m_s": 1.6583751275000913e-05,
+          "angular_speed_rad_s": 0.00011986060076514177,
+          "finger_speed_m_s": 3.909441219991424e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 359,
+          "linear_speed_m_s": 1.6655552076677216e-05,
+          "angular_speed_rad_s": 0.00011841280009681022,
+          "finger_speed_m_s": 3.74189220006685e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 360,
+          "linear_speed_m_s": 1.667788549099122e-05,
+          "angular_speed_rad_s": 0.0001170991755437551,
+          "finger_speed_m_s": 3.581529122654549e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 411,
+          "linear_speed_m_s": 0.001245922895548512,
+          "angular_speed_rad_s": 0.0030247505196563046,
+          "finger_speed_m_s": 3.8759360973365435e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 412,
+          "linear_speed_m_s": 0.001062957810843184,
+          "angular_speed_rad_s": 0.0026256003768923503,
+          "finger_speed_m_s": 3.7123771353453955e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 413,
+          "linear_speed_m_s": 0.0008550918383345223,
+          "angular_speed_rad_s": 0.0021344741188847184,
+          "finger_speed_m_s": 3.5557918861616367e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 414,
+          "linear_speed_m_s": 0.0006392519231664322,
+          "angular_speed_rad_s": 0.0016044379702020296,
+          "finger_speed_m_s": 3.405898360642301e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 415,
+          "linear_speed_m_s": 0.0004298130527151999,
+          "angular_speed_rad_s": 0.0010794368682969862,
+          "finger_speed_m_s": 3.262422245193724e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 416,
+          "linear_speed_m_s": 0.00023810503481465676,
+          "angular_speed_rad_s": 0.0005943055260160795,
+          "finger_speed_m_s": 3.125096858362086e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 417,
+          "linear_speed_m_s": 7.299346473390949e-05,
+          "angular_speed_rad_s": 0.000193682665720461,
+          "finger_speed_m_s": 2.9934304577329912e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 418,
+          "linear_speed_m_s": 9.860548898448307e-06,
+          "angular_speed_rad_s": 9.815934986556784e-05,
+          "finger_speed_m_s": 2.8675353432961266e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 419,
+          "linear_speed_m_s": 9.309032416478205e-06,
+          "angular_speed_rad_s": 9.651161519406802e-05,
+          "finger_speed_m_s": 2.7472091340178144e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 420,
+          "linear_speed_m_s": 9.210872638310362e-06,
+          "angular_speed_rad_s": 9.530935627854684e-05,
+          "finger_speed_m_s": 2.6320163676757745e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 471,
+          "linear_speed_m_s": 1.9303130277038284e-05,
+          "angular_speed_rad_s": 2.0727704252998132e-05,
+          "finger_speed_m_s": 3.704135890080875e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 472,
+          "linear_speed_m_s": 2.0080201815017982e-05,
+          "angular_speed_rad_s": 2.8926606066677436e-05,
+          "finger_speed_m_s": 3.545184533317003e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 473,
+          "linear_speed_m_s": 2.071069205197406e-05,
+          "angular_speed_rad_s": 3.6580260118676035e-05,
+          "finger_speed_m_s": 3.393344888545585e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 474,
+          "linear_speed_m_s": 2.0612569036597104e-05,
+          "angular_speed_rad_s": 4.570632692439264e-05,
+          "finger_speed_m_s": 3.248387714009743e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 475,
+          "linear_speed_m_s": 2.0400920137210387e-05,
+          "angular_speed_rad_s": 5.207862522789292e-05,
+          "finger_speed_m_s": 3.1085619940334316e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 476,
+          "linear_speed_m_s": 2.0273501008840318e-05,
+          "angular_speed_rad_s": 5.3450748095064125e-05,
+          "finger_speed_m_s": 2.9749549751430664e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 477,
+          "linear_speed_m_s": 2.0048457114693264e-05,
+          "angular_speed_rad_s": 5.2539937159455236e-05,
+          "finger_speed_m_s": 2.847222815757137e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 478,
+          "linear_speed_m_s": 1.98075309589511e-05,
+          "angular_speed_rad_s": 5.08078220081704e-05,
+          "finger_speed_m_s": 2.7250431787065465e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 479,
+          "linear_speed_m_s": 1.9600244477128553e-05,
+          "angular_speed_rad_s": 4.8986756875228854e-05,
+          "finger_speed_m_s": 2.6081374795759583e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 480,
+          "linear_speed_m_s": 1.942966525555434e-05,
+          "angular_speed_rad_s": 4.739071028135321e-05,
+          "finger_speed_m_s": 2.4962577621927935e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 531,
+          "linear_speed_m_s": 0.0018753073944270567,
+          "angular_speed_rad_s": 0.006025823525801682,
+          "finger_speed_m_s": 2.420744643593848e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 532,
+          "linear_speed_m_s": 0.001405493216460557,
+          "angular_speed_rad_s": 0.00449065397553539,
+          "finger_speed_m_s": 2.370640978134155e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 533,
+          "linear_speed_m_s": 0.0009480269144060912,
+          "angular_speed_rad_s": 0.002989448557848061,
+          "finger_speed_m_s": 2.3124428372733027e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 534,
+          "linear_speed_m_s": 0.0005276212947210149,
+          "angular_speed_rad_s": 0.0015962596330858043,
+          "finger_speed_m_s": 2.2453974006457318e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 535,
+          "linear_speed_m_s": 0.0002006932500772946,
+          "angular_speed_rad_s": 0.00044252686129885114,
+          "finger_speed_m_s": 2.2643764958639404e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 536,
+          "linear_speed_m_s": 9.400136995234772e-05,
+          "angular_speed_rad_s": 0.0001464652905443385,
+          "finger_speed_m_s": 2.1578570591732423e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 537,
+          "linear_speed_m_s": 3.928408619293746e-05,
+          "angular_speed_rad_s": 6.02221000791838e-05,
+          "finger_speed_m_s": 2.0231559439912034e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 538,
+          "linear_speed_m_s": 1.1250052733135535e-05,
+          "angular_speed_rad_s": 7.785476010518606e-05,
+          "finger_speed_m_s": 1.908766219383731e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 539,
+          "linear_speed_m_s": 1.3528597616761841e-05,
+          "angular_speed_rad_s": 0.00010398493465963461,
+          "finger_speed_m_s": 1.8103845013249208e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 540,
+          "linear_speed_m_s": 1.872489265346979e-05,
+          "angular_speed_rad_s": 0.00011519995054087761,
+          "finger_speed_m_s": 1.7240337148992113e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 591,
+          "linear_speed_m_s": 0.00043585830764257733,
+          "angular_speed_rad_s": 0.0010498571439221949,
+          "finger_speed_m_s": 7.057881265626188e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 592,
+          "linear_speed_m_s": 0.00036504280326063037,
+          "angular_speed_rad_s": 0.0009052888028779079,
+          "finger_speed_m_s": 6.750360563335817e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 593,
+          "linear_speed_m_s": 0.00029642393667767377,
+          "angular_speed_rad_s": 0.0007430574351064084,
+          "finger_speed_m_s": 6.456992855444431e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 594,
+          "linear_speed_m_s": 0.00023132351997561353,
+          "angular_speed_rad_s": 0.0005754390952216066,
+          "finger_speed_m_s": 6.177156766015228e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 595,
+          "linear_speed_m_s": 0.00017119028749207937,
+          "angular_speed_rad_s": 0.0004134282823486382,
+          "finger_speed_m_s": 5.910252043992901e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 596,
+          "linear_speed_m_s": 0.00011746315250693686,
+          "angular_speed_rad_s": 0.0002652655174741802,
+          "finger_speed_m_s": 5.6555963753129984e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 597,
+          "linear_speed_m_s": 7.155806353923054e-05,
+          "angular_speed_rad_s": 0.0001378992739254589,
+          "finger_speed_m_s": 5.412517007022529e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 598,
+          "linear_speed_m_s": 3.475609222635107e-05,
+          "angular_speed_rad_s": 6.0175308872380295e-05,
+          "finger_speed_m_s": 5.178469788779968e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 599,
+          "linear_speed_m_s": 1.2650467256251446e-05,
+          "angular_speed_rad_s": 6.910513045862437e-05,
+          "finger_speed_m_s": 4.959312002296389e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 600,
+          "linear_speed_m_s": 9.224255723484468e-06,
+          "angular_speed_rad_s": 7.393382015194581e-05,
+          "finger_speed_m_s": 4.7474919845732346e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 651,
+          "linear_speed_m_s": 0.001869012659826571,
+          "angular_speed_rad_s": 0.006004630609013002,
+          "finger_speed_m_s": 4.952638603879369e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 652,
+          "linear_speed_m_s": 0.0013996947642601484,
+          "angular_speed_rad_s": 0.004471100953101263,
+          "finger_speed_m_s": 4.794050032751546e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 653,
+          "linear_speed_m_s": 0.0009429572432534476,
+          "angular_speed_rad_s": 0.0029723512281565035,
+          "finger_speed_m_s": 4.631821454876692e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 654,
+          "linear_speed_m_s": 0.000523522745680654,
+          "angular_speed_rad_s": 0.0015823922753121556,
+          "finger_speed_m_s": 4.465084499297685e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 655,
+          "linear_speed_m_s": 0.00019887745609001954,
+          "angular_speed_rad_s": 0.0004371722129072379,
+          "finger_speed_m_s": 4.388806741874193e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 656,
+          "linear_speed_m_s": 9.347200794534768e-05,
+          "angular_speed_rad_s": 0.00014798122549490142,
+          "finger_speed_m_s": 4.189587197480341e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 657,
+          "linear_speed_m_s": 3.8907129241741114e-05,
+          "angular_speed_rad_s": 6.005522287587407e-05,
+          "finger_speed_m_s": 3.967890043630725e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 658,
+          "linear_speed_m_s": 1.1085632988231343e-05,
+          "angular_speed_rad_s": 7.564067074836522e-05,
+          "finger_speed_m_s": 3.77010182314901e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 659,
+          "linear_speed_m_s": 1.3708160753596098e-05,
+          "angular_speed_rad_s": 0.00010145292900278945,
+          "finger_speed_m_s": 3.591890471428347e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 660,
+          "linear_speed_m_s": 1.8862967697851267e-05,
+          "angular_speed_rad_s": 0.00011248195449467646,
+          "finger_speed_m_s": 3.427932511587636e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 711,
+          "linear_speed_m_s": 0.00024426983879016566,
+          "angular_speed_rad_s": 0.000635288122825628,
+          "finger_speed_m_s": 4.273907939499816e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 712,
+          "linear_speed_m_s": 0.00013228229830278932,
+          "angular_speed_rad_s": 0.0003102338092834028,
+          "finger_speed_m_s": 4.089588947825016e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 713,
+          "linear_speed_m_s": 5.421432544634822e-05,
+          "angular_speed_rad_s": 7.024086145741581e-05,
+          "finger_speed_m_s": 3.9104691499999965e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 714,
+          "linear_speed_m_s": 2.3598626405709672e-05,
+          "angular_speed_rad_s": 4.634433966430126e-05,
+          "finger_speed_m_s": 3.7448868291039896e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 715,
+          "linear_speed_m_s": 9.31851519707258e-06,
+          "angular_speed_rad_s": 7.164226030534408e-05,
+          "finger_speed_m_s": 3.586040008815155e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 716,
+          "linear_speed_m_s": 5.604662586367545e-06,
+          "angular_speed_rad_s": 8.186648700584505e-05,
+          "finger_speed_m_s": 3.433622608085172e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 717,
+          "linear_speed_m_s": 5.5785636717368495e-06,
+          "angular_speed_rad_s": 8.175799008522805e-05,
+          "finger_speed_m_s": 3.286445270023628e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 718,
+          "linear_speed_m_s": 5.6757932632752516e-06,
+          "angular_speed_rad_s": 8.099014828375224e-05,
+          "finger_speed_m_s": 3.1455203159246997e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 719,
+          "linear_speed_m_s": 5.77263685687071e-06,
+          "angular_speed_rad_s": 8.022906589206251e-05,
+          "finger_speed_m_s": 3.0106382660587153e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 720,
+          "linear_speed_m_s": 5.895393487399342e-06,
+          "angular_speed_rad_s": 7.93467027479202e-05,
+          "finger_speed_m_s": 2.8816329929910374e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 771,
+          "linear_speed_m_s": 7.156849193531997e-06,
+          "angular_speed_rad_s": 0.00011024550142074427,
+          "finger_speed_m_s": 3.033470871472713e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 772,
+          "linear_speed_m_s": 7.855157692539972e-06,
+          "angular_speed_rad_s": 0.00011253684264727022,
+          "finger_speed_m_s": 2.9007422807322812e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 773,
+          "linear_speed_m_s": 7.462633831870042e-06,
+          "angular_speed_rad_s": 0.00011055604611394262,
+          "finger_speed_m_s": 2.775129063142027e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 774,
+          "linear_speed_m_s": 6.647863905354635e-06,
+          "angular_speed_rad_s": 0.00010619429368699824,
+          "finger_speed_m_s": 2.656412677284193e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 775,
+          "linear_speed_m_s": 6.268146854640829e-06,
+          "angular_speed_rad_s": 0.00010090628260532365,
+          "finger_speed_m_s": 2.5438690778749574e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 776,
+          "linear_speed_m_s": 6.680936125933607e-06,
+          "angular_speed_rad_s": 9.578557734971166e-05,
+          "finger_speed_m_s": 2.4366770090370745e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 777,
+          "linear_speed_m_s": 7.5615936158768705e-06,
+          "angular_speed_rad_s": 9.133796553506595e-05,
+          "finger_speed_m_s": 2.334267937297293e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 778,
+          "linear_speed_m_s": 8.504010441644279e-06,
+          "angular_speed_rad_s": 8.772057111961374e-05,
+          "finger_speed_m_s": 2.2362477748448812e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 779,
+          "linear_speed_m_s": 9.30226507200865e-06,
+          "angular_speed_rad_s": 8.490361457178039e-05,
+          "finger_speed_m_s": 2.1423356991995053e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 780,
+          "linear_speed_m_s": 9.89805699314057e-06,
+          "angular_speed_rad_s": 8.27721320520182e-05,
+          "finger_speed_m_s": 2.0523213738422093e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 831,
+          "linear_speed_m_s": 6.012503428125991e-06,
+          "angular_speed_rad_s": 7.878307832265498e-05,
+          "finger_speed_m_s": 3.451144431057019e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 832,
+          "linear_speed_m_s": 5.7472159801426765e-06,
+          "angular_speed_rad_s": 7.994461046461327e-05,
+          "finger_speed_m_s": 3.303318155000631e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 833,
+          "linear_speed_m_s": 5.8358156784014525e-06,
+          "angular_speed_rad_s": 7.921830464693958e-05,
+          "finger_speed_m_s": 3.161657590376879e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 834,
+          "linear_speed_m_s": 5.954980672267294e-06,
+          "angular_speed_rad_s": 7.832003869713086e-05,
+          "finger_speed_m_s": 3.0261726107518337e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 835,
+          "linear_speed_m_s": 6.296078051840122e-06,
+          "angular_speed_rad_s": 7.63859574143131e-05,
+          "finger_speed_m_s": 2.896468508026558e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 836,
+          "linear_speed_m_s": 6.8752149095933165e-06,
+          "angular_speed_rad_s": 7.384365977948253e-05,
+          "finger_speed_m_s": 2.7722581356280332e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 837,
+          "linear_speed_m_s": 7.550451271110695e-06,
+          "angular_speed_rad_s": 7.134982262582026e-05,
+          "finger_speed_m_s": 2.653343712090394e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 838,
+          "linear_speed_m_s": 8.190519735343877e-06,
+          "angular_speed_rad_s": 6.918235010312374e-05,
+          "finger_speed_m_s": 2.5395194642098344e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 839,
+          "linear_speed_m_s": 8.724633411054676e-06,
+          "angular_speed_rad_s": 6.741324624859447e-05,
+          "finger_speed_m_s": 2.4305777860253536e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 840,
+          "linear_speed_m_s": 9.13403167709504e-06,
+          "angular_speed_rad_s": 6.60163940626425e-05,
+          "finger_speed_m_s": 2.3263137798923623e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 891,
+          "linear_speed_m_s": 7.157490978097806e-06,
+          "angular_speed_rad_s": 0.00011024775600758418,
+          "finger_speed_m_s": 2.474519835755089e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 892,
+          "linear_speed_m_s": 7.846803552313565e-06,
+          "angular_speed_rad_s": 0.00011250686270332517,
+          "finger_speed_m_s": 2.3658348332281275e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 893,
+          "linear_speed_m_s": 7.457401876550768e-06,
+          "angular_speed_rad_s": 0.00011053521157834328,
+          "finger_speed_m_s": 2.263161965740891e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 894,
+          "linear_speed_m_s": 6.646595174754115e-06,
+          "angular_speed_rad_s": 0.0001061853095651332,
+          "finger_speed_m_s": 2.166399988373657e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 895,
+          "linear_speed_m_s": 6.268419966970549e-06,
+          "angular_speed_rad_s": 0.00010090378065783221,
+          "finger_speed_m_s": 2.0748712660023607e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 896,
+          "linear_speed_m_s": 6.681214322839518e-06,
+          "angular_speed_rad_s": 9.578623708904477e-05,
+          "finger_speed_m_s": 1.987794204171045e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 897,
+          "linear_speed_m_s": 7.561602678438905e-06,
+          "angular_speed_rad_s": 9.133985786209758e-05,
+          "finger_speed_m_s": 1.90463829658969e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 898,
+          "linear_speed_m_s": 8.503989846706315e-06,
+          "angular_speed_rad_s": 8.77225763291798e-05,
+          "finger_speed_m_s": 1.8250459618773485e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 899,
+          "linear_speed_m_s": 9.302438078826248e-06,
+          "angular_speed_rad_s": 8.490519373117586e-05,
+          "finger_speed_m_s": 1.7487716956425603e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 900,
+          "linear_speed_m_s": 9.898528217365409e-06,
+          "angular_speed_rad_s": 8.277307473043549e-05,
+          "finger_speed_m_s": 1.675638796241456e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 951,
+          "linear_speed_m_s": 2.6724095241460945e-05,
+          "angular_speed_rad_s": 0.00011345332180725726,
+          "finger_speed_m_s": 1.5627304354143031e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 952,
+          "linear_speed_m_s": 2.652820434460399e-05,
+          "angular_speed_rad_s": 0.00011262419630622752,
+          "finger_speed_m_s": 8.708340971958217e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 953,
+          "linear_speed_m_s": 2.633491157839916e-05,
+          "angular_speed_rad_s": 0.00011180328431032963,
+          "finger_speed_m_s": 3.8032257372640434e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 954,
+          "linear_speed_m_s": 2.6144154271152567e-05,
+          "angular_speed_rad_s": 0.00011099052128025271,
+          "finger_speed_m_s": 1.416572000716972e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 955,
+          "linear_speed_m_s": 2.5955889797684838e-05,
+          "angular_speed_rad_s": 0.00011018575400385042,
+          "finger_speed_m_s": 9.385045678027276e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 956,
+          "linear_speed_m_s": 2.577006328671888e-05,
+          "angular_speed_rad_s": 0.00010938889699773682,
+          "finger_speed_m_s": 1.7201514306547027e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 957,
+          "linear_speed_m_s": 2.5586630539033992e-05,
+          "angular_speed_rad_s": 0.00010859982359167917,
+          "finger_speed_m_s": 3.6761732164656346e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 958,
+          "linear_speed_m_s": 2.540554343922903e-05,
+          "angular_speed_rad_s": 0.00010781842969941394,
+          "finger_speed_m_s": 1.4032695590838446e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 959,
+          "linear_speed_m_s": 2.5226752656965282e-05,
+          "angular_speed_rad_s": 0.00010704463510549401,
+          "finger_speed_m_s": 9.483937688116673e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 960,
+          "linear_speed_m_s": 2.5050218149709186e-05,
+          "angular_speed_rad_s": 0.00010627831943211322,
+          "finger_speed_m_s": 5.383769364807625e-07,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1011,
+          "linear_speed_m_s": 1.766011657216019e-05,
+          "angular_speed_rad_s": 0.00010482438170447476,
+          "finger_speed_m_s": 7.50554458687343e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1012,
+          "linear_speed_m_s": 1.7796635180637085e-05,
+          "angular_speed_rad_s": 0.00010338470681542762,
+          "finger_speed_m_s": 7.184673741513224e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1013,
+          "linear_speed_m_s": 1.7700122465327277e-05,
+          "angular_speed_rad_s": 0.00010245831780100146,
+          "finger_speed_m_s": 6.876291561410496e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1014,
+          "linear_speed_m_s": 1.7493144281377183e-05,
+          "angular_speed_rad_s": 0.00010178159517500346,
+          "finger_speed_m_s": 6.583159334316398e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1015,
+          "linear_speed_m_s": 1.7248545398695785e-05,
+          "angular_speed_rad_s": 0.00010119897920140812,
+          "finger_speed_m_s": 6.300548557541375e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1016,
+          "linear_speed_m_s": 1.700571457212299e-05,
+          "angular_speed_rad_s": 0.00010062597135887958,
+          "finger_speed_m_s": 6.033262981327608e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1017,
+          "linear_speed_m_s": 1.6783015032995812e-05,
+          "angular_speed_rad_s": 0.0001000226333915772,
+          "finger_speed_m_s": 5.7730542012240264e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1018,
+          "linear_speed_m_s": 1.6586633150253933e-05,
+          "angular_speed_rad_s": 9.937501037855984e-05,
+          "finger_speed_m_s": 5.5244508484888007e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1019,
+          "linear_speed_m_s": 1.6416274239832578e-05,
+          "angular_speed_rad_s": 9.868320522036246e-05,
+          "finger_speed_m_s": 5.287232569591709e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1020,
+          "linear_speed_m_s": 1.6268561008203143e-05,
+          "angular_speed_rad_s": 9.795415767587918e-05,
+          "finger_speed_m_s": 5.061077468773127e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1071,
+          "linear_speed_m_s": 1.4018596346132625e-05,
+          "angular_speed_rad_s": 0.00011679478928012624,
+          "finger_speed_m_s": 0.0001917234466226497,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1072,
+          "linear_speed_m_s": 1.4734640040171997e-05,
+          "angular_speed_rad_s": 0.00011383884646043114,
+          "finger_speed_m_s": 0.00018348927206731736,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1073,
+          "linear_speed_m_s": 1.5054875370199231e-05,
+          "angular_speed_rad_s": 0.00011273967412822062,
+          "finger_speed_m_s": 0.00017562005517379975,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1074,
+          "linear_speed_m_s": 1.5215071483575909e-05,
+          "angular_speed_rad_s": 0.00011243323826550699,
+          "finger_speed_m_s": 0.00016809555038889223,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1075,
+          "linear_speed_m_s": 1.531090434663396e-05,
+          "angular_speed_rad_s": 0.00011237294571253538,
+          "finger_speed_m_s": 0.00016088280229893567,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1076,
+          "linear_speed_m_s": 1.537764156601602e-05,
+          "angular_speed_rad_s": 0.00011229857378177658,
+          "finger_speed_m_s": 0.00015400811023175544,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1077,
+          "linear_speed_m_s": 1.542656514025522e-05,
+          "angular_speed_rad_s": 0.00011210137486291537,
+          "finger_speed_m_s": 0.000147442657866983,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1078,
+          "linear_speed_m_s": 1.5927521379757214e-05,
+          "angular_speed_rad_s": 0.0001106252789427865,
+          "finger_speed_m_s": 0.00014108686524236038,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1079,
+          "linear_speed_m_s": 1.6899406361495236e-05,
+          "angular_speed_rad_s": 0.0001076308248493566,
+          "finger_speed_m_s": 0.0001353101937014074,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1080,
+          "linear_speed_m_s": 1.6915053067837603e-05,
+          "angular_speed_rad_s": 0.00010659144861549359,
+          "finger_speed_m_s": 0.00012923435591426593,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1131,
+          "linear_speed_m_s": 0.0007131326640901333,
+          "angular_speed_rad_s": 0.0023643388260863253,
+          "finger_speed_m_s": 7.031739132694514e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1132,
+          "linear_speed_m_s": 0.00041533094754124555,
+          "angular_speed_rad_s": 0.0013735689757008414,
+          "finger_speed_m_s": 6.731154170519233e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1133,
+          "linear_speed_m_s": 0.0001455011351016516,
+          "angular_speed_rad_s": 0.0004839649417797721,
+          "finger_speed_m_s": 6.44273532260787e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1134,
+          "linear_speed_m_s": 1.6182528805644186e-05,
+          "angular_speed_rad_s": 0.00013067337294007502,
+          "finger_speed_m_s": 6.166045569197367e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1135,
+          "linear_speed_m_s": 1.6112365097758935e-05,
+          "angular_speed_rad_s": 0.00012495464702427938,
+          "finger_speed_m_s": 5.902197894063397e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1136,
+          "linear_speed_m_s": 1.6293806292274e-05,
+          "angular_speed_rad_s": 0.00012317063033469124,
+          "finger_speed_m_s": 5.657201604236964e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1137,
+          "linear_speed_m_s": 1.645850075133831e-05,
+          "angular_speed_rad_s": 0.00012146186480158833,
+          "finger_speed_m_s": 5.409678592937817e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1138,
+          "linear_speed_m_s": 1.6581282438433643e-05,
+          "angular_speed_rad_s": 0.00011987414737512218,
+          "finger_speed_m_s": 5.178643985864708e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1139,
+          "linear_speed_m_s": 1.6653149755059832e-05,
+          "angular_speed_rad_s": 0.00011842642636555994,
+          "finger_speed_m_s": 4.953446933237012e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1140,
+          "linear_speed_m_s": 1.6675544388014507e-05,
+          "angular_speed_rad_s": 0.00011711291431811841,
+          "finger_speed_m_s": 4.742041338037375e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1191,
+          "linear_speed_m_s": 0.0012459229329689777,
+          "angular_speed_rad_s": 0.0030247510013303577,
+          "finger_speed_m_s": 5.221676977339061e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1192,
+          "linear_speed_m_s": 0.001062957954856496,
+          "angular_speed_rad_s": 0.0026256012938962866,
+          "finger_speed_m_s": 5.097593868729861e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1193,
+          "linear_speed_m_s": 0.0008550920800463191,
+          "angular_speed_rad_s": 0.002134475351937514,
+          "finger_speed_m_s": 4.858209135009452e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1194,
+          "linear_speed_m_s": 0.0006392521264620627,
+          "angular_speed_rad_s": 0.001604439990177403,
+          "finger_speed_m_s": 4.514202703856553e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1195,
+          "linear_speed_m_s": 0.00042981330746526297,
+          "angular_speed_rad_s": 0.001079439672015006,
+          "finger_speed_m_s": 5.008078894160949e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1196,
+          "linear_speed_m_s": 0.0002381052519250532,
+          "angular_speed_rad_s": 0.0005943103172877764,
+          "finger_speed_m_s": 4.4880100588933046e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1197,
+          "linear_speed_m_s": 7.299376487128864e-05,
+          "angular_speed_rad_s": 0.0001936951428656012,
+          "finger_speed_m_s": 4.348901841723341e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1198,
+          "linear_speed_m_s": 9.860867263436153e-06,
+          "angular_speed_rad_s": 9.81829560979315e-05,
+          "finger_speed_m_s": 3.873845333710294e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1199,
+          "linear_speed_m_s": 9.309374343900904e-06,
+          "angular_speed_rad_s": 9.653545791064278e-05,
+          "finger_speed_m_s": 3.983085848978289e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1200,
+          "linear_speed_m_s": 9.211226748797475e-06,
+          "angular_speed_rad_s": 9.533333445316649e-05,
+          "finger_speed_m_s": 7.624503766511384e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1251,
+          "linear_speed_m_s": 1.9305384889621208e-05,
+          "angular_speed_rad_s": 2.072793321735859e-05,
+          "finger_speed_m_s": 5.239165208316855e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1252,
+          "linear_speed_m_s": 2.008221305516429e-05,
+          "angular_speed_rad_s": 2.8937893884319213e-05,
+          "finger_speed_m_s": 5.0051839504022714e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1253,
+          "linear_speed_m_s": 2.071231463185626e-05,
+          "angular_speed_rad_s": 3.6596398549972416e-05,
+          "finger_speed_m_s": 4.9669934859874045e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1254,
+          "linear_speed_m_s": 2.0612801915465796e-05,
+          "angular_speed_rad_s": 4.572904767396174e-05,
+          "finger_speed_m_s": 4.619346189350054e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1255,
+          "linear_speed_m_s": 2.0402098505281584e-05,
+          "angular_speed_rad_s": 5.2090822971226456e-05,
+          "finger_speed_m_s": 4.390096969218636e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1256,
+          "linear_speed_m_s": 2.027461672624283e-05,
+          "angular_speed_rad_s": 5.345837840258263e-05,
+          "finger_speed_m_s": 4.2072725820667925e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1257,
+          "linear_speed_m_s": 2.0049364752641354e-05,
+          "angular_speed_rad_s": 5.2545222482050814e-05,
+          "finger_speed_m_s": 4.0208829668330605e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1258,
+          "linear_speed_m_s": 1.9808280110571657e-05,
+          "angular_speed_rad_s": 5.081198190489987e-05,
+          "finger_speed_m_s": 3.851289722597489e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1259,
+          "linear_speed_m_s": 1.9600860659862072e-05,
+          "angular_speed_rad_s": 4.8990476843199045e-05,
+          "finger_speed_m_s": 3.682575047762923e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1260,
+          "linear_speed_m_s": 1.943017526594577e-05,
+          "angular_speed_rad_s": 4.7394320294028164e-05,
+          "finger_speed_m_s": 3.528534126451642e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1311,
+          "linear_speed_m_s": 0.001875327822880099,
+          "angular_speed_rad_s": 0.006025917041607581,
+          "finger_speed_m_s": 3.870563093285052e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1312,
+          "linear_speed_m_s": 0.0014055141911669634,
+          "angular_speed_rad_s": 0.004490744639735312,
+          "finger_speed_m_s": 3.3530046988023314e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1313,
+          "linear_speed_m_s": 0.0009480482428956785,
+          "angular_speed_rad_s": 0.0029895348088814356,
+          "finger_speed_m_s": 3.390767522123948e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1314,
+          "linear_speed_m_s": 0.0005276434953147805,
+          "angular_speed_rad_s": 0.0015963432012116878,
+          "finger_speed_m_s": 4.055450480075544e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1315,
+          "linear_speed_m_s": 0.00020071662153998472,
+          "angular_speed_rad_s": 0.00044261906003503825,
+          "finger_speed_m_s": 7.3047742160527104e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1316,
+          "linear_speed_m_s": 9.401736171622183e-05,
+          "angular_speed_rad_s": 0.000146547040121097,
+          "finger_speed_m_s": 3.6261134945880466e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1317,
+          "linear_speed_m_s": 3.929177595203512e-05,
+          "angular_speed_rad_s": 6.025044852563405e-05,
+          "finger_speed_m_s": 3.2953380576369407e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1318,
+          "linear_speed_m_s": 1.1250949842138474e-05,
+          "angular_speed_rad_s": 7.782936703728516e-05,
+          "finger_speed_m_s": 3.079446601500955e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1319,
+          "linear_speed_m_s": 1.3531971890939263e-05,
+          "angular_speed_rad_s": 0.00010395901249781825,
+          "finger_speed_m_s": 2.9455768370171575e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1320,
+          "linear_speed_m_s": 1.8731792603949498e-05,
+          "angular_speed_rad_s": 0.00011517897375184366,
+          "finger_speed_m_s": 4.441192098861421e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1371,
+          "linear_speed_m_s": 0.00043585850190008964,
+          "angular_speed_rad_s": 0.0010498898545321157,
+          "finger_speed_m_s": 0.00015648672305571814,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1372,
+          "linear_speed_m_s": 0.00036503938430899836,
+          "angular_speed_rad_s": 0.000905311149426467,
+          "finger_speed_m_s": 0.00014970781104174029,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1373,
+          "linear_speed_m_s": 0.00029642045421535964,
+          "angular_speed_rad_s": 0.0007430696155965384,
+          "finger_speed_m_s": 0.00014322560036960462,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1374,
+          "linear_speed_m_s": 0.0002313210750274043,
+          "angular_speed_rad_s": 0.0005754475154592017,
+          "finger_speed_m_s": 0.00013707126558955122,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1375,
+          "linear_speed_m_s": 0.00017118911187322268,
+          "angular_speed_rad_s": 0.0004134348781431824,
+          "finger_speed_m_s": 0.00013113349366214948,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1376,
+          "linear_speed_m_s": 0.00011746353154179709,
+          "angular_speed_rad_s": 0.0002652702260967798,
+          "finger_speed_m_s": 0.00012550350026678157,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1377,
+          "linear_speed_m_s": 7.155984978528172e-05,
+          "angular_speed_rad_s": 0.00013790177612788617,
+          "finger_speed_m_s": 0.00012014878526484111,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1378,
+          "linear_speed_m_s": 3.4759219917556466e-05,
+          "angular_speed_rad_s": 6.017311432359793e-05,
+          "finger_speed_m_s": 0.00011492647002108697,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1379,
+          "linear_speed_m_s": 1.2652925001790235e-05,
+          "angular_speed_rad_s": 6.909642149629195e-05,
+          "finger_speed_m_s": 0.00011003817487012736,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1380,
+          "linear_speed_m_s": 9.225973816062794e-06,
+          "angular_speed_rad_s": 7.392475740352441e-05,
+          "finger_speed_m_s": 0.00010539597067921046,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1431,
+          "linear_speed_m_s": 0.0018690328721097907,
+          "angular_speed_rad_s": 0.0060047239981707076,
+          "finger_speed_m_s": 1.1154031414144027e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1432,
+          "linear_speed_m_s": 0.0013997153015745105,
+          "angular_speed_rad_s": 0.004471190547945638,
+          "finger_speed_m_s": 1.0688520634717362e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1433,
+          "linear_speed_m_s": 0.0009429780140452909,
+          "angular_speed_rad_s": 0.0029724356242352918,
+          "finger_speed_m_s": 1.0284840491026315e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1434,
+          "linear_speed_m_s": 0.0005235443650762138,
+          "angular_speed_rad_s": 0.0015824735656718195,
+          "finger_speed_m_s": 1.0015237983509298e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1435,
+          "linear_speed_m_s": 0.00019890076852859285,
+          "angular_speed_rad_s": 0.00043726213290350526,
+          "finger_speed_m_s": 1.154121239910343e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1436,
+          "linear_speed_m_s": 9.34879053018176e-05,
+          "angular_speed_rad_s": 0.00014806262903441835,
+          "finger_speed_m_s": 9.22778605355322e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1437,
+          "linear_speed_m_s": 3.891468501747444e-05,
+          "angular_speed_rad_s": 6.008650074146192e-05,
+          "finger_speed_m_s": 8.7757598204061e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1438,
+          "linear_speed_m_s": 1.1086459383233863e-05,
+          "angular_speed_rad_s": 7.561742708860948e-05,
+          "finger_speed_m_s": 8.336338656294437e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1439,
+          "linear_speed_m_s": 1.3711658413008183e-05,
+          "angular_speed_rad_s": 0.000101428564237762,
+          "finger_speed_m_s": 8.398940075167306e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1440,
+          "linear_speed_m_s": 1.8868483760431344e-05,
+          "angular_speed_rad_s": 0.00011245899900793455,
+          "finger_speed_m_s": 1.2048189135405819e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1491,
+          "linear_speed_m_s": 0.0002442929761406591,
+          "angular_speed_rad_s": 0.0006353554432863937,
+          "finger_speed_m_s": 0.00011589772965370363,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1492,
+          "linear_speed_m_s": 0.0001322905736052212,
+          "angular_speed_rad_s": 0.00031024864577003575,
+          "finger_speed_m_s": 0.00011090147003743313,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1493,
+          "linear_speed_m_s": 5.4220993183952844e-05,
+          "angular_speed_rad_s": 7.024005063119614e-05,
+          "finger_speed_m_s": 0.00010612209219976192,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1494,
+          "linear_speed_m_s": 2.3602345224181394e-05,
+          "angular_speed_rad_s": 4.633363527504026e-05,
+          "finger_speed_m_s": 0.00010158567949283804,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1495,
+          "linear_speed_m_s": 9.319021050241635e-06,
+          "angular_speed_rad_s": 7.163340399501456e-05,
+          "finger_speed_m_s": 9.724097652958493e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1496,
+          "linear_speed_m_s": 5.604745542080018e-06,
+          "angular_speed_rad_s": 8.185612535499407e-05,
+          "finger_speed_m_s": 9.308366459685452e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1497,
+          "linear_speed_m_s": 5.578779982794291e-06,
+          "angular_speed_rad_s": 8.174675004085532e-05,
+          "finger_speed_m_s": 8.909002457431024e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1498,
+          "linear_speed_m_s": 5.676026757289135e-06,
+          "angular_speed_rad_s": 8.097927944167482e-05,
+          "finger_speed_m_s": 8.533890426960898e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1499,
+          "linear_speed_m_s": 5.7728899688688104e-06,
+          "angular_speed_rad_s": 8.021854647484846e-05,
+          "finger_speed_m_s": 8.16203133590643e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1500,
+          "linear_speed_m_s": 5.895183548535372e-06,
+          "angular_speed_rad_s": 7.933926123982714e-05,
+          "finger_speed_m_s": 7.811703954733523e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1551,
+          "linear_speed_m_s": 7.15788206109553e-06,
+          "angular_speed_rad_s": 0.00011024584600157763,
+          "finger_speed_m_s": 8.305224861361225e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1552,
+          "linear_speed_m_s": 7.855961202682264e-06,
+          "angular_speed_rad_s": 0.00011253549400918602,
+          "finger_speed_m_s": 7.98962716671598e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1553,
+          "linear_speed_m_s": 7.464605096574262e-06,
+          "angular_speed_rad_s": 0.00011055979571241448,
+          "finger_speed_m_s": 7.60818534474218e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1554,
+          "linear_speed_m_s": 6.649861921321088e-06,
+          "angular_speed_rad_s": 0.00010620325475848725,
+          "finger_speed_m_s": 7.258464422639057e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1555,
+          "linear_speed_m_s": 6.268081193847422e-06,
+          "angular_speed_rad_s": 0.00010091747470032107,
+          "finger_speed_m_s": 6.954436074925221e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1556,
+          "linear_speed_m_s": 6.678560004535817e-06,
+          "angular_speed_rad_s": 9.579726204269397e-05,
+          "finger_speed_m_s": 6.690984689499714e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1557,
+          "linear_speed_m_s": 7.5579394173276385e-06,
+          "angular_speed_rad_s": 9.134924863350107e-05,
+          "finger_speed_m_s": 6.527665103009237e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1558,
+          "linear_speed_m_s": 8.499958760518823e-06,
+          "angular_speed_rad_s": 8.773105863460187e-05,
+          "finger_speed_m_s": 6.107589301957109e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1559,
+          "linear_speed_m_s": 9.298256327196166e-06,
+          "angular_speed_rad_s": 8.491324173821539e-05,
+          "finger_speed_m_s": 5.854644920004897e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1560,
+          "linear_speed_m_s": 9.894266760678045e-06,
+          "angular_speed_rad_s": 8.278096012306393e-05,
+          "finger_speed_m_s": 5.608832609336137e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1611,
+          "linear_speed_m_s": 6.011858303023321e-06,
+          "angular_speed_rad_s": 7.878239736503274e-05,
+          "finger_speed_m_s": 8.248373456253796e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1612,
+          "linear_speed_m_s": 5.746975053474983e-06,
+          "angular_speed_rad_s": 7.99407748949545e-05,
+          "finger_speed_m_s": 7.8949927829861e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1613,
+          "linear_speed_m_s": 5.835616981100642e-06,
+          "angular_speed_rad_s": 7.921466846299931e-05,
+          "finger_speed_m_s": 7.55446521260845e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1614,
+          "linear_speed_m_s": 5.954218567267044e-06,
+          "angular_speed_rad_s": 7.832054255061795e-05,
+          "finger_speed_m_s": 7.235646923798256e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1615,
+          "linear_speed_m_s": 6.293912757722356e-06,
+          "angular_speed_rad_s": 7.639295575226368e-05,
+          "finger_speed_m_s": 6.927266044992496e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1616,
+          "linear_speed_m_s": 6.872095169892452e-06,
+          "angular_speed_rad_s": 7.38531119946211e-05,
+          "finger_speed_m_s": 6.62342463951431e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1617,
+          "linear_speed_m_s": 7.547067467709356e-06,
+          "angular_speed_rad_s": 7.135919666466466e-05,
+          "finger_speed_m_s": 6.36822577061155e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1618,
+          "linear_speed_m_s": 8.187408768810594e-06,
+          "angular_speed_rad_s": 6.919048899251246e-05,
+          "finger_speed_m_s": 6.067332133535608e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1619,
+          "linear_speed_m_s": 8.722030084748422e-06,
+          "angular_speed_rad_s": 6.741988510184681e-05,
+          "finger_speed_m_s": 5.807120065360897e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1620,
+          "linear_speed_m_s": 9.131966223244861e-06,
+          "angular_speed_rad_s": 6.60216567897784e-05,
+          "finger_speed_m_s": 5.558571774015124e-05,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1671,
+          "linear_speed_m_s": 7.158419281970165e-06,
+          "angular_speed_rad_s": 0.00011024773190109274,
+          "finger_speed_m_s": 6.11435111517867e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1672,
+          "linear_speed_m_s": 7.847585457099905e-06,
+          "angular_speed_rad_s": 0.00011250556209238305,
+          "finger_speed_m_s": 6.1733784550780485e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1673,
+          "linear_speed_m_s": 7.4593368757955765e-06,
+          "angular_speed_rad_s": 0.00011053894223881626,
+          "finger_speed_m_s": 5.502884591077209e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1674,
+          "linear_speed_m_s": 6.64855063777995e-06,
+          "angular_speed_rad_s": 0.00010619415044153509,
+          "finger_speed_m_s": 5.740884599375158e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1675,
+          "linear_speed_m_s": 6.268344481418464e-06,
+          "angular_speed_rad_s": 0.0001009148786497709,
+          "finger_speed_m_s": 4.975307854819068e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1676,
+          "linear_speed_m_s": 6.678856946497878e-06,
+          "angular_speed_rad_s": 9.579784929194758e-05,
+          "finger_speed_m_s": 4.788641051402115e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1677,
+          "linear_speed_m_s": 7.557984752679967e-06,
+          "angular_speed_rad_s": 9.135106681752063e-05,
+          "finger_speed_m_s": 4.675717652446701e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1678,
+          "linear_speed_m_s": 8.499980304736302e-06,
+          "angular_speed_rad_s": 8.77330076075055e-05,
+          "finger_speed_m_s": 4.647666795401133e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1679,
+          "linear_speed_m_s": 9.298490208994204e-06,
+          "angular_speed_rad_s": 8.491471262937059e-05,
+          "finger_speed_m_s": 4.216624502344305e-06,
+          "private_gripper_contact_pairs": []
+        },
+        {
+          "step": 1680,
+          "linear_speed_m_s": 9.894817326371346e-06,
+          "angular_speed_rad_s": 8.278175827067359e-05,
+          "finger_speed_m_s": 4.094566177722673e-06,
+          "private_gripper_contact_pairs": []
+        }
+      ],
+      "empty_quiet_opening": {
+        "-1": {
+          "min_m": 0.07963687744098827,
+          "max_m": 0.0799986273112174
+        },
+        "1": {
+          "min_m": 0.0009995395004706834,
+          "max_m": 0.0009996828912520249
+        }
+      }
+    }
+  ]
+}

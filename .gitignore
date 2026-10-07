@@ -7,3 +7,4 @@ __pycache__/
 runs/*/sensors/
 runs/*/diagnostics/
 runs/*/*.mp4
+studies/robot_feedback_modalities/*/episode.mp4

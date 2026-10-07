@@ -1,0 +1,13 @@
+endpoint 15 combined seconds 6.775616541999625
+endpoint 23 combined seconds 2.195668917003786
+endpoint 31 combined seconds 2.023432459012838
+endpoint 39 combined seconds 2.050670666998485
+endpoint 47 combined seconds 2.0761731670063455
+endpoint 55 combined seconds 2.082404583983589
+endpoint 63 combined seconds 2.030050332978135
+endpoint 64 combined seconds 2.2512396660167724
+{
+  "steady_two_camera_p95_seconds": 2.167352833748737,
+  "runtime_gate_pass": false,
+  "causal_output_checks_pass": true
+}

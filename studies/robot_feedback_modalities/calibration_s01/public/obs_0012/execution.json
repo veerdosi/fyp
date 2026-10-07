@@ -1,0 +1,41 @@
+{
+  "condition": "fixed_sequence",
+  "criteria": {
+    "position_tolerance_m": 0.003,
+    "orientation_tolerance_rad": 0.03,
+    "linear_speed_limit_m_s": 0.005,
+    "angular_speed_limit_rad_s": 0.05,
+    "finger_speed_limit_m_s": 0.001,
+    "consecutive_samples": 3,
+    "minimum_steps": 10
+  },
+  "waypoints": [
+    {
+      "waypoint_index": 0,
+      "first_step": 721,
+      "last_step": 780,
+      "requested_steps": 60,
+      "executed_steps": 60,
+      "first_settled_step": 753,
+      "terminal_measurement": {
+        "position_error_m": 0.00024821213060422946,
+        "orientation_error_rad": 0.0010959291984600405,
+        "linear_speed_m_s": 9.898056991066576e-06,
+        "angular_speed_rad_s": 8.277213203713356e-05,
+        "finger_speed_m_s": 2.052321373841855e-06,
+        "settled_sample": true
+      },
+      "settled_at_exit": true,
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.9949447175885509,
+        0.006586692366963152,
+        -0.011592385631162869,
+        0.09953512456253946
+      ]
+    }
+  ],
+  "note": "Robot arrival is not acquisition, seating or task completion.",
+  "remaining_waypoints_cancelled": 0,
+  "stop_reason": "sequence_complete"
+}

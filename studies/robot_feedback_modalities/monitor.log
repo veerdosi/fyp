@@ -1,0 +1,39 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+th_v1_s01_direct_waypoints complete
+th_v1_s01_deadline_guard complete
+th_v1_s01_phase_guard complete
+th_v1_s02_deadline_guard complete
+th_v1_s02_phase_guard complete
+th_v1_s02_direct_waypoints complete
+{
+  "task_traces": {
+    "load_change": {
+      "flagged_waypoints": 52,
+      "total_waypoints": 177
+    },
+    "stalled_motion": {
+      "flagged_waypoints": 20,
+      "total_waypoints": 177
+    },
+    "empty_sized_closure": {
+      "flagged_waypoints": 7,
+      "total_waypoints": 177
+    }
+  },
+  "free_verification": {
+    "load_change": {
+      "flagged_waypoints": 0,
+      "total_waypoints": 54
+    },
+    "stalled_motion": {
+      "flagged_waypoints": 0,
+      "total_waypoints": 54
+    },
+    "empty_sized_closure": {
+      "flagged_waypoints": 26,
+      "total_waypoints": 54
+    }
+  }
+}
