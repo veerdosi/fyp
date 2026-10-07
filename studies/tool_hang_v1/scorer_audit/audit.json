@@ -1,0 +1,544 @@
+{
+  "scope": "Private saved-state audit of pinned benchmark semantics, not a new policy episode or task-success redefinition.",
+  "checker_ast_matches_official": {
+    "_check_success": true,
+    "_check_frame_assembled": true,
+    "_check_tool_on_frame": true
+  },
+  "samples": [
+    {
+      "episode": "pilot_tool_hang_001",
+      "step": 1855,
+      "final_state": true,
+      "frame_pass": true,
+      "tool_pass": true,
+      "full_pass": true,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": true,
+        "shaft_between_opposed_walls": true
+      },
+      "frame_tip_to_base_m": 0.04656490425882835,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        -2.974155252804518e-05,
+        -2.9739674147246112e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": true,
+            "center_near_hook_line": true,
+            "walls_straddle_hook": true,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.005791906466271871,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 0.7182621930229997,
+          "all_checks": true
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.19193002963004388,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": 0.6076599491313014,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "step": 2040,
+      "final_state": true,
+      "frame_pass": true,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": true,
+        "shaft_between_opposed_walls": true
+      },
+      "frame_tip_to_base_m": 0.04590511797726227,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        -3.0019556853576835e-05,
+        -3.0019943010643848e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": true,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": true,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.009679204118601178,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 0.0250959066057351,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.1734447822848343,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": 0.5820870457603834,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "step": 1980,
+      "final_state": true,
+      "frame_pass": false,
+      "tool_pass": true,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_opposed_walls": false
+      },
+      "frame_tip_to_base_m": 0.11963661799148274,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        4.376626983099872e-05,
+        4.424032353798515e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": true,
+            "center_near_hook_line": true,
+            "walls_straddle_hook": true,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.003983251847701727,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 0.10716966137067202,
+          "all_checks": true
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.18696616584636797,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": -0.14695592324662454,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "step": 1579,
+      "final_state": true,
+      "frame_pass": false,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": true,
+        "shaft_between_opposed_walls": false
+      },
+      "frame_tip_to_base_m": 0.029634800696260632,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        0.0063995939117035185,
+        0.0063960071014746555
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": false,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.2673137013195579,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 2.4284971776864186,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": false,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.31090630768984745,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": 0.48427995544734437,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "step": 2000,
+      "final_state": true,
+      "frame_pass": false,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_opposed_walls": false
+      },
+      "frame_tip_to_base_m": 0.1348430401528776,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        0.012300931495314213,
+        0.012305533652577909
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.02557919392617173,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 2.7675976124862305,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.1956689499560369,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": 2.6294920406477904,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "step": 1389,
+      "final_state": true,
+      "frame_pass": false,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_opposed_walls": false
+      },
+      "frame_tip_to_base_m": 0.051532411673025545,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        0.0003445542658406428,
+        0.00034462923067610907
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.3038728550273273,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": -2.568039702928005,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.22507605041320033,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": -1.2665088925415744,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "step": 1890,
+      "final_state": true,
+      "frame_pass": false,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_opposed_walls": false
+      },
+      "frame_tip_to_base_m": 0.12150475501776374,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        4.728400296814222e-05,
+        4.7297991132337096e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.13231076248286985,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": -1.3209191567562177,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": true,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": true,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.008182336520756624,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": 0.03323181346861684,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "step": 1341,
+      "final_state": false,
+      "frame_pass": true,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": false,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": true,
+        "shaft_between_opposed_walls": true
+      },
+      "frame_tip_to_base_m": 0.045657173620705344,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        -2.999328046403081e-05,
+        -2.9990183775345106e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": false,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.1492871096774099,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 0.14284512988126832,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": false,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.049088099209416466,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": -0.060309985139215545,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "step": 518,
+      "final_state": false,
+      "frame_pass": true,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": false,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": true,
+        "shaft_between_opposed_walls": true
+      },
+      "frame_tip_to_base_m": 0.04721800305434422,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        -2.9984563445691186e-05,
+        -2.998430482536005e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.24758532492101049,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": -0.9493539366049114,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.36499687720518664,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": -0.520345923622699,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "step": 1928,
+      "final_state": false,
+      "frame_pass": false,
+      "tool_pass": true,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": false,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_opposed_walls": false
+      },
+      "frame_tip_to_base_m": 0.1201076726138145,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        2.9317935748847817e-05,
+        2.9817324809417063e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": true,
+            "center_near_hook_line": true,
+            "walls_straddle_hook": true,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.0024989157161506327,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 0.050017134464410265,
+          "all_checks": true
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.17653978587051522,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": -0.5222241648174965,
+          "all_checks": false
+        }
+      }
+    }
+  ],
+  "scorer_source_sha256": "da87623a6067bb6efd9714cfff0a61dce2107ad46356eb549810259d03e04ac0",
+  "audit_source_sha256": "bdd0ca6f9f2f7a5f4dc0a455d4dd5b6cbf5ed8a5849647eeaf1b1b0b32f6f4c3",
+  "reproduce": ".venv/bin/python studies/tool_hang_v1/scorer_audit/audit.py",
+  "limitation": "Rebuilt contacts show geometry, not contact forces. Release check covers fingerpads, not every robot link. Native line/depth tolerances can reject visible suspension; report that partial behavior separately."
+}

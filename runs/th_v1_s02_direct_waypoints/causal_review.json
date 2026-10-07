@@ -1,0 +1,46 @@
+{
+  "scope": "Completed held-out episode private causal review; no diagnostic state supplied to policy or executor.",
+  "first_execution_failure": {
+    "decision": 2,
+    "stage": "initial frame approach/grasp",
+    "details": "Approach ends 11.85 cm short, descent 4.09 cm short; closure reaches requested pose but lift is empty. Decision 3 deeper grasp acquires the frame."
+  },
+  "recovered_transport_failure": {
+    "decision": 7,
+    "details": "Both transport/lower poses reach within 0.2 mm, but frame slips and reaches table by step 610. Rebuilt contacts show fingerpad contact earlier but finger-body contact only by step 570; this is geometry, not a force measurement. Astra detects slip from image and recovers via decision 9."
+  },
+  "first_unrecovered_break": {
+    "decisions": [
+      13,
+      14,
+      15
+    ],
+    "stage": "frame insertion/release/withdrawal",
+    "details": "Frame tip/base distance is 11.926 cm at step 1090 versus 5 cm criterion. Shaft is between stand walls at that point but lowering ends 1.763 cm short of requested pose. Release at step 1115 leaves depth 12.016 cm; withdrawal is obstructed, contacts frame at step 1180 and loses wall-straddle. Clearance leaves upright but unassembled frame: tip/base 12.132 cm at step 1685."
+  },
+  "policy_judgment_so_far": "Decision 16 says released frame remains upright in stand. It remains upright but has never satisfied assembly. No final completion judgment exists.",
+  "tool_progress": "Decision 17 acquired tool; decisions 19\u201321 transported, lowered and released it. Final tool is suspended by smaller hole despite repeated larger-hole descriptions.",
+  "native_goals_ever_satisfied": {
+    "frame_assembled": false,
+    "tool_on_frame": false
+  },
+  "interruption": "Two failed policy turns: usage limit and capacity rejection. Identical pending input resumed in same context and original live simulator without reset.",
+  "evidence": [
+    "steps.jsonl",
+    "commands.jsonl",
+    "diagnostic_summary.json",
+    "prefix_checkpoint_verification.json",
+    "prefix_assembly_diagnostic.json",
+    "policy_tools_complete.json",
+    "interruption.json",
+    "native_scorer_diagnostic.json",
+    "checkpoint_live_trajectory_comparison.json",
+    "replay_verification.json"
+  ],
+  "next_action": "Analyze all six scheduled outcomes and audit native semantics before choosing follow-up mechanism.",
+  "completion_judgment": {
+    "overall": "Incorrect full completion claim. Both native checks remain false.",
+    "frame": "Upright frame was not fully seated; final tip/base distance 12.150 cm exceeds 5 cm and wall-straddle fails.",
+    "tool": "Physically suspended via smaller hole 2, which contacts horizontal hook. Larger hole 1 is 13.231 cm from hook line and does not contact it. Even smaller-hole insertion fraction 3.323% and line offset 8.182 mm fail corresponding geometric tolerances; native scorer requires larger hole."
+  }
+}

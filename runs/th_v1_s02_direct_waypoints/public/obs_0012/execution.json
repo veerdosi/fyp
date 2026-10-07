@@ -1,0 +1,65 @@
+{
+  "condition": "direct_waypoints",
+  "criteria": {
+    "position_tolerance_m": 0.003,
+    "orientation_tolerance_rad": 0.03,
+    "linear_speed_limit_m_s": 0.005,
+    "angular_speed_limit_rad_s": 0.05,
+    "finger_speed_limit_m_s": 0.001,
+    "consecutive_samples": 3,
+    "minimum_steps": 10
+  },
+  "waypoints": [
+    {
+      "waypoint_index": 0,
+      "first_step": 1526,
+      "last_step": 1590,
+      "requested_steps": 65,
+      "executed_steps": 65,
+      "first_settled_step": 1587,
+      "terminal_measurement": {
+        "position_error_m": 0.0007059849943614933,
+        "orientation_error_rad": 0.0021235217162004693,
+        "linear_speed_m_s": 0.00037418989756002774,
+        "angular_speed_rad_s": 0.0008436218996575582,
+        "finger_speed_m_s": 2.028727145810954e-05,
+        "settled_sample": true
+      },
+      "settled_at_exit": true,
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.8909749601749277,
+        0.45404991157385566,
+        -0.0006790578915873723,
+        -0.0013553676400590022
+      ]
+    },
+    {
+      "waypoint_index": 1,
+      "first_step": 1591,
+      "last_step": 1685,
+      "requested_steps": 95,
+      "executed_steps": 95,
+      "first_settled_step": 1682,
+      "terminal_measurement": {
+        "position_error_m": 0.000946219691467846,
+        "orientation_error_rad": 0.0005588784425052581,
+        "linear_speed_m_s": 3.5477724365150753e-05,
+        "angular_speed_rad_s": 0.0008693554219246336,
+        "finger_speed_m_s": 4.685881097509232e-06,
+        "settled_sample": true
+      },
+      "settled_at_exit": true,
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.8909475886413631,
+        0.45409905496087893,
+        -0.001449916443649429,
+        -0.0020833434866785994
+      ]
+    }
+  ],
+  "note": "Robot arrival is not acquisition, seating or task completion.",
+  "remaining_waypoints_cancelled": 0,
+  "stop_reason": "sequence_complete"
+}

@@ -1,0 +1,38 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0813,
+          0.0449,
+          1.093
+        ],
+        "gripper": -1,
+        "steps": 25
+      },
+      {
+        "position": [
+          -0.22,
+          -0.08,
+          1.18
+        ],
+        "gripper": -1,
+        "steps": 65
+      }
+    ],
+    "reason": "The frame descended about 49 mm and further motion is contact-limited. Release it and withdraw to check whether it remains seated independently."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_direct",
+    "policy_visible_input": "Fresh observation 8 after your motion command, step 1090, simulated time 54.5 seconds. 13 decisions have been executed; 17 model decisions and 1310 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0008/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0008/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0008/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0008/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.0813,0.0449,1.093],\"gripper\":-1,\"steps\":25},{\"position\":[-0.22,-0.08,1.18],\"gripper\":-1,\"steps\":65}],\"reason\":\"The frame descended about 49 mm and further motion is contact-limited. Release it and withdraw to check whether it remains seated independently.\"}",
+    "response_timestamp": "2026-10-07T06:46:19.877Z",
+    "message_id": "amsg_01a1151c-ede5-7f71-a2b1-96e8976ae1cf",
+    "dispatch_timestamp": "2026-10-07T06:46:07.624Z",
+    "policy_wall_seconds": 12.253,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/policy_update_014.txt"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "Private offline review of interrupted prefix through decision 19, not a final episode outcome; no diagnostic state sent to policy or executor.",
+  "first_execution_failure": {
+    "decision": 2,
+    "stage": "initial frame approach/grasp",
+    "details": "Approach ends 11.85 cm short, descent 4.09 cm short; closure reaches requested pose but lift is empty. Decision 3 deeper grasp acquires the frame."
+  },
+  "recovered_transport_failure": {
+    "decision": 7,
+    "details": "Both transport/lower poses reach within 0.2 mm, but frame slips and reaches table by step 610. Rebuilt contacts show fingerpad contact earlier but finger-body contact only by step 570; this is geometry, not a force measurement. Astra detects slip from image and recovers via decision 9."
+  },
+  "first_unrecovered_break": {
+    "decisions": [
+      13,
+      14,
+      15
+    ],
+    "stage": "frame insertion/release/withdrawal",
+    "details": "Frame tip/base distance is 11.926 cm at step 1090 versus 5 cm criterion. Shaft is between stand walls at that point but lowering ends 1.763 cm short of requested pose. Release at step 1115 leaves depth 12.016 cm; withdrawal is obstructed, contacts frame at step 1180 and loses wall-straddle. Clearance leaves upright but unassembled frame: tip/base 12.132 cm at step 1685."
+  },
+  "policy_judgment_so_far": "Decision 16 says released frame remains upright in stand. It remains upright but has never satisfied assembly. No final completion judgment exists.",
+  "tool_progress": "Decision 17 acquired the tool; decision 19 transported its larger hole toward hook. Placement remains unfinished at interruption.",
+  "native_goals_ever_satisfied": {
+    "frame_assembled": false,
+    "tool_on_frame": false
+  },
+  "interruption": "Usage limit followed by capacity error before decision 20; same simulator and Astra context retained.",
+  "evidence": [
+    "steps.jsonl",
+    "commands.jsonl",
+    "diagnostic_summary.json",
+    "prefix_checkpoint_verification.json",
+    "prefix_assembly_diagnostic.json",
+    "policy_tools_complete.json",
+    "interruption.json"
+  ],
+  "next_action": "Complete the pending policy decision with same context/state/budget when service returns, then replay original live trajectory and finish frozen paired analysis."
+}

@@ -1,0 +1,11 @@
+{
+  "source_timestamp": "2026-10-07T06:10:54.759Z",
+  "spawn_model": "gpt-6-astra",
+  "spawn_effort": "medium",
+  "spawn_fork_turns": "none",
+  "message_sha256": "5b12e7f880e894216d77ce55a40afbad7541806f28369040db46c15493eb76e5",
+  "prepared_prompt_sha256": "fc1cd54b22a98ba4e29fe1558b769bf02d5d4f7c2065db85b84be2a7a2b3240a",
+  "match_status": "unavailable",
+  "source_representation": "Protected/encrypted message in native root log; a comparison to prepared plaintext is not meaningful.",
+  "note": "Model/effort/fresh-context metadata verified. Prepared plaintext and its hash retained; operator supplied that full text at spawn. Do not treat encrypted-message hash as a plaintext mismatch or a verified match."
+}

@@ -1,0 +1,13 @@
+{
+  "official_source": "https://raw.githubusercontent.com/ARISE-Initiative/robosuite/v1.4.1/robosuite/environments/manipulation/tool_hang.py",
+  "local_source": "/Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/environments/manipulation/tool_hang.py",
+  "local_sha256": "da87623a6067bb6efd9714cfff0a61dce2107ad46356eb549810259d03e04ac0",
+  "official_sha256": "52fbf78535e4b4cd32d234591da4c8174b3903071df5a38434255c7cb434f29a",
+  "checker_ast_matches": {
+    "_check_success": true,
+    "_check_frame_assembled": true,
+    "_check_tool_on_frame": true
+  },
+  "identical_after_line_ending_normalization": true,
+  "scope": "Installed methods match official pinned code. Criteria may differ from human interpretation of visible suspension."
+}

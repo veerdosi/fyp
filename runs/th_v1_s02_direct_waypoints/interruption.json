@@ -1,0 +1,46 @@
+{
+  "status": "resumed_same_context_and_original_live_episode_finished",
+  "cause": "Policy service unavailable before decision 20; usage limit followed by capacity rejection",
+  "failed_policy_turns": [
+    {
+      "timestamp": "2026-10-07T06:50:30.352Z",
+      "turn_id": "01a11520-a787-7ee1-a16f-f1ae9317b487",
+      "error": {
+        "message": "You\u2019ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 7:05 PM.",
+        "codex_error_info": "usage_limit_exceeded"
+      },
+      "duration_ms": 6327
+    },
+    {
+      "timestamp": "2026-10-07T17:15:39.534Z",
+      "turn_id": "01a1175c-f952-71a0-b5d7-861222da8041",
+      "error": {
+        "message": "Selected model is at capacity. Please try a different model.",
+        "codex_error_info": "server_overloaded"
+      },
+      "duration_ms": 7960
+    }
+  ],
+  "reset_timezone": "Not provided by usage-limit message; service response determines availability",
+  "last_executed_decision": 19,
+  "control_steps": 1685,
+  "remaining_decisions": 11,
+  "remaining_control_steps": 715,
+  "pending_policy_input": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/policy_update_020.txt",
+  "pending_policy_input_sha256": "cb893de635f9a9244199042e28a1d4fcabb09cdb7595489f572076d1918d4c89",
+  "simulator_session_id": 5809,
+  "simulator_pid": 83933,
+  "simulator_live_revalidated_utc": "2026-10-07 17:15:41 UTC",
+  "agent": "/root/astra_th_v1_s02_direct",
+  "robot_outcome": "Completed native failure; both frame and tool checks false",
+  "next_action": "No pending robot command; replay and analyze all six scheduled outcomes.",
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T14-32-08-01a1150f-eff6-7503-8990-1d8dea3a0219.jsonl",
+  "completed_policy_turns_include_failed_turns": true,
+  "recorded_api_cost_status": "Measured-request API-equivalent estimate; failed requests without token records remain unpriced and actual account charge unknown.",
+  "resumed_decision": 20,
+  "resumption_note": "Identical pending input retried after capacity rejection. Astra returned a motion decision; original simulator session 5809 executed it, without reconstruction, reset or budget change.",
+  "final_decision": 22,
+  "final_control_step": 1890,
+  "final_stop_reason": "policy_finish",
+  "native_success": false
+}

@@ -1,0 +1,65 @@
+{
+  "condition": "direct_waypoints",
+  "criteria": {
+    "position_tolerance_m": 0.003,
+    "orientation_tolerance_rad": 0.03,
+    "linear_speed_limit_m_s": 0.005,
+    "angular_speed_limit_rad_s": 0.05,
+    "finger_speed_limit_m_s": 0.001,
+    "consecutive_samples": 3,
+    "minimum_steps": 10
+  },
+  "waypoints": [
+    {
+      "waypoint_index": 0,
+      "first_step": 1686,
+      "last_step": 1720,
+      "requested_steps": 35,
+      "executed_steps": 35,
+      "first_settled_step": 1700,
+      "terminal_measurement": {
+        "position_error_m": 0.0010754603001338439,
+        "orientation_error_rad": 0.0007772226654263118,
+        "linear_speed_m_s": 1.962638384944597e-05,
+        "angular_speed_rad_s": 0.00011764888936126643,
+        "finger_speed_m_s": 2.057669604652287e-06,
+        "settled_sample": true
+      },
+      "settled_at_exit": true,
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.8910502503289917,
+        0.45389720687442975,
+        -0.0016093664446765062,
+        -0.0020461964419955353
+      ]
+    },
+    {
+      "waypoint_index": 1,
+      "first_step": 1721,
+      "last_step": 1750,
+      "requested_steps": 30,
+      "executed_steps": 30,
+      "first_settled_step": 1733,
+      "terminal_measurement": {
+        "position_error_m": 0.00023424909352936469,
+        "orientation_error_rad": 0.0008545661869030958,
+        "linear_speed_m_s": 0.001044086433379953,
+        "angular_speed_rad_s": 0.0005781152299190083,
+        "finger_speed_m_s": 0.00039021554220168857,
+        "settled_sample": true
+      },
+      "settled_at_exit": true,
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.8912254548546217,
+        0.45355286016853424,
+        -0.0016278401508365247,
+        -0.0020836958890703733
+      ]
+    }
+  ],
+  "note": "Robot arrival is not acquisition, seating or task completion.",
+  "remaining_waypoints_cancelled": 0,
+  "stop_reason": "sequence_complete"
+}

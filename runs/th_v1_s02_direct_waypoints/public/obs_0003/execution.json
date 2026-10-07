@@ -1,0 +1,65 @@
+{
+  "condition": "direct_waypoints",
+  "criteria": {
+    "position_tolerance_m": 0.003,
+    "orientation_tolerance_rad": 0.03,
+    "linear_speed_limit_m_s": 0.005,
+    "angular_speed_limit_rad_s": 0.05,
+    "finger_speed_limit_m_s": 0.001,
+    "consecutive_samples": 3,
+    "minimum_steps": 10
+  },
+  "waypoints": [
+    {
+      "waypoint_index": 0,
+      "first_step": 356,
+      "last_step": 405,
+      "requested_steps": 50,
+      "executed_steps": 50,
+      "first_settled_step": 395,
+      "terminal_measurement": {
+        "position_error_m": 0.00026426381242855557,
+        "orientation_error_rad": 0.0012258880718464397,
+        "linear_speed_m_s": 9.065677547014447e-06,
+        "angular_speed_rad_s": 4.2314684265586536e-05,
+        "finger_speed_m_s": 0.0005993173049727858,
+        "settled_sample": true
+      },
+      "settled_at_exit": true,
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.9999999343567714,
+        0.00020619663155093038,
+        0.0002466229473754828,
+        0.0001671721387868675
+      ]
+    },
+    {
+      "waypoint_index": 1,
+      "first_step": 406,
+      "last_step": 470,
+      "requested_steps": 65,
+      "executed_steps": 65,
+      "first_settled_step": 469,
+      "terminal_measurement": {
+        "position_error_m": 0.0004870924648625505,
+        "orientation_error_rad": 0.0019071583060501442,
+        "linear_speed_m_s": 0.0002826009419524757,
+        "angular_speed_rad_s": 0.0021114419649391238,
+        "finger_speed_m_s": 0.0005243958069759309,
+        "settled_sample": true
+      },
+      "settled_at_exit": true,
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.7071143510313828,
+        0.0,
+        -0.4600093359842117,
+        0.5370108987467863
+      ]
+    }
+  ],
+  "note": "Robot arrival is not acquisition, seating or task completion.",
+  "remaining_waypoints_cancelled": 0,
+  "stop_reason": "sequence_complete"
+}

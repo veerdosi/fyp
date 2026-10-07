@@ -1,0 +1,45 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 143,
+        "v": 218
+      },
+      {
+        "camera": "agentview",
+        "u": 132,
+        "v": 220
+      },
+      {
+        "camera": "agentview",
+        "u": 100,
+        "v": 230
+      },
+      {
+        "camera": "agentview",
+        "u": 148,
+        "v": 199
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 169
+      }
+    ],
+    "reason": "The frame slipped during transport and is now resting beside the stand. Locate its black grasp block and shaft to recover with a deeper grasp."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_direct",
+    "policy_visible_input": "Fresh observation 4 after your motion command, step 610, simulated time 30.5 seconds. 7 decisions have been executed; 23 model decisions and 1790 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":143,\"v\":218},{\"camera\":\"agentview\",\"u\":132,\"v\":220},{\"camera\":\"agentview\",\"u\":100,\"v\":230},{\"camera\":\"agentview\",\"u\":148,\"v\":199},{\"camera\":\"agentview\",\"u\":185,\"v\":169}],\"reason\":\"The frame slipped during transport and is now resting beside the stand. Locate its black grasp block and shaft to recover with a deeper grasp.\"}",
+    "response_timestamp": "2026-10-07T06:42:48.824Z",
+    "message_id": "amsg_01a11519-b578-7d33-9daf-646daa20d941",
+    "dispatch_timestamp": "2026-10-07T06:42:31.125Z",
+    "policy_wall_seconds": 17.699,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/policy_update_008.txt"
+  }
+}

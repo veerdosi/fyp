@@ -1,0 +1,178 @@
+{
+  "source_session": "/Users/veerdosi/.codex/sessions/2026/10/07/rollout-2026-10-07T14-32-08-01a1150f-eff6-7503-8990-1d8dea3a0219.jsonl",
+  "source_sha256_at_export": "427ddba8c2f5d9811c8a53e436cee561221c317aa92075fdebd0ad7ef7b8878e",
+  "tool_call_count": 23,
+  "tool_calls": [
+    {
+      "timestamp": "2026-10-07T06:32:20.872Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_23a04c44a09e42bea3f8d10f444c5d3c",
+      "input": "const r = await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0000/agentview.png\"});image(r.image_url);\nconst s = await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0000/robot0_eye_in_hand.png\"});image(s.image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:32:52.418Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_645569530a5c403ba8eba297d2911ce7",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0000/sense_001.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:34:03.990Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_1b44baa7fa784876b15824e42250340f",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/execution.json\"}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:34:48.788Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_ab1dd602f4ce42de8a287411277305db",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0002/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0002/execution.json\",max_output_tokens:2500}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0002/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0002/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:35:46.549Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_bb62338199074ef2ab3eb92d86bfb29e",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0002/sense_004.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:36:37.884Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_dbebead92155482cb1a54f97d5d8780f",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0003/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0003/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0003/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0003/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:37:21.015Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_e01289801a2546878b17cd6fd1e59175",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0003/sense_006.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:42:38.482Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_4ef4c4fd81574ad1a62c95cffa602207",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:43:01.787Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_6d933404c1eb481ea592b53e47a153e0",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0004/sense_008.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:43:44.330Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_b66965ae043649a2bf69bbd76509f6f2",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0005/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0005/execution.json\",max_output_tokens:1900}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0005/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0005/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:44:16.412Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_c8620c949a3b45ada68ed5ff9ae8f9d0",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0006/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0006/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0006/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0006/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:44:41.961Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_6858c5204c134fac8a0e926b0952d5dd",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0006/sense_011.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:44:55.801Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_d7308d6853464ad9a5f44c65f9e9e3ec",
+      "input": "text(await tools.exec_command({cmd:\"mkdir -p /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/policy_compute\\ncat > /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/policy_compute/align.py <<'PY'\\nimport numpy as np\\nfrom scipy.spatial.transform import Rotation as R\\np=np.array([-.0309888776,-.0335203481,1.2005503895]); tip=np.array([-.0641921626,.0066018198,1.056427292]); top=np.array([-.0418406234,-.0167640555,1.1440819667])\\nd=(tip-top)/np.linalg.norm(tip-top); target=np.array([0,0,-1]); axis=np.cross(d,target); angle=np.arctan2(np.linalg.norm(axis),np.dot(d,target)); rot=R.from_rotvec(axis/np.linalg.norm(axis)*angle)\\nq=rot*R.from_quat([.6470030934,-.2899900955,-.6441685288,-.2869488596]); off=rot.apply(tip-p)\\nprint('q',q.as_quat(),'offset',off,'pose for tip at opening plus 25mm',np.array([-.080,.044,.985])-off)\\nPY\\n/Users/veerdosi/Documents/code/github/fyp/.venv/bin/python /Users/veerdosi/Documents/code/github/fyp/scripts/policy_calc.py --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints --code /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/policy_compute/align.py\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:45:36.026Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_b27c88d2a00b464ebb62334050a0481c",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0007/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0007/execution.json\",max_output_tokens:1600}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0007/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0007/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:46:14.617Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_4185bf4b123b439f992fc8179e1c85e1",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0008/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0008/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0008/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:46:45.778Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_e2da398fb52f4127a071301edd57f690",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0009/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0009/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0009/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0009/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:47:49.570Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_58256dfaf3734a0dad32fff14482411a",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0010/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0010/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0010/agentview.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:48:23.347Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_347d5add6ddb4193a87aea24e6a10d8d",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0010/sense_016.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:49:05.664Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_4ea94590794c4f7f93634ba1203b581e",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0011/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0011/execution.json\",max_output_tokens:1600}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0011/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0011/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:49:32.404Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_bfa9b83df71f4c91848a8a8555a57aec",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0011/sense_018.json\"}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T06:50:29.606Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_d0788d473cf644c5bf5008b46dab0617",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0012/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0012/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0012/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0012/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T17:21:26.731Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_kJEM95vwawHp2BLuzm5UdDaf",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0013/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0013/execution.json\",max_output_tokens:1800}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0013/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0013/robot0_eye_in_hand.png\"})).image_url);\n"
+    },
+    {
+      "timestamp": "2026-10-07T17:22:54.348Z",
+      "type": "custom_tool_call",
+      "name": "exec",
+      "call_id": "call_6Gbw1syLxdm4JwKaJaXwtipD",
+      "input": "text(await tools.exec_command({cmd:\"cat /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0014/observation.json /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0014/execution.json\",max_output_tokens:1900}));image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0014/agentview.png\"})).image_url);image((await tools.view_image({path:\"/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0014/robot0_eye_in_hand.png\"})).image_url);\n"
+    }
+  ],
+  "review_status": "Export only; inspect tool inputs and calculation logs for boundary compliance.",
+  "manual_boundary_review": {
+    "status": "pass",
+    "scope": "All 23 exact exported tool inputs through the completed 22-decision episode, plus the one sensor-only calculation source/output/metadata.",
+    "reviewer": "Sol",
+    "public_reads_only": true,
+    "temporary_calculations": 1,
+    "details": "Each invocation reads only episode public images, robot readings, selected depth/calibration sensor replies and execution reports. align.py source and logged code are identical; sensor constants match permitted obs_0006/sense_011 and robot readings, uses NumPy/SciPy and designated policy_calc. No project/hidden scorer/other episode reads, network, robot execution code, or delegation observed.",
+    "enforcement": "Instruction and manual audit boundary, not OS isolation; sensor manifest lists available inputs, not syscall reads."
+  }
+}

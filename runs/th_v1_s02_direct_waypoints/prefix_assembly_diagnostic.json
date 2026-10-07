@@ -1,0 +1,1990 @@
+{
+  "scope": "Private offline prefix diagnosis, not a finished task outcome or a policy input.",
+  "control_steps": 1685,
+  "samples": [
+    {
+      "step": 355,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.336082603186411,
+      "opposed_wall_cross_dots": [
+        0.09128323762858392,
+        0.09129135808542974
+      ],
+      "tip_xyz": [
+        0.03253241137392543,
+        -0.15689374535392903,
+        1.079980839182524
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.8642974567483563e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0006837588365185239
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00010205877102042688
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00024150889763470073
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0001312742437210482
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0007570330467188232
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -2.6713484469168e-05
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00015857905451752916
+        }
+      ]
+    },
+    {
+      "step": 405,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.44591769968909956,
+      "opposed_wall_cross_dots": [
+        0.15751784305934452,
+        0.15752739302555663
+      ],
+      "tip_xyz": [
+        0.034397666028360134,
+        -0.160780377094426,
+        1.2047766197363208
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.8642974587362622e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0006620934472098012
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00018743942753674032
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0002078462459776301
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.000698231966448228
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -9.98432616698213e-05
+        }
+      ]
+    },
+    {
+      "step": 470,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.3626039283052983,
+      "opposed_wall_cross_dots": [
+        0.10171635278456095,
+        0.10172007760295919
+      ],
+      "tip_xyz": [
+        -0.04895769487023175,
+        -0.26237123468654044,
+        1.0532479309998497
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.864297461325066e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0004351623740322324
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -5.1242372430006073e-05
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00012230772359209113
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0006219649009126335
+        }
+      ]
+    },
+    {
+      "step": 570,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.25036555831871915,
+      "opposed_wall_cross_dots": [
+        0.0016795495460598378,
+        0.0016801716866730993
+      ],
+      "tip_xyz": [
+        -0.06336451218526964,
+        0.039846598846729406,
+        1.051508855850115
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.8642974652936779e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0002487498959946629
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00011260133777974259
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00031452649185510686
+        }
+      ]
+    },
+    {
+      "step": 575,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.23468919549683293,
+      "opposed_wall_cross_dots": [
+        0.0015983181376907657,
+        0.0015990035614752076
+      ],
+      "tip_xyz": [
+        -0.06299943253034089,
+        0.03951215662697641,
+        1.0356085958398769
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.8642974654917777e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.00023686281789097173
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0001146228758657905
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00030223108246831557
+        }
+      ]
+    },
+    {
+      "step": 580,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.21578439789164588,
+      "opposed_wall_cross_dots": [
+        0.001539937357282581,
+        0.0015406975773214918
+      ],
+      "tip_xyz": [
+        -0.0621572562304092,
+        0.038702276434072265,
+        1.01642905006336
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.8642974656944388e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0002182996239028537
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0001180063719018467
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00029107416099954367
+        }
+      ]
+    },
+    {
+      "step": 585,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.19675678918412626,
+      "opposed_wall_cross_dots": [
+        0.0014409069214614348,
+        0.0014417230995446356
+      ],
+      "tip_xyz": [
+        -0.06106063641014575,
+        0.038392306780290486,
+        0.9969380845350878
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.86429746588226e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.00018659872403355143
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00012398926817113335
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00027045199121390057
+        }
+      ]
+    },
+    {
+      "step": 590,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.17885162317342224,
+      "opposed_wall_cross_dots": [
+        0.0013583432433626128,
+        0.0013592162099613644
+      ],
+      "tip_xyz": [
+        -0.059634105470627016,
+        0.0382554250764245,
+        0.9784162955592863
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.8642974660894018e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0001532140264786787
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00012559015157570841
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0002484959339315728
+        }
+      ]
+    },
+    {
+      "step": 595,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.17281709685512836,
+      "opposed_wall_cross_dots": [
+        0.0015352071406459515,
+        0.0015361810656327622
+      ],
+      "tip_xyz": [
+        -0.05715046731839604,
+        0.03790001575866617,
+        0.9719495471605816
+      ],
+      "stand_base_xyz": [
+        -0.08000000000000002,
+        1.8642974662835163e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -4.0524418457139606e-05
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00011891569484797314
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.00016785750809983718
+        }
+      ]
+    },
+    {
+      "step": 610,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0020155545326185254,
+      "frame_tip_to_base_m": 0.23726713401441749,
+      "opposed_wall_cross_dots": [
+        0.0043396645035994625,
+        0.004343668319584512
+      ],
+      "tip_xyz": [
+        0.09454684755151664,
+        -0.16069643691108082,
+        0.8025037812880471
+      ],
+      "stand_base_xyz": [
+        -0.07999994197964766,
+        1.589707592263128e-07,
+        0.8048944338699944
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "stand_base",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0014335694274685
+        },
+        {
+          "geoms": [
+            "stand_base",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0009595245429835168
+        },
+        {
+          "geoms": [
+            "stand_base",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0015222166650406363
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "tool_hole1_hc_5"
+          ],
+          "distance_m": -0.000524240067450598
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "tool_hole1_hc_5"
+          ],
+          "distance_m": -2.6433705254309528e-05
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "tool_hole1_hc_5"
+          ],
+          "distance_m": -3.6220863856024686e-05
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "tool_hole1_hc_5"
+          ],
+          "distance_m": -0.0005271471607975325
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "tool_hole1_hc_6"
+          ],
+          "distance_m": -0.00011135513283040895
+        },
+        {
+          "geoms": [
+            "frame_vertical_frame",
+            "tool_hole1_hc_6"
+          ],
+          "distance_m": -0.00011535044448240781
+        }
+      ]
+    },
+    {
+      "step": 810,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.26789368179156015,
+      "opposed_wall_cross_dots": [
+        0.017903780192127003,
+        0.01790032473039423
+      ],
+      "tip_xyz": [
+        0.08390532079291915,
+        -0.1643934457660191,
+        0.9386018551693585
+      ],
+      "stand_base_xyz": [
+        -0.07999693440758765,
+        9.857959258195894e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0007131931578970091
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005324464437763223
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.000503654821144735
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00044231750076899627
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004135258781374089
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0005348065387058573
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005468530881190974
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005180614654875101
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004567241451117714
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.000427932522480184
+        },
+        {
+          "geoms": [
+            "frame_tip_cone_50",
+            "tool_hole1_hc_4"
+          ],
+          "distance_m": -6.442630216943454e-05
+        }
+      ]
+    },
+    {
+      "step": 950,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022592396197486206,
+      "frame_tip_to_base_m": 0.22632003508943688,
+      "opposed_wall_cross_dots": [
+        0.001175318180604884,
+        0.0011748198472766118
+      ],
+      "tip_xyz": [
+        -0.07399463118566484,
+        0.014672148704198154,
+        1.0306591432635952
+      ],
+      "stand_base_xyz": [
+        -0.07999693440758765,
+        9.857959263737823e-07,
+        0.8048949131078086
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0005837336889199744
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005005044506739884
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00047646403650888073
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.000500414719200575
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00047637430503546727
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0005838560990272788
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.000500450048800923
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004764096346358153
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005003603173275096
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00047631990316240186
+        }
+      ]
+    },
+    {
+      "step": 1020,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0057361287421409364,
+      "frame_tip_to_base_m": 0.1602663059438267,
+      "opposed_wall_cross_dots": [
+        -1.7191361585538057e-05,
+        -1.719409594933536e-05
+      ],
+      "tip_xyz": [
+        -0.0814039035679791,
+        0.04108175628730809,
+        0.9597936118906633
+      ],
+      "stand_base_xyz": [
+        -0.07999668771495734,
+        1.7038035821356703e-06,
+        0.8048880346755172
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": true
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0006747780878283899
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005170659569745419
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00047557381893617817
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00048686217198082337
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004453700339424597
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0006048154121741267
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005191682262430577
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.000477676088204694
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004889644412493392
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004474723032109755
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_0"
+          ],
+          "distance_m": -5.307954043206493e-05
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_0"
+          ],
+          "distance_m": -5.0247206852206854e-05
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_0"
+          ],
+          "distance_m": -5.3687589748498744e-05
+        }
+      ]
+    },
+    {
+      "step": 1055,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0022617156825825917,
+      "frame_tip_to_base_m": 0.12851116551100172,
+      "opposed_wall_cross_dots": [
+        -2.646271826272102e-05,
+        -2.6503625489644505e-05
+      ],
+      "tip_xyz": [
+        -0.08051463301768658,
+        0.04529760137792301,
+        0.925156799117385
+      ],
+      "stand_base_xyz": [
+        -0.0799968512204691,
+        1.1355870228606015e-06,
+        0.8048942457191623
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": true
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0005981368039162071
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005360073028758898
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00043958070291876217
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005193262274649882
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00042289962750786063
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0006511518703071265
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005402529427013757
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004438263427442481
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005235718672904742
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00042714526733334657
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -1.7885302807336278e-06
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -9.28822410234043e-07
+        }
+      ]
+    },
+    {
+      "step": 1090,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.024258799793697806,
+      "frame_tip_to_base_m": 0.11926118725735259,
+      "opposed_wall_cross_dots": [
+        -2.846711084092439e-05,
+        -2.8480709445535608e-05
+      ],
+      "tip_xyz": [
+        -0.08075283357213742,
+        0.044990202110655186,
+        0.9153069919720961
+      ],
+      "stand_base_xyz": [
+        -0.07999372300623013,
+        4.071653771663344e-06,
+        0.8048583495915838
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": true
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0006150380320039665
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005387487169083546
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0005084113955657482
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004931999348562313
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00046286261351362486
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.000632435595597674
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004995554775172125
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.000469218156174606
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0004540066954650891
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00042366937412248267
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -0.0002202685938439301
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -0.00020944444975338138
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -0.000209753641458797
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -0.00017477101927165374
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_49"
+          ],
+          "distance_m": -1.79575958322191e-05
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_49"
+          ],
+          "distance_m": -1.3408457754814569e-05
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -5.425929110863393e-05
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -4.97101530312294e-05
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -4.9644848631248506e-05
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -2.3504367854573104e-05
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -2.861855431856391e-05
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_tip_cone_48"
+          ],
+          "distance_m": -9.553462078559138e-06
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_tip_cone_48"
+          ],
+          "distance_m": -7.314220018021864e-06
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_tip_cone_49"
+          ],
+          "distance_m": -3.907335619458792e-05
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_tip_cone_49"
+          ],
+          "distance_m": -3.683411413405065e-05
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -6.859325031061685e-05
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -6.635400825007957e-05
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -5.449778176531144e-05
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -5.245282001412106e-05
+        }
+      ]
+    },
+    {
+      "step": 1115,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0023945602109408646,
+      "frame_tip_to_base_m": 0.12016039072848927,
+      "opposed_wall_cross_dots": [
+        -1.4463568875801362e-05,
+        -1.4471979533289207e-05
+      ],
+      "tip_xyz": [
+        -0.0786670981687152,
+        0.04618029034147078,
+        0.9158195733409282
+      ],
+      "stand_base_xyz": [
+        -0.07999426115092464,
+        2.3593429992409176e-06,
+        0.8048945679222118
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": true
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -3.4999130935175173e-06
+        },
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -2.93653086854677e-06
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -8.895884157750698e-07
+        },
+        {
+          "geoms": [
+            "stand_wall1",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -1.4286679658193332e-06
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -2.2864443944182836e-06
+        }
+      ]
+    },
+    {
+      "step": 1180,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.15870235862360554,
+      "frame_tip_to_base_m": 0.1250039419047542,
+      "opposed_wall_cross_dots": [
+        0.00010490309377503547,
+        0.00010473717568195073
+      ],
+      "tip_xyz": [
+        -0.10353884363677707,
+        0.05873892287921907,
+        0.9202652536143188
+      ],
+      "stand_base_xyz": [
+        -0.09615527434029286,
+        0.01093334346121477,
+        0.8049999293720296
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "frame_horizontal_frame",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.009870985307827667
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_horizontal_frame"
+          ],
+          "distance_m": -0.001438069643672485
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "frame_horizontal_frame"
+          ],
+          "distance_m": -0.00027611365938553107
+        },
+        {
+          "geoms": [
+            "frame_grip_frame",
+            "gripper0_finger2_collision"
+          ],
+          "distance_m": -0.0035617713234761864
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.001415037473115178
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.00039671170424715837
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.001872549596915041
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -0.0007146719153130721
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "frame_grip_frame"
+          ],
+          "distance_m": -4.499016965445581e-05
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_42"
+          ],
+          "distance_m": -2.120663299037975e-07
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_43"
+          ],
+          "distance_m": -2.1747818202446875e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_44"
+          ],
+          "distance_m": -4.137497310586012e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_45"
+          ],
+          "distance_m": -6.100212800926007e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_46"
+          ],
+          "distance_m": -8.062928291267331e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_47"
+          ],
+          "distance_m": -1.0025643781608872e-05
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_48"
+          ],
+          "distance_m": -1.1988359271948462e-05
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_49"
+          ],
+          "distance_m": -1.395107476229087e-05
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -1.5913790252630866e-05
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_tip_cone_48"
+          ],
+          "distance_m": -4.42675034275826e-08
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_tip_cone_49"
+          ],
+          "distance_m": -5.9062675235447715e-06
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -1.1768267543675294e-05
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall0"
+          ],
+          "distance_m": -0.0009011238489365484
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall1"
+          ],
+          "distance_m": -0.0005165705759809232
+        }
+      ]
+    },
+    {
+      "step": 1260,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.002374610973518005,
+      "frame_tip_to_base_m": 0.12109146823374961,
+      "opposed_wall_cross_dots": [
+        8.938285839039388e-06,
+        8.773426454083876e-06
+      ],
+      "tip_xyz": [
+        -0.10532373076643417,
+        0.05762944557082163,
+        0.9162709870792398
+      ],
+      "stand_base_xyz": [
+        -0.09622578694940179,
+        0.010985428263279848,
+        0.8048945679110826
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -7.362408485179044e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -2.187648746410616e-06
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall1"
+          ],
+          "distance_m": -3.7845127787586297e-06
+        }
+      ]
+    },
+    {
+      "step": 1325,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0023746603948420846,
+      "frame_tip_to_base_m": 0.12112531393553432,
+      "opposed_wall_cross_dots": [
+        1.2043757028754643e-05,
+        1.1903361651445754e-05
+      ],
+      "tip_xyz": [
+        -0.10504847215092084,
+        0.057688258518506286,
+        0.9163052834914394
+      ],
+      "stand_base_xyz": [
+        -0.09622578733006726,
+        0.010985428171135661,
+        0.8048945679113017
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -6.167404419377266e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -8.288119119639554e-07
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall1"
+          ],
+          "distance_m": -4.021009869022613e-06
+        }
+      ]
+    },
+    {
+      "step": 1525,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.0023749360303183843,
+      "frame_tip_to_base_m": 0.12131562495178164,
+      "opposed_wall_cross_dots": [
+        3.208713534504959e-05,
+        3.208379786039327e-05
+      ],
+      "tip_xyz": [
+        -0.10382699091178428,
+        0.05798061517001843,
+        0.9164793112524433
+      ],
+      "stand_base_xyz": [
+        -0.09622578911041588,
+        0.0109854277351287,
+        0.8048945679109999
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -7.418728358789875e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -3.7292099330709023e-06
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -4.247963454612972e-06
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall0"
+          ],
+          "distance_m": -4.445923608338245e-06
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall1"
+          ],
+          "distance_m": -4.0609090507314925e-06
+        }
+      ]
+    },
+    {
+      "step": 1685,
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stand_tilt_degrees": 0.002374917461227294,
+      "frame_tip_to_base_m": 0.12131823757575856,
+      "opposed_wall_cross_dots": [
+        3.220810601689862e-05,
+        3.220472987005522e-05
+      ],
+      "tip_xyz": [
+        -0.10382480787094372,
+        0.05798436631754062,
+        0.9164807205209257
+      ],
+      "stand_base_xyz": [
+        -0.09622578911535493,
+        0.010985427732148605,
+        0.804894567910994
+      ],
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": false,
+        "shaft_between_walls": false
+      },
+      "rebuilt_frame_contacts": [
+        {
+          "geoms": [
+            "stand_wall0",
+            "frame_vertical_frame"
+          ],
+          "distance_m": -7.422851473012703e-06
+        },
+        {
+          "geoms": [
+            "stand_wall2",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -3.7898447682082798e-06
+        },
+        {
+          "geoms": [
+            "stand_wall3",
+            "frame_tip_cone_50"
+          ],
+          "distance_m": -4.261046068397334e-06
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall0"
+          ],
+          "distance_m": -4.469872021414704e-06
+        },
+        {
+          "geoms": [
+            "frame_tip_cylinder",
+            "stand_wall1"
+          ],
+          "distance_m": -4.091067280956284e-06
+        }
+      ]
+    }
+  ],
+  "limits": {
+    "stand_tilt_degrees": 10,
+    "tip_distance_m": 0.05,
+    "wall_cross_dot_max": 0
+  },
+  "contact_note": "Contacts rebuilt by simulator forward at saved states; no contact forces inferred.",
+  "checkpoint_sha256": "e3aa9dd3977eaef36ba7e7565772603e32781c29522f6e8f7fede41f60cd49cf",
+  "scorer_source_sha256": "da87623a6067bb6efd9714cfff0a61dce2107ad46356eb549810259d03e04ac0",
+  "diagnostic_code_sha256": "d8bceac943951934adc4b1b3c0739b14410062014fb9313a3076ccaa5c11073b",
+  "reproduce": ".venv/bin/python runs/th_v1_s02_direct_waypoints/prefix_assembly_diagnostic.py"
+}

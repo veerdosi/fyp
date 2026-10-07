@@ -1,0 +1,53 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.081,
+          -0.259,
+          0.827
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 75
+      },
+      {
+        "position": [
+          -0.081,
+          -0.259,
+          0.827
+        ],
+        "gripper": 1,
+        "steps": 30
+      },
+      {
+        "position": [
+          -0.081,
+          -0.259,
+          1.08
+        ],
+        "gripper": 1,
+        "steps": 85
+      }
+    ],
+    "reason": "The frame stayed on the table and the fingers fully closed; repeat with enough open descent time before closing, then lift for verification."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_direct",
+    "policy_visible_input": "Fresh observation 1 after your motion command, step 165, simulated time 8.25 seconds. 2 decisions have been executed; 28 model decisions and 2235 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/public/obs_0001/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.081,-0.259,0.827],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":75},{\"position\":[-0.081,-0.259,0.827],\"gripper\":1,\"steps\":30},{\"position\":[-0.081,-0.259,1.08],\"gripper\":1,\"steps\":85}],\"reason\":\"The frame stayed on the table and the fingers fully closed; repeat with enough open descent time before closing, then lift for verification.\"}",
+    "response_timestamp": "2026-10-07T06:34:16.169Z",
+    "message_id": "amsg_01a11511-e2e9-78f2-a994-447f3f0b94f3",
+    "dispatch_timestamp": "2026-10-07T06:33:56.305Z",
+    "policy_wall_seconds": 19.864,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_direct_waypoints/policy_update_003.txt"
+  }
+}

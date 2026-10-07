@@ -1,0 +1,9 @@
+{
+  "checked_prefix_steps": 1685,
+  "max_errors": {
+    "actions": 0.0,
+    "states": 0.0
+  },
+  "pass_verification": true,
+  "note": "Reconstructed interruption prefix compared with saved original live simulator trajectory; no live simulator reconstruction was needed."
+}
