@@ -1,0 +1,68 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          0.94
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          0.822
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          0.822
+        ],
+        "gripper": 1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          1.08
+        ],
+        "gripper": 1,
+        "steps": 40
+      }
+    ],
+    "reason": "Grasp the central dark hook-frame body from above and lift it to inspect its geometry and retention."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_phase",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0000/sense_001.json. You may cat this permitted sensor result file. The images and robot readings in obs_0000 remain current; no motion has occurred. 1 decisions have been executed, with 29 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.084,-0.26,0.94],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":60},{\"position\":[-0.084,-0.26,0.822],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":60},{\"position\":[-0.084,-0.26,0.822],\"gripper\":1,\"steps\":40},{\"position\":[-0.084,-0.26,1.08],\"gripper\":1,\"steps\":40}],\"reason\":\"Grasp the central dark hook-frame body from above and lift it to inspect its geometry and retention.\"}",
+    "response_timestamp": "2026-10-07T06:11:39.127Z",
+    "message_id": "amsg_01a114fd-2df7-78f0-9363-fb7f95be5e2b",
+    "dispatch_timestamp": "2026-10-07T06:11:25.753Z",
+    "policy_wall_seconds": 13.374,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/policy_update_002.txt"
+  }
+}

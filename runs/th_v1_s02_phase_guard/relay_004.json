@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          0.822
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 60
+      },
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          1.08
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 100
+      }
+    ],
+    "reason": "Close on the aligned frame body and lift while retaining the grasp, then inspect whether the frame follows."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_phase",
+    "policy_visible_input": "Fresh observation 2 after your motion command, step 136, simulated time 6.8 seconds. 3 decisions have been executed; 27 model decisions and 2264 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0002/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0002/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0002/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0002/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.084,-0.26,0.822],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":1,\"steps\":60},{\"position\":[-0.084,-0.26,1.08],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":1,\"steps\":100}],\"reason\":\"Close on the aligned frame body and lift while retaining the grasp, then inspect whether the frame follows.\"}",
+    "response_timestamp": "2026-10-07T06:12:35.241Z",
+    "message_id": "amsg_01a114fe-0929-75c2-9d4e-62b478a9878f",
+    "dispatch_timestamp": "2026-10-07T06:12:18.379Z",
+    "policy_wall_seconds": 16.862,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/policy_update_004.txt"
+  }
+}

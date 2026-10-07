@@ -1,0 +1,100 @@
+{
+  "scope": "Private offline diagnosis; hole 1 is the native scored larger hole. Hole 2 is diagnostic only.",
+  "frame_assembly": {
+    "checks": {
+      "stand_shaft_upright": true,
+      "frame_tip_close_to_base": false,
+      "rod_between_opposed_stand_walls": false
+    },
+    "all_checks": false,
+    "stand_tilt_degrees": 0.003010532996059742,
+    "maximum_stand_tilt_degrees": 10,
+    "frame_tip_to_base_m": 0.051532411673025545,
+    "maximum_tip_distance_m": 0.05,
+    "opposed_wall_cross_dots": [
+      0.0003445542658406428,
+      0.00034462923067610907
+    ],
+    "frame_tip_xyz": [
+      -0.09321626835133949,
+      0.049456038920571266,
+      0.7989452003011792
+    ],
+    "stand_base_xyz": [
+      -0.080002407574532,
+      4.17699526412153e-06,
+      0.8049031100294048
+    ]
+  },
+  "final_control_step": 1389,
+  "native_success": false,
+  "native_goals": [
+    {
+      "predicate": [
+        "frame_assembled"
+      ],
+      "satisfied": false
+    },
+    {
+      "predicate": [
+        "tool_on_frame"
+      ],
+      "satisfied": false
+    }
+  ],
+  "hook_endpoint_xyz": [
+    -0.07325714222199241,
+    -0.029476328111615765,
+    1.023458823983238
+  ],
+  "hook_axis": [
+    -0.3569578906063987,
+    0.932952281945164,
+    -0.0467022905984446
+  ],
+  "hook_length_m": 0.09125000000000016,
+  "holes": {
+    "1": {
+      "center_xyz": [
+        0.21121952308906983,
+        -0.18218745771336559,
+        0.8160864617227639
+      ],
+      "distance_to_hook_line_m": 0.3038728550273273,
+      "distance_threshold_m": 0.006750000000000001,
+      "straddle_dot": 0.09223932137015929,
+      "insertion_fraction": -2.568039702928005,
+      "checks": {
+        "robot_released": true,
+        "hole_contacts_horizontal_hook": false,
+        "center_close_to_hook_line": false,
+        "opposed_geoms_straddle_hook_line": false,
+        "insertion_fraction_between_005_and_1": false
+      },
+      "all_checks": false
+    },
+    "2": {
+      "center_xyz": [
+        0.03461314992384147,
+        -0.12254502636954073,
+        0.8143712226830955
+      ],
+      "distance_to_hook_line_m": 0.22507605041320033,
+      "distance_threshold_m": 0.00625,
+      "straddle_dot": 0.05057999485010632,
+      "insertion_fraction": -1.2665088925415744,
+      "checks": {
+        "robot_released": true,
+        "hole_contacts_horizontal_hook": false,
+        "center_close_to_hook_line": false,
+        "opposed_geoms_straddle_hook_line": false,
+        "insertion_fraction_between_005_and_1": false
+      },
+      "all_checks": false
+    }
+  },
+  "scorer_source": "/Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/environments/manipulation/tool_hang.py",
+  "scorer_source_sha256": "da87623a6067bb6efd9714cfff0a61dce2107ad46356eb549810259d03e04ac0",
+  "diagnostic_code_sha256": "61c248b16d98e7a5885f3d4d79bc3d5c05222b5dddf55f38ee4e9f14406e2cd0",
+  "reproduce": ".venv/bin/python runs/th_v1_s02_phase_guard/native_scorer_diagnostic.py"
+}

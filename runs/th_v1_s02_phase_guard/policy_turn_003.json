@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          0.94
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 90
+      },
+      {
+        "position": [
+          -0.084,
+          -0.26,
+          0.822
+        ],
+        "quaternion_xyzw": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 100
+      }
+    ],
+    "reason": "Complete and settle the approach before descending to the frame grasp; the prior deadline cancelled all grasp waypoints."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_phase",
+    "policy_visible_input": "Fresh observation 1 after your motion command, step 80, simulated time 4.0 seconds. 2 decisions have been executed; 28 model decisions and 2320 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0001/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0001/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0001/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0001/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.084,-0.26,0.94],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":90},{\"position\":[-0.084,-0.26,0.822],\"quaternion_xyzw\":[1,0,0,0],\"gripper\":-1,\"steps\":100}],\"reason\":\"Complete and settle the approach before descending to the frame grasp; the prior deadline cancelled all grasp waypoints.\"}",
+    "response_timestamp": "2026-10-07T06:12:03.514Z",
+    "message_id": "amsg_01a114fd-8d3a-7832-8e46-76a10e7ac25b",
+    "dispatch_timestamp": "2026-10-07T06:11:52.051Z",
+    "policy_wall_seconds": 11.463,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/policy_update_003.txt"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.0054,
+          -0.1616,
+          0.913
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          0.0054,
+          -0.1616,
+          0.913
+        ],
+        "gripper": 1,
+        "steps": 60
+      },
+      {
+        "position": [
+          0.0054,
+          -0.1616,
+          0.99
+        ],
+        "gripper": 1,
+        "steps": 60
+      }
+    ],
+    "reason": "Move the open fingers down onto the hanging handle, close around it, and lift to recover a stable grasp."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v1_s02_phase",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/public/obs_0016/sense_023.json. You may cat this permitted sensor result file. The images and robot readings in obs_0016 remain current; no motion has occurred. 23 decisions have been executed, with 7 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.0054,-0.1616,0.913],\"gripper\":-1,\"steps\":60},{\"position\":[0.0054,-0.1616,0.913],\"gripper\":1,\"steps\":60},{\"position\":[0.0054,-0.1616,0.99],\"gripper\":1,\"steps\":60}],\"reason\":\"Move the open fingers down onto the hanging handle, close around it, and lift to recover a stable grasp.\"}",
+    "response_timestamp": "2026-10-07T06:25:21.740Z",
+    "message_id": "amsg_01a11509-bb4c-7d42-8c1b-3c44127ac16b",
+    "dispatch_timestamp": "2026-10-07T06:25:07.315Z",
+    "policy_wall_seconds": 14.425,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v1_s02_phase_guard/policy_update_024.txt"
+  }
+}

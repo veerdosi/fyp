@@ -1,0 +1,13 @@
+{
+  "command_types": {
+    "sense": 7,
+    "move": 19,
+    "finish": 1
+  },
+  "executed_waypoints": 30,
+  "early_arrivals": 23,
+  "unexecuted_requested_steps_on_arrivals": 931,
+  "deadline_nonarrival": 6,
+  "cancelled_following_waypoints": 7,
+  "note": "Within the commands Astra actually issued; not whole-episode counterfactual savings or successful-completion efficiency."
+}

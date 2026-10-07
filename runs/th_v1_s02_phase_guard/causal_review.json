@@ -1,0 +1,42 @@
+{
+  "scope": "Completed held-out episode, private causal review; no diagnostic state was supplied to policy or executor.",
+  "first_execution_failure": {
+    "decision": 2,
+    "stage": "initial approach",
+    "details": "Approach did not settle at 60 steps; following descent/closure/lift cancelled. Decision 3 repeated and reached approach/descent; decision 4 acquired and lifted the frame."
+  },
+  "first_unrecovered_physical_break": {
+    "decisions": [
+      9,
+      11,
+      13,
+      14
+    ],
+    "stage": "frame alignment/insertion",
+    "details": "Astra corrected lateral alignment from wrist pixels, but the rod was never between opposed stand walls. It released an upright frame beside the stand. At release end (step 490), tip/base distance 5.146 cm exceeded 5 cm and wall-straddle failed. Overall frame assembly never passed."
+  },
+  "tool_placement": {
+    "decisions": [
+      21,
+      22
+    ],
+    "details": "Larger hole projected around the hook in wrist image, but its center never advanced far enough beyond the hook endpoint. At step 1010, line distance 7.592 mm exceeded 6.75 mm and insertion fraction was -7.701%; at step 1024 it was -5.211%. Opening fingers lost hook contact, with tool/gripper-hand contact at step 1049. The withdrawn tool remained supported by the hand, then fell to table during clearance. Rebuilt contacts give geometry, not causal force measurements."
+  },
+  "completion_judgment": {
+    "overall": "Correctly reported task incomplete and tool on table.",
+    "frame_subclaim": "Upright frame was visually present, but its asserted in-stand placement did not satisfy native assembly."
+  },
+  "native_goals_ever_satisfied": {
+    "frame_assembled": false,
+    "tool_on_frame": false
+  },
+  "evidence": [
+    "steps.jsonl",
+    "commands.jsonl",
+    "placement_diagnostic.json",
+    "native_scorer_diagnostic.json",
+    "policy_tools_complete.json",
+    "replay_verification.json"
+  ],
+  "limitations": "Pose settling, an open gripper and apparent projected overlap did not verify the intended object relation. Early exits shorten issued commands but do not demonstrate successful-completion efficiency."
+}

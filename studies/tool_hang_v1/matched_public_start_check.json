@@ -1,0 +1,45 @@
+{
+  "scope": "Actual policy-visible starting pixels, ideal depth/calibration and robot measurements for launched matched conditions. Paths/condition descriptions differ intentionally. Second-start timed condition remains unstarted.",
+  "checks": [
+    {
+      "a": "runs/th_v1_s01_direct_waypoints/public/obs_0000",
+      "b": "runs/th_v1_s01_deadline_guard/public/obs_0000",
+      "exact_matches": {
+        "agentview.png": true,
+        "robot0_eye_in_hand.png": true,
+        "agentview_depth_m.npy": true,
+        "robot0_eye_in_hand_depth_m.npy": true,
+        "calibration.json": true,
+        "proprioception": true
+      },
+      "all_equal": true
+    },
+    {
+      "a": "runs/th_v1_s01_direct_waypoints/public/obs_0000",
+      "b": "runs/th_v1_s01_phase_guard/public/obs_0000",
+      "exact_matches": {
+        "agentview.png": true,
+        "robot0_eye_in_hand.png": true,
+        "agentview_depth_m.npy": true,
+        "robot0_eye_in_hand_depth_m.npy": true,
+        "calibration.json": true,
+        "proprioception": true
+      },
+      "all_equal": true
+    },
+    {
+      "a": "runs/th_v1_s02_deadline_guard/public/obs_0000",
+      "b": "runs/th_v1_s02_phase_guard/public/obs_0000",
+      "exact_matches": {
+        "agentview.png": true,
+        "robot0_eye_in_hand.png": true,
+        "agentview_depth_m.npy": true,
+        "robot0_eye_in_hand_depth_m.npy": true,
+        "calibration.json": true,
+        "proprioception": true
+      },
+      "all_equal": true
+    }
+  ],
+  "all_equal": true
+}

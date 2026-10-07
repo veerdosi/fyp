@@ -1,0 +1,1000 @@
+{
+  "scope": "Private offline saved-state diagnosis; rebuilt contacts give geometry, not forces. Never a policy input.",
+  "samples": [
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.002261278614457065,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.10403110189466977,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.00047833157916780527,
+          0.00047731497167102755
+        ],
+        "frame_tip_xyz": [
+          -0.08385241169973516,
+          0.026557509379667166,
+          0.9054053257746688
+        ],
+        "stand_base_xyz": [
+          -0.08000000975668531,
+          3.771128221368101e-07,
+          0.8048948890705651
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            0.07402313132143737,
+            -0.12051796643770525,
+            0.8148825010458699
+          ],
+          "distance_to_hook_line_m": 0.363983501701642,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.13240915051605087,
+          "insertion_fraction": -0.9388131848318195,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            0.037028696396171165,
+            -0.30322369676580196,
+            0.8149068727317915
+          ],
+          "distance_to_hook_line_m": 0.3955859810843058,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.15642860724186583,
+          "insertion_fraction": -2.4575131427077923,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 465,
+      "rebuilt_tool_robot_contacts": []
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.0029926761218385784,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.0514557150780211,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.00034702743590430795,
+          0.0003470967924367522
+        ],
+        "frame_tip_xyz": [
+          -0.09313715678509885,
+          0.049392375668789595,
+          0.7989460873960456
+        ],
+        "stand_base_xyz": [
+          -0.07999990514269989,
+          -1.0583291537437456e-07,
+          0.8049031004544924
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            0.07402313132143737,
+            -0.12051796643770525,
+            0.8148825010458699
+          ],
+          "distance_to_hook_line_m": 0.2397814393429176,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.05744694560653698,
+          "insertion_fraction": -1.3987828285375383,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            0.037028696396171165,
+            -0.30322369676580196,
+            0.8149068727317915
+          ],
+          "distance_to_hook_line_m": 0.2236062568872882,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.04996133891727506,
+          "insertion_fraction": -3.1224884228842726,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 490,
+      "rebuilt_tool_robot_contacts": []
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.002996781011566103,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.05146838491993896,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.00034538327300151977,
+          0.0003454557608272448
+        ],
+        "frame_tip_xyz": [
+          -0.0931414846200391,
+          0.049404236739643774,
+          0.7989457689574357
+        ],
+        "stand_base_xyz": [
+          -0.07999985023981455,
+          -2.3927891480716304e-07,
+          0.8049031040508454
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            0.07402313132143737,
+            -0.12051796643770525,
+            0.8148825010458699
+          ],
+          "distance_to_hook_line_m": 0.2394677732192743,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.057296530296248656,
+          "insertion_fraction": -1.399591802207149,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            0.037028696396171165,
+            -0.30322369676580196,
+            0.8149068727317915
+          ],
+          "distance_to_hook_line_m": 0.2230302675201887,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.04970400842978485,
+          "insertion_fraction": -3.122638290281667,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 543,
+      "rebuilt_tool_robot_contacts": []
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.011507382678034231,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.051419724214414604,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.0003708043272347969,
+          0.00037086199722515315
+        ],
+        "frame_tip_xyz": [
+          -0.09316361606633342,
+          0.04935399725305964,
+          0.7989439282503448
+        ],
+        "stand_base_xyz": [
+          -0.08000368850722464,
+          5.746348045520061e-06,
+          0.8049066857954105
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            -0.07150104727888455,
+            -0.03233994504646441,
+            1.0325412268782677
+          ],
+          "distance_to_hook_line_m": 0.007591784312429945,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": -9.530143573019357e-05,
+          "insertion_fraction": -0.0770116790292461,
+          "checks": {
+            "robot_released": false,
+            "hole_contacts_horizontal_hook": true,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": true,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            -0.08808632154744302,
+            0.007998419535792809,
+            0.851301833466108
+          ],
+          "distance_to_hook_line_m": 0.17072634313617874,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.029025564099726994,
+          "insertion_fraction": 0.5215043368307254,
+          "checks": {
+            "robot_released": false,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": true
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 1010,
+      "rebuilt_tool_robot_contacts": [
+        {
+          "geoms": [
+            "tool_grip_g0",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -3.773129612831693e-05
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00017373631416117596
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011253949255388726
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00019768761893611177
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00012993767807224576
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00015926427348783822
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002816572150829394
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00011188619264841933
+        }
+      ]
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.0029747387661271203,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.05143628165547357,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.0003574745837144232,
+          0.0003575223755996852
+        ],
+        "frame_tip_xyz": [
+          -0.09318761372839984,
+          0.04936466458658931,
+          0.7989479598639849
+        ],
+        "stand_base_xyz": [
+          -0.08000262739757215,
+          4.926231830193557e-06,
+          0.8049030782966289
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            -0.07217078401555815,
+            -0.031812377245254875,
+            1.0180205119602883
+          ],
+          "distance_to_hook_line_m": 0.006680531142125036,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": -0.00010799329240283917,
+          "insertion_fraction": -0.052109584747518624,
+          "checks": {
+            "robot_released": false,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": true,
+            "opposed_geoms_straddle_hook_line": true,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            -0.08896502543533369,
+            0.00969484850273849,
+            0.837064505234948
+          ],
+          "distance_to_hook_line_m": 0.1847311648357623,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.0340039333088163,
+          "insertion_fraction": 0.552911401393987,
+          "checks": {
+            "robot_released": false,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": true
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 1024,
+      "rebuilt_tool_robot_contacts": [
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001771857089894564
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0001221028302259944
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00017840770177270088
+        },
+        {
+          "geoms": [
+            "gripper0_finger1_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00012298449301287898
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00015910898867079365
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.0002692747445535438
+        },
+        {
+          "geoms": [
+            "gripper0_finger2_pad_collision",
+            "tool_grip_g0"
+          ],
+          "distance_m": -0.00015667452536412212
+        }
+      ]
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.002637689982616889,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.05144427928551277,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.0003563092303714347,
+          0.00035635973719863346
+        ],
+        "frame_tip_xyz": [
+          -0.093189643265257,
+          0.049372677901616806,
+          0.7989453215057128
+        ],
+        "stand_base_xyz": [
+          -0.08000281605139414,
+          5.165750461529266e-06,
+          0.804901008136413
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            -0.06556916426489696,
+            -0.05118293841097225,
+            1.0005307379823645
+          ],
+          "distance_to_hook_line_m": 0.025223283443607067,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.00049270051554658,
+          "insertion_fraction": -0.26270018891501,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            -0.08527022450980913,
+            0.005821004770364062,
+            0.8241436880292933
+          ],
+          "distance_to_hook_line_m": 0.1978653407114905,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.03903628496165838,
+          "insertion_fraction": 0.5075536344577509,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": true
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 1049,
+      "rebuilt_tool_robot_contacts": [
+        {
+          "geoms": [
+            "tool_grip_g0",
+            "gripper0_hand_collision"
+          ],
+          "distance_m": -4.9294643952076964e-05
+        }
+      ]
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.002989832783422139,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.05146824341692068,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.00035299355475225413,
+          0.00035305183936054586
+        ],
+        "frame_tip_xyz": [
+          -0.09319549461475786,
+          0.049395671658805866,
+          0.7989468556971095
+        ],
+        "stand_base_xyz": [
+          -0.08000267213643482,
+          4.855040417324676e-06,
+          0.8049030918616322
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            0.005474492048033337,
+            -0.19456485730863315,
+            0.9909872938150202
+          ],
+          "distance_to_hook_line_m": 0.045626862451421724,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.0019364980994616718,
+          "insertion_fraction": -1.9932575627770703,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            -0.021096591807640147,
+            -0.14255758939644408,
+            0.8139584987245424
+          ],
+          "distance_to_hook_line_m": 0.2168433589081106,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.04690520008499804,
+          "insertion_fraction": -1.2527078684097812,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 1129,
+      "rebuilt_tool_robot_contacts": [
+        {
+          "geoms": [
+            "tool_hole1_hc_3",
+            "gripper0_hand_collision"
+          ],
+          "distance_m": -0.00020092111571280512
+        },
+        {
+          "geoms": [
+            "tool_hole1_hc_4",
+            "gripper0_hand_collision"
+          ],
+          "distance_m": -0.00020092111571281117
+        }
+      ]
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.002995552775488003,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.05148479109031227,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.00035075877153628745,
+          0.0003508219538434932
+        ],
+        "frame_tip_xyz": [
+          -0.09320008219747312,
+          0.04941143984109439,
+          0.7989463804965207
+        ],
+        "stand_base_xyz": [
+          -0.08000261296472512,
+          4.678714354287085e-06,
+          0.8049030972456208
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            0.01746621899442378,
+            -0.19676492859580214,
+            0.9850510848217657
+          ],
+          "distance_to_hook_line_m": 0.05491170331763916,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.0028748173353768825,
+          "insertion_fraction": -2.0553630614599796,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            -0.02064945774681349,
+            -0.14103589857299167,
+            0.8112942342995024
+          ],
+          "distance_to_hook_line_m": 0.21905480479298634,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.04787301944018006,
+          "insertion_fraction": -1.2374270228080837,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 1189,
+      "rebuilt_tool_robot_contacts": [
+        {
+          "geoms": [
+            "tool_grip_g0",
+            "gripper0_hand_collision"
+          ],
+          "distance_m": -0.001261855851033364
+        }
+      ]
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.0030036385431898116,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.0515099491317034,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.00034744238862746164,
+          0.00034751223148927926
+        ],
+        "frame_tip_xyz": [
+          -0.09320801918475365,
+          0.04943516356474039,
+          0.7989457324782678
+        ],
+        "stand_base_xyz": [
+          -0.08000251168174284,
+          4.412490894609307e-06,
+          0.8049031043328772
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            0.07128678068740342,
+            -0.0996190372196713,
+            0.9833780208701842
+          ],
+          "distance_to_hook_line_m": 0.1191470902514779,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.014029689030387269,
+          "insertion_fraction": -1.2660429553087253,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            -0.005268593464448239,
+            -0.12264383668768854,
+            0.8149763997317002
+          ],
+          "distance_to_hook_line_m": 0.21609032073707823,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.04656242141889481,
+          "insertion_fraction": -1.1115829235924508,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 1289,
+      "rebuilt_tool_robot_contacts": [
+        {
+          "geoms": [
+            "tool_grip_g0",
+            "gripper0_hand_collision"
+          ],
+          "distance_m": -4.001240530398309e-05
+        },
+        {
+          "geoms": [
+            "tool_hole1_hc_3",
+            "gripper0_finger1_collision"
+          ],
+          "distance_m": -0.0005780700803035925
+        }
+      ]
+    },
+    {
+      "frame": {
+        "checks": {
+          "stand_shaft_upright": true,
+          "frame_tip_close_to_base": false,
+          "rod_between_opposed_stand_walls": false
+        },
+        "all_checks": false,
+        "stand_tilt_degrees": 0.003010532996059742,
+        "maximum_stand_tilt_degrees": 10,
+        "frame_tip_to_base_m": 0.051532411673025545,
+        "maximum_tip_distance_m": 0.05,
+        "opposed_wall_cross_dots": [
+          0.0003445542658406428,
+          0.00034462923067610907
+        ],
+        "frame_tip_xyz": [
+          -0.09321626835133949,
+          0.049456038920571266,
+          0.7989452003011792
+        ],
+        "stand_base_xyz": [
+          -0.080002407574532,
+          4.17699526412153e-06,
+          0.8049031100294048
+        ]
+      },
+      "holes": {
+        "1": {
+          "center_xyz": [
+            0.21121952308906983,
+            -0.18218745771336559,
+            0.8160864617227639
+          ],
+          "distance_to_hook_line_m": 0.3038728550273273,
+          "distance_threshold_m": 0.006750000000000001,
+          "straddle_dot": 0.09223932137015929,
+          "insertion_fraction": -2.568039702928005,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        },
+        "2": {
+          "center_xyz": [
+            0.03461314992384147,
+            -0.12254502636954073,
+            0.8143712226830955
+          ],
+          "distance_to_hook_line_m": 0.22507605041320033,
+          "distance_threshold_m": 0.00625,
+          "straddle_dot": 0.05057999485010632,
+          "insertion_fraction": -1.2665088925415744,
+          "checks": {
+            "robot_released": true,
+            "hole_contacts_horizontal_hook": false,
+            "center_close_to_hook_line": false,
+            "opposed_geoms_straddle_hook_line": false,
+            "insertion_fraction_between_005_and_1": false
+          },
+          "all_checks": false
+        }
+      },
+      "native_goals": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "step": 1389,
+      "rebuilt_tool_robot_contacts": []
+    }
+  ],
+  "code_sha256": "f84f44fbfa8ec84d028ff3808e55af0304171b1fc995485d052ee21bb951e61d",
+  "reproduce": ".venv/bin/python runs/th_v1_s02_phase_guard/placement_diagnostic.py"
+}
