@@ -1,0 +1,14 @@
+{
+  "protocol_and_code_hashes_match": true,
+  "frozen_input_hashes_match": true,
+  "endpoint_rows": 8271,
+  "all_variants_fail_required_gates": true,
+  "accepted_occluded_cross_status": {
+    "corroborated": 19,
+    "outside_other_view": 27,
+    "other_view_occluded": 10
+  },
+  "replayed_steps": 10878,
+  "original_camera_checks": 49,
+  "actual_astra_requests": 0
+}

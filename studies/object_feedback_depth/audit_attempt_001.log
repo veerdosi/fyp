@@ -1,0 +1,83 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Warning: make sure gym is installed if you want to use the GymWrapper.
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 145, "streams_complete": 1, "endpoints_complete": 150, "wall_seconds": 5.236934749991633}
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 575, "streams_complete": 2, "endpoints_complete": 204, "wall_seconds": 14.342062916985014}
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 1210, "streams_complete": 3, "endpoints_complete": 276, "wall_seconds": 28.099376291997032}
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 1295, "streams_complete": 4, "endpoints_complete": 336, "wall_seconds": 30.15330833400367}
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 1385, "streams_complete": 5, "endpoints_complete": 402, "wall_seconds": 32.189217292005196}
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 1465, "streams_complete": 6, "endpoints_complete": 462, "wall_seconds": 34.12282429198967}
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 1690, "streams_complete": 7, "endpoints_complete": 537, "wall_seconds": 39.09795083399513}
+{"current_episode": "th_v1_s01_direct_waypoints", "current_step": 1895, "streams_complete": 8, "endpoints_complete": 585, "wall_seconds": 43.67979466699762}
+{"current_episode": "th_v1_s01_deadline_guard", "current_step": 80, "streams_complete": 9, "endpoints_complete": 641, "wall_seconds": 49.51264924998395}
+{"current_episode": "th_v1_s01_deadline_guard", "current_step": 850, "streams_complete": 10, "endpoints_complete": 733, "wall_seconds": 65.43183816698729}
+{"current_episode": "th_v1_s01_deadline_guard", "current_step": 960, "streams_complete": 11, "endpoints_complete": 811, "wall_seconds": 67.8475159999798}
+{"current_episode": "th_v1_s01_deadline_guard", "current_step": 1815, "streams_complete": 12, "endpoints_complete": 902, "wall_seconds": 87.30869704199722}
+{"current_episode": "th_v1_s01_phase_guard", "current_step": 90, "streams_complete": 13, "endpoints_complete": 958, "wall_seconds": 93.6105641250033}
+{"current_episode": "th_v1_s01_phase_guard", "current_step": 395, "streams_complete": 14, "endpoints_complete": 1013, "wall_seconds": 99.754914249992}
+{"current_episode": "th_v1_s01_phase_guard", "current_step": 670, "streams_complete": 15, "endpoints_complete": 1097, "wall_seconds": 105.70547941699624}
+{"current_episode": "th_v1_s02_deadline_guard", "current_step": 80, "streams_complete": 16, "endpoints_complete": 1146, "wall_seconds": 126.88266199998907}
+{"current_episode": "th_v1_s02_deadline_guard", "current_step": 585, "streams_complete": 17, "endpoints_complete": 1266, "wall_seconds": 137.24730312498286}
+{"current_episode": "th_v1_s02_deadline_guard", "current_step": 755, "streams_complete": 18, "endpoints_complete": 1392, "wall_seconds": 140.76598283398198}
+{"current_episode": "th_v1_s02_deadline_guard", "current_step": 880, "streams_complete": 19, "endpoints_complete": 1467, "wall_seconds": 143.4604583339824}
+{"current_episode": "th_v1_s02_deadline_guard", "current_step": 1440, "streams_complete": 20, "endpoints_complete": 1605, "wall_seconds": 155.93562358399504}
+{"current_episode": "th_v1_s02_deadline_guard", "current_step": 1910, "streams_complete": 21, "endpoints_complete": 1677, "wall_seconds": 165.8915834169893}
+{"current_episode": "th_v1_s02_phase_guard", "current_step": 80, "streams_complete": 22, "endpoints_complete": 1733, "wall_seconds": 169.856907666981}
+{"current_episode": "th_v1_s02_phase_guard", "current_step": 314, "streams_complete": 23, "endpoints_complete": 1788, "wall_seconds": 174.52357999997912}
+{"current_episode": "th_v1_s02_phase_guard", "current_step": 348, "streams_complete": 24, "endpoints_complete": 1808, "wall_seconds": 175.2014937089989}
+{"current_episode": "th_v1_s02_phase_guard", "current_step": 430, "streams_complete": 25, "endpoints_complete": 1836, "wall_seconds": 176.88285904200166}
+{"current_episode": "th_v1_s02_phase_guard", "current_step": 465, "streams_complete": 26, "endpoints_complete": 1848, "wall_seconds": 177.61906445899513}
+{"current_episode": "th_v1_s02_phase_guard", "current_step": 922, "streams_complete": 27, "endpoints_complete": 1947, "wall_seconds": 189.96190399999614}
+{"current_episode": "th_v1_s02_phase_guard", "current_step": 1189, "streams_complete": 28, "endpoints_complete": 1989, "wall_seconds": 197.5920026669919}
+{"current_episode": "th_v1_s02_direct_waypoints", "current_step": 165, "streams_complete": 29, "endpoints_complete": 2133, "wall_seconds": 207.1674231249781}
+{"current_episode": "th_v1_s02_direct_waypoints", "current_step": 470, "streams_complete": 30, "endpoints_complete": 2217, "wall_seconds": 213.51643429198884}
+{"current_episode": "th_v1_s02_direct_waypoints", "current_step": 610, "streams_complete": 31, "endpoints_complete": 2285, "wall_seconds": 216.45677399999113}
+{"current_episode": "th_v1_s02_direct_waypoints", "current_step": 810, "streams_complete": 32, "endpoints_complete": 2410, "wall_seconds": 220.716341249994}
+{"current_episode": "th_v1_s02_direct_waypoints", "current_step": 1020, "streams_complete": 33, "endpoints_complete": 2442, "wall_seconds": 225.14545533398632}
+{"current_episode": "th_v1_s02_direct_waypoints", "current_step": 1525, "streams_complete": 34, "endpoints_complete": 2617, "wall_seconds": 236.09144316698075}
+{"current_episode": "th_v1_s02_direct_waypoints", "current_step": 1685, "streams_complete": 35, "endpoints_complete": 2757, "wall_seconds": 239.48406408398296}
+{
+  "original_nearest_depth": {
+    "samples": 2757,
+    "reference_visible": 1909,
+    "reference_occluded": 339,
+    "reference_unknown": 509,
+    "accepted_visible": 1865,
+    "visible_coverage": 0.9769512833944474,
+    "accepted_error_p95_m": 0.005546176560755219,
+    "accepted_error_median_m": 0.00032722997419818903,
+    "image_time_error_p95_m": 0.005546176560755219,
+    "camera_age_max_seconds": 0.0,
+    "occluded_false_valid_rate": 0.24778761061946902,
+    "gate_pass": false
+  },
+  "local_support_median_only": {
+    "samples": 2757,
+    "reference_visible": 1909,
+    "reference_occluded": 339,
+    "reference_unknown": 509,
+    "accepted_visible": 1500,
+    "visible_coverage": 0.785751702462022,
+    "accepted_error_p95_m": 0.0048818429923332,
+    "accepted_error_median_m": 0.0005540653969123097,
+    "image_time_error_p95_m": 0.0048818429923332,
+    "camera_age_max_seconds": 0.0,
+    "occluded_false_valid_rate": 0.16519174041297935,
+    "gate_pass": false
+  },
+  "primary": {
+    "samples": 2757,
+    "reference_visible": 1909,
+    "reference_occluded": 339,
+    "reference_unknown": 509,
+    "accepted_visible": 1482,
+    "visible_coverage": 0.7763226820324778,
+    "accepted_error_p95_m": 0.004888484232964793,
+    "accepted_error_median_m": 0.0005429831975675898,
+    "image_time_error_p95_m": 0.004888484232964793,
+    "camera_age_max_seconds": 0.0,
+    "occluded_false_valid_rate": 0.16519174041297935,
+    "gate_pass": false
+  }
+}

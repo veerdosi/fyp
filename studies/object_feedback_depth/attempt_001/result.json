@@ -1,0 +1,509 @@
+{
+  "protocol_sha256": "4ab51e2d8d04027f90fbec83cdb1a1ab6b27c1dcdde60b6feab88813505f3a1e",
+  "configuration": "configuration.json",
+  "variants": {
+    "original_nearest_depth": {
+      "overall": {
+        "samples": 2757,
+        "reference_visible": 1909,
+        "reference_occluded": 339,
+        "reference_unknown": 509,
+        "accepted_visible": 1865,
+        "visible_coverage": 0.9769512833944474,
+        "accepted_error_p95_m": 0.005546176560755219,
+        "accepted_error_median_m": 0.00032722997419818903,
+        "image_time_error_p95_m": 0.005546176560755219,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.24778761061946902,
+        "gate_pass": false
+      },
+      "groups": {
+        "camera": {
+          "agentview": {
+            "samples": 2103,
+            "reference_visible": 1324,
+            "reference_occluded": 296,
+            "reference_unknown": 483,
+            "accepted_visible": 1302,
+            "visible_coverage": 0.9833836858006042,
+            "accepted_error_p95_m": 0.005439104810610134,
+            "accepted_error_median_m": 0.0004067042946942987,
+            "image_time_error_p95_m": 0.005439104810610134,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.2635135135135135,
+            "gate_pass": false
+          },
+          "robot0_eye_in_hand": {
+            "samples": 654,
+            "reference_visible": 585,
+            "reference_occluded": 43,
+            "reference_unknown": 26,
+            "accepted_visible": 563,
+            "visible_coverage": 0.9623931623931624,
+            "accepted_error_p95_m": 0.005849313003970436,
+            "accepted_error_median_m": 0.0002097252507353415,
+            "image_time_error_p95_m": 0.005849313003970436,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.13953488372093023,
+            "gate_pass": false
+          }
+        },
+        "paired_state": {
+          "1": {
+            "samples": 1097,
+            "reference_visible": 775,
+            "reference_occluded": 140,
+            "reference_unknown": 182,
+            "accepted_visible": 769,
+            "visible_coverage": 0.9922580645161291,
+            "accepted_error_p95_m": 0.0036521884832889226,
+            "accepted_error_median_m": 0.0002748699577374095,
+            "image_time_error_p95_m": 0.0036521884832889226,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.34285714285714286,
+            "gate_pass": false
+          },
+          "2": {
+            "samples": 1660,
+            "reference_visible": 1134,
+            "reference_occluded": 199,
+            "reference_unknown": 327,
+            "accepted_visible": 1096,
+            "visible_coverage": 0.9664902998236331,
+            "accepted_error_p95_m": 0.006120426180351331,
+            "accepted_error_median_m": 0.0003754177536098469,
+            "image_time_error_p95_m": 0.006120426180351331,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.18090452261306533,
+            "gate_pass": false
+          }
+        },
+        "motion_type": {
+          "rotation": {
+            "samples": 2251,
+            "reference_visible": 1492,
+            "reference_occluded": 290,
+            "reference_unknown": 469,
+            "accepted_visible": 1454,
+            "visible_coverage": 0.9745308310991957,
+            "accepted_error_p95_m": 0.005964458064028798,
+            "accepted_error_median_m": 0.0003440803783289572,
+            "image_time_error_p95_m": 0.005964458064028798,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.22758620689655173,
+            "gate_pass": false
+          },
+          "translation": {
+            "samples": 506,
+            "reference_visible": 417,
+            "reference_occluded": 49,
+            "reference_unknown": 40,
+            "accepted_visible": 411,
+            "visible_coverage": 0.9856115107913669,
+            "accepted_error_p95_m": 0.003549998043450036,
+            "accepted_error_median_m": 0.00029984592598068175,
+            "image_time_error_p95_m": 0.003549998043450036,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.3673469387755102,
+            "gate_pass": false
+          }
+        },
+        "condition": {
+          "deadline_guard": {
+            "samples": 897,
+            "reference_visible": 637,
+            "reference_occluded": 168,
+            "reference_unknown": 92,
+            "accepted_visible": 607,
+            "visible_coverage": 0.9529042386185244,
+            "accepted_error_p95_m": 0.007830963079797738,
+            "accepted_error_median_m": 0.0005006510804943582,
+            "image_time_error_p95_m": 0.007830963079797738,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.23214285714285715,
+            "gate_pass": false
+          },
+          "direct_waypoints": {
+            "samples": 1353,
+            "reference_visible": 946,
+            "reference_occluded": 108,
+            "reference_unknown": 299,
+            "accepted_visible": 933,
+            "visible_coverage": 0.9862579281183932,
+            "accepted_error_p95_m": 0.0031031325954716214,
+            "accepted_error_median_m": 0.00029764129043039666,
+            "image_time_error_p95_m": 0.0031031325954716214,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.1574074074074074,
+            "gate_pass": false
+          },
+          "phase_guard": {
+            "samples": 507,
+            "reference_visible": 326,
+            "reference_occluded": 63,
+            "reference_unknown": 118,
+            "accepted_visible": 325,
+            "visible_coverage": 0.9969325153374233,
+            "accepted_error_p95_m": 0.006332075433934925,
+            "accepted_error_median_m": 0.0002742699590094154,
+            "image_time_error_p95_m": 0.006332075433934925,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.4444444444444444,
+            "gate_pass": false
+          }
+        }
+      },
+      "required_gates_pass": false,
+      "rejection_reasons": {
+        "model_not_visible": 383
+      },
+      "cross_camera_status": {
+        "not_checked": 2757
+      }
+    },
+    "local_support_median_only": {
+      "overall": {
+        "samples": 2757,
+        "reference_visible": 1909,
+        "reference_occluded": 339,
+        "reference_unknown": 509,
+        "accepted_visible": 1500,
+        "visible_coverage": 0.785751702462022,
+        "accepted_error_p95_m": 0.0048818429923332,
+        "accepted_error_median_m": 0.0005540653969123097,
+        "image_time_error_p95_m": 0.0048818429923332,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.16519174041297935,
+        "gate_pass": false
+      },
+      "groups": {
+        "camera": {
+          "agentview": {
+            "samples": 2103,
+            "reference_visible": 1324,
+            "reference_occluded": 296,
+            "reference_unknown": 483,
+            "accepted_visible": 953,
+            "visible_coverage": 0.7197885196374623,
+            "accepted_error_p95_m": 0.004629142268524103,
+            "accepted_error_median_m": 0.0008491124583402234,
+            "image_time_error_p95_m": 0.004629142268524103,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.17229729729729729,
+            "gate_pass": false
+          },
+          "robot0_eye_in_hand": {
+            "samples": 654,
+            "reference_visible": 585,
+            "reference_occluded": 43,
+            "reference_unknown": 26,
+            "accepted_visible": 547,
+            "visible_coverage": 0.935042735042735,
+            "accepted_error_p95_m": 0.005622513175396268,
+            "accepted_error_median_m": 0.00020757936011401096,
+            "image_time_error_p95_m": 0.005622513175396268,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.11627906976744186,
+            "gate_pass": false
+          }
+        },
+        "paired_state": {
+          "1": {
+            "samples": 1097,
+            "reference_visible": 775,
+            "reference_occluded": 140,
+            "reference_unknown": 182,
+            "accepted_visible": 584,
+            "visible_coverage": 0.7535483870967742,
+            "accepted_error_p95_m": 0.003076503968636007,
+            "accepted_error_median_m": 0.0003411698738867864,
+            "image_time_error_p95_m": 0.003076503968636007,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.2642857142857143,
+            "gate_pass": false
+          },
+          "2": {
+            "samples": 1660,
+            "reference_visible": 1134,
+            "reference_occluded": 199,
+            "reference_unknown": 327,
+            "accepted_visible": 916,
+            "visible_coverage": 0.8077601410934744,
+            "accepted_error_p95_m": 0.0055168259625947395,
+            "accepted_error_median_m": 0.0007227507892667815,
+            "image_time_error_p95_m": 0.0055168259625947395,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.09547738693467336,
+            "gate_pass": false
+          }
+        },
+        "motion_type": {
+          "rotation": {
+            "samples": 2251,
+            "reference_visible": 1492,
+            "reference_occluded": 290,
+            "reference_unknown": 469,
+            "accepted_visible": 1146,
+            "visible_coverage": 0.7680965147453083,
+            "accepted_error_p95_m": 0.005451129408213621,
+            "accepted_error_median_m": 0.0006939868459218137,
+            "image_time_error_p95_m": 0.005451129408213621,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.1310344827586207,
+            "gate_pass": false
+          },
+          "translation": {
+            "samples": 506,
+            "reference_visible": 417,
+            "reference_occluded": 49,
+            "reference_unknown": 40,
+            "accepted_visible": 354,
+            "visible_coverage": 0.8489208633093526,
+            "accepted_error_p95_m": 0.0027635194896009157,
+            "accepted_error_median_m": 0.00036518654630784253,
+            "image_time_error_p95_m": 0.0027635194896009157,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.3673469387755102,
+            "gate_pass": false
+          }
+        },
+        "condition": {
+          "deadline_guard": {
+            "samples": 897,
+            "reference_visible": 637,
+            "reference_occluded": 168,
+            "reference_unknown": 92,
+            "accepted_visible": 491,
+            "visible_coverage": 0.7708006279434851,
+            "accepted_error_p95_m": 0.006101432090003658,
+            "accepted_error_median_m": 0.0008179454282724909,
+            "image_time_error_p95_m": 0.006101432090003658,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.19047619047619047,
+            "gate_pass": false
+          },
+          "direct_waypoints": {
+            "samples": 1353,
+            "reference_visible": 946,
+            "reference_occluded": 108,
+            "reference_unknown": 299,
+            "accepted_visible": 748,
+            "visible_coverage": 0.7906976744186046,
+            "accepted_error_p95_m": 0.002805374943330277,
+            "accepted_error_median_m": 0.00046479995591525283,
+            "image_time_error_p95_m": 0.002805374943330277,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.09259259259259259,
+            "gate_pass": false
+          },
+          "phase_guard": {
+            "samples": 507,
+            "reference_visible": 326,
+            "reference_occluded": 63,
+            "reference_unknown": 118,
+            "accepted_visible": 261,
+            "visible_coverage": 0.8006134969325154,
+            "accepted_error_p95_m": 0.00636244191986268,
+            "accepted_error_median_m": 0.0004292063134474127,
+            "image_time_error_p95_m": 0.00636244191986268,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.2222222222222222,
+            "gate_pass": false
+          }
+        }
+      },
+      "required_gates_pass": false,
+      "rejection_reasons": {
+        "insufficient_surface_support": 478,
+        "model_not_visible": 383,
+        "source_depth_discontinuity": 228,
+        "incomplete_source_patch": 2
+      },
+      "cross_camera_status": {
+        "not_checked": 2757
+      }
+    },
+    "primary": {
+      "overall": {
+        "samples": 2757,
+        "reference_visible": 1909,
+        "reference_occluded": 339,
+        "reference_unknown": 509,
+        "accepted_visible": 1482,
+        "visible_coverage": 0.7763226820324778,
+        "accepted_error_p95_m": 0.004888484232964793,
+        "accepted_error_median_m": 0.0005429831975675898,
+        "image_time_error_p95_m": 0.004888484232964793,
+        "camera_age_max_seconds": 0.0,
+        "occluded_false_valid_rate": 0.16519174041297935,
+        "gate_pass": false
+      },
+      "groups": {
+        "camera": {
+          "agentview": {
+            "samples": 2103,
+            "reference_visible": 1324,
+            "reference_occluded": 296,
+            "reference_unknown": 483,
+            "accepted_visible": 937,
+            "visible_coverage": 0.7077039274924471,
+            "accepted_error_p95_m": 0.004655670333390514,
+            "accepted_error_median_m": 0.0008447448709159272,
+            "image_time_error_p95_m": 0.004655670333390514,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.17229729729729729,
+            "gate_pass": false
+          },
+          "robot0_eye_in_hand": {
+            "samples": 654,
+            "reference_visible": 585,
+            "reference_occluded": 43,
+            "reference_unknown": 26,
+            "accepted_visible": 545,
+            "visible_coverage": 0.9316239316239316,
+            "accepted_error_p95_m": 0.005664350033472034,
+            "accepted_error_median_m": 0.00020743618713015645,
+            "image_time_error_p95_m": 0.005664350033472034,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.11627906976744186,
+            "gate_pass": false
+          }
+        },
+        "paired_state": {
+          "1": {
+            "samples": 1097,
+            "reference_visible": 775,
+            "reference_occluded": 140,
+            "reference_unknown": 182,
+            "accepted_visible": 580,
+            "visible_coverage": 0.7483870967741936,
+            "accepted_error_p95_m": 0.003087535266083272,
+            "accepted_error_median_m": 0.0003411698738867864,
+            "image_time_error_p95_m": 0.003087535266083272,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.2642857142857143,
+            "gate_pass": false
+          },
+          "2": {
+            "samples": 1660,
+            "reference_visible": 1134,
+            "reference_occluded": 199,
+            "reference_unknown": 327,
+            "accepted_visible": 902,
+            "visible_coverage": 0.7954144620811288,
+            "accepted_error_p95_m": 0.005691967886348265,
+            "accepted_error_median_m": 0.0007078158450948362,
+            "image_time_error_p95_m": 0.005691967886348265,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.09547738693467336,
+            "gate_pass": false
+          }
+        },
+        "motion_type": {
+          "rotation": {
+            "samples": 2251,
+            "reference_visible": 1492,
+            "reference_occluded": 290,
+            "reference_unknown": 469,
+            "accepted_visible": 1128,
+            "visible_coverage": 0.7560321715817694,
+            "accepted_error_p95_m": 0.0056169070618824445,
+            "accepted_error_median_m": 0.0006867258202638025,
+            "image_time_error_p95_m": 0.0056169070618824445,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.1310344827586207,
+            "gate_pass": false
+          },
+          "translation": {
+            "samples": 506,
+            "reference_visible": 417,
+            "reference_occluded": 49,
+            "reference_unknown": 40,
+            "accepted_visible": 354,
+            "visible_coverage": 0.8489208633093526,
+            "accepted_error_p95_m": 0.0027635194896009157,
+            "accepted_error_median_m": 0.00036518654630784253,
+            "image_time_error_p95_m": 0.0027635194896009157,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.3673469387755102,
+            "gate_pass": false
+          }
+        },
+        "condition": {
+          "deadline_guard": {
+            "samples": 897,
+            "reference_visible": 637,
+            "reference_occluded": 168,
+            "reference_unknown": 92,
+            "accepted_visible": 484,
+            "visible_coverage": 0.7598116169544741,
+            "accepted_error_p95_m": 0.006200460428837919,
+            "accepted_error_median_m": 0.0008215277885548363,
+            "image_time_error_p95_m": 0.006200460428837919,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.19047619047619047,
+            "gate_pass": false
+          },
+          "direct_waypoints": {
+            "samples": 1353,
+            "reference_visible": 946,
+            "reference_occluded": 108,
+            "reference_unknown": 299,
+            "accepted_visible": 737,
+            "visible_coverage": 0.7790697674418605,
+            "accepted_error_p95_m": 0.0028324777464214077,
+            "accepted_error_median_m": 0.0004564423330151784,
+            "image_time_error_p95_m": 0.0028324777464214077,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.09259259259259259,
+            "gate_pass": false
+          },
+          "phase_guard": {
+            "samples": 507,
+            "reference_visible": 326,
+            "reference_occluded": 63,
+            "reference_unknown": 118,
+            "accepted_visible": 261,
+            "visible_coverage": 0.8006134969325154,
+            "accepted_error_p95_m": 0.00636244191986268,
+            "accepted_error_median_m": 0.0004292063134474127,
+            "image_time_error_p95_m": 0.00636244191986268,
+            "camera_age_max_seconds": 0.0,
+            "occluded_false_valid_rate": 0.2222222222222222,
+            "gate_pass": false
+          }
+        }
+      },
+      "required_gates_pass": false,
+      "rejection_reasons": {
+        "insufficient_surface_support": 478,
+        "model_not_visible": 383,
+        "source_depth_discontinuity": 228,
+        "inconsistent_other_view": 23,
+        "incomplete_source_patch": 2
+      },
+      "cross_camera_status": {
+        "not_checked": 1091,
+        "outside_other_view": 575,
+        "corroborated": 643,
+        "other_view_occluded": 425,
+        "inconsistent_other_view": 23
+      }
+    }
+  },
+  "queries": 212,
+  "streams": 35,
+  "endpoints": 2757,
+  "original_baseline_same_samples_exact": true,
+  "all_actions_states_exact": true,
+  "all_original_query_sensors_exact": true,
+  "causal_cache_outputs_verified": true,
+  "actual_astra_requests": 0,
+  "local_tracker_forward_calls": 0,
+  "measurement_three_variants_seconds": 0.17431251032394357,
+  "per_point_three_variant_p95_seconds": 0.00012157501769252114,
+  "total_wall_seconds": 244.32413008398726,
+  "availability_scope": "Original frozen 22739-frame ledger unchanged; no fresh measurements invented between endpoints.",
+  "interpretation_scope": "Correlated observed-trace development measurements, not held-out robot outcomes.",
+  "reproduce": ".venv/bin/python studies/object_feedback_depth/audit.py"
+}
