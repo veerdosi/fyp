@@ -1,0 +1,11 @@
+{
+  "infrastructure_interruption": true,
+  "terminal_outcome": false,
+  "control_steps": 580,
+  "executed_decisions": 7,
+  "pending_input": "policy_update_008.txt",
+  "native_turn_already_completed": "01a11aa4-d21f-7ca0-8c22-f8960f31e37a",
+  "cause": "Root turn intentionally interrupted; original exec session 49198 missing and process inventory confirms simulator absent. Supported native thread read verifies original context and completed next command.",
+  "recovery": "Reconstruct original native actions and require exact robot/object/scoring/final RGB-D/processed-feedback verification before relaying saved decision. Same policy context and budgets.",
+  "clock_note": "Recovered elapsed origin is approximate and includes interruption; exclude host completion-speed claims."
+}

@@ -1,0 +1,11 @@
+{
+  "infrastructure_interruption": true,
+  "terminal_outcome": false,
+  "control_steps": 2015,
+  "executed_decisions": 26,
+  "pending_input": "policy_update_027.txt",
+  "native_turn_already_completed": "01a11a84-6f6b-74d0-8b8c-fa51ff91f02d",
+  "cause": "Root turn intentionally interrupted; original simulator PID absent and collaboration live-agent tree no longer contains the policy agent. Native policy context and completed output remain available via supported thread read.",
+  "recovery": "Reconstruct native actions, robot/object measurements, scores, final sensors and full processed-feedback rows before resuming. Original policy context retained; no replacement start or budget.",
+  "clock_note": "Recovered total elapsed has approximate origin and includes interruptions; exclude from completion-speed claims."
+}

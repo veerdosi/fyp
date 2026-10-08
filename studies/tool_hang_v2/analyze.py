@@ -63,8 +63,17 @@ def analyze():
         usage = read(run / 'policy_usage.json') if (run / 'policy_usage.json').exists() else None
         replay = read(run / 'replay_verification.json') if (run / 'replay_verification.json').exists() else None
         turns = [read(f) for f in sorted(run.glob('policy_turn_*.json'))]
-        delivered_policy_seconds = sum(t['policy'].get('policy_wall_seconds') or 0 for t in turns)
+        assert len(turns) == len(commands) == outcome['model_calls'], 'Incomplete decision logs'
+        assert sum(w['executed_steps'] for w in waypoints) == len(feedback), 'Incomplete motion feedback'
+        delivery_intervals = [t['policy'].get('policy_wall_seconds') for t in turns]
+        missing_delivery_intervals = sum(value is None for value in delivery_intervals)
+        observed_delivery_seconds = sum(value for value in delivery_intervals if value is not None)
+        delivered_policy_seconds = None if missing_delivery_intervals else observed_delivery_seconds
         command_seconds = sum(c['execution_wall_seconds'] for c in commands)
+        cancelled_steps = sum(sum(w['steps'] for w in c['command']['waypoints']) -
+                              sum(w['executed_steps'] for w in
+                                  c['result']['execution_report']['waypoints'])
+                              for c in interruptions)
         result.update(status='recorded', success=outcome['success'],
                       native_terminal_checks=outcome['diagnostic_goal_predicates'],
                       stop_reason=outcome['stop_reason'], decisions=outcome['model_calls'],
@@ -75,6 +84,7 @@ def analyze():
                       empty_flagged_waypoints=sum(w['first_flags']['empty_sized_closure'] is not None
                                                   for w in waypoints),
                       interrupted_commands=len(interruptions),
+                      cancelled_requested_steps=cancelled_steps,
                       cancelled_following_waypoints=sum(c['result']['execution_report'][
                           'remaining_waypoints_cancelled'] for c in interruptions),
                       flagged_empty_motion_samples=sum(bool(r['flags']['empty_sized_closure'])
@@ -82,12 +92,17 @@ def analyze():
                       simulator_command_seconds=command_seconds,
                       setup_wall_seconds=config['setup_wall_seconds'],
                       dispatch_to_delivered_policy_seconds=delivered_policy_seconds,
-                      orchestration_residual_seconds=outcome['wall_seconds'] - config['setup_wall_seconds'] -
-                      command_seconds - delivered_policy_seconds,
+                      observed_dispatch_to_delivered_policy_seconds=observed_delivery_seconds,
+                      missing_delivery_intervals=missing_delivery_intervals,
+                      orchestration_residual_seconds=None if missing_delivery_intervals else
+                      outcome['wall_seconds'] - config['setup_wall_seconds'] - command_seconds -
+                      delivered_policy_seconds,
                       orchestration_residual_note='Includes pre-dispatch idle, root analysis, tool/orchestration '
                       'and operator pauses. Delivery and native inference clocks differ; not robot completion time.',
                       feedback_publication_seconds=sum(r['seconds'] for r in rows(
                           run / 'feedback_publication.jsonl')), usage=usage, replay=replay)
+        result['infrastructure_interruptions'] = [read(f) for f in sorted(
+            run.glob('infrastructure_interruption_*.json'))]
         if usage:
             result.update(inference_requests=usage['model_inference_requests'],
                           native_policy_seconds=usage['policy_wall_seconds'],

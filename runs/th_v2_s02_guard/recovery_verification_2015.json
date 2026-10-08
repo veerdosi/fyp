@@ -1,0 +1,21 @@
+{
+  "pass_verification": true,
+  "control_steps": 2015,
+  "max_measurement_errors": {
+    "robot_before": 0.0,
+    "robot_after": 0.0,
+    "private_objects": 0.0,
+    "final_depth": 0.0
+  },
+  "scoring_mismatches": 0,
+  "final_rgb_exact": true,
+  "monitor_rows_exact": 1995,
+  "prefix_sha256": "554a7eb3314c58eae9b4c60950cb23f1a1b661856bccbd20b50ef74393c522e0",
+  "code_sha256": "3e5e5b634a93ded0be1857ae0ef01a9f1422d268d9e7de639d0348cd0af89ac5",
+  "frozen_source_verified": true,
+  "restored_decisions": 26,
+  "note": "No commands, observations or budgets reset. Original process handle missing and process inventory confirmed absent. Same episode reconstructed before continuing pending policy decision.",
+  "wall_time_note": "Original monotonic clock unavailable. Post-recovery wall clock uses config mtime minus recorded setup duration as an approximate origin; includes interruption and reconstruction. Exclude from completion-speed claims.",
+  "video": "episode_recovered_2015.mp4",
+  "reproduce": ".venv/bin/python runs/th_v2_s02_guard/resume_episode.py"
+}

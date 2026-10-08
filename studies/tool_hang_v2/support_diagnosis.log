@@ -1,0 +1,126 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+{
+  "samples": [
+    {
+      "episode": "th_v2_s01_timed",
+      "step": 2390,
+      "contacts": [
+        {
+          "tool_geom": "tool_hole2_hc_3",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.9363889409239766e-06
+        },
+        {
+          "tool_geom": "tool_hole2_hc_3",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.926235404650346e-06
+        },
+        {
+          "tool_geom": "tool_hole2_hc_4",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.9363889409264685e-06
+        },
+        {
+          "tool_geom": "tool_hole2_hc_4",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.924543957548113e-06
+        },
+        {
+          "tool_geom": "tool_hole2_hc_4",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.926235404652886e-06
+        },
+        {
+          "tool_geom": "tool_hole2_hc_4",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.91439042127453e-06
+        },
+        {
+          "tool_geom": "tool_hole2_hc_5",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.924543957548381e-06
+        },
+        {
+          "tool_geom": "tool_hole2_hc_5",
+          "other_geom": "stand_base",
+          "other_robot": false,
+          "distance_m": -4.9143904212753575e-06
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s01_guard",
+      "step": 1195,
+      "contacts": [
+        {
+          "tool_geom": "tool_hole1_hc_0",
+          "other_geom": "frame_horizontal_frame",
+          "other_robot": false,
+          "distance_m": -4.8388886858443994e-05
+        },
+        {
+          "tool_geom": "tool_hole1_hc_0",
+          "other_geom": "frame_horizontal_frame",
+          "other_robot": false,
+          "distance_m": -3.962822365542594e-05
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "step": 2175,
+      "contacts": [
+        {
+          "tool_geom": "tool_hole1_hc_1",
+          "other_geom": "frame_horizontal_frame",
+          "other_robot": false,
+          "distance_m": -6.244088557352431e-05
+        },
+        {
+          "tool_geom": "tool_hole1_hc_7",
+          "other_geom": "frame_horizontal_frame",
+          "other_robot": false,
+          "distance_m": -6.975274898109017e-05
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_timed",
+      "step": 2060,
+      "contacts": [
+        {
+          "tool_geom": "tool_hole2_hc_3",
+          "other_geom": "table_collision",
+          "other_robot": false,
+          "distance_m": -0.0003874152180349647
+        },
+        {
+          "tool_geom": "tool_hole2_hc_4",
+          "other_geom": "table_collision",
+          "other_robot": false,
+          "distance_m": -0.0003874152180349834
+        },
+        {
+          "tool_geom": "tool_hole1_hc_1",
+          "other_geom": "frame_grip_frame",
+          "other_robot": false,
+          "distance_m": -1.0343950729537778e-05
+        }
+      ]
+    }
+  ],
+  "actual_astra_requests": 0,
+  "scope": "Private terminal saved-state contact geometry; no policy/executor access.",
+  "limitation": "Contacts do not reconstruct forces or prove which contact carries weight. The frozen native success criterion remains unchanged.",
+  "code_sha256": "510ec46c4ea18719520be57b074a710cb0fe49675544d9d7afcf8ddd41cb70d1",
+  "reproduce": ".venv/bin/python studies/tool_hang_v2/support_diagnosis.py"
+}

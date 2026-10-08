@@ -1,0 +1,12 @@
+{
+  "reviewer": "Sol",
+  "method": "Manual inspection of all 27 exported native tool invocation bodies after episode termination.",
+  "tool_boundary_pass": true,
+  "delegation_calls": 0,
+  "repository_or_simulator_reads": 0,
+  "temporary_calculation_executions": 0,
+  "observed_access": "Only current-episode public RGB images, sensing replies, robot observations and execution reports. No calculation, repository modification or delegation tool was invoked.",
+  "os_sandbox": false,
+  "input_boundary": "Initial plaintext saved before dispatch and manually compared; independent native archival plaintext unavailable because encrypted.",
+  "source_tools_sha256": "9589e171a66351e9474757fcc8e1192a62ed5f22f8febe11ba7d45c6758163d4"
+}

@@ -1,0 +1,62 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.038,
+          -0.044,
+          1.025
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.038,
+          -0.044,
+          1.025
+        ],
+        "gripper": -1,
+        "steps": 35
+      },
+      {
+        "position": [
+          0.04,
+          -0.12,
+          1.03
+        ],
+        "gripper": -1,
+        "steps": 50
+      },
+      {
+        "position": [
+          0.04,
+          -0.12,
+          1.18
+        ],
+        "gripper": -1,
+        "steps": 50
+      }
+    ],
+    "reason": "The upturned tip is inside the horizontal hole. Lower slightly, release the handle so the tool can hang, and withdraw clear."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v2_s02_guard",
+    "policy_visible_input": "Fresh observation 17 after your motion command, step 2015, simulated time 100.75 seconds. 26 decisions have been executed; 4 model decisions and 385 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/public/obs_0017/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/public/obs_0017/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/public/obs_0017/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/public/obs_0017/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.038,-0.044,1.025],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true},{\"position\":[-0.038,-0.044,1.025],\"gripper\":-1,\"steps\":35},{\"position\":[0.04,-0.12,1.03],\"gripper\":-1,\"steps\":50},{\"position\":[0.04,-0.12,1.18],\"gripper\":-1,\"steps\":50}],\"reason\":\"The upturned tip is inside the horizontal hole. Lower slightly, release the handle so the tool can hang, and withdraw clear.\"}",
+    "response_timestamp": "2026-10-08T07:57:44.242Z",
+    "message_id": "native_task_complete:01a11a84-6f6b-74d0-8b8c-fa51ff91f02d",
+    "dispatch_timestamp": null,
+    "policy_wall_seconds": null,
+    "native_policy_seconds": 14.898,
+    "policy_clock_note": "Delivery interval unavailable for mailbox recovery; native duration recorded separately.",
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/policy_update_027.txt",
+    "native_source_session": "/Users/veerdosi/.codex/sessions/2026/10/08/rollout-2026-10-08T10-35-02-01a1195d-383f-7113-bdd0-6c54dee49a88.jsonl",
+    "native_source_ordinal": 498,
+    "recovery_note": "Exact completed native policy output; root mailbox delivery lost during interruption. No new inference or command alteration. Native turn duration recorded separately; missing dispatch/delivery interval is not zero inference time."
+  }
+}

@@ -36,11 +36,14 @@
       "armed_waypoints": 22,
       "empty_flagged_waypoints": 3,
       "interrupted_commands": 0,
+      "cancelled_requested_steps": 0,
       "cancelled_following_waypoints": 0,
       "flagged_empty_motion_samples": 126,
       "simulator_command_seconds": 45.18845904106274,
       "setup_wall_seconds": 1.9624287920014467,
       "dispatch_to_delivered_policy_seconds": 825.9559999999999,
+      "observed_dispatch_to_delivered_policy_seconds": 825.9559999999999,
+      "missing_delivery_intervals": 0,
       "orchestration_residual_seconds": 20353.925370458957,
       "orchestration_residual_note": "Includes pre-dispatch idle, root analysis, tool/orchestration and operator pauses. Delivery and native inference clocks differ; not robot completion time.",
       "feedback_publication_seconds": 0.042523044015979394,
@@ -387,6 +390,7 @@
         "command": ".venv/bin/python studies/tool_hang_v2/replay.py --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed",
         "replay_source_sha256": "f07e69299e099207da2d742d3ff8dff36262aeb06a849126dbe6c2f3e50e0058"
       },
+      "infrastructure_interruptions": [],
       "inference_requests": 59,
       "native_policy_seconds": 489.179,
       "api_equivalent_cost_usd": 4.877772,
@@ -437,11 +441,14 @@
       "armed_waypoints": 16,
       "empty_flagged_waypoints": 0,
       "interrupted_commands": 0,
+      "cancelled_requested_steps": 0,
       "cancelled_following_waypoints": 0,
       "flagged_empty_motion_samples": 0,
       "simulator_command_seconds": 25.211157750018174,
       "setup_wall_seconds": 2.4519032910175156,
       "dispatch_to_delivered_policy_seconds": 555.196,
+      "observed_dispatch_to_delivered_policy_seconds": 555.196,
+      "missing_delivery_intervals": 0,
       "orchestration_residual_seconds": 784.0212147919773,
       "orchestration_residual_note": "Includes pre-dispatch idle, root analysis, tool/orchestration and operator pauses. Delivery and native inference clocks differ; not robot completion time.",
       "feedback_publication_seconds": 0.022226872097235173,
@@ -678,6 +685,7 @@
         "command": ".venv/bin/python studies/tool_hang_v2/replay.py --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_guard",
         "replay_source_sha256": "f07e69299e099207da2d742d3ff8dff36262aeb06a849126dbe6c2f3e50e0058"
       },
+      "infrastructure_interruptions": [],
       "inference_requests": 37,
       "native_policy_seconds": 271.145,
       "api_equivalent_cost_usd": 2.57479,
@@ -701,9 +709,438 @@
       "state_index": 32,
       "condition": "empty_closure_guard",
       "execution_order": 3,
-      "status": "in_progress",
-      "success": null,
-      "initial_prompt_verified": null
+      "status": "recorded",
+      "success": true,
+      "initial_prompt_verified": true,
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ],
+      "stop_reason": "policy_finish",
+      "decisions": 28,
+      "simulated_seconds": 108.75,
+      "total_host_wall_seconds": 20750.317484553234,
+      "source_revision": "525413f29873dda575a59eb230d38cd07e175944",
+      "code_dirty": false,
+      "waypoints": 46,
+      "armed_waypoints": 25,
+      "empty_flagged_waypoints": 2,
+      "interrupted_commands": 2,
+      "cancelled_requested_steps": 105,
+      "cancelled_following_waypoints": 2,
+      "flagged_empty_motion_samples": 2,
+      "simulator_command_seconds": 48.97136558301281,
+      "setup_wall_seconds": 2.7930728750070557,
+      "dispatch_to_delivered_policy_seconds": null,
+      "observed_dispatch_to_delivered_policy_seconds": 1350.903,
+      "missing_delivery_intervals": 1,
+      "orchestration_residual_seconds": null,
+      "orchestration_residual_note": "Includes pre-dispatch idle, root analysis, tool/orchestration and operator pauses. Delivery and native inference clocks differ; not robot completion time.",
+      "feedback_publication_seconds": 0.04668154209502973,
+      "usage": {
+        "model": "gpt-6-astra",
+        "reasoning_effort": "medium",
+        "policy_decisions": 28,
+        "model_inference_requests": 59,
+        "agent_tool_calls": 31,
+        "completed_policy_turns": 29,
+        "policy_wall_seconds": 1008.701,
+        "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
+        "token_usage": {
+          "input_tokens": 3542701,
+          "cached_input_tokens": 3321728,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 10458,
+          "reasoning_output_tokens": 2850,
+          "total_tokens": 3553159
+        },
+        "api_equivalent_standard_cost_usd": 6.054358,
+        "actual_account_charge_usd": null,
+        "pricing": {
+          "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "accessed_date": "2026-10-06",
+          "per_million_tokens_usd": {
+            "uncached_input": 10,
+            "cached_input": 1,
+            "cache_write": 12.5,
+            "output": 50
+          },
+          "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+        },
+        "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+        "source_session": "/Users/veerdosi/.codex/sessions/2026/10/08/rollout-2026-10-08T10-35-02-01a1195d-383f-7113-bdd0-6c54dee49a88.jsonl",
+        "model_effort_verification": {
+          "01a1195d-38c2-7610-a4b8-b5ef0014bd5d": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1195e-1e5d-7eb3-a74c-c28a25c4ff91": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1195f-12ec-7710-a04c-adf6af26c49c": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1195f-b291-7c13-8db4-12e0302d5f17": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11960-5b92-7332-b2a0-59014664c784": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11961-b882-7d90-9424-8a51c3c0d2e6": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11962-66e6-7103-947b-f3bc2846f151": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11963-6d5b-77e2-90c9-83343ffe7b28": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11965-9a54-78f3-b289-2d5b8baf3a33": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11968-5e61-7a92-89d8-f5a43e56a289": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11969-357a-77f0-87b7-9f7999be43f3": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1196b-218f-7331-8b41-ee303d9d7931": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1196c-4920-75c0-bada-d722a71b7cea": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1196d-8a92-75d2-83b8-d1981beabeb6": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1196e-c22d-7202-9665-ac7aca55b943": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1196f-bc62-7371-a06d-eb1d822de744": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11970-a9b7-7523-9b66-e954c70c8d36": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11971-57ab-7cd0-8d72-94d3a9345206": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11975-4e9a-7490-9c83-0b922c7b7506": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a7c-e3b8-76c0-9ebd-685c4102052d": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a7e-c9e1-73f2-855c-85bd5885b0e8": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a7f-bc77-71d0-81b8-abe656c23c3f": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a80-956f-7443-9421-df093e4b9c1b": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a81-8c09-7c71-958a-d855182be206": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a82-4db1-7900-8382-50dfb796519e": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a83-0d5c-7ad0-a768-6385b8cbe92c": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a83-c0b6-7f10-803a-994080ab28c0": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a84-6f6b-74d0-8b8c-fa51ff91f02d": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11a98-3424-7450-84a4-2977317bd0a7": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          }
+        },
+        "turn_timing": {
+          "01a1195d-38c2-7610-a4b8-b5ef0014bd5d": {
+            "started_at": 1791426902,
+            "completed_at": 1791426920,
+            "duration_ms": 18647,
+            "time_to_first_token_ms": 6930
+          },
+          "01a1195e-1e5d-7eb3-a74c-c28a25c4ff91": {
+            "started_at": 1791426960,
+            "completed_at": 1791426978,
+            "duration_ms": 17139,
+            "time_to_first_token_ms": 5314
+          },
+          "01a1195f-12ec-7710-a04c-adf6af26c49c": {
+            "started_at": 1791427023,
+            "completed_at": 1791427040,
+            "duration_ms": 16788,
+            "time_to_first_token_ms": 3514
+          },
+          "01a1195f-b291-7c13-8db4-12e0302d5f17": {
+            "started_at": 1791427064,
+            "completed_at": 1791427083,
+            "duration_ms": 18829,
+            "time_to_first_token_ms": 10175
+          },
+          "01a11960-5b92-7332-b2a0-59014664c784": {
+            "started_at": 1791427107,
+            "completed_at": 1791427129,
+            "duration_ms": 21566,
+            "time_to_first_token_ms": 5646
+          },
+          "01a11961-b882-7d90-9424-8a51c3c0d2e6": {
+            "started_at": 1791427197,
+            "completed_at": 1791427209,
+            "duration_ms": 12587,
+            "time_to_first_token_ms": 2532
+          },
+          "01a11962-66e6-7103-947b-f3bc2846f151": {
+            "started_at": 1791427241,
+            "completed_at": 1791427272,
+            "duration_ms": 30750,
+            "time_to_first_token_ms": 4636
+          },
+          "01a11963-6d5b-77e2-90c9-83343ffe7b28": {
+            "started_at": 1791427308,
+            "completed_at": 1791427391,
+            "duration_ms": 82526,
+            "time_to_first_token_ms": 66083
+          },
+          "01a11965-9a54-78f3-b289-2d5b8baf3a33": {
+            "started_at": 1791427451,
+            "completed_at": 1791427578,
+            "duration_ms": 127441,
+            "time_to_first_token_ms": 17080
+          },
+          "01a11968-5e61-7a92-89d8-f5a43e56a289": {
+            "started_at": 1791427632,
+            "completed_at": 1791427661,
+            "duration_ms": 29052,
+            "time_to_first_token_ms": 11695
+          },
+          "01a11969-357a-77f0-87b7-9f7999be43f3": {
+            "started_at": 1791427687,
+            "completed_at": 1791427707,
+            "duration_ms": 19404,
+            "time_to_first_token_ms": 6815
+          },
+          "01a1196b-218f-7331-8b41-ee303d9d7931": {
+            "started_at": 1791427813,
+            "completed_at": 1791427862,
+            "duration_ms": 48889,
+            "time_to_first_token_ms": 19150
+          },
+          "01a1196c-4920-75c0-bada-d722a71b7cea": {
+            "started_at": 1791427889,
+            "completed_at": 1791427908,
+            "duration_ms": 19246,
+            "time_to_first_token_ms": 4917
+          },
+          "01a1196d-8a92-75d2-83b8-d1981beabeb6": {
+            "started_at": 1791427971,
+            "completed_at": 1791428020,
+            "duration_ms": 48446,
+            "time_to_first_token_ms": 8742
+          },
+          "01a1196e-c22d-7202-9665-ac7aca55b943": {
+            "started_at": 1791428051,
+            "completed_at": 1791428074,
+            "duration_ms": 23240,
+            "time_to_first_token_ms": 10892
+          },
+          "01a1196f-bc62-7371-a06d-eb1d822de744": {
+            "started_at": 1791428115,
+            "completed_at": 1791428140,
+            "duration_ms": 24585,
+            "time_to_first_token_ms": 14240
+          },
+          "01a11970-a9b7-7523-9b66-e954c70c8d36": {
+            "started_at": 1791428176,
+            "completed_at": 1791428206,
+            "duration_ms": 29901,
+            "time_to_first_token_ms": 10023
+          },
+          "01a11971-57ab-7cd0-8d72-94d3a9345206": {
+            "started_at": 1791428220,
+            "completed_at": 1791428435,
+            "duration_ms": 214888,
+            "time_to_first_token_ms": 194690
+          },
+          "01a11975-4e9a-7490-9c83-0b922c7b7506": {
+            "started_at": 1791428480,
+            "completed_at": 1791428501,
+            "duration_ms": 20686,
+            "time_to_first_token_ms": 9025
+          },
+          "01a11a7c-e3b8-76c0-9ebd-685c4102052d": {
+            "started_at": 1791445754,
+            "completed_at": 1791445767,
+            "duration_ms": 12882,
+            "time_to_first_token_ms": 9542
+          },
+          "01a11a7e-c9e1-73f2-855c-85bd5885b0e8": {
+            "started_at": 1791445879,
+            "completed_at": 1791445896,
+            "duration_ms": 17322,
+            "time_to_first_token_ms": 2956
+          },
+          "01a11a7f-bc77-71d0-81b8-abe656c23c3f": {
+            "started_at": 1791445941,
+            "completed_at": 1791445960,
+            "duration_ms": 19324,
+            "time_to_first_token_ms": 5095
+          },
+          "01a11a80-956f-7443-9421-df093e4b9c1b": {
+            "started_at": 1791445996,
+            "completed_at": 1791446016,
+            "duration_ms": 19840,
+            "time_to_first_token_ms": 4074
+          },
+          "01a11a81-8c09-7c71-958a-d855182be206": {
+            "started_at": 1791446060,
+            "completed_at": 1791446079,
+            "duration_ms": 19201,
+            "time_to_first_token_ms": 3922
+          },
+          "01a11a82-4db1-7900-8382-50dfb796519e": {
+            "started_at": 1791446109,
+            "completed_at": 1791446140,
+            "duration_ms": 30925,
+            "time_to_first_token_ms": 3970
+          },
+          "01a11a83-0d5c-7ad0-a768-6385b8cbe92c": {
+            "started_at": 1791446158,
+            "completed_at": 1791446173,
+            "duration_ms": 14847,
+            "time_to_first_token_ms": 2797
+          },
+          "01a11a83-c0b6-7f10-803a-994080ab28c0": {
+            "started_at": 1791446204,
+            "completed_at": 1791446219,
+            "duration_ms": 15192,
+            "time_to_first_token_ms": 3611
+          },
+          "01a11a84-6f6b-74d0-8b8c-fa51ff91f02d": {
+            "started_at": 1791446249,
+            "completed_at": 1791446264,
+            "duration_ms": 14898,
+            "time_to_first_token_ms": 3423
+          },
+          "01a11a98-3424-7450-84a4-2977317bd0a7": {
+            "started_at": 1791447544,
+            "completed_at": 1791447564,
+            "duration_ms": 19660,
+            "time_to_first_token_ms": 8641
+          }
+        }
+      },
+      "replay": {
+        "all_pass": true,
+        "steps": 2175,
+        "max_state_absolute_error": 0.0,
+        "max_public_sensor_absolute_error": 0.0,
+        "max_calibration_absolute_error": 0.0,
+        "camera_snapshot_checks": 38,
+        "monitor_rows_exact": 2155,
+        "action_conversion_checks": 2155,
+        "native_checks": 2175,
+        "native_outcome_matches": true,
+        "actual_astra_requests": 0,
+        "initialization": "Original seeded initialization and observable sampling; no forced state/update.",
+        "command": ".venv/bin/python studies/tool_hang_v2/replay.py --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard",
+        "replay_source_sha256": "f07e69299e099207da2d742d3ff8dff36262aeb06a849126dbe6c2f3e50e0058"
+      },
+      "infrastructure_interruptions": [
+        {
+          "infrastructure_interruption": true,
+          "terminal_outcome": false,
+          "executed_decisions": 18,
+          "control_steps": 1370,
+          "remaining_decisions": 12,
+          "remaining_steps": 1030,
+          "pending_input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/policy_update_019.txt",
+          "pending_input_sha256": "550a872cf06c69b503d68f3f94d22c1e1ca427d5408b3226ed9d435dce5829e8",
+          "agent": "/root/astra_th_v2_s02_guard",
+          "error": "Agent errored: You\u2019ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 3:00 PM.",
+          "retry_plan": "The reported local reset time has passed according to current UTC clock 2026-10-08 07:48:28 UTC / Singapore 15:48:28. Make one identical-input retry in the original policy context and live simulator; the reset timezone is inferred from local environment, not independently exposed. No replacement start/model/count/budget.",
+          "verified_live_handle": {
+            "exec_session": 52406,
+            "pid": 7058,
+            "poll_returned_live": true
+          },
+          "general_usage_note": "Codex usage tool allows ordinary usage but exposes no separate Astra reset; it does not override the actual policy rejection.",
+          "resumed_same_context_and_original_simulator": true,
+          "retry_succeeded": true,
+          "resumed_robot_decision": 19,
+          "source_relay": "relay_019.json"
+        },
+        {
+          "infrastructure_interruption": true,
+          "terminal_outcome": false,
+          "control_steps": 2015,
+          "executed_decisions": 26,
+          "pending_input": "policy_update_027.txt",
+          "native_turn_already_completed": "01a11a84-6f6b-74d0-8b8c-fa51ff91f02d",
+          "cause": "Root turn intentionally interrupted; original simulator PID absent and collaboration live-agent tree no longer contains the policy agent. Native policy context and completed output remain available via supported thread read.",
+          "recovery": "Reconstruct native actions, robot/object measurements, scores, final sensors and full processed-feedback rows before resuming. Original policy context retained; no replacement start or budget.",
+          "clock_note": "Recovered total elapsed has approximate origin and includes interruptions; exclude from completion-speed claims."
+        }
+      ],
+      "inference_requests": 59,
+      "native_policy_seconds": 1008.701,
+      "api_equivalent_cost_usd": 6.054358,
+      "boundary_audit": {
+        "reviewer": "Sol",
+        "method": "Manual inspection of all 31 exported native tool invocation bodies and all three retained calculation sources, stdout, stderr and metadata after episode termination.",
+        "tool_boundary_pass": true,
+        "delegation_calls": 0,
+        "repository_or_simulator_reads": 0,
+        "temporary_calculation_executions": 3,
+        "observed_access": "Only current-episode public RGB images, sensing replies and robot observations. Three numpy/scipy rotation calculations use policy-selected public points and robot quaternions; sources remain in policy_compute and execution is logged by policy_calc. All three completed with return code zero and empty stderr.",
+        "os_sandbox": false,
+        "input_boundary": "Initial plaintext saved before dispatch and manually compared; independent native archival plaintext unavailable because encrypted.",
+        "source_tools_sha256": "58b3b62fa1944788097ad5f8b0212c88e2bdf58b8943978a67354f18a9025859"
+      }
     },
     {
       "episode_id": "th_v2_s02_timed",
@@ -712,9 +1149,385 @@
       "state_index": 32,
       "condition": "direct_waypoints_feedback",
       "execution_order": 4,
-      "status": "missing",
-      "success": null,
-      "initial_prompt_verified": null
+      "status": "recorded",
+      "success": false,
+      "initial_prompt_verified": true,
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stop_reason": "policy_finish",
+      "decisions": 26,
+      "simulated_seconds": 103.0,
+      "total_host_wall_seconds": 2647.8152873704676,
+      "source_revision": "83bd647762c4d8ca50466442cbe09ab6664a5d63",
+      "code_dirty": false,
+      "waypoints": 35,
+      "armed_waypoints": 20,
+      "empty_flagged_waypoints": 2,
+      "interrupted_commands": 0,
+      "cancelled_requested_steps": 0,
+      "cancelled_following_waypoints": 0,
+      "flagged_empty_motion_samples": 101,
+      "simulator_command_seconds": 48.08404900011374,
+      "setup_wall_seconds": 2.6754625829926226,
+      "dispatch_to_delivered_policy_seconds": null,
+      "observed_dispatch_to_delivered_policy_seconds": 759.16,
+      "missing_delivery_intervals": 1,
+      "orchestration_residual_seconds": null,
+      "orchestration_residual_note": "Includes pre-dispatch idle, root analysis, tool/orchestration and operator pauses. Delivery and native inference clocks differ; not robot completion time.",
+      "feedback_publication_seconds": 0.041842542006634176,
+      "usage": {
+        "model": "gpt-6-astra",
+        "reasoning_effort": "medium",
+        "policy_decisions": 26,
+        "model_inference_requests": 53,
+        "agent_tool_calls": 27,
+        "completed_policy_turns": 26,
+        "policy_wall_seconds": 570.189,
+        "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
+        "token_usage": {
+          "input_tokens": 3036711,
+          "cached_input_tokens": 2969728,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7638,
+          "reasoning_output_tokens": 1974,
+          "total_tokens": 3044349
+        },
+        "api_equivalent_standard_cost_usd": 4.021458,
+        "actual_account_charge_usd": null,
+        "pricing": {
+          "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "accessed_date": "2026-10-06",
+          "per_million_tokens_usd": {
+            "uncached_input": 10,
+            "cached_input": 1,
+            "cache_write": 12.5,
+            "output": 50
+          },
+          "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+        },
+        "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+        "source_session": "/Users/veerdosi/.codex/sessions/2026/10/08/rollout-2026-10-08T16-21-34-01a11a9a-7db0-7a01-8679-092c39ee0966.jsonl",
+        "model_effort_verification": {
+          "01a11a9a-7e27-7531-bdf2-67ce825fd3a5": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aa0-7ced-7d40-8b2c-6da2d65c7298": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aa1-374d-73b3-a6c2-cc06e62dc803": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aa1-b88a-7093-8f6b-2a50314eda7b": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aa2-661e-7bc2-a7dc-336c17617faf": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aa3-6c21-77c1-9d42-0734196618a2": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aa3-d53e-7b51-b4b3-6a6aec62c542": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aa4-d21f-7ca0-8c22-f8960f31e37a": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ab3-d33e-7d01-98b9-0d2fe23467a9": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ab4-c3a1-7951-8a40-02725990f874": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ab5-48e9-7053-bf4d-162b93ca6ea6": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ab5-fd5a-7d22-a282-0c7c06ef663c": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ab8-9560-7692-a0c6-d89b11c234be": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ab9-3b8f-7163-b7e8-eb5e0e9f8dc9": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ab9-bef0-78a2-a251-14782c2521cb": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11aba-a860-7442-a77e-b6c7d925214b": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abb-390d-7930-92f6-791a93538283": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abc-0080-7623-b1ca-6a4b23e4a7e9": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abc-c864-7c72-9946-39fab92a2797": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abd-b025-7602-a174-2392ecbc6332": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abe-3686-78c2-8a22-c24485658c3d": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abe-e1da-7653-a145-919883ed6aeb": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abf-60bd-7a23-8a2b-053d4f5244b4": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11abf-edc1-7d73-93af-28396d4c41ad": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ac0-a98e-7611-9f8c-029cfa8a4e9b": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11ac1-8d53-7c10-b4e2-d00123c1983e": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          }
+        },
+        "turn_timing": {
+          "01a11a9a-7e27-7531-bdf2-67ce825fd3a5": {
+            "started_at": 1791447694,
+            "completed_at": 1791447710,
+            "duration_ms": 15439,
+            "time_to_first_token_ms": 6541
+          },
+          "01a11aa0-7ced-7d40-8b2c-6da2d65c7298": {
+            "started_at": 1791448087,
+            "completed_at": 1791448117,
+            "duration_ms": 29903,
+            "time_to_first_token_ms": 2936
+          },
+          "01a11aa1-374d-73b3-a6c2-cc06e62dc803": {
+            "started_at": 1791448135,
+            "completed_at": 1791448149,
+            "duration_ms": 14319,
+            "time_to_first_token_ms": 4532
+          },
+          "01a11aa1-b88a-7093-8f6b-2a50314eda7b": {
+            "started_at": 1791448168,
+            "completed_at": 1791448195,
+            "duration_ms": 27014,
+            "time_to_first_token_ms": 3511
+          },
+          "01a11aa2-661e-7bc2-a7dc-336c17617faf": {
+            "started_at": 1791448213,
+            "completed_at": 1791448230,
+            "duration_ms": 17084,
+            "time_to_first_token_ms": 3969
+          },
+          "01a11aa3-6c21-77c1-9d42-0734196618a2": {
+            "started_at": 1791448280,
+            "completed_at": 1791448294,
+            "duration_ms": 14082,
+            "time_to_first_token_ms": 4012
+          },
+          "01a11aa3-d53e-7b51-b4b3-6a6aec62c542": {
+            "started_at": 1791448307,
+            "completed_at": 1791448322,
+            "duration_ms": 15053,
+            "time_to_first_token_ms": 4283
+          },
+          "01a11aa4-d21f-7ca0-8c22-f8960f31e37a": {
+            "started_at": 1791448371,
+            "completed_at": 1791448387,
+            "duration_ms": 15514,
+            "time_to_first_token_ms": 4058
+          },
+          "01a11ab3-d33e-7d01-98b9-0d2fe23467a9": {
+            "started_at": 1791449355,
+            "completed_at": 1791449372,
+            "duration_ms": 17130,
+            "time_to_first_token_ms": 7782
+          },
+          "01a11ab4-c3a1-7951-8a40-02725990f874": {
+            "started_at": 1791449416,
+            "completed_at": 1791449431,
+            "duration_ms": 14419,
+            "time_to_first_token_ms": 3364
+          },
+          "01a11ab5-48e9-7053-bf4d-162b93ca6ea6": {
+            "started_at": 1791449450,
+            "completed_at": 1791449467,
+            "duration_ms": 16452,
+            "time_to_first_token_ms": 4706
+          },
+          "01a11ab5-fd5a-7d22-a282-0c7c06ef663c": {
+            "started_at": 1791449496,
+            "completed_at": 1791449612,
+            "duration_ms": 115165,
+            "time_to_first_token_ms": 6176
+          },
+          "01a11ab8-9560-7692-a0c6-d89b11c234be": {
+            "started_at": 1791449666,
+            "completed_at": 1791449686,
+            "duration_ms": 20047,
+            "time_to_first_token_ms": 7166
+          },
+          "01a11ab9-3b8f-7163-b7e8-eb5e0e9f8dc9": {
+            "started_at": 1791449709,
+            "completed_at": 1791449726,
+            "duration_ms": 16735,
+            "time_to_first_token_ms": 4528
+          },
+          "01a11ab9-bef0-78a2-a251-14782c2521cb": {
+            "started_at": 1791449743,
+            "completed_at": 1791449758,
+            "duration_ms": 15719,
+            "time_to_first_token_ms": 4249
+          },
+          "01a11aba-a860-7442-a77e-b6c7d925214b": {
+            "started_at": 1791449802,
+            "completed_at": 1791449823,
+            "duration_ms": 20814,
+            "time_to_first_token_ms": 9939
+          },
+          "01a11abb-390d-7930-92f6-791a93538283": {
+            "started_at": 1791449839,
+            "completed_at": 1791449860,
+            "duration_ms": 20124,
+            "time_to_first_token_ms": 4296
+          },
+          "01a11abc-0080-7623-b1ca-6a4b23e4a7e9": {
+            "started_at": 1791449890,
+            "completed_at": 1791449919,
+            "duration_ms": 28131,
+            "time_to_first_token_ms": 3977
+          },
+          "01a11abc-c864-7c72-9946-39fab92a2797": {
+            "started_at": 1791449942,
+            "completed_at": 1791449967,
+            "duration_ms": 25706,
+            "time_to_first_token_ms": 2709
+          },
+          "01a11abd-b025-7602-a174-2392ecbc6332": {
+            "started_at": 1791450001,
+            "completed_at": 1791450016,
+            "duration_ms": 14718,
+            "time_to_first_token_ms": 3734
+          },
+          "01a11abe-3686-78c2-8a22-c24485658c3d": {
+            "started_at": 1791450035,
+            "completed_at": 1791450055,
+            "duration_ms": 19578,
+            "time_to_first_token_ms": 4853
+          },
+          "01a11abe-e1da-7653-a145-919883ed6aeb": {
+            "started_at": 1791450079,
+            "completed_at": 1791450095,
+            "duration_ms": 15870,
+            "time_to_first_token_ms": 5899
+          },
+          "01a11abf-60bd-7a23-8a2b-053d4f5244b4": {
+            "started_at": 1791450112,
+            "completed_at": 1791450130,
+            "duration_ms": 18019,
+            "time_to_first_token_ms": 3701
+          },
+          "01a11abf-edc1-7d73-93af-28396d4c41ad": {
+            "started_at": 1791450148,
+            "completed_at": 1791450166,
+            "duration_ms": 17996,
+            "time_to_first_token_ms": 5991
+          },
+          "01a11ac0-a98e-7611-9f8c-029cfa8a4e9b": {
+            "started_at": 1791450196,
+            "completed_at": 1791450209,
+            "duration_ms": 13551,
+            "time_to_first_token_ms": 3175
+          },
+          "01a11ac1-8d53-7c10-b4e2-d00123c1983e": {
+            "started_at": 1791450254,
+            "completed_at": 1791450266,
+            "duration_ms": 11607,
+            "time_to_first_token_ms": 3034
+          }
+        }
+      },
+      "replay": {
+        "all_pass": true,
+        "steps": 2060,
+        "max_state_absolute_error": 0.0,
+        "max_public_sensor_absolute_error": 0.0,
+        "max_calibration_absolute_error": 0.0,
+        "camera_snapshot_checks": 38,
+        "monitor_rows_exact": 2040,
+        "action_conversion_checks": 2040,
+        "native_checks": 2060,
+        "native_outcome_matches": true,
+        "actual_astra_requests": 0,
+        "initialization": "Original seeded initialization and observable sampling; no forced state/update.",
+        "command": ".venv/bin/python studies/tool_hang_v2/replay.py --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_timed",
+        "replay_source_sha256": "f07e69299e099207da2d742d3ff8dff36262aeb06a849126dbe6c2f3e50e0058"
+      },
+      "infrastructure_interruptions": [
+        {
+          "infrastructure_interruption": true,
+          "terminal_outcome": false,
+          "control_steps": 580,
+          "executed_decisions": 7,
+          "pending_input": "policy_update_008.txt",
+          "native_turn_already_completed": "01a11aa4-d21f-7ca0-8c22-f8960f31e37a",
+          "cause": "Root turn intentionally interrupted; original exec session 49198 missing and process inventory confirms simulator absent. Supported native thread read verifies original context and completed next command.",
+          "recovery": "Reconstruct original native actions and require exact robot/object/scoring/final RGB-D/processed-feedback verification before relaying saved decision. Same policy context and budgets.",
+          "clock_note": "Recovered elapsed origin is approximate and includes interruption; exclude host completion-speed claims."
+        }
+      ],
+      "inference_requests": 53,
+      "native_policy_seconds": 570.189,
+      "api_equivalent_cost_usd": 4.021458,
+      "boundary_audit": {
+        "reviewer": "Sol",
+        "method": "Manual inspection of all 27 exported native tool invocation bodies after episode termination.",
+        "tool_boundary_pass": true,
+        "delegation_calls": 0,
+        "repository_or_simulator_reads": 0,
+        "temporary_calculation_executions": 0,
+        "observed_access": "Only current-episode public RGB images, sensing replies, robot observations and execution reports. No calculation, repository modification or delegation tool was invoked.",
+        "os_sandbox": false,
+        "input_boundary": "Initial plaintext saved before dispatch and manually compared; independent native archival plaintext unavailable because encrypted.",
+        "source_tools_sha256": "9589e171a66351e9474757fcc8e1192a62ed5f22f8febe11ba7d45c6758163d4"
+      }
     }
   ],
   "paired_results": [
@@ -731,24 +1544,38 @@
       "simulated_seconds_difference_guard_minus_timed": -59.75,
       "native_policy_seconds_difference_guard_minus_timed": -218.034,
       "api_equivalent_cost_usd_difference_guard_minus_timed": -2.302982
+    },
+    {
+      "paired_state": 2,
+      "matched_physics": true,
+      "matched_prompt": true,
+      "initial_public_inputs_verified": true,
+      "interpretation": "Matched mechanism comparison",
+      "success_difference": 1,
+      "both_succeeded": false,
+      "decisions_difference_guard_minus_timed": 2,
+      "inference_requests_difference_guard_minus_timed": 6,
+      "simulated_seconds_difference_guard_minus_timed": 5.75,
+      "native_policy_seconds_difference_guard_minus_timed": 438.51200000000006,
+      "api_equivalent_cost_usd_difference_guard_minus_timed": 2.0328999999999997
     }
   ],
   "condition_summaries": {
     "direct_waypoints_feedback": {
       "scheduled": 2,
-      "completed": 1,
+      "completed": 2,
       "successes": 0,
       "descriptive_wilson_95": [
         0,
-        0.7934506856227626
+        0.6576197724933469
       ]
     },
     "empty_closure_guard": {
       "scheduled": 2,
-      "completed": 1,
-      "successes": 1,
+      "completed": 2,
+      "successes": 2,
       "descriptive_wilson_95": [
-        0.20654931437723745,
+        0.34238022750665303,
         1
       ]
     }

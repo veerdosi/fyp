@@ -1,0 +1,12 @@
+{
+  "reviewer": "Sol",
+  "method": "Manual inspection of all 31 exported native tool invocation bodies and all three retained calculation sources, stdout, stderr and metadata after episode termination.",
+  "tool_boundary_pass": true,
+  "delegation_calls": 0,
+  "repository_or_simulator_reads": 0,
+  "temporary_calculation_executions": 3,
+  "observed_access": "Only current-episode public RGB images, sensing replies and robot observations. Three numpy/scipy rotation calculations use policy-selected public points and robot quaternions; sources remain in policy_compute and execution is logged by policy_calc. All three completed with return code zero and empty stderr.",
+  "os_sandbox": false,
+  "input_boundary": "Initial plaintext saved before dispatch and manually compared; independent native archival plaintext unavailable because encrypted.",
+  "source_tools_sha256": "58b3b62fa1944788097ad5f8b0212c88e2bdf58b8943978a67354f18a9025859"
+}

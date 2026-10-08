@@ -1,0 +1,51 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.169,
+          -0.355,
+          1.16
+        ],
+        "gripper": 1,
+        "steps": 100,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.169,
+          -0.355,
+          1.16
+        ],
+        "quaternion_xyzw": [
+          0.869,
+          0.316,
+          -0.359,
+          0.131
+        ],
+        "gripper": 1,
+        "steps": 40,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Lift the deeper grasp and rotate halfway toward vertical, then inspect retention before proceeding."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v2_s02_timed",
+    "policy_visible_input": "Fresh observation 4 after your motion command, step 580, simulated time 29.0 seconds. 7 decisions have been executed; 23 model decisions and 1820 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_timed/public/obs_0004/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_timed/public/obs_0004/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_timed/public/obs_0004/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_timed/public/obs_0004/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.169,-0.355,1.16],\"gripper\":1,\"steps\":100,\"abort_if_empty_close\":true},{\"position\":[-0.169,-0.355,1.16],\"quaternion_xyzw\":[0.869,0.316,-0.359,0.131],\"gripper\":1,\"steps\":40,\"abort_if_empty_close\":true}],\"reason\":\"Lift the deeper grasp and rotate halfway toward vertical, then inspect retention before proceeding.\"}",
+    "response_timestamp": "2026-10-08T08:33:07.287Z",
+    "message_id": "native_task_complete:01a11aa4-d21f-7ca0-8c22-f8960f31e37a",
+    "dispatch_timestamp": null,
+    "policy_wall_seconds": null,
+    "native_policy_seconds": 15.514,
+    "policy_clock_note": "Delivery interval unavailable for mailbox recovery; native duration recorded separately.",
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_timed/policy_update_008.txt",
+    "native_source_session": "/Users/veerdosi/.codex/sessions/2026/10/08/rollout-2026-10-08T16-21-34-01a11a9a-7db0-7a01-8679-092c39ee0966.jsonl",
+    "native_source_ordinal": 144,
+    "recovery_note": "Exact completed native policy output; root mailbox delivery lost during interruption. No new inference or command alteration. Native turn duration recorded separately; missing dispatch/delivery interval is not zero inference time."
+  }
+}

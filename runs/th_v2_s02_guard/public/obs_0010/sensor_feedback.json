@@ -1,0 +1,57 @@
+{
+  "observation_id": 10,
+  "step": 1265,
+  "opening_m": 0.03039952920217639,
+  "finger_speed_m_s": 4.244258447099073e-06,
+  "current_compensated_wrench": [
+    -0.00027812562392749105,
+    1.7483756880713903,
+    -0.00020410297740616062,
+    -0.16475676627691682,
+    -0.0003701266137896438,
+    -0.00017087969336410843
+  ],
+  "calibration_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/public/feedback_calibration.json",
+  "last_motion_summary": [
+    {
+      "waypoint_index": 0,
+      "first_step": 1186,
+      "last_step": 1265,
+      "armed": true,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      },
+      "terminal_sensor_measurement": {
+        "step": 1265,
+        "command_id": 15,
+        "waypoint_index": 0,
+        "armed": true,
+        "waypoint_step": 80,
+        "position_error_m": 0.0010617025934653327,
+        "orientation_error_rad": 0.0016411284613491236,
+        "linear_speed_m_s": 1.4871721430867326e-05,
+        "angular_speed_rad_s": 6.197309412488524e-05,
+        "finger_speed_m_s": 4.244258447099073e-06,
+        "opening_m": 0.03039952920217639,
+        "force_change_N": 0.3708989192569481,
+        "torque_change_Nm": 0.08059252384262501,
+        "position_progress_10_steps_m": 1.248236650897472e-05,
+        "orientation_progress_10_steps_rad": 9.548692184105324e-05,
+        "raw": {
+          "load_change": false,
+          "stalled_motion": false,
+          "empty_sized_closure": false
+        },
+        "flags": {
+          "load_change": false,
+          "stalled_motion": false,
+          "empty_sized_closure": false
+        }
+      }
+    }
+  ],
+  "samples_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/public/obs_0010/sensor_feedback_samples.jsonl",
+  "note": "The same processed sensing is available in both conditions. Flags are observations, not task outcomes."
+}

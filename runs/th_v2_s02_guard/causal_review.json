@@ -1,0 +1,164 @@
+{
+  "episode_id": "th_v2_s02_guard",
+  "primary_success": true,
+  "first_causal_failure": {
+    "decision": 2,
+    "description": "Initial frame grasp closed empty; the approach ended 34.75 mm short before closing at a point above the connector. The armed stop fired at step 120 and cancelled the queued lift plus five closing steps."
+  },
+  "recovery": [
+    {
+      "decision": 3,
+      "description": "Astra cited empty closure and the frame remaining on the table; reopened and selected a lower grasp before lifting."
+    },
+    {
+      "decision": 9,
+      "description": "Two logged public-point rotations straightened the insertion rod; final descent ended 5.33 mm above target with shared load/stall flags."
+    },
+    {
+      "decision": 11,
+      "description": "Astra recognized that retreat contacted the frame and displaced the stand, then selected vertical clearance."
+    },
+    {
+      "decision": 20,
+      "description": "Astra expected the larger hole to rest on the hook; after release the tool fell, recognized in decision 21. Measured EEF arrival had not established the required object relation."
+    },
+    {
+      "decision": 22,
+      "description": "Recovery descent ended 64.49 mm from target; armed empty closure at step 1725 cancelled the lift plus five close steps."
+    },
+    {
+      "decision": 23,
+      "description": "Astra explicitly attributed the empty grasp to arm non-arrival and selected an exposed-end side approach in decision 24."
+    },
+    {
+      "decision": 27,
+      "description": "After a fresh hole/tip measurement and a different horizontal-hole placement, Astra released and withdrew; both native checks pass at finish."
+    }
+  ],
+  "native_check_transitions": [
+    {
+      "step": 1,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 726,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 2044,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "step": 2045,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 2052,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "step": 2061,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 2062,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    }
+  ],
+  "mechanism_interpretation": "Two declared interrupts prevented 105 requested control steps (5.25 simulated seconds), including two empty lifts. Astra chose both recoveries. This establishes invalidation/handoff behavior, not a comparison-level completion benefit before the matched timed episode finishes.",
+  "native_terminal_checks": "Both pass; larger-hole line distance 3.473 mm below 6.75 mm limit, insertion fraction 0.1707 above 0.05. Frame tip-to-base distance 46.449 mm below 50 mm limit.",
+  "replay": "Reconstructed 2015-step prefix matched all retained original robot/object/scoring records and final RGB-D exactly; final 2175-state trajectory and all 38 camera/2155 monitor rows replay exactly. Original full hidden prefix arrays were not retained, so they are not independently compared.",
+  "infrastructure": "Usage-limit failed turn retained; same policy context resumed. Later root interruption required exact action reconstruction and relaying already-completed decision 27 without another inference. One dispatch-to-delivered interval is unavailable; total host wall is interrupted and not a completion-latency estimate.",
+  "reason_scope": "Short command reasons compared with measured execution and subsequent observations. They are stated expectations, not complete internal reasoning or proof of causal reliance."
+}

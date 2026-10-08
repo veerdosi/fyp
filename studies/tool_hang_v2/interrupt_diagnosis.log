@@ -1,0 +1,54 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+{
+  "samples": [
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 2,
+      "step": 118,
+      "both_pad_objects": [],
+      "fingerpad_contacts": []
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 2,
+      "step": 119,
+      "both_pad_objects": [],
+      "fingerpad_contacts": []
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 2,
+      "step": 120,
+      "both_pad_objects": [],
+      "fingerpad_contacts": []
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 22,
+      "step": 1723,
+      "both_pad_objects": [],
+      "fingerpad_contacts": []
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 22,
+      "step": 1724,
+      "both_pad_objects": [],
+      "fingerpad_contacts": []
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 22,
+      "step": 1725,
+      "both_pad_objects": [],
+      "fingerpad_contacts": []
+    }
+  ],
+  "actual_astra_requests": 0,
+  "code_sha256": "32cb8a7aec01a76249cf0370b784fd596f9d462d21259d29ec214c2e1d92c2dd",
+  "scope": "Private post-episode saved-state diagnosis of three samples ending at each stop.",
+  "limitation": "Rebuilt contacts are geometry, not forces or a complete acquisition certificate. Recovered prefix states were reconstructed from native actions; retained original robot/object/scoring records and final RGB-D matched exactly.",
+  "reproduce": ".venv/bin/python studies/tool_hang_v2/interrupt_diagnosis.py"
+}

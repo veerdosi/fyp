@@ -1,0 +1,23 @@
+{
+  "infrastructure_interruption": true,
+  "terminal_outcome": false,
+  "executed_decisions": 18,
+  "control_steps": 1370,
+  "remaining_decisions": 12,
+  "remaining_steps": 1030,
+  "pending_input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/policy_update_019.txt",
+  "pending_input_sha256": "550a872cf06c69b503d68f3f94d22c1e1ca427d5408b3226ed9d435dce5829e8",
+  "agent": "/root/astra_th_v2_s02_guard",
+  "error": "Agent errored: You\u2019ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 3:00 PM.",
+  "retry_plan": "The reported local reset time has passed according to current UTC clock 2026-10-08 07:48:28 UTC / Singapore 15:48:28. Make one identical-input retry in the original policy context and live simulator; the reset timezone is inferred from local environment, not independently exposed. No replacement start/model/count/budget.",
+  "verified_live_handle": {
+    "exec_session": 52406,
+    "pid": 7058,
+    "poll_returned_live": true
+  },
+  "general_usage_note": "Codex usage tool allows ordinary usage but exposes no separate Astra reset; it does not override the actual policy rejection.",
+  "resumed_same_context_and_original_simulator": true,
+  "retry_succeeded": true,
+  "resumed_robot_decision": 19,
+  "source_relay": "relay_019.json"
+}

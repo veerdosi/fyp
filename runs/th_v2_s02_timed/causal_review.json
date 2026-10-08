@@ -1,0 +1,144 @@
+{
+  "episode_id": "th_v2_s02_timed",
+  "primary_success": false,
+  "first_causal_failure": {
+    "decision": 5,
+    "description": "The frame lifted initially but slipped during wrist rotation. Armed empty-sized flags first appeared at steps 271 and 295; the timed condition completed the rotation/transfer until step 380."
+  },
+  "recovery": [
+    {
+      "decision": 6,
+      "description": "Astra cited empty fingers and the frame away from the hand; selected a deeper regrasp in decision 7 and split the rotation across decisions 8/9."
+    },
+    {
+      "decision": 12,
+      "description": "Insertion ended 40.28 mm above target with load/stall flags; Astra cited a firm stop/increased load before release in decision 13."
+    },
+    {
+      "decision": 18,
+      "description": "Tool approach ended 88.72 mm from target after load; decision 19 selected lift/turn, but its wrist rotation ended 1.342 rad short."
+    },
+    {
+      "decision": 20,
+      "description": "Astra explicitly noticed incomplete orientation and requested settling; position still ended 46.27 mm from target."
+    },
+    {
+      "decision": 24,
+      "description": "Astra described the hook visible through the larger opening. Final translations reached within 1.5 mm of EEF targets, but the eventual required tool/hook relation was incorrect."
+    },
+    {
+      "decision": 26,
+      "description": "Declared full completion after release, with five decisions and 340 control steps unused. Frame native check passes; tool check never passed."
+    }
+  ],
+  "native_check_transitions": [
+    {
+      "step": 1,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1167,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1177,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1678,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1680,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "step": 1681,
+      "checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    }
+  ],
+  "native_terminal_checks": "Frame passes. Larger-hole center is 43.748 mm from hook line (limit 6.75 mm), no horizontal-hook contact, and failed straddling despite insertion fraction 0.7208. Neither hole passes.",
+  "terminal_contact_context": "Tool larger ring contacts frame_grip_frame; smaller ring contacts table_collision. No terminal robot/tool contact appears in rebuilt geometry. Contact geometry does not reconstruct forces or prove load support.",
+  "mechanism_interpretation": "Timed execution continued after a declared empty-sized warning, but Astra recovered the slip. Final failure is an object-relation/completion-judgment error, not an empty grasp. The matched guarded episode succeeds after two interrupts and a different recovery placement, which does not identify those stops as the sole cause of final success.",
+  "replay": "All 2060 recovered trajectory states, 38 camera snapshots, 2040 monitor/action rows and 2060 native checks reproduce exactly. Reconstructed 580-step prefix matched retained original robot/object/scoring records and final RGB-D; original full hidden prefix arrays were not retained.",
+  "infrastructure": "Same-context recovery after intentional root interruption. Already-completed decision 8 relayed unchanged without another inference; one dispatch/delivery interval missing, recovered host origin approximate.",
+  "reason_scope": "Short returned command reasons audited against public measurements and executed motion; private geometry only diagnoses discrepancy. No private internal reasoning exported."
+}

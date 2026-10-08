@@ -1,0 +1,64 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.089,
+          -0.022,
+          0.95
+        ],
+        "quaternion_xyzw": [
+          0.5,
+          0.8660254,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 75
+      },
+      {
+        "position": [
+          -0.089,
+          -0.022,
+          0.822
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          -0.089,
+          -0.022,
+          0.822
+        ],
+        "gripper": 1,
+        "steps": 30,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.06,
+          -0.1,
+          0.98
+        ],
+        "gripper": 1,
+        "steps": 50,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Recover the tool by its handle and lift it clear of the stand base for another placement attempt."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v2_s02_guard",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/public/obs_0014/sense_021.json. You may cat this permitted sensor result file. The images and robot readings in obs_0014 remain current; no motion has occurred. 21 decisions have been executed, with 9 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.089,-0.022,0.95],\"quaternion_xyzw\":[0.5,0.8660254,0,0],\"gripper\":-1,\"steps\":75},{\"position\":[-0.089,-0.022,0.822],\"gripper\":-1,\"steps\":45},{\"position\":[-0.089,-0.022,0.822],\"gripper\":1,\"steps\":30,\"abort_if_empty_close\":true},{\"position\":[-0.06,-0.10,0.98],\"gripper\":1,\"steps\":50,\"abort_if_empty_close\":true}],\"reason\":\"Recover the tool by its handle and lift it clear of the stand base for another placement attempt.\"}",
+    "response_timestamp": "2026-10-08T07:53:55.590Z",
+    "message_id": "amsg_01a11a81-2c83-7961-9293-7478b822d537",
+    "dispatch_timestamp": "2026-10-08T07:53:16.840Z",
+    "policy_wall_seconds": 38.75,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s02_guard/policy_update_022.txt"
+  }
+}
