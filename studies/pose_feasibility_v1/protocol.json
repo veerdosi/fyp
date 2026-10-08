@@ -7,12 +7,13 @@
   "scheduled_episode_count": 4,
   "episodes": [
     {
-      "episode_id": "pf_v1_s01_waypoints",
+      "episode_id": "pf_v1_s01_waypoints_corrected",
       "paired_state": 1,
       "seed": 701,
       "state_index": 41,
       "condition": "direct_waypoints_encoder",
-      "execution_order": 1
+      "execution_order": 2,
+      "runtime": "Corrected common computation PATH, verified through actual wrapper"
     },
     {
       "episode_id": "pf_v1_s01_preview",
@@ -20,7 +21,8 @@
       "seed": 701,
       "state_index": 41,
       "condition": "pose_preview",
-      "execution_order": 2
+      "execution_order": 1,
+      "runtime": "Corrected common computation PATH, verified through actual wrapper"
     },
     {
       "episode_id": "pf_v1_s02_preview",
@@ -28,7 +30,8 @@
       "seed": 702,
       "state_index": 42,
       "condition": "pose_preview",
-      "execution_order": 3
+      "execution_order": 3,
+      "runtime": "Corrected common computation PATH, verified through actual wrapper"
     },
     {
       "episode_id": "pf_v1_s02_waypoints",
@@ -36,7 +39,8 @@
       "seed": 702,
       "state_index": 42,
       "condition": "direct_waypoints_encoder",
-      "execution_order": 4
+      "execution_order": 4,
+      "runtime": "Corrected common computation PATH, verified through actual wrapper"
     }
   ],
   "model": "gpt-6-astra",
@@ -164,8 +168,8 @@
       }
     ],
     "episode_order": [
-      "pf_v1_s01_waypoints",
       "pf_v1_s01_preview",
+      "pf_v1_s01_waypoints_corrected",
       "pf_v1_s02_preview",
       "pf_v1_s02_waypoints"
     ],
@@ -232,7 +236,7 @@
       "Complete host elapsed with interruptions labeled",
       "Recorded token usage and API-equivalent cost"
     ],
-    "interpretation": "Two matched starts give a mechanism screen, not a general success-rate estimate. Completion-resource ratios require jointly successful matched outcomes. Non-use stays in its assigned condition. No post-outcome count changes or replacement runs.",
+    "interpretation": "Two valid matched pairs under corrected common computation access. The broken run was removed at user request; retain only the runtime lesson and shared-wrapper verification. Completion-resource ratios require jointly successful matched outcomes.",
     "failure_criterion": "If the query is unused or does not change unsupported pose choices and there is no paired task/resource benefit, report no demonstrated interface contribution and move to the next trace-supported mechanism. Fewer moves/calls in failed runs do not establish faster completion. Favorable evidence requires the predicted choice/motion change as well as the applicable outcome.",
     "implementation_gate": "Paired fixed execution proves previews leave physics unchanged, public FK/joint bounds match, invalid inputs consume decisions, logs and replay are complete. Freeze all implemented source hashes and exact common prompts before any Astra dispatch; dispatch saved text verbatim and audit actual plaintext equality.",
     "third_start": "Not scheduled; requires a specific necessary uncertainty recorded before launch."
@@ -275,16 +279,24 @@
     "studies/pose_feasibility_v1/verification_result.json": "b488429a4845ffae7ff78f752431cede6f0759cf58ddc6fc56cb28223e1a82e7",
     "studies/pose_feasibility_v1/prompt_verification.json": "fc8e25f97b37d6a88e194334f2c53705306eec02becda07a756d57968bca8b3a",
     "studies/pose_feasibility_v1/calculation_runtime_verification.json": "1ff20345474ec1581417f1253e2307d0218b6653784158af025382c7dbec0cc0",
-    "studies/pose_feasibility_v1/amendment_001.json": "bb57fd9a0514c55bbdb0c6695a1890b327d37220e233aa95189fdaabd834d6cd"
+    "studies/pose_feasibility_v1/amendment_001.json": "4b63a2c435199762495765c68bcc844e1f8722b5a9ce9acd4b81c457491aa577",
+    "studies/pose_feasibility_v1/amendment_002.json": "28c55054d3bd7e3ed07aa1d07ad391f90df88ba2d2b481b41032ba646b8840ec"
   },
   "required_dispatch": "Use saved policy_initial.txt bytes verbatim; compare actual dispatch plaintext before interpreting matched outcomes.",
   "analysis_scope": "Two-start mechanism screen; every outcome retained and no replacement episodes; completion efficiency only on jointly successful matched outcomes.",
   "amendments": [
     {
       "file": "amendment_001.json",
-      "after_episode": "pf_v1_s01_waypoints",
-      "first_pair": "exploratory runtime confound",
-      "remaining_same_counts": true
+      "common_runtime_repair": true
+    },
+    {
+      "file": "amendment_002.json",
+      "user_requested_corrected_baseline": true
+    },
+    {
+      "user_requested_removal_of_broken_records": true,
+      "learning": "calculation_runtime_learning.md"
     }
-  ]
+  ],
+  "valid_comparison_episode_count": 4
 }

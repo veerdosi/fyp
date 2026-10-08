@@ -15,8 +15,8 @@ records the independent object-relation question and the decision after this bat
 Start and prepare a fresh episode:
 
 ```sh
-.venv/bin/python scripts/start_pose_preview_episode.py pf_v1_s01_waypoints --port 8765
-.venv/bin/python scripts/prepare_pose_preview_policy.py runs/pf_v1_s01_waypoints
+.venv/bin/python scripts/start_pose_preview_episode.py pf_v1_s01_waypoints_corrected --port 8765
+.venv/bin/python scripts/prepare_pose_preview_policy.py runs/pf_v1_s01_waypoints_corrected
 ```
 
 Dispatch the saved `policy_initial.txt` verbatim to a fresh GPT-6 Astra / medium
@@ -39,7 +39,7 @@ requests. Re-running a fixture requires fresh directories; old artifacts are ret
 Replay recorded motion with:
 
 ```sh
-.venv/bin/python studies/pose_feasibility_v1/replay.py --run runs/pf_v1_s01_waypoints
+.venv/bin/python studies/pose_feasibility_v1/replay.py --run runs/pf_v1_s01_waypoints_corrected
 ```
 
 That helper verifies motion/sensors/feedback/scoring, genuine current joint angles,
@@ -51,9 +51,8 @@ solver never loads a scene, hidden object poses, contacts or native success chec
 Bounded no-solution is not global unreachability, and solutions do not certify motion
 arrival, collision clearance, grasp or task completion.
 
-Runtime amendment 001 preserves the original freeze in `protocol_initial.json`.
-The first baseline had two failed MuJoCo imports because the calculation PATH omitted
-`/usr/sbin`. The common repair was recorded before its terminal outcome, verified
-through the real wrapper in both conditions, and applied after that episode. The
-first pair is exploratory; only the second has matched repaired helper availability.
-Counts and outcomes remain unchanged. No replacement or third start is scheduled.
+The shared calculation wrapper PATH is corrected and verified in both conditions.
+User-authorized amendment 002 schedules a fresh corrected first baseline, paired
+with the current corrected preview. Four episodes on two states form the comparison.
+The broken run records were removed at user request; only the runtime learning and
+zero-policy verification remain. No third state is scheduled.

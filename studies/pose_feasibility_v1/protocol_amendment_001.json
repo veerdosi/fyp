@@ -1,0 +1,290 @@
+{
+  "study_id": "pose_feasibility_v1",
+  "frozen_before_new_state_inspection_and_policy_inference": true,
+  "task": "ToolHang",
+  "suite": "robosuite",
+  "paired_state_count": 2,
+  "scheduled_episode_count": 4,
+  "episodes": [
+    {
+      "episode_id": "pf_v1_s01_waypoints",
+      "paired_state": 1,
+      "seed": 701,
+      "state_index": 41,
+      "condition": "direct_waypoints_encoder",
+      "execution_order": 1
+    },
+    {
+      "episode_id": "pf_v1_s01_preview",
+      "paired_state": 1,
+      "seed": 701,
+      "state_index": 41,
+      "condition": "pose_preview",
+      "execution_order": 2
+    },
+    {
+      "episode_id": "pf_v1_s02_preview",
+      "paired_state": 2,
+      "seed": 702,
+      "state_index": 42,
+      "condition": "pose_preview",
+      "execution_order": 3
+    },
+    {
+      "episode_id": "pf_v1_s02_waypoints",
+      "paired_state": 2,
+      "seed": 702,
+      "state_index": 42,
+      "condition": "direct_waypoints_encoder",
+      "execution_order": 4
+    }
+  ],
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "shared": {
+    "size": 256,
+    "max_steps": 2400,
+    "max_calls": 30,
+    "settle_steps": 20
+  },
+  "calibration": {
+    "weights": [
+      [
+        0.00011597331995126807,
+        -0.0032999546646563893,
+        0.005398691720831235,
+        -0.005314968289570196,
+        0.00036711512804012966,
+        0.00012700704815009692
+      ],
+      [
+        -9.230994240372179e-07,
+        -0.5202342345842889,
+        0.0002870755442275774,
+        0.07337464432366964,
+        1.0072194906745021e-06,
+        -3.1389047178365185e-06
+      ],
+      [
+        0.5200155290499487,
+        1.5811057072128322e-05,
+        -1.0176507684060533e-05,
+        8.108820059450572e-06,
+        0.07350126823112052,
+        -2.6091546404501544e-05
+      ],
+      [
+        -1.2226639597053639e-05,
+        0.00032166083935880927,
+        -0.5205333195729372,
+        0.0005256736015571068,
+        -3.843400442548122e-05,
+        -1.3880320715296762e-05
+      ],
+      [
+        -8.687483817362176e-06,
+        5.229775622030752e-06,
+        -3.77683959397263e-06,
+        1.9285756488880986e-06,
+        -4.9996571950523754e-05,
+        -2.8287351392290176e-05
+      ]
+    ],
+    "empty_max": 0.0009996828912520249,
+    "source": "Both fixed empty-gripper training calibrations; no task contact labels.",
+    "empty_threshold_m": 0.002999682891252025
+  },
+  "solver_parameters": {
+    "frozen_before_solver_implementation_and_scoring": true,
+    "scope": "Robot-only kinematic development screen on all predefined discriminator waypoints",
+    "actual_astra_requests": 0,
+    "robot_model": "robot_kinematics.xml; known Panda, gripper and fixed base calibration only",
+    "inputs": "current robot joint positions, policy-requested world EEF position/quaternion",
+    "position_tolerance_m": 0.001,
+    "orientation_tolerance_rad": 0.01,
+    "joint_bound_margin_rad": 0.017453292519943295,
+    "orientation_residual_scale_m_per_rad": 0.1,
+    "maximum_function_evaluations_per_seed": 150,
+    "seeds": [
+      "current",
+      "nominal",
+      "current_plus_fixed_joint1_and_joint7_offset",
+      "current_minus_fixed_joint1_and_joint7_offset"
+    ],
+    "fixed_offset_rad": [
+      0.3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.3
+    ],
+    "nominal_q_rad": [
+      0,
+      0.19634954084936207,
+      0,
+      -2.6179938779914944,
+      0,
+      2.941592653589793,
+      0.7853981633974483
+    ],
+    "selection": "Prefer a tolerance-passing solution, then smallest pose residual; log all seed outputs and runtime. No tuning after seeing results.",
+    "no_solution_scope": "No solution found within this bounded local search; not proof of global unreachability",
+    "excluded_claims": [
+      "scene collision clearance",
+      "grasp retention",
+      "dynamic arrival",
+      "correct object relation",
+      "task completion"
+    ],
+    "decision": "If known correct poses fail the solver or FK boundary, do not expose it. If solver reports solutions for physically failed motions too, retain as a limited geometric preview, not a motion-success predictor; select a stronger embodiment interface or observation representation before policy evaluation."
+  },
+  "common_empty_interrupt": true,
+  "selection": {
+    "study_id": "pose_feasibility_v1",
+    "frozen_before_interface_implementation_and_new_policy_runs": true,
+    "prediction": "A cheap structured pose-IK query can help Astra avoid coupled EEF targets for which the bounded search finds no solution, reducing wasted motions and corrective turns. Full task benefit remains uncertain because contact, grasp retention and wrong object relations are outside this measurement.",
+    "hypothesis_family": "H4 bounded computational delegation; revised robot-feasibility representation",
+    "task": "ToolHang",
+    "suite": "robosuite",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "fresh_context_each_episode": true,
+    "matched_starts": [
+      {
+        "pair": 1,
+        "seed": 701,
+        "state_index": 41
+      },
+      {
+        "pair": 2,
+        "seed": 702,
+        "state_index": 42
+      }
+    ],
+    "episode_order": [
+      "pf_v1_s01_waypoints",
+      "pf_v1_s01_preview",
+      "pf_v1_s02_preview",
+      "pf_v1_s02_waypoints"
+    ],
+    "conditions": {
+      "waypoints": "Credible direct poses/short waypoint replanning, shared empty-closure invalidation, raw robot/sensor/model access and permitted temporary calculations.",
+      "preview": "Exactly the same motion semantics and inputs, plus optional structured robot-only pose-feasibility query. Astra selects every candidate, motion and recovery."
+    },
+    "preview": {
+      "candidate_limit": 4,
+      "consumes_one_robot_decision": true,
+      "advances_physics": false,
+      "automatic_replacement_or_cancellation": false,
+      "solver_parameters": "feasibility_screen_protocol.json unchanged",
+      "outputs": [
+        "bounded_solution_found",
+        "pose_residuals",
+        "joint_limit_margin",
+        "solver_runtime",
+        "no_collision_or_dynamic_success_certificate"
+      ],
+      "inputs": "Current measured robot joint positions, known robot/base model and Astra-selected world EEF poses only."
+    },
+    "common": {
+      "controller": "Existing OSC_POSE, unchanged gains/scales/nullspace behavior",
+      "initial_settle_steps": 20,
+      "control_frequency_hz": 20,
+      "maximum_control_steps": 2400,
+      "maximum_robot_decisions": 30,
+      "maximum_waypoints_per_move": 4,
+      "maximum_steps_per_waypoint": 100,
+      "maximum_steps_per_move": 200,
+      "position_increment_cap_m": 0.015,
+      "orientation_increment_cap_rad": 0.15,
+      "workspace_lower": [
+        -0.55,
+        -0.55,
+        0.76
+      ],
+      "workspace_upper": [
+        0.55,
+        0.65,
+        1.6
+      ],
+      "shared_empty_guard": "Existing explicitly armed empty-sized closure interrupt, same calibration and thresholds in both conditions.",
+      "public_inputs": "Same RGB-D, ideal calibration, fresh joint encoder positions, robot kinematics, EEF/finger/joint-velocity/wrist measurements and processed feedback.",
+      "temporary_calculations": "Same libraries, access to public kinematic helper/model, logging and 30-second calculation limit in both conditions.",
+      "private_state": "Scoring/offline diagnosis only; never preview or policy inputs.",
+      "physics_paused_during_inference": true
+    },
+    "primary_outcome": "Full unchanged native task success at episode termination.",
+    "mechanism_outcomes": [
+      "Optional query uptake, candidate results and subsequent model choices, including ignored warnings",
+      "Fraction of executed waypoint exits outside 3 mm / 0.03 rad pose tolerance, reported separately from task success",
+      "Executed and repeated substantially nonarriving wrist turns, with original requests retained",
+      "First causal failure, acquisition/slip/contact/placement/completion judgment separated"
+    ],
+    "resources": [
+      "Robot decisions",
+      "Actual usage-recorded inference requests",
+      "Calculation/tool calls",
+      "Simulated time",
+      "Native policy time",
+      "Local query/execution time",
+      "Complete host elapsed with interruptions labeled",
+      "Recorded token usage and API-equivalent cost"
+    ],
+    "interpretation": "Two matched starts give a mechanism screen, not a general success-rate estimate. Completion-resource ratios require jointly successful matched outcomes. Non-use stays in its assigned condition. No post-outcome count changes or replacement runs.",
+    "failure_criterion": "If the query is unused or does not change unsupported pose choices and there is no paired task/resource benefit, report no demonstrated interface contribution and move to the next trace-supported mechanism. Fewer moves/calls in failed runs do not establish faster completion. Favorable evidence requires the predicted choice/motion change as well as the applicable outcome.",
+    "implementation_gate": "Paired fixed execution proves previews leave physics unchanged, public FK/joint bounds match, invalid inputs consume decisions, logs and replay are complete. Freeze all implemented source hashes and exact common prompts before any Astra dispatch; dispatch saved text verbatim and audit actual plaintext equality.",
+    "third_start": "Not scheduled; requires a specific necessary uncertainty recorded before launch."
+  },
+  "source_hashes": {
+    "src/fyp/__init__.py": "04f95911a59d72d6023224ee385d43870b28b640030b0beeec6a25f0061a5fc8",
+    "src/fyp/episode.py": "b8a363a8ea881ce7c5c845e2a5913e7aacfe07a418635907778fdb7dd77e324d",
+    "src/fyp/feedback_runtime.py": "24aaba18d68e6d631a414e838e2645b91923e297693cf88802a9d63fff282665",
+    "src/fyp/grip_guard.py": "b2a3be166dd1ce29454d4616739115d7481df9d14fa79f193b99ec5a0ee81a89",
+    "src/fyp/kinematic_preview.py": "5b37b825aee0a507ceef6632b468150eecf3fdb7837cd41c5ac91d9438194a78",
+    "src/fyp/motion.py": "22512f8abfd6b0aaaec0eb26537ccbbc3abdd78eea6ee3d9ddd4ac5ec477ec90",
+    "src/fyp/pose_preview.py": "5f8b9337167defce4b30b8cc61b71a7aac431fbbc3431481b65da1b4453aaffd",
+    "src/fyp/robosuite_runtime.py": "bafa78b610d2392955cf896487e7c43f82e0bcd2f59a48b891516558b4531505",
+    "src/fyp/runtime.py": "875e5bfba2f67b1f7b1e974b4ebef2ecb1d189a7846bba92a63ad8cbf9e8a4fc",
+    "src/fyp/sensor_monitor.py": "b1011680b38c8472f83b1feeb07f13ace6fc093603fb96431ffaedd8170fd891",
+    "scripts/analyze_study.py": "a05878c071e9fd37990f1fdd289798a61f2e99cea68fc6b3ca9e3f4c006347ff",
+    "scripts/episode.py": "3fa67f734b25afcbe4c6391b7cbcc7f548d59465a01e5c6e2938ea13ff89a1a2",
+    "scripts/export_policy_tools.py": "1befeb42cc8a95822961c03b2185680d6fc0e086877a16cc10affb862a6e37bc",
+    "scripts/export_policy_usage.py": "d1c9362f83cf7da9af224e82f099303744feb9d6692c4ee49987ab50a465343e",
+    "scripts/policy_access.py": "1af0dbe8b9d47a3b9d9bc425592947b0481d979dc8dffdf092102de854bdf822",
+    "scripts/policy_calc.py": "abe877bf05f6b7e989044256e8fa9a618006797311b7a5679abcb7ad916d800f",
+    "scripts/prepare_feedback_policy.py": "2728610df7f712ed7662abfb48e16e3ddc1d981c3bf52eacbea3b6013050733d",
+    "scripts/prepare_handoff.py": "8a1e854cfd0801cfa25ab30a8b55ba212ad759150be3e06a33e27c8ba47db7ec",
+    "scripts/prepare_policy.py": "f3159fc7f00d3bb9a42f14b8c4869d914c0db4bd60dbe5498026d6660c664b87",
+    "scripts/prepare_pose_preview_handoff.py": "9884ee825876890b9ccadf7de7ee6aab32a6d849797150aa4f150b7c84f0856c",
+    "scripts/prepare_pose_preview_policy.py": "5678475fa59950ec4b76d948a2deb615e631fcdbec22f04246accdcd0559321a",
+    "scripts/probe.py": "2b38e2942f9ff421e0e179290e4f91009b16234c0e7da5e4cd517428c61da89a",
+    "scripts/relay_policy.py": "622111c8e61b6c068645565463416b65b2900e28a2967af42b2de51355a1023d",
+    "scripts/send_command.py": "7687c442a32ca5445d24ff08e545651d2bbc3a9b95acefff999d9478b20a80ce",
+    "scripts/start_feedback_episode.py": "fb28e21df887dc771e46dc73d2f601b94e7ad784a0045ef47ef68d34bddaaa63",
+    "scripts/start_pose_preview_episode.py": "2a4bd47d74008f676944e88b3cb88886d0b035d90351370d356d9b9dd284563a",
+    "scripts/start_study_episode.py": "5828f3541af1a0f899ffe2e237fd45f76d1b29409ad8dee6f4ba38d39026dd6f",
+    "scripts/summarize_episode.py": "6f6b1920903a1253b2c3b567559fea49be55caba05b1a0d4cae3ea044adec55c",
+    "scripts/verify_phase_execution.py": "8064b3d23c95827dfad09983e481e61e2fff735d7be8067a1db84d9c2f353869"
+  },
+  "material_hashes": {
+    "studies/mechanism_selection/mechanism_protocol.json": "2f7d6eb3b8dcf55cdd6692935d29550642ca699930fb2ac40f92438740354a2e",
+    "docs/policy_prompt_template.txt": "2b14352d557c05a5df23c4d966afae79f9f717ff8911b55ff3879cfb240ecd83",
+    "studies/pose_feasibility_v1/solver_parameters.json": "6c96169fbf1c301ad3ef66e743fbe29e41edbcd268675d1ee18dce6dac3224f4",
+    "studies/pose_feasibility_v1/verification_result.json": "b488429a4845ffae7ff78f752431cede6f0759cf58ddc6fc56cb28223e1a82e7",
+    "studies/pose_feasibility_v1/prompt_verification.json": "fc8e25f97b37d6a88e194334f2c53705306eec02becda07a756d57968bca8b3a",
+    "studies/pose_feasibility_v1/calculation_runtime_verification.json": "1ff20345474ec1581417f1253e2307d0218b6653784158af025382c7dbec0cc0",
+    "studies/pose_feasibility_v1/amendment_001.json": "bb57fd9a0514c55bbdb0c6695a1890b327d37220e233aa95189fdaabd834d6cd"
+  },
+  "required_dispatch": "Use saved policy_initial.txt bytes verbatim; compare actual dispatch plaintext before interpreting matched outcomes.",
+  "analysis_scope": "Two-start mechanism screen; every outcome retained and no replacement episodes; completion efficiency only on jointly successful matched outcomes.",
+  "amendments": [
+    {
+      "file": "amendment_001.json",
+      "after_episode": "pf_v1_s01_waypoints",
+      "first_pair": "exploratory runtime confound",
+      "remaining_same_counts": true
+    }
+  ]
+}

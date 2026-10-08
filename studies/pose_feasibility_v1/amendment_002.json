@@ -1,0 +1,19 @@
+{
+  "amendment": 2,
+  "user_requested": true,
+  "authorization": "Redo the first baseline with correct code; remove broken records and keep only learning.",
+  "corrected_episode": "pf_v1_s01_waypoints_corrected",
+  "comparison": {
+    "matched_starts": 2,
+    "scheduled_episodes": 4
+  },
+  "order": [
+    "pf_v1_s01_preview",
+    "pf_v1_s01_waypoints_corrected",
+    "pf_v1_s02_preview",
+    "pf_v1_s02_waypoints"
+  ],
+  "policy": "Fresh Astra medium context; identical corrected source/sensors/initial state/model/controller/budgets. No prior outcome or hints.",
+  "removed_records": "User-requested deletion, excluded from all results; no retained episode trace or outcome.",
+  "learning": "calculation_runtime_learning.md"
+}
