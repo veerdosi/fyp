@@ -1,0 +1,12 @@
+{
+  "reviewer": "Sol",
+  "method": "Manual inspection of all 30 exported native tool invocation bodies after episode termination.",
+  "tool_boundary_pass": true,
+  "delegation_calls": 0,
+  "repository_or_simulator_reads": 0,
+  "temporary_calculation_executions": 0,
+  "observed_access": "Only the current episode public RGB images, sensing replies, execution reports and robot observations. No code or files were written by Astra in this episode.",
+  "os_sandbox": false,
+  "input_boundary": "Initial plaintext unavailable; see input_logging_erratum.json. Tool audit does not repair that prompt gap.",
+  "source_tools_sha256": "b9eee3abbbaaf46312f36e161ded705ea8b674190b4cf47a33fc85031364d9bc"
+}

@@ -1,0 +1,93 @@
+{
+  "condition": "direct_waypoints_feedback",
+  "interrupt_empty": false,
+  "waypoints": [
+    {
+      "waypoint_index": 0,
+      "first_step": 1186,
+      "last_step": 1265,
+      "requested_steps": 80,
+      "executed_steps": 80,
+      "armed": false,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      },
+      "terminal_measurement": {
+        "position_error_m": 0.332425041295217,
+        "orientation_error_rad": 0.045331183683183875,
+        "linear_speed_m_s": 0.04960952980925659,
+        "angular_speed_rad_s": 0.003191562481620922,
+        "finger_speed_m_s": 1.1320784426783473e-05,
+        "settled_sample": false
+      },
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.7659214970696194,
+        0.6429341026315474,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "waypoint_index": 1,
+      "first_step": 1266,
+      "last_step": 1330,
+      "requested_steps": 65,
+      "executed_steps": 65,
+      "armed": false,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      },
+      "terminal_measurement": {
+        "position_error_m": 0.34180698593458714,
+        "orientation_error_rad": 0.036747684540518896,
+        "linear_speed_m_s": 0.047842707783197075,
+        "angular_speed_rad_s": 0.0010024877250643452,
+        "finger_speed_m_s": 4.011843197845555e-06,
+        "settled_sample": false
+      },
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.7659429678497768,
+        0.6425090225784723,
+        -0.017440070709899568,
+        -0.014469617837581706
+      ]
+    },
+    {
+      "waypoint_index": 2,
+      "first_step": 1331,
+      "last_step": 1360,
+      "requested_steps": 30,
+      "executed_steps": 30,
+      "armed": true,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": 1355
+      },
+      "terminal_measurement": {
+        "position_error_m": 0.2713995782659467,
+        "orientation_error_rad": 0.03576204653313702,
+        "linear_speed_m_s": 0.046565097616344975,
+        "angular_speed_rad_s": 0.0027092947649750825,
+        "finger_speed_m_s": 0.0007348880708217246,
+        "settled_sample": false
+      },
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.7657537295832902,
+        0.6418286925349973,
+        -0.03012026892246678,
+        -0.027747512827918597
+      ]
+    }
+  ],
+  "note": "Sensor flags are observations; not-empty-sized is not acquired, seated or complete.",
+  "stop_reason": "sequence_complete",
+  "remaining_waypoints_cancelled": 0
+}

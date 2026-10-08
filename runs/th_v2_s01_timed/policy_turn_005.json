@@ -1,0 +1,54 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.097,
+          -0.244,
+          0.94
+        ],
+        "quaternion_xyzw": [
+          0.866,
+          0.5,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 70
+      },
+      {
+        "position": [
+          -0.097,
+          -0.244,
+          0.802
+        ],
+        "gripper": -1,
+        "steps": 65
+      },
+      {
+        "position": [
+          -0.097,
+          -0.244,
+          0.802
+        ],
+        "gripper": 1,
+        "steps": 35,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Regrasp the frame block at its mid-height, letting the open descent settle before closure."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v2_s01_timed",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0002/sense_004.json. You may cat this permitted sensor result file. The images and robot readings in obs_0002 remain current; no motion has occurred. 4 decisions have been executed, with 26 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.097,-0.244,0.94],\"quaternion_xyzw\":[0.866,0.5,0,0],\"gripper\":-1,\"steps\":70},{\"position\":[-0.097,-0.244,0.802],\"gripper\":-1,\"steps\":65},{\"position\":[-0.097,-0.244,0.802],\"gripper\":1,\"steps\":35,\"abort_if_empty_close\":true}],\"reason\":\"Regrasp the frame block at its mid-height, letting the open descent settle before closure.\"}",
+    "response_timestamp": "2026-10-07T20:28:02.978Z",
+    "message_id": "amsg_01a1180d-3c21-76d3-a61c-835fd69f15f2",
+    "dispatch_timestamp": "2026-10-07T20:27:47.019Z",
+    "policy_wall_seconds": 15.959,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/policy_update_005.txt"
+  }
+}

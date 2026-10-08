@@ -1,0 +1,13 @@
+{
+  "paired_state": 1,
+  "initial_physics_exact": true,
+  "initial_rgb_depth_calibration_exact": [
+    "agentview_depth_m.npy",
+    "calibration.json",
+    "agentview.png",
+    "robot0_eye_in_hand_depth_m.npy",
+    "robot0_eye_in_hand.png"
+  ],
+  "initial_prompt_matched": false,
+  "prompt_erratum": "amendment_002_encrypted_input_erratum.json"
+}

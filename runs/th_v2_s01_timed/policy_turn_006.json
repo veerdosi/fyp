@@ -1,0 +1,30 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.097,
+          -0.244,
+          1.12
+        ],
+        "gripper": 1,
+        "steps": 90,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Lift vertically and inspect whether the frame follows before changing orientation."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v2_s01_timed",
+    "policy_visible_input": "Fresh observation 3 after your motion command, step 445, simulated time 22.25 seconds. 5 decisions have been executed; 25 model decisions and 1955 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0003/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0003/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0003/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0003/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.097,-0.244,1.12],\"gripper\":1,\"steps\":90,\"abort_if_empty_close\":true}],\"reason\":\"Lift vertically and inspect whether the frame follows before changing orientation.\"}",
+    "response_timestamp": "2026-10-07T20:28:36.205Z",
+    "message_id": "amsg_01a1180d-bded-72e0-8d6e-4914d2c7b2bd",
+    "dispatch_timestamp": "2026-10-07T20:28:23.656Z",
+    "policy_wall_seconds": 12.549,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/policy_update_006.txt"
+  }
+}

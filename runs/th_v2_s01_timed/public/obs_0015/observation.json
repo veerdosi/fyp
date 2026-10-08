@@ -1,0 +1,147 @@
+{
+  "observation_id": 15,
+  "step": 1975,
+  "simulated_seconds": 98.75,
+  "model_calls": 21,
+  "remaining_steps": 425,
+  "remaining_model_calls": 9,
+  "proprioception": {
+    "robot0_eef_pos": [
+      0.06459943705737063,
+      -0.1818541681737,
+      1.1187259287381957
+    ],
+    "robot0_eef_quat": [
+      0.6426507876156247,
+      -0.7661502654082367,
+      -0.0029952826373012653,
+      0.0021827216559075486
+    ],
+    "robot0_joint_vel": [
+      -0.0037497349822154433,
+      0.006594149045570817,
+      2.1471934768287174e-05,
+      0.02826772982103102,
+      -2.553046003449149e-05,
+      -0.030946946935648596,
+      4.787353546007626e-05
+    ],
+    "robot0_gripper_qpos": [
+      0.015218402802170872,
+      -0.015181131139858773
+    ],
+    "robot0_gripper_qvel": [
+      -3.310862715202725e-05,
+      -3.3097941746098766e-05
+    ],
+    "robot0_eef_force": [
+      -0.06619887405077189,
+      -0.0016815366604586023,
+      -6.815652744836589
+    ],
+    "robot0_eef_torque": [
+      -0.0018079550799996774,
+      -0.002968646559040706,
+      0.0009263190012969181
+    ]
+  },
+  "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0015",
+  "cameras": {
+    "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0015/agentview.png",
+    "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0015/robot0_eye_in_hand.png"
+  },
+  "execution_report": {
+    "condition": "direct_waypoints_feedback",
+    "interrupt_empty": false,
+    "waypoints": [
+      {
+        "waypoint_index": 0,
+        "first_step": 1806,
+        "last_step": 1860,
+        "requested_steps": 55,
+        "executed_steps": 55,
+        "armed": false,
+        "first_flags": {
+          "load_change": null,
+          "stalled_motion": null,
+          "empty_sized_closure": null
+        },
+        "terminal_measurement": {
+          "position_error_m": 0.0005759249596936172,
+          "orientation_error_rad": 0.001580595718698575,
+          "linear_speed_m_s": 3.3465599409758325e-05,
+          "angular_speed_rad_s": 5.878015105159803e-05,
+          "finger_speed_m_s": 4.812135235221692e-06,
+          "settled_sample": true
+        },
+        "status": "duration_elapsed",
+        "resolved_quaternion_xyzw": [
+          0.642809071693104,
+          -0.7660239626569969,
+          -0.0016445715742209985,
+          0.0010398887724732153
+        ]
+      },
+      {
+        "waypoint_index": 1,
+        "first_step": 1861,
+        "last_step": 1885,
+        "requested_steps": 25,
+        "executed_steps": 25,
+        "armed": true,
+        "first_flags": {
+          "load_change": 1870,
+          "stalled_motion": null,
+          "empty_sized_closure": null
+        },
+        "terminal_measurement": {
+          "position_error_m": 0.001977269071499755,
+          "orientation_error_rad": 0.0012196913402206897,
+          "linear_speed_m_s": 5.823805666137326e-05,
+          "angular_speed_rad_s": 8.022733310479778e-05,
+          "finger_speed_m_s": 0.0005253950224098525,
+          "settled_sample": true
+        },
+        "status": "duration_elapsed",
+        "resolved_quaternion_xyzw": [
+          0.6427036864853345,
+          -0.7661100116311654,
+          -0.002298651709779535,
+          0.0014620728345602833
+        ]
+      },
+      {
+        "waypoint_index": 2,
+        "first_step": 1886,
+        "last_step": 1975,
+        "requested_steps": 90,
+        "executed_steps": 90,
+        "armed": true,
+        "first_flags": {
+          "load_change": 1895,
+          "stalled_motion": null,
+          "empty_sized_closure": null
+        },
+        "terminal_measurement": {
+          "position_error_m": 0.0013434936444679912,
+          "orientation_error_rad": 0.001036345110440399,
+          "linear_speed_m_s": 0.008018240356825189,
+          "angular_speed_rad_s": 0.010890909999323425,
+          "finger_speed_m_s": 4.6815114436687047e-05,
+          "settled_sample": false
+        },
+        "status": "duration_elapsed",
+        "resolved_quaternion_xyzw": [
+          0.6425190627456824,
+          -0.7662629176639048,
+          -0.002562254465154695,
+          0.001957006301900311
+        ]
+      }
+    ],
+    "note": "Sensor flags are observations; not-empty-sized is not acquired, seated or complete.",
+    "stop_reason": "sequence_complete",
+    "remaining_waypoints_cancelled": 0
+  },
+  "feedback_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0015/sensor_feedback.json"
+}

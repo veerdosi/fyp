@@ -1,0 +1,7 @@
+{
+  "initial_plaintext_verified": false,
+  "initial_input_representation": "Native encrypted payload, not plaintext",
+  "followup_count": 28,
+  "followup_review": "Sol dispatched each exact saved policy_update_002 through policy_update_029 message without extra advice. Native archive task fields are encrypted; the saved plaintext and visible direct calls are the evidence.",
+  "initial_erratum": "input_logging_erratum.json"
+}

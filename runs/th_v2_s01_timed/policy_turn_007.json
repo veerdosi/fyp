@@ -1,0 +1,36 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.097,
+          -0.244,
+          1.15
+        ],
+        "quaternion_xyzw": [
+          0.61237,
+          0.35355,
+          -0.61237,
+          0.35355
+        ],
+        "gripper": 1,
+        "steps": 65,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "The frame followed the lift; rotate its insertion shaft downward while keeping it clear of the table."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v2_s01_timed",
+    "policy_visible_input": "Fresh observation 4 after your motion command, step 535, simulated time 26.75 seconds. 6 decisions have been executed; 24 model decisions and 1865 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0004/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0004/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0004/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0004/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.097,-0.244,1.15],\"quaternion_xyzw\":[0.61237,0.35355,-0.61237,0.35355],\"gripper\":1,\"steps\":65,\"abort_if_empty_close\":true}],\"reason\":\"The frame followed the lift; rotate its insertion shaft downward while keeping it clear of the table.\"}",
+    "response_timestamp": "2026-10-07T20:29:20.341Z",
+    "message_id": "amsg_01a1180e-6a55-7001-92eb-de05552fb704",
+    "dispatch_timestamp": "2026-10-07T20:29:08.577Z",
+    "policy_wall_seconds": 11.764,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/policy_update_007.txt"
+  }
+}

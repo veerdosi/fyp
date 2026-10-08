@@ -1,0 +1,25 @@
+{
+  "success": false,
+  "stop_reason": "policy_finish",
+  "diagnostic_goal_predicates": [
+    {
+      "predicate": [
+        "frame_assembled"
+      ],
+      "satisfied": true
+    },
+    {
+      "predicate": [
+        "tool_on_frame"
+      ],
+      "satisfied": false
+    }
+  ],
+  "control_steps": 2390,
+  "simulated_seconds": 119.5,
+  "wall_seconds": 21227.03225829202,
+  "model_calls": 29,
+  "cost_usd": null,
+  "cost_status": "unavailable for collaboration policy calls",
+  "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed"
+}

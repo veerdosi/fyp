@@ -1,0 +1,48 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.084,
+          0.039,
+          1.08
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.084,
+          0.039,
+          1.08
+        ],
+        "gripper": -1,
+        "steps": 25
+      },
+      {
+        "position": [
+          -0.16,
+          -0.1,
+          1.16
+        ],
+        "gripper": -1,
+        "steps": 65
+      }
+    ],
+    "reason": "Seat the frame a little farther, release it, and withdraw to inspect its support in the stand."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_th_v2_s01_timed",
+    "policy_visible_input": "Fresh observation 8 after your motion command, step 920, simulated time 46.0 seconds. 13 decisions have been executed; 17 model decisions and 1480 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0008/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0008/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0008/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/public/obs_0008/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.084,0.039,1.080],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true},{\"position\":[-0.084,0.039,1.080],\"gripper\":-1,\"steps\":25},{\"position\":[-0.16,-0.10,1.16],\"gripper\":-1,\"steps\":65}],\"reason\":\"Seat the frame a little farther, release it, and withdraw to inspect its support in the stand.\"}",
+    "response_timestamp": "2026-10-07T20:33:16.683Z",
+    "message_id": "amsg_01a11812-058a-7872-a533-4a97cf1d4116",
+    "dispatch_timestamp": "2026-10-07T20:32:59.675Z",
+    "policy_wall_seconds": 17.008,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed/policy_update_014.txt"
+  }
+}

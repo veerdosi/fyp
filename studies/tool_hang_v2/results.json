@@ -1,0 +1,456 @@
+{
+  "study_id": "tool_hang_v2",
+  "protocol_sha256": "00ee85b1efe38fbb32e8771a2b923d3fc3ad6643cefe0d49c00ee20303000065",
+  "trials": [
+    {
+      "episode_id": "th_v2_s01_timed",
+      "paired_state": 1,
+      "seed": 601,
+      "state_index": 31,
+      "condition": "direct_waypoints_feedback",
+      "execution_order": 1,
+      "status": "recorded",
+      "success": false,
+      "initial_prompt_verified": false,
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ],
+      "stop_reason": "policy_finish",
+      "decisions": 29,
+      "simulated_seconds": 119.5,
+      "total_host_wall_seconds": 21227.03225829202,
+      "source_revision": "935f3d7e61c0180c9e3c543067a07f1e77ce1d07",
+      "code_dirty": true,
+      "waypoints": 40,
+      "armed_waypoints": 22,
+      "empty_flagged_waypoints": 3,
+      "interrupted_commands": 0,
+      "cancelled_following_waypoints": 0,
+      "flagged_empty_motion_samples": 126,
+      "simulator_command_seconds": 45.18845904106274,
+      "feedback_publication_seconds": 0.042523044015979394,
+      "usage": {
+        "model": "gpt-6-astra",
+        "reasoning_effort": "medium",
+        "policy_decisions": 29,
+        "model_inference_requests": 59,
+        "agent_tool_calls": 30,
+        "completed_policy_turns": 29,
+        "policy_wall_seconds": 489.179,
+        "policy_time_note": "Sum of native task_complete.duration_ms; excludes operator waits between turns and subsequent delivery of the result to Sol. Dispatch-to-delivered-response is a separate clock.",
+        "token_usage": {
+          "input_tokens": 3186239,
+          "cached_input_tokens": 3044352,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8291,
+          "reasoning_output_tokens": 1802,
+          "total_tokens": 3194530
+        },
+        "api_equivalent_standard_cost_usd": 4.877772,
+        "actual_account_charge_usd": null,
+        "pricing": {
+          "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "accessed_date": "2026-10-06",
+          "per_million_tokens_usd": {
+            "uncached_input": 10,
+            "cached_input": 1,
+            "cache_write": 12.5,
+            "output": 50
+          },
+          "assumption": "Standard API rates; native account tier/speed/billing is unknown"
+        },
+        "cost_note": "An API-equivalent estimate from measured token records, not an account charge.",
+        "source_session": "/Users/veerdosi/.codex/sessions/2026/10/08/rollout-2026-10-08T04-19-25-01a11805-5728-7fa3-b284-d808189ba587.jsonl",
+        "model_effort_verification": {
+          "01a11805-57c1-7210-b40b-1a392474f686": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180a-c24f-7fe2-909a-1fe80bfdd458": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180b-7d1e-7681-bfbb-e97440437c33": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180c-4253-7972-a9f3-905827bedb0f": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180c-fdd2-7303-9220-7be001a1e2b2": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180d-8ced-76a3-a871-fbb1a6f183ac": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180e-3c64-7773-b79e-668b659f1ccb": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180e-c1fc-71f2-8a23-cb88bc7ac837": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180f-19ec-7d33-b0a9-30ccf33eea8d": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180f-9ad4-7bf3-9c84-f81c18df99a2": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1180f-e320-7bf1-bc31-60bfe51b064b": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11810-8586-74d3-912b-1a06db74f1f0": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11811-1be2-7231-9bd3-1ac34ec8eb73": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11811-c321-75d3-972f-40589166a159": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11812-4c53-7bd1-949a-2b01bf2161b6": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11812-ea6f-7311-b0e1-8bb5a116a463": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11813-39ec-7d52-907e-9f9794469ee1": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11814-2d97-7691-9f7c-e6409bae995a": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11814-f2b8-71e1-af2f-93a52c5172c7": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1193d-b9be-74a0-9463-4eb6521166c3": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1193e-7188-7802-85ea-fb1cb928eb89": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a1193f-296e-7b12-a636-79aef4fb170d": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11940-0dec-7752-885d-998cec605ad0": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11941-09c2-7421-9c6a-4475c43f7944": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11941-b5f4-7fd2-bb6a-ea9267732bf1": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11943-2fec-7a80-a85f-a49a7b6d510b": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11943-f901-7730-b5bf-c02ce707c23c": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11944-a465-7fc0-82e1-883f5e3578a0": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          },
+          "01a11945-6030-76c1-901e-8b11b44ab4c2": {
+            "model": "gpt-6-astra",
+            "effort": "medium"
+          }
+        },
+        "turn_timing": {
+          "01a11805-57c1-7210-b40b-1a392474f686": {
+            "started_at": 1791404365,
+            "completed_at": 1791404385,
+            "duration_ms": 19499,
+            "time_to_first_token_ms": 4655
+          },
+          "01a1180a-c24f-7fe2-909a-1fe80bfdd458": {
+            "started_at": 1791404720,
+            "completed_at": 1791404746,
+            "duration_ms": 26209,
+            "time_to_first_token_ms": 5814
+          },
+          "01a1180b-7d1e-7681-bfbb-e97440437c33": {
+            "started_at": 1791404768,
+            "completed_at": 1791404793,
+            "duration_ms": 25407,
+            "time_to_first_token_ms": 2003
+          },
+          "01a1180c-4253-7972-a9f3-905827bedb0f": {
+            "started_at": 1791404819,
+            "completed_at": 1791404836,
+            "duration_ms": 17179,
+            "time_to_first_token_ms": 2321
+          },
+          "01a1180c-fdd2-7303-9220-7be001a1e2b2": {
+            "started_at": 1791404867,
+            "completed_at": 1791404881,
+            "duration_ms": 14675,
+            "time_to_first_token_ms": 2357
+          },
+          "01a1180d-8ced-76a3-a871-fbb1a6f183ac": {
+            "started_at": 1791404903,
+            "completed_at": 1791404910,
+            "duration_ms": 6454,
+            "time_to_first_token_ms": 1681
+          },
+          "01a1180e-3c64-7773-b79e-668b659f1ccb": {
+            "started_at": 1791404948,
+            "completed_at": 1791404957,
+            "duration_ms": 8435,
+            "time_to_first_token_ms": 1911
+          },
+          "01a1180e-c1fc-71f2-8a23-cb88bc7ac837": {
+            "started_at": 1791404982,
+            "completed_at": 1791404992,
+            "duration_ms": 9406,
+            "time_to_first_token_ms": 3249
+          },
+          "01a1180f-19ec-7d33-b0a9-30ccf33eea8d": {
+            "started_at": 1791405005,
+            "completed_at": 1791405014,
+            "duration_ms": 8821,
+            "time_to_first_token_ms": 2807
+          },
+          "01a1180f-9ad4-7bf3-9c84-f81c18df99a2": {
+            "started_at": 1791405038,
+            "completed_at": 1791405046,
+            "duration_ms": 8129,
+            "time_to_first_token_ms": 2264
+          },
+          "01a1180f-e320-7bf1-bc31-60bfe51b064b": {
+            "started_at": 1791405056,
+            "completed_at": 1791405064,
+            "duration_ms": 8063,
+            "time_to_first_token_ms": 3053
+          },
+          "01a11810-8586-74d3-912b-1a06db74f1f0": {
+            "started_at": 1791405098,
+            "completed_at": 1791405114,
+            "duration_ms": 16069,
+            "time_to_first_token_ms": 8099
+          },
+          "01a11811-1be2-7231-9bd3-1ac34ec8eb73": {
+            "started_at": 1791405136,
+            "completed_at": 1791405147,
+            "duration_ms": 10895,
+            "time_to_first_token_ms": 3269
+          },
+          "01a11811-c321-75d3-972f-40589166a159": {
+            "started_at": 1791405179,
+            "completed_at": 1791405188,
+            "duration_ms": 9148,
+            "time_to_first_token_ms": 2226
+          },
+          "01a11812-4c53-7bd1-949a-2b01bf2161b6": {
+            "started_at": 1791405214,
+            "completed_at": 1791405226,
+            "duration_ms": 12160,
+            "time_to_first_token_ms": 3051
+          },
+          "01a11812-ea6f-7311-b0e1-8bb5a116a463": {
+            "started_at": 1791405255,
+            "completed_at": 1791405264,
+            "duration_ms": 9393,
+            "time_to_first_token_ms": 2510
+          },
+          "01a11813-39ec-7d52-907e-9f9794469ee1": {
+            "started_at": 1791405275,
+            "completed_at": 1791405284,
+            "duration_ms": 9023,
+            "time_to_first_token_ms": 2437
+          },
+          "01a11814-2d97-7691-9f7c-e6409bae995a": {
+            "started_at": 1791405338,
+            "completed_at": 1791405350,
+            "duration_ms": 12729,
+            "time_to_first_token_ms": 2109
+          },
+          "01a11814-f2b8-71e1-af2f-93a52c5172c7": {
+            "started_at": 1791405388,
+            "completed_at": 1791405397,
+            "duration_ms": 8978,
+            "time_to_first_token_ms": 2228
+          },
+          "01a1193d-b9be-74a0-9463-4eb6521166c3": {
+            "started_at": 1791424838,
+            "completed_at": 1791424866,
+            "duration_ms": 28728,
+            "time_to_first_token_ms": 16483
+          },
+          "01a1193e-7188-7802-85ea-fb1cb928eb89": {
+            "started_at": 1791424885,
+            "completed_at": 1791424895,
+            "duration_ms": 10416,
+            "time_to_first_token_ms": 3561
+          },
+          "01a1193f-296e-7b12-a636-79aef4fb170d": {
+            "started_at": 1791424932,
+            "completed_at": 1791424950,
+            "duration_ms": 18728,
+            "time_to_first_token_ms": 3387
+          },
+          "01a11940-0dec-7752-885d-998cec605ad0": {
+            "started_at": 1791424990,
+            "completed_at": 1791425012,
+            "duration_ms": 21673,
+            "time_to_first_token_ms": 2085
+          },
+          "01a11941-09c2-7421-9c6a-4475c43f7944": {
+            "started_at": 1791425055,
+            "completed_at": 1791425068,
+            "duration_ms": 13120,
+            "time_to_first_token_ms": 4118
+          },
+          "01a11941-b5f4-7fd2-bb6a-ea9267732bf1": {
+            "started_at": 1791425099,
+            "completed_at": 1791425175,
+            "duration_ms": 76506,
+            "time_to_first_token_ms": 7244
+          },
+          "01a11943-2fec-7a80-a85f-a49a7b6d510b": {
+            "started_at": 1791425196,
+            "completed_at": 1791425209,
+            "duration_ms": 13717,
+            "time_to_first_token_ms": 3871
+          },
+          "01a11943-f901-7730-b5bf-c02ce707c23c": {
+            "started_at": 1791425247,
+            "completed_at": 1791425258,
+            "duration_ms": 11043,
+            "time_to_first_token_ms": 3699
+          },
+          "01a11944-a465-7fc0-82e1-883f5e3578a0": {
+            "started_at": 1791425291,
+            "completed_at": 1791425305,
+            "duration_ms": 14357,
+            "time_to_first_token_ms": 2791
+          },
+          "01a11945-6030-76c1-901e-8b11b44ab4c2": {
+            "started_at": 1791425339,
+            "completed_at": 1791425379,
+            "duration_ms": 40219,
+            "time_to_first_token_ms": 21536
+          }
+        }
+      },
+      "replay": {
+        "all_pass": true,
+        "steps": 2390,
+        "max_state_absolute_error": 0.0,
+        "max_public_sensor_absolute_error": 0.0,
+        "max_calibration_absolute_error": 0.0,
+        "camera_snapshot_checks": 40,
+        "monitor_rows_exact": 2370,
+        "action_conversion_checks": 2370,
+        "native_checks": 2390,
+        "native_outcome_matches": true,
+        "actual_astra_requests": 0,
+        "initialization": "Original seeded initialization and observable sampling; no forced state/update.",
+        "command": ".venv/bin/python studies/tool_hang_v2/replay.py --run /Users/veerdosi/Documents/code/github/fyp/runs/th_v2_s01_timed",
+        "replay_source_sha256": "f07e69299e099207da2d742d3ff8dff36262aeb06a849126dbe6c2f3e50e0058"
+      },
+      "inference_requests": 59,
+      "native_policy_seconds": 489.179,
+      "api_equivalent_cost_usd": 4.877772,
+      "boundary_audit": {
+        "reviewer": "Sol",
+        "method": "Manual inspection of all 30 exported native tool invocation bodies after episode termination.",
+        "tool_boundary_pass": true,
+        "delegation_calls": 0,
+        "repository_or_simulator_reads": 0,
+        "temporary_calculation_executions": 0,
+        "observed_access": "Only the current episode public RGB images, sensing replies, execution reports and robot observations. No code or files were written by Astra in this episode.",
+        "os_sandbox": false,
+        "input_boundary": "Initial plaintext unavailable; see input_logging_erratum.json. Tool audit does not repair that prompt gap.",
+        "source_tools_sha256": "b9eee3abbbaaf46312f36e161ded705ea8b674190b4cf47a33fc85031364d9bc"
+      }
+    },
+    {
+      "episode_id": "th_v2_s01_guard",
+      "paired_state": 1,
+      "seed": 601,
+      "state_index": 31,
+      "condition": "empty_closure_guard",
+      "execution_order": 2,
+      "status": "in_progress",
+      "success": null,
+      "initial_prompt_verified": null
+    },
+    {
+      "episode_id": "th_v2_s02_guard",
+      "paired_state": 2,
+      "seed": 602,
+      "state_index": 32,
+      "condition": "empty_closure_guard",
+      "execution_order": 3,
+      "status": "missing",
+      "success": null,
+      "initial_prompt_verified": null
+    },
+    {
+      "episode_id": "th_v2_s02_timed",
+      "paired_state": 2,
+      "seed": 602,
+      "state_index": 32,
+      "condition": "direct_waypoints_feedback",
+      "execution_order": 4,
+      "status": "missing",
+      "success": null,
+      "initial_prompt_verified": null
+    }
+  ],
+  "paired_results": [],
+  "condition_summaries": {
+    "direct_waypoints_feedback": {
+      "scheduled": 2,
+      "completed": 1,
+      "successes": 0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934506856227626
+      ]
+    },
+    "empty_closure_guard": {
+      "scheduled": 2,
+      "completed": 0,
+      "successes": 0,
+      "descriptive_wilson_95": null
+    }
+  },
+  "statistical_scope": "Retain all four scheduled outcomes. First pair is exploratory due to prompt logging/matching failure; only second pair can isolate declared interruption semantics. One clean pair cannot establish reliability or generalization. Wilson intervals are descriptive, not equivalence tests.",
+  "time_scope": "Failed-episode resource reductions are not faster completion. Simulator physics pauses during policy inference. Native policy, execution, publication and operator/total clocks are distinct; publication is included in command elapsed time."
+}
