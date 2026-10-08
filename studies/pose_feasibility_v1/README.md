@@ -39,12 +39,21 @@ requests. Re-running a fixture requires fresh directories; old artifacts are ret
 Replay recorded motion with:
 
 ```sh
-.venv/bin/python studies/tool_hang_v2/replay.py --run runs/pf_v1_s01_waypoints
+.venv/bin/python studies/pose_feasibility_v1/replay.py --run runs/pf_v1_s01_waypoints
 ```
 
-That helper verifies motion/sensors/feedback/scoring; separately audit query inputs,
-outputs, unchanged state and current public joint positions. The public mechanical
+That helper verifies motion/sensors/feedback/scoring, genuine current joint angles,
+known-model FK against a nonmutating full-model calculation, and exact candidate
+recomputation. Native cached EEF versus fresh encoder/FK differences are reported.
+The executor also asserts unchanged physics on every preview. The public mechanical
 model contains only robot bodies, joints, sites and known base calibration. The
 solver never loads a scene, hidden object poses, contacts or native success checks.
 Bounded no-solution is not global unreachability, and solutions do not certify motion
 arrival, collision clearance, grasp or task completion.
+
+Runtime amendment 001 preserves the original freeze in `protocol_initial.json`.
+The first baseline had two failed MuJoCo imports because the calculation PATH omitted
+`/usr/sbin`. The common repair was recorded before its terminal outcome, verified
+through the real wrapper in both conditions, and applied after that episode. The
+first pair is exploratory; only the second has matched repaired helper availability.
+Counts and outcomes remain unchanged. No replacement or third start is scheduled.

@@ -1,0 +1,19 @@
+{
+  "status": "running",
+  "implementation_revision": "ab09871",
+  "scheduled": 4,
+  "matched_starts": 2,
+  "current_episode": null,
+  "completed_episodes": [
+    {
+      "episode_id": "pf_v1_s01_waypoints",
+      "success": false,
+      "decisions": 20,
+      "control_steps": 1852,
+      "native_policy_seconds": 420.027,
+      "classification": "Exploratory: calculation runtime fault"
+    }
+  ],
+  "protocol_unchanged": true,
+  "dispatch_plaintext_audit": "Saved text copied verbatim; native rollout encryption prevents automated equality. Retain limitation; no decryption."
+}

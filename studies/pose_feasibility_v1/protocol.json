@@ -253,7 +253,7 @@
     "scripts/export_policy_tools.py": "1befeb42cc8a95822961c03b2185680d6fc0e086877a16cc10affb862a6e37bc",
     "scripts/export_policy_usage.py": "d1c9362f83cf7da9af224e82f099303744feb9d6692c4ee49987ab50a465343e",
     "scripts/policy_access.py": "1af0dbe8b9d47a3b9d9bc425592947b0481d979dc8dffdf092102de854bdf822",
-    "scripts/policy_calc.py": "d76aaf96d6e56face2fea463e0bcddaaf41cfec2071dc55fcab3af6b0a3b5f6f",
+    "scripts/policy_calc.py": "abe877bf05f6b7e989044256e8fa9a618006797311b7a5679abcb7ad916d800f",
     "scripts/prepare_feedback_policy.py": "2728610df7f712ed7662abfb48e16e3ddc1d981c3bf52eacbea3b6013050733d",
     "scripts/prepare_handoff.py": "8a1e854cfd0801cfa25ab30a8b55ba212ad759150be3e06a33e27c8ba47db7ec",
     "scripts/prepare_policy.py": "f3159fc7f00d3bb9a42f14b8c4869d914c0db4bd60dbe5498026d6660c664b87",
@@ -273,8 +273,18 @@
     "docs/policy_prompt_template.txt": "2b14352d557c05a5df23c4d966afae79f9f717ff8911b55ff3879cfb240ecd83",
     "studies/pose_feasibility_v1/solver_parameters.json": "6c96169fbf1c301ad3ef66e743fbe29e41edbcd268675d1ee18dce6dac3224f4",
     "studies/pose_feasibility_v1/verification_result.json": "b488429a4845ffae7ff78f752431cede6f0759cf58ddc6fc56cb28223e1a82e7",
-    "studies/pose_feasibility_v1/prompt_verification.json": "fc8e25f97b37d6a88e194334f2c53705306eec02becda07a756d57968bca8b3a"
+    "studies/pose_feasibility_v1/prompt_verification.json": "fc8e25f97b37d6a88e194334f2c53705306eec02becda07a756d57968bca8b3a",
+    "studies/pose_feasibility_v1/calculation_runtime_verification.json": "1ff20345474ec1581417f1253e2307d0218b6653784158af025382c7dbec0cc0",
+    "studies/pose_feasibility_v1/amendment_001.json": "bb57fd9a0514c55bbdb0c6695a1890b327d37220e233aa95189fdaabd834d6cd"
   },
   "required_dispatch": "Use saved policy_initial.txt bytes verbatim; compare actual dispatch plaintext before interpreting matched outcomes.",
-  "analysis_scope": "Two-start mechanism screen; every outcome retained and no replacement episodes; completion efficiency only on jointly successful matched outcomes."
+  "analysis_scope": "Two-start mechanism screen; every outcome retained and no replacement episodes; completion efficiency only on jointly successful matched outcomes.",
+  "amendments": [
+    {
+      "file": "amendment_001.json",
+      "after_episode": "pf_v1_s01_waypoints",
+      "first_pair": "exploratory runtime confound",
+      "remaining_same_counts": true
+    }
+  ]
 }

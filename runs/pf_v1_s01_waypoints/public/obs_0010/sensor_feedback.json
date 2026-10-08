@@ -1,0 +1,95 @@
+{
+  "observation_id": 10,
+  "step": 1502,
+  "opening_m": 0.03039952214608515,
+  "finger_speed_m_s": 5.241601630868508e-06,
+  "current_compensated_wrench": [
+    17.802455365672945,
+    -2.8173070809896674,
+    2.627134154148786,
+    -0.0862062146060838,
+    0.14200751503118297,
+    -0.5213104267660802
+  ],
+  "calibration_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_waypoints/public/feedback_calibration.json",
+  "last_motion_summary": [
+    {
+      "waypoint_index": 0,
+      "first_step": 1368,
+      "last_step": 1432,
+      "armed": true,
+      "first_flags": {
+        "load_change": 1377,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      },
+      "terminal_sensor_measurement": {
+        "step": 1432,
+        "command_id": 15,
+        "waypoint_index": 0,
+        "armed": true,
+        "waypoint_step": 65,
+        "position_error_m": 0.001061156974400312,
+        "orientation_error_rad": 0.001296099913620735,
+        "linear_speed_m_s": 8.391063720103473e-06,
+        "angular_speed_rad_s": 0.00013326681055931001,
+        "finger_speed_m_s": 6.870037086066316e-07,
+        "opening_m": 0.030399522529046742,
+        "force_change_N": 6.305836271212002,
+        "torque_change_Nm": 0.4544975558699368,
+        "position_progress_10_steps_m": 1.3249245264922854e-06,
+        "orientation_progress_10_steps_rad": 6.441544778201585e-05,
+        "raw": {
+          "load_change": true,
+          "stalled_motion": false,
+          "empty_sized_closure": false
+        },
+        "flags": {
+          "load_change": true,
+          "stalled_motion": false,
+          "empty_sized_closure": false
+        }
+      }
+    },
+    {
+      "waypoint_index": 1,
+      "first_step": 1433,
+      "last_step": 1502,
+      "armed": true,
+      "first_flags": {
+        "load_change": 1451,
+        "stalled_motion": 1500,
+        "empty_sized_closure": null
+      },
+      "terminal_sensor_measurement": {
+        "step": 1502,
+        "command_id": 15,
+        "waypoint_index": 1,
+        "armed": true,
+        "waypoint_step": 70,
+        "position_error_m": 0.023474188829457274,
+        "orientation_error_rad": 0.008821834512841778,
+        "linear_speed_m_s": 0.0011322800675637869,
+        "angular_speed_rad_s": 0.0009608290170531662,
+        "finger_speed_m_s": 5.241601630868508e-06,
+        "opening_m": 0.03039952214608515,
+        "force_change_N": 18.564654574848664,
+        "torque_change_Nm": 0.5453636679560238,
+        "position_progress_10_steps_m": 0.0004715627288305671,
+        "orientation_progress_10_steps_rad": 0.0005471850494461403,
+        "raw": {
+          "load_change": true,
+          "stalled_motion": true,
+          "empty_sized_closure": false
+        },
+        "flags": {
+          "load_change": true,
+          "stalled_motion": true,
+          "empty_sized_closure": false
+        }
+      }
+    }
+  ],
+  "samples_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_waypoints/public/obs_0010/sensor_feedback_samples.jsonl",
+  "note": "The same processed sensing is available in both conditions. Flags are observations, not task outcomes."
+}

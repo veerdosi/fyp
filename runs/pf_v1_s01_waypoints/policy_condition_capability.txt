@@ -1,0 +1,2 @@
+
+Condition capability: use ordinary move, sense and finish commands. There is no structured preview command; the same public robot model/helper and logged temporary calculations remain available.

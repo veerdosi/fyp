@@ -1,0 +1,26 @@
+{
+  "amendment": 1,
+  "recorded_at_utc": "2026-10-08T15:34:19.859225+00:00",
+  "reason": "Common permitted calculation runtime omits /usr/sbin; MuJoCo import fails at sysctl. Detected from actual baseline calculation before its terminal outcome.",
+  "original_protocol_sha256": "92e1345ec6b44fc34722dfc8c15e08051d4ab30ecaff35bb41aff0cb8d64253e",
+  "original_preservation": "protocol_initial.json and revision ab09871; no original evidence overwritten",
+  "first_episode": "pf_v1_s01_waypoints continues original frozen runtime until termination; no hints, extra budget or replacement",
+  "remaining_episodes": [
+    "pf_v1_s01_preview",
+    "pf_v1_s02_preview",
+    "pf_v1_s02_waypoints"
+  ],
+  "repair": "Only add /usr/sbin:/sbin to common calculation subprocess PATH after first episode terminates. Verify exact public helper succeeds via corrected wrapper in both fixture conditions and freeze new source hash before next policy dispatch.",
+  "verification": "calculation_runtime_verification.json: two fixture computations pass, identical code and outputs, zero Astra requests.",
+  "counts": "Still two matched starts and four scheduled outcomes, no third or replacement episode.",
+  "interpretation": "First pair is exploratory due to asymmetric infrastructure availability. Second pair has identical repaired calculation access and can compare the declared query. Report limits explicitly; neither drop the first baseline nor attribute a positive first-pair difference to the query.",
+  "unchanged": [
+    "controller",
+    "motion/guard semantics",
+    "sensors/model/solver",
+    "policy prompts",
+    "reasoning effort",
+    "decision/control-step budgets",
+    "scheduled states/order"
+  ]
+}

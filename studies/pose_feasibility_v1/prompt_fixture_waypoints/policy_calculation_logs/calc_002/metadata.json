@@ -1,0 +1,25 @@
+{
+  "observation_id": 0,
+  "step": 20,
+  "source_file": "/Users/veerdosi/Documents/code/github/fyp/studies/pose_feasibility_v1/prompt_fixture_waypoints/policy_compute/sol_runtime_verification.py",
+  "source_sha256": "edaa377a72a175977227adfc572afdbe7bccbba4ec1f0057b1dfd91123dd3e4d",
+  "returncode": 0,
+  "stop_reason": "completed",
+  "wall_seconds": 0.8578952089883387,
+  "sensor_manifest": {
+    "feedback_calibration.json": "a7fe395e5fe192a3254bf740c0082418fe934cf6a38ae76ee71a043c7225e177",
+    "latest.json": "f98dc794e5a8d5efd27ad11673b3856c93ee167d86e73586bd6a6e7c640c4101",
+    "obs_0000/agentview.png": "39d4e2a1868ebf41d22173ee7dce1c90c82e6d65ac037b6b90f802ca5122646a",
+    "obs_0000/agentview_depth_m.npy": "a02a65cef7963e584eae7b713629c27cee59f39f20a7475c1c0aedaf11e66c97",
+    "obs_0000/calibration.json": "60f5eaf3a1abf92af13f5ea1063d10ea7d8c278565b6d2210aff73cd03a5bff4",
+    "obs_0000/observation.json": "f98dc794e5a8d5efd27ad11673b3856c93ee167d86e73586bd6a6e7c640c4101",
+    "obs_0000/robot0_eye_in_hand.png": "13bcd2c1b80d6b838f4f4e85e34493f452e9478f8baa0a1a7cfb448cd8b225b8",
+    "obs_0000/robot0_eye_in_hand_depth_m.npy": "8699efd759e2e87e489e12ff3ed9beb3e11d35d4fd98672d55794b3a7ea9e4c7",
+    "obs_0000/sensor_feedback.json": "7bdf3258721b8a9232ba812fdb63c895114abf2f60bb49210d2f1fe01c418155",
+    "obs_0000/sensor_feedback_samples.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "robot_kinematics/kinematic_preview.py": "5b37b825aee0a507ceef6632b468150eecf3fdb7837cd41c5ac91d9438194a78",
+    "robot_kinematics/parameters.json": "a10b7ed88e8e49be505648d851df14b36803499bf0fa854db4cdc25a3eda103a",
+    "robot_kinematics/robot.xml": "382f024b1367f542750711ca0c72f307ab74fb0cf881aa55c268e554b888702e"
+  },
+  "note": "Policy sensor calculation; instruction/audit boundary, no filesystem sandbox"
+}

@@ -1,0 +1,40 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.055,
+          0.045,
+          1.0
+        ],
+        "gripper": 1,
+        "steps": 65,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          0.055,
+          0.045,
+          0.955
+        ],
+        "gripper": 1,
+        "steps": 35,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Bring the vertical large hole in front of the hook at a height that lets the raised lip pass through its aperture."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_waypoints",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_waypoints/public/obs_0008/sense_013.json. You may cat this permitted sensor result file. The images and robot readings in obs_0008 remain current; no motion has occurred. 13 decisions have been executed, with 17 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.055,0.045,1.00],\"gripper\":1,\"steps\":65,\"abort_if_empty_close\":true},{\"position\":[0.055,0.045,0.955],\"gripper\":1,\"steps\":35,\"abort_if_empty_close\":true}],\"reason\":\"Bring the vertical large hole in front of the hook at a height that lets the raised lip pass through its aperture.\"}",
+    "response_timestamp": "2026-10-08T15:31:49.630Z",
+    "message_id": "amsg_01a11c24-64fe-7491-bbb0-3ed844ce1343",
+    "dispatch_timestamp": "2026-10-08T15:31:12.248Z",
+    "policy_wall_seconds": 37.382,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_waypoints/policy_update_014.txt"
+  }
+}

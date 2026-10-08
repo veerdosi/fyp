@@ -32,7 +32,7 @@ record.mkdir()
 source=code.read_bytes()
 (record/'code.py').write_bytes(source)
 t0=time.monotonic()
-environment={'PATH':str(root/'.venv/bin')+':/usr/bin:/bin',
+environment={'PATH':str(root/'.venv/bin')+':/usr/bin:/bin:/usr/sbin:/sbin',
              'PYTHONNOUSERSITE':'1','OPENBLAS_NUM_THREADS':'1',
              'POLICY_OBSERVATION_FOLDER':obs['folder'],
              'POLICY_PUBLIC_FOLDER':str(run/'public'),
