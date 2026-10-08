@@ -1,0 +1,7 @@
+{
+  "common_policy_text_exact_after_paths_and_declared_capability_normalized": true,
+  "initial_states_exact": true,
+  "actual_astra_requests": 0,
+  "normalized_common_sha256": "6dbeae81338f72a836ca8d82b7e0943a3099a459060366eb010898ad0b032dd7",
+  "reproduce": ".venv/bin/python studies/pose_feasibility_v1/verify_prompts.py (fresh fixture folders required)"
+}

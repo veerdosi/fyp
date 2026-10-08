@@ -1,0 +1,18 @@
+{
+  "observation_id": 0,
+  "step": 20,
+  "opening_m": 0.07847339664549116,
+  "finger_speed_m_s": 0.0009472590020917415,
+  "current_compensated_wrench": [
+    2.542277174480325e-06,
+    -0.00012203591747073084,
+    0.00014855674176228462,
+    -0.00014065534185143946,
+    1.2105640624663445e-05,
+    6.372448032108235e-06
+  ],
+  "calibration_file": "/Users/veerdosi/Documents/code/github/fyp/studies/pose_feasibility_v1/prompt_fixture_preview/public/feedback_calibration.json",
+  "last_motion_summary": [],
+  "samples_file": "/Users/veerdosi/Documents/code/github/fyp/studies/pose_feasibility_v1/prompt_fixture_preview/public/obs_0000/sensor_feedback_samples.jsonl",
+  "note": "The same processed sensing is available in both conditions. Flags are observations, not task outcomes."
+}

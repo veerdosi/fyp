@@ -1,0 +1,15 @@
+{
+  "command": {
+    "type": "preview",
+    "poses": [
+      {
+        "position": [
+          0,
+          0,
+          2
+        ]
+      }
+    ],
+    "reason": "Fixed workspace validation verification."
+  }
+}

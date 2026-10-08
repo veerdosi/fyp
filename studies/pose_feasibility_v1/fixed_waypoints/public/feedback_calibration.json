@@ -1,0 +1,63 @@
+{
+  "weights": [
+    [
+      0.00011597331995126807,
+      -0.0032999546646563893,
+      0.005398691720831235,
+      -0.005314968289570196,
+      0.00036711512804012966,
+      0.00012700704815009692
+    ],
+    [
+      -9.230994240372179e-07,
+      -0.5202342345842889,
+      0.0002870755442275774,
+      0.07337464432366964,
+      1.0072194906745021e-06,
+      -3.1389047178365185e-06
+    ],
+    [
+      0.5200155290499487,
+      1.5811057072128322e-05,
+      -1.0176507684060533e-05,
+      8.108820059450572e-06,
+      0.07350126823112052,
+      -2.6091546404501544e-05
+    ],
+    [
+      -1.2226639597053639e-05,
+      0.00032166083935880927,
+      -0.5205333195729372,
+      0.0005256736015571068,
+      -3.843400442548122e-05,
+      -1.3880320715296762e-05
+    ],
+    [
+      -8.687483817362176e-06,
+      5.229775622030752e-06,
+      -3.77683959397263e-06,
+      1.9285756488880986e-06,
+      -4.9996571950523754e-05,
+      -2.8287351392290176e-05
+    ]
+  ],
+  "empty_max": 0.0009996828912520249,
+  "empty_threshold_m": 0.002999682891252025,
+  "parameters": {
+    "force_change_N": 5.0,
+    "torque_change_Nm": 0.5,
+    "consecutive": 3,
+    "minimum_steps": 10,
+    "position_tolerance_m": 0.003,
+    "orientation_tolerance_rad": 0.03,
+    "progress_window_steps": 10,
+    "minimum_position_progress_m": 0.001,
+    "minimum_orientation_progress_rad": 0.01,
+    "linear_speed_m_s_max": 0.005,
+    "angular_speed_rad_s_max": 0.05,
+    "finger_speed_m_s_max": 0.001,
+    "empty_opening_margin_m": 0.002
+  },
+  "feature_definition": "[1, R(public quaternion)^T*(0,0,-9.81), sum(abs(finger qpos))]",
+  "note": "Empty-gripper gravity reference; dynamics and held-object weight remain. Not an acquisition/seating/contact certificate."
+}
