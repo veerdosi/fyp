@@ -1,0 +1,1210 @@
+{
+  "protocol_sha256": "617489569292dae72bbbbbe46902618d640e563d91b7b2ce0e608a789bf25878",
+  "code_sha256": "9cef2dddc8e1ba897845492e2d6a279c3bde814f061dfd5ae2cbd2e3bf50e67d",
+  "source_hashes": {
+    "runs/th_v2_s01_guard/trajectory.npz": "4e741b2d49c799549e4c3a71fe81f524db964771807355b96c139f960afb8d71",
+    "runs/th_v2_s01_guard/commands.jsonl": "44a8a89ab4f36f4953cfc54171381962c9846b2d3d6b3c534bf298ce4df943ef",
+    "runs/th_v2_s02_guard/trajectory.npz": "d3c5f22d17e2b1a42e3ac1b60eeb1ae1801d83593d8655ad0693e61306e5318e",
+    "runs/th_v2_s02_guard/commands.jsonl": "996456bcc08b647a187dbaef26caa07850517d8f923cad656ddffd19eacc9a48",
+    "runs/th_v2_s02_timed/trajectory.npz": "97832871a70ea4e6059f8b145355413949fa6dbada32cd4cfde8409094ca333f",
+    "runs/th_v2_s02_timed/commands.jsonl": "5221d6ff3fbc4368e2e9fff495bb97ba1044eb7b01db64ba397f5ddf93584396"
+  },
+  "samples": [
+    {
+      "episode": "th_v2_s01_guard",
+      "decision": 8,
+      "label": "calculated_frame_tilt",
+      "reason": "Correct the measured rod tilt and place its tip approximately 3 cm above the stand opening.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 456,
+          "last_step": 505,
+          "terminal_measurement": {
+            "position_error_m": 0.0001934322606606219,
+            "orientation_error_rad": 0.001125388677019241,
+            "linear_speed_m_s": 2.0373945244338832e-05,
+            "angular_speed_rad_s": 5.44151267740792e-05,
+            "finger_speed_m_s": 0.00010595744455332571,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.6864348800458585,
+            0.15754297246944673,
+            -0.6833528805844362,
+            0.19239596637890405
+          ],
+          "target_position": [
+            -0.0782,
+            0.0456,
+            1.1342
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.6831820096260253,
+            0.8062793162965205,
+            2.8188536425885653,
+            1.1356612081795288,
+            2.4489759978868193,
+            0.624574624429283,
+            1.9542672193434227
+          ],
+          "minimum_margin_rad": 0.624574624429283,
+          "terminal_joint_position_rad": [
+            0.20495727007796297,
+            0.9503619656564177,
+            0.07548904391967635,
+            -1.2137408632557836,
+            -0.4438795790773505,
+            0.6141556796872385,
+            0.5291044243747909
+          ],
+          "robot_nonrobot_contact_geometry_steps": 50,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 7,
+      "label": "calculated_frame_tilt",
+      "reason": "Correct the measured rod tilt and place its tip just above the stand opening for a final alignment check.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 431,
+          "last_step": 465,
+          "terminal_measurement": {
+            "position_error_m": 0.000300501276553176,
+            "orientation_error_rad": 0.0009759768918754223,
+            "linear_speed_m_s": 2.3184492985919702e-05,
+            "angular_speed_rad_s": 0.0001327205467383887,
+            "finger_speed_m_s": 0.00017086785729816744,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.7131624707427912,
+            0.11633879012117214,
+            -0.6614561506889367,
+            0.20084904020919342
+          ],
+          "target_position": [
+            -0.0805,
+            0.0435,
+            1.18
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.6842057796592544,
+            0.8627373668116661,
+            2.821528200827516,
+            1.109936729675789,
+            2.463991607977431,
+            0.5575359961706096,
+            2.0029908804389636
+          ],
+          "minimum_margin_rad": 0.5575359961706096,
+          "terminal_joint_position_rad": [
+            0.18632080023230146,
+            0.8480434413032559,
+            0.07577179917248399,
+            -1.2451939378499128,
+            -0.4053467274824319,
+            0.5924679944840519,
+            0.6261175539552114
+          ],
+          "robot_nonrobot_contact_geometry_steps": 35,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "first_step": 466,
+          "last_step": 500,
+          "terminal_measurement": {
+            "position_error_m": 0.00027665437758118115,
+            "orientation_error_rad": 0.0015449125835181896,
+            "linear_speed_m_s": 0.0005076007359768594,
+            "angular_speed_rad_s": 0.0027965928886775904,
+            "finger_speed_m_s": 5.5761630874854714e-05,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.7133268535061411,
+            0.11602800503497943,
+            -0.6612515491831421,
+            0.2011185988851497
+          ],
+          "target_position": [
+            -0.0805,
+            0.0435,
+            1.12
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.71109045956268,
+            0.8170416751388067,
+            2.821583905018948,
+            1.1610838722733803,
+            2.492800737391623,
+            0.613856182148995,
+            2.231283920566097
+          ],
+          "minimum_margin_rad": 0.613856182148995,
+          "terminal_joint_position_rad": [
+            0.18540496556185806,
+            0.9420611513599043,
+            0.06964032404726439,
+            -1.2355185781145774,
+            -0.37813693434241197,
+            0.6720210780963459,
+            0.6660115211263624
+          ],
+          "robot_nonrobot_contact_geometry_steps": 35,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 9,
+      "label": "calculated_residual_tilt",
+      "reason": "Straighten the residual rod tilt, center its axis over the stand and lower through the opening while retaining the grasp.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 501,
+          "last_step": 525,
+          "terminal_measurement": {
+            "position_error_m": 0.00029288912245926626,
+            "orientation_error_rad": 0.0015904256074858868,
+            "linear_speed_m_s": 0.00015859015668174482,
+            "angular_speed_rad_s": 0.0002833100833424021,
+            "finger_speed_m_s": 8.084593535308167e-05,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.7088633256215079,
+            0.1549939990426363,
+            -0.6690796558672427,
+            0.1606924390074383
+          ],
+          "target_position": [
+            -0.0845,
+            0.0435,
+            1.12
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.712264583574086,
+            0.8211766820455418,
+            2.8208093516366213,
+            1.167761277704025,
+            2.522079873646108,
+            0.68976896374067,
+            2.2415117529921997
+          ],
+          "minimum_margin_rad": 0.68976896374067,
+          "terminal_joint_position_rad": [
+            0.1772739246665502,
+            0.9186988688542026,
+            0.07649064836337885,
+            -1.271623560608292,
+            -0.36561816413933007,
+            0.6932242131037416,
+            0.5700633848904411
+          ],
+          "robot_nonrobot_contact_geometry_steps": 25,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "first_step": 526,
+          "last_step": 570,
+          "terminal_measurement": {
+            "position_error_m": 0.005329513777029208,
+            "orientation_error_rad": 0.0011326981613852876,
+            "linear_speed_m_s": 0.0005611638578038539,
+            "angular_speed_rad_s": 0.0002131753149151896,
+            "finger_speed_m_s": 3.1863639460220184e-05,
+            "settled_sample": false
+          },
+          "resolved_target_quaternion": [
+            0.7093135228373498,
+            0.15519078012796206,
+            -0.6685002053177721,
+            0.16092738602686502
+          ],
+          "target_position": [
+            -0.0845,
+            0.0435,
+            1.065
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.717801490918715,
+            0.7441984557602841,
+            2.8208357275411506,
+            1.1548108749452346,
+            2.532207009367362,
+            0.714844202677486,
+            2.3032207715630766
+          ],
+          "minimum_margin_rad": 0.714844202677486,
+          "terminal_joint_position_rad": [
+            0.17949850908128492,
+            1.0132974030143693,
+            0.07058669534481932,
+            -1.2336918282389395,
+            -0.35316138121240986,
+            0.7476740167052319,
+            0.5904715341294738
+          ],
+          "robot_nonrobot_contact_geometry_steps": 45,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 14,
+      "label": "tool_turn_nonarrival",
+      "reason": "Lift the held tool and turn its larger hole upward, with the hole plane facing the hook's horizontal arm.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 1036,
+          "last_step": 1120,
+          "terminal_measurement": {
+            "position_error_m": 0.0010044666175712408,
+            "orientation_error_rad": 0.0010130880101342147,
+            "linear_speed_m_s": 0.0006514442245937987,
+            "angular_speed_rad_s": 0.002662196748946574,
+            "finger_speed_m_s": 3.7330183124481585e-05,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.8504316078024329,
+            0.5260841395958432,
+            -1.0358105950763614e-05,
+            -0.0012483625194334796
+          ],
+          "target_position": [
+            0.044,
+            -0.226,
+            1.09
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.5936775258081903,
+            0.704337326838095,
+            2.7164477003338723,
+            1.204509391059675,
+            2.783066278225306,
+            1.0669416026265615,
+            2.1460304317040557
+          ],
+          "minimum_margin_rad": 0.704337326838095,
+          "terminal_joint_position_rad": [
+            -0.1930064532312404,
+            0.4781597224751312,
+            -0.18085229966612784,
+            -1.8335594869478804,
+            0.11252540884773136,
+            2.299012945347711,
+            -0.7511597171352677
+          ],
+          "robot_nonrobot_contact_geometry_steps": 85,
+          "contact_geometry_pairs": [
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "tool_grip_g0",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "tool_grip_g0",
+              "gripper0_finger2_collision"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "first_step": 1121,
+          "last_step": 1185,
+          "terminal_measurement": {
+            "position_error_m": 0.040454661695592954,
+            "orientation_error_rad": 0.1701904282909628,
+            "linear_speed_m_s": 0.047592883633138905,
+            "angular_speed_rad_s": 0.11064969059684032,
+            "finger_speed_m_s": 0.00021882907885161133,
+            "settled_sample": false
+          },
+          "resolved_target_quaternion": [
+            0.2880996791819885,
+            0.6457542681664872,
+            0.2880996791819885,
+            -0.6457542681664872
+          ],
+          "target_position": [
+            0.02,
+            -0.18,
+            1.07
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.334216657937262,
+            0.31217139091360724,
+            2.7221639483064974,
+            0.34265447409181793,
+            2.1086084031725107,
+            0.660713040950003,
+            1.1363558850704714
+          ],
+          "minimum_margin_rad": 0.31217139091360724,
+          "terminal_joint_position_rad": [
+            -0.5186773576541457,
+            1.2426130977576466,
+            0.0057322307272167404,
+            -0.7702847477066522,
+            0.6789433999899527,
+            0.7114569673994399,
+            -1.7609441149295286
+          ],
+          "robot_nonrobot_contact_geometry_steps": 65,
+          "contact_geometry_pairs": [
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "tool_grip_g0",
+              "gripper0_finger1_collision"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decision": 15,
+      "label": "tool_turn_recovery",
+      "reason": "Bring the vertical tool outside the hook tip and allow the commanded orientation to settle before measuring the hole alignment.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 1186,
+          "last_step": 1265,
+          "terminal_measurement": {
+            "position_error_m": 0.0010617025934653327,
+            "orientation_error_rad": 0.0016411284613491236,
+            "linear_speed_m_s": 1.4871721430867326e-05,
+            "angular_speed_rad_s": 6.197309412488524e-05,
+            "finger_speed_m_s": 4.244258447099073e-06,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.2880996791819885,
+            0.6457542681664872,
+            0.2880996791819885,
+            -0.6457542681664872
+          ],
+          "target_position": [
+            -0.07,
+            -0.065,
+            1.015
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.3784186785130004,
+            0.5306773898571842,
+            2.8250015905532186,
+            0.725903054261914,
+            2.233610341438409,
+            0.7162000612293666,
+            0.9539779915601856
+          ],
+          "minimum_margin_rad": 0.5306773898571842,
+          "terminal_joint_position_rad": [
+            -0.39938144965087,
+            1.1077604478541456,
+            0.027178534455905973,
+            -1.2642575060164314,
+            0.5888205471273613,
+            0.9024678789560384,
+            -1.9370440544055052
+          ],
+          "robot_nonrobot_contact_geometry_steps": 80,
+          "contact_geometry_pairs": [
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_timed",
+      "decision": 5,
+      "label": "frame_slip_rotation",
+      "reason": "Rotate the held shaft downward and transport its tip above the measured stand opening.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 221,
+          "last_step": 285,
+          "terminal_measurement": {
+            "position_error_m": 0.0005208804890929312,
+            "orientation_error_rad": 0.001715544746845334,
+            "linear_speed_m_s": 0.0005069882375435294,
+            "angular_speed_rad_s": 0.0019316997804224747,
+            "finger_speed_m_s": 8.90182673624758e-06,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.6238347057015825,
+            0.33291179006190225,
+            -0.6238347057015825,
+            0.33291179006190225
+          ],
+          "target_position": [
+            -0.102,
+            -0.259,
+            1.22
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.728991557174944,
+            1.3364917218976675,
+            2.5346717529923244,
+            0.7665216685271758,
+            1.722999689918062,
+            1.2631009620244225,
+            2.124218645651339
+          ],
+          "minimum_margin_rad": 0.7665216685271758,
+          "terminal_joint_position_rad": [
+            0.048410319118415264,
+            0.403134967184767,
+            -0.17717315968637648,
+            -1.9741959008876282,
+            -1.174300310081938,
+            1.2943302733676234,
+            0.05501133217480476
+          ],
+          "robot_nonrobot_contact_geometry_steps": 33,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "first_step": 286,
+          "last_step": 380,
+          "terminal_measurement": {
+            "position_error_m": 0.001618308827989697,
+            "orientation_error_rad": 0.007852770139206832,
+            "linear_speed_m_s": 0.0032229221274232382,
+            "angular_speed_rad_s": 0.016437723120544104,
+            "finger_speed_m_s": 1.966393159685744e-06,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.6238347057015825,
+            0.33291179006190225,
+            -0.6238347057015825,
+            0.33291179006190225
+          ],
+          "target_position": [
+            -0.066,
+            0.058,
+            1.145
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.6023072096103985,
+            0.9628418176390584,
+            2.722592516720873,
+            1.0963727599822917,
+            1.7252339220670911,
+            0.8342114248487875,
+            2.5988569392945813
+          ],
+          "minimum_margin_rad": 0.8342114248487875,
+          "terminal_joint_position_rad": [
+            0.29499279038960136,
+            0.7974512372042859,
+            0.16000767919820696,
+            -1.491161872139763,
+            -0.8200457736604789,
+            0.8196408153769871,
+            0.2939561298618194
+          ],
+          "robot_nonrobot_contact_geometry_steps": 0,
+          "contact_geometry_pairs": []
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_timed",
+      "decision": 9,
+      "label": "staged_frame_rotation_recovery",
+      "reason": "The frame remains held through the partial rotation. Finish orienting its shaft downward and carry it over the stand.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 721,
+          "last_step": 765,
+          "terminal_measurement": {
+            "position_error_m": 0.0005417714228197534,
+            "orientation_error_rad": 0.0020078754828167914,
+            "linear_speed_m_s": 0.0001055838716850085,
+            "angular_speed_rad_s": 0.0015985028566846459,
+            "finger_speed_m_s": 8.283546913387117e-06,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.6644817336482095,
+            0.24179335319207984,
+            -0.6644817336482095,
+            0.24179335319207984
+          ],
+          "target_position": [
+            -0.169,
+            -0.355,
+            1.16
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.7915826261177905,
+            1.1625507018258405,
+            2.4692452503903293,
+            0.986425973521964,
+            1.8639260897721464,
+            1.3731944794868163,
+            2.794933933622837
+          ],
+          "minimum_margin_rad": 0.986425973521964,
+          "terminal_joint_position_rad": [
+            -0.02277516774301961,
+            0.5749839125215324,
+            -0.3674907872492183,
+            -1.910708144096858,
+            -1.033373644566095,
+            1.3764821279550499,
+            0.09824876292368685
+          ],
+          "robot_nonrobot_contact_geometry_steps": 45,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "first_step": 766,
+          "last_step": 865,
+          "terminal_measurement": {
+            "position_error_m": 0.026087380004962326,
+            "orientation_error_rad": 0.0031914583574249675,
+            "linear_speed_m_s": 0.07676169087537887,
+            "angular_speed_rad_s": 0.0014200335349342588,
+            "finger_speed_m_s": 0.0013941195451126636,
+            "settled_sample": false
+          },
+          "resolved_target_quaternion": [
+            0.6646861685075286,
+            0.24259633084693494,
+            -0.6639328394362232,
+            0.24193491350472784
+          ],
+          "target_position": [
+            -0.075,
+            0.046,
+            1.15
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.6879002757154833,
+            0.9627003128436349,
+            2.5323952718471623,
+            1.1569427990820234,
+            1.8660372696460603,
+            0.7658485565848487,
+            2.5254945523380536
+          ],
+          "minimum_margin_rad": 0.7658485565848487,
+          "terminal_joint_position_rad": [
+            0.20939972428451686,
+            0.800099687156365,
+            0.10747529167072947,
+            -1.445124404033192,
+            -0.635537978052387,
+            0.7483485565848488,
+            0.37180544766194656
+          ],
+          "robot_nonrobot_contact_geometry_steps": 100,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_finger1_collision"
+            ],
+            [
+              "frame_grip_frame",
+              "gripper0_finger2_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "frame_grip_frame"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "frame_grip_frame"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_timed",
+      "decision": 19,
+      "label": "tool_turn_nonarrival",
+      "reason": "The approach developed contact load before reaching its target. Lift clear and turn the wrist to keep the hand body outside the stand during the hook approach.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 1521,
+          "last_step": 1585,
+          "terminal_measurement": {
+            "position_error_m": 0.0010896413151274024,
+            "orientation_error_rad": 0.0022027635596111074,
+            "linear_speed_m_s": 0.002783045288526412,
+            "angular_speed_rad_s": 0.008659768249201524,
+            "finger_speed_m_s": 3.272282544276592e-06,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            0.6085004697271263,
+            0.35298482708997175,
+            0.6142926564097673,
+            -0.3574540844180706
+          ],
+          "target_position": [
+            0.06,
+            0.11,
+            1.17
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.7424851904140803,
+            0.9882161338322192,
+            2.8563580874738492,
+            0.9089026855570164,
+            0.9529557109501181,
+            1.7077722050672646,
+            0.807269851826625
+          ],
+          "minimum_margin_rad": 0.807269851826625,
+          "terminal_joint_position_rad": [
+            -0.09211910870402029,
+            0.3724422263120377,
+            0.0010997969622289028,
+            -2.159754949247385,
+            1.9335239455012163,
+            1.803715815909966,
+            -1.7887955902554058
+          ],
+          "robot_nonrobot_contact_geometry_steps": 65,
+          "contact_geometry_pairs": [
+            [
+              "frame_grip_frame",
+              "gripper0_hand_collision"
+            ],
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "first_step": 1586,
+          "last_step": 1650,
+          "terminal_measurement": {
+            "position_error_m": 0.03228092951673984,
+            "orientation_error_rad": 1.341737709357218,
+            "linear_speed_m_s": 0.020303321528133245,
+            "angular_speed_rad_s": 0.43312503804901487,
+            "finger_speed_m_s": 7.867357224880087e-05,
+            "settled_sample": false
+          },
+          "resolved_target_quaternion": [
+            0.3486024402256224,
+            -0.6152043064452177,
+            0.3486024402256224,
+            0.6152043064452177
+          ],
+          "target_position": [
+            0.03,
+            0.21,
+            1.12
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.7655148769180053,
+            0.29965354472920636,
+            2.4462658166373754,
+            0.1878585221598286,
+            0.9762386193849883,
+            0.6277008878546828,
+            1.1096582132766393
+          ],
+          "minimum_margin_rad": 0.1878585221598286,
+          "terminal_joint_position_rad": [
+            0.08470790745817257,
+            1.4425901281241003,
+            0.2917687180856286,
+            -0.2602891399283473,
+            0.5092525790046601,
+            0.6102008878546828,
+            -1.5496689750922237
+          ],
+          "robot_nonrobot_contact_geometry_steps": 65,
+          "contact_geometry_pairs": [
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_timed",
+      "decision": 20,
+      "label": "tool_turn_settle",
+      "reason": "The wrist turn is incomplete but the tool remains gripped. Allow the orientation to settle above the hook before descending.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 1651,
+          "last_step": 1750,
+          "terminal_measurement": {
+            "position_error_m": 0.04626990427019439,
+            "orientation_error_rad": 0.10822234099935427,
+            "linear_speed_m_s": 0.0021727151418389212,
+            "angular_speed_rad_s": 0.008404357333238499,
+            "finger_speed_m_s": 2.7383401890310455e-05,
+            "settled_sample": false
+          },
+          "resolved_target_quaternion": [
+            0.3486024402256224,
+            -0.6152043064452177,
+            0.3486024402256224,
+            0.6152043064452177
+          ],
+          "target_position": [
+            0.015,
+            0.205,
+            1.11
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.2445820758920383,
+            0.32773685460899116,
+            2.5768664673700563,
+            0.19673418067880885,
+            1.973339569740855,
+            0.6248568467118959,
+            -0.005003777797522702
+          ],
+          "minimum_margin_rad": -0.005003777797522702,
+          "terminal_joint_position_rad": [
+            0.5268566624259483,
+            1.2402333398685184,
+            0.18833722181986431,
+            -0.7856506741128797,
+            -0.905230985010726,
+            0.625412925583798,
+            -2.8976738507861506
+          ],
+          "robot_nonrobot_contact_geometry_steps": 100,
+          "contact_geometry_pairs": [
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_timed",
+      "decision": 24,
+      "label": "arrived_wrong_relation",
+      "reason": "The hook is visible through the larger opening. Advance slightly past the tip and lower the ring to transfer support onto the hook.",
+      "public_robot_measurement_keys": [
+        "robot0_eef_pos",
+        "robot0_eef_quat",
+        "robot0_joint_vel",
+        "robot0_gripper_qpos",
+        "robot0_gripper_qvel",
+        "robot0_eef_force",
+        "robot0_eef_torque"
+      ],
+      "waypoints": [
+        {
+          "index": 0,
+          "first_step": 1861,
+          "last_step": 1885,
+          "terminal_measurement": {
+            "position_error_m": 0.0015016873855782811,
+            "orientation_error_rad": 0.006566353800484145,
+            "linear_speed_m_s": 0.0014695932155456757,
+            "angular_speed_rad_s": 0.004243629643209345,
+            "finger_speed_m_s": 0.00023787330659686014,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            -0.3490099177689317,
+            0.6493585679006854,
+            -0.3756822118086025,
+            -0.561594518601714
+          ],
+          "target_position": [
+            -0.055,
+            0.107,
+            0.942
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.515251256581138,
+            0.4844811960181252,
+            2.704699467156214,
+            1.041374818651777,
+            2.0755597171578413,
+            0.9885770844853013,
+            0.2406313275761054
+          ],
+          "minimum_margin_rad": 0.2406313275761054,
+          "terminal_joint_position_rad": [
+            0.35188664612204873,
+            1.2229993047779275,
+            0.19260053284378587,
+            -1.2152401370992436,
+            -0.8201116294164803,
+            1.0189674930187804,
+            -2.613605041377853
+          ],
+          "robot_nonrobot_contact_geometry_steps": 25,
+          "contact_geometry_pairs": [
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ]
+          ]
+        },
+        {
+          "index": 1,
+          "first_step": 1886,
+          "last_step": 1910,
+          "terminal_measurement": {
+            "position_error_m": 0.0012365878246981498,
+            "orientation_error_rad": 0.002596172345270057,
+            "linear_speed_m_s": 0.000497395204804182,
+            "angular_speed_rad_s": 0.0015594040151144708,
+            "finger_speed_m_s": 8.386780707020475e-05,
+            "settled_sample": true
+          },
+          "resolved_target_quaternion": [
+            -0.3507059971840925,
+            0.6507599181461672,
+            -0.3752570602407648,
+            -0.5591949313190921
+          ],
+          "target_position": [
+            -0.055,
+            0.107,
+            0.93
+          ],
+          "minimum_joint_limit_margin_rad": [
+            2.5384906075519926,
+            0.4951567411189812,
+            2.704538504960888,
+            1.0970751859393129,
+            2.0734160006166764,
+            1.0327077041198216,
+            0.27993557289807836
+          ],
+          "minimum_margin_rad": 0.27993557289807836,
+          "terminal_joint_position_rad": [
+            0.3588076792914214,
+            1.2668179424205137,
+            0.1892800500782246,
+            -1.1678555325091122,
+            -0.8236587263719214,
+            1.0155463035258394,
+            -2.6173644271019216
+          ],
+          "robot_nonrobot_contact_geometry_steps": 25,
+          "contact_geometry_pairs": [
+            [
+              "gripper0_finger1_pad_collision",
+              "tool_grip_g0"
+            ],
+            [
+              "gripper0_finger2_pad_collision",
+              "tool_grip_g0"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "calculations": [
+    {
+      "episode": "th_v2_s01_guard",
+      "calculation": "calc_001",
+      "code_sha256": "d36105a20e806f70c4e68f67b38ecd5492a2da9c65feb13f6baae6a36233ab85",
+      "output_sha256": "629d1e8b9b7527bde1d9b0fdb6379820660b18c754acc38e1bfb9b7826bc166c",
+      "output": "q [ 0.68643505  0.15754268 -0.68335285  0.19239569]\ntip relative [-0.00076774 -0.00162402 -0.14420807]\neef for tip .99 [-0.07823226  0.04562402  1.13420807]\n",
+      "returncode": 0
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "calculation": "calc_001",
+      "code_sha256": "574796574d27e690c1dd850b3a45805f8729f8bcc52f4e569d2d207c31903698",
+      "output_sha256": "05d0e6368ac17fba7d8a29c735ede54efab6d9004050c0cb42c5b9f85d3dfb09",
+      "output": "q [ 0.71316247  0.11633879 -0.66145615  0.20084904]\ntip_rotated [-0.06751037  0.04732031  1.03873998]\n",
+      "returncode": 0
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "calculation": "calc_002",
+      "code_sha256": "7fc1f7293595eb237faf4abecfa2797815ecf2ddf1bd6364a4797e5a784066b5",
+      "output_sha256": "7afd989a303cb5f50099807796ab244b3d3b0a3b475ac7811affcd510b86bd70",
+      "output": "[ 0.70886333  0.154994   -0.66907966  0.16069244]\naxis point after correction [-0.07308731  0.04747874  1.00109746]\n",
+      "returncode": 0
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "calculation": "calc_003",
+      "code_sha256": "c97062fb828a9764f303f70302ed006766344f2b0bb61226c97d7142aa196326",
+      "output_sha256": "939acd165628a82a8fee8ec5bc13f7621d14bf601a3c7be62c9021742c210c12",
+      "output": "[ 0.28809968  0.64575427  0.28809968 -0.64575427]\n",
+      "returncode": 0
+    }
+  ],
+  "actual_astra_requests": 0,
+  "scope": "Private saved-state geometry only. Does not reconstruct forces or establish causal attribution.",
+  "reproduce": ".venv/bin/python studies/mechanism_selection/discriminator.py (preserve prior result first)"
+}

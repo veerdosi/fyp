@@ -1,0 +1,20 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+th_v2_s01_guard 8 0 True 0.0 0.0
+th_v2_s02_guard 7 0 True 0.0 0.0
+th_v2_s02_guard 7 1 True 0.0 0.0
+th_v2_s02_guard 9 0 True 0.0 0.0
+th_v2_s02_guard 9 1 True 0.0 0.0
+th_v2_s02_guard 14 0 True 0.0 0.0
+th_v2_s02_guard 14 1 False 0.01332 0.24175
+th_v2_s02_guard 15 0 True 0.0 0.0
+th_v2_s02_timed 5 0 True 0.0 0.0
+th_v2_s02_timed 5 1 True 0.0 0.0
+th_v2_s02_timed 9 0 True 0.0 0.0
+th_v2_s02_timed 9 1 True 0.0 0.0
+th_v2_s02_timed 19 0 True 0.0 0.0
+th_v2_s02_timed 19 1 False 0.0098 0.1835
+th_v2_s02_timed 20 0 False 0.0069 0.12506
+th_v2_s02_timed 24 0 True 0.0 0.0
+th_v2_s02_timed 24 1 True 0.0 0.0

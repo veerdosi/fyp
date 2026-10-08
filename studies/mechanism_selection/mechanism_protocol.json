@@ -1,0 +1,60 @@
+{
+  "study_id": "pose_feasibility_v1",
+  "frozen_before_interface_implementation_and_new_policy_runs": true,
+  "prediction": "A cheap structured pose-IK query can help Astra avoid coupled EEF targets for which the bounded search finds no solution, reducing wasted motions and corrective turns. Full task benefit remains uncertain because contact, grasp retention and wrong object relations are outside this measurement.",
+  "hypothesis_family": "H4 bounded computational delegation; revised robot-feasibility representation",
+  "task": "ToolHang",
+  "suite": "robosuite",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "fresh_context_each_episode": true,
+  "matched_starts": [
+    {"pair": 1, "seed": 701, "state_index": 41},
+    {"pair": 2, "seed": 702, "state_index": 42}
+  ],
+  "episode_order": ["pf_v1_s01_waypoints", "pf_v1_s01_preview", "pf_v1_s02_preview", "pf_v1_s02_waypoints"],
+  "conditions": {
+    "waypoints": "Credible direct poses/short waypoint replanning, shared empty-closure invalidation, raw robot/sensor/model access and permitted temporary calculations.",
+    "preview": "Exactly the same motion semantics and inputs, plus optional structured robot-only pose-feasibility query. Astra selects every candidate, motion and recovery."
+  },
+  "preview": {
+    "candidate_limit": 4,
+    "consumes_one_robot_decision": true,
+    "advances_physics": false,
+    "automatic_replacement_or_cancellation": false,
+    "solver_parameters": "feasibility_screen_protocol.json unchanged",
+    "outputs": ["bounded_solution_found", "pose_residuals", "joint_limit_margin", "solver_runtime", "no_collision_or_dynamic_success_certificate"],
+    "inputs": "Current measured robot joint positions, known robot/base model and Astra-selected world EEF poses only."
+  },
+  "common": {
+    "controller": "Existing OSC_POSE, unchanged gains/scales/nullspace behavior",
+    "initial_settle_steps": 20,
+    "control_frequency_hz": 20,
+    "maximum_control_steps": 2400,
+    "maximum_robot_decisions": 30,
+    "maximum_waypoints_per_move": 4,
+    "maximum_steps_per_waypoint": 100,
+    "maximum_steps_per_move": 200,
+    "position_increment_cap_m": 0.015,
+    "orientation_increment_cap_rad": 0.15,
+    "workspace_lower": [-0.55,-0.55,0.76],
+    "workspace_upper": [0.55,0.65,1.6],
+    "shared_empty_guard": "Existing explicitly armed empty-sized closure interrupt, same calibration and thresholds in both conditions.",
+    "public_inputs": "Same RGB-D, ideal calibration, fresh joint encoder positions, robot kinematics, EEF/finger/joint-velocity/wrist measurements and processed feedback.",
+    "temporary_calculations": "Same libraries, access to public kinematic helper/model, logging and 30-second calculation limit in both conditions.",
+    "private_state": "Scoring/offline diagnosis only; never preview or policy inputs.",
+    "physics_paused_during_inference": true
+  },
+  "primary_outcome": "Full unchanged native task success at episode termination.",
+  "mechanism_outcomes": [
+    "Optional query uptake, candidate results and subsequent model choices, including ignored warnings",
+    "Fraction of executed waypoint exits outside 3 mm / 0.03 rad pose tolerance, reported separately from task success",
+    "Executed and repeated substantially nonarriving wrist turns, with original requests retained",
+    "First causal failure, acquisition/slip/contact/placement/completion judgment separated"
+  ],
+  "resources": ["Robot decisions", "Actual usage-recorded inference requests", "Calculation/tool calls", "Simulated time", "Native policy time", "Local query/execution time", "Complete host elapsed with interruptions labeled", "Recorded token usage and API-equivalent cost"],
+  "interpretation": "Two matched starts give a mechanism screen, not a general success-rate estimate. Completion-resource ratios require jointly successful matched outcomes. Non-use stays in its assigned condition. No post-outcome count changes or replacement runs.",
+  "failure_criterion": "If the query is unused or does not change unsupported pose choices and there is no paired task/resource benefit, report no demonstrated interface contribution and move to the next trace-supported mechanism. Fewer moves/calls in failed runs do not establish faster completion. Favorable evidence requires the predicted choice/motion change as well as the applicable outcome.",
+  "implementation_gate": "Paired fixed execution proves previews leave physics unchanged, public FK/joint bounds match, invalid inputs consume decisions, logs and replay are complete. Freeze all implemented source hashes and exact common prompts before any Astra dispatch; dispatch saved text verbatim and audit actual plaintext equality.",
+  "third_start": "Not scheduled; requires a specific necessary uncertainty recorded before launch."
+}

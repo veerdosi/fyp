@@ -1,0 +1,29 @@
+{
+  "calculations": [
+    {
+      "episode": "th_v2_s01_guard",
+      "calculation": "calc_001",
+      "output_reproduced_exactly": true,
+      "code_sha256": "d36105a20e806f70c4e68f67b38ecd5492a2da9c65feb13f6baae6a36233ab85"
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "calculation": "calc_001",
+      "output_reproduced_exactly": true,
+      "code_sha256": "574796574d27e690c1dd850b3a45805f8729f8bcc52f4e569d2d207c31903698"
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "calculation": "calc_002",
+      "output_reproduced_exactly": true,
+      "code_sha256": "7fc1f7293595eb237faf4abecfa2797815ecf2ddf1bd6364a4797e5a784066b5"
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "calculation": "calc_003",
+      "output_reproduced_exactly": true,
+      "code_sha256": "c97062fb828a9764f303f70302ed006766344f2b0bb61226c97d7142aa196326"
+    }
+  ],
+  "actual_astra_requests": 0
+}

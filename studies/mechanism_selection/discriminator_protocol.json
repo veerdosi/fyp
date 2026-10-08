@@ -1,0 +1,26 @@
+{
+  "frozen_before_diagnostic_implementation": true,
+  "scope": "Retrospective mechanism selection; no new robot-policy outcomes",
+  "actual_astra_requests": 0,
+  "samples": [
+    {"episode": "th_v2_s01_guard", "decision": 8, "label": "calculated_frame_tilt"},
+    {"episode": "th_v2_s02_guard", "decision": 7, "label": "calculated_frame_tilt"},
+    {"episode": "th_v2_s02_guard", "decision": 9, "label": "calculated_residual_tilt"},
+    {"episode": "th_v2_s02_guard", "decision": 14, "label": "tool_turn_nonarrival"},
+    {"episode": "th_v2_s02_guard", "decision": 15, "label": "tool_turn_recovery"},
+    {"episode": "th_v2_s02_timed", "decision": 5, "label": "frame_slip_rotation"},
+    {"episode": "th_v2_s02_timed", "decision": 9, "label": "staged_frame_rotation_recovery"},
+    {"episode": "th_v2_s02_timed", "decision": 19, "label": "tool_turn_nonarrival"},
+    {"episode": "th_v2_s02_timed", "decision": 20, "label": "tool_turn_settle"},
+    {"episode": "th_v2_s02_timed", "decision": 24, "label": "arrived_wrong_relation"}
+  ],
+  "measurements": [
+    "recorded_EEF_error_and_speed",
+    "robot_joint_limit_margin_from_saved_state",
+    "robot_nonrobot_contact_geometry_from_saved_state",
+    "public_measurement_keys",
+    "logged_calculation_source_and_output_hashes"
+  ],
+  "selection_rule": "Do not infer a transform error from task failure. If calculations are consistent and pose nonarrival is substantial, screen robot feasibility before implementing rigid-motion delegation. If pose arrival accompanies wrong relation, record that independent semantic/perceptual gap. Contact geometry and joint margins are diagnoses, not force or causal proofs.",
+  "no_new_tracker_or_guard_variation": true
+}

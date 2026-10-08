@@ -1,0 +1,5 @@
+{
+  "status": "invalid_model_compilation",
+  "reason": "Standalone robot MJCF omitted the parent environment compiler angle=radian. Joint bounds were read as degrees although kinematics at explicitly assigned q matched. All apparent no-solution outputs are invalid, not scientific results.",
+  "repair": "Add the original compiler angle convention and require all compiled joint bounds to match the original environment before scoring. No solver thresholds changed."
+}
