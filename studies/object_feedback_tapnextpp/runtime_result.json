@@ -1,0 +1,13 @@
+{
+  "attempts": [
+    {
+      "device": "mps",
+      "exit_code": -15,
+      "timed_out": false,
+      "host_seconds": 120.23256445801235,
+      "completed": false
+    }
+  ],
+  "actual_astra_requests": 0,
+  "completed_device": null
+}

@@ -1,0 +1,7 @@
+Resolved 14 packages in 28ms
+Downloading torchvision (1.7MiB)
+ Downloading torchvision
+Prepared 2 packages in 446ms
+Installed 2 packages in 5ms
+ + einops==0.8.2
+ + torchvision==0.29.1
