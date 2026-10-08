@@ -1,8 +1,8 @@
 # Move to a different communication mechanism
 
-Recorded after the partial feasibility probe and the user's request to consider
-moving on. Supersedes the full tracker-screen schedule in the frozen depth decision;
-it does not alter the depth results or classify the interrupted probe as failed.
+Recorded after the user requested moving on from tracker development. The user
+subsequently requested deleting the tracker files. This decision supersedes that
+schedule; the completed depth results remain unchanged.
 
 Retire tracked-surface correction for this iteration. H1 remains open; the tested
 local-flow, CoTracker/depth and uncertainty configurations have not supplied usable

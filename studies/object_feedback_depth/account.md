@@ -66,6 +66,7 @@ See [result.json](attempt_001/result.json), [configuration](attempt_001/configur
 
 Reproduction creates a new numbered attempt and preserves the original. The frozen
 [protocol](protocol.json) and [selection decision](../tool_hang_v2/next_test.md)
-preceded implementation and scoring. The [next decision](next_test.md) now selects
-one bounded alternative-tracker feasibility screen; no policy batch is launched
-with this failed feedback measurement.
+preceded implementation and scoring. The [current decision](../mechanism_selection/decision.md) retires this tracked-surface
+route and selects a different mechanism from the recorded failures. The proposed
+alternative tracker follow-up and its files were removed at the user's request;
+no policy batch is launched with this failed feedback measurement.
