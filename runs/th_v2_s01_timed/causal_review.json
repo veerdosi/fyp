@@ -1,0 +1,46 @@
+{
+  "reviewer": "Sol",
+  "scope": "Post-episode diagnosis; no information delivered to Astra or used by executor. Initial prompt gap limits mechanism attribution.",
+  "first_physical_failure": {
+    "decision": 2,
+    "observation": "Grasp did not hold the frame; armed empty-sized closure first appears during decision 3 at step 147.",
+    "recovery": "Regrasp at decision 5 and lift at decision 6; fingers stay wider than the empty threshold."
+  },
+  "frame_stage": {
+    "blocked_insertion_decision": 11,
+    "position_error_m": 0.04097118478863461,
+    "recovery_decision": 13,
+    "first_native_frame_assembled_step": 1071,
+    "assembled_through_terminal": true
+  },
+  "tool_stage": {
+    "unreached_approach_decisions": [
+      17,
+      18,
+      19
+    ],
+    "approach_reached_after_wrist_reconfiguration_decision": 20,
+    "tool_grasp_and_lift_decision": 21,
+    "orientation_phase_decision": 23,
+    "first_waypoint_position_error_m": 0.0901,
+    "first_waypoint_orientation_error_rad": 0.7634,
+    "sequence_continued": "Next waypoint omitted quaternion and held the measured incomplete orientation. This is an observed phase-progression issue; not proof that a different gate would finish the task.",
+    "placement_attempts": [
+      24,
+      26,
+      28
+    ],
+    "terminal_geometry": "Large-hole center is 23.7176 mm from hook line versus 6.75 mm tolerance; no horizontal-hook contact or straddling. Frame assembly passes.",
+    "native_hanging_ever_passed": false
+  },
+  "terminal_policy_judgment": "Astra explicitly reported visual uncertainty and insufficient remaining control budget, then returned finish at decision 29.",
+  "inference": "The empty-grasp warning is a relevant early failure measurement. Later arm reconfiguration and object-relative alignment remain distinct bottlenecks; cannot infer complete-task benefit or faster completion from this failed episode.",
+  "evidence": [
+    "steps.jsonl",
+    "relay_003.result.json",
+    "relay_011.result.json",
+    "relay_023.result.json",
+    "native_terminal_geometry.json",
+    "replay_verification.json"
+  ]
+}

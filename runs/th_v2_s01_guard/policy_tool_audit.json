@@ -1,0 +1,12 @@
+{
+  "reviewer": "Sol",
+  "method": "Manual inspection of all 19 exported native tool invocation bodies, the one calculation source and its native output after episode termination.",
+  "tool_boundary_pass": true,
+  "delegation_calls": 0,
+  "repository_or_simulator_reads": 0,
+  "temporary_calculation_executions": 1,
+  "observed_access": "Only current-episode public RGB images, sensing replies, robot observations and execution/feedback reports. One rotation/translation calculation uses policy-selected sensed points and public EEF quaternion; source remains in policy_compute and execution is logged by policy_calc.",
+  "os_sandbox": false,
+  "input_boundary": "Initial plaintext saved before dispatch and manually compared; independent native archival plaintext unavailable because encrypted.",
+  "source_tools_sha256": "11f9b35cfbecb4580d8da3c5436e39637bd23f09c2fee70b6349e9f2d3c963e3"
+}

@@ -1,0 +1,114 @@
+{
+  "scope": "Private terminal saved-state decomposition, not sensor evidence or new policy outcome.",
+  "samples": [
+    {
+      "episode": "th_v2_s01_timed",
+      "step": 2390,
+      "final_state": true,
+      "frame_pass": true,
+      "tool_pass": false,
+      "full_pass": false,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": true,
+        "shaft_between_opposed_walls": true
+      },
+      "frame_tip_to_base_m": 0.045018238017516185,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        -3.0244075751577022e-05,
+        -3.0244254003912874e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.0237176351908456,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 0.5661403736119925,
+          "all_checks": false
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.2071289535047327,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": 0.5622609855922119,
+          "all_checks": false
+        }
+      }
+    },
+    {
+      "episode": "th_v2_s01_guard",
+      "step": 1195,
+      "final_state": true,
+      "frame_pass": true,
+      "tool_pass": true,
+      "full_pass": true,
+      "adapter_matches_native": true,
+      "final_outcome_matches_native": true,
+      "frame_checks": {
+        "stand_upright": true,
+        "tip_near_base": true,
+        "shaft_between_opposed_walls": true
+      },
+      "frame_tip_to_base_m": 0.04506567096330826,
+      "maximum_tip_to_base_m": 0.05,
+      "wall_cross_dots": [
+        -2.96814006261336e-05,
+        -2.9681821296012176e-05
+      ],
+      "holes": {
+        "1": {
+          "label": "larger",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": true,
+            "center_near_hook_line": true,
+            "walls_straddle_hook": true,
+            "enough_insertion": true
+          },
+          "inner_radius_m": 0.0105,
+          "distance_to_hook_line_m": 0.005823012215372274,
+          "line_tolerance_m": 0.006750000000000001,
+          "insertion_fraction": 0.11828435468568615,
+          "all_checks": true
+        },
+        "2": {
+          "label": "smaller",
+          "checks": {
+            "fingerpads_released": true,
+            "horizontal_hook_contact": false,
+            "center_near_hook_line": false,
+            "walls_straddle_hook": false,
+            "enough_insertion": false
+          },
+          "inner_radius_m": 0.01,
+          "distance_to_hook_line_m": 0.19203652150631867,
+          "line_tolerance_m": 0.00625,
+          "insertion_fraction": 0.02381106920191039,
+          "all_checks": false
+        }
+      }
+    }
+  ],
+  "original_decomposition_sha256": "bdd0ca6f9f2f7a5f4dc0a455d4dd5b6cbf5ed8a5849647eeaf1b1b0b32f6f4c3",
+  "reproduce": ".venv/bin/python studies/tool_hang_v2/native_diagnosis.py",
+  "limitation": "Rebuilt geometry contacts do not reconstruct contact forces. Native release checks cover fingerpads, not all robot links. Initial prompt gap remains a separate confound."
+}

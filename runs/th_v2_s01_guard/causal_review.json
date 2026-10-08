@@ -1,0 +1,41 @@
+{
+  "episode_id": "th_v2_s01_guard",
+  "primary_success": true,
+  "first_causal_failure": {
+    "decision": 2,
+    "description": "Initial frame grasp closed nearly empty after approach waypoints ended short; Astra observed the near-empty fingers at normal handoff and retried before lifting. No stable empty interrupt fired."
+  },
+  "recovery": [
+    {
+      "decision": 3,
+      "description": "Reopened/lowered/closed, then decision 4 lifted the frame."
+    },
+    {
+      "decision": 8,
+      "description": "One logged public-point rotation calculation corrected the rod tilt."
+    },
+    {
+      "decision": 9,
+      "description": "Insertion stopped physically about 30.15 mm above target; shared load and stall advisory flags fired at steps 515 and 522."
+    },
+    {
+      "decision": 10,
+      "description": "Astra explicitly cited stalled motion/contact load, lifted and chose a 4 mm lateral correction."
+    },
+    {
+      "decision": 11,
+      "description": "Seated, released and withdrew; assembly remained intact."
+    },
+    {
+      "decision": 13,
+      "description": "Tool approach settled in a reachable wrist orientation, avoiding baseline arm-reconfiguration difficulty."
+    },
+    {
+      "decision": 16,
+      "description": "Placed measured larger ring over hook, then released and withdrew in decision 17."
+    }
+  ],
+  "mechanism_interpretation": "No armed interruption occurred. Success is not evidence that interruption caused a task benefit. Shared measurements were available, but their effect is not isolated against raw sensing. First-pair initial-prompt mismatch prevents attribution to condition semantics.",
+  "native_terminal_checks": "Both pass; larger-hole line distance 5.823 mm below 6.75 mm limit, insertion fraction 0.1183 above 0.05; frame passes native assembly.",
+  "replay": "All 1195 states, 26 camera snapshots and 1175 monitor/action rows reproduced exactly."
+}

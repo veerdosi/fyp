@@ -1,13 +1,22 @@
 {
   "paired_state": 1,
   "initial_physics_exact": true,
-  "initial_rgb_depth_calibration_exact": [
-    "agentview_depth_m.npy",
-    "calibration.json",
-    "agentview.png",
-    "robot0_eye_in_hand_depth_m.npy",
-    "robot0_eye_in_hand.png"
+  "public_file_checks": {
+    "agentview.png": true,
+    "robot0_eye_in_hand.png": true,
+    "agentview_depth_m.npy": true,
+    "robot0_eye_in_hand_depth_m.npy": true,
+    "calibration.json": true,
+    "sensor_feedback_samples.jsonl": true
+  },
+  "initial_proprioception_exact": true,
+  "processed_feedback_exact": true,
+  "calibration_exact": true,
+  "saved_dispatch_plaintext_verified": [
+    false,
+    true
   ],
   "initial_prompt_matched": false,
+  "prompt_scope": "Manual saved-before-dispatch verification; native task archives are encrypted.",
   "prompt_erratum": "amendment_002_encrypted_input_erratum.json"
 }

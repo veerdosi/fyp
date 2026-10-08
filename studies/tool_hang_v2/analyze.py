@@ -5,6 +5,7 @@ import math
 from pathlib import Path
 
 import numpy as np
+from initial_match import verify as verify_initial
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -61,6 +62,9 @@ def analyze():
             'stop_reason') == 'armed_empty_sized_closure']
         usage = read(run / 'policy_usage.json') if (run / 'policy_usage.json').exists() else None
         replay = read(run / 'replay_verification.json') if (run / 'replay_verification.json').exists() else None
+        turns = [read(f) for f in sorted(run.glob('policy_turn_*.json'))]
+        delivered_policy_seconds = sum(t['policy'].get('policy_wall_seconds') or 0 for t in turns)
+        command_seconds = sum(c['execution_wall_seconds'] for c in commands)
         result.update(status='recorded', success=outcome['success'],
                       native_terminal_checks=outcome['diagnostic_goal_predicates'],
                       stop_reason=outcome['stop_reason'], decisions=outcome['model_calls'],
@@ -75,7 +79,13 @@ def analyze():
                           'remaining_waypoints_cancelled'] for c in interruptions),
                       flagged_empty_motion_samples=sum(bool(r['flags']['empty_sized_closure'])
                                                        for r in feedback),
-                      simulator_command_seconds=sum(c['execution_wall_seconds'] for c in commands),
+                      simulator_command_seconds=command_seconds,
+                      setup_wall_seconds=config['setup_wall_seconds'],
+                      dispatch_to_delivered_policy_seconds=delivered_policy_seconds,
+                      orchestration_residual_seconds=outcome['wall_seconds'] - config['setup_wall_seconds'] -
+                      command_seconds - delivered_policy_seconds,
+                      orchestration_residual_note='Includes pre-dispatch idle, root analysis, tool/orchestration '
+                      'and operator pauses. Delivery and native inference clocks differ; not robot completion time.',
                       feedback_publication_seconds=sum(r['seconds'] for r in rows(
                           run / 'feedback_publication.jsonl')), usage=usage, replay=replay)
         if usage:
@@ -94,8 +104,10 @@ def analyze():
         guard = next(t for t in group if t['condition'] == 'empty_closure_guard')
         initial = [np.load(ROOT / 'runs' / t['episode_id'] / 'initial_state.npy') for t in group]
         assert np.array_equal(*initial)
-        matched_prompt = state == 2 and all(t['initial_prompt_verified'] for t in group)
+        initial_audit = verify_initial(state)
+        matched_prompt = initial_audit['initial_prompt_matched']
         pair = dict(paired_state=state, matched_physics=True, matched_prompt=matched_prompt,
+                    initial_public_inputs_verified=True,
                     interpretation='Matched mechanism comparison' if matched_prompt else
                     'Exploratory: unverified/mismatched initial prompt; no isolated mechanism attribution',
                     success_difference=int(guard['success']) - int(baseline['success']),
