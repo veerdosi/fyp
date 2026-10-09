@@ -1,0 +1,64 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.035,
+          -0.184,
+          0.93
+        ],
+        "quaternion_xyzw": [
+          0.63,
+          0.777,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 85
+      },
+      {
+        "position": [
+          -0.035,
+          -0.184,
+          0.808
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          -0.035,
+          -0.184,
+          0.808
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.035,
+          -0.184,
+          0.94
+        ],
+        "gripper": 1,
+        "steps": 45,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Regrasp the fallen frame collar across its new shaft direction, using the lower grasp height that previously retained it."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_preview",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0010/sense_017.json. You may cat this permitted sensor result file. The images and robot readings in obs_0010 remain current; no motion has occurred. 17 decisions have been executed, with 13 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.035,-0.184,0.93],\"quaternion_xyzw\":[0.63,0.777,0,0],\"gripper\":-1,\"steps\":85},{\"position\":[-0.035,-0.184,0.808],\"gripper\":-1,\"steps\":45},{\"position\":[-0.035,-0.184,0.808],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true},{\"position\":[-0.035,-0.184,0.94],\"gripper\":1,\"steps\":45,\"abort_if_empty_close\":true}],\"reason\":\"Regrasp the fallen frame collar across its new shaft direction, using the lower grasp height that previously retained it.\"}",
+    "response_timestamp": "2026-10-09T01:19:51.536Z",
+    "message_id": "amsg_01a11e3e-c0f0-75f0-be0c-a74d27f66e86",
+    "dispatch_timestamp": "2026-10-09T01:19:29.573Z",
+    "policy_wall_seconds": 21.963,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/policy_update_018.txt"
+  }
+}

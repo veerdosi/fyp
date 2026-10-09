@@ -26,6 +26,12 @@ def normalize(text, run):
 
 def matched_inputs(a, b):
     assert np.array_equal(np.load(a / 'initial_state.npy'), np.load(b / 'initial_state.npy'))
+    configs = [load(run / 'config.json') for run in [a, b]]
+    common_keys = ['task', 'suite', 'seed', 'state_index', 'size', 'max_steps', 'max_calls',
+        'settle_steps', 'execution_criteria', 'source_hashes', 'versions', 'model',
+        'reasoning_effort', 'computation_protocol', 'calculation_timeout_seconds',
+        'simulation_paused_during_inference', 'control_freq', 'sensor_feedback']
+    assert all(configs[0][key] == configs[1][key] for key in common_keys)
     relative = ['public/obs_0000/' + name for name in [
         'observation.json', 'calibration.json', 'sensor_feedback.json',
         'sensor_feedback_samples.jsonl', 'agentview.png', 'agentview_depth_m.npy',
@@ -48,7 +54,8 @@ def matched_inputs(a, b):
         assert capability in text
         common.append(normalize(text.replace(capability, '<CONDITION_CAPABILITY>'), run))
     assert common[0] == common[1]
-    return dict(initial_state_exact=True, public_files_exact_after_path_normalization=checked,
+    return dict(initial_state_exact=True, common_config_keys_exact=common_keys,
+                public_files_exact_after_path_normalization=checked,
                 prepared_common_prompt_exact=True,
                 normalized_common_prompt_sha256=hashlib.sha256(common[0].encode()).hexdigest(),
                 dispatch_scope='Saved text manually copied verbatim; encrypted native initial archive prevents independent automated plaintext equality.')
@@ -61,6 +68,8 @@ def episode(trial, protocol):
         row['status'] = 'running' if run.exists() else 'missing'
         return row
     config, outcome = load(run / 'config.json'), load(run / 'outcome.json')
+    assert config['task'] == protocol['task'] and config['suite'] == protocol['suite']
+    assert config['frozen_study']['paired_state'] == trial['paired_state']
     assert config['source_hashes'] == protocol['source_hashes']
     assert config['model'] == protocol['model'] and config['reasoning_effort'] == protocol['reasoning_effort']
     for key in ['seed', 'state_index', 'condition']:

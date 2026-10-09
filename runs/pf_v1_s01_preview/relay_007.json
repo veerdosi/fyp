@@ -1,0 +1,46 @@
+{
+  "command": {
+    "type": "preview",
+    "poses": [
+      {
+        "position": [
+          -0.082,
+          0.035,
+          1.14
+        ],
+        "quaternion_xyzw": [
+          0.5,
+          0.5,
+          -0.5,
+          0.5
+        ]
+      },
+      {
+        "position": [
+          -0.082,
+          0.035,
+          1.1
+        ],
+        "quaternion_xyzw": [
+          0.5,
+          0.5,
+          -0.5,
+          0.5
+        ]
+      }
+    ],
+    "reason": "Check geometric reachability for the grasped frame rotated with its long shaft downward above the stand."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_preview",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0003/sense_006.json. You may cat this permitted sensor result file. The images and robot readings in obs_0003 remain current; no motion has occurred. 6 decisions have been executed, with 24 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"preview\",\"poses\":[{\"position\":[-0.082,0.035,1.14],\"quaternion_xyzw\":[0.5,0.5,-0.5,0.5]},{\"position\":[-0.082,0.035,1.10],\"quaternion_xyzw\":[0.5,0.5,-0.5,0.5]}],\"reason\":\"Check geometric reachability for the grasped frame rotated with its long shaft downward above the stand.\"}",
+    "response_timestamp": "2026-10-08T15:50:20.784Z",
+    "message_id": "amsg_01a11c35-5970-7632-b425-bacefb3ea6bb",
+    "dispatch_timestamp": "2026-10-08T15:49:46.100Z",
+    "policy_wall_seconds": 34.684,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/policy_update_007.txt"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "condition": "pose_preview",
+  "interrupt_empty": true,
+  "waypoints": [
+    {
+      "waypoint_index": 0,
+      "first_step": 126,
+      "last_step": 143,
+      "requested_steps": 90,
+      "executed_steps": 18,
+      "armed": true,
+      "first_flags": {
+        "load_change": 135,
+        "stalled_motion": null,
+        "empty_sized_closure": 143
+      },
+      "terminal_measurement": {
+        "position_error_m": 0.18360930522124294,
+        "orientation_error_rad": 0.0014356442158735007,
+        "linear_speed_m_s": 0.07865108194085854,
+        "angular_speed_rad_s": 0.0008675978911961518,
+        "finger_speed_m_s": 0.0008960341221848407,
+        "settled_sample": false
+      },
+      "status": "empty_sized_closure",
+      "resolved_quaternion_xyzw": [
+        0.7076604396451808,
+        0.7065526850938391,
+        5.031520452097519e-05,
+        5.3068409387753157e-05
+      ]
+    }
+  ],
+  "note": "Sensor flags are observations; not-empty-sized is not acquired, seated or complete.",
+  "stop_reason": "armed_empty_sized_closure",
+  "remaining_waypoints_cancelled": 0,
+  "handoff": "Fresh observation; policy selects any recovery."
+}

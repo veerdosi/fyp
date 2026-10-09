@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 127,
+        "v": 106
+      },
+      {
+        "camera": "agentview",
+        "u": 76,
+        "v": 97
+      },
+      {
+        "camera": "agentview",
+        "u": 37,
+        "v": 102
+      },
+      {
+        "camera": "agentview",
+        "u": 186,
+        "v": 170
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 129,
+        "v": 145
+      },
+      {
+        "camera": "robot0_eye_in_hand",
+        "u": 127,
+        "v": 81
+      }
+    ],
+    "reason": "The frame visibly lifted with the gripper. Measure its shaft direction and the stand top to plan the rotation and insertion."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_preview",
+    "policy_visible_input": "Fresh observation 3 after your motion command, step 318, simulated time 15.9 seconds. 5 decisions have been executed; 25 model decisions and 2082 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0003/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0003/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0003/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0003/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":127,\"v\":106},{\"camera\":\"agentview\",\"u\":76,\"v\":97},{\"camera\":\"agentview\",\"u\":37,\"v\":102},{\"camera\":\"agentview\",\"u\":186,\"v\":170},{\"camera\":\"robot0_eye_in_hand\",\"u\":129,\"v\":145},{\"camera\":\"robot0_eye_in_hand\",\"u\":127,\"v\":81}],\"reason\":\"The frame visibly lifted with the gripper. Measure its shaft direction and the stand top to plan the rotation and insertion.\"}",
+    "response_timestamp": "2026-10-08T15:49:19.070Z",
+    "message_id": "amsg_01a11c34-685e-7f41-91e2-6f58be529cbb",
+    "dispatch_timestamp": "2026-10-08T15:48:47.271Z",
+    "policy_wall_seconds": 31.799,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/policy_update_006.txt"
+  }
+}

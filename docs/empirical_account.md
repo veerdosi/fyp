@@ -40,3 +40,9 @@ The [new prospective protocol](../studies/mechanism_selection/mechanism_protocol
 The [mechanism portfolio](mechanism_portfolio.md) separates calculation errors, execution feasibility and wrong object relations, and records when to change routes. H3 is no longer the main research allocation; live object-relative H1 correction is deferred, and the labels do not require a test each. These are small mechanism screens, not general robot-policy benchmarking. The FYP remains active: the next experiment must resolve a new design choice, and H1–H4 can be revised or replaced. A positive result is not promised.
 
 For runnable commands and evidence, use [the v2 README](../studies/tool_hang_v2/README.md), [paired results](../studies/tool_hang_v2/results.json) and [dated status history](experiment_status.md). All verification replays use zero Astra calls.
+
+## Corrected pose-feasibility comparison in progress (2026-10-09)
+
+The first corrected preview ended at the 30-decision budget with frame assembly true and tool hanging false. It used 114.4 simulated seconds, 59 measured inference requests and 463.015 seconds of native policy time. Its API-equivalent estimate is $4.933024 under the recorded rates; actual account charges are unavailable. Host elapsed includes long orchestration pauses and is not a completion-speed estimate. Replay reconstructs all 2,288 states, sensors, actions and both preview candidates exactly.
+
+Astra used one query with two solved candidates, then reached the queried approach pose. It still needed grasp and placement recovery and ultimately dropped the tool onto the stand base. No unsupported-candidate warning or avoidance was observed in this episode; no paired efficacy conclusion follows. The fresh corrected baseline and second-start pair remain scheduled. See [the current results ledger](../studies/pose_feasibility_v1/results.json) and [episode review](../runs/pf_v1_s01_preview/causal_review.json).

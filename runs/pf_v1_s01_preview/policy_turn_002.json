@@ -1,0 +1,60 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.085,
+          -0.251,
+          0.94
+        ],
+        "quaternion_xyzw": [
+          0.7071,
+          0.7071,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          -0.085,
+          -0.251,
+          0.826
+        ],
+        "quaternion_xyzw": [
+          0.7071,
+          0.7071,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 35
+      },
+      {
+        "position": [
+          -0.085,
+          -0.251,
+          0.826
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Approach and grasp the hook frame at its visible black collar, with the fingers closing across the long shaft."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_preview",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0000/sense_001.json. You may cat this permitted sensor result file. The images and robot readings in obs_0000 remain current; no motion has occurred. 1 decisions have been executed, with 29 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.085,-0.251,0.94],\"quaternion_xyzw\":[0.7071,0.7071,0,0],\"gripper\":-1,\"steps\":45},{\"position\":[-0.085,-0.251,0.826],\"quaternion_xyzw\":[0.7071,0.7071,0,0],\"gripper\":-1,\"steps\":35},{\"position\":[-0.085,-0.251,0.826],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true}],\"reason\":\"Approach and grasp the hook frame at its visible black collar, with the fingers closing across the long shaft.\"}",
+    "response_timestamp": "2026-10-08T15:42:58.301Z",
+    "message_id": "amsg_01a11c2e-98fd-70f0-ab46-4af8306aff41",
+    "dispatch_timestamp": "2026-10-08T15:42:24.005Z",
+    "policy_wall_seconds": 34.296,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/policy_update_002.txt"
+  }
+}

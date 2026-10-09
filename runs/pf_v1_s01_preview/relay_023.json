@@ -1,0 +1,44 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.08,
+          0.2,
+          1.0
+        ],
+        "gripper": -1,
+        "steps": 65
+      },
+      {
+        "position": [
+          0.05,
+          -0.195,
+          0.98
+        ],
+        "quaternion_xyzw": [
+          0.7071,
+          0.7071,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 100
+      }
+    ],
+    "reason": "Withdrawal toward the shaft encountered contact. Back the open gripper away along its approach direction, then move above the tool to inspect the released frame and prepare the tool grasp."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_preview",
+    "policy_visible_input": "Fresh observation 14 after your motion command, step 1463, simulated time 73.15 seconds. 22 decisions have been executed; 8 model decisions and 937 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0014/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0014/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0014/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0014/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.08,0.20,1.00],\"gripper\":-1,\"steps\":65},{\"position\":[0.05,-0.195,0.98],\"quaternion_xyzw\":[0.7071,0.7071,0,0],\"gripper\":-1,\"steps\":100}],\"reason\":\"Withdrawal toward the shaft encountered contact. Back the open gripper away along its approach direction, then move above the tool to inspect the released frame and prepare the tool grasp.\"}",
+    "response_timestamp": "2026-10-09T01:23:35.262Z",
+    "message_id": "amsg_01a11e42-2ade-7dc2-8d03-62913a60e0f6",
+    "dispatch_timestamp": "2026-10-09T01:23:23.394Z",
+    "policy_wall_seconds": 11.868,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/policy_update_023.txt"
+  }
+}

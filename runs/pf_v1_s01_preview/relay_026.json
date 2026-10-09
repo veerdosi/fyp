@@ -1,0 +1,64 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.037,
+          -0.212,
+          0.94
+        ],
+        "quaternion_xyzw": [
+          0.766,
+          0.643,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          0.037,
+          -0.212,
+          0.812
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          0.037,
+          -0.212,
+          0.812
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          0.037,
+          -0.212,
+          1.105
+        ],
+        "gripper": 1,
+        "steps": 85,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Grasp the tool's black handle across its long axis and lift it flat, leaving the larger ring free for lowering over the hook tip."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_preview",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0016/sense_025.json. You may cat this permitted sensor result file. The images and robot readings in obs_0016 remain current; no motion has occurred. 25 decisions have been executed, with 5 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.037,-0.212,0.94],\"quaternion_xyzw\":[0.766,0.643,0,0],\"gripper\":-1,\"steps\":45},{\"position\":[0.037,-0.212,0.812],\"gripper\":-1,\"steps\":45},{\"position\":[0.037,-0.212,0.812],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true},{\"position\":[0.037,-0.212,1.105],\"gripper\":1,\"steps\":85,\"abort_if_empty_close\":true}],\"reason\":\"Grasp the tool's black handle across its long axis and lift it flat, leaving the larger ring free for lowering over the hook tip.\"}",
+    "response_timestamp": "2026-10-09T01:25:55.166Z",
+    "message_id": "amsg_01a11e44-4d5e-75c0-91b1-6fc919f01284",
+    "dispatch_timestamp": "2026-10-09T01:25:35.272Z",
+    "policy_wall_seconds": 19.894,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/policy_update_026.txt"
+  }
+}

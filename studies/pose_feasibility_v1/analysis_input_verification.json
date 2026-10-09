@@ -1,5 +1,25 @@
 {
   "initial_state_exact": true,
+  "common_config_keys_exact": [
+    "task",
+    "suite",
+    "seed",
+    "state_index",
+    "size",
+    "max_steps",
+    "max_calls",
+    "settle_steps",
+    "execution_criteria",
+    "source_hashes",
+    "versions",
+    "model",
+    "reasoning_effort",
+    "computation_protocol",
+    "calculation_timeout_seconds",
+    "simulation_paused_during_inference",
+    "control_freq",
+    "sensor_feedback"
+  ],
   "public_files_exact_after_path_normalization": [
     "public/obs_0000/observation.json",
     "public/obs_0000/calibration.json",

@@ -1,0 +1,2 @@
+
+Condition capability: optional {"type":"preview","poses":[{"position":[x,y,z],"quaternion_xyzw":[qx,qy,qz,qw]}],"reason":"..."} queries one to four candidate poses using current robot angles. Quaternion may be omitted to use current orientation. This consumes one decision, advances no physics and returns a structured calculation file. It neither cancels execution nor chooses a replacement target.

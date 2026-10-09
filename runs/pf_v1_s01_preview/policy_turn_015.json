@@ -1,0 +1,48 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.079,
+          0.037,
+          0.985
+        ],
+        "gripper": 1,
+        "steps": 30,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.079,
+          0.037,
+          0.985
+        ],
+        "gripper": -1,
+        "steps": 20
+      },
+      {
+        "position": [
+          -0.079,
+          -0.1,
+          1.05
+        ],
+        "gripper": -1,
+        "steps": 55
+      }
+    ],
+    "reason": "Complete the final short descent, release the frame inside the stand and withdraw to inspect whether it remains upright."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s01_preview",
+    "policy_visible_input": "Fresh observation 8 after your motion command, step 693, simulated time 34.65 seconds. 14 decisions have been executed; 16 model decisions and 1707 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0008/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0008/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0008/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/public/obs_0008/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.079,0.037,0.985],\"gripper\":1,\"steps\":30,\"abort_if_empty_close\":true},{\"position\":[-0.079,0.037,0.985],\"gripper\":-1,\"steps\":20},{\"position\":[-0.079,-0.10,1.05],\"gripper\":-1,\"steps\":55}],\"reason\":\"Complete the final short descent, release the frame inside the stand and withdraw to inspect whether it remains upright.\"}",
+    "response_timestamp": "2026-10-09T01:17:54.973Z",
+    "message_id": "amsg_01a11e3c-f99d-72b2-943f-55f738a362ea",
+    "dispatch_timestamp": "2026-10-09T01:17:42.162Z",
+    "policy_wall_seconds": 12.811,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_preview/policy_update_015.txt"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "episode": "pf_v1_s01_preview",
+  "reviewer": "Sol",
+  "scope": "Short returned command reasons compared with recorded public sensors, images and replay; private terminal decomposition separately diagnoses outcome. No hidden model reasoning exported.",
+  "first_observable_execution_divergence": {
+    "decision": 2,
+    "steps": [
+      65,
+      100
+    ],
+    "observation": "Approach and descent durations elapsed while still moving, with position errors 95.52 and 24.77 mm. Closure then approached within 2.69 mm. These precede the failed acquisition but do not isolate its cause."
+  },
+  "first_manipulation_failure": {
+    "phase": "frame acquisition/retention",
+    "decision": 3,
+    "step": 143,
+    "evidence": "Stable empty-sized closure interrupted the lift after 18/90 steps; the public image shows the frame on the table. Astra acknowledged this and retried lower with changed XY.",
+    "uncertainty": "Cannot isolate grasp height, centering, closing while moving or transient contact from this one combined retry."
+  },
+  "recovered_phases": [
+    {
+      "decision": 5,
+      "observation": "Frame lifted after lower collar retry."
+    },
+    {
+      "decision": 15,
+      "observation": "First release left frame fallen beside stand, confirmed by public obs_0009 image."
+    },
+    {
+      "decisions": [
+        18,
+        19,
+        21,
+        22
+      ],
+      "observation": "Astra regrasped and aligned from an overhead view; native frame assembly first passes at step 1348 and remains true at termination."
+    }
+  ],
+  "terminal_failure": {
+    "phase": "tool-to-hook relation after release",
+    "decision": 30,
+    "evidence": "Tool rests on stand base in public terminal image; native larger-hole distance from hook line is 209.75 mm versus 6.75 mm tolerance, with no horizontal-hook contact. Frame remains assembled.",
+    "native_diagnosis": "native_terminal_geometry.json",
+    "completion_judgment": "No finish declaration; shared 30-decision budget exhausted."
+  },
+  "schema_error": {
+    "decision": 29,
+    "requested_steps": 205,
+    "limit": 200,
+    "physics_advanced": false,
+    "budget_consumed": true,
+    "recovery": "Astra resubmitted a 200-step sequence on decision 30."
+  },
+  "query_contribution": {
+    "decision": 7,
+    "candidates": 2,
+    "solutions": 2,
+    "warning_candidates": 0,
+    "physics_advanced": false,
+    "subsequent": "The queried approach pose was executed and reached closely. Later insertion/release and withdrawal problems required contact/geometry recovery.",
+    "claim": "Query used once; no unsupported-candidate avoidance observed. Paired efficacy and resource contribution remain pending."
+  },
+  "time_limitation": "Host elapsed and dispatch delivery include long orchestration/continuation pauses. Native policy time is separately exported; no host speed claim.",
+  "boundary": "All 29 exported policy tool bodies reviewed; public current-episode reads only. No temporary code used, despite identical permitted computation access."
+}

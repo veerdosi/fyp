@@ -1,0 +1,65 @@
+{
+  "condition": "pose_preview",
+  "interrupt_empty": true,
+  "waypoints": [
+    {
+      "waypoint_index": 0,
+      "first_step": 504,
+      "last_step": 523,
+      "requested_steps": 20,
+      "executed_steps": 20,
+      "armed": true,
+      "first_flags": {
+        "load_change": null,
+        "stalled_motion": null,
+        "empty_sized_closure": null
+      },
+      "terminal_measurement": {
+        "position_error_m": 0.00020381570201080424,
+        "orientation_error_rad": 0.0007594252401417037,
+        "linear_speed_m_s": 1.3973623876997653e-05,
+        "angular_speed_rad_s": 7.411312549976202e-05,
+        "finger_speed_m_s": 6.566411771721193e-07,
+        "settled_sample": true
+      },
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.5001164044674079,
+        0.49978394502411083,
+        -0.4997939098273128,
+        0.5003055446207414
+      ]
+    },
+    {
+      "waypoint_index": 1,
+      "first_step": 524,
+      "last_step": 558,
+      "requested_steps": 35,
+      "executed_steps": 35,
+      "armed": true,
+      "first_flags": {
+        "load_change": 533,
+        "stalled_motion": 547,
+        "empty_sized_closure": null
+      },
+      "terminal_measurement": {
+        "position_error_m": 0.04610910664084696,
+        "orientation_error_rad": 0.0011528268189714755,
+        "linear_speed_m_s": 0.002109362315997181,
+        "angular_speed_rad_s": 0.0008502117160861051,
+        "finger_speed_m_s": 0.000255182439653507,
+        "settled_sample": false
+      },
+      "status": "duration_elapsed",
+      "resolved_quaternion_xyzw": [
+        0.4999992253966454,
+        0.4999986044426415,
+        -0.49954556158140545,
+        0.5004561939495642
+      ]
+    }
+  ],
+  "note": "Sensor flags are observations; not-empty-sized is not acquired, seated or complete.",
+  "stop_reason": "sequence_complete",
+  "remaining_waypoints_cancelled": 0
+}
