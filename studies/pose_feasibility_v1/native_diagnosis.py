@@ -30,6 +30,6 @@ report = dict(scope='Private terminal saved-state decomposition, not sensor evid
               samples=samples, original_decomposition_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
               reproduce='.venv/bin/python studies/pose_feasibility_v1/native_diagnosis.py',
               limitation='Rebuilt geometry contacts do not reconstruct contact forces. Native release '
-              'checks cover fingerpads, not all robot links. Calculation runtime confound in the first pair remains separate.')
+              'checks cover fingerpads, not all robot links. Only the four corrected scheduled episodes are included.')
 (HERE / 'native_terminal_geometry.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(samples, indent=2))

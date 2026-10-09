@@ -1,0 +1,21 @@
+{
+  "initial_state_exact": true,
+  "public_files_exact_after_path_normalization": [
+    "public/obs_0000/observation.json",
+    "public/obs_0000/calibration.json",
+    "public/obs_0000/sensor_feedback.json",
+    "public/obs_0000/sensor_feedback_samples.jsonl",
+    "public/obs_0000/agentview.png",
+    "public/obs_0000/agentview_depth_m.npy",
+    "public/obs_0000/robot0_eye_in_hand.png",
+    "public/obs_0000/robot0_eye_in_hand_depth_m.npy",
+    "public/robot_kinematics/robot.xml",
+    "public/robot_kinematics/parameters.json",
+    "public/robot_kinematics/kinematic_preview.py",
+    "public/feedback_calibration.json"
+  ],
+  "prepared_common_prompt_exact": true,
+  "normalized_common_prompt_sha256": "6dbeae81338f72a836ca8d82b7e0943a3099a459060366eb010898ad0b032dd7",
+  "dispatch_scope": "Saved text manually copied verbatim; encrypted native initial archive prevents independent automated plaintext equality.",
+  "scope": "Offline analysis input-verification check on already retained identical fixed fixtures; zero new simulator or Astra runs."
+}
