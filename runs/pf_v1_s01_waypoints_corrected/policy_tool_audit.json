@@ -1,0 +1,12 @@
+{
+  "reviewer": "Sol",
+  "method": "Manual inspection of all 18 exported tool invocation bodies after episode termination.",
+  "tool_boundary_pass": true,
+  "delegation_calls": 0,
+  "repository_or_simulator_reads": 0,
+  "temporary_calculation_executions": 0,
+  "observed_access": "Only current-episode public RGB, sensing replies, calibration and observation/execution JSON. No project writing, simulator access or delegation.",
+  "os_sandbox": false,
+  "input_boundary": "Saved initial text manually copied verbatim; encrypted native initial archive prevents independently automated plaintext equality.",
+  "source_tools_sha256": "3c7d0233b42fccc5ee2b9b6f75ce93d3f217a74e52cf6f162aeefa89fd4675c2"
+}

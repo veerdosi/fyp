@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "stop_reason": "policy_finish",
+  "diagnostic_goal_predicates": [
+    {
+      "predicate": [
+        "frame_assembled"
+      ],
+      "satisfied": true
+    },
+    {
+      "predicate": [
+        "tool_on_frame"
+      ],
+      "satisfied": true
+    }
+  ],
+  "control_steps": 1596,
+  "simulated_seconds": 79.8,
+  "wall_seconds": 1279.6009992079926,
+  "model_calls": 18,
+  "cost_usd": null,
+  "cost_status": "unavailable for collaboration policy calls",
+  "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s01_waypoints_corrected"
+}

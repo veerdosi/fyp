@@ -1,0 +1,66 @@
+{
+  "episode": "pf_v1_s01_waypoints_corrected",
+  "reviewer": "Sol",
+  "scope": "Returned short command reasons checked against replayed public measurements and images; native state used only for offline diagnosis. No hidden model reasoning exported.",
+  "first_observable_execution_divergence": {
+    "decision": 2,
+    "steps": [
+      65,
+      100
+    ],
+    "observation": "Approach and descent durations elapsed before arrival; errors 96.32 and 16.37 mm. The closing target was reached, but closure was empty-sized."
+  },
+  "first_manipulation_failure": {
+    "phase": "frame acquisition",
+    "decision": 2,
+    "step": 125,
+    "evidence": "Shared armed empty-sized closure stopped the close and cancelled the 45-step lift. Astra acknowledged the empty grasp and lowered its grasp target by 24 mm.",
+    "uncertainty": "This combined retry does not isolate timing versus grasp geometry."
+  },
+  "recovered_phases": [
+    {
+      "decision": 3,
+      "observation": "Lower grasp and lift retained the frame."
+    },
+    {
+      "decision": 8,
+      "observation": "Released frame assembly first passes at step 606; final native assembly remains true."
+    },
+    {
+      "decision": 10,
+      "observation": "Low crossing toward tool stalled more than 27 cm short, followed by an empty close at step 881. Astra attributed this to assembled-structure contact and chose a higher route."
+    },
+    {
+      "decisions": [
+        11,
+        12
+      ],
+      "observation": "High route and vertical descent reached targets and lifted tool."
+    },
+    {
+      "decisions": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "observation": "Astra remeasured the rotated hook and tool ring, carried and lowered the ring, released, withdrew and waited three simulated seconds."
+    }
+  ],
+  "terminal_failure": null,
+  "completion_judgment": {
+    "decision": 18,
+    "claim": "Frame upright and tool suspended by larger hole after release and settling.",
+    "native_agrees": true,
+    "first_native_success_step": 1554
+  },
+  "query_contribution": {
+    "structured_queries": 0,
+    "own_kinematic_calculations": 0,
+    "claim": "No structured query available; shared model/helper and calculation access unused. This baseline completed without the optional query."
+  },
+  "schema_errors": [],
+  "time_limitation": "Host elapsed and delivered-response intervals include orchestration delay; use distinct exported native policy and local execution clocks. Failed preview prevents a completion-efficiency ratio for this pair.",
+  "boundary": "All 18 exported policy tool bodies reviewed: public current-episode reads only. No temporary code used, despite common permitted access."
+}

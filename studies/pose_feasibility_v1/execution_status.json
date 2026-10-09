@@ -3,14 +3,15 @@
   "implementation_revision": "ab09871",
   "scheduled": 4,
   "matched_starts": 2,
-  "current_episode": null,
+  "current_episode": "pf_v1_s02_preview",
   "completed_episodes": [
-    "pf_v1_s01_preview"
+    "pf_v1_s01_preview",
+    "pf_v1_s01_waypoints_corrected"
   ],
   "protocol_unchanged": false,
   "dispatch_plaintext_audit": "Saved text copied verbatim; native rollout encryption prevents automated equality. Retain limitation; no decryption.",
   "scheduled_comparison_episodes": 4,
   "authorized_rerun": "pf_v1_s01_waypoints_corrected",
   "broken_run_records_removed_at_user_request": true,
-  "next_episode": "pf_v1_s01_waypoints_corrected"
+  "next_episode": "pf_v1_s02_waypoints"
 }

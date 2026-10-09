@@ -1,0 +1,9 @@
+{
+  "saved_initial_sha256": "b0ecb41dcbe83b3aafeec5644d663e3641b16e7f55e8b731a848a7e2ad99b79e",
+  "manual_copy_verbatim": true,
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "fresh_context": true,
+  "independent_native_archive_plaintext_verification": false,
+  "limitation": "Native initial dispatch archive is encrypted; independently automated plaintext equality unavailable. No decryption attempted."
+}

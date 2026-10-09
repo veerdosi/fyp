@@ -1,0 +1,40 @@
+{
+  "initial_state_exact": true,
+  "common_config_keys_exact": [
+    "task",
+    "suite",
+    "seed",
+    "state_index",
+    "size",
+    "max_steps",
+    "max_calls",
+    "settle_steps",
+    "execution_criteria",
+    "source_hashes",
+    "versions",
+    "model",
+    "reasoning_effort",
+    "computation_protocol",
+    "calculation_timeout_seconds",
+    "simulation_paused_during_inference",
+    "control_freq",
+    "sensor_feedback"
+  ],
+  "public_files_exact_after_path_normalization": [
+    "public/obs_0000/observation.json",
+    "public/obs_0000/calibration.json",
+    "public/obs_0000/sensor_feedback.json",
+    "public/obs_0000/sensor_feedback_samples.jsonl",
+    "public/obs_0000/agentview.png",
+    "public/obs_0000/agentview_depth_m.npy",
+    "public/obs_0000/robot0_eye_in_hand.png",
+    "public/obs_0000/robot0_eye_in_hand_depth_m.npy",
+    "public/robot_kinematics/robot.xml",
+    "public/robot_kinematics/parameters.json",
+    "public/robot_kinematics/kinematic_preview.py",
+    "public/feedback_calibration.json"
+  ],
+  "prepared_common_prompt_exact": true,
+  "normalized_common_prompt_sha256": "a43016e348674b0183f7c50ad5ddc6f2249d78ac060404a866b9cf312f67b6e9",
+  "dispatch_scope": "Saved text manually copied verbatim; encrypted native initial archive prevents independent automated plaintext equality."
+}
