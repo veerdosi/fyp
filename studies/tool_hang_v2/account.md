@@ -40,9 +40,8 @@ On the clean start, guarded consumed six more usage-recorded inferences, 5.75 mo
 simulated seconds and about $2.03 more API-equivalent cost. These describe the
 success/failure tradeoff, not a speed gain or an established cost of improvement.
 
-Native policy durations include tools and a failed usage-limit turn in the second
-guarded episode. Actual account charges and unrecorded rejected-request costs are
-unknown. Host totals were 21227.032, 1366.880, 20750.317 and 2647.815 seconds in
+Native policy durations include recorded tool activity and completed turns.
+Actual account charges are unknown. Host totals were 21227.032, 1366.880, 20750.317 and 2647.815 seconds in
 scheduled order; simulator command totals were 45.188, 25.211, 48.971 and 48.084
 seconds. Host totals include operator/service interruptions and root analysis;
 recovered origins are approximate. One dispatch/delivery interval is missing in
