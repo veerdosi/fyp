@@ -1,0 +1,82 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.034,
+          -0.218,
+          0.94
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 70
+      },
+      {
+        "position": [
+          0.034,
+          -0.218,
+          0.82
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 50
+      },
+      {
+        "position": [
+          0.034,
+          -0.218,
+          0.82
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          0.034,
+          -0.218,
+          1.01
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 55,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Grasp the tool handle across its width and lift it while leaving the larger ring unobstructed."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_waypoints",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0010/sense_015.json. You may cat this permitted sensor result file. The images and robot readings in obs_0010 remain current; no motion has occurred. 15 decisions have been executed, with 15 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.034,-0.218,0.94],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":70},{\"position\":[0.034,-0.218,0.82],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":50},{\"position\":[0.034,-0.218,0.82],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true},{\"position\":[0.034,-0.218,1.01],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":1,\"steps\":55,\"abort_if_empty_close\":true}],\"reason\":\"Grasp the tool handle across its width and lift it while leaving the larger ring unobstructed.\"}",
+    "response_timestamp": "2026-10-11T08:20:19.967Z",
+    "message_id": "amsg_01a12a0c-6d7f-7c31-a708-dff8b6240cbb",
+    "dispatch_timestamp": "2026-10-11T08:19:56.334Z",
+    "policy_wall_seconds": 23.633,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/policy_update_016.txt"
+  }
+}

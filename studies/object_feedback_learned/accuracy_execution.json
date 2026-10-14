@@ -1,9 +1,0 @@
-{
-  "code_revision_at_launch": "4f35f8bfafec79dc06243d43de64676e89594a12",
-  "source_inventory": "accuracy_protocol.json: source_hashes records the uncommitted execution source and every input hash.",
-  "command": ".venv/bin/python -u studies/object_feedback_learned/accuracy_audit.py > studies/object_feedback_learned/accuracy.log 2>&1",
-  "model": "Official CoTracker3 scaled-online checkpoint, not Astra",
-  "astra_requests": 0,
-  "date": "2026-10-08",
-  "original_policy_conditions_unchanged": true
-}

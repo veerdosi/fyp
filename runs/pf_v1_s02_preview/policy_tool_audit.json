@@ -1,0 +1,29 @@
+{
+  "reviewer": "Sol",
+  "method": "Manual inspection of all 31 exported tool invocation bodies and all three logged calculation sources, outputs and execution metadata after episode termination.",
+  "tool_boundary_pass": true,
+  "delegation_calls": 0,
+  "repository_or_simulator_reads": 0,
+  "temporary_calculation_executions": 3,
+  "observed_access": "Current-episode public RGB and sensor JSON; three temporary NumPy/SciPy calculations written only in policy_compute and executed through policy_calc.py. Literal inputs are public measured poses and selected surface coordinates. No simulator/scoring reads, repository modification, network access or delegation.",
+  "calculation_review": [
+    {
+      "calculation": "calc_001",
+      "purpose": "Measured-quaternion tilt correction",
+      "returncode": 0
+    },
+    {
+      "calculation": "calc_002",
+      "purpose": "Measured-quaternion axes",
+      "returncode": 0
+    },
+    {
+      "calculation": "calc_003",
+      "purpose": "Selected visible hook-axis and hole-offset pose calculation",
+      "returncode": 0
+    }
+  ],
+  "os_sandbox": false,
+  "input_boundary": "Saved initial text manually copied verbatim; encrypted native initial archive prevents independently automated plaintext equality. Original policy context resumed after exact observable recovery.",
+  "source_tools_sha256": "b288156bcad631e84835c39f5b799de3d083e9626246500d6dca11259c7c2c6e"
+}

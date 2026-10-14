@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 import sys
+import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -13,11 +14,12 @@ from fyp.episode import Episode, replay, write_json
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('pilot', choices=['pilot_tool_hang_001', 'pilot_tool_hang_002'])
+parser.add_argument('--run', type=Path, help='Fresh output folder; defaults outside the repository.')
 args = parser.parse_args()
 source = ROOT / 'runs' / args.pilot
 config = json.loads((source / 'config.json').read_text())
 suffix = args.pilot.rsplit('_', 1)[1]
-run = ROOT / 'runs' / f'verify_pilot_commands_{suffix}'
+run = args.run or Path(tempfile.mkdtemp(prefix='fyp-pilot-replay-')) / 'episode'
 ep = Episode(run, **{k: config[k] for k in ['task', 'suite', 'seed', 'state_index',
              'condition', 'size', 'max_steps', 'max_calls', 'settle_steps']})
 ep.config.update(model=None, reasoning_effort=None, verification=dict(

@@ -1,0 +1,50 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.047,
+          -0.034,
+          1.3
+        ],
+        "quaternion_xyzw": [
+          0.977,
+          0.213,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 65
+      },
+      {
+        "position": [
+          0.04,
+          -0.2,
+          1.04
+        ],
+        "quaternion_xyzw": [
+          0.829,
+          0.559,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 70
+      }
+    ],
+    "reason": "Raise the downward-facing open fingers clear of the hooked frame before traversing to the tool."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_preview",
+    "policy_visible_input": "Fresh observation 12 after your motion command, step 1360, simulated time 68.0 seconds. 18 decisions have been executed; 12 model decisions and 1040 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0012/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0012/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0012/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0012/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.047,-0.034,1.30],\"quaternion_xyzw\":[0.977,0.213,0,0],\"gripper\":-1,\"steps\":65},{\"position\":[0.04,-0.20,1.04],\"quaternion_xyzw\":[0.829,0.559,0,0],\"gripper\":-1,\"steps\":70}],\"reason\":\"Raise the downward-facing open fingers clear of the hooked frame before traversing to the tool.\"}",
+    "response_timestamp": "2026-10-09T07:08:32.647Z",
+    "message_id": "amsg_01a11f7d-fc07-7f51-b4b9-9f1a97a2ed79",
+    "dispatch_timestamp": "2026-10-09T07:07:44.931Z",
+    "policy_wall_seconds": 47.716,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/policy_update_019.txt"
+  }
+}

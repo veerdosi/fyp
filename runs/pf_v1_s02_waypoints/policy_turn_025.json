@@ -1,0 +1,48 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.105,
+          -0.045,
+          0.93
+        ],
+        "gripper": -1,
+        "steps": 55
+      },
+      {
+        "position": [
+          -0.068,
+          0.019,
+          0.918
+        ],
+        "gripper": -1,
+        "steps": 35
+      },
+      {
+        "position": [
+          -0.068,
+          0.019,
+          0.918
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Attempt a side grasp of the fallen tool's visible handle near the stand while maintaining the upright tool orientation."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_waypoints",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0016/sense_024.json. You may cat this permitted sensor result file. The images and robot readings in obs_0016 remain current; no motion has occurred. 24 decisions have been executed, with 6 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.105,-0.045,0.93],\"gripper\":-1,\"steps\":55},{\"position\":[-0.068,0.019,0.918],\"gripper\":-1,\"steps\":35},{\"position\":[-0.068,0.019,0.918],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true}],\"reason\":\"Attempt a side grasp of the fallen tool's visible handle near the stand while maintaining the upright tool orientation.\"}",
+    "response_timestamp": "2026-10-11T08:26:48.004Z",
+    "message_id": "amsg_01a12a12-5944-7f30-9cae-352ffe94ff4b",
+    "dispatch_timestamp": "2026-10-11T08:26:32.876Z",
+    "policy_wall_seconds": 15.128,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/policy_update_025.txt"
+  }
+}

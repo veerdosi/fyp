@@ -1,0 +1,2028 @@
+{
+  "scope": "Historical fixed verification only; not Astra policy outcomes. Temporary run folders were removed on 2026-10-14. Original policy sources and reusable verification drivers remain.",
+  "pilot_regression": {
+    "verify_pilot_commands_001": {
+      "source_pilot": "pilot_tool_hang_001",
+      "verification_run": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_pilot_commands_001",
+      "exact_commands_reexecuted": 20,
+      "actual_model_inference_requests": 0,
+      "maximum_errors": {
+        "actions": 0.0,
+        "states": 0.0
+      },
+      "current_success": true,
+      "original_success": true,
+      "pass_verification": true,
+      "scope": "Checks current physical execution with original commands; not a new policy episode, success-rate estimate or pilot prompt equivalence test.",
+      "reproduce": ".venv/bin/python studies/tool_hang_v1/reexecute_pilot_commands.py pilot_tool_hang_001"
+    },
+    "verify_pilot_commands_002": {
+      "source_pilot": "pilot_tool_hang_002",
+      "verification_run": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_pilot_commands_002",
+      "exact_commands_reexecuted": 28,
+      "actual_model_inference_requests": 0,
+      "maximum_errors": {
+        "actions": 0.0,
+        "states": 0.0
+      },
+      "current_success": false,
+      "original_success": false,
+      "pass_verification": true,
+      "scope": "Checks current physical execution with original commands; not a new policy episode, success-rate estimate or pilot prompt equivalence test.",
+      "reproduce": ".venv/bin/python studies/tool_hang_v1/reexecute_pilot_commands.py pilot_tool_hang_002"
+    }
+  },
+  "duration_and_transition": {
+    "scope": "Offline pilot-prefix diagnostic; no policy calls or task-success comparison.",
+    "results": [
+      {
+        "run": "verify_phase_guard_001",
+        "steps": 65,
+        "wp_terminal_error_m": [
+          [
+            6.818848375751719e-15
+          ],
+          [
+            0.14283242298215798,
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "run": "verify_deadline_guard_001",
+        "steps": 95,
+        "wp_terminal_error_m": [
+          [
+            3.4877673375859223e-15
+          ],
+          [
+            0.14283241459447182,
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "run": "verify_timed_waypoints_001",
+        "steps": 195,
+        "wp_terminal_error_m": [
+          [
+            3.4877673375859223e-15
+          ],
+          [
+            0.14283241459447182,
+            0.07037540434242394,
+            0.0030765336485918658,
+            0.06765391926184693
+          ]
+        ]
+      },
+      {
+        "run": "diagnostic_grasp_duration_1",
+        "steps": 155,
+        "wp_terminal_error_m": [
+          [
+            0.14283243077703084,
+            0.07037541263599799,
+            0.003076526563931494,
+            0.06765391772586649
+          ]
+        ],
+        "frame_z_change_m": 1.84942773318042e-08,
+        "original_prefix_state_max_error": 0.0,
+        "original_prefix_action_max_error": 0.0
+      },
+      {
+        "run": "diagnostic_grasp_duration_2",
+        "steps": 290,
+        "wp_terminal_error_m": [
+          [
+            0.007862410627561024
+          ],
+          [
+            0.00043381266000221504
+          ],
+          [
+            0.003745130427592109
+          ],
+          [
+            0.0002888937111734619
+          ]
+        ],
+        "frame_z_change_m": 1.84942773318042e-08
+      }
+    ]
+  },
+  "fixed_checks": [
+    {
+      "run": "diagnostic_grasp_duration_1",
+      "config.json": {
+        "task": "ToolHang",
+        "suite": "robosuite",
+        "state_index": 1,
+        "seed": 401,
+        "condition": "direct_waypoints",
+        "max_steps": 2400,
+        "max_calls": 30,
+        "settle_steps": 20,
+        "code_revision": "6d1c4965b582078eebcd25a1521b7e67c9d50a3a",
+        "diagnostic_source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "reproduce_command": "/Users/veerdosi/Documents/code/github/fyp/.venv/bin/python /Users/veerdosi/Documents/code/github/fyp/scripts/verify_phase_execution.py --run NEW_UNUSED_FOLDER --condition direct_waypoints --duration-scale 1"
+      },
+      "outcome.json": {
+        "success": false,
+        "stop_reason": "policy_finish",
+        "diagnostic_goal_predicates": [
+          {
+            "predicate": [
+              "frame_assembled"
+            ],
+            "satisfied": false
+          },
+          {
+            "predicate": [
+              "tool_on_frame"
+            ],
+            "satisfied": false
+          }
+        ],
+        "control_steps": 155,
+        "simulated_seconds": 7.75,
+        "wall_seconds": 8.813806249992922,
+        "model_calls": 2,
+        "cost_usd": null,
+        "cost_status": "unavailable for collaboration policy calls",
+        "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_1"
+      },
+      "replay_verification.json": {
+        "control_steps": 155,
+        "max_state_absolute_error": 0.0,
+        "success": false,
+        "expected_success": false,
+        "pass": true
+      },
+      "operator_verification.json": {
+        "policy_inference_requests": 0,
+        "source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "duration_scale": 1,
+        "hold_check": false,
+        "results": [
+          {
+            "observation_id": 1,
+            "step": 155,
+            "simulated_seconds": 7.75,
+            "model_calls": 1,
+            "remaining_steps": 2245,
+            "remaining_model_calls": 29,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.08066028039691708,
+                -0.2543290768424124,
+                1.002445972440527
+              ],
+              "robot0_eef_quat": [
+                0.9999995173713636,
+                0.00025017231048687027,
+                0.00075155646367715,
+                -0.0005812346651517114
+              ],
+              "robot0_joint_vel": [
+                0.0649052965384899,
+                -0.17422988328323824,
+                -0.08084614319432197,
+                -0.019794665024388168,
+                -0.08413631912992954,
+                -0.1538441463344936,
+                0.0626361708687364
+              ],
+              "robot0_gripper_qpos": [
+                0.00040379766474189007,
+                -0.0005957532100449765
+              ],
+              "robot0_gripper_qvel": [
+                8.496538838563493e-05,
+                8.64272457909619e-05
+              ],
+              "robot0_eef_force": [
+                0.009028171545487011,
+                0.009580073109900174,
+                -4.984519569966427
+              ],
+              "robot0_eef_torque": [
+                0.014002567775617005,
+                -0.004346555451702698,
+                -0.0008654956241164518
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_1/public/obs_0001",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_1/public/obs_0001/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_1/public/obs_0001/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "direct_waypoints",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 21,
+                  "last_step": 55,
+                  "requested_steps": 35,
+                  "executed_steps": 35,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.14283243077703084,
+                    "orientation_error_rad": 0.0007551157855378805,
+                    "linear_speed_m_s": 0.07756188367214979,
+                    "angular_speed_rad_s": 0.000879506723649756,
+                    "finger_speed_m_s": 0.00020482399478546532,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "waypoint_index": 1,
+                  "first_step": 56,
+                  "last_step": 85,
+                  "requested_steps": 30,
+                  "executed_steps": 30,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.07037541263599799,
+                    "orientation_error_rad": 0.0007423542525138678,
+                    "linear_speed_m_s": 0.07880583501072859,
+                    "angular_speed_rad_s": 0.00019262510464769836,
+                    "finger_speed_m_s": 5.69715787135509e-05,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999999287250196,
+                    -0.0002837594310493851,
+                    -3.0514075895998544e-05,
+                    0.00024718299310706623
+                  ]
+                },
+                {
+                  "waypoint_index": 2,
+                  "first_step": 86,
+                  "last_step": 110,
+                  "requested_steps": 25,
+                  "executed_steps": 25,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.003076526563931494,
+                    "orientation_error_rad": 0.0023136973003979504,
+                    "linear_speed_m_s": 0.0020843376027996747,
+                    "angular_speed_rad_s": 0.010651324605288502,
+                    "finger_speed_m_s": 0.00034551773419809115,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999997480614266,
+                    -0.0005452432740388999,
+                    -0.0002633195534304141,
+                    0.00037047222345853943
+                  ]
+                },
+                {
+                  "waypoint_index": 3,
+                  "first_step": 111,
+                  "last_step": 155,
+                  "requested_steps": 45,
+                  "executed_steps": 45,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.06765391772586649,
+                    "orientation_error_rad": 0.0017193371774013194,
+                    "linear_speed_m_s": 0.07791059407416001,
+                    "angular_speed_rad_s": 0.0005622225188779398,
+                    "finger_speed_m_s": 0.00012119730210913578,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999997794252429,
+                    -6.61869240633809e-05,
+                    -4.395192074079209e-05,
+                    -0.000659421705306046
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "finished": true,
+            "step": 155,
+            "policy_claim": "Operator diagnostic complete"
+          }
+        ],
+        "scope": "Execution/duration diagnostic only; native partial progress is private diagnosis, not a task-success comparison."
+      },
+      "source_checksums": {
+        "trajectory.npz": "335df660489a6279a37e24a8680ca9ddd256da205b2efedb2b3ee4b2a10ad118",
+        "outcome.json": "a0985bd11dbe761b8f3e276605afed03008b650ea951b551da852eb1cb6083e8",
+        "replay_verification.json": "e32c383d0c6bc0d0d135b1c077828800da8bc2669231a22f068f897090b10959",
+        "config.json": "7b06da5910495973c87032efacb4ff2a46a6cf30ad5f02b388a4699fd20f2057",
+        "policy_turn_002.json": "4133dea8b7fb5c0f13fd90ee7eae410a3522d3577dc12668b459bf259e554645",
+        "operator_verification.json": "060d45f83d14ee28f60089007b812772b78ff3d54b3350ec278e6a7579d8ad2e",
+        "steps.jsonl": "b6cbc9f00f30132a1a6f097ea8d286953212536040100a2fbef96b7692b09c91",
+        "commands.jsonl": "bb6497a0fefc62b3e3178afad4726a27ebf252ef143b6e48ca5561bb231f7309",
+        "initial_state.npy": "a873555241e56a0296e41bb0a037b69a6b20612eba0a4ae1d61e757e147ef445",
+        "policy_turn_001.json": "66fda2ee0fb4e4f0ba1543f229f1090fe938610a6eb22e95aee285806b1bd20c",
+        "diagnostic_summary.json": "d4de88bb708d29fe6217776ffe4d46795c4126d60957ece19132b58867b8f5b0"
+      }
+    },
+    {
+      "run": "diagnostic_grasp_duration_2",
+      "config.json": {
+        "task": "ToolHang",
+        "suite": "robosuite",
+        "state_index": 1,
+        "seed": 401,
+        "condition": "direct_waypoints",
+        "max_steps": 2400,
+        "max_calls": 30,
+        "settle_steps": 20,
+        "code_revision": "6d1c4965b582078eebcd25a1521b7e67c9d50a3a",
+        "diagnostic_source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "reproduce_command": "/Users/veerdosi/Documents/code/github/fyp/.venv/bin/python /Users/veerdosi/Documents/code/github/fyp/scripts/verify_phase_execution.py --run NEW_UNUSED_FOLDER --condition direct_waypoints --duration-scale 2"
+      },
+      "outcome.json": {
+        "success": false,
+        "stop_reason": "policy_finish",
+        "diagnostic_goal_predicates": [
+          {
+            "predicate": [
+              "frame_assembled"
+            ],
+            "satisfied": false
+          },
+          {
+            "predicate": [
+              "tool_on_frame"
+            ],
+            "satisfied": false
+          }
+        ],
+        "control_steps": 290,
+        "simulated_seconds": 14.5,
+        "wall_seconds": 11.263158166999347,
+        "model_calls": 5,
+        "cost_usd": null,
+        "cost_status": "unavailable for collaboration policy calls",
+        "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2"
+      },
+      "replay_verification.json": {
+        "control_steps": 290,
+        "max_state_absolute_error": 0.0,
+        "success": false,
+        "expected_success": false,
+        "pass": true
+      },
+      "operator_verification.json": {
+        "policy_inference_requests": 0,
+        "source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "duration_scale": 2,
+        "hold_check": false,
+        "results": [
+          {
+            "observation_id": 1,
+            "step": 90,
+            "simulated_seconds": 4.5,
+            "model_calls": 1,
+            "remaining_steps": 2310,
+            "remaining_model_calls": 29,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.0785530935145029,
+                -0.24655842729341357,
+                0.9120070867106783
+              ],
+              "robot0_eef_quat": [
+                0.9999995407721516,
+                -7.722759435799087e-05,
+                0.0008077676366594611,
+                0.0005099047254053167
+              ],
+              "robot0_joint_vel": [
+                -0.08158201474185861,
+                0.10774393624229392,
+                -0.016134816461101188,
+                0.15073533176968337,
+                0.05719929951735763,
+                -0.06448804094461472,
+                -0.13848048897673462
+              ],
+              "robot0_gripper_qpos": [
+                0.039945041791290575,
+                -0.03998388911387615
+              ],
+              "robot0_gripper_qvel": [
+                5.629411763125003e-05,
+                -6.045538895883794e-06
+              ],
+              "robot0_eef_force": [
+                0.12195232044003221,
+                -0.01694583592992364,
+                -5.168935753842842
+              ],
+              "robot0_eef_torque": [
+                0.013865155222835605,
+                0.03657228198586826,
+                -0.007907491973422809
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0001",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0001/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0001/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "direct_waypoints",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 21,
+                  "last_step": 90,
+                  "requested_steps": 70,
+                  "executed_steps": 70,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.007862410627561024,
+                    "orientation_error_rad": 0.001916721958284372,
+                    "linear_speed_m_s": 0.06923609353256024,
+                    "angular_speed_rad_s": 0.010551878640274969,
+                    "finger_speed_m_s": 5.661780833291465e-05,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "observation_id": 2,
+            "step": 150,
+            "simulated_seconds": 7.5,
+            "model_calls": 2,
+            "remaining_steps": 2250,
+            "remaining_model_calls": 28,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.07737535270183711,
+                -0.2541409214693417,
+                0.8288343349382629
+              ],
+              "robot0_eef_quat": [
+                0.9999992048867505,
+                0.0001911723481207763,
+                0.00111245348436435,
+                0.0005622510505425194
+              ],
+              "robot0_joint_vel": [
+                -2.4810104024074353e-05,
+                -2.1405638164895656e-05,
+                7.625028307615679e-05,
+                2.9307562317932637e-05,
+                -0.0007125403977429413,
+                -2.018652790152835e-05,
+                0.0007424588313566784
+              ],
+              "robot0_gripper_qpos": [
+                0.039995481498401236,
+                -0.03999939714239062
+              ],
+              "robot0_gripper_qvel": [
+                2.9258177237734516e-06,
+                -1.5682918132802183e-06
+              ],
+              "robot0_eef_force": [
+                -0.005673764667219,
+                0.011394198528904866,
+                -5.101201389679123
+              ],
+              "robot0_eef_torque": [
+                -0.0016146271305593827,
+                -0.0008210675962278444,
+                9.379731819006324e-05
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0002",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0002/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0002/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "direct_waypoints",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 91,
+                  "last_step": 150,
+                  "requested_steps": 60,
+                  "executed_steps": 60,
+                  "first_settled_step": 119,
+                  "terminal_measurement": {
+                    "position_error_m": 0.00043381266000221504,
+                    "orientation_error_rad": 0.0008188094963537744,
+                    "linear_speed_m_s": 6.448294231570361e-05,
+                    "angular_speed_rad_s": 8.226462463979158e-05,
+                    "finger_speed_m_s": 3.319630787354012e-06,
+                    "settled_sample": true
+                  },
+                  "settled_at_exit": true,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999995407721519,
+                    -7.72275943579909e-05,
+                    0.0008077676366594613,
+                    0.0005099047254053169
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "observation_id": 3,
+            "step": 200,
+            "simulated_seconds": 10.0,
+            "model_calls": 3,
+            "remaining_steps": 2200,
+            "remaining_model_calls": 27,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.07415158442850588,
+                -0.25357135034434547,
+                0.8313934891109953
+              ],
+              "robot0_eef_quat": [
+                0.999998651535532,
+                -0.0003723889243938915,
+                0.0013605368892101119,
+                0.0008409476667965805
+              ],
+              "robot0_joint_vel": [
+                -0.0006227644091364997,
+                9.811196361688365e-06,
+                -9.366535120964354e-05,
+                0.00015903126864916334,
+                -4.722334556104574e-05,
+                -0.00024008080361498092,
+                -0.0006531203780614093
+              ],
+              "robot0_gripper_qpos": [
+                0.0025147238470650123,
+                -0.004258636091044915
+              ],
+              "robot0_gripper_qvel": [
+                -0.0008870276524539702,
+                0.0012312702844030187
+              ],
+              "robot0_eef_force": [
+                -1.4053088431094174,
+                -0.7717458379034114,
+                1.6748836250610923
+              ],
+              "robot0_eef_torque": [
+                0.039855255952089545,
+                -0.16525226638484555,
+                -0.010485365914282601
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0003",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0003/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0003/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "direct_waypoints",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 151,
+                  "last_step": 200,
+                  "requested_steps": 50,
+                  "executed_steps": 50,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.003745130427592109,
+                    "orientation_error_rad": 0.0013517674520974947,
+                    "linear_speed_m_s": 0.00040433292899895885,
+                    "angular_speed_rad_s": 4.651210930527267e-05,
+                    "finger_speed_m_s": 0.0015175126258031239,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999992048867512,
+                    0.00019117234812077643,
+                    0.0011124534843643507,
+                    0.0005622510505425198
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "observation_id": 4,
+            "step": 290,
+            "simulated_seconds": 14.5,
+            "model_calls": 4,
+            "remaining_steps": 2110,
+            "remaining_model_calls": 26,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.07684369062751026,
+                -0.2537759589028157,
+                1.0700939816109667
+              ],
+              "robot0_eef_quat": [
+                0.9999981781347724,
+                -0.0006466309708639796,
+                0.001389401561695687,
+                0.001138050448215482
+              ],
+              "robot0_joint_vel": [
+                0.0009231205763013969,
+                5.833163779106116e-05,
+                -0.0009258967434129442,
+                -4.7410394638081215e-05,
+                0.0004337165821524258,
+                -5.236968828392564e-05,
+                -0.00032208706030801843
+              ],
+              "robot0_gripper_qpos": [
+                0.0004965562645896204,
+                -0.0005030212535741538
+              ],
+              "robot0_gripper_qvel": [
+                1.6487908427575323e-06,
+                -2.876953513953389e-07
+              ],
+              "robot0_eef_force": [
+                -0.011609919406402599,
+                0.014176730689331242,
+                -5.101165039867572
+              ],
+              "robot0_eef_torque": [
+                -0.002002129827943271,
+                -0.0016329333175642224,
+                -3.1647354924758554e-06
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0004",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0004/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/diagnostic_grasp_duration_2/public/obs_0004/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "direct_waypoints",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 201,
+                  "last_step": 290,
+                  "requested_steps": 90,
+                  "executed_steps": 90,
+                  "first_settled_step": 270,
+                  "terminal_measurement": {
+                    "position_error_m": 0.0002888937111734619,
+                    "orientation_error_rad": 0.0008107087231670871,
+                    "linear_speed_m_s": 2.7320969351224902e-05,
+                    "angular_speed_rad_s": 4.724762059681038e-05,
+                    "finger_speed_m_s": 1.6737024402131882e-06,
+                    "settled_sample": true
+                  },
+                  "settled_at_exit": true,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999986515355328,
+                    -0.00037238892439389175,
+                    0.001360536889210113,
+                    0.0008409476667965811
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "finished": true,
+            "step": 290,
+            "policy_claim": "Operator diagnostic complete"
+          }
+        ],
+        "scope": "Execution/duration diagnostic only; native partial progress is private diagnosis, not a task-success comparison."
+      },
+      "source_checksums": {
+        "policy_turn_004.json": "affed48f5cf34eab9e0c52389da5efa1fc34cb80ef64cd19cb86ff972245da9b",
+        "trajectory.npz": "9c5bcb7216fc78d6188d1243a3474fd4b34308e0a9755c50ef9c5629c54d2300",
+        "outcome.json": "665c4c5ac1a444a4f29711d9b729e2d968a0200f4b520059c08a4a839fac3898",
+        "policy_turn_005.json": "4133dea8b7fb5c0f13fd90ee7eae410a3522d3577dc12668b459bf259e554645",
+        "replay_verification.json": "e025f92216d1b350bf43712ce6f37f9fe4a26bf08144a11157b8622b7467fc05",
+        "config.json": "340d717f3afa2761a37e5593e95d22e05718dbbca59bd622ee1c019122d03f7f",
+        "policy_turn_002.json": "c4f6dff445c88731df83f56bc8aa8c7deb016dd03e06e3f6a6ec3ddb58985ab8",
+        "operator_verification.json": "09441f099c1c838e55bfaeb649821aec9f0a51c6687c606df99514d721063291",
+        "policy_turn_003.json": "ef55bc5763d56f978200b161aeea670f793741055da2f5d120426d5b64dd42a7",
+        "steps.jsonl": "9517ddb9c7c3e5871cd0dd14344d4bd3b979af1006c684be2d67a76f7d76a6f6",
+        "commands.jsonl": "6ca57cf8dc36c981eb29a7c564077e3883121fe1c3cdcd1e3b748a3233c691b7",
+        "initial_state.npy": "a873555241e56a0296e41bb0a037b69a6b20612eba0a4ae1d61e757e147ef445",
+        "policy_turn_001.json": "f3834706cb5355097b2ea2104609b565119f70a6cef4420a17175c352360fce5",
+        "diagnostic_summary.json": "b0f9fc4e1a623e82fba7745313106e661dbcc7c0eb5eae274cdfa8851d18bc6c"
+      }
+    },
+    {
+      "run": "smoke_tool_hang_001",
+      "config.json": {
+        "task": "ToolHang",
+        "suite": "robosuite",
+        "state_index": 0,
+        "seed": 300,
+        "condition": "fixed_sequence",
+        "max_steps": 2400,
+        "max_calls": 30,
+        "settle_steps": 20,
+        "code_revision": "3af751d89d82f79ff99079a35dc644d7d08d0287"
+      },
+      "outcome.json": {
+        "success": false,
+        "stop_reason": "fixed_sequence_complete",
+        "diagnostic_goal_predicates": [
+          {
+            "predicate": [
+              "frame_assembled"
+            ],
+            "satisfied": false
+          },
+          {
+            "predicate": [
+              "tool_on_frame"
+            ],
+            "satisfied": false
+          }
+        ],
+        "control_steps": 60,
+        "simulated_seconds": 3.0,
+        "wall_seconds": 7.237818667010288,
+        "model_calls": 0,
+        "cost_usd": 0,
+        "cost_status": "no model calls",
+        "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/smoke_tool_hang_001"
+      },
+      "replay_verification.json": {
+        "control_steps": 60,
+        "max_state_absolute_error": 0.0,
+        "success": false,
+        "expected_success": false,
+        "pass": true
+      },
+      "source_checksums": {
+        "trajectory.npz": "33886a4509d0bdd3245fb6832f539bf7167948a02979987faba14a1cc7868107",
+        "outcome.json": "2e9204250dc2ec8fdb0fafeb2484b81380bf94040216a728ce486f2b4ee60faf",
+        "replay_verification.json": "1e89710c56dd4ac0db26f2e507cb8297304362066aff32ef005e6619b6668dce",
+        "config.json": "c3585e4e8021b280a8376b1525a06b0dcd9c4612104ae808701afe1969ffd387",
+        "steps.jsonl": "d56e9915fad63c0db95b3950d00d4d63bf758d9e6f38e18176289a85c5360b13",
+        "commands.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "initial_state.npy": "9f50acba079d74775dd66d0835acb5ac3355c0b2d1eb9a13aef2f9ccb6fe6ec1"
+      }
+    },
+    {
+      "run": "verify_deadline_guard_001",
+      "config.json": {
+        "task": "ToolHang",
+        "suite": "robosuite",
+        "state_index": 1,
+        "seed": 401,
+        "condition": "deadline_guard",
+        "max_steps": 2400,
+        "max_calls": 30,
+        "settle_steps": 20,
+        "code_revision": "6d1c4965b582078eebcd25a1521b7e67c9d50a3a",
+        "diagnostic_source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "reproduce_command": "/Users/veerdosi/Documents/code/github/fyp/.venv/bin/python /Users/veerdosi/Documents/code/github/fyp/scripts/verify_phase_execution.py --run NEW_UNUSED_FOLDER --condition deadline_guard --duration-scale 1 --hold-check"
+      },
+      "outcome.json": {
+        "success": false,
+        "stop_reason": "policy_finish",
+        "diagnostic_goal_predicates": [
+          {
+            "predicate": [
+              "frame_assembled"
+            ],
+            "satisfied": false
+          },
+          {
+            "predicate": [
+              "tool_on_frame"
+            ],
+            "satisfied": false
+          }
+        ],
+        "control_steps": 95,
+        "simulated_seconds": 4.75,
+        "wall_seconds": 7.16947004100075,
+        "model_calls": 3,
+        "cost_usd": null,
+        "cost_status": "unavailable for collaboration policy calls",
+        "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/verify_deadline_guard_001"
+      },
+      "replay_verification.json": {
+        "control_steps": 95,
+        "max_state_absolute_error": 0.0,
+        "success": false,
+        "expected_success": false,
+        "pass": true
+      },
+      "implementation_checks.json": {
+        "passed": true,
+        "checks": [
+          "measured hold duration",
+          "deadline cancellation versus timed advancement"
+        ],
+        "scope": "Actual simulator commands; assertions are about execution semantics, not task competence."
+      },
+      "operator_verification.json": {
+        "policy_inference_requests": 0,
+        "source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "duration_scale": 1,
+        "hold_check": true,
+        "results": [
+          {
+            "observation_id": 1,
+            "step": 60,
+            "simulated_seconds": 3.0,
+            "model_calls": 1,
+            "remaining_steps": 2340,
+            "remaining_model_calls": 29,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.10276829389898115,
+                -5.604735621944151e-12,
+                1.0110438715851893
+              ],
+              "robot0_eef_quat": [
+                0.9979766064600616,
+                0.00024581380117731953,
+                0.06358169774996664,
+                1.5660948462144085e-05
+              ],
+              "robot0_joint_vel": [
+                2.824556904699979e-15,
+                1.6769492177294238e-18,
+                -5.489078925506911e-15,
+                3.14593171816631e-18,
+                3.0146792755322993e-15,
+                1.790027325877756e-18,
+                6.59334537661899e-17
+              ],
+              "robot0_gripper_qpos": [
+                0.03986775482397176,
+                -0.03986788972688891
+              ],
+              "robot0_gripper_qvel": [
+                0.00011598894691138782,
+                -0.00011598896565030909
+              ],
+              "robot0_eef_force": [
+                -0.00031891191645749513,
+                0.6473733269622469,
+                -5.0599554458347695
+              ],
+              "robot0_eef_torque": [
+                -0.09168798227714527,
+                -4.502334326433904e-05,
+                1.8474183298494205e-08
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_deadline_guard_001/public/obs_0001",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_deadline_guard_001/public/obs_0001/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_deadline_guard_001/public/obs_0001/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "deadline_guard",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 21,
+                  "last_step": 60,
+                  "requested_steps": 40,
+                  "executed_steps": 40,
+                  "first_settled_step": 30,
+                  "terminal_measurement": {
+                    "position_error_m": 3.4877673375859223e-15,
+                    "orientation_error_rad": 1.6227570699895557e-14,
+                    "linear_speed_m_s": 3.686991240732426e-15,
+                    "angular_speed_rad_s": 9.74307396219204e-15,
+                    "finger_speed_m_s": 0.0001640331550578764,
+                    "settled_sample": true
+                  },
+                  "settled_at_exit": true,
+                  "status": "arrived",
+                  "resolved_quaternion_xyzw": [
+                    0.9979766064600621,
+                    0.0002458138011692269,
+                    0.06358169774996666,
+                    1.5660948462726875e-05
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "observation_id": 2,
+            "step": 95,
+            "simulated_seconds": 4.75,
+            "model_calls": 2,
+            "remaining_steps": 2305,
+            "remaining_model_calls": 28,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.09113292712457546,
+                -0.12137315253166997,
+                0.9611026257680645
+              ],
+              "robot0_eef_quat": [
+                0.9999999287253994,
+                -0.00028375812446560644,
+                -3.0514237627932955e-05,
+                0.0002471829346764685
+              ],
+              "robot0_joint_vel": [
+                -0.07844398847091534,
+                0.12382637368475041,
+                -0.0420949100187536,
+                0.10429137503798663,
+                0.11140180527621717,
+                0.009882664478337681,
+                -0.2198005808408066
+              ],
+              "robot0_gripper_qpos": [
+                0.039954146607197885,
+                -0.03998881645369841
+              ],
+              "robot0_gripper_qvel": [
+                3.555836389672486e-05,
+                -1.4468202891745294e-05
+              ],
+              "robot0_eef_force": [
+                0.0982183400355591,
+                -0.013186587662152274,
+                -5.145099703212283
+              ],
+              "robot0_eef_torque": [
+                0.008106002460797547,
+                0.030359183467696605,
+                -0.015394373871712766
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_deadline_guard_001/public/obs_0002",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_deadline_guard_001/public/obs_0002/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_deadline_guard_001/public/obs_0002/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "deadline_guard",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 61,
+                  "last_step": 95,
+                  "requested_steps": 35,
+                  "executed_steps": 35,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.14283241459447182,
+                    "orientation_error_rad": 0.0007551137712078859,
+                    "linear_speed_m_s": 0.07756188531273076,
+                    "angular_speed_rad_s": 0.0008795062053157213,
+                    "finger_speed_m_s": 3.838914088552403e-05,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "deadline_not_settled",
+                  "resolved_quaternion_xyzw": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 3,
+              "stop_reason": "waypoint_deadline"
+            }
+          },
+          {
+            "finished": true,
+            "step": 95,
+            "policy_claim": "Operator diagnostic complete"
+          }
+        ],
+        "scope": "Execution/duration diagnostic only; native partial progress is private diagnosis, not a task-success comparison."
+      },
+      "source_checksums": {
+        "trajectory.npz": "36d59659dbb09caeaae6f7a29a90c19e70537463c7760ea4008ab51808daf2f7",
+        "outcome.json": "0165679eff173df522101fd806ef1e0aec676929066c4a05ebdb802185452fc6",
+        "replay_verification.json": "011e97011436a6df71100d6b241316b05ddca4663b699952c44537e9bb8694e8",
+        "config.json": "21c177f769264df2781d3ac199165e1c9ff839f457eb725643255f359827759e",
+        "policy_turn_002.json": "66fda2ee0fb4e4f0ba1543f229f1090fe938610a6eb22e95aee285806b1bd20c",
+        "operator_verification.json": "c956f2c450af956de19fe40640b7a07fe2647cfbaa0dc38affc172d9d47b6e60",
+        "policy_turn_003.json": "4133dea8b7fb5c0f13fd90ee7eae410a3522d3577dc12668b459bf259e554645",
+        "steps.jsonl": "b3dc5ea96b26c14aeb69e93d5bd21ad3b34b983611926e0c8eb6d50d2d7586ff",
+        "commands.jsonl": "f3f8f2061c8ae0058dee0fcdb9f0bea082674262fae6c8ea8eb6d91606e53cbe",
+        "initial_state.npy": "a873555241e56a0296e41bb0a037b69a6b20612eba0a4ae1d61e757e147ef445",
+        "policy_turn_001.json": "174a6b9e2ecf2556c7cf9f964333beca37041e574a99471227ad9a2d3d8ce52c",
+        "implementation_checks.json": "b3c08cee2227073632d4ed1b447903a6772346c69f89832c502ac2020710ec2b",
+        "diagnostic_summary.json": "aeeb3cc5710a0448ca4f7660cbb1453df1187b5bd640fe8f211e81c59ed97dcf"
+      }
+    },
+    {
+      "run": "verify_phase_guard_001",
+      "config.json": {
+        "task": "ToolHang",
+        "suite": "robosuite",
+        "state_index": 1,
+        "seed": 401,
+        "condition": "phase_guard",
+        "max_steps": 2400,
+        "max_calls": 30,
+        "settle_steps": 20,
+        "code_revision": "6d1c4965b582078eebcd25a1521b7e67c9d50a3a",
+        "diagnostic_source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "reproduce_command": "/Users/veerdosi/Documents/code/github/fyp/.venv/bin/python /Users/veerdosi/Documents/code/github/fyp/scripts/verify_phase_execution.py --run NEW_UNUSED_FOLDER --condition phase_guard --duration-scale 1 --hold-check"
+      },
+      "outcome.json": {
+        "success": false,
+        "stop_reason": "policy_finish",
+        "diagnostic_goal_predicates": [
+          {
+            "predicate": [
+              "frame_assembled"
+            ],
+            "satisfied": false
+          },
+          {
+            "predicate": [
+              "tool_on_frame"
+            ],
+            "satisfied": false
+          }
+        ],
+        "control_steps": 65,
+        "simulated_seconds": 3.25,
+        "wall_seconds": 4.20139979099622,
+        "model_calls": 3,
+        "cost_usd": null,
+        "cost_status": "unavailable for collaboration policy calls",
+        "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/verify_phase_guard_001"
+      },
+      "replay_verification.json": {
+        "control_steps": 65,
+        "max_state_absolute_error": 0.0,
+        "success": false,
+        "expected_success": false,
+        "pass": true
+      },
+      "implementation_checks.json": {
+        "passed": true,
+        "checks": [
+          "measured hold duration",
+          "deadline cancellation versus timed advancement"
+        ],
+        "scope": "Actual simulator commands; assertions are about execution semantics, not task competence."
+      },
+      "operator_verification.json": {
+        "policy_inference_requests": 0,
+        "source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "duration_scale": 1,
+        "hold_check": true,
+        "results": [
+          {
+            "observation_id": 1,
+            "step": 30,
+            "simulated_seconds": 1.5,
+            "model_calls": 1,
+            "remaining_steps": 2370,
+            "remaining_model_calls": 29,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.10276829389898115,
+                -5.601404527418214e-12,
+                1.0110438715851893
+              ],
+              "robot0_eef_quat": [
+                0.9979766064600615,
+                0.0002458138011822975,
+                0.06358169774996664,
+                1.5660948461363704e-05
+              ],
+              "robot0_joint_vel": [
+                2.2644604419675256e-15,
+                2.27717923105143e-18,
+                -7.88579723847416e-15,
+                -6.07111608706487e-19,
+                2.999480392714476e-15,
+                -3.705682796844101e-18,
+                9.86185992711476e-16
+              ],
+              "robot0_gripper_qpos": [
+                0.03950753956534856,
+                -0.039507674410069964
+              ],
+              "robot0_gripper_qvel": [
+                0.0004320855417102289,
+                -0.0004320856115171914
+              ],
+              "robot0_eef_force": [
+                -0.00031891192223870826,
+                0.647373326962247,
+                -5.0599554458347695
+              ],
+              "robot0_eef_torque": [
+                -0.09168798227714532,
+                -4.5023406255146025e-05,
+                1.8466191423876307e-08
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_phase_guard_001/public/obs_0001",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_phase_guard_001/public/obs_0001/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_phase_guard_001/public/obs_0001/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "phase_guard",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 21,
+                  "last_step": 30,
+                  "requested_steps": 40,
+                  "executed_steps": 10,
+                  "first_settled_step": 30,
+                  "terminal_measurement": {
+                    "position_error_m": 6.818848375751719e-15,
+                    "orientation_error_rad": 2.6283334883736274e-14,
+                    "linear_speed_m_s": 5.2503314456907306e-15,
+                    "angular_speed_rad_s": 8.997629866236795e-15,
+                    "finger_speed_m_s": 0.0006110612825529099,
+                    "settled_sample": true
+                  },
+                  "settled_at_exit": true,
+                  "status": "arrived",
+                  "resolved_quaternion_xyzw": [
+                    0.9979766064600621,
+                    0.0002458138011692269,
+                    0.06358169774996666,
+                    1.5660948462726875e-05
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "observation_id": 2,
+            "step": 65,
+            "simulated_seconds": 3.25,
+            "model_calls": 2,
+            "remaining_steps": 2335,
+            "remaining_model_calls": 28,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.09113292749460104,
+                -0.1213731439630493,
+                0.9611026268712323
+              ],
+              "robot0_eef_quat": [
+                0.9999999287251852,
+                -0.00028375886202169773,
+                -3.0514147495866032e-05,
+                0.00024718296568966027
+              ],
+              "robot0_joint_vel": [
+                -0.07844398629033854,
+                0.12382636865744202,
+                -0.042094912655563886,
+                0.10429136869366078,
+                0.11140180349332737,
+                0.009882665956164617,
+                -0.21980058545272863
+              ],
+              "robot0_gripper_qpos": [
+                0.039876426302289214,
+                -0.039911096363791865
+              ],
+              "robot0_gripper_qvel": [
+                0.00010372605278365892,
+                -8.263575998790424e-05
+              ],
+              "robot0_eef_force": [
+                0.0982183358303819,
+                -0.013186586739714437,
+                -5.145099702396444
+              ],
+              "robot0_eef_torque": [
+                0.008106006378682,
+                0.030358933458401616,
+                -0.015394189528519994
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_phase_guard_001/public/obs_0002",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_phase_guard_001/public/obs_0002/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_phase_guard_001/public/obs_0002/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "phase_guard",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 31,
+                  "last_step": 65,
+                  "requested_steps": 35,
+                  "executed_steps": 35,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.14283242298215798,
+                    "orientation_error_rad": 0.0007551149058887656,
+                    "linear_speed_m_s": 0.07756188445817626,
+                    "angular_speed_rad_s": 0.0008795065649092715,
+                    "finger_speed_m_s": 0.0001326188631185508,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "deadline_not_settled",
+                  "resolved_quaternion_xyzw": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 3,
+              "stop_reason": "waypoint_deadline"
+            }
+          },
+          {
+            "finished": true,
+            "step": 65,
+            "policy_claim": "Operator diagnostic complete"
+          }
+        ],
+        "scope": "Execution/duration diagnostic only; native partial progress is private diagnosis, not a task-success comparison."
+      },
+      "source_checksums": {
+        "trajectory.npz": "587684e10a088a7790fb7d6fe027750a04f2caa6a54778cbafeba2a651ae70fc",
+        "outcome.json": "c1c65e80a15b083176d7e44f75925d3b839f6c041eb852090378cb1c4542c9c4",
+        "replay_verification.json": "2544113fdfc85db4c6b4ac3be8335ddb4fb8bd3eaa5217b8b7435b598c6173fe",
+        "config.json": "60bc0710031e639d1e0eafeda1d62de4ec016eec2f88ab1dec0c46e012c890b9",
+        "policy_turn_002.json": "66fda2ee0fb4e4f0ba1543f229f1090fe938610a6eb22e95aee285806b1bd20c",
+        "operator_verification.json": "fff9323aa44a0837f27dbae2c3b66aacf3fbe387ac8935b3f3de743c092096b4",
+        "policy_turn_003.json": "4133dea8b7fb5c0f13fd90ee7eae410a3522d3577dc12668b459bf259e554645",
+        "steps.jsonl": "032215f7a07362c70ce4eb26eaf3fc5ea19e903f350321bf7d4e790896c58c0d",
+        "commands.jsonl": "a26c24aa849a840782397c90d01bf597724fadc4f1cbfe943f97db2de5f59b1c",
+        "initial_state.npy": "a873555241e56a0296e41bb0a037b69a6b20612eba0a4ae1d61e757e147ef445",
+        "policy_turn_001.json": "174a6b9e2ecf2556c7cf9f964333beca37041e574a99471227ad9a2d3d8ce52c",
+        "implementation_checks.json": "b3c08cee2227073632d4ed1b447903a6772346c69f89832c502ac2020710ec2b",
+        "diagnostic_summary.json": "ec0b869886632c579a76262262d55ffc750ec4dc985f58c566ee34e3b2585072"
+      }
+    },
+    {
+      "run": "verify_rejected_budget_001",
+      "config.json": {
+        "task": "ToolHang",
+        "suite": "robosuite",
+        "state_index": 0,
+        "seed": 499,
+        "condition": "fixed_sequence",
+        "max_steps": 2400,
+        "max_calls": 1,
+        "settle_steps": 20,
+        "code_revision": "ca6d19d9faa1b800defc1efbbf4c89a3016aee63"
+      },
+      "outcome.json": {
+        "success": false,
+        "stop_reason": "model_call_budget",
+        "diagnostic_goal_predicates": [
+          {
+            "predicate": [
+              "frame_assembled"
+            ],
+            "satisfied": false
+          },
+          {
+            "predicate": [
+              "tool_on_frame"
+            ],
+            "satisfied": false
+          }
+        ],
+        "control_steps": 20,
+        "simulated_seconds": 1.0,
+        "wall_seconds": 3.116908333991887,
+        "model_calls": 1,
+        "cost_usd": null,
+        "cost_status": "unavailable for collaboration policy calls",
+        "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/verify_rejected_budget_001"
+      },
+      "replay_verification.json": {
+        "control_steps": 20,
+        "max_state_absolute_error": 0.0,
+        "success": false,
+        "expected_success": false,
+        "pass": true
+      },
+      "operator_verification.json": {
+        "passed": true,
+        "policy_inference_requests": 0,
+        "submitted_operator_requests": 1,
+        "check": "The final invalid decision consumes the budget and closes the run without additional motion.",
+        "reply": {
+          "validation_error": "waypoints must contain 1..4 targets",
+          "observation": {
+            "observation_id": 0,
+            "step": 20,
+            "simulated_seconds": 1.0,
+            "model_calls": 0,
+            "remaining_steps": 2380,
+            "remaining_model_calls": 1,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.10276829389898116,
+                -5.608223361623661e-12,
+                1.0110438715851893
+              ],
+              "robot0_eef_quat": [
+                0.9979766064600615,
+                0.0002458138011692267,
+                0.06358169774996662,
+                1.5660948462726864e-05
+              ],
+              "robot0_joint_vel": [
+                3.1029613590420627e-13,
+                5.951704709803019e-17,
+                1.3233264696415066e-12,
+                -1.1838895841185872e-16,
+                1.1297504773985222e-13,
+                -2.2093793721921115e-16,
+                -1.356133583468505e-12
+              ],
+              "robot0_gripper_qpos": [
+                0.03923663092226871,
+                -0.039236765723222454
+              ],
+              "robot0_gripper_qvel": [
+                0.0006698132098120958,
+                -0.0006698133180260442
+              ],
+              "robot0_eef_force": [
+                -0.00031891192678620926,
+                0.6473733269622464,
+                -5.05995544583477
+              ],
+              "robot0_eef_torque": [
+                -0.0916879822771446,
+                -4.502345367370708e-05,
+                1.846029387845e-08
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_rejected_budget_001/public/obs_0000",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_rejected_budget_001/public/obs_0000/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_rejected_budget_001/public/obs_0000/robot0_eye_in_hand.png"
+            }
+          },
+          "episode_stopped": "budget_exhausted"
+        }
+      },
+      "source_checksums": {
+        "trajectory.npz": "ae021c12ff7772a2ad4f74c9f2c8209aca32a579fb81853ea056eb92b2f10710",
+        "outcome.json": "ef2402b17a9ad7678d0ae8cb62220b28b0395fc194c7c8d8df8d576287e933fa",
+        "replay_verification.json": "c7f8c9d30798e3684bf0d92577a13a0ec11c6e9ea7ea6e07bbc76b4fbb3e6d0c",
+        "config.json": "84c351fb24a385b0995e1f417ca1a3dd455c6b3eef7a5caa50d7e53e67b1c86f",
+        "operator_verification.json": "3c17ffad8dd67ade54fa3518a81273a18c64d94c22591396ceb23f72a22611b0",
+        "steps.jsonl": "d58fa779127c8640c08dffcc20377d70691328d76bf7f3438782a03ee9c28e2e",
+        "commands.jsonl": "f5dbdc2a1adc8415f7cfa29b3d0bc48d0ddadef0a245e8374360b0973098fbba",
+        "initial_state.npy": "46a37893ce766b37830fb751f186167a7e8e53ad713f9f6b3aa109b5cdafa91c",
+        "policy_turn_001.json": "280eded4b0b7ec14a06cb1ad34764815dfae80b9b8e9bab19386a0bf25e6533e",
+        "diagnostic_summary.json": "8834c8370615e89f37de3b5f1c6ec1ea18133d6354a8554a8fe4ddace3fa97ef"
+      }
+    },
+    {
+      "run": "verify_timed_waypoints_001",
+      "config.json": {
+        "task": "ToolHang",
+        "suite": "robosuite",
+        "state_index": 1,
+        "seed": 401,
+        "condition": "direct_waypoints",
+        "max_steps": 2400,
+        "max_calls": 30,
+        "settle_steps": 20,
+        "code_revision": "6d1c4965b582078eebcd25a1521b7e67c9d50a3a",
+        "diagnostic_source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "reproduce_command": "/Users/veerdosi/Documents/code/github/fyp/.venv/bin/python /Users/veerdosi/Documents/code/github/fyp/scripts/verify_phase_execution.py --run NEW_UNUSED_FOLDER --condition direct_waypoints --duration-scale 1 --hold-check"
+      },
+      "outcome.json": {
+        "success": false,
+        "stop_reason": "policy_finish",
+        "diagnostic_goal_predicates": [
+          {
+            "predicate": [
+              "frame_assembled"
+            ],
+            "satisfied": false
+          },
+          {
+            "predicate": [
+              "tool_on_frame"
+            ],
+            "satisfied": false
+          }
+        ],
+        "control_steps": 195,
+        "simulated_seconds": 9.75,
+        "wall_seconds": 8.936734458009596,
+        "model_calls": 3,
+        "cost_usd": null,
+        "cost_status": "unavailable for collaboration policy calls",
+        "replay_command": ".venv/bin/python scripts/episode.py replay --run /Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001"
+      },
+      "replay_verification.json": {
+        "control_steps": 195,
+        "max_state_absolute_error": 0.0,
+        "success": false,
+        "expected_success": false,
+        "pass": true
+      },
+      "implementation_checks.json": {
+        "passed": true,
+        "checks": [
+          "measured hold duration",
+          "deadline cancellation versus timed advancement"
+        ],
+        "scope": "Actual simulator commands; assertions are about execution semantics, not task competence."
+      },
+      "operator_verification.json": {
+        "policy_inference_requests": 0,
+        "source": "runs/pilot_tool_hang_002/policy_turn_002.json",
+        "duration_scale": 1,
+        "hold_check": true,
+        "results": [
+          {
+            "observation_id": 1,
+            "step": 60,
+            "simulated_seconds": 3.0,
+            "model_calls": 1,
+            "remaining_steps": 2340,
+            "remaining_model_calls": 29,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.10276829389898115,
+                -5.604735621944151e-12,
+                1.0110438715851893
+              ],
+              "robot0_eef_quat": [
+                0.9979766064600616,
+                0.00024581380117731953,
+                0.06358169774996664,
+                1.5660948462144085e-05
+              ],
+              "robot0_joint_vel": [
+                2.824556904699979e-15,
+                1.6769492177294238e-18,
+                -5.489078925506911e-15,
+                3.14593171816631e-18,
+                3.0146792755322993e-15,
+                1.790027325877756e-18,
+                6.59334537661899e-17
+              ],
+              "robot0_gripper_qpos": [
+                0.03986775482397176,
+                -0.03986788972688891
+              ],
+              "robot0_gripper_qvel": [
+                0.00011598894691138782,
+                -0.00011598896565030909
+              ],
+              "robot0_eef_force": [
+                -0.00031891191645749513,
+                0.6473733269622469,
+                -5.0599554458347695
+              ],
+              "robot0_eef_torque": [
+                -0.09168798227714527,
+                -4.502334326433904e-05,
+                1.8474183298494205e-08
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0001",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0001/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0001/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "direct_waypoints",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 21,
+                  "last_step": 60,
+                  "requested_steps": 40,
+                  "executed_steps": 40,
+                  "first_settled_step": 30,
+                  "terminal_measurement": {
+                    "position_error_m": 3.4877673375859223e-15,
+                    "orientation_error_rad": 1.6227570699895557e-14,
+                    "linear_speed_m_s": 3.686991240732426e-15,
+                    "angular_speed_rad_s": 9.74307396219204e-15,
+                    "finger_speed_m_s": 0.0001640331550578764,
+                    "settled_sample": true
+                  },
+                  "settled_at_exit": true,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9979766064600621,
+                    0.0002458138011692269,
+                    0.06358169774996666,
+                    1.5660948462726875e-05
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "observation_id": 2,
+            "step": 195,
+            "simulated_seconds": 9.75,
+            "model_calls": 2,
+            "remaining_steps": 2205,
+            "remaining_model_calls": 28,
+            "proprioception": {
+              "robot0_eef_pos": [
+                -0.0806602804095316,
+                -0.25432907331727705,
+                1.002445970885787
+              ],
+              "robot0_eef_quat": [
+                0.9999995173682461,
+                0.00025017460514647653,
+                0.0007515593741483522,
+                -0.0005812352777004021
+              ],
+              "robot0_joint_vel": [
+                0.06490529548251359,
+                -0.17422988040948095,
+                -0.08084614936493913,
+                -0.01979465957772864,
+                -0.08413631556013977,
+                -0.15384415028885026,
+                0.0626361625528231
+              ],
+              "robot0_gripper_qpos": [
+                0.0004037986483698448,
+                -0.0005957542690713214
+              ],
+              "robot0_gripper_qvel": [
+                8.499535717026637e-05,
+                8.639734705231258e-05
+              ],
+              "robot0_eef_force": [
+                0.009028183817930868,
+                0.009580102664495096,
+                -4.984519570295718
+              ],
+              "robot0_eef_torque": [
+                0.014002564536073948,
+                -0.004346552185401258,
+                -0.0008654963139954285
+              ]
+            },
+            "folder": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0002",
+            "cameras": {
+              "agentview": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0002/agentview.png",
+              "robot0_eye_in_hand": "/Users/veerdosi/Documents/code/github/fyp/runs/verify_timed_waypoints_001/public/obs_0002/robot0_eye_in_hand.png"
+            },
+            "execution_report": {
+              "condition": "direct_waypoints",
+              "criteria": {
+                "position_tolerance_m": 0.003,
+                "orientation_tolerance_rad": 0.03,
+                "linear_speed_limit_m_s": 0.005,
+                "angular_speed_limit_rad_s": 0.05,
+                "finger_speed_limit_m_s": 0.001,
+                "consecutive_samples": 3,
+                "minimum_steps": 10
+              },
+              "waypoints": [
+                {
+                  "waypoint_index": 0,
+                  "first_step": 61,
+                  "last_step": 95,
+                  "requested_steps": 35,
+                  "executed_steps": 35,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.14283241459447182,
+                    "orientation_error_rad": 0.0007551137712078859,
+                    "linear_speed_m_s": 0.07756188531273076,
+                    "angular_speed_rad_s": 0.0008795062053157213,
+                    "finger_speed_m_s": 3.838914088552403e-05,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "waypoint_index": 1,
+                  "first_step": 96,
+                  "last_step": 125,
+                  "requested_steps": 30,
+                  "executed_steps": 30,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.07037540434242394,
+                    "orientation_error_rad": 0.0007423543172915499,
+                    "linear_speed_m_s": 0.07880583081373937,
+                    "angular_speed_rad_s": 0.00019262568908684307,
+                    "finger_speed_m_s": 1.8355859931349984e-05,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999999287253999,
+                    -0.00028375812446560655,
+                    -3.051423762793297e-05,
+                    0.00024718293467646863
+                  ]
+                },
+                {
+                  "waypoint_index": 2,
+                  "first_step": 126,
+                  "last_step": 150,
+                  "requested_steps": 25,
+                  "executed_steps": 25,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.0030765336485918658,
+                    "orientation_error_rad": 0.0023137010539433732,
+                    "linear_speed_m_s": 0.0020843402543586167,
+                    "angular_speed_rad_s": 0.01065133206388265,
+                    "finger_speed_m_s": 0.00034551758376905495,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999997480619937,
+                    -0.0005452419569099753,
+                    -0.00026331951875210386,
+                    0.0003704726557817338
+                  ]
+                },
+                {
+                  "waypoint_index": 3,
+                  "first_step": 151,
+                  "last_step": 195,
+                  "requested_steps": 45,
+                  "executed_steps": 45,
+                  "first_settled_step": null,
+                  "terminal_measurement": {
+                    "position_error_m": 0.06765391926184693,
+                    "orientation_error_rad": 0.001719337201211533,
+                    "linear_speed_m_s": 0.07791059407262058,
+                    "angular_speed_rad_s": 0.0005622225884955171,
+                    "finger_speed_m_s": 0.00012119699797511032,
+                    "settled_sample": false
+                  },
+                  "settled_at_exit": false,
+                  "status": "duration_elapsed",
+                  "resolved_quaternion_xyzw": [
+                    0.9999997794251183,
+                    -6.618463134387832e-05,
+                    -4.39490224123617e-05,
+                    -0.0006594223173458833
+                  ]
+                }
+              ],
+              "note": "Robot arrival is not acquisition, seating or task completion.",
+              "remaining_waypoints_cancelled": 0,
+              "stop_reason": "sequence_complete"
+            }
+          },
+          {
+            "finished": true,
+            "step": 195,
+            "policy_claim": "Operator diagnostic complete"
+          }
+        ],
+        "scope": "Execution/duration diagnostic only; native partial progress is private diagnosis, not a task-success comparison."
+      },
+      "source_checksums": {
+        "trajectory.npz": "cc6481345931f05a13cd8a57d47c0c230ea4da6f7a885d47ae34b8a28659cf7f",
+        "outcome.json": "d2572db30000370426b7c3fa84266a343ae42596e6c3fa733070604340866dd5",
+        "replay_verification.json": "81f45dabdd2293906b32ca52e0a275611332ff92891817a2f42d401b10b52322",
+        "config.json": "391c26cad3fad669a12f08c51c6ff41ac01f20dc2ee0e22963629dfb8b29d751",
+        "policy_turn_002.json": "66fda2ee0fb4e4f0ba1543f229f1090fe938610a6eb22e95aee285806b1bd20c",
+        "operator_verification.json": "efb27630fb4f9cb90ac9e58ad97eafcf3dcde2eed9a4c9dd31614e4d13a6cb1e",
+        "policy_turn_003.json": "4133dea8b7fb5c0f13fd90ee7eae410a3522d3577dc12668b459bf259e554645",
+        "steps.jsonl": "7b21484db3a036e3724a441d0a2e33f0025b60fe3fa7fa80f9059c131d0fb346",
+        "commands.jsonl": "a88cea3fce231840e07cd08823686b1ec37077c7480d0c87f5994949ca643f11",
+        "initial_state.npy": "a873555241e56a0296e41bb0a037b69a6b20612eba0a4ae1d61e757e147ef445",
+        "policy_turn_001.json": "174a6b9e2ecf2556c7cf9f964333beca37041e574a99471227ad9a2d3d8ce52c",
+        "implementation_checks.json": "b3c08cee2227073632d4ed1b447903a6772346c69f89832c502ac2020710ec2b",
+        "diagnostic_summary.json": "4cba58fa40b4c25341fce107ce095afd6d82fc898ef803d6eaf845128237d104"
+      }
+    }
+  ],
+  "cleanup_verification_2026_10_14": {
+    "native_default_smoke_replay": {
+      "control_steps": 60,
+      "max_state_absolute_error": 0.0,
+      "success": false,
+      "expected_success": false,
+      "pass": true
+    },
+    "recorded_policy_replay": {
+      "all_pass": true,
+      "steps": 1596,
+      "max_state_absolute_error": 0.0,
+      "max_public_sensor_absolute_error": 0.0,
+      "max_calibration_absolute_error": 0.0,
+      "camera_snapshot_checks": 26,
+      "monitor_rows_exact": 1576,
+      "action_conversion_checks": 1576,
+      "native_checks": 1596,
+      "native_outcome_matches": true,
+      "raw_encoder_and_fk_snapshot_checks": 13,
+      "preview_candidates_recomputed_exact": 0,
+      "robot_joint_bounds_exact": true,
+      "max_public_encoder_fk_position_error_m": 1.1967128005200417e-05,
+      "max_public_encoder_fk_rotation_error_rad": 9.120815065782256e-06,
+      "fk_scope": "Raw encoder equals native qpos exactly and known robot FK equals nonmutating full-model forward calculation at current qpos. Cached public EEF/FK sampling differences reported separately.",
+      "actual_astra_requests": 0,
+      "initialization": "Original seeded initialization and observable sampling; no forced state/update.",
+      "command": ".venv/bin/python studies/pose_feasibility_v1/replay.py --run /private/var/folders/4v/xgkv3x197ms5jx5wsp9y4dyc0000gn/T/fyp-cleanup-verify-7p7rucr_/pf_v1_s01_waypoints_corrected",
+      "replay_source_sha256": "89d869491453e3a94f12acc4ae3820a9e1e3583ed408681f6620e01953e31432"
+    },
+    "budget_closure": {
+      "passed": true,
+      "policy_inference_requests": 0,
+      "submitted_operator_requests": 1,
+      "check": "The final invalid decision consumes the budget and closes the run without additional motion.",
+      "reply": {
+        "validation_error": "waypoints must contain 1..4 targets",
+        "observation": {
+          "observation_id": 0,
+          "step": 20,
+          "simulated_seconds": 1.0,
+          "model_calls": 0,
+          "remaining_steps": 2380,
+          "remaining_model_calls": 1,
+          "proprioception": {
+            "robot0_eef_pos": [
+              -0.10276829389898116,
+              -5.608223361623661e-12,
+              1.0110438715851893
+            ],
+            "robot0_eef_quat": [
+              0.9979766064600615,
+              0.0002458138011692267,
+              0.06358169774996662,
+              1.5660948462726864e-05
+            ],
+            "robot0_joint_vel": [
+              3.1029613590420627e-13,
+              5.951704709803019e-17,
+              1.3233264696415066e-12,
+              -1.1838895841185872e-16,
+              1.1297504773985222e-13,
+              -2.2093793721921115e-16,
+              -1.356133583468505e-12
+            ],
+            "robot0_gripper_qpos": [
+              0.03923663092226871,
+              -0.039236765723222454
+            ],
+            "robot0_gripper_qvel": [
+              0.0006698132098120958,
+              -0.0006698133180260442
+            ],
+            "robot0_eef_force": [
+              -0.00031891192678620926,
+              0.6473733269622464,
+              -5.05995544583477
+            ],
+            "robot0_eef_torque": [
+              -0.0916879822771446,
+              -4.502345367370708e-05,
+              1.846029387845e-08
+            ]
+          },
+          "folder": "/private/var/folders/4v/xgkv3x197ms5jx5wsp9y4dyc0000gn/T/fyp-cleanup-verify-7p7rucr_/budget_closure/public/obs_0000",
+          "cameras": {
+            "agentview": "/private/var/folders/4v/xgkv3x197ms5jx5wsp9y4dyc0000gn/T/fyp-cleanup-verify-7p7rucr_/budget_closure/public/obs_0000/agentview.png",
+            "robot0_eye_in_hand": "/private/var/folders/4v/xgkv3x197ms5jx5wsp9y4dyc0000gn/T/fyp-cleanup-verify-7p7rucr_/budget_closure/public/obs_0000/robot0_eye_in_hand.png"
+          }
+        },
+        "model_calls": 1,
+        "remaining_model_calls": 0,
+        "remaining_steps": 2380,
+        "episode_stopped": "budget_exhausted"
+      }
+    },
+    "calculation_wrapper": {
+      "waypoints": {
+        "passed": true,
+        "code_sha256": "edaa377a72a175977227adfc572afdbe7bccbba4ec1f0057b1dfd91123dd3e4d",
+        "stdout_sha256": "49619e46d96c08a9219ca3ac9cdb72bba8f96eaa4d6423f58db9566c097fc184",
+        "stderr": ""
+      },
+      "preview": {
+        "passed": true,
+        "code_sha256": "edaa377a72a175977227adfc572afdbe7bccbba4ec1f0057b1dfd91123dd3e4d",
+        "stdout_sha256": "49619e46d96c08a9219ca3ac9cdb72bba8f96eaa4d6423f58db9566c097fc184",
+        "stderr": ""
+      }
+    },
+    "source_hashes": {
+      "src/fyp/pose_preview.py": "5f8b9337167defce4b30b8cc61b71a7aac431fbbc3431481b65da1b4453aaffd",
+      "src/fyp/episode.py": "a076298d0e4639ad902767d2aad30b8aa2ae1c324d2cf271be5ed30f4a82425a",
+      "src/fyp/__init__.py": "3e66bea2961e0f7656510607c5cdff5d8a34651cc9e063ac6063a5011fabcdd8",
+      "src/fyp/robosuite_runtime.py": "bafa78b610d2392955cf896487e7c43f82e0bcd2f59a48b891516558b4531505",
+      "src/fyp/runtime.py": "a5cfa25ec6054c809feb6b8a54bda758478efd5d98506d0643bd41faeb9dc436",
+      "src/fyp/sensor_monitor.py": "b1011680b38c8472f83b1feeb07f13ace6fc093603fb96431ffaedd8170fd891",
+      "src/fyp/motion.py": "22512f8abfd6b0aaaec0eb26537ccbbc3abdd78eea6ee3d9ddd4ac5ec477ec90",
+      "src/fyp/kinematic_preview.py": "5b37b825aee0a507ceef6632b468150eecf3fdb7837cd41c5ac91d9438194a78",
+      "src/fyp/grip_guard.py": "b2a3be166dd1ce29454d4616739115d7481df9d14fa79f193b99ec5a0ee81a89",
+      "src/fyp/feedback_runtime.py": "24aaba18d68e6d631a414e838e2645b91923e297693cf88802a9d63fff282665",
+      "scripts/analysis/summarize_episode.py": "6f6b1920903a1253b2c3b567559fea49be55caba05b1a0d4cae3ea044adec55c",
+      "scripts/analysis/export_policy_tools.py": "1befeb42cc8a95822961c03b2185680d6fc0e086877a16cc10affb862a6e37bc",
+      "scripts/analysis/export_policy_usage.py": "d1c9362f83cf7da9af224e82f099303744feb9d6692c4ee49987ab50a465343e",
+      "scripts/analysis/analyze_study.py": "d5d6242570c38a04602d7a4ebb59ca854b893f5377f059ff31b2444356ac39e0",
+      "scripts/episodes/send_command.py": "7687c442a32ca5445d24ff08e545651d2bbc3a9b95acefff999d9478b20a80ce",
+      "scripts/episodes/episode.py": "9945c40fefa4cbffd15375ce084f5d7a787d0a353f698765cdd78e7b03f09899",
+      "scripts/episodes/start_feedback_episode.py": "c0ba1535e48c1f7b049e025a033de0e6d8de63be733535656901557696541adb",
+      "scripts/episodes/start_study_episode.py": "6c0ad586601ff80d10449dc09b0e0ec7e282a999d1e776294ff41381a2844fc3",
+      "scripts/episodes/start_pose_preview_episode.py": "e8c1e6567afdf22157534cd007170de8d90947ef4947a9ee903ce4c3fedd5df6",
+      "scripts/setup/probe.py": "1cdb6913b9f46f6d206c9bd8848f6d5aea7d6b2ba080fb0e2d7532f203648416",
+      "scripts/verification/verify_budget_closure.py": "5b5ddb169bc89abf3c166782c98f37f50fb68df7fc5c2b99f66db95990fd8408",
+      "scripts/verification/verify_phase_execution.py": "b6de4eefad1a70fdd191509f861225516bff84d0e359b7ddd2f2f639221a54aa",
+      "scripts/policy/prepare_pose_preview_handoff.py": "51d7a67870486c9337f0fe8d65410751f8ca2af1c5dcce52182c6c3d0eb2ae38",
+      "scripts/policy/relay_policy.py": "622111c8e61b6c068645565463416b65b2900e28a2967af42b2de51355a1023d",
+      "scripts/policy/prepare_feedback_policy.py": "76e3dff745736fff339b7e72cf12497dff2072379174d474fd407502f94c8b1e",
+      "scripts/policy/prepare_pose_preview_policy.py": "0725e043935e9a7a7fd96843b9ebf38aa573098433d687d27ac53a423de67786",
+      "scripts/policy/policy_access.py": "edec1808a46cc067ac87647340daa941747d20ff5dadf62c3344a616fc1331ad",
+      "scripts/policy/prepare_policy.py": "32e0b39ae286ec32c2853ed41a9c9f1fa846ba370e050db714b334a11ddb5f7e",
+      "scripts/policy/policy_calc.py": "23f639cca4b3d740da7fffaf993184d4ef4d5eaf37ef8964890a148c859a0d2b",
+      "scripts/policy/prepare_handoff.py": "8a1e854cfd0801cfa25ab30a8b55ba212ad759150be3e06a33e27c8ba47db7ec"
+    },
+    "actual_astra_requests": 0,
+    "reproduce_recorded_replay": ".venv/bin/python studies/pose_feasibility_v1/replay.py --run COPY_OF_runs/pf_v1_s01_waypoints_corrected"
+  }
+}

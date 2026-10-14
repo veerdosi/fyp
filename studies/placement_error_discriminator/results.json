@@ -1,0 +1,3314 @@
+{
+  "preregistered_decision": "studies/pose_feasibility_v1/next_test.md",
+  "all_five_calculations_retained": true,
+  "arithmetic_reproduced_exact": true,
+  "relative_frame_convention_verified": true,
+  "actual_astra_requests": 0,
+  "scope": "Private geometry is offline diagnosis only. Relative drift is measured, not a grasp certificate. Reference thresholds are descriptive, not new success gates. Surface identity and unrecorded intended offsets remain unknown.",
+  "calculations": [
+    {
+      "episode": "pf_v1_s02_preview",
+      "calculation": "calc_001",
+      "object_reference": "frame",
+      "calculation_step": 535,
+      "following_decision": 10,
+      "first_step": 536,
+      "last_step": 625,
+      "arithmetic_stdout_stderr_exact": true,
+      "source_sha256": "acbfc74114e073a914653d91065141fc77c3b16b2071064bd7bdf6868e377af8",
+      "maximum_relative_position_change_m": 0.005010669074170422,
+      "maximum_relative_orientation_change_rad": 0.08884048115248128,
+      "first_change": {
+        "step": 536,
+        "position_change_m": 1.5352636815037458e-05,
+        "orientation_change_rad": 0.00010681295467641734
+      },
+      "last_change": {
+        "step": 625,
+        "position_change_m": 0.005010669074170422,
+        "orientation_change_rad": 0.08590673558260813
+      },
+      "samples": [
+        {
+          "step": 536,
+          "position_change_m": 1.5352636815037458e-05,
+          "orientation_change_rad": 0.00010681295467641734
+        },
+        {
+          "step": 537,
+          "position_change_m": 0.0001942037174799328,
+          "orientation_change_rad": 0.003929937313353581
+        },
+        {
+          "step": 538,
+          "position_change_m": 0.001165631922979964,
+          "orientation_change_rad": 0.02191637350951537
+        },
+        {
+          "step": 539,
+          "position_change_m": 0.001856296101524544,
+          "orientation_change_rad": 0.034780505027180206
+        },
+        {
+          "step": 540,
+          "position_change_m": 0.0023224891410648894,
+          "orientation_change_rad": 0.04344607650292889
+        },
+        {
+          "step": 541,
+          "position_change_m": 0.0025553074588231034,
+          "orientation_change_rad": 0.047857341210946404
+        },
+        {
+          "step": 542,
+          "position_change_m": 0.002697853793947202,
+          "orientation_change_rad": 0.05057573919202561
+        },
+        {
+          "step": 543,
+          "position_change_m": 0.0027869227457287633,
+          "orientation_change_rad": 0.05220712885955541
+        },
+        {
+          "step": 544,
+          "position_change_m": 0.0028299707722514622,
+          "orientation_change_rad": 0.05297213246386343
+        },
+        {
+          "step": 545,
+          "position_change_m": 0.0028481853097573877,
+          "orientation_change_rad": 0.05333671190553348
+        },
+        {
+          "step": 546,
+          "position_change_m": 0.0028672391101767225,
+          "orientation_change_rad": 0.05368713343548147
+        },
+        {
+          "step": 547,
+          "position_change_m": 0.002875961091219698,
+          "orientation_change_rad": 0.05384940950595122
+        },
+        {
+          "step": 548,
+          "position_change_m": 0.0028868148122375738,
+          "orientation_change_rad": 0.05409529964925799
+        },
+        {
+          "step": 549,
+          "position_change_m": 0.0029179652396639447,
+          "orientation_change_rad": 0.054670513330997546
+        },
+        {
+          "step": 550,
+          "position_change_m": 0.0029449502539255247,
+          "orientation_change_rad": 0.055210526669198505
+        },
+        {
+          "step": 551,
+          "position_change_m": 0.00298901721942557,
+          "orientation_change_rad": 0.05596930282072921
+        },
+        {
+          "step": 552,
+          "position_change_m": 0.003028251277868153,
+          "orientation_change_rad": 0.05671868708804648
+        },
+        {
+          "step": 553,
+          "position_change_m": 0.003083834361099407,
+          "orientation_change_rad": 0.0576619229575526
+        },
+        {
+          "step": 554,
+          "position_change_m": 0.0031502051798710773,
+          "orientation_change_rad": 0.058802749811976286
+        },
+        {
+          "step": 555,
+          "position_change_m": 0.003217888098985669,
+          "orientation_change_rad": 0.06000236313857874
+        },
+        {
+          "step": 556,
+          "position_change_m": 0.003285250484134718,
+          "orientation_change_rad": 0.06119754065514412
+        },
+        {
+          "step": 557,
+          "position_change_m": 0.0033505841322851123,
+          "orientation_change_rad": 0.06235214642650458
+        },
+        {
+          "step": 558,
+          "position_change_m": 0.0034116472523126593,
+          "orientation_change_rad": 0.0634301473991638
+        },
+        {
+          "step": 559,
+          "position_change_m": 0.0034660916859860554,
+          "orientation_change_rad": 0.06437752476339369
+        },
+        {
+          "step": 560,
+          "position_change_m": 0.0035117549217619113,
+          "orientation_change_rad": 0.06516254643535267
+        },
+        {
+          "step": 561,
+          "position_change_m": 0.003548439396031068,
+          "orientation_change_rad": 0.06578262764573956
+        },
+        {
+          "step": 562,
+          "position_change_m": 0.0035761429692607403,
+          "orientation_change_rad": 0.06623912093487049
+        },
+        {
+          "step": 563,
+          "position_change_m": 0.003596061955039586,
+          "orientation_change_rad": 0.06654192355363862
+        },
+        {
+          "step": 564,
+          "position_change_m": 0.003607673668023833,
+          "orientation_change_rad": 0.06669802011288822
+        },
+        {
+          "step": 565,
+          "position_change_m": 0.0036129881291577914,
+          "orientation_change_rad": 0.06673736249777276
+        },
+        {
+          "step": 566,
+          "position_change_m": 0.0036159573516998944,
+          "orientation_change_rad": 0.06674128335525868
+        },
+        {
+          "step": 567,
+          "position_change_m": 0.003617973696588582,
+          "orientation_change_rad": 0.06672386140344161
+        },
+        {
+          "step": 568,
+          "position_change_m": 0.003619568987303924,
+          "orientation_change_rad": 0.06669907711281593
+        },
+        {
+          "step": 569,
+          "position_change_m": 0.0036204760853587696,
+          "orientation_change_rad": 0.06666958525239562
+        },
+        {
+          "step": 570,
+          "position_change_m": 0.0036218488699619783,
+          "orientation_change_rad": 0.0666424082679645
+        },
+        {
+          "step": 571,
+          "position_change_m": 0.0036230119019174467,
+          "orientation_change_rad": 0.06661488093320377
+        },
+        {
+          "step": 572,
+          "position_change_m": 0.003624431118084786,
+          "orientation_change_rad": 0.06659143834685305
+        },
+        {
+          "step": 573,
+          "position_change_m": 0.003626035172100942,
+          "orientation_change_rad": 0.06657273946062206
+        },
+        {
+          "step": 574,
+          "position_change_m": 0.0036281304430552403,
+          "orientation_change_rad": 0.06656221890490913
+        },
+        {
+          "step": 575,
+          "position_change_m": 0.003630864612736901,
+          "orientation_change_rad": 0.06656364650815953
+        },
+        {
+          "step": 576,
+          "position_change_m": 0.0036341447256102565,
+          "orientation_change_rad": 0.06657081814126442
+        },
+        {
+          "step": 577,
+          "position_change_m": 0.003637317472198781,
+          "orientation_change_rad": 0.06657883460978659
+        },
+        {
+          "step": 578,
+          "position_change_m": 0.003640476345387595,
+          "orientation_change_rad": 0.06658584517950474
+        },
+        {
+          "step": 579,
+          "position_change_m": 0.0036435956623931554,
+          "orientation_change_rad": 0.06659341378124224
+        },
+        {
+          "step": 580,
+          "position_change_m": 0.0036464096858351415,
+          "orientation_change_rad": 0.0665997428559238
+        },
+        {
+          "step": 581,
+          "position_change_m": 0.0037533335607170194,
+          "orientation_change_rad": 0.06848389172859522
+        },
+        {
+          "step": 582,
+          "position_change_m": 0.0038839795196854683,
+          "orientation_change_rad": 0.07080816272132223
+        },
+        {
+          "step": 583,
+          "position_change_m": 0.003984518868255701,
+          "orientation_change_rad": 0.07264539332489957
+        },
+        {
+          "step": 584,
+          "position_change_m": 0.00407954677009267,
+          "orientation_change_rad": 0.07413328341496873
+        },
+        {
+          "step": 585,
+          "position_change_m": 0.004191389849092495,
+          "orientation_change_rad": 0.07614738256421079
+        },
+        {
+          "step": 586,
+          "position_change_m": 0.004274352880515316,
+          "orientation_change_rad": 0.07764555395955919
+        },
+        {
+          "step": 587,
+          "position_change_m": 0.004269663073841751,
+          "orientation_change_rad": 0.07752413067172925
+        },
+        {
+          "step": 588,
+          "position_change_m": 0.0042637840091540495,
+          "orientation_change_rad": 0.07738077410482924
+        },
+        {
+          "step": 589,
+          "position_change_m": 0.004258071897333809,
+          "orientation_change_rad": 0.0772365193278778
+        },
+        {
+          "step": 590,
+          "position_change_m": 0.004252388316676799,
+          "orientation_change_rad": 0.07709282104314859
+        },
+        {
+          "step": 591,
+          "position_change_m": 0.004246270826690142,
+          "orientation_change_rad": 0.07694479571121976
+        },
+        {
+          "step": 592,
+          "position_change_m": 0.0042709431877461755,
+          "orientation_change_rad": 0.07738087178493844
+        },
+        {
+          "step": 593,
+          "position_change_m": 0.004323115463719058,
+          "orientation_change_rad": 0.07830350608567185
+        },
+        {
+          "step": 594,
+          "position_change_m": 0.004432725801969073,
+          "orientation_change_rad": 0.08001130530439136
+        },
+        {
+          "step": 595,
+          "position_change_m": 0.004580227996244784,
+          "orientation_change_rad": 0.08265274513440636
+        },
+        {
+          "step": 596,
+          "position_change_m": 0.0047048704132441645,
+          "orientation_change_rad": 0.08487440934952985
+        },
+        {
+          "step": 597,
+          "position_change_m": 0.004801189048835407,
+          "orientation_change_rad": 0.08654365366592943
+        },
+        {
+          "step": 598,
+          "position_change_m": 0.0048704392898436975,
+          "orientation_change_rad": 0.08769639920409654
+        },
+        {
+          "step": 599,
+          "position_change_m": 0.004911381013639063,
+          "orientation_change_rad": 0.08830601847420563
+        },
+        {
+          "step": 600,
+          "position_change_m": 0.00493833034882186,
+          "orientation_change_rad": 0.0886446112034627
+        },
+        {
+          "step": 601,
+          "position_change_m": 0.004956776445037217,
+          "orientation_change_rad": 0.08882657399693125
+        },
+        {
+          "step": 602,
+          "position_change_m": 0.004966819553666846,
+          "orientation_change_rad": 0.08884048115248128
+        },
+        {
+          "step": 603,
+          "position_change_m": 0.004968822430710707,
+          "orientation_change_rad": 0.08870203596378422
+        },
+        {
+          "step": 604,
+          "position_change_m": 0.0049638686746899625,
+          "orientation_change_rad": 0.0884441636094888
+        },
+        {
+          "step": 605,
+          "position_change_m": 0.004955726798699665,
+          "orientation_change_rad": 0.08812271317739392
+        },
+        {
+          "step": 606,
+          "position_change_m": 0.004946180527379015,
+          "orientation_change_rad": 0.0877741323293963
+        },
+        {
+          "step": 607,
+          "position_change_m": 0.004936234084127782,
+          "orientation_change_rad": 0.08742613736469387
+        },
+        {
+          "step": 608,
+          "position_change_m": 0.004928228740578793,
+          "orientation_change_rad": 0.08710932410561761
+        },
+        {
+          "step": 609,
+          "position_change_m": 0.004922052965105194,
+          "orientation_change_rad": 0.08683218542218141
+        },
+        {
+          "step": 610,
+          "position_change_m": 0.004918213930834907,
+          "orientation_change_rad": 0.08660497685047633
+        },
+        {
+          "step": 611,
+          "position_change_m": 0.004918196184028638,
+          "orientation_change_rad": 0.08644166481800639
+        },
+        {
+          "step": 612,
+          "position_change_m": 0.00492071115404578,
+          "orientation_change_rad": 0.08633315857452961
+        },
+        {
+          "step": 613,
+          "position_change_m": 0.0049262507736024235,
+          "orientation_change_rad": 0.08627878229466969
+        },
+        {
+          "step": 614,
+          "position_change_m": 0.004932816567904731,
+          "orientation_change_rad": 0.08623854381526334
+        },
+        {
+          "step": 615,
+          "position_change_m": 0.004939670722038249,
+          "orientation_change_rad": 0.08620042388473664
+        },
+        {
+          "step": 616,
+          "position_change_m": 0.00494650794239651,
+          "orientation_change_rad": 0.08616627777726192
+        },
+        {
+          "step": 617,
+          "position_change_m": 0.004953372416040269,
+          "orientation_change_rad": 0.08613208250438444
+        },
+        {
+          "step": 618,
+          "position_change_m": 0.004960766367974829,
+          "orientation_change_rad": 0.08610321467257769
+        },
+        {
+          "step": 619,
+          "position_change_m": 0.004967515917342707,
+          "orientation_change_rad": 0.0860684547289405
+        },
+        {
+          "step": 620,
+          "position_change_m": 0.00497417262688476,
+          "orientation_change_rad": 0.08603295139963864
+        },
+        {
+          "step": 621,
+          "position_change_m": 0.004981853721885372,
+          "orientation_change_rad": 0.08600860891256652
+        },
+        {
+          "step": 622,
+          "position_change_m": 0.00498845350619992,
+          "orientation_change_rad": 0.08597557538877294
+        },
+        {
+          "step": 623,
+          "position_change_m": 0.004996049109242392,
+          "orientation_change_rad": 0.08595282057833403
+        },
+        {
+          "step": 624,
+          "position_change_m": 0.00500338786532743,
+          "orientation_change_rad": 0.0859292913115349
+        },
+        {
+          "step": 625,
+          "position_change_m": 0.005010669074170422,
+          "orientation_change_rad": 0.08590673558260813
+        }
+      ],
+      "first_position_change_above_reference_step": 552,
+      "first_orientation_change_above_reference_step": 539,
+      "waypoint_exits": [
+        {
+          "waypoint_index": 0,
+          "first_step": 536,
+          "last_step": 580,
+          "requested_steps": 45,
+          "executed_steps": 45,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.0008732787407868713,
+            "orientation_error_rad": 0.0013937724464916077,
+            "linear_speed_m_s": 0.00015128232590989164,
+            "angular_speed_rad_s": 0.0006864247897228501,
+            "finger_speed_m_s": 3.847962095630152e-05,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.6254223606731507,
+            0.43005352046287254,
+            -0.5439859505854997,
+            0.3577431003850438
+          ]
+        },
+        {
+          "waypoint_index": 1,
+          "first_step": 581,
+          "last_step": 625,
+          "requested_steps": 45,
+          "executed_steps": 45,
+          "armed": true,
+          "first_flags": {
+            "load_change": 595,
+            "stalled_motion": 605,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.0026953432091976932,
+            "orientation_error_rad": 0.000684197577737399,
+            "linear_speed_m_s": 0.0003760706129693071,
+            "angular_speed_rad_s": 0.00027255583285044454,
+            "finger_speed_m_s": 0.00018554472080468018,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.6254223606731507,
+            0.43005352046287254,
+            -0.5439859505854997,
+            0.3577431003850438
+          ]
+        }
+      ],
+      "policy_reason": "Compensate the visible shaft tilt from the previous contact, recenter its tip, and retry a shallow insertion."
+    },
+    {
+      "episode": "pf_v1_s02_preview",
+      "calculation": "calc_002",
+      "object_reference": "frame",
+      "calculation_step": 890,
+      "following_decision": 14,
+      "first_step": 891,
+      "last_step": 980,
+      "arithmetic_stdout_stderr_exact": true,
+      "source_sha256": "75e6406241c8882fff0e0eb20ccf9fe9d5a568c4fa052195f3911cb57eab8b2c",
+      "maximum_relative_position_change_m": 0.026727935832824606,
+      "maximum_relative_orientation_change_rad": 0.04560062462509837,
+      "first_change": {
+        "step": 891,
+        "position_change_m": 0.00046899399736307707,
+        "orientation_change_rad": 0.001479678653469646
+      },
+      "last_change": {
+        "step": 980,
+        "position_change_m": 0.025777022548248815,
+        "orientation_change_rad": 0.04560062462509837
+      },
+      "samples": [
+        {
+          "step": 891,
+          "position_change_m": 0.00046899399736307707,
+          "orientation_change_rad": 0.001479678653469646
+        },
+        {
+          "step": 892,
+          "position_change_m": 0.002696198911155342,
+          "orientation_change_rad": 0.005177580326213467
+        },
+        {
+          "step": 893,
+          "position_change_m": 0.006144546712778096,
+          "orientation_change_rad": 0.008115204252478858
+        },
+        {
+          "step": 894,
+          "position_change_m": 0.010279066880958896,
+          "orientation_change_rad": 0.01000799226191687
+        },
+        {
+          "step": 895,
+          "position_change_m": 0.01479761974995911,
+          "orientation_change_rad": 0.01124226563386817
+        },
+        {
+          "step": 896,
+          "position_change_m": 0.019530800018125113,
+          "orientation_change_rad": 0.012114318574706127
+        },
+        {
+          "step": 897,
+          "position_change_m": 0.024384333362239313,
+          "orientation_change_rad": 0.012776715044860415
+        },
+        {
+          "step": 898,
+          "position_change_m": 0.026727935832824606,
+          "orientation_change_rad": 0.013629677936871882
+        },
+        {
+          "step": 899,
+          "position_change_m": 0.026394837911769095,
+          "orientation_change_rad": 0.010377651570823633
+        },
+        {
+          "step": 900,
+          "position_change_m": 0.02634674944295403,
+          "orientation_change_rad": 0.0074927317257245515
+        },
+        {
+          "step": 901,
+          "position_change_m": 0.02631304954723571,
+          "orientation_change_rad": 0.005214199230454429
+        },
+        {
+          "step": 902,
+          "position_change_m": 0.026352147039509676,
+          "orientation_change_rad": 0.0038066036143171366
+        },
+        {
+          "step": 903,
+          "position_change_m": 0.026335668263920548,
+          "orientation_change_rad": 0.003515805016343196
+        },
+        {
+          "step": 904,
+          "position_change_m": 0.02630864670082971,
+          "orientation_change_rad": 0.004600371370570665
+        },
+        {
+          "step": 905,
+          "position_change_m": 0.026282421451587327,
+          "orientation_change_rad": 0.006282901674470513
+        },
+        {
+          "step": 906,
+          "position_change_m": 0.026257122544906444,
+          "orientation_change_rad": 0.008094675353150707
+        },
+        {
+          "step": 907,
+          "position_change_m": 0.026232827599362844,
+          "orientation_change_rad": 0.009926981957573541
+        },
+        {
+          "step": 908,
+          "position_change_m": 0.026209401190584326,
+          "orientation_change_rad": 0.011713314693168915
+        },
+        {
+          "step": 909,
+          "position_change_m": 0.026186836156496373,
+          "orientation_change_rad": 0.013426547373702379
+        },
+        {
+          "step": 910,
+          "position_change_m": 0.026165458511094142,
+          "orientation_change_rad": 0.015061719833690985
+        },
+        {
+          "step": 911,
+          "position_change_m": 0.026145024554701947,
+          "orientation_change_rad": 0.016615435435729946
+        },
+        {
+          "step": 912,
+          "position_change_m": 0.02612591161837393,
+          "orientation_change_rad": 0.018099550335247842
+        },
+        {
+          "step": 913,
+          "position_change_m": 0.02610763726934297,
+          "orientation_change_rad": 0.01950827047291808
+        },
+        {
+          "step": 914,
+          "position_change_m": 0.026090411723062003,
+          "orientation_change_rad": 0.020849676164041046
+        },
+        {
+          "step": 915,
+          "position_change_m": 0.026074036895186493,
+          "orientation_change_rad": 0.02212485323022181
+        },
+        {
+          "step": 916,
+          "position_change_m": 0.02605678803614162,
+          "orientation_change_rad": 0.023330359198696762
+        },
+        {
+          "step": 917,
+          "position_change_m": 0.02604114605665974,
+          "orientation_change_rad": 0.024472691545161518
+        },
+        {
+          "step": 918,
+          "position_change_m": 0.026026548785057363,
+          "orientation_change_rad": 0.025561221107658464
+        },
+        {
+          "step": 919,
+          "position_change_m": 0.026012249892676323,
+          "orientation_change_rad": 0.026598751685133995
+        },
+        {
+          "step": 920,
+          "position_change_m": 0.025998164523393655,
+          "orientation_change_rad": 0.0275881768664637
+        },
+        {
+          "step": 921,
+          "position_change_m": 0.02598438141299548,
+          "orientation_change_rad": 0.02853503235331145
+        },
+        {
+          "step": 922,
+          "position_change_m": 0.025970681104494107,
+          "orientation_change_rad": 0.02943672909753046
+        },
+        {
+          "step": 923,
+          "position_change_m": 0.02595753626695639,
+          "orientation_change_rad": 0.03030890493445444
+        },
+        {
+          "step": 924,
+          "position_change_m": 0.025944679183070203,
+          "orientation_change_rad": 0.031145267950750954
+        },
+        {
+          "step": 925,
+          "position_change_m": 0.025932374627953204,
+          "orientation_change_rad": 0.03195203042748798
+        },
+        {
+          "step": 926,
+          "position_change_m": 0.02592074866010141,
+          "orientation_change_rad": 0.03273595060236502
+        },
+        {
+          "step": 927,
+          "position_change_m": 0.025909716931507905,
+          "orientation_change_rad": 0.03349492409317133
+        },
+        {
+          "step": 928,
+          "position_change_m": 0.025899188973592745,
+          "orientation_change_rad": 0.0342222483877529
+        },
+        {
+          "step": 929,
+          "position_change_m": 0.02588936203357683,
+          "orientation_change_rad": 0.03492294222523912
+        },
+        {
+          "step": 930,
+          "position_change_m": 0.025880228768886994,
+          "orientation_change_rad": 0.0355990770591779
+        },
+        {
+          "step": 931,
+          "position_change_m": 0.025871574096462867,
+          "orientation_change_rad": 0.03624242234560054
+        },
+        {
+          "step": 932,
+          "position_change_m": 0.025863753157815802,
+          "orientation_change_rad": 0.036866753199523
+        },
+        {
+          "step": 933,
+          "position_change_m": 0.025856410427592538,
+          "orientation_change_rad": 0.03746644177904772
+        },
+        {
+          "step": 934,
+          "position_change_m": 0.025849481573347603,
+          "orientation_change_rad": 0.03803946331774703
+        },
+        {
+          "step": 935,
+          "position_change_m": 0.02584303574233559,
+          "orientation_change_rad": 0.038588185883306744
+        },
+        {
+          "step": 936,
+          "position_change_m": 0.02583700531218233,
+          "orientation_change_rad": 0.03911849733332585
+        },
+        {
+          "step": 937,
+          "position_change_m": 0.02583117292422671,
+          "orientation_change_rad": 0.039618839601462244
+        },
+        {
+          "step": 938,
+          "position_change_m": 0.02582561198873764,
+          "orientation_change_rad": 0.04009283561681704
+        },
+        {
+          "step": 939,
+          "position_change_m": 0.0258205093837124,
+          "orientation_change_rad": 0.04054944055839644
+        },
+        {
+          "step": 940,
+          "position_change_m": 0.025815693387150028,
+          "orientation_change_rad": 0.04099066390674308
+        },
+        {
+          "step": 941,
+          "position_change_m": 0.025811186284917548,
+          "orientation_change_rad": 0.04142544436182201
+        },
+        {
+          "step": 942,
+          "position_change_m": 0.02580795397737042,
+          "orientation_change_rad": 0.04169393166753265
+        },
+        {
+          "step": 943,
+          "position_change_m": 0.025806554209559344,
+          "orientation_change_rad": 0.04178440993082817
+        },
+        {
+          "step": 944,
+          "position_change_m": 0.025805366013533306,
+          "orientation_change_rad": 0.041878582092963114
+        },
+        {
+          "step": 945,
+          "position_change_m": 0.025804233081083233,
+          "orientation_change_rad": 0.041979418148761605
+        },
+        {
+          "step": 946,
+          "position_change_m": 0.025803114250602832,
+          "orientation_change_rad": 0.04208599560592112
+        },
+        {
+          "step": 947,
+          "position_change_m": 0.025801987756932324,
+          "orientation_change_rad": 0.04219710305506481
+        },
+        {
+          "step": 948,
+          "position_change_m": 0.025800842095388264,
+          "orientation_change_rad": 0.04231148533961485
+        },
+        {
+          "step": 949,
+          "position_change_m": 0.025799670752340895,
+          "orientation_change_rad": 0.042429340657267035
+        },
+        {
+          "step": 950,
+          "position_change_m": 0.025798470550003352,
+          "orientation_change_rad": 0.042549834125671045
+        },
+        {
+          "step": 951,
+          "position_change_m": 0.025797241720057037,
+          "orientation_change_rad": 0.04267275793703371
+        },
+        {
+          "step": 952,
+          "position_change_m": 0.02579598714795965,
+          "orientation_change_rad": 0.0427976889905659
+        },
+        {
+          "step": 953,
+          "position_change_m": 0.025795082694151344,
+          "orientation_change_rad": 0.04292454246047858
+        },
+        {
+          "step": 954,
+          "position_change_m": 0.02579476166536243,
+          "orientation_change_rad": 0.04305230132186647
+        },
+        {
+          "step": 955,
+          "position_change_m": 0.025794779527377333,
+          "orientation_change_rad": 0.04317812861465841
+        },
+        {
+          "step": 956,
+          "position_change_m": 0.025794962179250595,
+          "orientation_change_rad": 0.04329962830562405
+        },
+        {
+          "step": 957,
+          "position_change_m": 0.025795206778860363,
+          "orientation_change_rad": 0.04341561587539746
+        },
+        {
+          "step": 958,
+          "position_change_m": 0.025795419314170443,
+          "orientation_change_rad": 0.04352548931846647
+        },
+        {
+          "step": 959,
+          "position_change_m": 0.025795518211524107,
+          "orientation_change_rad": 0.04362959620697257
+        },
+        {
+          "step": 960,
+          "position_change_m": 0.025795456665432693,
+          "orientation_change_rad": 0.043728878834011144
+        },
+        {
+          "step": 961,
+          "position_change_m": 0.025795193205897026,
+          "orientation_change_rad": 0.043824272920068554
+        },
+        {
+          "step": 962,
+          "position_change_m": 0.025794673835341335,
+          "orientation_change_rad": 0.043917451616032895
+        },
+        {
+          "step": 963,
+          "position_change_m": 0.02579402703988416,
+          "orientation_change_rad": 0.044009207325611754
+        },
+        {
+          "step": 964,
+          "position_change_m": 0.025793267634892297,
+          "orientation_change_rad": 0.04410036864925196
+        },
+        {
+          "step": 965,
+          "position_change_m": 0.02579241917328277,
+          "orientation_change_rad": 0.04419155165589592
+        },
+        {
+          "step": 966,
+          "position_change_m": 0.025791504400105626,
+          "orientation_change_rad": 0.044283239416865586
+        },
+        {
+          "step": 967,
+          "position_change_m": 0.025790542092548246,
+          "orientation_change_rad": 0.04437560868226944
+        },
+        {
+          "step": 968,
+          "position_change_m": 0.0257895463578157,
+          "orientation_change_rad": 0.044468380514781844
+        },
+        {
+          "step": 969,
+          "position_change_m": 0.025788527035055415,
+          "orientation_change_rad": 0.0445618490440558
+        },
+        {
+          "step": 970,
+          "position_change_m": 0.02578749067087272,
+          "orientation_change_rad": 0.044655756868275
+        },
+        {
+          "step": 971,
+          "position_change_m": 0.025786441681392467,
+          "orientation_change_rad": 0.044750015080409364
+        },
+        {
+          "step": 972,
+          "position_change_m": 0.025785383409442423,
+          "orientation_change_rad": 0.04484416230401384
+        },
+        {
+          "step": 973,
+          "position_change_m": 0.02578431889741901,
+          "orientation_change_rad": 0.04493877111175503
+        },
+        {
+          "step": 974,
+          "position_change_m": 0.025783251309060062,
+          "orientation_change_rad": 0.04503344442235794
+        },
+        {
+          "step": 975,
+          "position_change_m": 0.02578218402583101,
+          "orientation_change_rad": 0.04512802806498878
+        },
+        {
+          "step": 976,
+          "position_change_m": 0.025781155284990885,
+          "orientation_change_rad": 0.04522271226308136
+        },
+        {
+          "step": 977,
+          "position_change_m": 0.025780117509016168,
+          "orientation_change_rad": 0.04531731312745263
+        },
+        {
+          "step": 978,
+          "position_change_m": 0.025779077610459115,
+          "orientation_change_rad": 0.045412033695484015
+        },
+        {
+          "step": 979,
+          "position_change_m": 0.025778045623013276,
+          "orientation_change_rad": 0.04550640450482855
+        },
+        {
+          "step": 980,
+          "position_change_m": 0.025777022548248815,
+          "orientation_change_rad": 0.04560062462509837
+        }
+      ],
+      "first_position_change_above_reference_step": 893,
+      "first_orientation_change_above_reference_step": 923,
+      "waypoint_exits": [
+        {
+          "waypoint_index": 0,
+          "first_step": 891,
+          "last_step": 915,
+          "requested_steps": 25,
+          "executed_steps": 25,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.0003839145950802548,
+            "orientation_error_rad": 0.0018819648792581533,
+            "linear_speed_m_s": 2.050628702804711e-05,
+            "angular_speed_rad_s": 0.00011770466704639709,
+            "finger_speed_m_s": 0.00017778322394478832,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.6249240469167697,
+            0.43127027238790033,
+            -0.5435895422931817,
+            0.35775172571089364
+          ]
+        },
+        {
+          "waypoint_index": 1,
+          "first_step": 916,
+          "last_step": 980,
+          "requested_steps": 65,
+          "executed_steps": 65,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.0003604335912449738,
+            "orientation_error_rad": 0.0015301613961883065,
+            "linear_speed_m_s": 0.0005196589766632985,
+            "angular_speed_rad_s": 0.0007950704995539543,
+            "finger_speed_m_s": 6.548112559075069e-06,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.6250799478128007,
+            0.4319539199697387,
+            -0.5429908717206336,
+            0.35756367697682784
+          ]
+        }
+      ],
+      "policy_reason": "Regrasp the shifted frame and align its measured tip above the stand opening before another controlled descent."
+    },
+    {
+      "episode": "pf_v1_s02_preview",
+      "calculation": "calc_003",
+      "object_reference": "tool",
+      "calculation_step": 1680,
+      "following_decision": 22,
+      "first_step": 1681,
+      "last_step": 1745,
+      "arithmetic_stdout_stderr_exact": true,
+      "source_sha256": "78aafc5ca9d32b70b34d3bca43848018a893a5b5c3372cee7cc5fa9dbc060f65",
+      "maximum_relative_position_change_m": 0.0011376439612669905,
+      "maximum_relative_orientation_change_rad": 0.01563639135474216,
+      "first_change": {
+        "step": 1681,
+        "position_change_m": 2.80493971889795e-05,
+        "orientation_change_rad": 0.0003724361731071675
+      },
+      "last_change": {
+        "step": 1745,
+        "position_change_m": 0.0011376439612669905,
+        "orientation_change_rad": 0.01563639135474216
+      },
+      "samples": [
+        {
+          "step": 1681,
+          "position_change_m": 2.80493971889795e-05,
+          "orientation_change_rad": 0.0003724361731071675
+        },
+        {
+          "step": 1682,
+          "position_change_m": 4.74500441303244e-05,
+          "orientation_change_rad": 0.0006928704630664124
+        },
+        {
+          "step": 1683,
+          "position_change_m": 7.031520788074492e-05,
+          "orientation_change_rad": 0.0010113150936583864
+        },
+        {
+          "step": 1684,
+          "position_change_m": 9.58329686747495e-05,
+          "orientation_change_rad": 0.0013253928623080601
+        },
+        {
+          "step": 1685,
+          "position_change_m": 0.0001231185255352945,
+          "orientation_change_rad": 0.001635316833698113
+        },
+        {
+          "step": 1686,
+          "position_change_m": 0.0001516284314753033,
+          "orientation_change_rad": 0.001942612943161088
+        },
+        {
+          "step": 1687,
+          "position_change_m": 0.00018097782813915786,
+          "orientation_change_rad": 0.002248615315360038
+        },
+        {
+          "step": 1688,
+          "position_change_m": 0.00021086179704910593,
+          "orientation_change_rad": 0.002553857645979017
+        },
+        {
+          "step": 1689,
+          "position_change_m": 0.00024105861570576,
+          "orientation_change_rad": 0.0028581937590947994
+        },
+        {
+          "step": 1690,
+          "position_change_m": 0.00027145403775781675,
+          "orientation_change_rad": 0.0031624643819678487
+        },
+        {
+          "step": 1691,
+          "position_change_m": 0.0003019547184135282,
+          "orientation_change_rad": 0.003467263125100042
+        },
+        {
+          "step": 1692,
+          "position_change_m": 0.000332501140330717,
+          "orientation_change_rad": 0.003772964938509665
+        },
+        {
+          "step": 1693,
+          "position_change_m": 0.0003630684563325372,
+          "orientation_change_rad": 0.0040794768601988786
+        },
+        {
+          "step": 1694,
+          "position_change_m": 0.00040676006100173225,
+          "orientation_change_rad": 0.004370450574937969
+        },
+        {
+          "step": 1695,
+          "position_change_m": 0.00046772320750990837,
+          "orientation_change_rad": 0.004545430136436265
+        },
+        {
+          "step": 1696,
+          "position_change_m": 0.00048557149118161146,
+          "orientation_change_rad": 0.004747586319435635
+        },
+        {
+          "step": 1697,
+          "position_change_m": 0.000505665938725367,
+          "orientation_change_rad": 0.004955016733200544
+        },
+        {
+          "step": 1698,
+          "position_change_m": 0.0005246685042933814,
+          "orientation_change_rad": 0.005165493536760783
+        },
+        {
+          "step": 1699,
+          "position_change_m": 0.0005445570908962453,
+          "orientation_change_rad": 0.005374792393616561
+        },
+        {
+          "step": 1700,
+          "position_change_m": 0.0005625352017028612,
+          "orientation_change_rad": 0.005584277465678631
+        },
+        {
+          "step": 1701,
+          "position_change_m": 0.0005833852551571198,
+          "orientation_change_rad": 0.005790219977047913
+        },
+        {
+          "step": 1702,
+          "position_change_m": 0.0006037525838195414,
+          "orientation_change_rad": 0.005994789583870543
+        },
+        {
+          "step": 1703,
+          "position_change_m": 0.0006284329377185968,
+          "orientation_change_rad": 0.006195522297924483
+        },
+        {
+          "step": 1704,
+          "position_change_m": 0.0006500740350878458,
+          "orientation_change_rad": 0.006397144716715524
+        },
+        {
+          "step": 1705,
+          "position_change_m": 0.0006746363373908674,
+          "orientation_change_rad": 0.006597397181606354
+        },
+        {
+          "step": 1706,
+          "position_change_m": 0.0006921689458683844,
+          "orientation_change_rad": 0.006801734669378707
+        },
+        {
+          "step": 1707,
+          "position_change_m": 0.0007174303827905072,
+          "orientation_change_rad": 0.0070034047482591625
+        },
+        {
+          "step": 1708,
+          "position_change_m": 0.0007379087975813999,
+          "orientation_change_rad": 0.007208433251847675
+        },
+        {
+          "step": 1709,
+          "position_change_m": 0.0007566809927803058,
+          "orientation_change_rad": 0.007416062989034706
+        },
+        {
+          "step": 1710,
+          "position_change_m": 0.0007793840442997692,
+          "orientation_change_rad": 0.007624020631368258
+        },
+        {
+          "step": 1711,
+          "position_change_m": 0.000797076672704701,
+          "orientation_change_rad": 0.007836018093193094
+        },
+        {
+          "step": 1712,
+          "position_change_m": 0.0008155060975485944,
+          "orientation_change_rad": 0.0080497929560093
+        },
+        {
+          "step": 1713,
+          "position_change_m": 0.0008361062191632444,
+          "orientation_change_rad": 0.008264389398247505
+        },
+        {
+          "step": 1714,
+          "position_change_m": 0.0008502491522147712,
+          "orientation_change_rad": 0.008483202290361959
+        },
+        {
+          "step": 1715,
+          "position_change_m": 0.000866504161341306,
+          "orientation_change_rad": 0.00870270799573024
+        },
+        {
+          "step": 1716,
+          "position_change_m": 0.0008843191608031638,
+          "orientation_change_rad": 0.008923464794936331
+        },
+        {
+          "step": 1717,
+          "position_change_m": 0.000898215892902677,
+          "orientation_change_rad": 0.009146737194069325
+        },
+        {
+          "step": 1718,
+          "position_change_m": 0.0009123524672892781,
+          "orientation_change_rad": 0.009371493611111264
+        },
+        {
+          "step": 1719,
+          "position_change_m": 0.0009251712991594273,
+          "orientation_change_rad": 0.009598184827115398
+        },
+        {
+          "step": 1720,
+          "position_change_m": 0.0009372439998032927,
+          "orientation_change_rad": 0.00982694241568527
+        },
+        {
+          "step": 1721,
+          "position_change_m": 0.0009488732179696844,
+          "orientation_change_rad": 0.010062160872854956
+        },
+        {
+          "step": 1722,
+          "position_change_m": 0.0009586906850481404,
+          "orientation_change_rad": 0.010298328755319261
+        },
+        {
+          "step": 1723,
+          "position_change_m": 0.000970263003589642,
+          "orientation_change_rad": 0.010533001576806075
+        },
+        {
+          "step": 1724,
+          "position_change_m": 0.000981075240881813,
+          "orientation_change_rad": 0.010767060042571662
+        },
+        {
+          "step": 1725,
+          "position_change_m": 0.000992675602614534,
+          "orientation_change_rad": 0.010999679944302761
+        },
+        {
+          "step": 1726,
+          "position_change_m": 0.001001992753118353,
+          "orientation_change_rad": 0.011231978344015412
+        },
+        {
+          "step": 1727,
+          "position_change_m": 0.001010936766436117,
+          "orientation_change_rad": 0.011463590296652991
+        },
+        {
+          "step": 1728,
+          "position_change_m": 0.001019934930529333,
+          "orientation_change_rad": 0.011694833921103402
+        },
+        {
+          "step": 1729,
+          "position_change_m": 0.0010276385673273572,
+          "orientation_change_rad": 0.011926884207234782
+        },
+        {
+          "step": 1730,
+          "position_change_m": 0.0010382469284947445,
+          "orientation_change_rad": 0.012158327570375868
+        },
+        {
+          "step": 1731,
+          "position_change_m": 0.0010441728695420188,
+          "orientation_change_rad": 0.012390556867190261
+        },
+        {
+          "step": 1732,
+          "position_change_m": 0.0010527713983933232,
+          "orientation_change_rad": 0.012622346380404152
+        },
+        {
+          "step": 1733,
+          "position_change_m": 0.001059683097143865,
+          "orientation_change_rad": 0.012854574443132894
+        },
+        {
+          "step": 1734,
+          "position_change_m": 0.0010658072668750676,
+          "orientation_change_rad": 0.013086649339441087
+        },
+        {
+          "step": 1735,
+          "position_change_m": 0.0010747490190662695,
+          "orientation_change_rad": 0.013318461099529388
+        },
+        {
+          "step": 1736,
+          "position_change_m": 0.001080994002073122,
+          "orientation_change_rad": 0.013550248208275021
+        },
+        {
+          "step": 1737,
+          "position_change_m": 0.0010880725141323127,
+          "orientation_change_rad": 0.013782104218939654
+        },
+        {
+          "step": 1738,
+          "position_change_m": 0.0010953822579135122,
+          "orientation_change_rad": 0.014013849217068466
+        },
+        {
+          "step": 1739,
+          "position_change_m": 0.0011019252719183345,
+          "orientation_change_rad": 0.014245857407255256
+        },
+        {
+          "step": 1740,
+          "position_change_m": 0.0011067949804293325,
+          "orientation_change_rad": 0.014477827938843425
+        },
+        {
+          "step": 1741,
+          "position_change_m": 0.001113725457427487,
+          "orientation_change_rad": 0.0147097461184114
+        },
+        {
+          "step": 1742,
+          "position_change_m": 0.0011180313335006824,
+          "orientation_change_rad": 0.014941488546588036
+        },
+        {
+          "step": 1743,
+          "position_change_m": 0.0011260566371934515,
+          "orientation_change_rad": 0.015173168611853399
+        },
+        {
+          "step": 1744,
+          "position_change_m": 0.001132633953061225,
+          "orientation_change_rad": 0.015404516619901432
+        },
+        {
+          "step": 1745,
+          "position_change_m": 0.0011376439612669905,
+          "orientation_change_rad": 0.01563639135474216
+        }
+      ],
+      "first_position_change_above_reference_step": null,
+      "first_orientation_change_above_reference_step": null,
+      "waypoint_exits": [
+        {
+          "waypoint_index": 0,
+          "first_step": 1681,
+          "last_step": 1745,
+          "requested_steps": 65,
+          "executed_steps": 65,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.001767850416587656,
+            "orientation_error_rad": 0.003519721058531116,
+            "linear_speed_m_s": 0.002908193381075834,
+            "angular_speed_rad_s": 0.01040523594667368,
+            "finger_speed_m_s": 9.670046897355389e-05,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.7997281018173897,
+            0.5396510687056801,
+            -0.0948390120744296,
+            -0.24539203124208844
+          ]
+        }
+      ],
+      "policy_reason": "Bring the larger hole above the exposed hook tip and tilt its plane to match the measured direction of the hook's raised lip."
+    },
+    {
+      "episode": "pf_v1_s02_waypoints",
+      "calculation": "calc_001",
+      "object_reference": "frame",
+      "calculation_step": 442,
+      "following_decision": 9,
+      "first_step": 443,
+      "last_step": 617,
+      "arithmetic_stdout_stderr_exact": true,
+      "source_sha256": "9a40169e99563bd1af93c452e4f85b7bca61db59d9641f0d7067a00318cb1774",
+      "maximum_relative_position_change_m": 0.0025400562860473856,
+      "maximum_relative_orientation_change_rad": 0.020816950433590296,
+      "first_change": {
+        "step": 443,
+        "position_change_m": 9.875244876389122e-06,
+        "orientation_change_rad": 0.00010853121576991875
+      },
+      "last_change": {
+        "step": 617,
+        "position_change_m": 0.0025400562860473856,
+        "orientation_change_rad": 0.020816950433590296
+      },
+      "samples": [
+        {
+          "step": 443,
+          "position_change_m": 9.875244876389122e-06,
+          "orientation_change_rad": 0.00010853121576991875
+        },
+        {
+          "step": 444,
+          "position_change_m": 4.0892208501711394e-05,
+          "orientation_change_rad": 0.0002456211473740019
+        },
+        {
+          "step": 445,
+          "position_change_m": 7.339026807830939e-05,
+          "orientation_change_rad": 0.0004500331732455668
+        },
+        {
+          "step": 446,
+          "position_change_m": 0.00011732587991250875,
+          "orientation_change_rad": 0.0006769025083683145
+        },
+        {
+          "step": 447,
+          "position_change_m": 0.00016074587050841707,
+          "orientation_change_rad": 0.0009329585390983441
+        },
+        {
+          "step": 448,
+          "position_change_m": 0.00020953004446577506,
+          "orientation_change_rad": 0.0012153490588796623
+        },
+        {
+          "step": 449,
+          "position_change_m": 0.00026747740652220323,
+          "orientation_change_rad": 0.0015167488059444308
+        },
+        {
+          "step": 450,
+          "position_change_m": 0.00032695417814705447,
+          "orientation_change_rad": 0.0018319815932508728
+        },
+        {
+          "step": 451,
+          "position_change_m": 0.0003888484348831232,
+          "orientation_change_rad": 0.0021554072858356913
+        },
+        {
+          "step": 452,
+          "position_change_m": 0.00045347801481798473,
+          "orientation_change_rad": 0.002485712293528382
+        },
+        {
+          "step": 453,
+          "position_change_m": 0.0005205189012134464,
+          "orientation_change_rad": 0.0028177153527747067
+        },
+        {
+          "step": 454,
+          "position_change_m": 0.0005876206708081241,
+          "orientation_change_rad": 0.0031495609657336623
+        },
+        {
+          "step": 455,
+          "position_change_m": 0.0006547633962883092,
+          "orientation_change_rad": 0.0034782029941012615
+        },
+        {
+          "step": 456,
+          "position_change_m": 0.0007223419731475427,
+          "orientation_change_rad": 0.003800585705156607
+        },
+        {
+          "step": 457,
+          "position_change_m": 0.0007883844095488681,
+          "orientation_change_rad": 0.004113199712569182
+        },
+        {
+          "step": 458,
+          "position_change_m": 0.0008526341098266089,
+          "orientation_change_rad": 0.004415114492584236
+        },
+        {
+          "step": 459,
+          "position_change_m": 0.0009156813024575793,
+          "orientation_change_rad": 0.00470497192415878
+        },
+        {
+          "step": 460,
+          "position_change_m": 0.0009766993538834826,
+          "orientation_change_rad": 0.004981775754702831
+        },
+        {
+          "step": 461,
+          "position_change_m": 0.0010345959966476242,
+          "orientation_change_rad": 0.005244461661575252
+        },
+        {
+          "step": 462,
+          "position_change_m": 0.0010899652107704987,
+          "orientation_change_rad": 0.005491248315514748
+        },
+        {
+          "step": 463,
+          "position_change_m": 0.0011420567956208448,
+          "orientation_change_rad": 0.00572356448895164
+        },
+        {
+          "step": 464,
+          "position_change_m": 0.0011918001475897525,
+          "orientation_change_rad": 0.0059427267323386695
+        },
+        {
+          "step": 465,
+          "position_change_m": 0.0012396064608029274,
+          "orientation_change_rad": 0.006152452504217916
+        },
+        {
+          "step": 466,
+          "position_change_m": 0.0012857527370713831,
+          "orientation_change_rad": 0.006356278499043204
+        },
+        {
+          "step": 467,
+          "position_change_m": 0.001330827231527606,
+          "orientation_change_rad": 0.006552211244157026
+        },
+        {
+          "step": 468,
+          "position_change_m": 0.001375614629225252,
+          "orientation_change_rad": 0.006746391813936405
+        },
+        {
+          "step": 469,
+          "position_change_m": 0.0014196976603712884,
+          "orientation_change_rad": 0.006936260155517657
+        },
+        {
+          "step": 470,
+          "position_change_m": 0.0014630119601025224,
+          "orientation_change_rad": 0.007122847101156444
+        },
+        {
+          "step": 471,
+          "position_change_m": 0.0015057437147717612,
+          "orientation_change_rad": 0.007305788611416468
+        },
+        {
+          "step": 472,
+          "position_change_m": 0.001548003030869343,
+          "orientation_change_rad": 0.007484065613391763
+        },
+        {
+          "step": 473,
+          "position_change_m": 0.0015896393524406788,
+          "orientation_change_rad": 0.0076599329624239465
+        },
+        {
+          "step": 474,
+          "position_change_m": 0.0016306783732475487,
+          "orientation_change_rad": 0.007830358858165227
+        },
+        {
+          "step": 475,
+          "position_change_m": 0.0016714168686461739,
+          "orientation_change_rad": 0.007998103572294296
+        },
+        {
+          "step": 476,
+          "position_change_m": 0.0017117740471292576,
+          "orientation_change_rad": 0.008161858202528868
+        },
+        {
+          "step": 477,
+          "position_change_m": 0.0017515150618867038,
+          "orientation_change_rad": 0.008324108191563031
+        },
+        {
+          "step": 478,
+          "position_change_m": 0.0017910343148087135,
+          "orientation_change_rad": 0.008480485281683459
+        },
+        {
+          "step": 479,
+          "position_change_m": 0.0018298850312264867,
+          "orientation_change_rad": 0.008635933092115106
+        },
+        {
+          "step": 480,
+          "position_change_m": 0.0018686186235099143,
+          "orientation_change_rad": 0.008786141514330756
+        },
+        {
+          "step": 481,
+          "position_change_m": 0.0019071715984266334,
+          "orientation_change_rad": 0.008936627468615729
+        },
+        {
+          "step": 482,
+          "position_change_m": 0.0019453613962850164,
+          "orientation_change_rad": 0.009084703409810492
+        },
+        {
+          "step": 483,
+          "position_change_m": 0.001983328069792881,
+          "orientation_change_rad": 0.00923281659155997
+        },
+        {
+          "step": 484,
+          "position_change_m": 0.002016763909079358,
+          "orientation_change_rad": 0.009371071839058904
+        },
+        {
+          "step": 485,
+          "position_change_m": 0.0020408194065497497,
+          "orientation_change_rad": 0.009487710108413785
+        },
+        {
+          "step": 486,
+          "position_change_m": 0.0020570475342751647,
+          "orientation_change_rad": 0.009589387057657502
+        },
+        {
+          "step": 487,
+          "position_change_m": 0.002068120553065605,
+          "orientation_change_rad": 0.00968371487440149
+        },
+        {
+          "step": 488,
+          "position_change_m": 0.002076084133805993,
+          "orientation_change_rad": 0.009771386320551577
+        },
+        {
+          "step": 489,
+          "position_change_m": 0.0020825113455548118,
+          "orientation_change_rad": 0.009858740503446546
+        },
+        {
+          "step": 490,
+          "position_change_m": 0.002087994114871839,
+          "orientation_change_rad": 0.009944623741736847
+        },
+        {
+          "step": 491,
+          "position_change_m": 0.0020928296947160985,
+          "orientation_change_rad": 0.010029027693349901
+        },
+        {
+          "step": 492,
+          "position_change_m": 0.0020973761429981686,
+          "orientation_change_rad": 0.010114764207684588
+        },
+        {
+          "step": 493,
+          "position_change_m": 0.002101659551810604,
+          "orientation_change_rad": 0.010200193974686403
+        },
+        {
+          "step": 494,
+          "position_change_m": 0.0021054613078526764,
+          "orientation_change_rad": 0.010282919439560953
+        },
+        {
+          "step": 495,
+          "position_change_m": 0.0021093333861485174,
+          "orientation_change_rad": 0.010367317515164818
+        },
+        {
+          "step": 496,
+          "position_change_m": 0.0021131246065727526,
+          "orientation_change_rad": 0.010450627133127336
+        },
+        {
+          "step": 497,
+          "position_change_m": 0.0021166080075622705,
+          "orientation_change_rad": 0.010532862155445806
+        },
+        {
+          "step": 498,
+          "position_change_m": 0.0021202384902893026,
+          "orientation_change_rad": 0.01061595039739399
+        },
+        {
+          "step": 499,
+          "position_change_m": 0.0021238645373166834,
+          "orientation_change_rad": 0.0106987927146739
+        },
+        {
+          "step": 500,
+          "position_change_m": 0.0021274823342830452,
+          "orientation_change_rad": 0.010781912659361225
+        },
+        {
+          "step": 501,
+          "position_change_m": 0.0021313429491648505,
+          "orientation_change_rad": 0.010866021152195175
+        },
+        {
+          "step": 502,
+          "position_change_m": 0.0021351685156850266,
+          "orientation_change_rad": 0.010950870050077277
+        },
+        {
+          "step": 503,
+          "position_change_m": 0.002139175835740968,
+          "orientation_change_rad": 0.011035284751537065
+        },
+        {
+          "step": 504,
+          "position_change_m": 0.002143127500707426,
+          "orientation_change_rad": 0.01112075076900418
+        },
+        {
+          "step": 505,
+          "position_change_m": 0.0021471723577627545,
+          "orientation_change_rad": 0.01120622078460748
+        },
+        {
+          "step": 506,
+          "position_change_m": 0.002151290578671529,
+          "orientation_change_rad": 0.011292753459547201
+        },
+        {
+          "step": 507,
+          "position_change_m": 0.002155318184046394,
+          "orientation_change_rad": 0.011378232973458958
+        },
+        {
+          "step": 508,
+          "position_change_m": 0.0021595462195218174,
+          "orientation_change_rad": 0.011464177160430477
+        },
+        {
+          "step": 509,
+          "position_change_m": 0.0021635530155971155,
+          "orientation_change_rad": 0.011550285574757862
+        },
+        {
+          "step": 510,
+          "position_change_m": 0.002167577511994851,
+          "orientation_change_rad": 0.011635194757536334
+        },
+        {
+          "step": 511,
+          "position_change_m": 0.0021716243685095636,
+          "orientation_change_rad": 0.011720335743440889
+        },
+        {
+          "step": 512,
+          "position_change_m": 0.002175771316295146,
+          "orientation_change_rad": 0.011807001575769915
+        },
+        {
+          "step": 513,
+          "position_change_m": 0.002179709953963222,
+          "orientation_change_rad": 0.01189209035374108
+        },
+        {
+          "step": 514,
+          "position_change_m": 0.0021837534730602516,
+          "orientation_change_rad": 0.011977261956898074
+        },
+        {
+          "step": 515,
+          "position_change_m": 0.0021880559034873973,
+          "orientation_change_rad": 0.012064203277484477
+        },
+        {
+          "step": 516,
+          "position_change_m": 0.0021920965865095867,
+          "orientation_change_rad": 0.012149236902942836
+        },
+        {
+          "step": 517,
+          "position_change_m": 0.0021960851786669996,
+          "orientation_change_rad": 0.01223426125241372
+        },
+        {
+          "step": 518,
+          "position_change_m": 0.002200280931952615,
+          "orientation_change_rad": 0.012323859960093858
+        },
+        {
+          "step": 519,
+          "position_change_m": 0.002204552331077116,
+          "orientation_change_rad": 0.012415819497290552
+        },
+        {
+          "step": 520,
+          "position_change_m": 0.0022086783919294715,
+          "orientation_change_rad": 0.012507121002133983
+        },
+        {
+          "step": 521,
+          "position_change_m": 0.0022128354369417274,
+          "orientation_change_rad": 0.01259896823381494
+        },
+        {
+          "step": 522,
+          "position_change_m": 0.002216949086451624,
+          "orientation_change_rad": 0.012689910359907065
+        },
+        {
+          "step": 523,
+          "position_change_m": 0.0022208672911636033,
+          "orientation_change_rad": 0.012780338930823256
+        },
+        {
+          "step": 524,
+          "position_change_m": 0.0022248558005902256,
+          "orientation_change_rad": 0.01287002911994238
+        },
+        {
+          "step": 525,
+          "position_change_m": 0.0022288559064543036,
+          "orientation_change_rad": 0.012961028589187127
+        },
+        {
+          "step": 526,
+          "position_change_m": 0.002232842258836803,
+          "orientation_change_rad": 0.013050899333894531
+        },
+        {
+          "step": 527,
+          "position_change_m": 0.0022365834567279895,
+          "orientation_change_rad": 0.013140377818702604
+        },
+        {
+          "step": 528,
+          "position_change_m": 0.0022407747342175813,
+          "orientation_change_rad": 0.013232123841793762
+        },
+        {
+          "step": 529,
+          "position_change_m": 0.0022447131895145024,
+          "orientation_change_rad": 0.013321560654764157
+        },
+        {
+          "step": 530,
+          "position_change_m": 0.0022485977720267504,
+          "orientation_change_rad": 0.013411073122454101
+        },
+        {
+          "step": 531,
+          "position_change_m": 0.002252293190918555,
+          "orientation_change_rad": 0.013499898158595702
+        },
+        {
+          "step": 532,
+          "position_change_m": 0.0022563498409706086,
+          "orientation_change_rad": 0.013590223404999735
+        },
+        {
+          "step": 533,
+          "position_change_m": 0.002260146081798585,
+          "orientation_change_rad": 0.013679429026509376
+        },
+        {
+          "step": 534,
+          "position_change_m": 0.0022639476198973167,
+          "orientation_change_rad": 0.013768598707934199
+        },
+        {
+          "step": 535,
+          "position_change_m": 0.0022678728927040606,
+          "orientation_change_rad": 0.01385816238615824
+        },
+        {
+          "step": 536,
+          "position_change_m": 0.0022715207871014695,
+          "orientation_change_rad": 0.0139466123538757
+        },
+        {
+          "step": 537,
+          "position_change_m": 0.0022755085070742336,
+          "orientation_change_rad": 0.014035892226541799
+        },
+        {
+          "step": 538,
+          "position_change_m": 0.002279350371215358,
+          "orientation_change_rad": 0.014125067027561429
+        },
+        {
+          "step": 539,
+          "position_change_m": 0.002282943839843621,
+          "orientation_change_rad": 0.014213184875071205
+        },
+        {
+          "step": 540,
+          "position_change_m": 0.0022865819049631975,
+          "orientation_change_rad": 0.014301084311204637
+        },
+        {
+          "step": 541,
+          "position_change_m": 0.0022904130321100198,
+          "orientation_change_rad": 0.014390020623794315
+        },
+        {
+          "step": 542,
+          "position_change_m": 0.0022941122690810153,
+          "orientation_change_rad": 0.014477918063553242
+        },
+        {
+          "step": 543,
+          "position_change_m": 0.0022976383648478657,
+          "orientation_change_rad": 0.014565086223260932
+        },
+        {
+          "step": 544,
+          "position_change_m": 0.002301434720167361,
+          "orientation_change_rad": 0.01465326203359367
+        },
+        {
+          "step": 545,
+          "position_change_m": 0.002305130293362968,
+          "orientation_change_rad": 0.014740999342910949
+        },
+        {
+          "step": 546,
+          "position_change_m": 0.002308455941459676,
+          "orientation_change_rad": 0.01482650241672424
+        },
+        {
+          "step": 547,
+          "position_change_m": 0.0023121344700510003,
+          "orientation_change_rad": 0.01491454639627337
+        },
+        {
+          "step": 548,
+          "position_change_m": 0.0023157686264854514,
+          "orientation_change_rad": 0.015001823399419058
+        },
+        {
+          "step": 549,
+          "position_change_m": 0.0023193236087555393,
+          "orientation_change_rad": 0.015088798807422315
+        },
+        {
+          "step": 550,
+          "position_change_m": 0.0023229842473783025,
+          "orientation_change_rad": 0.015175728047639784
+        },
+        {
+          "step": 551,
+          "position_change_m": 0.002326440993639075,
+          "orientation_change_rad": 0.015262023533479788
+        },
+        {
+          "step": 552,
+          "position_change_m": 0.002329868620554178,
+          "orientation_change_rad": 0.015348338173294677
+        },
+        {
+          "step": 553,
+          "position_change_m": 0.002333408481090311,
+          "orientation_change_rad": 0.015435106762336566
+        },
+        {
+          "step": 554,
+          "position_change_m": 0.0023366645282810765,
+          "orientation_change_rad": 0.015520915335612057
+        },
+        {
+          "step": 555,
+          "position_change_m": 0.0023399621854813995,
+          "orientation_change_rad": 0.015605990516099335
+        },
+        {
+          "step": 556,
+          "position_change_m": 0.002343450544696165,
+          "orientation_change_rad": 0.01569192869371155
+        },
+        {
+          "step": 557,
+          "position_change_m": 0.0023468715796153145,
+          "orientation_change_rad": 0.015778286022554412
+        },
+        {
+          "step": 558,
+          "position_change_m": 0.0023500254188475638,
+          "orientation_change_rad": 0.015862767012749347
+        },
+        {
+          "step": 559,
+          "position_change_m": 0.002353481803572893,
+          "orientation_change_rad": 0.015948569931784045
+        },
+        {
+          "step": 560,
+          "position_change_m": 0.0023567152538508766,
+          "orientation_change_rad": 0.016033433810025127
+        },
+        {
+          "step": 561,
+          "position_change_m": 0.0023597694796107923,
+          "orientation_change_rad": 0.01611798061132028
+        },
+        {
+          "step": 562,
+          "position_change_m": 0.002363027090584996,
+          "orientation_change_rad": 0.016202658991384067
+        },
+        {
+          "step": 563,
+          "position_change_m": 0.00236632783155593,
+          "orientation_change_rad": 0.01628825352790304
+        },
+        {
+          "step": 564,
+          "position_change_m": 0.0023694004569786596,
+          "orientation_change_rad": 0.016372758736374837
+        },
+        {
+          "step": 565,
+          "position_change_m": 0.0023725530102185997,
+          "orientation_change_rad": 0.01645744377340516
+        },
+        {
+          "step": 566,
+          "position_change_m": 0.002375817100982665,
+          "orientation_change_rad": 0.01654272490479582
+        },
+        {
+          "step": 567,
+          "position_change_m": 0.0023788613956384186,
+          "orientation_change_rad": 0.01662719070444134
+        },
+        {
+          "step": 568,
+          "position_change_m": 0.0023819790452384924,
+          "orientation_change_rad": 0.016711832308645466
+        },
+        {
+          "step": 569,
+          "position_change_m": 0.002384788598788529,
+          "orientation_change_rad": 0.016795528192199736
+        },
+        {
+          "step": 570,
+          "position_change_m": 0.0023880168079498903,
+          "orientation_change_rad": 0.01688026870686777
+        },
+        {
+          "step": 571,
+          "position_change_m": 0.00239062553541993,
+          "orientation_change_rad": 0.016962741159145502
+        },
+        {
+          "step": 572,
+          "position_change_m": 0.002393675376938993,
+          "orientation_change_rad": 0.017047634011905413
+        },
+        {
+          "step": 573,
+          "position_change_m": 0.0023966309433046265,
+          "orientation_change_rad": 0.01713151362924772
+        },
+        {
+          "step": 574,
+          "position_change_m": 0.0023994143520539813,
+          "orientation_change_rad": 0.017215148727230775
+        },
+        {
+          "step": 575,
+          "position_change_m": 0.002402417092141411,
+          "orientation_change_rad": 0.017299335159178655
+        },
+        {
+          "step": 576,
+          "position_change_m": 0.002404970164846006,
+          "orientation_change_rad": 0.01738217982576185
+        },
+        {
+          "step": 577,
+          "position_change_m": 0.0024076796062369238,
+          "orientation_change_rad": 0.01746534073179642
+        },
+        {
+          "step": 578,
+          "position_change_m": 0.0024106916617880675,
+          "orientation_change_rad": 0.017550264465510394
+        },
+        {
+          "step": 579,
+          "position_change_m": 0.002413085557774719,
+          "orientation_change_rad": 0.017632322841016294
+        },
+        {
+          "step": 580,
+          "position_change_m": 0.0024157143555547777,
+          "orientation_change_rad": 0.0177155016305301
+        },
+        {
+          "step": 581,
+          "position_change_m": 0.0024184258978363557,
+          "orientation_change_rad": 0.017799587357404435
+        },
+        {
+          "step": 582,
+          "position_change_m": 0.002420986559279921,
+          "orientation_change_rad": 0.017882736812679812
+        },
+        {
+          "step": 583,
+          "position_change_m": 0.0024235486539279914,
+          "orientation_change_rad": 0.017965860348516518
+        },
+        {
+          "step": 584,
+          "position_change_m": 0.002425881555767141,
+          "orientation_change_rad": 0.018048684163022903
+        },
+        {
+          "step": 585,
+          "position_change_m": 0.0024283674413304907,
+          "orientation_change_rad": 0.018131735723931744
+        },
+        {
+          "step": 586,
+          "position_change_m": 0.0024306079040012957,
+          "orientation_change_rad": 0.018214385418183654
+        },
+        {
+          "step": 587,
+          "position_change_m": 0.002432958413938273,
+          "orientation_change_rad": 0.018297419897129276
+        },
+        {
+          "step": 588,
+          "position_change_m": 0.002435259701193119,
+          "orientation_change_rad": 0.018380324193225165
+        },
+        {
+          "step": 589,
+          "position_change_m": 0.002437446004891911,
+          "orientation_change_rad": 0.018463242952002818
+        },
+        {
+          "step": 590,
+          "position_change_m": 0.0024394497476260013,
+          "orientation_change_rad": 0.018545185385060708
+        },
+        {
+          "step": 591,
+          "position_change_m": 0.002441446335971014,
+          "orientation_change_rad": 0.018627855703525178
+        },
+        {
+          "step": 592,
+          "position_change_m": 0.002443545235127656,
+          "orientation_change_rad": 0.01870937453420198
+        },
+        {
+          "step": 593,
+          "position_change_m": 0.002446205645097325,
+          "orientation_change_rad": 0.018792258585226117
+        },
+        {
+          "step": 594,
+          "position_change_m": 0.0024492061156171463,
+          "orientation_change_rad": 0.018875532767771073
+        },
+        {
+          "step": 595,
+          "position_change_m": 0.002452735453720982,
+          "orientation_change_rad": 0.018959100887804153
+        },
+        {
+          "step": 596,
+          "position_change_m": 0.0024562673479339944,
+          "orientation_change_rad": 0.019042567613883385
+        },
+        {
+          "step": 597,
+          "position_change_m": 0.002459892643647863,
+          "orientation_change_rad": 0.019125126977950702
+        },
+        {
+          "step": 598,
+          "position_change_m": 0.002463858748252169,
+          "orientation_change_rad": 0.01920906876205515
+        },
+        {
+          "step": 599,
+          "position_change_m": 0.002468017932202737,
+          "orientation_change_rad": 0.01929439341221484
+        },
+        {
+          "step": 600,
+          "position_change_m": 0.002472103816643142,
+          "orientation_change_rad": 0.019378752885089102
+        },
+        {
+          "step": 601,
+          "position_change_m": 0.002476072489703183,
+          "orientation_change_rad": 0.019463119510731316
+        },
+        {
+          "step": 602,
+          "position_change_m": 0.0024800233650615826,
+          "orientation_change_rad": 0.019547201178086678
+        },
+        {
+          "step": 603,
+          "position_change_m": 0.002483937574147316,
+          "orientation_change_rad": 0.019631093348180514
+        },
+        {
+          "step": 604,
+          "position_change_m": 0.0024878780221938295,
+          "orientation_change_rad": 0.01971527605212673
+        },
+        {
+          "step": 605,
+          "position_change_m": 0.002491935513492896,
+          "orientation_change_rad": 0.019800450856895187
+        },
+        {
+          "step": 606,
+          "position_change_m": 0.0024957614379537475,
+          "orientation_change_rad": 0.019884243084850598
+        },
+        {
+          "step": 607,
+          "position_change_m": 0.002499923867905757,
+          "orientation_change_rad": 0.019969410596917727
+        },
+        {
+          "step": 608,
+          "position_change_m": 0.002503977119231605,
+          "orientation_change_rad": 0.020054477097109846
+        },
+        {
+          "step": 609,
+          "position_change_m": 0.0025079353814610543,
+          "orientation_change_rad": 0.020139397507018694
+        },
+        {
+          "step": 610,
+          "position_change_m": 0.0025118997970870693,
+          "orientation_change_rad": 0.020223732839576677
+        },
+        {
+          "step": 611,
+          "position_change_m": 0.0025158468784465247,
+          "orientation_change_rad": 0.020308456635069902
+        },
+        {
+          "step": 612,
+          "position_change_m": 0.0025198337497628707,
+          "orientation_change_rad": 0.020392943125062978
+        },
+        {
+          "step": 613,
+          "position_change_m": 0.0025239444676506935,
+          "orientation_change_rad": 0.0204780869621433
+        },
+        {
+          "step": 614,
+          "position_change_m": 0.0025278202011234487,
+          "orientation_change_rad": 0.020561904621084027
+        },
+        {
+          "step": 615,
+          "position_change_m": 0.002532027181093257,
+          "orientation_change_rad": 0.020647461827963037
+        },
+        {
+          "step": 616,
+          "position_change_m": 0.0025359805030884153,
+          "orientation_change_rad": 0.02073192348910213
+        },
+        {
+          "step": 617,
+          "position_change_m": 0.0025400562860473856,
+          "orientation_change_rad": 0.020816950433590296
+        }
+      ],
+      "first_position_change_above_reference_step": null,
+      "first_orientation_change_above_reference_step": null,
+      "waypoint_exits": [
+        {
+          "waypoint_index": 0,
+          "first_step": 443,
+          "last_step": 517,
+          "requested_steps": 75,
+          "executed_steps": 75,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.00029723234123130973,
+            "orientation_error_rad": 0.001586966726451742,
+            "linear_speed_m_s": 0.00014194305032917692,
+            "angular_speed_rad_s": 0.00040634055034142287,
+            "finger_speed_m_s": 1.6955628592652376e-05,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.6005431805266103,
+            0.3823221149281478,
+            -0.5989841800579659,
+            0.366600110202026
+          ]
+        },
+        {
+          "waypoint_index": 1,
+          "first_step": 518,
+          "last_step": 617,
+          "requested_steps": 100,
+          "executed_steps": 100,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.00010684045767355732,
+            "orientation_error_rad": 0.0007056270876015888,
+            "linear_speed_m_s": 2.7101047470350032e-05,
+            "angular_speed_rad_s": 0.0001408440589604428,
+            "finger_speed_m_s": 1.39401195713355e-05,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.6005431805266103,
+            0.3823221149281478,
+            -0.5989841800579659,
+            0.366600110202026
+          ]
+        }
+      ],
+      "policy_reason": "Rotate the measured stem downward and transport its insertion end above the stand opening."
+    },
+    {
+      "episode": "pf_v1_s02_waypoints",
+      "calculation": "calc_002",
+      "object_reference": "tool",
+      "calculation_step": 1147,
+      "following_decision": 18,
+      "first_step": 1148,
+      "last_step": 1307,
+      "arithmetic_stdout_stderr_exact": true,
+      "source_sha256": "bf5064a9449202d2a5b423b46bfd67924dad242520be5e0d0088ea008745e107",
+      "maximum_relative_position_change_m": 0.0018379041877742016,
+      "maximum_relative_orientation_change_rad": 0.02063534971377668,
+      "first_change": {
+        "step": 1148,
+        "position_change_m": 1.4297263281216228e-05,
+        "orientation_change_rad": 0.00022719054504556288
+      },
+      "last_change": {
+        "step": 1307,
+        "position_change_m": 0.0018379041877742016,
+        "orientation_change_rad": 0.02063534971377668
+      },
+      "samples": [
+        {
+          "step": 1148,
+          "position_change_m": 1.4297263281216228e-05,
+          "orientation_change_rad": 0.00022719054504556288
+        },
+        {
+          "step": 1149,
+          "position_change_m": 3.231801208675303e-05,
+          "orientation_change_rad": 0.00038103098733023594
+        },
+        {
+          "step": 1150,
+          "position_change_m": 5.5254387683799956e-05,
+          "orientation_change_rad": 0.0004986538521003724
+        },
+        {
+          "step": 1151,
+          "position_change_m": 8.095659323358343e-05,
+          "orientation_change_rad": 0.0006053980068106419
+        },
+        {
+          "step": 1152,
+          "position_change_m": 0.0001087440544424823,
+          "orientation_change_rad": 0.000716017902060281
+        },
+        {
+          "step": 1153,
+          "position_change_m": 0.00013861553350762984,
+          "orientation_change_rad": 0.0008349873724503587
+        },
+        {
+          "step": 1154,
+          "position_change_m": 0.00017075817236676243,
+          "orientation_change_rad": 0.0009621051098010119
+        },
+        {
+          "step": 1155,
+          "position_change_m": 0.0002053635909372493,
+          "orientation_change_rad": 0.001094706637895053
+        },
+        {
+          "step": 1156,
+          "position_change_m": 0.0002425013214089196,
+          "orientation_change_rad": 0.001230721804777652
+        },
+        {
+          "step": 1157,
+          "position_change_m": 0.00028215656285733446,
+          "orientation_change_rad": 0.001368360344426527
+        },
+        {
+          "step": 1158,
+          "position_change_m": 0.00032423829971472507,
+          "orientation_change_rad": 0.0015060474644566007
+        },
+        {
+          "step": 1159,
+          "position_change_m": 0.00036852576997803416,
+          "orientation_change_rad": 0.0016425439911371405
+        },
+        {
+          "step": 1160,
+          "position_change_m": 0.0004146685092133387,
+          "orientation_change_rad": 0.0017766949310387694
+        },
+        {
+          "step": 1161,
+          "position_change_m": 0.00046219500051105543,
+          "orientation_change_rad": 0.0019066991313015287
+        },
+        {
+          "step": 1162,
+          "position_change_m": 0.0005098687541862959,
+          "orientation_change_rad": 0.0020311686678781415
+        },
+        {
+          "step": 1163,
+          "position_change_m": 0.0005566212987546405,
+          "orientation_change_rad": 0.0021477210622986675
+        },
+        {
+          "step": 1164,
+          "position_change_m": 0.0006023871527791179,
+          "orientation_change_rad": 0.00225694422383374
+        },
+        {
+          "step": 1165,
+          "position_change_m": 0.0006473835872976537,
+          "orientation_change_rad": 0.0023585198937568995
+        },
+        {
+          "step": 1166,
+          "position_change_m": 0.0006918895380277312,
+          "orientation_change_rad": 0.0024535540060638098
+        },
+        {
+          "step": 1167,
+          "position_change_m": 0.0007360589121370764,
+          "orientation_change_rad": 0.002541530911812354
+        },
+        {
+          "step": 1168,
+          "position_change_m": 0.0007799144879019143,
+          "orientation_change_rad": 0.0026234112519264246
+        },
+        {
+          "step": 1169,
+          "position_change_m": 0.0008233910049737039,
+          "orientation_change_rad": 0.00269953028393468
+        },
+        {
+          "step": 1170,
+          "position_change_m": 0.0008663791671525137,
+          "orientation_change_rad": 0.0027709549805055443
+        },
+        {
+          "step": 1171,
+          "position_change_m": 0.0009087584074037253,
+          "orientation_change_rad": 0.0028377506654236693
+        },
+        {
+          "step": 1172,
+          "position_change_m": 0.0009504172994826457,
+          "orientation_change_rad": 0.0029020574039000714
+        },
+        {
+          "step": 1173,
+          "position_change_m": 0.0009912643155795924,
+          "orientation_change_rad": 0.002963787853295075
+        },
+        {
+          "step": 1174,
+          "position_change_m": 0.0010312321591659584,
+          "orientation_change_rad": 0.003024593097744757
+        },
+        {
+          "step": 1175,
+          "position_change_m": 0.0010702783291115297,
+          "orientation_change_rad": 0.003085954601379111
+        },
+        {
+          "step": 1176,
+          "position_change_m": 0.0011083837522216978,
+          "orientation_change_rad": 0.00314926825114007
+        },
+        {
+          "step": 1177,
+          "position_change_m": 0.0011455504949854432,
+          "orientation_change_rad": 0.003215424744061927
+        },
+        {
+          "step": 1178,
+          "position_change_m": 0.001181799843912987,
+          "orientation_change_rad": 0.0032856083040031974
+        },
+        {
+          "step": 1179,
+          "position_change_m": 0.0012171702665998106,
+          "orientation_change_rad": 0.0033614531542927057
+        },
+        {
+          "step": 1180,
+          "position_change_m": 0.001251715187234024,
+          "orientation_change_rad": 0.0034437765895172184
+        },
+        {
+          "step": 1181,
+          "position_change_m": 0.0012855008253455195,
+          "orientation_change_rad": 0.0035334602008004184
+        },
+        {
+          "step": 1182,
+          "position_change_m": 0.0013186040344100919,
+          "orientation_change_rad": 0.0036305095416252087
+        },
+        {
+          "step": 1183,
+          "position_change_m": 0.0013511100572642218,
+          "orientation_change_rad": 0.003735957470430551
+        },
+        {
+          "step": 1184,
+          "position_change_m": 0.0013831101803529198,
+          "orientation_change_rad": 0.0038497834292353116
+        },
+        {
+          "step": 1185,
+          "position_change_m": 0.0014146992859469308,
+          "orientation_change_rad": 0.0039719506895619806
+        },
+        {
+          "step": 1186,
+          "position_change_m": 0.0014459733466800665,
+          "orientation_change_rad": 0.004102809235034639
+        },
+        {
+          "step": 1187,
+          "position_change_m": 0.001477025243283853,
+          "orientation_change_rad": 0.004241877720746288
+        },
+        {
+          "step": 1188,
+          "position_change_m": 0.00150790815663051,
+          "orientation_change_rad": 0.004388398015514883
+        },
+        {
+          "step": 1189,
+          "position_change_m": 0.0015387136935053785,
+          "orientation_change_rad": 0.0045422414134965545
+        },
+        {
+          "step": 1190,
+          "position_change_m": 0.001569524695054916,
+          "orientation_change_rad": 0.004703034976311693
+        },
+        {
+          "step": 1191,
+          "position_change_m": 0.0015993107156219372,
+          "orientation_change_rad": 0.004868670354482331
+        },
+        {
+          "step": 1192,
+          "position_change_m": 0.0016232899306944024,
+          "orientation_change_rad": 0.005036563077214512
+        },
+        {
+          "step": 1193,
+          "position_change_m": 0.001639405416868582,
+          "orientation_change_rad": 0.005215561361836117
+        },
+        {
+          "step": 1194,
+          "position_change_m": 0.0016497723098629965,
+          "orientation_change_rad": 0.00540318974741288
+        },
+        {
+          "step": 1195,
+          "position_change_m": 0.001656518030185926,
+          "orientation_change_rad": 0.005595905381197008
+        },
+        {
+          "step": 1196,
+          "position_change_m": 0.0016630802497602075,
+          "orientation_change_rad": 0.005768753800888444
+        },
+        {
+          "step": 1197,
+          "position_change_m": 0.0016682719464353028,
+          "orientation_change_rad": 0.00588789691513992
+        },
+        {
+          "step": 1198,
+          "position_change_m": 0.0016707663902698344,
+          "orientation_change_rad": 0.0060096479902570265
+        },
+        {
+          "step": 1199,
+          "position_change_m": 0.0016733135354820064,
+          "orientation_change_rad": 0.006129568867947056
+        },
+        {
+          "step": 1200,
+          "position_change_m": 0.0016752900670935753,
+          "orientation_change_rad": 0.006251791080990303
+        },
+        {
+          "step": 1201,
+          "position_change_m": 0.00167673093863248,
+          "orientation_change_rad": 0.006375414550406845
+        },
+        {
+          "step": 1202,
+          "position_change_m": 0.0016782804633936675,
+          "orientation_change_rad": 0.006495976677876776
+        },
+        {
+          "step": 1203,
+          "position_change_m": 0.0016793411764876873,
+          "orientation_change_rad": 0.006618448055156141
+        },
+        {
+          "step": 1204,
+          "position_change_m": 0.001680056306809546,
+          "orientation_change_rad": 0.006742385882621661
+        },
+        {
+          "step": 1205,
+          "position_change_m": 0.0016806230510160926,
+          "orientation_change_rad": 0.006866589552842135
+        },
+        {
+          "step": 1206,
+          "position_change_m": 0.0016816089410117028,
+          "orientation_change_rad": 0.006988482245346216
+        },
+        {
+          "step": 1207,
+          "position_change_m": 0.0016822928750115436,
+          "orientation_change_rad": 0.007113017503224133
+        },
+        {
+          "step": 1208,
+          "position_change_m": 0.0016830115495637763,
+          "orientation_change_rad": 0.007238134345860578
+        },
+        {
+          "step": 1209,
+          "position_change_m": 0.001683517740046349,
+          "orientation_change_rad": 0.0073654662550451
+        },
+        {
+          "step": 1210,
+          "position_change_m": 0.0016844010589029254,
+          "orientation_change_rad": 0.007492039951282051
+        },
+        {
+          "step": 1211,
+          "position_change_m": 0.0016857067482622904,
+          "orientation_change_rad": 0.007617715095933608
+        },
+        {
+          "step": 1212,
+          "position_change_m": 0.001686811514538313,
+          "orientation_change_rad": 0.007745296043052093
+        },
+        {
+          "step": 1213,
+          "position_change_m": 0.0016878937408740737,
+          "orientation_change_rad": 0.00787387759978144
+        },
+        {
+          "step": 1214,
+          "position_change_m": 0.0016889549958828095,
+          "orientation_change_rad": 0.008003305276945132
+        },
+        {
+          "step": 1215,
+          "position_change_m": 0.001689962639937422,
+          "orientation_change_rad": 0.008133846527566761
+        },
+        {
+          "step": 1216,
+          "position_change_m": 0.0016911464781390203,
+          "orientation_change_rad": 0.008263616116473506
+        },
+        {
+          "step": 1217,
+          "position_change_m": 0.0016922429053439182,
+          "orientation_change_rad": 0.008394582549060375
+        },
+        {
+          "step": 1218,
+          "position_change_m": 0.0016936719177112396,
+          "orientation_change_rad": 0.008524588182372271
+        },
+        {
+          "step": 1219,
+          "position_change_m": 0.001694875325734463,
+          "orientation_change_rad": 0.008655608768915142
+        },
+        {
+          "step": 1220,
+          "position_change_m": 0.0016959859261662029,
+          "orientation_change_rad": 0.008787500515777062
+        },
+        {
+          "step": 1221,
+          "position_change_m": 0.001697224245179425,
+          "orientation_change_rad": 0.008919270045489534
+        },
+        {
+          "step": 1222,
+          "position_change_m": 0.0016985509253983227,
+          "orientation_change_rad": 0.009050768779379105
+        },
+        {
+          "step": 1223,
+          "position_change_m": 0.0016997590817859252,
+          "orientation_change_rad": 0.009183069734884043
+        },
+        {
+          "step": 1224,
+          "position_change_m": 0.0017008105726125456,
+          "orientation_change_rad": 0.009316091195965378
+        },
+        {
+          "step": 1225,
+          "position_change_m": 0.0017020532506967511,
+          "orientation_change_rad": 0.009448864569273269
+        },
+        {
+          "step": 1226,
+          "position_change_m": 0.0017032225909127169,
+          "orientation_change_rad": 0.009582027600008857
+        },
+        {
+          "step": 1227,
+          "position_change_m": 0.0017043298407396056,
+          "orientation_change_rad": 0.009715571014790739
+        },
+        {
+          "step": 1228,
+          "position_change_m": 0.00170561944845291,
+          "orientation_change_rad": 0.009848465546252903
+        },
+        {
+          "step": 1229,
+          "position_change_m": 0.0017070114655918561,
+          "orientation_change_rad": 0.009981612632312313
+        },
+        {
+          "step": 1230,
+          "position_change_m": 0.0017081316233026028,
+          "orientation_change_rad": 0.010115309943962071
+        },
+        {
+          "step": 1231,
+          "position_change_m": 0.001709179706647708,
+          "orientation_change_rad": 0.010249787647230835
+        },
+        {
+          "step": 1232,
+          "position_change_m": 0.0017103197354413307,
+          "orientation_change_rad": 0.010383745796674235
+        },
+        {
+          "step": 1233,
+          "position_change_m": 0.001714036004350428,
+          "orientation_change_rad": 0.010516745362327893
+        },
+        {
+          "step": 1234,
+          "position_change_m": 0.0017156014742632163,
+          "orientation_change_rad": 0.01065548783776921
+        },
+        {
+          "step": 1235,
+          "position_change_m": 0.001718382780631205,
+          "orientation_change_rad": 0.010794027088382735
+        },
+        {
+          "step": 1236,
+          "position_change_m": 0.0017203130573610918,
+          "orientation_change_rad": 0.010933508299439069
+        },
+        {
+          "step": 1237,
+          "position_change_m": 0.0017227382896647693,
+          "orientation_change_rad": 0.011069535122017658
+        },
+        {
+          "step": 1238,
+          "position_change_m": 0.001724167472730613,
+          "orientation_change_rad": 0.011206215962309874
+        },
+        {
+          "step": 1239,
+          "position_change_m": 0.0017258571149722703,
+          "orientation_change_rad": 0.011341077238302617
+        },
+        {
+          "step": 1240,
+          "position_change_m": 0.0017270892541052145,
+          "orientation_change_rad": 0.011476243147669301
+        },
+        {
+          "step": 1241,
+          "position_change_m": 0.0017285022226863065,
+          "orientation_change_rad": 0.01161089410720672
+        },
+        {
+          "step": 1242,
+          "position_change_m": 0.0017295807631026955,
+          "orientation_change_rad": 0.011745921261814089
+        },
+        {
+          "step": 1243,
+          "position_change_m": 0.001731052122780173,
+          "orientation_change_rad": 0.011880508743896423
+        },
+        {
+          "step": 1244,
+          "position_change_m": 0.0017322854674379274,
+          "orientation_change_rad": 0.012015494679121608
+        },
+        {
+          "step": 1245,
+          "position_change_m": 0.0017336080292861802,
+          "orientation_change_rad": 0.012150938942224857
+        },
+        {
+          "step": 1246,
+          "position_change_m": 0.001735312143445907,
+          "orientation_change_rad": 0.012286101239326334
+        },
+        {
+          "step": 1247,
+          "position_change_m": 0.0017370484525352072,
+          "orientation_change_rad": 0.012421882058329801
+        },
+        {
+          "step": 1248,
+          "position_change_m": 0.0017387001847769296,
+          "orientation_change_rad": 0.012558425589406402
+        },
+        {
+          "step": 1249,
+          "position_change_m": 0.0017404185313837472,
+          "orientation_change_rad": 0.012695179821750453
+        },
+        {
+          "step": 1250,
+          "position_change_m": 0.0017424104627007633,
+          "orientation_change_rad": 0.012831902993087514
+        },
+        {
+          "step": 1251,
+          "position_change_m": 0.0017445459109146752,
+          "orientation_change_rad": 0.012968661659877973
+        },
+        {
+          "step": 1252,
+          "position_change_m": 0.0017469923289954955,
+          "orientation_change_rad": 0.013105202281701771
+        },
+        {
+          "step": 1253,
+          "position_change_m": 0.0017490421198286493,
+          "orientation_change_rad": 0.01324284163597459
+        },
+        {
+          "step": 1254,
+          "position_change_m": 0.0017514306281781265,
+          "orientation_change_rad": 0.013380078032918434
+        },
+        {
+          "step": 1255,
+          "position_change_m": 0.0017538604817696874,
+          "orientation_change_rad": 0.013517679840827359
+        },
+        {
+          "step": 1256,
+          "position_change_m": 0.0017558481074426535,
+          "orientation_change_rad": 0.013655905310422108
+        },
+        {
+          "step": 1257,
+          "position_change_m": 0.0017585676124068897,
+          "orientation_change_rad": 0.013792563570559717
+        },
+        {
+          "step": 1258,
+          "position_change_m": 0.001761033641397514,
+          "orientation_change_rad": 0.013930037284610702
+        },
+        {
+          "step": 1259,
+          "position_change_m": 0.0017634334289083438,
+          "orientation_change_rad": 0.014067606895978968
+        },
+        {
+          "step": 1260,
+          "position_change_m": 0.0017655125532329485,
+          "orientation_change_rad": 0.014206030804425542
+        },
+        {
+          "step": 1261,
+          "position_change_m": 0.0017678550264386304,
+          "orientation_change_rad": 0.014343722042296938
+        },
+        {
+          "step": 1262,
+          "position_change_m": 0.0017705556218771477,
+          "orientation_change_rad": 0.014480651151536477
+        },
+        {
+          "step": 1263,
+          "position_change_m": 0.0017723568670246878,
+          "orientation_change_rad": 0.01461919163067141
+        },
+        {
+          "step": 1264,
+          "position_change_m": 0.001774847987910712,
+          "orientation_change_rad": 0.014756425244794938
+        },
+        {
+          "step": 1265,
+          "position_change_m": 0.0017771870119566734,
+          "orientation_change_rad": 0.014893581831190139
+        },
+        {
+          "step": 1266,
+          "position_change_m": 0.001779068833715468,
+          "orientation_change_rad": 0.01503169535449763
+        },
+        {
+          "step": 1267,
+          "position_change_m": 0.0017815530357656285,
+          "orientation_change_rad": 0.015168830712500208
+        },
+        {
+          "step": 1268,
+          "position_change_m": 0.0017835857845625923,
+          "orientation_change_rad": 0.015306491394734003
+        },
+        {
+          "step": 1269,
+          "position_change_m": 0.001785654174549743,
+          "orientation_change_rad": 0.01544394708024871
+        },
+        {
+          "step": 1270,
+          "position_change_m": 0.0017875843797607914,
+          "orientation_change_rad": 0.01558177657542205
+        },
+        {
+          "step": 1271,
+          "position_change_m": 0.001789468391190347,
+          "orientation_change_rad": 0.015719436974405667
+        },
+        {
+          "step": 1272,
+          "position_change_m": 0.001791797153127785,
+          "orientation_change_rad": 0.015856627938327823
+        },
+        {
+          "step": 1273,
+          "position_change_m": 0.0017934518360911763,
+          "orientation_change_rad": 0.015994760316656732
+        },
+        {
+          "step": 1274,
+          "position_change_m": 0.0017951941463597322,
+          "orientation_change_rad": 0.01613254231945577
+        },
+        {
+          "step": 1275,
+          "position_change_m": 0.0017965525544859893,
+          "orientation_change_rad": 0.016269417964189736
+        },
+        {
+          "step": 1276,
+          "position_change_m": 0.001797573411578635,
+          "orientation_change_rad": 0.016405631583665623
+        },
+        {
+          "step": 1277,
+          "position_change_m": 0.001798455586545817,
+          "orientation_change_rad": 0.016542298103434945
+        },
+        {
+          "step": 1278,
+          "position_change_m": 0.0017995629405905544,
+          "orientation_change_rad": 0.01667877876273538
+        },
+        {
+          "step": 1279,
+          "position_change_m": 0.0018005865255090946,
+          "orientation_change_rad": 0.016816351084595206
+        },
+        {
+          "step": 1280,
+          "position_change_m": 0.0018018042584679698,
+          "orientation_change_rad": 0.01695304389449229
+        },
+        {
+          "step": 1281,
+          "position_change_m": 0.001803016672374426,
+          "orientation_change_rad": 0.01708995173366017
+        },
+        {
+          "step": 1282,
+          "position_change_m": 0.001804268845928247,
+          "orientation_change_rad": 0.01722580655198321
+        },
+        {
+          "step": 1283,
+          "position_change_m": 0.001805673771673073,
+          "orientation_change_rad": 0.017361843611666986
+        },
+        {
+          "step": 1284,
+          "position_change_m": 0.0018067958960062984,
+          "orientation_change_rad": 0.017497980545350157
+        },
+        {
+          "step": 1285,
+          "position_change_m": 0.0018082284287601327,
+          "orientation_change_rad": 0.017634038042302475
+        },
+        {
+          "step": 1286,
+          "position_change_m": 0.0018098429022065092,
+          "orientation_change_rad": 0.017769226313042542
+        },
+        {
+          "step": 1287,
+          "position_change_m": 0.001811073862154045,
+          "orientation_change_rad": 0.017905225327752076
+        },
+        {
+          "step": 1288,
+          "position_change_m": 0.0018121915347888541,
+          "orientation_change_rad": 0.01804161059266692
+        },
+        {
+          "step": 1289,
+          "position_change_m": 0.001813541271741975,
+          "orientation_change_rad": 0.018177698036135195
+        },
+        {
+          "step": 1290,
+          "position_change_m": 0.0018150193837309057,
+          "orientation_change_rad": 0.018313738688093422
+        },
+        {
+          "step": 1291,
+          "position_change_m": 0.0018163660988104265,
+          "orientation_change_rad": 0.018450244143752192
+        },
+        {
+          "step": 1292,
+          "position_change_m": 0.001817653234293865,
+          "orientation_change_rad": 0.01858661387687518
+        },
+        {
+          "step": 1293,
+          "position_change_m": 0.0018189609400405006,
+          "orientation_change_rad": 0.018722934489078146
+        },
+        {
+          "step": 1294,
+          "position_change_m": 0.0018204170061990696,
+          "orientation_change_rad": 0.01885937182592247
+        },
+        {
+          "step": 1295,
+          "position_change_m": 0.0018215652612116361,
+          "orientation_change_rad": 0.0189962016295693
+        },
+        {
+          "step": 1296,
+          "position_change_m": 0.0018230139123657412,
+          "orientation_change_rad": 0.01913263922319596
+        },
+        {
+          "step": 1297,
+          "position_change_m": 0.0018243236677251502,
+          "orientation_change_rad": 0.019269412459212872
+        },
+        {
+          "step": 1298,
+          "position_change_m": 0.0018257717861983808,
+          "orientation_change_rad": 0.01940576769963888
+        },
+        {
+          "step": 1299,
+          "position_change_m": 0.0018272368204264545,
+          "orientation_change_rad": 0.019541986160053326
+        },
+        {
+          "step": 1300,
+          "position_change_m": 0.0018286011719776576,
+          "orientation_change_rad": 0.019678774407544824
+        },
+        {
+          "step": 1301,
+          "position_change_m": 0.0018298450367551595,
+          "orientation_change_rad": 0.019815286256139014
+        },
+        {
+          "step": 1302,
+          "position_change_m": 0.0018309949048623138,
+          "orientation_change_rad": 0.019952724830554415
+        },
+        {
+          "step": 1303,
+          "position_change_m": 0.0018325499163367245,
+          "orientation_change_rad": 0.020088767918742666
+        },
+        {
+          "step": 1304,
+          "position_change_m": 0.0018337495914780046,
+          "orientation_change_rad": 0.020225609991135114
+        },
+        {
+          "step": 1305,
+          "position_change_m": 0.001835212411241414,
+          "orientation_change_rad": 0.02036200176882011
+        },
+        {
+          "step": 1306,
+          "position_change_m": 0.0018366917382926329,
+          "orientation_change_rad": 0.0204981973335708
+        },
+        {
+          "step": 1307,
+          "position_change_m": 0.0018379041877742016,
+          "orientation_change_rad": 0.02063534971377668
+        }
+      ],
+      "first_position_change_above_reference_step": null,
+      "first_orientation_change_above_reference_step": null,
+      "waypoint_exits": [
+        {
+          "waypoint_index": 0,
+          "first_step": 1148,
+          "last_step": 1232,
+          "requested_steps": 85,
+          "executed_steps": 85,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.0012363993453068111,
+            "orientation_error_rad": 0.0010217327086548638,
+            "linear_speed_m_s": 3.795325784354501e-05,
+            "angular_speed_rad_s": 8.114313878904668e-05,
+            "finger_speed_m_s": 1.0292400617297949e-05,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.5807818202480545,
+            0.36942388566332507,
+            0.6095098113567425,
+            -0.39333987826132655
+          ]
+        },
+        {
+          "waypoint_index": 1,
+          "first_step": 1233,
+          "last_step": 1307,
+          "requested_steps": 75,
+          "executed_steps": 75,
+          "armed": true,
+          "first_flags": {
+            "load_change": null,
+            "stalled_motion": null,
+            "empty_sized_closure": null
+          },
+          "terminal_measurement": {
+            "position_error_m": 0.0009406647399525983,
+            "orientation_error_rad": 0.0007320267505761709,
+            "linear_speed_m_s": 1.7280644714634293e-05,
+            "angular_speed_rad_s": 0.00012002104527329093,
+            "finger_speed_m_s": 2.509756717823244e-06,
+            "settled_sample": true
+          },
+          "status": "duration_elapsed",
+          "resolved_quaternion_xyzw": [
+            0.5807818202480545,
+            0.36942388566332507,
+            0.6095098113567425,
+            -0.39333987826132655
+          ]
+        }
+      ],
+      "policy_reason": "Turn the tool upright with its larger ring above the grip, then place the ring just outside and above the hook tip."
+    }
+  ],
+  "command": ".venv/bin/python studies/placement_error_discriminator/analyze.py",
+  "source_sha256": "c286fe44ea5c853034cb090930c115ce1247bce33236dc5e1b44f84011dbabee"
+}

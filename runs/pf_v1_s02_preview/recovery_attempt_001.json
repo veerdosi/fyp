@@ -1,0 +1,6 @@
+{
+  "success": false,
+  "continued_policy": false,
+  "reason": "Recovery missed the encoder field injected by the original public snapshot before a motion. KeyError robot0_joint_pos at the first motion; no original records or budgets altered.",
+  "learning": "Reproduce the original snapshot encoder publication from current native joint readings, then compare to recorded encoder values. Do not inject recorded values or reset physics."
+}

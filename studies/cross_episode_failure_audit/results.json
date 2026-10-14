@@ -1,0 +1,479 @@
+{
+  "scope": "All 16 retained genuine Astra ToolHang episodes: two pilots and all scheduled outcomes from three completed mechanism batches. Fixed-command verification runs are excluded because they are not independent policy decisions. Removed episodes are excluded. Microwave pilot is discussed separately because task and initial-settling protocol differ.",
+  "aggregate": {
+    "episodes": 16,
+    "returned_reasons": 394,
+    "successes": 4,
+    "failed_episodes": 12,
+    "first_incident_counts": {
+      "missed_acquisition": 10,
+      "cancelled_nonarriving_approach": 4,
+      "attachment_loss_during_rotation": 1,
+      "blocked_frame_insertion": 1
+    },
+    "failed_terminal_stage_counts": {
+      "tool_placement_release_recovery": 5,
+      "frame_placement_release_recovery": 2,
+      "joint_limited_reorientation_collision_recovery": 1,
+      "both_placement_release_recovery": 4
+    },
+    "failed_completion_counts": {
+      "no_finish_budget": 2,
+      "overstated_success": 5,
+      "correct_failure": 4,
+      "uncertain_finish": 1
+    }
+  },
+  "episodes": [
+    {
+      "episode": "pilot_tool_hang_001",
+      "decisions": 20,
+      "commands_path": "runs/pilot_tool_hang_001/commands.jsonl",
+      "command_type_counts": {
+        "sense": 5,
+        "move": 14,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "episode": "pilot_tool_hang_002",
+      "decisions": 28,
+      "commands_path": "runs/pilot_tool_hang_002/commands.jsonl",
+      "command_type_counts": {
+        "sense": 9,
+        "move": 19
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "th_v1_s01_direct_waypoints",
+      "decisions": 28,
+      "commands_path": "runs/th_v1_s01_direct_waypoints/commands.jsonl",
+      "command_type_counts": {
+        "sense": 8,
+        "move": 19,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "th_v1_s01_deadline_guard",
+      "decisions": 21,
+      "commands_path": "runs/th_v1_s01_deadline_guard/commands.jsonl",
+      "command_type_counts": {
+        "sense": 4,
+        "move": 16,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "episode": "th_v1_s01_phase_guard",
+      "decisions": 20,
+      "commands_path": "runs/th_v1_s01_phase_guard/commands.jsonl",
+      "command_type_counts": {
+        "sense": 3,
+        "move": 16,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "th_v1_s02_direct_waypoints",
+      "decisions": 22,
+      "commands_path": "runs/th_v1_s02_direct_waypoints/commands.jsonl",
+      "command_type_counts": {
+        "sense": 7,
+        "move": 14,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "th_v1_s02_deadline_guard",
+      "decisions": 23,
+      "commands_path": "runs/th_v1_s02_deadline_guard/commands.jsonl",
+      "command_type_counts": {
+        "sense": 6,
+        "move": 16,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "th_v1_s02_phase_guard",
+      "decisions": 27,
+      "commands_path": "runs/th_v1_s02_phase_guard/commands.jsonl",
+      "command_type_counts": {
+        "sense": 7,
+        "move": 19,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s01_timed",
+      "decisions": 29,
+      "commands_path": "runs/th_v2_s01_timed/commands.jsonl",
+      "command_type_counts": {
+        "sense": 9,
+        "move": 19,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s01_guard",
+      "decisions": 18,
+      "commands_path": "runs/th_v2_s01_guard/commands.jsonl",
+      "command_type_counts": {
+        "sense": 5,
+        "move": 12,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_guard",
+      "decisions": 28,
+      "commands_path": "runs/th_v2_s02_guard/commands.jsonl",
+      "command_type_counts": {
+        "sense": 9,
+        "move": 18,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "episode": "th_v2_s02_timed",
+      "decisions": 26,
+      "commands_path": "runs/th_v2_s02_timed/commands.jsonl",
+      "command_type_counts": {
+        "sense": 7,
+        "move": 18,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "pf_v1_s01_waypoints_corrected",
+      "decisions": 18,
+      "commands_path": "runs/pf_v1_s01_waypoints_corrected/commands.jsonl",
+      "command_type_counts": {
+        "sense": 5,
+        "move": 12,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "episode": "pf_v1_s01_preview",
+      "decisions": 30,
+      "commands_path": "runs/pf_v1_s01_preview/commands.jsonl",
+      "command_type_counts": {
+        "sense": 9,
+        "move": 20,
+        "preview": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": true
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "pf_v1_s02_preview",
+      "decisions": 28,
+      "commands_path": "runs/pf_v1_s02_preview/commands.jsonl",
+      "command_type_counts": {
+        "sense": 7,
+        "move": 19,
+        "preview": 1,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    },
+    {
+      "episode": "pf_v1_s02_waypoints",
+      "decisions": 28,
+      "commands_path": "runs/pf_v1_s02_waypoints/commands.jsonl",
+      "command_type_counts": {
+        "sense": 8,
+        "move": 19,
+        "finish": 1
+      },
+      "native_terminal_checks": [
+        {
+          "predicate": [
+            "frame_assembled"
+          ],
+          "satisfied": false
+        },
+        {
+          "predicate": [
+            "tool_on_frame"
+          ],
+          "satisfied": false
+        }
+      ]
+    }
+  ],
+  "classification_source": "coding.json",
+  "source_hashes": {
+    "studies/cross_episode_failure_audit/coding.json": "83ff06b8ae78080b1aac2f7c1b1fa57001ba5b46e5d56b922a9084ee1dafce4f",
+    "studies/cross_episode_failure_audit/analyze.py": "6303aa25f7276ec221e5f66617af78a6880a6b3dd3a03525bb7bb351e8f66698",
+    "studies/tool_hang_v1/results.json": "15c63c5d47c37ce176e26211ae1e86c1e8814c990c935a3131322782c599e748",
+    "studies/tool_hang_v2/results.json": "5000efc23664260d57d5923e6ca5ebd55c69ce265b9159858c9b5e80d0e255c4",
+    "studies/pose_feasibility_v1/results.json": "243d907aec0b00de40e25948b610479b44275628f7f0fe167b015585a84fb223",
+    "runs/pilot_tool_hang_001/commands.jsonl": "a92f2bd997b9dee8783886f8c94c1b0dc9dcbbf6a2d89d7b03781bfada0feb0d",
+    "runs/pilot_tool_hang_001/outcome.json": "68da1aa38a2e87c57670871d1521fbafa3e7b8b9f6b1edfee32e6f893c12ff67",
+    "runs/pilot_tool_hang_001/steps.jsonl": "08abbde2c84c3c28c9a8b569e85dc2857d85dd8c44246b07a4a1b6b054169587",
+    "runs/pilot_tool_hang_002/commands.jsonl": "00cb67cf5ec3239b0dd6deab89e960997425ed77b228fe6bc7e277ed8b3820ed",
+    "runs/pilot_tool_hang_002/outcome.json": "7a7a0daadd2642d1a51eab4012e9c86b24131b4d6bf6d9bc220aca05445f397b",
+    "runs/pilot_tool_hang_002/steps.jsonl": "2bca7bd790c750f9addba299ac2d8bac5a4b4dc1b154bdf190bf7c3272c4d1c9",
+    "runs/th_v1_s01_direct_waypoints/commands.jsonl": "349ba58fc8fdec801422161f90e759c62885e093150f02ff444034b4f6199add",
+    "runs/th_v1_s01_direct_waypoints/outcome.json": "f06b26b7d00d0733fe1975e5ef36e3804c41caf0a24309b3c7fa289b7bc06ec3",
+    "runs/th_v1_s01_direct_waypoints/steps.jsonl": "48365b4da7d4a81481a90d42b398f1e6cdf1851f8f1d352b8ee8a2c6eea399b1",
+    "runs/th_v1_s01_deadline_guard/commands.jsonl": "026d4906d348e1c6bafb8abbe47d36ca9044452de4da691935384697f966281e",
+    "runs/th_v1_s01_deadline_guard/outcome.json": "a3638e3416a001132ef1997dd4467db044e858c34b99b5de45bc9fecb79d8273",
+    "runs/th_v1_s01_deadline_guard/steps.jsonl": "5e9cef267f88c3e6106db8e2436664677ee1ba39eda5059b8e001ce90611a29e",
+    "runs/th_v1_s01_phase_guard/commands.jsonl": "f8876fc9f3a8980d69a30bfb7e51c4d9e6a317dabd9423d73a44dc1155cfa3b2",
+    "runs/th_v1_s01_phase_guard/outcome.json": "a684c0bbfd72c4076916aaf100dd3cc4f549b74a59ae554158d4d0e9a7c3379d",
+    "runs/th_v1_s01_phase_guard/steps.jsonl": "f96409a85e22adb39252874589852fa46a87b16f7db1d205da2f1aea559c028d",
+    "runs/th_v1_s02_direct_waypoints/commands.jsonl": "b460727e77e83a80fc628c17a01cb6a5d9ca3f448684a6c3e5b7525d115b892c",
+    "runs/th_v1_s02_direct_waypoints/outcome.json": "f3b8efd30cfcbfadf2514b2759914d33388300151b32975c24cbee0394af6289",
+    "runs/th_v1_s02_direct_waypoints/steps.jsonl": "6e41e1e8a1793ff8b0e9ab60fdb137fed0c26ee469bedd6dfe74b04071de9199",
+    "runs/th_v1_s02_deadline_guard/commands.jsonl": "dcc25ed362422c99317037ed7bc6400840d3ea4443dd01af9b923a007ece3aa3",
+    "runs/th_v1_s02_deadline_guard/outcome.json": "2fa7e16ab56f347e1634a2cbeeb51f53d963a5c3e4490ac629df4daec5b26632",
+    "runs/th_v1_s02_deadline_guard/steps.jsonl": "3715d1296fd4c907e43e246b4254edd47965f7aa8bd85bd9dff0a4b2235de537",
+    "runs/th_v1_s02_phase_guard/commands.jsonl": "176ed7528467b3d7dcdfa2e0263d54547b3ef17a742c9a133c2d37425a2108e5",
+    "runs/th_v1_s02_phase_guard/outcome.json": "d4483d64760e2cae18bb5380069b7e8068ea493aaee685ba54512ecabdf0b406",
+    "runs/th_v1_s02_phase_guard/steps.jsonl": "4041fbae3d4c34562f5b9086569b82bd6dde094fc13bae17f75cdfc45eefd9a4",
+    "runs/th_v2_s01_timed/commands.jsonl": "0caabba9027bf9e7ec405f2a475a6a2f5c50132d3f5e8072ae72c9e6d93dd1b7",
+    "runs/th_v2_s01_timed/outcome.json": "127e78889f96ec3ca4f90707ac89fe42cc67fe2d568f1d7e6d4c47bd57b07545",
+    "runs/th_v2_s01_timed/steps.jsonl": "50074d18903531d57e13921bb5fcd950acf5608d060d3ae9746617afc90f9c61",
+    "runs/th_v2_s01_guard/commands.jsonl": "44a8a89ab4f36f4953cfc54171381962c9846b2d3d6b3c534bf298ce4df943ef",
+    "runs/th_v2_s01_guard/outcome.json": "001123bf6ae18397015247d2f0f1fdd1707f42f204fe35d094695ffa6ce9ed17",
+    "runs/th_v2_s01_guard/steps.jsonl": "613d7c2ad09d8562601ad9a617a562b48703638d1ab8a2b65b8aa35538901601",
+    "runs/th_v2_s02_guard/commands.jsonl": "996456bcc08b647a187dbaef26caa07850517d8f923cad656ddffd19eacc9a48",
+    "runs/th_v2_s02_guard/outcome.json": "e08b8717863c61f1852d4fc9dcc9d0e51ce74df8642401619793acf8b36797d8",
+    "runs/th_v2_s02_guard/steps.jsonl": "22bc9efd114261f0020bf42e0863a09f17f8295ae90cd5a6009bd51cd6e0d016",
+    "runs/th_v2_s02_timed/commands.jsonl": "5221d6ff3fbc4368e2e9fff495bb97ba1044eb7b01db64ba397f5ddf93584396",
+    "runs/th_v2_s02_timed/outcome.json": "00d3db9712490f9b55d9caca56e2366085977f21b050f92b33145d33c5adfa18",
+    "runs/th_v2_s02_timed/steps.jsonl": "9727ea8d7a5733d0051fe4a3a97ef706e9dbd7f72d9ee2c8d1d5311b83a354c9",
+    "runs/pf_v1_s01_waypoints_corrected/commands.jsonl": "335beb328d24105001d66a1449ba7d80538c95da9627ae9fba6b0480b2e3abab",
+    "runs/pf_v1_s01_waypoints_corrected/outcome.json": "203c2886b54d7b0e9bb3b1a3bc68011f96bec4c18fe8cc52a5694c6ba7b678d5",
+    "runs/pf_v1_s01_waypoints_corrected/steps.jsonl": "fdd8da5e63a577118933aedc003bbd321519104f18b5a7da398830037a868e2e",
+    "runs/pf_v1_s01_preview/commands.jsonl": "ec4f4e0e766e7f3c9c2d5fe44be8098387551d6c39be9ae5d5bf19aa748c03da",
+    "runs/pf_v1_s01_preview/outcome.json": "fefb13e2ce933376257ef47a3f797c5cf570b60d4d8d5ae73934a3ff25e8f76a",
+    "runs/pf_v1_s01_preview/steps.jsonl": "4c0db4e38e1b7ada6d70d6d949e0aa1a7ce101378cb1d3c9bfc5086d0f7a592d",
+    "runs/pf_v1_s02_preview/commands.jsonl": "f7e57ba4dd772a7a682af61fae3be684a10eafe6abd29c0323cbe98c4072fbd7",
+    "runs/pf_v1_s02_preview/outcome.json": "01105e123babd26eb94f31d879c990480713387663eaf6de13333e141e743662",
+    "runs/pf_v1_s02_preview/steps.jsonl": "3c55dd2350819b0f740ca6bb2ea7fc1cfb3da9ea7f00c723ec906aa5a7ab0f46",
+    "runs/pf_v1_s02_waypoints/commands.jsonl": "cd83e8d36db5f4ef553aa1e3bfea86204aab40fe69f05a7a12a13e6fc9624750",
+    "runs/pf_v1_s02_waypoints/outcome.json": "ea7ece9a0b1079485a2b2d9a105daed0b41a8a39c5161c988bc832905d6e1399",
+    "runs/pf_v1_s02_waypoints/steps.jsonl": "059283130d47600ec2d0437f1966ec336d56dc0a4b6cbeed487ec4b4964506c4"
+  },
+  "classification_method": "Manual retrospective coding of every returned reason against execution reports and prior causal diagnoses; not keyword counting or hidden reasoning.",
+  "limitations": [
+    "Retrospective coding by one reviewer; categories are descriptive and not independently validated causal labels.",
+    "Episodes share starts within studies and differ in protocols across studies; pooled counts are not success-rate estimates or independent statistical samples.",
+    "First incident means first unsuccessful manipulation or cancelled approach, not first numerical pose residual; cancelled approaches are execution events, not failed grasps.",
+    "Terminal stage identifies the unresolved physical problem, not its unique underlying cause. A correct failure acknowledgment is not task success.",
+    "Overstated completion means an unqualified full-success finish disagrees with the frozen native scorer. Visible suspension can still be real, and exact native tolerances need not be observable from public images.",
+    "Returned reasons are self-reports, not complete internal reasoning or proof that a stated belief caused a decision.",
+    "Source hashes in results.json support reproducibility; source changes require reviewing classifications again rather than silently accepting regenerated counts."
+  ]
+}

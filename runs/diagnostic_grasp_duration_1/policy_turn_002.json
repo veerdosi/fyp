@@ -1,7 +1,0 @@
-{
-  "command": {
-    "type": "finish",
-    "reason": "Operator diagnostic complete"
-  },
-  "operator_verification": "Not a policy completion claim."
-}

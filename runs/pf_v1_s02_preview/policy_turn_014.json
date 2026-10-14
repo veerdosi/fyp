@@ -1,0 +1,40 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.0262,
+          0.1647,
+          1.1042
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.109,
+          0.065,
+          1.17
+        ],
+        "gripper": 1,
+        "steps": 65,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Regrasp the shifted frame and align its measured tip above the stand opening before another controlled descent."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_preview",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0008/sense_013.json. You may cat this permitted sensor result file. The images and robot readings in obs_0008 remain current; no motion has occurred. 13 decisions have been executed, with 17 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.0262,0.1647,1.1042],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true},{\"position\":[-0.109,0.065,1.17],\"gripper\":1,\"steps\":65,\"abort_if_empty_close\":true}],\"reason\":\"Regrasp the shifted frame and align its measured tip above the stand opening before another controlled descent.\"}",
+    "response_timestamp": "2026-10-09T06:57:52.492Z",
+    "message_id": "amsg_01a11f74-376c-7fd3-8470-c4e9b1c4a2ac",
+    "dispatch_timestamp": "2026-10-09T06:57:32.706Z",
+    "policy_wall_seconds": 19.786,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/policy_update_014.txt"
+  }
+}

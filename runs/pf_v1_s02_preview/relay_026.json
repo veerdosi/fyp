@@ -1,0 +1,58 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          0.05,
+          -0.0404,
+          1.071
+        ],
+        "gripper": -1,
+        "steps": 40
+      },
+      {
+        "position": [
+          0.091,
+          -0.069,
+          1.158
+        ],
+        "gripper": -1,
+        "steps": 60
+      },
+      {
+        "position": [
+          -0.03,
+          -0.22,
+          1.2
+        ],
+        "quaternion_xyzw": [
+          0.829,
+          0.559,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 65
+      }
+    ],
+    "reason": "The raised lip is visibly through the larger hole. Release the tool and retract away from its plane, then inspect whether it hangs freely."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_preview",
+    "policy_visible_input": "Fresh observation 17 after your motion command, step 1850, simulated time 92.5 seconds. 25 decisions have been executed; 5 model decisions and 550 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0017/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0017/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0017/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0017/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[0.0500,-0.0404,1.0710],\"gripper\":-1,\"steps\":40},{\"position\":[0.091,-0.069,1.158],\"gripper\":-1,\"steps\":60},{\"position\":[-0.03,-0.22,1.20],\"quaternion_xyzw\":[0.829,0.559,0,0],\"gripper\":-1,\"steps\":65}],\"reason\":\"The raised lip is visibly through the larger hole. Release the tool and retract away from its plane, then inspect whether it hangs freely.\"}",
+    "response_timestamp": "2026-10-09T07:13:48.864Z",
+    "message_id": "native_task_complete:01a11f82-919a-7ec3-b16b-8d96515af6b6",
+    "dispatch_timestamp": null,
+    "policy_wall_seconds": null,
+    "native_policy_seconds": 15.747,
+    "policy_clock_note": "Delivery interval unavailable for mailbox recovery; native duration recorded separately.",
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/policy_update_026.txt",
+    "native_source_session": "/Users/veerdosi/.codex/sessions/2026/10/09/rollout-2026-10-09T14-48-36-01a11f6b-bc71-7fa3-a3e4-11d0459484fc.jsonl",
+    "native_source_ordinal": 475,
+    "recovery_note": "Exact completed native policy output; root mailbox delivery lost during interruption. No new inference or command alteration. Native turn duration recorded separately; missing dispatch/delivery interval is not zero inference time."
+  }
+}

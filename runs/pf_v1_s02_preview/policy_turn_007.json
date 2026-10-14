@@ -1,0 +1,40 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.074,
+          0.054,
+          1.12
+        ],
+        "gripper": 1,
+        "steps": 35,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.074,
+          0.054,
+          1.065
+        ],
+        "gripper": 1,
+        "steps": 55,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Shift the frame tip toward the stand center and lower it a short distance into the stand while retaining the grasp."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_preview",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/public/obs_0003/sense_006.json. You may cat this permitted sensor result file. The images and robot readings in obs_0003 remain current; no motion has occurred. 6 decisions have been executed, with 24 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.074,0.054,1.12],\"gripper\":1,\"steps\":35,\"abort_if_empty_close\":true},{\"position\":[-0.074,0.054,1.065],\"gripper\":1,\"steps\":55,\"abort_if_empty_close\":true}],\"reason\":\"Shift the frame tip toward the stand center and lower it a short distance into the stand while retaining the grasp.\"}",
+    "response_timestamp": "2026-10-09T06:52:15.825Z",
+    "message_id": "amsg_01a11f6f-1451-7da1-afd5-209d1c293877",
+    "dispatch_timestamp": "2026-10-09T06:52:02.574Z",
+    "policy_wall_seconds": 13.251,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_preview/policy_update_007.txt"
+  }
+}

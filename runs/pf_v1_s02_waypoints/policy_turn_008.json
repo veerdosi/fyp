@@ -1,0 +1,40 @@
+{
+  "command": {
+    "type": "sense",
+    "pixels": [
+      {
+        "camera": "agentview",
+        "u": 108,
+        "v": 110
+      },
+      {
+        "camera": "agentview",
+        "u": 77,
+        "v": 96
+      },
+      {
+        "camera": "agentview",
+        "u": 36,
+        "v": 95
+      },
+      {
+        "camera": "agentview",
+        "u": 185,
+        "v": 168
+      }
+    ],
+    "reason": "Measure the lifted frame stem direction and stand opening before rotating and aligning the insertion end."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_waypoints",
+    "policy_visible_input": "Fresh observation 5 after your motion command, step 442, simulated time 22.1 seconds. 7 decisions have been executed; 23 model decisions and 1958 control steps remain. Read the permitted robot readings in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0005/observation.json. Inspect /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0005/agentview.png and /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0005/robot0_eye_in_hand.png. These replace the prior images. Earlier public snapshots remain available for calculations. Return the next command as one JSON object only. Robot execution report: /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0005/execution.json. Read it for reached poses, settling and any cancelled waypoints; these are not object/task success signals.",
+    "raw_output": "{\"type\":\"sense\",\"pixels\":[{\"camera\":\"agentview\",\"u\":108,\"v\":110},{\"camera\":\"agentview\",\"u\":77,\"v\":96},{\"camera\":\"agentview\",\"u\":36,\"v\":95},{\"camera\":\"agentview\",\"u\":185,\"v\":168}],\"reason\":\"Measure the lifted frame stem direction and stand opening before rotating and aligning the insertion end.\"}",
+    "response_timestamp": "2026-10-11T08:15:19.671Z",
+    "message_id": "amsg_01a12a07-d876-7f82-ba51-a5f15fb74cf1",
+    "dispatch_timestamp": "2026-10-11T08:14:59.562Z",
+    "policy_wall_seconds": 20.109,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/policy_update_008.txt"
+  }
+}

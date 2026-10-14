@@ -1,0 +1,24 @@
+{
+  "pass_verification": true,
+  "control_steps": 1912,
+  "max_measurement_errors": {
+    "robot_before": 0.0,
+    "robot_after": 0.0,
+    "private_objects": 0.0,
+    "final_depth": 0.0
+  },
+  "scoring_mismatches": 0,
+  "final_rgb_exact": true,
+  "monitor_rows_exact": 1892,
+  "prefix_sha256": "059283130d47600ec2d0437f1966ec336d56dc0a4b6cbeed487ec4b4964506c4",
+  "code_sha256": "8a56d8fac60eb525630bd6f128edf82aa62772a08b2a8956f8db9b878f019329",
+  "frozen_source_verified": true,
+  "restored_decisions": 27,
+  "note": "No commands, observations or budgets reset. Original process handle missing and process inventory confirmed absent. Same episode reconstructed before continuing pending policy decision.",
+  "wall_time_note": "Original monotonic clock unavailable. Post-recovery wall clock uses config mtime minus recorded setup duration as an approximate origin; includes interruption and reconstruction. Exclude from completion-speed claims.",
+  "original_full_state_prefix_available": false,
+  "original_recorded_robot_object_scoring_prefix_exact": true,
+  "reconstructed_state_prefix_saved": true,
+  "video": "episode_recovered_1912.mp4",
+  "reproduce": ".venv/bin/python runs/pf_v1_s02_waypoints/resume_episode.py"
+}

@@ -1,0 +1,16 @@
+{
+  "episode": "pf_v1_s02_waypoints",
+  "policy_context_preserved": true,
+  "decisions_before_recovery": 27,
+  "control_steps_before_recovery": 1912,
+  "next_policy_decision": 28,
+  "pending_original_command_already_executed": true,
+  "source_and_material_hashes_unchanged": true,
+  "original_full_state_arrays_unavailable": true,
+  "host_clock_approximate_and_interrupted": true,
+  "note": "User interruption ended the simulator process after decision 27 had completed and its public handoff was saved. Process handle missing, listener and process inventory absent. Seeded action reconstruction must verify retained robot/object/scoring rows, feedback and final images before original policy context continues. Reconstructed full hidden prefix arrays are not independent retained-state proof.",
+  "recovery_verification_passed": true,
+  "retained_original_readings_and_scores_exact": true,
+  "feedback_rows_exact": 1892,
+  "final_rgb_and_depth_exact": true
+}

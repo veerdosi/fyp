@@ -1,0 +1,1 @@
+Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0013/sense_020.json. You may cat this permitted sensor result file. The images and robot readings in obs_0013 remain current; no motion has occurred. 20 decisions have been executed, with 10 remaining. Return your next command as one JSON object only.

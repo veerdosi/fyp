@@ -1,8 +1,0 @@
-{
-  "passed": true,
-  "checks": [
-    "measured hold duration",
-    "deadline cancellation versus timed advancement"
-  ],
-  "scope": "Actual simulator commands; assertions are about execution semantics, not task competence."
-}

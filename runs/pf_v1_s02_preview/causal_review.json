@@ -1,0 +1,61 @@
+{
+  "episode": "pf_v1_s02_preview",
+  "reviewer": "Sol",
+  "scope": "Returned short command reasons compared with public sensors/images and exact replay; private terminal decomposition diagnoses outcome separately. No hidden reasoning exported.",
+  "first_observable_execution_divergence": {
+    "decision": 2,
+    "step": 65,
+    "observation": "Approach duration elapsed while moving, 88.50 mm short. Descent then came within 2.71 mm and frame acquisition succeeded; this initial divergence is not an established acquisition failure."
+  },
+  "first_manipulation_failure": {
+    "phase": "frame insertion",
+    "decision": 7,
+    "step": 490,
+    "evidence": "Descent stopped 17.42 mm short with increased load. Astra acknowledged the blocked descent and withdrew/re-measured. Native frame assembly never passed.",
+    "uncertainty": "Combined centering, tilt and contact changes prevent isolating a single cause from the subsequent retries."
+  },
+  "recovered_phases": [
+    {
+      "decision": 3,
+      "observation": "Frame follows lift."
+    },
+    {
+      "decisions": [
+        11,
+        12,
+        13
+      ],
+      "observation": "Astra explicitly reports open-hand withdrawal carrying the frame and repeats placement; reached robot poses did not establish release/assembly."
+    },
+    {
+      "decisions": [
+        18,
+        19
+      ],
+      "observation": "After obstructed withdrawal and traverse, Astra raises the arm and reaches the tool approach."
+    },
+    {
+      "decision": 20,
+      "observation": "Tool follows the handle grasp and lift."
+    }
+  ],
+  "terminal_failure": {
+    "phase": "object relations and completion judgment",
+    "decision": 28,
+    "evidence": "The tool is visibly suspended and released, rather than dropped. Native frame tip is 131.44 mm from stand base (50 mm maximum), shaft outside opposed walls. Larger hole contacts and straddles the hook, but center-line distance is 11.41 mm (6.75 mm maximum) and insertion 2.17% (5% minimum). Both checks fail.",
+    "completion_judgment": "Finish reason claims supported frame and larger-hole suspension after settling; visually plausible support is insufficient for the frozen criterion.",
+    "native_diagnosis": "studies/pose_feasibility_v1/native_terminal_geometry.json"
+  },
+  "query_contribution": {
+    "decision": 4,
+    "candidates": 2,
+    "solutions": 2,
+    "warning_candidates": 0,
+    "physics_advanced": false,
+    "subsequent": "Queried approach executed and reached within 0.10 mm. Later insertion, hand clearance and object relation problems persisted.",
+    "claim": "One query engaged; no unsupported-candidate avoidance observed. This run does not establish interface benefit or general infeasibility of geometric delegation."
+  },
+  "schema_errors": 0,
+  "time_limitation": "Original policy context and budget resumed after verified 1850-step reconstruction; host clock interrupted, decision 26 delivery interval unavailable. Native policy time separately measured; no host speed claim.",
+  "boundary": "All 31 native tool bodies and three logged public-data calculations manually reviewed. Instruction/audit boundary, no OS sandbox."
+}

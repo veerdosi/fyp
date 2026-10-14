@@ -1,8 +1,0 @@
-{
-  "protocol_sha256": "6c96169fbf1c301ad3ef66e743fbe29e41edbcd268675d1ee18dce6dac3224f4",
-  "code_and_model_hashes": {
-    "feasibility_screen.py": "664ba1b487d14d5ff6631fa0ce519b592150a76caacd8fe33f25bc078e4b92e6",
-    "kinematic_preview.py": "5b37b825aee0a507ceef6632b468150eecf3fdb7837cd41c5ac91d9438194a78",
-    "robot_kinematics.xml": "3fd8cf9a076c66a92bacf30c00b9f5f230a9ef18150091fc19aaafcd9dabdbb3"
-  }
-}

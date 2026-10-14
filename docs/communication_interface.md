@@ -1,107 +1,97 @@
-# Candidate model-to-robot harness
+# Robot interface and measurement boundary
 
-**Status:** initial design conjecture, not a required schema or established solution. The experiment in [research_plan.md](research_plan.md) may revise or reject it.
+This is the operational reference. [The research plan](research_plan.md) selects
+experiments; each study's frozen protocol is authoritative for its historical
+configuration. No new relation, collision or contact-control module is selected.
 
-## Initial conjecture
+## Ownership and public inputs
 
-A slow model might control a robot better if it can specify what task relation matters, what the executor should measure during motion, and what evidence should end or invalidate a command. The harness also determines which observations return to the model and when it gets another turn. The slide's H1-H4 are four hypotheses about these choices, with paired tests and failure criteria described in [research_plan.md](research_plan.md); they do not prescribe four robot action phases.
+Sol owns research, simulator/executor code, verification and reporting. GPT-6 Astra
+at medium effort owns robot decisions in fresh episode contexts, with no delegation.
+Astra may write temporary sensor calculations inside its episode's `policy_compute`
+directory, executed by `scripts/policy/policy_calc.py`. Code, available-input hashes,
+stdout/stderr, status and timing are logged. Calculation tools, access and the
+30-second per-execution limit are matched across conditions.
 
-The theory-to-experiment-to-theory loop is: state what each proposed mechanism should fix; inspect failures with direct control; test the smallest plausible harness and strong alternatives; then retain, change, or discard mechanisms based on paired evidence. A better interface might be simpler or structured differently from this draft.
+The policy receives 256-pixel RGB and metric optical-axis depth from `agentview`
+and `robot0_eye_in_hand`, camera intrinsics/extrinsics, measured EEF position and
+XYZW quaternion, joint/finger measurements and raw wrist force/torque. Later
+pose-query episodes also expose genuine current joint positions and a known robot-only
+kinematic model in both conditions. Earlier episodes omitted joint positions; each
+saved public observation is authoritative. Pixel queries unproject selected depth;
+they do not identify an object or guarantee that a pixel belongs to the intended surface.
 
-## Delegation boundary
+Images use a top-left origin. The simulated camera mounting and calibration are
+ideal; no deliberate sensor noise was added. Native observable sampling can differ
+from a forced state restore, so strict sensor replay reproduces the original reset
+and action sequence. Wrist loads include gravity, held-object weight and dynamics;
+they do not certify grasp, seating or whole-arm clearance.
 
-Depending on the tested design, the executor may update a declared target from fresh sensor data, use the same underlying robot controller used by the baselines, apply speed and workspace limits, check declared exits, and hold the robot when a required measurement is lost. Each added capability is part of the harness being evaluated and should be visible in the comparison.
+Object poses, object-state vectors, contacts, reward, simulator state and native
+success predicates remain private scoring/diagnosis. They neither select policy
+actions nor drive executor corrections. The policy restriction is an instructed
+and manually audited boundary, not an OS filesystem sandbox. Saved policy inputs,
+actual tool bodies and calculation sources are the evidence for compliance.
 
-It may not choose the task object, destination, grasp strategy, phase order, or recovery plan. Those are model decisions. If adding task-specific code becomes necessary, record it as a change in the system being evaluated rather than hiding it inside the executor.
+## Commands and shared controller
 
-Only measurements actually available to the deployed condition may drive it. Robot pose can show that the gripper reached a location; it cannot prove that an object came along. A gripper-close command is not proof of acquisition. Vision may verify a visible relation but can fail under occlusion. Simulator object poses, contact truth, and reward may score or diagnose an episode; if they control the robot, that run is an oracle condition.
+The standard policy returns JSON `sense`, `move` or `finish`. A move contains one
+to four Astra-selected absolute EEF poses/waypoints, optional orientation, gripper
+state and duration. Omitted orientation holds the measured orientation resolved
+for that waypoint. Native Panda OSC_POSE executes bounded delta actions using robot
+pose feedback, with unchanged underlying controller settings across conditions.
 
-## What the comparison must establish
+Historical episode limits are 30 returned decisions and 2400 steps at 20 Hz,
+including 20 initial settling steps; 1–100 steps per waypoint and at most 200 per
+command. Sense, finish and rejected commands consume decisions. Retries have no
+separate quota. Per-step caps are 0.015 m translation and 0.15 rad orientation;
+workspace limits remain common. Physics pauses during policy inference. These limits
+are not collision checks and a reached EEF pose is not object/task success.
 
-The harness might help through clearer command semantics, correction during motion, evidence-based stopping, observation delivery, or fewer model calls. A longer command alone could also explain a gain. The [research plan](research_plan.md) specifies direct pose and waypoint comparisons, matched controls, and ablations. A whole-harness success-rate difference cannot identify an individual mechanism by itself.
+Every handoff supplies fresh images and execution measurements. Existing OSC feedback
+and model replanning are distinct from live correction of an object-relative command.
+Astra selects any new target or recovery; the executor supplies no task-specific
+grasp, insertion search or plan.
 
-Efficiency is a valid primary outcome even if direct control succeeds. For example, earlier return on a reached target or blocked motion could remove idle execution and enable a useful next decision; longer bounded execution could reduce observation overhead. The model still chooses grasps, targets and recovery. A speed claim must use verified completion, retain all failure outcomes, distinguish simulated motion from elapsed inference and execution time, and compare with a credible waypoint baseline under matched limits. Select the mechanism from traces rather than assuming that longer commands or more feedback improve speed.
+## Execution conditions
 
-Good initial conditions are those where a target changes during execution or a physical event needs verification. A static pick-and-place task with near-perfect pose-command success has little room to show a gain. Precise insertion may need contact sensing or control that the first interface does not provide. Failure on such a task should not automatically be attributed to the model.
+| Condition | Within-command behavior |
+| --- | --- |
+| Timed waypoints | Execute declared duration and advance; return observations after the sequence |
+| Deadline guard | Execute duration; cancel following waypoints if settled arrival fails |
+| Early-arrival guard | End after settled arrival or deadline; cancel following waypoints on failed settling |
+| Empty-closure guard | Cancel only an explicitly armed continuation when stable empty-sized closure contradicts the expected grasp |
 
-## Open design questions to answer with traces
+Arrival requires position error at most 3 mm, orientation error at most 0.03 rad,
+linear/angular speeds at most 0.005 m/s and 0.05 rad/s, and finger-speed norm at
+most 0.001 m/s, for three consecutive samples after at least ten executed steps.
+These are robot execution tolerances, not the scene's insertion tolerances.
+All conditions receive the same robot-derived execution reports within their study.
 
-- Which feedback signals are available and useful during execution?
-- Can the executor keep those signals valid through the motion?
-- Would a completion or invalidation check fire for the right physical reason?
-- Can a longer command reduce model calls without making the robot persist in a bad plan?
-- What happens when the target is occluded, moves, or changes appearance?
+The retained empty rule requires closed-command finger opening at most 2.9997 mm,
+finger speed at most 1 mm/s and three samples after ten steps. Load/progress flags
+remain advisory. Non-empty closure does not certify acquisition or placement.
+[The fixed prototype results](../studies/robot_feedback_modalities/guard_verification_result.json) and
+[paired study](../studies/tool_hang_v2/account.md) separate fixed verification from
+policy outcomes and the first-pair prompt confound.
 
-Pilot traces should guide the command schema and observation handoff before they are frozen for evaluation. Generality across tasks, models, or hardware must be measured rather than assumed from the design.
+The completed pose-query condition adds optional `preview` of one to four candidate
+EEF poses. Bounded IK reports solutions, residuals, joint margins and runtime; a query
+uses a decision but advances no physics. It checks robot-only endpoint geometry,
+not paths, contact, collision, grasp or task relations. Baseline has the same robot
+model/helper and logged computation access. [Its account](../studies/pose_feasibility_v1/account.md)
+reports no observed contribution on the two starts.
 
-## Current implementation boundary
+## Reproduction and accounting
 
-The implementation exposes direct absolute poses and up to four model-selected waypoints through the standard OSC_POSE controller. Measured waypoint guards are now implemented and verified in simulator traces; see [phase_execution.md](phase_execution.md). Robot pose feedback realizes a fixed requested pose in every condition. This tests transitions and exits, not sensor-relative correction during motion. The completed held-out comparison did not demonstrate a benefit.
+Every policy run retains configuration/revision, exact inputs and outputs, tool and
+calculation records, public observations, actions, state trajectory, outcome and
+replay checks. Private diagnostics stay separate from policy folders. Actions reproduce
+physics, not stochastic model decisions. Match the study's replay helper when camera
+sampling or genuine encoder checks matter; see [the README](../README.md).
 
-The first microwave pilot achieved native task success after model-selected grasp and insertion recovery. A wrist load or finger reading alone did not establish acquisition. Its unsettled initial measurement prompted a shared settling correction. This initial pilot did not measure a harness benefit. The user requested a different task; subsequent ToolHang pilots supported a narrow H3 comparison, while H1, H2 and H4 remain open. See [sensor_audit.md](sensor_audit.md) for the actual sensor boundary.
-
-Astra may perform logged temporary calculations from the same policy-visible sensors in every condition. Those calculations select its own targets and waypoints; they do not modify the executor. See [policy_boundary.md](policy_boundary.md).
-
-Native robosuite precision scenes reuse the same pose/waypoint executor and sensor handoff. The environment adapter supplies replay state and private benchmark scoring; it adds no grasp, alignment, insertion or recovery routine. Two ToolHang pilots now support the [task and mechanism selection](task_selection.md), recorded before harness implementation.
-
-The first ToolHang pilot succeeded after recovery. Its first frame grasp reached the requested closing pose but acquired nothing; its first tool grasp advanced through closing after substantial waypoint non-arrival. The second pilot repeated non-arrival and blocked motion, assembled the frame, then failed at tool placement within budget. A generic measured transition or earlier observation can test an execution failure class; it cannot select better grasp geometry or certify seating. This is a pilot-derived explanation, not an evaluated benefit. The selected mechanism retains robot decisions with Astra.
-
-The first held-out timed-baseline trace also separates robot arrival from task verification: after an empty grasp retry and frame assembly, Astra released the correct tool hole onto the hook but returned `finish` with shallow, off-axis suspension that failed the native placement criterion. The initial guard study does not measure the object relation needed to certify that final geometry. The completed two-start comparison also failed to establish a full-task benefit; this trace identifies a measurement limit of the proposed vocabulary.
-
-The first held-out matched block exposes three boundaries for this vocabulary. Pose arrival does not certify the frame/stand relation, physical tool suspension does not guarantee sufficient insertion, and an EEF target does not specify whole-arm clearance. A wrist recovery can destroy completed assembly while chasing a pose. The second matched block also failed full native success under all conditions. These boundaries do not demonstrate a guard benefit. Any added relation check, invalidation rule or joint feedback must receive a separate hypothesis and matched test.
-
-All six held-out episodes are complete: timed/deadline/early-arrival each have 0/2 full native successes, with wide uncertainty. The last baseline recovered frame slip, released a shallow frame and hung the smaller hole while describing the larger one. The [scorer audit](../studies/tool_hang_v1/scorer_audit/audit.json) agrees with the official pinned methods, successful pilot and logged subchecks. Visible suspension and native completion are distinct reported outcomes.
-
-The next proposed boundary is a model-selected visible surface anchor and target relation, measured from public RGB-D rather than simulator truth. Its measurement feasibility must pass [the recorded offline audit](../studies/object_feedback_feasibility/decision.md) before an executor or main protocol is built. Unknown/lost measurements must remain explicit; correspondence cannot decide which hole is correct or infer a hidden seating relation. The controller and task decisions stay with the declared owners.
-
-The inference was clarified after the user challenged rejecting arrival gating: 0/2 in each condition supplies no observed benefit, but shared placement failures can mask a guard effect. The broader effect remains unresolved. Re-executing both original pilot command sequences under the current timed baseline reproduces every action/state exactly and retains one success / one failure; this rules out a physical execution regression for those sequences, without equating prompts or model decisions. The proposed object-point measurement audit investigates a complementary bottleneck, not evidence that arrival gating is universally ineffective. See [the regression decision](../studies/tool_hang_v1/baseline_regression_decision.md).
-
-The proposed public surface-anchor measurement was tested on every recorded pixel query and failed its frozen gate. Visible coverage was 63.1%, accepted-error p95 9.28 mm and occluded false-valid rate 25.9%. Local forward/backward consistency can remain tiny while the intended point drifts by centimetres. Thus it is insufficient as an identity or loss certificate, just as robot arrival was insufficient as an object-placement certificate. This prototype supplies no object-feedback executor. A stronger generic online tracker first needs a causal availability/runtime check and then a separate frozen measurement audit. [The complete account](../studies/object_feedback_feasibility/account.md) preserves all queries and limits; [the next-test decision](../studies/object_feedback_learned/decision.md) precedes implementation. The wider guard effect remains unresolved.
-
-## Causal tracking runtime and next measurement test (2026-10-08)
-
-The official scaled-online CoTracker3 probe produced causal outputs on this Mac. Combined two-camera steady-update p95 was 2.167 seconds; the original 0.4-second runtime gate failed. Sol chose that threshold from eight frames at 20 Hz. It was not a user requirement. The goal permits paused physics and slower measurement, so the runtime result does not automatically exclude a feedback executor. Preserve its failed real-time criterion and withdraw the stronger exclusion; include actual local computation in a subsequent elapsed-time comparison. See [the runtime account](../studies/object_feedback_learned/runtime_account.md).
-
-The separately recorded [accuracy decision](../studies/object_feedback_learned/accuracy_decision.md) retains all 212 original queries, frozen tracker settings and the numerical precision/coverage/loss gates. It scores only current endpoints available after a 16-frame bootstrap and then eight new frames, plus final partial updates. A full control-frame ledger records fresh measurement unavailable between updates. This periodic interface is distinct from the failed 20 Hz local-flow screen. A passing measurement would justify a bounded sensor-driven prototype and then two new matched starts; it would not itself establish H1 or a task benefit. H1 has not yet had its robot comparison, H3's wider effect remains unresolved, and H2/H4 remain open.
-
-The completed [causal CoTracker3 accuracy audit](../studies/object_feedback_learned/accuracy_account.md) retained 97.7% of visible endpoints but failed the unchanged precision/loss gates (5.55 mm error p95; 24.8% occluded false-valid). All 212 queries, 2,757 endpoints and 22,739 availability rows are retained; actions and queried sensors reconstructed exactly. Private overlays show that subpixel tracking near a thin surface can sample background depth and produce metre-scale world error. This rejects the tested RGB-tracker/nearest-depth measurement for precision feedback; it does not reject H1. The [next recorded test](../studies/robot_feedback_modalities/decision.md) explores robot progress, finger opening and compensated wrist loads, starting with two fixed free-motion calibration runs before any new Astra comparison.
-
-The subsequent [robot-feedback screen](../studies/robot_feedback_modalities/account.md) verified empty-gripper load compensation on two fixed starts and screened all six original traces. Load and progress flags missed an upstream arm collision, while stable empty-sized closure exposed seven unoccupied/partial-contact waypoints. The [bounded empty-closure prototype](../studies/robot_feedback_modalities/guard_account.md) passed four predefined paired fixed fixtures: it cancelled an empty lift and allowed the successful retry, with exact action/state prefixes and sensor replay. Astra must explicitly arm this warning and choose recovery; it does not certify acquisition or seating. That development screen established no policy task benefit. The subsequently completed paired comparison is reported below.
-
-## Completed empty-closure screen and next test (2026-10-08)
-
-The [four scheduled v2 episodes](../studies/tool_hang_v2/account.md) finished with guarded 2/2 and timed 0/2 native successes. The first pair is prompt-confounded; only the second pair is matched. Guarded succeeded there after two correct empty-sized interrupts cancelling 105 requested steps, while timed recovered a grasp slip but declared completion with the tool contacting the wrong frame section and table. No jointly successful pair exists for an efficiency comparison. The clean guarded run used more calls and simulated time than the failed baseline. Small-sample uncertainty, interrupted host clocks and the prompt erratum preclude a general reliability or speed claim.
-
-Retain the observed empty-continuation invalidation/handoff behavior. It does not certify acquisition or seating, and the first guarded success had no stop. Short returned command reasons are audited against public sensors and motion, with private geometry diagnosing discrepancies; they are self-reports, not complete internal reasoning or isolated causal evidence. The [current empirical account](empirical_account.md) separates all stages and outcomes.
-
-The [selected next test](../studies/tool_hang_v2/next_test.md) broadens the question to object-relation measurement. One frozen public-depth/uncertainty screen reuses all original CoTracker predictions, with coverage, precision and loss scored together. A passing development screen permits a separately frozen H1 robot comparison on two new matched starts; a tracking-specific remaining gap permits one official TAPNext++ screen. If usable feedback does not emerge, retire that route for this iteration and choose another trace-supported representation/feasibility question. No guard retuning or extra v2 start is scheduled. The broader FYP remains active.
-
-## Completed depth uncertainty screen (2026-10-08)
-
-The [frozen public-depth screen](../studies/object_feedback_depth/account.md) completed on all 212 queries and 2,757 original endpoints. Local support/median reduced occluded false-valid acceptance from 24.78% to 16.52%, but visible coverage fell from 97.70% to 78.58%. Adding temporal and other-camera checks yielded 77.63% coverage and 4.89 mm accepted-error p95, with the same 16.52% false-valid rate. All unchanged gates fail. Of 56 accepted reference-occluded points, 19 had corroborating other-camera depth: agreement about the reported surface does not certify the original point's identity. Actions, states, original query sensors and the unchanged measurement control reproduce exactly. No Astra requests or new tracker forwards were used.
-
-The proposed tracker follow-up was subsequently retired at the user's request. The [current decision](../studies/mechanism_selection/decision.md) moves to a different trace-supported communication mechanism before another policy batch. The [action-reason analysis](../studies/tool_hang_v2/reason_analysis.md) records stated expectations, observed contradictions and recovery choices; these are self-reports checked against traces, not complete internal reasoning or causal proof. Two matched starts remain the default for subsequent policy comparisons.
-
-## Tracker step deferred; next mechanism selection (2026-10-08)
-
-The user requested moving on and deleting the alternative tracker files. Its study records, downloaded source and checkpoint have been removed. No tracker accuracy conclusion is drawn. The completed depth results remain retained.
-
-The [new decision](../studies/mechanism_selection/decision.md) supersedes the tracker schedule and retires tracked-surface correction for this iteration. Next select a communication/embodiment mechanism from actual rotation and placement traces: bounded rigid-motion delegation is the candidate if transform/trajectory bookkeeping contributes; feasibility or explicit relation representation takes precedence if those dominate. Inspect the recorded public calculations and action reasons before implementing it. The next substantive policy comparison still uses two new matched starts with a prospective prediction, credible waypoint baseline and identical controller/sensor/calculation budgets. No new accuracy gates or guard variations are introduced.
-
-## Selected pose-feasibility mechanism (2026-10-08)
-
-The [rotation discriminator](../studies/mechanism_selection/account.md) found coherent logged rigid-transform calculations, substantial pose nonarrival and a last-joint limit during one failed settling move. A fixed robot-only IK screen solved 14 of 17 predefined targets and found no tolerance-passing solution for three troublesome wrist targets. It also solved the final wrong-placement targets, so feasibility cannot certify task geometry. This is a development selection result, not global unreachability or policy efficacy. An invalid first export omitted the radians compiler setting; that attempt is retained as invalid, and the corrected screen verifies FK and compiled joint bounds against the original robot.
-
-Select an optional structured pose-feasibility query under bounded computational delegation. Astra chooses candidate poses and any subsequent motion/recovery; the query advances no physics and neither replaces nor cancels commands. Both conditions receive genuine joint positions, the known robot model and identical calculation libraries/access. Earlier native policy inputs omitted joint angles, so this is an explicit shared sensor amendment. The [prospective protocol](../studies/mechanism_selection/mechanism_protocol.json) fixes two new matched starts and four episodes before implementation. Verify paired fixed executions and freeze source/prompt equality before spending Astra calls. The generic waypoint controller and shared empty-closure semantics remain common. No tracker development resumes.
-
-## Research allocation: broaden beyond stopping (2026-10-08)
-
-The user asked to separate geometric calculation errors, robot feasibility/trajectory failures and wrong object relations despite EEF arrival. The [mechanism portfolio](mechanism_portfolio.md) records the evidence and priority for each. H3's narrow invalidation behavior remains retained, with no further stop variant. Existing robot feedback and model replanning do not constitute the original H1 live object-relative correction comparison; that measurement route is deferred, and an experiment for each H1–H4 label is not required.
-
-The next pose-feasibility query is a computational planning aid: same motion semantics and empty guard in both conditions, no new automatic stop, no replacement target selected by the executor. Run the frozen two-start comparison after integration verification. Retain ignored queries and every failed outcome. If it helps, identify the measured contribution and test the same frozen interface on a suitable second task before generality claims. If it adds little, move to the independent object-relation expression/evidence route rather than another feasibility/guard variant. Precise relation errors remain unresolved regardless of any pose-query result.
-
-## Pose-feasibility comparison started (2026-10-08)
-
-The implemented [four-episode protocol](../studies/pose_feasibility_v1/protocol.json) is frozen at revision `ab09871`. Fixed checks pass: previews leave physics unchanged, identical subsequent motions replay exactly, genuine encoder/FK/joint bounds agree, and invalid queries consume the budget. Prepared prompts have identical common text after paths and the declared capability are normalized. Under amendment 002, the first corrected preview ended at 30 decisions / 114.4 simulated seconds: frame assembled, tool hanging false. Its 2,288-step replay and both query candidates reproduce exactly. The corrected baseline succeeded on the same start with 18 decisions / 79.8 simulated seconds, 36 measured inference requests and 250.061 seconds of native policy time. Its 1,596-step replay is exact. Initial states, public inputs, common prepared prompt, source hashes and execution settings match. This first valid pair does not favor the query; retain all four corrected scheduled outcomes and reassess the mechanism portfolio after the second pair. The saved initial text is copied verbatim for dispatch; encrypted native dispatch storage limits independent automated plaintext verification and will be reported.
-
-The user requested a corrected first-baseline rerun and removal of the broken records. The comparison remains four corrected episodes on two matched starts. Pair `pf_v1_s01_waypoints_corrected` with the already corrected first preview, then complete the second-start pair. All conditions use the verified repaired calculation wrapper. Keep only the [runtime lesson](../studies/pose_feasibility_v1/calculation_runtime_learning.md) from the removed run, with no outcome/resource entry in study results. [Amendment 002](../studies/pose_feasibility_v1/amendment_002.json) records the corrected schedule.
+Record native inference/tool time separately from simulated motion, execution,
+delivery and operator/host elapsed. Count inference requests separately from robot
+decisions. API-equivalent cost uses logged tokens and recorded rates; actual billing
+is unknown. Missing intervals stay null; recovered clocks and unavailable original
+hidden prefix arrays remain reported limitations. Keep fault records in raw evidence.

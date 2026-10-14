@@ -1,7 +1,0 @@
-{
-  "episode": "pilot_microwave_002",
-  "reviewed_policy_decisions": 3,
-  "tool_executions_reviewed": 3,
-  "review": "Sol inspected all three calls: public RGB display and sensor JSON reads only. No code, scoring, project modification, external research or delegation. Pilot aborted by operator at user request.",
-  "enforcement": "instruction and trace audit; not filesystem sandbox"
-}

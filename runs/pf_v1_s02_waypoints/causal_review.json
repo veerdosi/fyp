@@ -1,0 +1,74 @@
+{
+  "episode": "pf_v1_s02_waypoints",
+  "reviewer": "Sol",
+  "scope": "Returned short command reasons compared with recorded public sensors/images and replay; private terminal decomposition diagnoses outcome separately. No hidden reasoning exported.",
+  "first_observable_execution_divergence": {
+    "decision": 2,
+    "steps": [
+      55,
+      85
+    ],
+    "observation": "Approach and descent ended 125.93 and 75.43 mm short while still moving; closure reached within 5.45 mm. Nonarrival precedes failed acquisition but does not isolate its cause."
+  },
+  "first_manipulation_failure": {
+    "phase": "frame acquisition",
+    "decision": 3,
+    "step": 120,
+    "evidence": "Empty-sized closure interrupts attempted lift after ten steps; Astra observes frame on table. Second lower retry also ends empty and interrupts at step 242.",
+    "uncertainty": "Recovery changes depth, centering and orientation together; no single grasp parameter cause isolated."
+  },
+  "recovered_phases": [
+    {
+      "decision": 7,
+      "observation": "Re-centered, differently oriented grasp retains and lifts frame."
+    },
+    {
+      "decision": 16,
+      "observation": "Tool grasp and lift succeed."
+    }
+  ],
+  "later_failures": [
+    {
+      "decisions": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "evidence": "Frame insertion stops 50.44 then 36.58 mm short. Release reaches its pose, withdrawal remains 93.78 mm short; frame assembly never passes."
+    },
+    {
+      "decisions": [
+        20,
+        22,
+        23,
+        24
+      ],
+      "evidence": "Astra observes shifted frame and re-measures. Subsequent descent remains 21.16 mm short. Release/withdraw targets arrive closely, but tool falls; Astra explicitly acknowledges failure."
+    },
+    {
+      "decisions": [
+        25,
+        26,
+        27
+      ],
+      "evidence": "Recovery lift stalls 61.80 then 151.51 mm short with tool caught on stand shaft. Astra releases and clears hand."
+    }
+  ],
+  "terminal_failure": {
+    "phase": "object relations",
+    "decision": 28,
+    "evidence": "Public terminal image shows tool low at the stand shaft rather than suspended on horizontal hook. Both native task relations fail and neither ever passed.",
+    "completion_judgment": "Correct failure acknowledgment; no false full-success claim. Describing frame as upright does not establish native seating.",
+    "native_diagnosis": "studies/pose_feasibility_v1/native_terminal_geometry.json"
+  },
+  "query_contribution": {
+    "structured_queries": 0,
+    "public_helper_uses": 0,
+    "own_public_data_calculations": 2,
+    "claim": "Baseline retains equal public robot model/helper and calculation access; uses ordinary logged rotation calculations."
+  },
+  "schema_errors": 0,
+  "time_limitation": "Original policy context/budget resumed after exact 1912-step observable reconstruction. Original hidden full prefix unavailable; host origin approximate/interrupted. All native policy-turn times measured; no elapsed-speed claim.",
+  "boundary": "All 30 tool bodies and two public-data calculations manually reviewed. Instruction/audit boundary, no OS sandbox."
+}

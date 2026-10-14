@@ -1,7 +1,0 @@
-[robosuite WARNING] No private macro file found! (macros.py:53)
-[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
-[robosuite WARNING] To setup, run: python /Users/veerdosi/Documents/code/github/fyp/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
-Warning: make sure gym is installed if you want to use the GymWrapper.
-wrist_frame_drift reproduced
-background_depth reproduced
-occluded_accepted reproduced

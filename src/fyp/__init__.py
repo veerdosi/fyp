@@ -1,1 +1,1 @@
-"""Reproducible LIBERO robot-interface experiments."""
+"""Reproducible native MuJoCo robot-interface experiments."""

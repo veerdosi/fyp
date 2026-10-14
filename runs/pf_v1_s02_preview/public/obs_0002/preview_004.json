@@ -1,0 +1,233 @@
+{
+  "observation_id": 2,
+  "step": 220,
+  "model_calls": 4,
+  "remaining_model_calls": 26,
+  "remaining_steps": 2180,
+  "robot0_joint_pos": [
+    -0.16143199308236597,
+    0.18055413549620436,
+    -0.31956884090114407,
+    -2.2318835529694567,
+    0.08499087395181572,
+    2.4001894455349646,
+    -0.9394674352238859
+  ],
+  "poses": [
+    {
+      "position": [
+        -0.074,
+        0.044,
+        1.125
+      ],
+      "quaternion_xyzw": [
+        0.5863,
+        0.3953,
+        -0.5863,
+        0.3953
+      ],
+      "seconds": 0.1537537499971222,
+      "best": {
+        "seed": "current",
+        "q_rad": [
+          0.4176337777339878,
+          0.6866176755341885,
+          0.03367052820239136,
+          -1.7400016759742585,
+          -0.8909517476219466,
+          1.0541504946108256,
+          0.26636396663557615
+        ],
+        "position_error_m": 1.8041227196526006e-09,
+        "orientation_error_rad": 4.8653667191098464e-08,
+        "solution_found": true,
+        "nfev": 31,
+        "minimum_joint_margin_rad": 1.0716504946108256,
+        "weighted_residual_norm": 5.189089717762492e-09
+      },
+      "seeds": [
+        {
+          "seed": "current",
+          "q_rad": [
+            0.4176337777339878,
+            0.6866176755341885,
+            0.03367052820239136,
+            -1.7400016759742585,
+            -0.8909517476219466,
+            1.0541504946108256,
+            0.26636396663557615
+          ],
+          "position_error_m": 1.8041227196526006e-09,
+          "orientation_error_rad": 4.8653667191098464e-08,
+          "solution_found": true,
+          "nfev": 31,
+          "minimum_joint_margin_rad": 1.0716504946108256,
+          "weighted_residual_norm": 5.189089717762492e-09
+        },
+        {
+          "seed": "nominal",
+          "q_rad": [
+            0.450800292239403,
+            0.6431185245833769,
+            -3.469777906879535e-05,
+            -1.7944776110822496,
+            -0.8895387185760149,
+            1.124579151736403,
+            0.2608927971303099
+          ],
+          "position_error_m": 0.001495777630279962,
+          "orientation_error_rad": 0.056782088537269904,
+          "solution_found": false,
+          "nfev": 150,
+          "minimum_joint_margin_rad": 1.1196814754166229,
+          "weighted_residual_norm": 0.005871916765911241
+        },
+        {
+          "seed": "current_plus_fixed_joint1_and_joint7_offset",
+          "q_rad": [
+            0.5015887711656463,
+            0.6862392613602228,
+            -0.06521835619579441,
+            -1.7460311952118686,
+            -0.8572165092020054,
+            1.0898616643906598,
+            0.2394846103809307
+          ],
+          "position_error_m": 4.328366559527152e-09,
+          "orientation_error_rad": 1.3721467112639396e-07,
+          "solution_found": true,
+          "nfev": 28,
+          "minimum_joint_margin_rad": 1.076560738639777,
+          "weighted_residual_norm": 1.4387960828306334e-08
+        },
+        {
+          "seed": "current_minus_fixed_joint1_and_joint7_offset",
+          "q_rad": [
+            0.46019502790001204,
+            0.6857678144796067,
+            -0.01652457578085767,
+            -1.743061337839364,
+            -0.8738856380890309,
+            1.072378883911299,
+            0.2528231734411078
+          ],
+          "position_error_m": 3.1069562103341595e-09,
+          "orientation_error_rad": 8.510892749082264e-08,
+          "solution_found": true,
+          "nfev": 30,
+          "minimum_joint_margin_rad": 1.0770321855203933,
+          "weighted_residual_norm": 9.060268885596887e-09
+        }
+      ],
+      "note": "Pose IK only; no dynamic/contact or task certificate."
+    },
+    {
+      "position": [
+        -0.074,
+        0.044,
+        1.085
+      ],
+      "quaternion_xyzw": [
+        0.5863,
+        0.3953,
+        -0.5863,
+        0.3953
+      ],
+      "seconds": 0.051727416983339936,
+      "best": {
+        "seed": "current_plus_fixed_joint1_and_joint7_offset",
+        "q_rad": [
+          0.5280906659316299,
+          0.7695627671075465,
+          -0.10134947407830615,
+          -1.7185301650094065,
+          -0.8224849789045716,
+          1.1408786566721927,
+          0.2694032046275041
+        ],
+        "position_error_m": 3.9912769691845e-12,
+        "orientation_error_rad": 1.2568477897869645e-10,
+        "solution_found": true,
+        "nfev": 33,
+        "minimum_joint_margin_rad": 0.9932372328924535,
+        "weighted_residual_norm": 1.3186998464926748e-11
+      },
+      "seeds": [
+        {
+          "seed": "current",
+          "q_rad": [
+            0.48281287110365767,
+            0.7679261181347785,
+            -0.048131364115851456,
+            -1.7149809965736518,
+            -0.8437146718021421,
+            1.1204511146422689,
+            0.28569736209615676
+          ],
+          "position_error_m": 1.9818337215922657e-10,
+          "orientation_error_rad": 5.3728761162866955e-09,
+          "solution_found": true,
+          "nfev": 34,
+          "minimum_joint_margin_rad": 0.9948738818652214,
+          "weighted_residual_norm": 5.726732284733088e-10
+        },
+        {
+          "seed": "nominal",
+          "q_rad": [
+            0.479437243191035,
+            0.767871441789957,
+            -0.04415794627082048,
+            -1.7147165473141768,
+            -0.8452896068635161,
+            1.118916269960721,
+            0.2868988800283206
+          ],
+          "position_error_m": 2.6983790854007937e-09,
+          "orientation_error_rad": 8.416551267670237e-08,
+          "solution_found": true,
+          "nfev": 34,
+          "minimum_joint_margin_rad": 0.9949285582100429,
+          "weighted_residual_norm": 8.838528436897734e-09
+        },
+        {
+          "seed": "current_plus_fixed_joint1_and_joint7_offset",
+          "q_rad": [
+            0.5280906659316299,
+            0.7695627671075465,
+            -0.10134947407830615,
+            -1.7185301650094065,
+            -0.8224849789045716,
+            1.1408786566721927,
+            0.2694032046275041
+          ],
+          "position_error_m": 3.9912769691845e-12,
+          "orientation_error_rad": 1.2568477897869645e-10,
+          "solution_found": true,
+          "nfev": 33,
+          "minimum_joint_margin_rad": 0.9932372328924535,
+          "weighted_residual_norm": 1.3186998464926748e-11
+        },
+        {
+          "seed": "current_minus_fixed_joint1_and_joint7_offset",
+          "q_rad": [
+            0.20170511085720125,
+            0.7964545173582898,
+            0.2876542768407204,
+            -1.6924143613878386,
+            -0.9761061149903593,
+            0.98272277836753,
+            0.38264270075135753
+          ],
+          "position_error_m": 2.4895462584615076e-09,
+          "orientation_error_rad": 7.537797001294834e-08,
+          "solution_found": true,
+          "nfev": 33,
+          "minimum_joint_margin_rad": 0.9663454826417102,
+          "weighted_residual_norm": 7.938275896298206e-09
+        }
+      ],
+      "note": "Pose IK only; no dynamic/contact or task certificate."
+    }
+  ],
+  "note": "No motion occurred. No solution means this bounded search found none; it does not prove global unreachability. Solutions do not certify dynamic arrival, collision clearance, grasp or task success."
+}

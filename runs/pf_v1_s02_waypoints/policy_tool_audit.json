@@ -1,0 +1,12 @@
+{
+  "reviewer": "Sol",
+  "method": "Manual inspection of all 30 exported tool invocation bodies and both logged calculation sources, outputs and execution metadata after episode termination.",
+  "tool_boundary_pass": true,
+  "delegation_calls": 0,
+  "repository_or_simulator_reads": 0,
+  "temporary_calculation_executions": 2,
+  "observed_access": "Current-episode public RGB, sensing and observation JSON; two temporary NumPy/SciPy rotation calculations written only in policy_compute and executed through policy_calc.py. Literal inputs are public measured poses and selected surface coordinates. No simulator/scoring reads, repository modification, network access or delegation.",
+  "os_sandbox": false,
+  "input_boundary": "Saved initial text manually copied verbatim; encrypted native initial archive prevents independently automated plaintext equality. Original policy context resumed after exact observable recovery.",
+  "source_tools_sha256": "83a7c433d0635ec820540e4c0a41ab847d31adcc437a172edae3730610223673"
+}

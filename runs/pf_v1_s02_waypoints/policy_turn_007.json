@@ -1,0 +1,82 @@
+{
+  "command": {
+    "type": "move",
+    "waypoints": [
+      {
+        "position": [
+          -0.09,
+          -0.255,
+          0.9
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 40
+      },
+      {
+        "position": [
+          -0.09,
+          -0.255,
+          0.816
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": -1,
+        "steps": 45
+      },
+      {
+        "position": [
+          -0.09,
+          -0.255,
+          0.816
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 25,
+        "abort_if_empty_close": true
+      },
+      {
+        "position": [
+          -0.09,
+          -0.255,
+          1.08
+        ],
+        "quaternion_xyzw": [
+          0.843,
+          0.537,
+          0,
+          0
+        ],
+        "gripper": 1,
+        "steps": 90,
+        "abort_if_empty_close": true
+      }
+    ],
+    "reason": "Center on the updated frame block, close perpendicular to its long axis, and lift to inspect retention."
+  },
+  "policy": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "agent": "/root/astra_pf_v1_s02_waypoints",
+    "policy_visible_input": "Your sensing reply is in /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/public/obs_0004/sense_006.json. You may cat this permitted sensor result file. The images and robot readings in obs_0004 remain current; no motion has occurred. 6 decisions have been executed, with 24 remaining. Return your next command as one JSON object only.",
+    "raw_output": "{\"type\":\"move\",\"waypoints\":[{\"position\":[-0.09,-0.255,0.9],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":40},{\"position\":[-0.09,-0.255,0.816],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":-1,\"steps\":45},{\"position\":[-0.09,-0.255,0.816],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":1,\"steps\":25,\"abort_if_empty_close\":true},{\"position\":[-0.09,-0.255,1.08],\"quaternion_xyzw\":[0.843,0.537,0,0],\"gripper\":1,\"steps\":90,\"abort_if_empty_close\":true}],\"reason\":\"Center on the updated frame block, close perpendicular to its long axis, and lift to inspect retention.\"}",
+    "response_timestamp": "2026-10-11T08:14:37.266Z",
+    "message_id": "amsg_01a12a07-32d2-7cb3-97a3-da264c0ee923",
+    "dispatch_timestamp": "2026-10-11T08:14:22.661Z",
+    "policy_wall_seconds": 14.605,
+    "input_file": "/Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints/policy_update_007.txt"
+  }
+}

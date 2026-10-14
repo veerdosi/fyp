@@ -18,13 +18,13 @@ The primary outcome is full native terminal success. Intermediate empty-transpor
 Run a scheduled episode with:
 
 ```sh
-.venv/bin/python scripts/start_feedback_episode.py th_v2_s01_timed --port 8765
-.venv/bin/python scripts/prepare_feedback_policy.py runs/th_v2_s01_timed
+.venv/bin/python scripts/episodes/start_feedback_episode.py th_v2_s01_timed --port 8765
+.venv/bin/python scripts/policy/prepare_feedback_policy.py runs/th_v2_s01_timed
 ```
 
 Sol dispatches the saved sensor-only prompt to a fresh medium-effort Astra agent and relays every unaltered returned command with the existing logging tools. Do not invoke the policy during setup or verification. After each motion, read the same public feedback files in both conditions; private native scores remain unavailable to the policy. Record actual native inference usage rather than treating robot decisions as inference count.
 
-The fixed publication verification in this directory confirms the two conditions expose equal processed data when actions match and preserves exact source action/state prefixes. The mechanism's positive and negative paired fixture verification is in `studies/robot_feedback_modalities/guard_account.md`. A whole-task result and revised theory remain necessary; this protocol is the next stage, not the whole FYP.
+The fixed publication verification in this directory confirms the two conditions expose equal processed data when actions match and preserves exact source action/state prefixes. The mechanism's positive and negative paired fixture results are in `studies/robot_feedback_modalities/guard_verification_result.json`; temporary fixtures were removed during cleanup. A whole-task result and revised theory remain necessary; this protocol is the next stage, not the whole FYP.
 
 ## Input logging erratum
 

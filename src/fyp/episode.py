@@ -1,4 +1,4 @@
-"""Direct pose/waypoint execution, recording, and replay for LIBERO.
+"""Direct pose/waypoint execution, recording, and replay for native MuJoCo tasks.
 
 The public boundary contains RGB-D, camera calibration and robot sensors only.
 Reward and object state are recorded separately and never determine commands.
@@ -29,7 +29,7 @@ def revision(folder=ROOT):
 
 
 class Episode:
-    def __init__(self, folder, task=TASK, suite='libero_10', state_index=0, seed=0,
+    def __init__(self, folder, task=TASK, suite='robosuite', state_index=0, seed=0,
                  condition='direct_waypoints', size=256, max_steps=2400, max_calls=30,
                  settle_steps=20):
         self.folder = Path(folder).resolve()
@@ -45,7 +45,7 @@ class Episode:
         self.initial = initial
         np.save(self.folder / 'initial_state.npy', initial)
         config = dict(task=task, suite=suite, state_index=state_index, seed=seed,
-                      environment_backend='robosuite' if suite=='robosuite' else 'LIBERO',
+                      environment_backend='robosuite',
                       condition=condition, size=size, max_steps=max_steps, max_calls=max_calls,
                       execution_criteria=ARRIVAL,
                       settle_steps=settle_steps,
@@ -57,7 +57,6 @@ class Episode:
                       source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
                                      for directory in ['src','scripts']
                                      for p in sorted((ROOT/directory).rglob('*.py'))},
-                      libero_revision=None if suite=='robosuite' else revision(ROOT / 'vendor/LIBERO'),
                       model=None if condition=='fixed_sequence' else 'gpt-6-astra',
                       reasoning_effort=None if condition=='fixed_sequence' else 'medium',
                       simulation_paused_during_inference=True, control_freq=20,
@@ -291,7 +290,7 @@ class Episode:
             wall_seconds=time.monotonic()-self.t0, model_calls=self.calls,
             cost_usd=None if self.calls else 0,
             cost_status='unavailable for collaboration policy calls' if self.calls else 'no model calls',
-            replay_command=f'.venv/bin/python scripts/episode.py replay --run {self.folder}'))
+            replay_command=f'.venv/bin/python scripts/episodes/episode.py replay --run {self.folder}'))
         self.env.close()
 
 
@@ -352,7 +351,7 @@ def main():
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--settle-steps', type=int, default=20)
     parser.add_argument('--task', default=TASK)
-    parser.add_argument('--suite', default='libero_10')
+    parser.add_argument('--suite', choices=['robosuite'], default='robosuite')
     parser.add_argument('--condition', choices=['direct_pose','direct_waypoints','deadline_guard','phase_guard'], default='direct_waypoints')
     parser.add_argument('--port', type=int, default=8765)
     args = parser.parse_args()

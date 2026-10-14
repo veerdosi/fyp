@@ -1,48 +1,83 @@
-# What the robot-interface experiments have established
+# Empirical account
 
-The FYP asks which communication mechanisms help a foundation model control a robot more effectively. The evidence so far supports a narrow invalidation mechanism and exposes an unresolved object-relation problem. It does not establish a reliable success-rate or completion-speed improvement. The paired manipulation code and traces are runnable, and the depth uncertainty screen has completed with a negative result.
+Current through 2026-10-14. Detailed protocols, outcomes, clocks and verification
+belong to the linked study accounts; this is the single project-level results index.
+The [research plan](research_plan.md) contains the next decision.
 
-## From theory to evidence
+## Completed comparisons
 
-Astra medium controlled the robot through absolute poses and short waypoints, with fresh RGB-D/calibration/robot observations between commands and logged temporary calculations. Sol owns implementation, design and diagnosis; Astra selects every grasp, destination, phase and recovery. The generic executor has no task-specific grasp or placement policy. Simulator-only state scores and diagnoses outcomes, never controlling evaluated actions. Physics pauses during inference.
+| Study | Observed outcome | Supported conclusion |
+| --- | --- | --- |
+| [Arrival guards](../studies/tool_hang_v1/account.md): two starts, three conditions | Timed, deadline and early-arrival each 0/2 full successes | No demonstrated task benefit here; common placement failures and small samples leave wider benefit unresolved |
+| [Empty-closure handoff](../studies/tool_hang_v2/account.md): two starts, two conditions | Guarded 2/2, timed 0/2; only second pair has verified matched prompts | Retain narrow invalidation behavior; one clean pair cannot establish general reliability or speed |
+| [Endpoint pose query](../studies/pose_feasibility_v1/account.md): two corrected starts, two conditions | Baseline 1/2, query 0/2; all four queried candidates solved | No demonstrated contribution; no unsupported-target warning was delivered, so warning avoidance was untested |
 
-The initial LIBERO microwave pilot reached native success after recovering from empty grasps and blocked insertion. Its first measurement preceded an approximately 6 cm settling drop; subsequent runs use a common 20-step settling period. The user retired the task. Two native MuJoCo ToolHang pilots then produced one full success and one budget failure, with repeated non-arrival, grasp slip and blocked seating. This selected a precision scene where direct control makes meaningful progress and interface changes might help. Pilot success is not a known 50% probability.
+The arrival study's official scorer audit agrees with its recorded outcomes, and
+re-executing both original pilot command sequences reproduces their original
+success/failure exactly. No physical-execution regression or stuck-false check was
+identified. The pose query is retired from current allocation. No replacement
+state, extra query variant or repeated empty-grasp experiment is scheduled.
 
-| Stage | Prediction tested | Observation | Research consequence |
-| --- | --- | --- | --- |
-| Robot-arrival handoff, two starts × three conditions | Measured pose exits prevent inappropriate advancement and improve completion | Timed, deadline and early-arrival each finished 0/2; distinct seating, grasp and whole-arm failures | No observed task benefit; wider guard effect unresolved. Arrival is not an object-relation certificate. |
-| Public-point measurement development, all 212 existing queries | A visible anchor can supply precise correction feedback | Local flow failed coverage/precision/loss; CoTracker retained 97.7% visible endpoints but failed 3 mm precision and 5% loss gates | Neither tested estimator should drive precision feedback. Depth association can fail despite subpixel correspondence. |
-| Depth uncertainty, same 2,757 cached endpoints | Local support and other-camera depth reject ambiguous measurements without losing usable coverage | Primary coverage 77.6%, error p95 4.89 mm, occluded false-valid 16.5%; all gates fail | Reject this estimator for correction. Camera agreement cannot certify point identity. |
-| Empty-closure invalidation, two starts × two conditions | Contradicted grasp expectation can cancel an empty continuation and return control for recovery | Guarded 2/2 and timed 0/2; first pair prompt-confounded, second pair matched. Two correct interrupts on start 2 | Retain narrow invalidation/handoff behavior; completion result is encouraging but uncertain, with no efficiency result. |
+In the clean empty-closure pair, two interrupts cancel 105 requested steps / 5.25
+simulated seconds, including two empty lifts; Astra chooses both recoveries. The
+guarded run uses 59 inference requests and 108.75 simulated seconds; the failed
+timed run uses 53 and 103. This is not faster completion. The first guarded success
+has no interrupt, and its pair is prompt-confounded. No study has a jointly successful
+pair supporting a successful-completion resource ratio. Full tables remain in the
+accounts/results JSON, including uncertainty, costs and interrupted-clock limits.
 
-The six arrival episodes replay exactly, official native scorer methods agree, and original pilot commands still reproduce one success/one failure under current physical execution. There is no identified execution regression or stuck-false scorer. Common placement failures and tiny samples prevent rejecting a general guard benefit. [The arrival account](arrival_guard_account.md) retains every outcome, resource count and scoring diagnosis.
+## Pilots and task selection
 
-## What the new comparison adds
+The retained LIBERO microwave pilot succeeds after empty-grasp and blocked-insertion
+recovery. Its first observation preceded a roughly 6 cm settling drop; later starts
+include fixed settling. That setup fault is not a general Astra limitation. The user
+retired the task. [Its original records](../runs/pilot_microwave_001/outcome.json)
+remain separate from paired results.
 
-In the clean empty-closure pair, guarded control completed both native checks with 28 decisions, 59 usage-recorded inference requests and 108.75 simulated seconds. Timed control used 26 decisions, 53 requests and 103 simulated seconds, then declared completion while only frame assembly passed. Its larger ring contacted the frame's grip section, its smaller ring contacted the table, and its center was 43.75 mm from the horizontal hook line (native limit 6.75 mm). This is an incorrect object relation and completion judgment, not merely a barely missed tolerance.
+Two native ToolHang pilots produce one full success and one motion-budget failure,
+with useful grasp/rotation/placement progress and repeatable empty grasps, non-arrival
+and blocked insertion. They motivated the original narrow arrival study. They do not
+establish a 50% success probability and are excluded from held-out comparisons.
+[Selection and pilot evidence](../studies/tool_hang_v1/account.md#task-selection)
+identify why the task was originally useful and why a new task is now planned.
 
-The guarded episode cancelled two empty close/carry continuations: 105 requested steps / 5.25 simulated seconds. Rebuilt stop geometry showed no fingerpad contacts, and Astra chose a lower frame regrasp and later a side approach for tool recovery. It also recovered a released tool that fell, then chose a different final placement. These stops demonstrate intended invalidation behavior, but the final success cannot be attributed solely to them. The first guarded success had no stop at all, so it cannot prove an interrupt benefit.
+## Measurement and diagnostic screens
 
-All four outcomes remain recorded. Descriptive 95% Wilson intervals are [0, 0.658] for timed and [0.342, 1] for guarded, including the confounded pair. Only one pair has matched common instructions. There are no jointly successful pairs for a completion-resource ratio. The clean guarded run consumed more requests and simulated time than the failed baseline. Interrupted host times prevent an elapsed-speed claim; API-equivalent cost is not an actual account charge. [The completed empty-closure account](../studies/tool_hang_v2/account.md) contains the full table, clocks, prompt erratum and audits.
+| Screen | Result | Decision |
+| --- | --- | --- |
+| [Local point tracking](../studies/object_feedback_feasibility/results.json) | Visible coverage 63.1%, accepted error p95 9.28 mm, occluded false-valid 25.9% | Fails frozen measurement gates |
+| [CoTracker3](../studies/object_feedback_learned/accuracy_result.json) | Coverage 97.7%, error p95 5.55 mm, false-valid 24.8% | Fails precision/loss gates; runtime p95 2.17 s also misses Sol's original 0.4 s realtime criterion, which the project does not require |
+| [Depth uncertainty](../studies/object_feedback_depth/attempt_001/result.json) | Primary coverage 77.63%, error p95 4.89 mm, false-valid 16.52% | Reject tested precision estimator; cross-camera agreement does not certify point identity |
+| [Robot feedback](../studies/robot_feedback_modalities/monitor_result.json) | Empty closure exposes contradictions; load/progress miss upstream-arm contact | Supports narrow empty invalidation, not seating or whole-arm safety certificates |
+| [Rotation/IK diagnostic](../studies/mechanism_selection/discriminator_result.json) | Four inspected calculations reproduce; bounded search solves 14/17 targets | Separates arithmetic from robot geometry; no global unreachability claim |
+| [Placement discriminator](../studies/placement_error_discriminator/account.md) | Five latest calculations reproduce; three initial approaches retain comparatively stable attachment | No simple arithmetic fix or universal grasp-drift explanation; contact and placement remain distinct |
 
-Every final trajectory replays with zero state/sensor/calibration error, and all processed feedback/scoring rows match. Both second-start episodes resumed their original policy contexts and budgets after verified action reconstruction. Retained original robot/object/scoring records and final images matched exactly; original full hidden prefix arrays were unavailable. All policy tools/calculations were reviewed against public-data boundaries. This is an instruction/audit boundary, not an OS sandbox.
+These reuse observed traces and spend no new Astra calls. Failed measurement
+prerequisites do not falsify all H1 feedback correction. The alternative tracker
+follow-up was retired at the user's request; no new tracker work is scheduled.
 
-## Revised theory and next decision
+## Cross-episode findings
 
-A useful communication contract can invalidate a contradicted expectation without taking the task decision away from the model. That is different from certifying acquisition, seating or completion. The next conjecture is that correction needs a policy-selected object relation with a usable metric measurement and explicit uncertainty. Better tracking cannot repair wrong target identity, and wrist feedback does not describe whole-arm clearance. Short command reasons help distinguish stated expectations from execution and geometric errors; they do not expose complete internal reasoning or prove causality.
+[The returned-reason audit](../studies/cross_episode_failure_audit/account.md) reviews
+394 command reasons across all 16 retained ToolHang episodes. Earliest incidents
+are ten missed acquisitions, four cancelled approaches, one slip and one blocked
+insertion. In the 12 unsuccessful episodes, 11 end with unresolved placement,
+release or recovery; one is dominated by joint-limited reorientation/collision.
+Five unsuccessful episodes claim full success, four acknowledge failure, one
+reports uncertainty and two reach a budget stop without finish.
 
-The completed [depth screen](../studies/object_feedback_depth/account.md) reused the same predictions and exactly reconstructed public sensors. Surface rejection removed bad associations but lost visible coverage; temporal/camera checks rejected no additional reference-occluded points. Nineteen accepted occluded references even had corroborating other-camera depth. The tested depth configuration cannot drive precision correction. This rejects a prerequisite estimator, not H1 itself.
+Clear contradictions often prompt useful recovery. Interpreting support, apparent
+hole overlap and release evidence is less reliable. Two overstated finishes involve
+real suspension through the correct hole that misses stricter native geometry;
+observability and task-score alignment remain rival explanations. These are manual
+retrospective counts across protocols and repeated starts, not independent failure
+probabilities, hidden reasoning or unique causal attribution.
 
-The alternative tracker follow-up was retired and its files deleted at the user's request. The [rotation discriminator](../studies/mechanism_selection/account.md) found coherent public calculations and robot pose failures. A fixed robot-only search solved 14 of 17 targets but found no tolerance-passing solution for three troublesome wrist targets. Wrong-placement targets still passed, separating robot feasibility from correct task relations. The first robot export had invalid degree-interpreted joint bounds; its attempt is retained as invalid, and the corrected screen verifies the original radians bounds and FK.
+## Revised explanation
 
-The [new prospective protocol](../studies/mechanism_selection/mechanism_protocol.json) selects an optional structured pose-feasibility query against credible waypoint replanning on two new matched starts. Both conditions receive genuine joint encoder positions and the known kinematic model with equal calculation access. Astra selects poses and recovery; the query neither moves nor cancels robot actions. Verify integration and freeze source hashes and exact common prompts before the four policy episodes. This tests a different planning/representation mechanism; no further tracker or finger-guard variation is scheduled.
-
-The [mechanism portfolio](mechanism_portfolio.md) separates calculation errors, execution feasibility and wrong object relations, and records when to change routes. H3 is no longer the main research allocation; live object-relative H1 correction is deferred, and the labels do not require a test each. These are small mechanism screens, not general robot-policy benchmarking. The FYP remains active: the next experiment must resolve a new design choice, and H1–H4 can be revised or replaced. A positive result is not promised.
-
-For runnable commands and evidence, use [the v2 README](../studies/tool_hang_v2/README.md), [paired results](../studies/tool_hang_v2/results.json) and [dated status history](experiment_status.md). All verification replays use zero Astra calls.
-
-## Corrected pose-feasibility comparison in progress (2026-10-09)
-
-The first corrected preview ended at the 30-decision budget with frame assembly true and tool hanging false. It used 114.4 simulated seconds, 59 measured inference requests and 463.015 seconds of native policy time. Its API-equivalent estimate is $4.933024 under the recorded rates; actual account charges are unavailable. Host elapsed includes long orchestration pauses and is not a completion-speed estimate. Replay reconstructs all 2,288 states, sensors, actions and both preview candidates exactly.
-
-Astra used one query with two solved candidates, then reached the queried approach pose. It still needed grasp and placement recovery and ultimately dropped the tool onto the stand base. No unsupported-candidate warning or avoidance was observed in this episode; no paired efficacy conclusion follows. The corrected baseline succeeded with 18 decisions, 79.8 simulated seconds, 36 measured inference requests and 250.061 seconds of native policy time ($2.600678 API-equivalent). Its 1,596-step replay is exact, and the initial state, public inputs, common prepared prompt and frozen physical execution match. Both policies recovered an initially empty grasp and a blocked low crossing. The baseline then measured the changed hook orientation and released the tool through its larger hole; the preview placed it onto the base. One pair favors the baseline, but this does not establish that the query caused the failure. The second-start pair remains scheduled. See [the current results ledger](../studies/pose_feasibility_v1/results.json) and [episode review](../runs/pf_v1_s01_preview/causal_review.json).
+Robot arrival, finger opening and visible upright support answer different questions
+from successful object placement. The next study must distinguish feature/geometry
+estimation, conversion into robot commands, physical execution and verification.
+Select a new task with an explicit observable goal and a controlled contrast before
+building another module. Object-relation representation is a candidate; collision
+and contact prototypes are not the main next study. See [the next decision](research_plan.md#next-decision).

@@ -1,0 +1,13 @@
+{
+  "episode": "pf_v1_s02_preview",
+  "policy_context_preserved": true,
+  "decisions_before_recovery": 25,
+  "control_steps_before_recovery": 1850,
+  "pending_native_decision": 26,
+  "pending_executed_without_new_inference": true,
+  "source_and_material_hashes_unchanged": true,
+  "original_full_state_arrays_unavailable": true,
+  "retained_original_readings_and_scores_exact": true,
+  "host_clock_approximate_and_interrupted": true,
+  "note": "Original server handle was missing and no listener remained. Resume reconstructed original seeded actions, matched every retained before/after robot and diagnostic object/scoring row, all 1830 monitor rows, final RGB/depth and genuine current encoders. Same policy context, observations and remaining budgets continued. Reconstructed prefix state arrays are not independent evidence of original hidden full-state equality."
+}

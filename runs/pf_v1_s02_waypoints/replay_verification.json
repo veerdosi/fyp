@@ -1,0 +1,22 @@
+{
+  "all_pass": true,
+  "steps": 1912,
+  "max_state_absolute_error": 0.0,
+  "max_public_sensor_absolute_error": 0.0,
+  "max_calibration_absolute_error": 0.0,
+  "camera_snapshot_checks": 40,
+  "monitor_rows_exact": 1892,
+  "action_conversion_checks": 1892,
+  "native_checks": 1912,
+  "native_outcome_matches": true,
+  "raw_encoder_and_fk_snapshot_checks": 20,
+  "preview_candidates_recomputed_exact": 0,
+  "robot_joint_bounds_exact": true,
+  "max_public_encoder_fk_position_error_m": 0.00015022954566266394,
+  "max_public_encoder_fk_rotation_error_rad": 7.589115950365258e-05,
+  "fk_scope": "Raw encoder equals native qpos exactly and known robot FK equals nonmutating full-model forward calculation at current qpos. Cached public EEF/FK sampling differences reported separately.",
+  "actual_astra_requests": 0,
+  "initialization": "Original seeded initialization and observable sampling; no forced state/update.",
+  "command": ".venv/bin/python studies/pose_feasibility_v1/replay.py --run /Users/veerdosi/Documents/code/github/fyp/runs/pf_v1_s02_waypoints",
+  "replay_source_sha256": "89d869491453e3a94f12acc4ae3820a9e1e3583ed408681f6620e01953e31432"
+}

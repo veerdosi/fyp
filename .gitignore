@@ -1,6 +1,5 @@
 .venv/
 vendor/
-.libero/
 __pycache__/
 *.pyc
 .DS_Store

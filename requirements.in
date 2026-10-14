@@ -1,7 +1,6 @@
 numpy<2
 mujoco==3.2.7
 robosuite==1.4.1
-bddl==1.0.1
 gym==0.26.2
 easydict
 pyyaml
