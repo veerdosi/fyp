@@ -1,0 +1,7 @@
+.deps/
+.venv/
+__pycache__/
+runs/
+MUJOCO_LOG.TXT
+/deliverables/unitree-g1-sparring.mp4
+/deliverables/unitree-g1-sparring-internal.md
